@@ -1,0 +1,134 @@
+[
+  {
+    "subtype": "technical_term",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Robust control",
+    "fact_text": null,
+    "notes": "Keep: robust control is the standard control-theory name, not filler jargon.",
+    "anchor_text": "momentarily buffering power imbalances.",
+    "op": "insert_after",
+    "new_text": " Robust control keeps voltage inside limits when plant parameters are uncertain."
+  },
+  {
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "This sampling rate is comprehensive relative to legacy SCADA scans.",
+    "fact_text": "30–120 samples/second",
+    "notes": "Replace the vague banned adjective with the PMU rate already stated in the essay.",
+    "anchor_text": "granting operators unprecedented visibility of grid dynamics.",
+    "op": "insert_after",
+    "new_text": " This sampling rate is comprehensive relative to legacy SCADA scans."
+  },
+  {
+    "subtype": "loadbearing",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+    "fact_text": null,
+    "notes": "Delete-and-reread: the positive clause (gas-well and thermal-auxiliary freeze-offs) does not entail the negative clause. Ruling out a wind nameplate shortfall is a separate checkable claim, so the negation is loadbearing and should be kept.",
+    "anchor_text": "The 2021 Texas winter storm and large‑scale blackouts in India (2022) illustrate how a combination of inadequate winterization, market design flaws, and insufficient grid coordination can precipitate catastrophic failures.",
+    "op": "insert_after",
+    "new_text": " The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts."
+  },
+  {
+    "subtype": "ambiguous",
+    "polarity": "flag",
+    "expected_action": "flag",
+    "target_text": "Operators procured spinning reserve, rather than non-spinning reserve.",
+    "fact_text": null,
+    "notes": "Trailing rather-than clause after spinning reserve. Non-spinning is both a trivial not-X of spinning and a named reserve product, so it is unclear whether this is ordinary-knowledge or a real distinction; flag for the author.",
+    "anchor_text": "Historically, electrical generation has been dominated by large synchronous generators driven by steam turbines (coal, natural gas, nuclear) or hydro turbines.",
+    "op": "insert_after",
+    "new_text": " Operators procured spinning reserve, rather than non-spinning reserve."
+  },
+  {
+    "subtype": "ordinary",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Those upgrades are planned on purpose, rather than by accident.",
+    "fact_text": null,
+    "notes": "Trailing rather-than-by-accident is the ordinary-knowledge antonym of on purpose and adds nothing checkable; cut the trailer.",
+    "anchor_text": "Accurate price signals are essential for incentivizing investment in needed infrastructure (e.g., transmission upgrades).",
+    "op": "insert_after",
+    "new_text": " Those upgrades are planned on purpose, rather than by accident."
+  },
+  {
+    "subtype": "diacritic",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Québec",
+    "fact_text": null,
+    "notes": "Correct spelling of the proper name Québec with U+00E9; keep the diacritic.",
+    "anchor_text": "Historically, electrical generation has been dominated by large synchronous generators driven by steam turbines (coal, natural gas, nuclear) or hydro turbines.",
+    "op": "insert_after",
+    "new_text": " Hydro plants in Québec still use those same synchronous machines for frequency control."
+  },
+  {
+    "subtype": "ellipsis",
+    "polarity": "change",
+    "expected_action": "punct_three_periods",
+    "target_text": "cloud-driven ramps…",
+    "fact_text": null,
+    "notes": "U+2026 ellipsis glyph in ordinary prose; replace with three periods.",
+    "anchor_text": "Renewable energy technologies have been rising rapidly.",
+    "op": "insert_after",
+    "new_text": " Forecasts still miss cloud-driven ramps…"
+  },
+  {
+    "subtype": "emdash_clauses",
+    "polarity": "change",
+    "expected_action": "punct_semicolon_or_period",
+    "target_text": "Frozen wellheads cut gas supply—thermal units then tripped on auxiliary freeze.",
+    "fact_text": null,
+    "notes": "U+2014 joins two independent clauses; use a semicolon or a period.",
+    "anchor_text": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+    "op": "insert_after",
+    "new_text": " Frozen wellheads cut gas supply—thermal units then tripped on auxiliary freeze."
+  },
+  {
+    "subtype": "emdash_runon",
+    "polarity": "change",
+    "expected_action": "punct_split",
+    "target_text": "for days—planners rewrite protection settings the next week they also file new interconnection studies.",
+    "fact_text": null,
+    "notes": "Em dash conceals a fused-sentence run-on on the right; split into separate sentences.",
+    "anchor_text": "Achieving this vision requires interdisciplinary collaboration among engineers, economists, policymakers, and data scientists.",
+    "op": "insert_after",
+    "new_text": " Ice storms still take lines out of service for days—planners rewrite protection settings the next week they also file new interconnection studies."
+  },
+  {
+    "subtype": "emphatic_no_exclusive",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "after a trip, full stop",
+    "fact_text": null,
+    "notes": "Finality interjection without only/never/always/exactly/must, so keep.",
+    "anchor_text": "Hydro plants in Québec still use those same synchronous machines for frequency control.",
+    "op": "insert_after",
+    "new_text": " Inertia still matters for the first few cycles after a trip, full stop."
+  },
+  {
+    "subtype": "finality_exclusive",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "only backup path for those hospitals, end of story",
+    "fact_text": null,
+    "notes": "Exclusive marker only plus finality interjection; cut end of story.",
+    "anchor_text": "crucial for critical facilities (hospitals, data centers).",
+    "op": "insert_after",
+    "new_text": " Islanded operation is the only backup path for those hospitals, end of story."
+  },
+  {
+    "subtype": "number_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly below",
+    "fact_text": "15%",
+    "notes": "Intensifier stands in for the 15% interconnection figure already given; replace with that fact.",
+    "anchor_text": "linking offshore wind farms in the North Sea with demand centers in Germany, the Netherlands, and the United Kingdom.",
+    "op": "insert_after",
+    "new_text": " Several member states remain significantly below the 15% interconnection target."
+  }
+]

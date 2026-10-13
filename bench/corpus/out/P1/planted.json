@@ -1,0 +1,112 @@
+[
+  {
+    "passage": "P1",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly more effective than most annual awareness programs assume",
+    "fact_text": "click-through rates above 20%",
+    "notes": "Banned intensifier 'significantly' stands in for the 20% phishing click-through rate already given; replace the intensifier claim with that figure."
+  },
+  {
+    "passage": "P1",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ambiguous",
+    "polarity": "flag",
+    "expected_action": "flag",
+    "target_text": "fail-closed, rather than open",
+    "fact_text": null,
+    "notes": "Trailing 'rather than open' after fail-closed. Closed/open is a general-knowledge antonym, but fail-closed vs fail-open is also a real access-control design distinction. Unclear which side of the ordinary-knowledge test this falls on; flag and ask the author."
+  },
+  {
+    "passage": "P1",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ordinary",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "on purpose, rather than by accident",
+    "fact_text": null,
+    "notes": "Trailing 'rather than by accident' after 'on purpose' is the ordinary-knowledge antonym (purpose/accident). Cut the trailer."
+  },
+  {
+    "passage": "P1",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "diacritic",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "café",
+    "fact_text": null,
+    "notes": "Keep the acute accent; café is the correct spelling of the word."
+  },
+  {
+    "passage": "P1",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "ellipsis",
+    "polarity": "change",
+    "expected_action": "punct_three_periods",
+    "target_text": "truncated process tree…",
+    "fact_text": null,
+    "notes": "Replace the ellipsis glyph with three periods."
+  },
+  {
+    "passage": "P1",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "emdash_clauses",
+    "polarity": "change",
+    "expected_action": "punct_semicolon_or_period",
+    "target_text": "mean time to contain—the finance team uses that figure",
+    "fact_text": null,
+    "notes": "Two independent clauses joined by an em dash; use a semicolon or a period."
+  },
+  {
+    "passage": "P1",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "emdash_runon",
+    "polarity": "change",
+    "expected_action": "punct_split",
+    "target_text": "new radios—the SOC ingested the extra syslog without a retention plan, the legal team then discovered",
+    "fact_text": null,
+    "notes": "Em dash dumps two more independent clauses into one sentence; split into separate sentences."
+  },
+  {
+    "passage": "P1",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "emphatic_no_exclusive",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Positive reinforcement for reporters is now a standing practice, full stop.",
+    "fact_text": null,
+    "notes": "Finality interjection without exclusivity markers (only/never/always/exactly/must), so the keep path applies."
+  },
+  {
+    "passage": "P1",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "finality_exclusive",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Fail-closed is the only acceptable default for those checks, end of story.",
+    "fact_text": null,
+    "notes": "Exclusivity marker 'only' plus finality interjection 'end of story'; cut the interjection."
+  },
+  {
+    "passage": "P1",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "number_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "a significantly tighter incident-reporting clock",
+    "fact_text": "The NIS Directive still sets that clock at 24 hours.",
+    "notes": "Intensifier 'significantly' stands in for the 24-hour NIS deadline given in the next sentence and earlier in the essay; replace the intensifier with that figure."
+  }
+]

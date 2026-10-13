@@ -1,0 +1,35 @@
+[
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "a comprehensive understanding of plant biology is not merely academic—it is essential for the survival and well‑being of humanity.",
+    "fact_text": null,
+    "notes": "Delete-and-reread: drop 'is not merely academic' and the remaining claim that the understanding is essential for survival is unchanged. The negative half is a not-merely-X windup, not a separate checkable fact.",
+    "passage": "P3",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+    "fact_text": null,
+    "notes": "Delete 'far from being a static catalog of flora' and the positive clause still states that botany is a dynamic, integrative science with those roles. The negated straw (static catalog) adds nothing checkable.",
+    "passage": "P3",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+    "fact_text": null,
+    "notes": "Classic not-X-it-is-Y pair. Delete 'is not optional' and 'it is imperative' carries the same claim; the negative half is filler emphasis, not a distinct fact.",
+    "passage": "P3",
+    "rule": 2,
+    "kind": "native"
+  }
+]

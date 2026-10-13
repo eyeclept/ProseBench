@@ -165,6 +165,11 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         roster = yaml.safe_load((ROOT / "bench" / "roster.yml").read_text(encoding="utf-8"))
+        for section in ("scored", "fallback"):
+            for name, entry in roster[section].items():
+                if not isinstance(entry.get("thinking"), str):
+                    raise ValueError(f"roster {section}.{name}.thinking must be a quoted string, got "
+                                     f"{entry.get('thinking')!r} (YAML reads bare off/on as booleans)")
         keys = _selection(args.models, tuple(roster["scored"]), "models")
         rules = [int(item) for item in _selection(args.rules, tuple(str(n) for n in range(1, 6)), "rules")]
         passages = _selection(args.passages, ("P1", "P2", "P3"), "passages")

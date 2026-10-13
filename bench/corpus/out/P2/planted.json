@@ -1,0 +1,134 @@
+[
+  {
+    "passage": "P2",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "technical_term",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Robust control",
+    "fact_text": null,
+    "notes": "Keep: robust control is the standard control-theory name, not filler jargon."
+  },
+  {
+    "passage": "P2",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "This sampling rate is comprehensive relative to legacy SCADA scans.",
+    "fact_text": "30–120 samples/second",
+    "notes": "Replace the vague banned adjective with the PMU rate already stated in the essay."
+  },
+  {
+    "passage": "P2",
+    "rule": 2,
+    "kind": "planted",
+    "subtype": "loadbearing",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+    "fact_text": null,
+    "notes": "Delete-and-reread: the positive clause (gas-well and thermal-auxiliary freeze-offs) does not entail the negative clause. Ruling out a wind nameplate shortfall is a separate checkable claim, so the negation is loadbearing and should be kept."
+  },
+  {
+    "passage": "P2",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ambiguous",
+    "polarity": "flag",
+    "expected_action": "flag",
+    "target_text": "Operators procured spinning reserve, rather than non-spinning reserve.",
+    "fact_text": null,
+    "notes": "Trailing rather-than clause after spinning reserve. Non-spinning is both a trivial not-X of spinning and a named reserve product, so it is unclear whether this is ordinary-knowledge or a real distinction; flag for the author."
+  },
+  {
+    "passage": "P2",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ordinary",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Those upgrades are planned on purpose, rather than by accident.",
+    "fact_text": null,
+    "notes": "Trailing rather-than-by-accident is the ordinary-knowledge antonym of on purpose and adds nothing checkable; cut the trailer."
+  },
+  {
+    "passage": "P2",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "diacritic",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Québec",
+    "fact_text": null,
+    "notes": "Correct spelling of the proper name Québec with U+00E9; keep the diacritic."
+  },
+  {
+    "passage": "P2",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "ellipsis",
+    "polarity": "change",
+    "expected_action": "punct_three_periods",
+    "target_text": "cloud-driven ramps…",
+    "fact_text": null,
+    "notes": "U+2026 ellipsis glyph in ordinary prose; replace with three periods."
+  },
+  {
+    "passage": "P2",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "emdash_clauses",
+    "polarity": "change",
+    "expected_action": "punct_semicolon_or_period",
+    "target_text": "Frozen wellheads cut gas supply—thermal units then tripped on auxiliary freeze.",
+    "fact_text": null,
+    "notes": "U+2014 joins two independent clauses; use a semicolon or a period."
+  },
+  {
+    "passage": "P2",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "emdash_runon",
+    "polarity": "change",
+    "expected_action": "punct_split",
+    "target_text": "for days—planners rewrite protection settings the next week they also file new interconnection studies.",
+    "fact_text": null,
+    "notes": "Em dash conceals a fused-sentence run-on on the right; split into separate sentences."
+  },
+  {
+    "passage": "P2",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "emphatic_no_exclusive",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "after a trip, full stop",
+    "fact_text": null,
+    "notes": "Finality interjection without only/never/always/exactly/must, so keep."
+  },
+  {
+    "passage": "P2",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "finality_exclusive",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "only backup path for those hospitals, end of story",
+    "fact_text": null,
+    "notes": "Exclusive marker only plus finality interjection; cut end of story."
+  },
+  {
+    "passage": "P2",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "number_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly below",
+    "fact_text": "15%",
+    "notes": "Intensifier stands in for the 15% interconnection figure already given; replace with that fact."
+  }
+]

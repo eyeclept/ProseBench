@@ -1,0 +1,46 @@
+2026-10-13 00:52:02,191 WARNING bench.llm_clients: LLM HTTP failure: https://cli-chat-proxy.grok.com/v1/chat/completions 500
+Traceback (most recent call last):
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/llm_clients.py", line 56, in _chat
+    with request.urlopen(req, timeout=600) as response:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/usr/lib64/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib64/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/corpus/inject.py", line 162, in <module>
+    main()
+    ~~~~^^
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/corpus/inject.py", line 158, in main
+    inject(passage)
+    ~~~~~~^^^^^^^^^
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/corpus/inject.py", line 116, in inject
+    reply = grok_chat(messages, reasoning_effort="medium", max_tokens=8000, response_format=fmt,
+                      log_path=directory / f"inject_R{rule}_try{attempt}_raw.json")
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/llm_clients.py", line 99, in grok_chat
+    return _chat(GROK_URL, {
+        "Authorization": f"Bearer {access}",
+        "Content-Type": "application/json", "x-grok-client-version": "1.0.13",
+        "x-grok-client-identifier": "grok-shell", "User-Agent": "xai-grok-cli",
+    }, body, log_path)
+  File "/home/eyeclept/Documents/School/DataMining-645/Project/bench/llm_clients.py", line 61, in _chat
+    raise LlmError(f"LLM HTTP {exc.code} at {url}") from exc
+bench.llm_clients.LlmError: LLM HTTP 500 at https://cli-chat-proxy.grok.com/v1/chat/completions
+P3 exit 1

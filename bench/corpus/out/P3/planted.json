@@ -1,0 +1,145 @@
+[
+  {
+    "passage": "P3",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "technical_term",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "robust regression",
+    "fact_text": null,
+    "notes": "Robust regression is the standard statistical name for estimators that down-weight outliers; keep the term rather than swapping in a vaguer synonym."
+  },
+  {
+    "passage": "P3",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "a plethora of",
+    "fact_text": "390,000 extant species",
+    "notes": "Academic-tell 'plethora' stands in for the species count already given in the essay; replace the phrase with that figure."
+  },
+  {
+    "passage": "P3",
+    "rule": 2,
+    "kind": "planted",
+    "subtype": "loadbearing",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+    "fact_text": null,
+    "notes": "The negative clause is a distinct checkable claim (Taxus does not make morphine) that the positive clause does not repeat, so delete-and-reread loses information; keep."
+  },
+  {
+    "passage": "P3",
+    "rule": 2,
+    "kind": "planted",
+    "subtype": "doubling",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+    "fact_text": null,
+    "notes": "The spatial-versus-temporal distinction is restated as C4-versus-CAM with no added fact; cut the doubled restatement."
+  },
+  {
+    "passage": "P3",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ambiguous",
+    "polarity": "flag",
+    "expected_action": "flag",
+    "target_text": "rather than heirlooms",
+    "fact_text": null,
+    "notes": "Trailing rather-than-X after landraces. Unclear whether heirloom is the ordinary-knowledge counterpart of landrace or a technical garden-vs-farmer distinction; flag rather than cut or rewrite."
+  },
+  {
+    "passage": "P3",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "ordinary",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "rather than by accident",
+    "fact_text": null,
+    "notes": "Trailing ordinary-knowledge antonym of on purpose; the trailer adds nothing checkable and should be cut."
+  },
+  {
+    "passage": "P3",
+    "rule": 3,
+    "kind": "planted",
+    "subtype": "field_specific",
+    "polarity": "change",
+    "expected_action": "promote_to_sentence",
+    "target_text": "not nuclear transformation",
+    "fact_text": null,
+    "notes": "Trailing not-X names a real chloroplast-versus-nuclear delivery distinction, but it is bolted on; promote it to its own sentence stated as fact."
+  },
+  {
+    "passage": "P3",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "diacritic",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "café",
+    "fact_text": null,
+    "notes": "Keep the acute accent; café is the correct spelling of the loanword, not a typographic substitute."
+  },
+  {
+    "passage": "P3",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "ellipsis",
+    "polarity": "change",
+    "expected_action": "punct_three_periods",
+    "target_text": "undetermined…",
+    "fact_text": null,
+    "notes": "Ellipsis glyph U+2026 in ordinary prose; swap for three period characters."
+  },
+  {
+    "passage": "P3",
+    "rule": 4,
+    "kind": "planted",
+    "subtype": "emdash_runon",
+    "polarity": "change",
+    "expected_action": "punct_split",
+    "target_text": "The seedlings bolted in week 3 they never formed heads—the market rejected the entire lot.",
+    "fact_text": null,
+    "notes": "Em dash sits inside a fused three-clause run-on; a comma or semicolon still leaves a run-on, so split into separate sentences."
+  },
+  {
+    "passage": "P3",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "emphatic_no_exclusive",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Field crews still collect vouchers, make no mistake.",
+    "fact_text": null,
+    "notes": "Finality interjection (make no mistake) with no exclusivity marker (only/never/always/exactly/must), so Rule 5 does not call for a cut; keep."
+  },
+  {
+    "passage": "P3",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "finality_exclusive",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+    "fact_text": null,
+    "notes": "Exclusivity marker only plus tacked-on finality interjection full stop; cut the interjection."
+  },
+  {
+    "passage": "P3",
+    "rule": 5,
+    "kind": "planted",
+    "subtype": "number_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "That species total is significantly higher than pre-molecular estimates.",
+    "fact_text": "390,000 extant species",
+    "notes": "Intensifier significantly stands in for the 390,000 species count already in the prior sentence; replace the intensifier with that figure."
+  }
+]

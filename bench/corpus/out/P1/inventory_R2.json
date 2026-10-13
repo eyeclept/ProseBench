@@ -1,0 +1,90 @@
+[
+  {
+    "subtype": "doubling",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "moving away from the outdated “trusted internal network” paradigm",
+    "fact_text": null,
+    "notes": "Zero-trust is already stated as verify-every-user-and-device; the participial tail restates that distinction via the trusted-network antonym and adds no new fact.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Technical tools cannot succeed in isolation",
+    "fact_text": null,
+    "notes": "Delete-and-reread: the following positive clause already says tools need policies, governance, and culture; isolation is only the rejected framing of that same claim.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "doubling",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage",
+    "fact_text": null,
+    "notes": "The checkable action is embedding security metrics in KPIs and aligning them with business objectives; the cost-center/strategic-asset recharacterization is a synonym restatement with nothing further to verify.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Addressing this requires more than periodic training",
+    "fact_text": null,
+    "notes": "More-than-X is the isn't-just variant. The demand for a security-first culture plus gamified learning, simulations, and reporting already carries the claim; the training negation is filler.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Beyond compliance,",
+    "fact_text": null,
+    "notes": "Beyond-X functions as not-as-compliance-but. Ethical considerations around surveillance, bias, and disclosure stand on their own; the opener adds no checkable content.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "other",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Artificial intelligence (AI) is a double‑edged sword in cybersecurity.",
+    "fact_text": null,
+    "notes": "Not a not-A-is-B pair and not a post-hoc synonym restatement; it is an empty metaphor sentence. Deleting it leaves the following defensive and offensive facts unchanged, so the general first-half windup test still flags it.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "windup",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Cybersecurity today is not merely an IT concern",
+    "fact_text": null,
+    "notes": "Classic not-merely-A; it-is-B. The multidimensional-discipline clause states the claim; the IT-concern negation is padding.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  },
+  {
+    "subtype": "loadbearing",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age",
+    "fact_text": null,
+    "notes": "Surface cousin of not-X-but-Y, but the two objects are distinct claims. Deleting not-only data and devices loses a checkable conjunct, so the negative half is not filler.",
+    "passage": "P1",
+    "rule": 2,
+    "kind": "native"
+  }
+]

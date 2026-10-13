@@ -1,0 +1,145 @@
+[
+  {
+    "subtype": "technical_term",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "robust regression",
+    "fact_text": null,
+    "notes": "Robust regression is the standard statistical name for estimators that down-weight outliers; keep the term rather than swapping in a vaguer synonym.",
+    "anchor_text": "establishing a coordinated multicellular organism.",
+    "op": "insert_after",
+    "new_text": " A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies."
+  },
+  {
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "a plethora of",
+    "fact_text": "390,000 extant species",
+    "notes": "Academic-tell 'plethora' stands in for the species count already given in the essay; replace the phrase with that figure.",
+    "anchor_text": "ranging from microscopic algae to massive sequoias.",
+    "op": "insert_after",
+    "new_text": " That estimate already covers a plethora of vascular and non-vascular species."
+  },
+  {
+    "subtype": "loadbearing",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+    "fact_text": null,
+    "notes": "The negative clause is a distinct checkable claim (Taxus does not make morphine) that the positive clause does not repeat, so delete-and-reread loses information; keep.",
+    "anchor_text": "the anticancer agent paclitaxel from the Pacific yew (*Taxus brevifolia*).",
+    "op": "insert_after",
+    "new_text": " Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex."
+  },
+  {
+    "subtype": "doubling",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+    "fact_text": null,
+    "notes": "The spatial-versus-temporal distinction is restated as C4-versus-CAM with no added fact; cut the doubled restatement.",
+    "anchor_text": "to optimize carbon fixation under specific environmental conditions.",
+    "op": "insert_after",
+    "new_text": " Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one."
+  },
+  {
+    "subtype": "ambiguous",
+    "polarity": "flag",
+    "expected_action": "flag",
+    "target_text": "rather than heirlooms",
+    "fact_text": null,
+    "notes": "Trailing rather-than-X after landraces. Unclear whether heirloom is the ordinary-knowledge counterpart of landrace or a technical garden-vs-farmer distinction; flag rather than cut or rewrite.",
+    "anchor_text": "These phylogenetic insights guide conservation priorities, breeding programs, and the discovery of novel metabolites.",
+    "op": "insert_after",
+    "new_text": " Conservation collections still accession landraces, rather than heirlooms."
+  },
+  {
+    "subtype": "ordinary",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "rather than by accident",
+    "fact_text": null,
+    "notes": "Trailing ordinary-knowledge antonym of on purpose; the trailer adds nothing checkable and should be cut.",
+    "anchor_text": "averting famines in many regions.",
+    "op": "insert_after",
+    "new_text": " Breeders select dwarfing alleles on purpose, rather than by accident."
+  },
+  {
+    "subtype": "field_specific",
+    "polarity": "change",
+    "expected_action": "promote_to_sentence",
+    "target_text": "not nuclear transformation",
+    "fact_text": null,
+    "notes": "Trailing not-X names a real chloroplast-versus-nuclear delivery distinction, but it is bolted on; promote it to its own sentence stated as fact.",
+    "anchor_text": "to mitigate gene flow concerns.",
+    "op": "insert_after",
+    "new_text": " The construct was designed for chloroplast transformation, not nuclear transformation."
+  },
+  {
+    "subtype": "diacritic",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "café",
+    "fact_text": null,
+    "notes": "Keep the acute accent; café is the correct spelling of the loanword, not a typographic substitute.",
+    "anchor_text": "one of the oldest branches of biology.",
+    "op": "insert_after",
+    "new_text": " A café in Uppsala still displays a 1753 herbarium sheet of Coffea arabica beside the Linnaean labels."
+  },
+  {
+    "subtype": "ellipsis",
+    "polarity": "change",
+    "expected_action": "punct_three_periods",
+    "target_text": "undetermined…",
+    "fact_text": null,
+    "notes": "Ellipsis glyph U+2026 in ordinary prose; swap for three period characters.",
+    "anchor_text": "transformed botany from a descriptive science into a mechanistic one.",
+    "op": "insert_after",
+    "new_text": " Herbarium staff still mark sterile Carex sheets as undetermined… until a fruiting collection arrives."
+  },
+  {
+    "subtype": "emdash_runon",
+    "polarity": "change",
+    "expected_action": "punct_split",
+    "target_text": "The seedlings bolted in week 3 they never formed heads—the market rejected the entire lot.",
+    "fact_text": null,
+    "notes": "Em dash sits inside a fused three-clause run-on; a comma or semicolon still leaves a run-on, so split into separate sentences.",
+    "anchor_text": "These phylogenetic insights guide conservation priorities, breeding programs, and the discovery of novel metabolites.",
+    "op": "insert_after",
+    "new_text": " The seedlings bolted in week 3 they never formed heads—the market rejected the entire lot."
+  },
+  {
+    "subtype": "emphatic_no_exclusive",
+    "polarity": "keep",
+    "expected_action": "keep",
+    "target_text": "Field crews still collect vouchers, make no mistake.",
+    "fact_text": null,
+    "notes": "Finality interjection (make no mistake) with no exclusivity marker (only/never/always/exactly/must), so Rule 5 does not call for a cut; keep.",
+    "anchor_text": "A café in Uppsala still displays a 1753 herbarium sheet of Coffea arabica beside the Linnaean labels.",
+    "op": "insert_after",
+    "new_text": " Field crews still collect vouchers, make no mistake."
+  },
+  {
+    "subtype": "finality_exclusive",
+    "polarity": "change",
+    "expected_action": "cut",
+    "target_text": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+    "fact_text": null,
+    "notes": "Exclusivity marker only plus tacked-on finality interjection full stop; cut the interjection.",
+    "anchor_text": "G3P serves as the precursor for glucose, starch, cellulose, and a myriad of secondary metabolites.",
+    "op": "insert_after",
+    "new_text": " Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop."
+  },
+  {
+    "subtype": "number_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "That species total is significantly higher than pre-molecular estimates.",
+    "fact_text": "390,000 extant species",
+    "notes": "Intensifier significantly stands in for the 390,000 species count already in the prior sentence; replace the intensifier with that figure.",
+    "anchor_text": "The plant kingdom (Plantae) encompasses an estimated 390,000 extant species, ranging from microscopic algae to massive sequoias.",
+    "op": "insert_after",
+    "new_text": " That species total is significantly higher than pre-molecular estimates."
+  }
+]

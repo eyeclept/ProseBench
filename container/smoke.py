@@ -112,7 +112,8 @@ def main() -> int:
         if status != "pass":
             continue
         pattern = rf"(^  {re.escape(key)}:\s*\{{[^\n]*?thinking: )[^,}}]+"
-        source, count = re.subn(pattern, rf"\g<1>{level}", source, count=1, flags=re.MULTILINE)
+        # Quote the level: YAML 1.1 reads a bare off/on as a boolean.
+        source, count = re.subn(pattern, rf'\g<1>"{level}"', source, count=1, flags=re.MULTILINE)
         if count != 1:
             raise ValueError(f"Roster row missing for {key}")
     ROSTER.write_text(source, encoding="utf-8")
