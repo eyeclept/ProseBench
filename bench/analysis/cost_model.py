@@ -38,15 +38,15 @@ def price_per_million(hardware, assumptions, boxes, tokens_s, productive_hours_d
 
 
 def load_usage(path):
-    """Read scorer runs; attribute routed Ornith traffic to its actual box model."""
+    """Read scorer runs and sum usage by model_key."""
     counts = defaultdict(lambda: {"usage_input": 0, "usage_output": 0, "usage_reasoning": 0})
     with path.open(newline="", encoding="utf-8") as stream:
         reader = csv.DictReader(stream)
-        required = {"model_key", "routed", "usage_input", "usage_output", "usage_reasoning"}
+        required = {"model_key", "usage_input", "usage_output", "usage_reasoning"}
         if not required.issubset(reader.fieldnames or []):
             raise ValueError(f"Missing runs CSV columns: {', '.join(sorted(required - set(reader.fieldnames or [])))}")
         for row in reader:
-            key = "qwen36" if row["model_key"] == "ornith" and row["routed"].lower() == "true" else row["model_key"]
+            key = row["model_key"]
             for field in ("usage_input", "usage_output", "usage_reasoning"):
                 try:
                     value = int(row[field])
@@ -67,26 +67,32 @@ def comparison_rows(data, usage=None):
             continue
         boxes = number(model["boxes"])
         speed = number(model["decode_tokens_s"])
-        totals = (usage or {}).get(key)
-        for duty in assumptions["duty_cycles"]:
-            cost = price_per_million(hardware, assumptions, boxes, speed,
-                                     number(duty["hours_per_day"]))
-            yield {"axis": "analytic", "model_key": key, "model": model["name"],
-                   "total_params_b": (">" if model["total_params_b"].get("qualifier") == "greater_than" else "")
-                   + str(number(model["total_params_b"])),
-                   "active_params_b": number(model["active_params_b"]),
-                   "ngram_embedding_params_b": number(model.get("ngram_embedding_params_b")) or "",
-                   "boxes": boxes, "quantization": model["quantization"]["name"],
-                   "decode_tokens_s": speed,
-                   "throughput_estimated": bool(model["decode_tokens_s"].get("estimated", False)),
-                   "duty_cycle": duty["name"],
-                   "hardware_usd_per_million_output": cost,
-                   "api_usd_per_million_output": number(model["api_output_usd_per_million"]),
-                   "usage_input": totals["usage_input"] if totals else "",
-                   "usage_output": totals["usage_output"] if totals else "",
-                   "usage_reasoning": totals["usage_reasoning"] if totals else "",
-                   "study_hardware_usd": (cost * totals["usage_output"] / number(assumptions["tokens_per_million"]))
-                   if totals else ""}
+        keys = [key]
+        high = f"{key}_high"
+        if usage and high in usage:
+            keys.append(high)
+        for emit in keys:
+            totals = (usage or {}).get(emit)
+            for duty in assumptions["duty_cycles"]:
+                cost = price_per_million(hardware, assumptions, boxes, speed,
+                                         number(duty["hours_per_day"]))
+                yield {"axis": "analytic", "model_key": emit, "model": model["name"],
+                       "total_params_b": (">" if model["total_params_b"].get("qualifier") == "greater_than" else "")
+                       + str(number(model["total_params_b"])),
+                       "active_params_b": number(model["active_params_b"]),
+                       "ngram_embedding_params_b": number(model.get("ngram_embedding_params_b")) or "",
+                       "boxes": boxes, "quantization": model["quantization"]["name"],
+                       "decode_tokens_s": speed,
+                       "throughput_estimated": bool(model["decode_tokens_s"].get("estimated", False)),
+                       "duty_cycle": duty["name"],
+                       "hardware_usd_per_million_output": cost,
+                       "api_usd_per_million_output": number(model["api_output_usd_per_million"]),
+                       "usage_input": totals["usage_input"] if totals else "",
+                       "usage_output": totals["usage_output"] if totals else "",
+                       "usage_reasoning": totals["usage_reasoning"] if totals else "",
+                       "study_hardware_usd": (cost * totals["usage_output"] / number(assumptions["tokens_per_million"]))
+                       if totals else ""}
+
 
 
 def markdown_table(rows):

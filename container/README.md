@@ -49,20 +49,11 @@ The runner uses `--no-session --mode json --no-title --no-tools --no-extensions 
 
 Each run also gets `--max-time 600`. In pilot v1, one Rule 3 run made 155 Firecrawl calls over 1,390 s and cost $0.294; normal runs finish in under 130 s. A capped run ends with `stopReason: aborted`, `errorMessage: "Deadline exceeded"`, and exit code 1, so the runner records it as a failed run. omp reports zero usage for the aborted call, so the partial provider charge does not appear in `cost_usd`.
 
-The `freetoken` model uses the `openai-completions` API, `auth: none`, a 65611-token context window, and `compat.thinkingFormat: qwen-chat-template`. At `off`, omp sends `chat_template_kwargs.enable_thinking=false`. A direct endpoint request returned `reasoning_content: null` and `content: "ok"`. Use this command to repeat that check:
-
-```sh
-curl -sS -X POST http://127.0.0.1:11434/v1/chat/completions \
-  -H 'Content-Type: application/json' \
-  -d '{"model":"ornith-1.5-35b-a3b","messages":[{"role":"user","content":"Reply with the single word: ok"}],"chat_template_kwargs":{"enable_thinking":false}}' \
-  | jq '{reasoning_content: .choices[0].message.reasoning_content, content: .choices[0].message.content}'
-```
-
 OMP returned `mcp__firecrawl_search` in an assistant tool call during the OpenRouter tool smoke. Its tool execution completed with `isError=false`. This shows that MCP tools remain callable with the runner flags.
 
 ## Prompt overhead
 
-The six-token Qwen prompt was `Reply with one word: ok`, without a trailing newline (`omp toks`, `qwen3`: 6). With Firecrawl mounted, Qwen 3.8 Flash reported 16388 prompt tokens for both `--system-prompt` and `--system-prompt-template`. Each run reported 4 uncached input tokens and 16384 cached input tokens. Both injected 16382 tokens above the bare prompt. The template is selected because it does not render generated skill or rule sections if those features change. `bench/roster.yml` records `routing.harness_overhead_tokens: 16382`. This includes Firecrawl tool schemas and MCP instructions. Re-measure if the Firecrawl tool list or omp binary changes.
+The six-token Qwen prompt was `Reply with one word: ok`, without a trailing newline (`omp toks`, `qwen3`: 6). With Firecrawl mounted, Qwen 3.8 Flash reported 16388 prompt tokens for both `--system-prompt` and `--system-prompt-template`. Each run reported 4 uncached input tokens and 16384 cached input tokens. Both injected 16382 tokens above the bare prompt. The template is selected because it does not render generated skill or rule sections if those features change. `bench/roster.yml` records this 16382-token overhead in a comment. This includes Firecrawl tool schemas and MCP instructions. Re-measure if the Firecrawl tool list or omp binary changes.
 
 ## Firecrawl rotation
 

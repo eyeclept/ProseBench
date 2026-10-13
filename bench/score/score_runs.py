@@ -18,7 +18,7 @@ INSTANCE_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "
                    "outcome", "label", "flags", "judge_reason", "ordinary_cut",
                    "field_specific_promoted", "ambiguous_flagged")
 RUN_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "repeat", "framing",
-              "routed", "route_reason", "thinking", "cost_usd", "usage_input", "usage_output",
+              "thinking", "cost_usd", "usage_input", "usage_output",
               "usage_cache_read", "usage_cache_write", "usage_reasoning", "duration_s",
               "parse_error", "invalid_edit_count", "malformed_edit_count", "n_tool_calls", "firecrawl_called",
               "TP", "FN", "FP", "TN", "precision", "recall", "collateral_count",
@@ -113,7 +113,7 @@ def score_one(run: dict, all_rows: list[dict], passage: str,
     tool_calls = run.get("tool_calls") or []
     usage = run.get("usage") or {}
     run_row = {key: run.get(key, "") for key in RUN_FIELDS[:7]}
-    for key in ("routed", "route_reason", "thinking", "cost_usd", "duration_s"):
+    for key in ("thinking", "cost_usd", "duration_s"):
         run_row[key] = run.get(key, "")
     for key in ("input", "output", "cache_read", "cache_write", "reasoning"):
         run_row[f"usage_{key}"] = usage.get(key, 0)

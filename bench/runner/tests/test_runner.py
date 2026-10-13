@@ -32,10 +32,10 @@ prompt = Path(args[args.index("--prompt-file") + 1]).read_text()
 with open(os.environ["FAKE_TRACE"], "a") as trace:
     trace.write(json.dumps({"model": model, "thinking": level, "prompt": prompt}) + "\\n")
 mode = os.environ.get("FAKE_MODE", "success")
-if mode == "retry" and model.endswith("ornith"):
+if mode == "retry" and model == "fake/qwen36":
     print(json.dumps({"type": "error", "message": "endpoint unavailable"}))
     sys.exit(1)
-if mode == "empty" and model.endswith("ornith"):
+if mode == "empty" and model == "fake/qwen36":
     print(json.dumps({"type": "agent_end", "messages": []}))
     sys.exit(0)
 if mode.startswith("ratelimit"):
@@ -60,7 +60,7 @@ def sandbox(monkeypatch):
             passage_dir = root / "bench" / "corpus" / "out" / name
             passage_dir.mkdir(parents=True)
             (passage_dir / "injected.md").write_text("A word and a claim.\n", encoding="utf-8")
-        roster = {"scored": {"ornith": {"model": "fake/ornith", "thinking": "low"}, "qwen38flash": {"model": "fake/qwen38", "thinking": "none"}}, "fallback": {"qwen36": {"model": "fake/qwen36", "thinking": "low"}}, "routing": {"t1_projection_limit_tokens": 60000, "harness_overhead_tokens": 0}}
+        roster = {"scored": {"qwen36": {"model": "fake/qwen36", "thinking": "low"}, "qwen38flash": {"model": "fake/qwen38", "thinking": "none"}}}
         (root / "bench" / "roster.yml").write_text(yaml.safe_dump(roster), encoding="utf-8")
         (root / "bench" / "runner").mkdir()
         (root / "container").mkdir()
@@ -161,25 +161,16 @@ def test_record_resume_force_and_atomic(sandbox, monkeypatch):
     assert not list(path.parent.glob(".R1_P1_r1.json.*"))
 
 
-def test_column_only_fallback_and_single_attempt(sandbox, monkeypatch):
+def test_retry_and_empty_are_single_attempt(sandbox, monkeypatch):
     root, roster, wrapper = sandbox
-    roster["routing"]["t1_projection_limit_tokens"] = 4000
-    with pytest.raises(ValueError, match="whole Ornith column"):
-        run_matrix.execute(root, "ornith", 1, "P1", 1, "verbatim", roster, str(wrapper))
-    assert not trace(root)
-    roster["routing"]["t1_projection_limit_tokens"] = 60000
     monkeypatch.setenv("FAKE_MODE", "retry")
-    failed = run_matrix.execute(root, "ornith", 2, "P1", 1, "verbatim", roster, str(wrapper))
-    assert not failed["routed"] and failed["route_reason"] is None and failed["error"]
-    assert [entry["model"] for entry in trace(root)] == ["fake/ornith"]
+    failed = run_matrix.execute(root, "qwen36", 2, "P1", 1, "verbatim", roster, str(wrapper))
+    assert failed["error"]
+    assert [entry["model"] for entry in trace(root)] == ["fake/qwen36"]
     monkeypatch.setenv("FAKE_MODE", "empty")
-    empty = run_matrix.execute(root, "ornith", 3, "P1", 1, "verbatim", roster, str(wrapper))
-    assert not empty["routed"] and empty["error"] == "empty final assistant text"
-    assert [entry["model"] for entry in trace(root)][-1] == "fake/ornith"
-    monkeypatch.setenv("FAKE_MODE", "success")
-    column = run_matrix.execute(root, "ornith", 4, "P1", 1, "verbatim", roster, str(wrapper), column_fallback=True)
-    assert column["routed"] and column["route_reason"] == "t1_column_fallback"
-    assert column["model_key"] == "ornith" and column["endpoint_model"] == "fake/qwen36"
+    empty = run_matrix.execute(root, "qwen36", 3, "P1", 1, "verbatim", roster, str(wrapper))
+    assert empty["error"] == "empty final assistant text"
+    assert [entry["model"] for entry in trace(root)][-1] == "fake/qwen36"
 
 
 def test_unverified_refusal_and_plan_guard(sandbox, monkeypatch, capsys):
@@ -188,12 +179,12 @@ def test_unverified_refusal_and_plan_guard(sandbox, monkeypatch, capsys):
     (root / "bench" / "roster.yml").write_text(yaml.safe_dump(roster))
     assert run_matrix.main(["--models", "qwen38flash", "--pilot", "--yes"]) == 2
     assert not trace(root)
-    assert run_matrix.main(["--models", "ornith", "--pilot"]) == 2
+    assert run_matrix.main(["--models", "qwen36", "--pilot"]) == 2
     assert not trace(root)
     assert "Planned runs: 6" in capsys.readouterr().out
-    assert run_matrix.main(["--models", "ornith", "--pilot", "--dry-run"]) == 0
+    assert run_matrix.main(["--models", "qwen36", "--pilot", "--dry-run"]) == 0
     output = capsys.readouterr().out
-    assert "Planned runs: 6" in output and output.count("projected_tokens=") == 6
+    assert "Planned runs: 6" in output
     assert not trace(root)
 
 
@@ -207,7 +198,7 @@ def test_unparseable_record(sandbox, monkeypatch):
 @pytest.mark.parametrize("key,status,mode,succeeds,retries,calls", [
     ("qwen38flash", "429", "ratelimit_once", True, 1, 2),
     ("qwen38flash", "429", "ratelimit_always", False, 2, 3),
-    ("ornith", "503", "ratelimit_once", True, 1, 2),
+    ("qwen36", "503", "ratelimit_once", True, 1, 2),
 ])
 def test_endpoint_busy_backoff(sandbox, monkeypatch, key, status, mode, succeeds, retries, calls):
     root, roster, wrapper = sandbox
@@ -218,30 +209,29 @@ def test_endpoint_busy_backoff(sandbox, monkeypatch, key, status, mode, succeeds
     assert record["rate_limit_retries"] == retries
     assert len(trace(root)) == calls
     assert (record["error"] is None) == succeeds
-    assert not record["routed"]
     if not succeeds:
         assert f"{status} Provider returned error" in record["error"]
 
 
-def test_nine_column_dry_run_counts(sandbox, capsys):
+def test_dry_run_counts(sandbox, capsys):
     root, _, _ = sandbox
     shutil.copyfile(Path(__file__).resolve().parents[2] / "roster.yml", root / "bench" / "roster.yml")
     assert run_matrix.main(["--dry-run", "--pilot", "--models", "all"]) == 0
     output = capsys.readouterr().out
-    assert "Planned runs: 54" in output and output.count("projected_tokens=") == 54
+    assert "Planned runs: 108" in output
     assert run_matrix.main(["--dry-run", "--models", "all"]) == 0
     output = capsys.readouterr().out
-    assert "Planned runs: 486" in output and output.count("projected_tokens=") == 486
+    assert "Planned runs: 972" in output
     assert not trace(root)
 
 
 def test_cli_uses_wrapper_and_resumes(sandbox, capsys):
     root, _, _ = sandbox
-    argv = ["--models", "ornith", "--rules", "1", "--passages", "P1", "--repeats", "1", "--framings", "verbatim", "--yes"]
+    argv = ["--models", "qwen36", "--rules", "1", "--passages", "P1", "--repeats", "1", "--framings", "verbatim", "--yes"]
     assert run_matrix.main(argv) == 0
     assert "Planned runs: 1" in capsys.readouterr().out
     assert len(trace(root)) == 1
-    assert (root / "runs" / "ornith" / "R1_P1_r1.json").is_file()
+    assert (root / "runs" / "qwen36" / "R1_P1_r1.json").is_file()
     assert run_matrix.main(argv) == 0
     assert len(trace(root)) == 1
     assert run_matrix.main(argv + ["--force"]) == 0

@@ -1,18 +1,23 @@
-# omp model strings used inside the container. thinking = minimum level the model accepts, confirmed by
-# container/smoke.sh. Quote every thinking value: YAML 1.1 parses bare off/on as booleans.
+# omp model strings used inside the container. thinking is the minimum accepted level for base keys
+# and high for _high keys, both confirmed by container/smoke.py. Quote every thinking value: YAML 1.1
+# parses bare off/on as booleans.
+# Measured harness overhead: 16382 tokens.
 scored:
-  ornith:         {model: freetoken/ornith-1.5-35b-a3b,        tier: T1, lab: local,     thinking: "off"}
+  qwen36:         {model: openrouter/qwen/qwen3.6-35b-a3b,     tier: T1, lab: Alibaba,   thinking: "off"}
   qwen38flash:    {model: openrouter/qwen/qwen3.8-flash,       tier: T2, lab: Alibaba,   thinking: "off"}
   mistral_small4: {model: openrouter/mistralai/mistral-small-2603, tier: T2, lab: Mistral, thinking: "off"}
-  glm53flash:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "minimal"}  # reasoning is mandatory on OpenRouter; off/none return 400 or fall back to default reasoning
+  glm53flash:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "minimal"}  # reasoning is mandatory on OpenRouter; off/none return 400 or fall back to default reasoning. OpenRouter lists its efforts as max/high/low, so minimal likely reaches the provider as low.
   mimo26pro:      {model: openrouter/xiaomi/mimo-v2.6-pro,     tier: T4, lab: Xiaomi,    thinking: "off"}
   mistral_large4: {model: openrouter/mistralai/mistral-large-4-0, tier: T4, lab: Mistral, thinking: "off"}
   haiku55:        {model: anthropic/claude-haiku-5-5,          tier: T1-control, lab: Anthropic, thinking: "off"}
   sonnet55:       {model: anthropic/claude-sonnet-5-5,         tier: T3-control, lab: Anthropic, thinking: "off"}
   opus55:         {model: anthropic/claude-opus-5-5,           tier: T4-control, lab: Anthropic, thinking: "low"}  # off omits effort; Anthropic then uses its higher default (511 vs 227 output tokens on one puzzle)
-fallback:
-  qwen36:         {model: openrouter/qwen/qwen3.6-35b-a3b,     replaces: ornith, thinking: "off"}
-routing:
-  t1_projection_limit_tokens: 60000
-  harness_overhead_tokens: 16382
-  ornith_context_ceiling: 65611
+  qwen36_high:         {model: openrouter/qwen/qwen3.6-35b-a3b,     tier: T1, lab: Alibaba,   thinking: "high"}
+  qwen38flash_high:    {model: openrouter/qwen/qwen3.8-flash,       tier: T2, lab: Alibaba,   thinking: "high"}
+  mistral_small4_high: {model: openrouter/mistralai/mistral-small-2603, tier: T2, lab: Mistral, thinking: "high"}
+  glm53flash_high:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "high"}
+  mimo26pro_high:      {model: openrouter/xiaomi/mimo-v2.6-pro,     tier: T4, lab: Xiaomi,    thinking: "high"}
+  mistral_large4_high: {model: openrouter/mistralai/mistral-large-4-0, tier: T4, lab: Mistral, thinking: "high"}
+  haiku55_high:        {model: anthropic/claude-haiku-5-5,          tier: T1-control, lab: Anthropic, thinking: "high"}
+  sonnet55_high:       {model: anthropic/claude-sonnet-5-5,         tier: T3-control, lab: Anthropic, thinking: "high"}
+  opus55_high:         {model: anthropic/claude-opus-5-5,           tier: T4-control, lab: Anthropic, thinking: "high"}

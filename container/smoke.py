@@ -1,5 +1,6 @@
 """Smoke-test the isolated omp harness and record model thinking levels."""
 
+import argparse
 import json
 import logging
 from pathlib import Path
@@ -67,35 +68,56 @@ def run_one(model: str, level: str, prompt: Path, events: Path) -> dict:
         "stop": message.get("stopReason", "no-assistant-event"),
         "error": message.get("errorMessage") or proc.stderr.strip(),
         "error_status": message.get("errorStatus"),
-        "reasoning_blocks": [part for part in message.get("content", []) if part.get("type") == "thinking"],
     }
 
 
-def main() -> int:
+def _keys(spec: str, scored: dict) -> list[str]:
+    if spec == "all":
+        return list(scored)
+    items = spec.split(",")
+    if not items or any(item not in scored for item in items) or len(set(items)) != len(items):
+        raise ValueError(
+            f"Invalid models: {spec}; choose comma-separated values from {', '.join(scored)} or all"
+        )
+    return items
+
+
+def _probe_levels(key: str) -> tuple[str, ...]:
+    if key.endswith("_high"):
+        return ("high",)
+    return LEVELS
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--models", default="all", help="comma-separated scored model keys, or all")
+    args = parser.parse_args(argv)
     roster = yaml.safe_load(ROSTER.read_text(encoding="utf-8"))
+    scored = roster["scored"]
     records = []
     costs = 0.0
     auth = claude_authenticated()
     with tempfile.TemporaryDirectory(prefix=".smoke-", dir=CONTAINER) as scratch:
         prompt = Path(scratch) / "prompt.md"
         prompt.write_text(PROMPT, encoding="ascii")
-        for key, spec in (*roster["scored"].items(), *roster["fallback"].items()):
+        for key in _keys(args.models, scored):
+            spec = scored[key]
             model = spec["model"]
             if model.startswith("anthropic/") and not auth:
                 records.append((key, "needs-login", "unverified", None))
                 continue
-            for level in LEVELS:
+            result = None
+            for level in _probe_levels(key):
                 result = run_one(model, level, prompt, Path(scratch) / "events.jsonl")
                 costs += result["cost"]
                 if (result["stop"] == "stop" and result["exit"] == 0
-                        and re.search(r"\bok\b", result["text"], flags=re.IGNORECASE)
-                        and not (key == "ornith" and result["reasoning_blocks"])):
+                        and re.search(r"\bok\b", result["text"], flags=re.IGNORECASE)):
                     records.append((key, "pass", level, result))
                     break
                 status = result["error_status"]
                 error = str(result["error"])
                 if status == 429:
-                    records.append((key, "endpoint-busy" if key == "ornith" else "rate-limited", "unverified", result))
+                    records.append((key, "rate-limited", "unverified", result))
                     break
                 if status == 400 and any(phrase in error.lower() for phrase in ("thinking", "reasoning", "effort")):
                     continue

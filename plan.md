@@ -60,8 +60,7 @@ Anthropic does not publish parameter counts. The Claude placements below are siz
 
 | Rung | Open model | Lab | Total / active | GB10 boxes | OpenRouter id | API price per million tokens |
 |---|---|---|---|---|---|---|
-| T1, 35B class | Ornith 1.5 35B-A3B | local | 35B / 3B | 1 | (GpuBroker, not OpenRouter) | free, self-hosted |
-| T1 fallback | Qwen3.6 35B-A3B | Alibaba | 35B / 3B | 1 | `qwen/qwen3.6-35b-a3b` | $0.10 / $0.95 |
+| T1, 35B class | Qwen3.6 35B-A3B | Alibaba | 35B / 3B | 1 | `qwen/qwen3.6-35b-a3b` | $0.10 / $0.95 |
 | T2, 1 GB10 | Qwen3.8 Flash | Alibaba | 125B / 6B, plus 51B n-gram | 1 | `qwen/qwen3.8-flash` | $0.15 / $0.47 |
 | T2, 1 GB10 | Mistral Small 4 | Mistral | 119B / 6B | 1 | `mistralai/mistral-small-2603` | $0.15 / $0.60 |
 | T3, 2 GB10 | GLM-5.3-Flash | Z.ai | 320B / 18B | 2 | `z-ai/glm-5.3-flash` | $0.026 / $0.90 |
@@ -73,9 +72,7 @@ Anthropic does not publish parameter counts. The Claude placements below are siz
 
 Prices are OpenRouter list prices fetched 2026-10-12. Haiku 5.5 is $0.10 / $0.50 for prompts under 100,000 tokens. Scored calls stay under that cliff. Mistral Small 4 reports 6B active parameters, 8B if embeddings and the output layer are counted (Mistral AI, 2026a). Qwen3.8 Flash on OpenRouter is the production SKU for the Qwen3.8-Flash-Next weights (Qwen Team, 2026a). Flash-Next is 125B total with 6B active, plus 51B n-gram embedding and 4B multi-token prediction.
 
-Ornith is the model I currently run in production. It is not on OpenRouter. If the local endpoint fails, the T1 column moves in full to `qwen/qwen3.6-35b-a3b`. Hardware-lease limits are the expected cause. That model is the same 35B total, 3B active class, with 262,144 tokens of context.
-
-I log the switch. The report states which endpoint produced the T1 results. Qwen3.6 is not a separate scored column unless that switch happens.
+Ornith is the model I currently run in production. It ran the first full matrix in the T1 column. I then moved the T1 column in full to Qwen3.6 35B-A3B (`qwen/qwen3.6-35b-a3b`) for the reasoning-level comparison. Qwen3.6 is the same 35B total, 3B active class, with 262,144 tokens of context. The Ornith results are archived and not scored.
 
 Working pairings, not findings. I treat GLM-5.3-Flash as a Sonnet 5.5-class open model, a step weaker. I treat MiMo-V2.6-Pro as an Opus 5.5-class open model, also a step weaker. That gap is the present difference between US frontier labs and Chinese open-weight labs. The matrix tests both pairings on this editing task.
 
@@ -83,7 +80,7 @@ Mistral Large 4 is the European 1T example next to MiMo. Mistral Small 4 plays t
 
 Mistral published Large 4 as an API preview on 6 October 2026. Weights are due 27 October 2026 (Mistral AI, 2026b). The final report is due week 15. Scoring starts on the API now. The hardware-cost axis for Large 4 stays analytic until the weights land.
 
-**Design.** Three passages times three repeat runs per cell separates item variance from sampling variance. Version 1 conflated the two. The base matrix is 5 rules times 3 passages times 3 repeats, or 45 runs per model. Rule 3's second prompt framing adds 9 more, for 54 runs per model. Nine scored columns give 486 runs.
+**Design.** Three passages times three repeat runs per cell separates item variance from sampling variance. Version 1 conflated the two. The base matrix is 5 rules times 3 passages times 3 repeats, or 45 runs per model. Rule 3's second prompt framing adds 9 more, for 54 runs per model. Each of the nine models runs twice: once at its lowest reasoning level and once at high. That gives 18 scored columns and 972 runs.
 
 At a 4,000-input / 3,100-output token budget, OpenRouter list prices project about $7.55. About $6.40 of that falls on the Claude controls. My existing Claude subscription covers those calls. The budget excludes reasoning traces and harness overhead. The pilot measures both, and I re-project the cost from those numbers.
 
@@ -101,7 +98,7 @@ Rules 1 through 5 are self-contained. Every fact a call needs to satisfy the rub
 
 Measured on the development workstation, the default harness injects 27,792 tokens of context for a six-token prompt. The container's pinned configuration, with only Firecrawl attached, cuts that to 16,382 tokens per call. Each run also stops after 600 seconds, so a search loop cannot run unbounded.
 
-I set thinking to the minimum each model permits, verified per model. Opus 5.5 and Sonnet 5.5 cannot disable reasoning on the Chat Completions path. Haiku 5.5 can. Mistral Small 4 accepts `reasoning_effort=none`. OpenRouter makes GLM-5.3-Flash reasoning mandatory, so I set it to `minimal`, its lowest level.
+Each model runs at two reasoning levels. The first is the minimum each model permits, verified per model. Haiku 5.5 and Sonnet 5.5 accept `off`. Opus 5.5 at `off` omits the effort setting and gets the provider's higher default, so it runs at `low`. Mistral Small 4 accepts `reasoning_effort=none`. OpenRouter makes GLM-5.3-Flash reasoning mandatory and lists only `low`, `high`, and `max`. I set `minimal`, which most likely reaches the provider as `low`. The second level is `high` for every model. The comparison reports, per model, the change in quality and in price between the two levels.
 
 **Cost model.** The cost model has two axes. Per-token API cost comes from the harness's own usage accounting. That accounting reports list-price cost even on subscription-routed calls. I model hardware cost from published specifications: unit price and memory ceiling per box, quantized weight size per model, and published throughput. The hardware axis is analytic. The report will label it as such.
 
@@ -127,7 +124,7 @@ Status on 12 October 2026. I submitted the week-4 plan. The three `gpt-oss-120b`
 
 ## Resources
 
-Models reach the container through three paths. OpenRouter serves the commercial open-weight columns, including the T1 fallback. My Claude subscription, logged in through OAuth inside the container, serves the three Claude 5.5 controls. A local GpuBroker-leased endpoint serves Ornith. The corpus passes and the judge reach Grok 4.6 through my xAI OAuth subscription, outside the container.
+Models reach the container through two paths. OpenRouter serves the commercial open-weight columns, including the T1 column. My Claude subscription, logged in through OAuth inside the container, serves the three Claude 5.5 controls. The corpus passes and the judge reach Grok 4.6 through my xAI OAuth subscription, outside the container.
 
 Scoring, analysis, and plotting use Python 3.14 with pandas, scipy, and statsmodels for Wilson intervals and paired significance tests. The project repository holds the corpus, the container definition, the runner, the rubrics, and every raw run log.
 
@@ -139,21 +136,11 @@ Three further mitigations apply. The answer key fixes ground truth before any sc
 
 The paired must-not-change instances cannot be cleared by pattern-matching on the planted form alone. An easy violation still costs a model points if it over-applies.
 
-**Judge agreement may be too low to use.** Kappa below 0.7 against my hand-scored subset means I cannot use the judge. The affected rules drop to hand scoring at reduced sample size. The deterministic Rule 4 construct acts as a floor check. A judge that disagrees there has failed to apply the rubric as written.
-
-**Ornith's endpoint may fail.** The self-hosted lease caps at 65,611 tokens of prompt plus generation. The longest essay is 2,289 words. A single call's worst case is one rule's text plus the passage plus a full rewrite. That is about 7,044 tokens, 11% of the budget. The ceiling should not bind during the scored matrix.
-
-The more likely failure is the lease itself. The box goes down, the context cap is cut, or the endpoint returns errors. The switch rule is fixed in advance. Qwen3.6 (`qwen/qwen3.6-35b-a3b`) replaces the whole T1 column or none of it. That model is the same size class at 262,144 tokens of context, four times Ornith's ceiling. A busy endpoint is not a switch trigger. When GpuBroker cannot lease GPU memory, it returns HTTP 503 with a 120-second retry hint, and the runner waits and resends. A prompt projected above 60,000 tokens stops the run, so the decision to switch stays a column-level call.
-
-I log the switch. The report states which endpoint produced the T1 results. Measured token counts from the pilot set the 60,000-token projection. Qwen3.8 Flash is not the T1 fallback. It is a larger, scored T2 column.
-
-Document-scale work outside the matrix can still overflow. A longer source essay can push past 65,611. So can a revision pass that resends the document with its prior edit. An audit prompt that carries two versions at once can do the same. A report-generation pass over accumulated results can too.
-
-The Ornith endpoint fails closed on overflow. It returns a Hypertext Transfer Protocol (HTTP) 400 status with an explicit token count. An overflow is always visible.
+**Judge agreement may be too low to use.** The 20% hand-scored subset came to 2,355 instances on the full matrix, so I replaced it. Two AI raters, Grok 4.6 and GPT-6.1 Sol, label every instance blind to the scorer and to each other. Kappa below 0.7 between the raters, or between a rater and the scorer, marks a rule whose labels I cannot use. This is agreement among automated raters, not human validation. The report states that limit.
 
 **Mistral Large 4 weights may slip.** Scoring does not wait on the weight files. The API column (`mistralai/mistral-large-4-0`) is live. If weights miss the 27 October date, the hardware-cost line for Large 4 stays labeled analytic. The scored quality column does not depend on the weight files.
 
-**Thinking-mode asymmetry.** Opus 5.5 and Sonnet 5.5 cannot disable reasoning. A uniform setting is unreachable. The policy is the minimum each model permits. I publish that as a per-model table. I record reasoning tokens in a separate cost column.
+**Thinking-mode asymmetry.** The lowest level differs by model, so a uniform low setting is unreachable. The policy is the minimum each model permits, plus `high` for all. I publish the levels as a per-model table. I record reasoning tokens in a separate cost column.
 
 ## Final Delivery
 

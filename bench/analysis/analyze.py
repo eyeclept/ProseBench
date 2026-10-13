@@ -18,16 +18,18 @@ INSTANCE_COLUMNS = {"run_id", "model_key", "rule", "passage", "repeat", "framing
                     "instance_id", "kind", "polarity", "subtype", "outcome", "label",
                     "flags", "ordinary_cut", "field_specific_promoted", "ambiguous_flagged"}
 RUN_COLUMNS = {"run_id", "model_key", "rule", "passage", "repeat", "framing",
-               "routed", "cost_usd", "usage_reasoning", "parse_error",
+               "cost_usd", "usage_output", "usage_reasoning", "parse_error",
                "invalid_edit_count", "firecrawl_called", "TP", "collateral_count",
                "other_rule_instance", "uncatalogued_text", "fabricated_numbers"}
-MODELS = ("ornith", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro",
-          "mistral_large4", "haiku55", "sonnet55", "opus55")
-PAIRS = (("ornith", "qwen38flash"), ("qwen38flash", "glm53flash"),
-         ("mistral_small4", "glm53flash"), ("glm53flash", "mimo26pro"),
-         ("glm53flash", "mistral_large4"), ("ornith", "haiku55"),
-         ("glm53flash", "sonnet55"), ("mimo26pro", "opus55"))
-RUN_NUMERIC = ("cost_usd", "usage_reasoning", "invalid_edit_count", "TP",
+BASE_MODELS = ("qwen36", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro",
+               "mistral_large4", "haiku55", "sonnet55", "opus55")
+MODELS = BASE_MODELS + tuple(f"{key}_high" for key in BASE_MODELS)
+BASE_PAIRS = (("qwen36", "qwen38flash"), ("qwen38flash", "glm53flash"),
+              ("mistral_small4", "glm53flash"), ("glm53flash", "mimo26pro"),
+              ("glm53flash", "mistral_large4"), ("qwen36", "haiku55"),
+              ("glm53flash", "sonnet55"), ("mimo26pro", "opus55"))
+PAIRS = BASE_PAIRS + tuple((f"{left}_high", f"{right}_high") for left, right in BASE_PAIRS)
+RUN_NUMERIC = ("cost_usd", "usage_output", "usage_reasoning", "invalid_edit_count", "TP",
                "collateral_count", "other_rule_instance", "uncatalogued_text")
 KEY = ["model_key", "run_id"]
 CELL = ["rule", "framing", "passage", "instance_id", "repeat"]
@@ -55,7 +57,7 @@ def load_scores(scores: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
         frame["repeat"] = pd.to_numeric(frame["repeat"], errors="raise").astype(int)
     for key in RUN_NUMERIC:
         runs[key] = pd.to_numeric(runs[key], errors="raise")
-    for key in ("routed", "parse_error", "firecrawl_called"):
+    for key in ("parse_error", "firecrawl_called"):
         normalized = runs[key].str.lower()
         if not normalized.isin(("true", "false")).all():
             raise ValueError(f"Invalid boolean in runs.csv: {key}")
@@ -66,7 +68,7 @@ def load_scores(scores: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
         raise ValueError("Invalid instance label")
     if not instances["kind"].isin(("native", "planted")).all():
         raise ValueError("Invalid instance kind")
-    joined = instances.merge(runs[KEY + ["routed"]], on=KEY, how="left", validate="many_to_one", indicator=True)
+    joined = instances.merge(runs[KEY], on=KEY, how="left", validate="many_to_one", indicator=True)
     if not joined["_merge"].eq("both").all():
         raise ValueError("Instance without matching run")
     for key in ("rule", "passage", "repeat", "framing"):
@@ -206,6 +208,90 @@ def cost_table(runs: pd.DataFrame) -> pd.DataFrame:
     return grouped
 
 
+def order_model_keys(frame: pd.DataFrame) -> pd.DataFrame:
+    """Keep roster order and skip keys that are absent from the frame."""
+    present = set(frame["model_key"].astype(str))
+    categories = [key for key in MODELS if key in present]
+    extras = [key for key in frame["model_key"].astype(str).unique() if key not in MODELS]
+    ordered = frame.copy()
+    ordered["model_key"] = pd.Categorical(ordered["model_key"].astype(str),
+                                          categories=categories + extras, ordered=True)
+    return ordered
+
+
+def _condition_stats(instances: pd.DataFrame, runs: pd.DataFrame) -> dict[str, float]:
+    """Pool recall, keep-damage, failures, usage, and cost for one condition slice."""
+    counts = instances["label"].value_counts()
+    tp, fn = (int(counts.get(label, 0)) for label in ("TP", "FN"))
+    recall = tp / (tp + fn) if tp + fn else float("nan")
+    keep = instances[instances.polarity == "keep"]
+    keep_counts = keep["label"].value_counts()
+    keep_fp, keep_tn = int(keep_counts.get("FP", 0)), int(keep_counts.get("TN", 0))
+    keep_damage = keep_fp / (keep_fp + keep_tn) if keep_fp + keep_tn else float("nan")
+    cost = float(runs.cost_usd.sum()) if len(runs) else 0.0
+    return dict(recall=recall, keep_damage_fp_rate=keep_damage,
+                failed_runs=int(runs.parse_error.sum()) if len(runs) else 0,
+                median_usage_output=float(runs.usage_output.median()) if len(runs) else float("nan"),
+                median_usage_reasoning=float(runs.usage_reasoning.median()) if len(runs) else float("nan"),
+                cost_usd=cost, cost_per_tp=cost / tp if tp else float("nan"))
+
+
+def reasoning_effect(instances: pd.DataFrame, runs: pd.DataFrame) -> pd.DataFrame:
+    """Compare min vs high reasoning on quality, usage, and API cost."""
+    columns = ["model_key", "rule", "recall_min", "recall_high", "recall_delta",
+               "keep_damage_fp_rate_min", "keep_damage_fp_rate_high",
+               "failed_runs_min", "failed_runs_high",
+               "median_usage_output_min", "median_usage_output_high",
+               "median_usage_reasoning_min", "median_usage_reasoning_high",
+               "cost_usd_min", "cost_usd_high", "cost_ratio",
+               "cost_per_tp_min", "cost_per_tp_high"]
+    present = set(instances.model_key.astype(str))
+    pairs = [model for model in BASE_MODELS if model in present and f"{model}_high" in present]
+    rows = []
+
+    def add(model: str, rule, min_inst: pd.DataFrame, high_inst: pd.DataFrame,
+            min_run: pd.DataFrame, high_run: pd.DataFrame) -> None:
+        if min_inst.empty or high_inst.empty:
+            return
+        minimum = _condition_stats(min_inst, min_run)
+        high = _condition_stats(high_inst, high_run)
+        cost_ratio = high["cost_usd"] / minimum["cost_usd"] if minimum["cost_usd"] else float("nan")
+        rows.append(dict(model_key=model, rule=rule,
+                         recall_min=minimum["recall"], recall_high=high["recall"],
+                         recall_delta=high["recall"] - minimum["recall"],
+                         keep_damage_fp_rate_min=minimum["keep_damage_fp_rate"],
+                         keep_damage_fp_rate_high=high["keep_damage_fp_rate"],
+                         failed_runs_min=minimum["failed_runs"], failed_runs_high=high["failed_runs"],
+                         median_usage_output_min=minimum["median_usage_output"],
+                         median_usage_output_high=high["median_usage_output"],
+                         median_usage_reasoning_min=minimum["median_usage_reasoning"],
+                         median_usage_reasoning_high=high["median_usage_reasoning"],
+                         cost_usd_min=minimum["cost_usd"], cost_usd_high=high["cost_usd"],
+                         cost_ratio=cost_ratio,
+                         cost_per_tp_min=minimum["cost_per_tp"], cost_per_tp_high=high["cost_per_tp"]))
+
+    for model in pairs:
+        high_key = f"{model}_high"
+        min_inst = instances[instances.model_key.astype(str) == model]
+        high_inst = instances[instances.model_key.astype(str) == high_key]
+        min_run = runs[runs.model_key.astype(str) == model]
+        high_run = runs[runs.model_key.astype(str) == high_key]
+        shared = set(min_inst.rule) & set(high_inst.rule)
+        add(model, "all", min_inst[min_inst.rule.isin(shared)], high_inst[high_inst.rule.isin(shared)],
+            min_run[min_run.rule.isin(shared)], high_run[high_run.rule.isin(shared)])
+    for model in pairs:
+        high_key = f"{model}_high"
+        min_inst = instances[instances.model_key.astype(str) == model]
+        high_inst = instances[instances.model_key.astype(str) == high_key]
+        min_run = runs[runs.model_key.astype(str) == model]
+        high_run = runs[runs.model_key.astype(str) == high_key]
+        for rule in sorted(set(min_inst.rule) & set(high_inst.rule)):
+            add(model, rule, min_inst[min_inst.rule == rule], high_inst[high_inst.rule == rule],
+                min_run[min_run.rule == rule], high_run[high_run.rule == rule])
+    return pd.DataFrame(rows, columns=columns)
+
+
+
 def routing(quality: pd.DataFrame, cost: pd.DataFrame, thresholds: tuple[float, ...]) -> pd.DataFrame:
     """Choose the cheapest qualifying model for each rule and threshold."""
     joined = quality.merge(cost[["rule", "model_key", "mean_cost_usd_per_run"]], on=["rule", "model_key"])
@@ -272,16 +358,13 @@ def plot_figures(out: Path, quality: pd.DataFrame, cost: pd.DataFrame) -> None:
     plt.close(fig)
 
 
-def analyze(scores: Path, out: Path, min_lower: float = 0.80, include_routed: bool = False) -> dict[str, pd.DataFrame]:
-    """Produce all tables and figures; always report routed Ornith separately."""
+def analyze(scores: Path, out: Path, min_lower: float = 0.80) -> dict[str, pd.DataFrame]:
+    """Produce all tables and figures from scored instance and run CSVs."""
     if not 0 <= min_lower <= 1:
         raise ValueError("--min-lower must be between 0 and 1")
     instances, runs = load_scores(scores)
-    routed = runs[(runs.model_key == "ornith") & runs.routed]
-    routed_instances = instances[instances.set_index(KEY).index.isin(routed.set_index(KEY).index)]
-    if not include_routed:
-        runs = runs[~((runs.model_key == "ornith") & runs.routed)]
-        instances = instances[~((instances.model_key == "ornith") & instances.routed)]
+    instances = order_model_keys(instances)
+    runs = order_model_keys(runs)
     out.mkdir(parents=True, exist_ok=True)
     quality = metrics(instances)
     cost = cost_table(runs)
@@ -290,12 +373,11 @@ def analyze(scores: Path, out: Path, min_lower: float = 0.80, include_routed: bo
               "Run flags": run_flags(runs), "Repeat stability": repeat_stability(instances),
               "Passage recall spread": passage_spread(instances), "Paired tiers": paired_tiers(instances),
               "API cost": cost, "Routing": routing(quality, cost, (0.70, 0.90, min_lower)),
-              "Routed Ornith": metrics(routed_instances), "Routed Ornith cost": cost_table(routed),
-              "Routed Ornith flags": run_flags(routed)}
+              "Reasoning effect": reasoning_effect(instances, runs)}
     for name, frame in tables.items():
         note = "Claude cost is list-price-equivalent under subscription." if name == "API cost" else ""
-        if name.startswith("Routed Ornith"):
-            note = f"Routed Ornith runs: {len(routed)}. Excluded from the Ornith column by default."
+        if name == "Reasoning effect":
+            note = "All-rules is the headline row. Claude cost is list-price-equivalent under subscription."
         if name == "Repeat stability":
             note = "Only complete three-repeat instance cells count. Rule 3 framings are separate cells."
         if name == "Collateral per run":
@@ -310,9 +392,8 @@ def main() -> None:
     parser.add_argument("--scores", type=Path, default=Path("scores"))
     parser.add_argument("--out", type=Path, default=Path("analysis_out"))
     parser.add_argument("--min-lower", type=float, default=0.80)
-    parser.add_argument("--include-routed", action="store_true")
     args = parser.parse_args()
-    tables = analyze(args.scores, args.out, args.min_lower, args.include_routed)
+    tables = analyze(args.scores, args.out, args.min_lower)
     print(f"Wrote {len(tables)} tables and {len(list(args.out.glob('*.png')))} figures to {args.out}")
 
 

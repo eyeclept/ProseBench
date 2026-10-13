@@ -79,7 +79,7 @@ def fixture_data():
 def run(rule, edits, *, repeat=1):
     return {"run_id": f"R{rule}_P1_r{repeat}", "model_key": "fixture", "endpoint_model": "fixture-model",
             "rule": rule, "passage": "P1", "repeat": repeat, "framing": "verbatim",
-            "routed": False, "route_reason": "", "thinking": "none", "cost_usd": 0.0,
+            "thinking": "none", "cost_usd": 0.0,
             "usage": {"input": 2, "output": 3, "cache_read": 0, "cache_write": 0, "reasoning": 0},
             "duration_s": 0.1, "tool_calls": [], "parse_error": None,
             "edits": [{"original": before, "replacement": after, "reason": "fixture"}

@@ -18,8 +18,10 @@ logger = logging.getLogger(__name__)
 KEY = ["model_key", "run_id", "instance_id"]
 CONVERT = {"correct": {"keep": "TN", "change": "TP", "flag": "TP"},
            "incorrect": {"keep": "FP", "change": "FN", "flag": "FN"}}
-ORDER = ["ornith", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro", "mistral_large4",
-         "haiku55", "sonnet55", "opus55"]
+ORDER = ["qwen36", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro", "mistral_large4",
+         "haiku55", "sonnet55", "opus55", "qwen36_high", "qwen38flash_high", "mistral_small4_high",
+         "glm53flash_high", "mimo26pro_high", "mistral_large4_high", "haiku55_high", "sonnet55_high",
+         "opus55_high"]
 
 
 def _rater_labels(path: Path, name: str) -> pd.DataFrame:
@@ -57,6 +59,8 @@ def recall_table(joined: pd.DataFrame) -> pd.DataFrame:
     rows = []
     for model in ORDER:
         group = joined[joined.model_key == model]
+        if group.empty:
+            continue
         row = {"model": model}
         for name in ("scorer", "grok", "gpt"):
             tp, fn = (group[name] == "TP").sum(), (group[name] == "FN").sum()

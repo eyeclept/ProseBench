@@ -21,7 +21,7 @@ from bench.runner.prompt import assemble
 
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
-# Endpoint-busy backoff (seconds). GpuBroker's 503 asks for retry-after-ms=120000; OpenRouter 429s hit Mistral Small 4.
+# Endpoint-busy backoff (seconds). OpenRouter 429s hit Mistral Small 4.
 BUSY_WAITS = (120, 300)
 ENDPOINT_BUSY = re.compile(r'"errorStatus"\s*:\s*(?:429|503)\b')
 
@@ -102,33 +102,23 @@ def _complete(path: Path) -> bool:
     return record.get("exit_code") == 0 or not INFRA_FAILURE.search(record.get("error") or "")
 
 
-def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str, force: bool = False, column_fallback: bool = False) -> dict | None:
+def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str, force: bool = False) -> dict | None:
     run_id = f"R{rule}_{passage}_r{repeat}" + ("_easy" if framing == "easy" else "")
     destination = root / "runs" / key / f"{run_id}.json"
     if not force and _complete(destination):
         logger.info("Skipping completed %s/%s", key, run_id)
         return None
     prompt = assemble(root, rule, passage, framing)
-    route = roster.get("routing", {})
-    projection = (len(prompt.system) + len(prompt.user)) / 3.5 + route.get("harness_overhead_tokens", 0) + 4000
-    if "harness_overhead_tokens" not in route:
-        logger.warning("routing.harness_overhead_tokens missing; using zero")
-    # Qwen3.6 replaces the whole Ornith column or none of it; there is no per-run fallback.
-    if key == "ornith" and not column_fallback and projection > route["t1_projection_limit_tokens"]:
-        raise ValueError(f"ornith/{run_id} projects {projection:.0f} tokens, over the T1 limit. Qwen3.6 replaces "
-                         "the whole Ornith column or none of it: rerun every ornith run with --t1-column-fallback")
-    routed = key == "ornith" and column_fallback
-    route_reason = "t1_column_fallback" if routed else None
-    model = roster["fallback"]["qwen36"] if routed else roster["scored"][key]
+    model = roster["scored"][key]
     if model["thinking"] == "unverified":
-        raise ValueError(f"Refusing {key}: thinking level for {'qwen36' if routed else key} is unverified")
+        raise ValueError(f"Refusing {key}: thinking level is unverified")
     start = datetime.now(timezone.utc).isoformat()
     raw = []
     rate_limit_retries = 0
     proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
     duration = elapsed
     # Endpoint-busy errors are infrastructure, not model results: back off and resend, at most len(BUSY_WAITS)
-    # times. 429 = OpenRouter provider rate limit; 503 = GpuBroker could not lease GPU memory for Ornith.
+    # times. 429 = OpenRouter provider rate limit; 503 = provider unavailable.
     # Every model gets exactly one model attempt; a bad answer is never retried.
     for wait in BUSY_WAITS:
         if not ENDPOINT_BUSY.search(proc.stdout):
@@ -152,8 +142,8 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
     edits, parse_error, malformed = parse_edits(final.output_text)
     pin = _pin(root)
     record = {
-        "run_id": run_id, "model_key": key, "endpoint_model": model["model"], "routed": routed,
-        "route_reason": route_reason, "rule": rule, "passage": passage, "repeat": repeat,
+        "run_id": run_id, "model_key": key, "endpoint_model": model["model"],
+        "rule": rule, "passage": passage, "repeat": repeat,
         "framing": framing, "thinking": model["thinking"],
         "system_prompt_sha256": prompt.system_prompt_sha256, "prompt_sha256": prompt.prompt_sha256,
         "rule_text_sha256": prompt.rule_text_sha256, "passage_sha256": prompt.passage_sha256,
@@ -178,16 +168,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--pilot", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
-    parser.add_argument("--t1-column-fallback", action="store_true")
     parser.add_argument("--yes", action="store_true")
     args = parser.parse_args(argv)
     try:
         roster = yaml.safe_load((ROOT / "bench" / "roster.yml").read_text(encoding="utf-8"))
-        for section in ("scored", "fallback"):
-            for name, entry in roster[section].items():
-                if not isinstance(entry.get("thinking"), str):
-                    raise ValueError(f"roster {section}.{name}.thinking must be a quoted string, got "
-                                     f"{entry.get('thinking')!r} (YAML reads bare off/on as booleans)")
+        for name, entry in roster["scored"].items():
+            if not isinstance(entry.get("thinking"), str):
+                raise ValueError(f"roster scored.{name}.thinking must be a quoted string, got "
+                                 f"{entry.get('thinking')!r} (YAML reads bare off/on as booleans)")
         keys = _selection(args.models, tuple(roster["scored"]), "models")
         rules = [int(item) for item in _selection(args.rules, tuple(str(n) for n in range(1, 6)), "rules")]
         passages = _selection(args.passages, ("P1", "P2", "P3"), "passages")
@@ -197,10 +185,6 @@ def main(argv: list[str] | None = None) -> int:
             raise ValueError("--repeats must be positive")
         if args.pilot:
             passages, repeats, rules, framings = ["P1"], 1, list(range(1, 6)), ["verbatim", "easy"]
-        route = roster.get("routing", {})
-        overhead = route.get("harness_overhead_tokens", 0)
-        if "harness_overhead_tokens" not in route:
-            logger.warning("routing.harness_overhead_tokens missing; using zero")
         plan = []
         for key in keys:
             for rule in rules:
@@ -214,20 +198,18 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Planned runs: {len(plan)}")
         if args.dry_run:
             for key, rule, passage, repeat, framing, run_id in plan:
-                prompt = assemble(ROOT, rule, passage, framing)
-                projected = (len(prompt.system) + len(prompt.user)) / 3.5 + overhead + 4000
-                print(f"{key}/{run_id} projected_tokens={projected:.1f}")
+                print(f"{key}/{run_id}")
             return 0
         if not args.yes:
             print("Refusing execution without --yes", file=sys.stderr)
             return 2
         for key in keys:
-            if roster["scored"][key]["thinking"] == "unverified" and not (key == "ornith" and args.t1_column_fallback):
+            if roster["scored"][key]["thinking"] == "unverified":
                 raise ValueError(f"Refusing {key}: thinking level is unverified")
         wrapper = os.environ.get("PROSEBENCH_OMP_RUN", str(ROOT / "container" / "omp-run.sh"))
         failures = 0
         for key, rule, passage, repeat, framing, run_id in plan:
-            record = execute(ROOT, key, rule, passage, repeat, framing, roster, wrapper, args.force, args.t1_column_fallback)
+            record = execute(ROOT, key, rule, passage, repeat, framing, roster, wrapper, args.force)
             if record is not None and (record["exit_code"] != 0 or record["error"] or record["parse_error"]):
                 logger.warning("Failed %s/%s: %s", key, run_id, record["error"] or record["parse_error"])
                 failures += 1

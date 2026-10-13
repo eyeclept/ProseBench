@@ -21,14 +21,6 @@ assumptions:
     - {name: '8h/day', hours_per_day: {value: 8, estimated: true, formula: 'Study assumption: 8 productive decoding hours per day.', accessed: '2026-10-12'}}
     - {name: '24h/day', hours_per_day: {value: 24, estimated: true, formula: 'Study assumption: 24 productive decoding hours per day.', accessed: '2026-10-12'}}
 models:
-  ornith:
-    name: Ornith 1.5 35B-A3B
-    total_params_b: {value: 35, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
-    active_params_b: {value: 3, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
-    boxes: {value: 1, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
-    quantization: {name: NVFP4, bits_per_weight: {value: 4, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12'}, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12'}
-    decode_tokens_s: {value: 86.3, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12', note: 'Single stream, MTP enabled, end-to-end chat endpoint.'}
-    api_output_usd_per_million: null
   qwen36:
     name: Qwen3.6 35B-A3B
     total_params_b: {value: 35, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
