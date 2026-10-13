@@ -24,6 +24,8 @@ ROOT = Path(__file__).resolve().parents[2]
 # Endpoint-busy backoff (seconds). OpenRouter 429s hit Mistral Small 4.
 BUSY_WAITS = (120, 300)
 ENDPOINT_BUSY = re.compile(r'"errorStatus"\s*:\s*(?:429|503)\b')
+# The wrapper's run cap (omp --max-time). Raising the cap makes these stops eligible for a rerun.
+DEADLINE = re.compile(r"Deadline exceeded")
 
 
 def _last_error_message(stdout: str) -> str:
@@ -91,7 +93,7 @@ INFRA_FAILURE = re.compile(r"ECONNRESET|ETIMEDOUT|ENOTFOUND|socket connection wa
                            r"Provider returned error|\b(?:429|500|502|503|504)\b")
 
 
-def _complete(path: Path) -> bool:
+def _complete(path: Path, rerun_deadline: bool = False) -> bool:
     if not path.exists():
         return False
     try:
@@ -99,13 +101,17 @@ def _complete(path: Path) -> bool:
     except (json.JSONDecodeError, AttributeError) as exc:
         logger.warning("Ignoring corrupt run record %s: %s", path, exc)
         return False
-    return record.get("exit_code") == 0 or not INFRA_FAILURE.search(record.get("error") or "")
+    error = record.get("error") or ""
+    if rerun_deadline and DEADLINE.search(error):
+        return False
+    return record.get("exit_code") == 0 or not INFRA_FAILURE.search(error)
 
 
-def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str, force: bool = False) -> dict | None:
+def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str,
+            force: bool = False, rerun_deadline: bool = False) -> dict | None:
     run_id = f"R{rule}_{passage}_r{repeat}" + ("_easy" if framing == "easy" else "")
     destination = root / "runs" / key / f"{run_id}.json"
-    if not force and _complete(destination):
+    if not force and _complete(destination, rerun_deadline):
         logger.info("Skipping completed %s/%s", key, run_id)
         return None
     prompt = assemble(root, rule, passage, framing)
@@ -168,6 +174,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--pilot", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--rerun-deadline", action="store_true",
+                        help="also rerun runs stopped by the wrapper's run cap (after raising the cap)")
     parser.add_argument("--yes", action="store_true")
     args = parser.parse_args(argv)
     try:
@@ -209,7 +217,8 @@ def main(argv: list[str] | None = None) -> int:
         wrapper = os.environ.get("PROSEBENCH_OMP_RUN", str(ROOT / "container" / "omp-run.sh"))
         failures = 0
         for key, rule, passage, repeat, framing, run_id in plan:
-            record = execute(ROOT, key, rule, passage, repeat, framing, roster, wrapper, args.force)
+            record = execute(ROOT, key, rule, passage, repeat, framing, roster, wrapper, args.force,
+                             args.rerun_deadline)
             if record is not None and (record["exit_code"] != 0 or record["error"] or record["parse_error"]):
                 logger.warning("Failed %s/%s: %s", key, run_id, record["error"] or record["parse_error"])
                 failures += 1
