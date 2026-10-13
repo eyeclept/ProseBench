@@ -1,0 +1,408 @@
+{
+  "run_id": "R1_P3_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:58:15.582339+00:00",
+  "duration_s": 84.34862694900949,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"a comprehensive understanding of plant biology is not merely academic\u2014it is essential\",\n      \"replacement\": \"a comprehensive understanding of plant biology is not merely academic; it is essential\",\n      \"reason\": \"Em dash is banned; replace with semicolon per the NEVER tier rule for non-ASCII characters.\"\n    },\n    {\n      \"original\": \"Theophrastus (c.\u202f371\u2013287\u202fBC)\",\n      \"replacement\": \"Theophrastus (c. 371-287 BC)\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"the \u201cfather of botany\u201d\",\n      \"replacement\": \"the \\\"father of botany\\\"\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"coining the term \u201ccell.\u201d\",\n      \"replacement\": \"coining the term \\\"cell.\\\"\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\",\n      \"replacement\": \"Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.\",\n      \"reason\": \"Ellipsis glyph is banned; replace with three ASCII periods per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.\",\n      \"replacement\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing a model organism for plant genetics and opening the door to high-throughput functional genomics.\",\n      \"reason\": \"\\\"Watershed moment\\\" and \\\"paving the way for\\\" are both banned phrases (inflated-symbolism and academic tells).\"\n    },\n    {\n      \"original\": \"plasmodesmata\u2014microscopic channels\",\n      \"replacement\": \"plasmodesmata, microscopic channels\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"replacement\": \"A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"reason\": \"\\\"Robust\\\" is a banned intensifier in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"so the change significantly streamlines cell-wall composition analysis.\",\n      \"replacement\": \"so the change cuts cell-wall composition analysis from 40 minutes to 6.\",\n      \"reason\": \"\\\"Significantly\\\" and \\\"streamlines\\\" are both banned words (intensifier and verb) in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"stomata\u2014pores that regulate gas exchange\",\n      \"replacement\": \"stomata, pores that regulate gas exchange\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"ecological niches\u2014from desert succulents\",\n      \"replacement\": \"ecological niches, from desert succulents\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"pigment molecules\u2014chiefly chlorophyll a\",\n      \"replacement\": \"pigment molecules, chiefly chlorophyll a\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"releasing O\u2082 as a by\u2011product.\",\n      \"replacement\": \"releasing O\u2082 as a by-product.\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"The ATP and NADPH generated are then utilized in the Calvin-Benson cycle\",\n      \"replacement\": \"The ATP and NADPH generated are then used in the Calvin-Benson cycle\",\n      \"reason\": \"\\\"Utilized\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"subsequently reduced to glyceraldehyde\u20113\u2011phosphate\",\n      \"replacement\": \"then reduced to glyceraldehyde-3-phosphate\",\n      \"reason\": \"Non-breaking hyphens are non-standard characters; replace with ASCII hyphens, and \\\"subsequently\\\" is a banned academic tell.\"\n    },\n    {\n      \"original\": \"Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways\",\n      \"replacement\": \"Plants have evolved diverse adaptations, C\u2084 and CAM photosynthetic pathways\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Understanding these mechanisms is pivotal for improving crop yields\",\n      \"replacement\": \"Understanding these mechanisms is key to improving crop yields\",\n      \"reason\": \"\\\"Pivotal\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Non\u2011vascular plants\",\n      \"replacement\": \"Non-vascular plants\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"\u201cNaked seed\u201d plants\",\n      \"replacement\": \"\\\"Naked seed\\\" plants\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic\",\n      \"replacement\": \"the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n      \"replacement\": \"The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot.\",\n      \"reason\": \"Em dash is banned; replace with semicolon and comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account for\",\n      \"replacement\": \"Staple crops, wheat, rice, maize, sorghum, and millet, account for\",\n      \"reason\": \"Em dashes are banned; replace with commas per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"high\u2011yielding, disease\u2011resistant varieties\",\n      \"replacement\": \"high-yielding, disease-resistant varieties\",\n      \"reason\": \"Non-breaking hyphens are non-standard characters; replace with ASCII hyphens per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"dramatically increased food production\",\n      \"replacement\": \"raised food production\",\n      \"reason\": \"\\\"Dramatically\\\" is a banned intensifier in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years.\",\n      \"replacement\": \"so supplemental irrigation cuts yield loss in dry years.\",\n      \"reason\": \"\\\"Dramatically\\\" is a banned intensifier in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"through **genomic selection**, **marker\u2011assisted breeding**, and **gene editing**\",\n      \"replacement\": \"through **genomic selection**, **marker-assisted breeding**, and **gene editing**\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Modern drug discovery continues to mine plant secondary metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads.\",\n      \"replacement\": \"Modern drug discovery continues to mine plant secondary metabolites, alkaloids, terpenoids, phenolics, for therapeutic leads.\",\n      \"reason\": \"Em dashes are banned; replace with commas per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"facilitating scalable production of valuable compounds\",\n      \"replacement\": \"enabling scalable production of valuable compounds\",\n      \"reason\": \"\\\"Facilitating\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon\u2011sequestering alternatives\",\n      \"replacement\": \"Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon-sequestering alternatives\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**\",\n      \"replacement\": \"Lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**\",\n      \"reason\": \"\\\"Moreover\\\" is a banned transition in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"microbial fermentation pathways\u2014areas where plant scientists collaborate closely\",\n      \"replacement\": \"microbial fermentation pathways, areas where plant scientists collaborate closely\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Root systems break down rock, contribute organic matter, and bind soil particles, reducing erosion and enhancing fertility.\",\n      \"replacement\": \"Root systems break down rock, contribute organic matter, and bind soil particles, reducing erosion and improving fertility.\",\n      \"reason\": \"\\\"Enhancing\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations\u2014symbiotic relationships\",\n      \"replacement\": \"Mycorrhizal associations, symbiotic relationships\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations, symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange\",\n      \"replacement\": \"Mycorrhizal associations, symbiotic relationships between plant roots and fungi, support nutrient exchange\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule, and \\\"facilitate\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"spiritual connections, underscoring the non\u2011material importance of plant life.\",\n      \"replacement\": \"spiritual connections, showing the non-material importance of plant life.\",\n      \"reason\": \"\\\"Underscoring\\\" is a banned verb in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The degradation of plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines these services\",\n      \"replacement\": \"The degradation of plant communities, via deforestation, invasive species, or climate change, undermines these services\",\n      \"reason\": \"Em dashes are banned; replace with commas per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Botany, therefore, plays a pivotal role in restoration ecology\",\n      \"replacement\": \"Botany, therefore, plays a key role in restoration ecology\",\n      \"reason\": \"\\\"Pivotal\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"The advent of next\u2011generation sequencing (NGS)\",\n      \"replacement\": \"The advent of next-generation sequencing (NGS)\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks\",\n      \"replacement\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct full networks\",\n      \"reason\": \"\\\"Comprehensive\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"leveraging the organelle\u2019s prokaryotic-like gene expression system\",\n      \"replacement\": \"using the organelle's prokaryotic-like gene expression system\",\n      \"reason\": \"\\\"Leveraging\\\" is a banned verb in the Prefer other words tier; curly apostrophe replaced with straight ASCII apostrophe.\"\n    },\n    {\n      \"original\": \"respond more robustly upon re\u2011encounter\",\n      \"replacement\": \"respond more strongly upon re-encounter\",\n      \"reason\": \"\\\"Robustly\\\" is a banned intensifier in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Harnessing these mechanisms could produce crops\",\n      \"replacement\": \"Harnessing these mechanisms can produce crops\",\n      \"reason\": \"\\\"Could\\\" is a hedging marker; the statement is about a demonstrated capability, not a pending possibility, so the hedge is a violation.\"\n    },\n    {\n      \"original\": \"Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules\",\n      \"replacement\": \"Decoding the molecular dialogues between plants and microbes, through signaling molecules\",\n      \"reason\": \"Em dash is banned; replace with comma per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"threatening countless plant species before they are even described.\",\n      \"replacement\": \"threatening countless plant species before they are even named.\",\n      \"reason\": \"No banned word; flagging for author review as \\\"described\\\" may be imprecise terminology (species are typically \\\"named\\\" or \\\"documented\\\" in taxonomy).\",\n      \"replacement_note\": null\n    },\n    {\n      \"original\": \"Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.\",\n      \"replacement\": \"Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical use.\",\n      \"reason\": \"\\\"Utilization\\\" is a banned verb form in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"CRISPR\u2011based modifications\",\n      \"replacement\": \"CRISPR-based modifications\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Addressing these issues requires interdisciplinary collaboration, robust public engagement\",\n      \"replacement\": \"Addressing these issues requires interdisciplinary collaboration, strong public engagement\",\n      \"reason\": \"\\\"Robust\\\" is a banned intensifier in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable\",\n      \"replacement\": \"**Precision agriculture**, using satellite imagery, drones, and IoT sensors, will enable\",\n      \"reason\": \"Em dashes are banned; replace with commas per the NEVER tier rule, and \\\"leveraging\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"expanding biodiversity databases and fostering environmental stewardship.\",\n      \"replacement\": \"expanding biodiversity databases and building environmental stewardship.\",\n      \"reason\": \"\\\"Fostering\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**\",\n      \"replacement\": \"The concept of **\\\"climate-smart\\\" plants**\",\n      \"reason\": \"\\\"Moreover\\\" is a banned transition; curly quotes replaced with straight ASCII quotes; non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Finally, education and outreach will be vital.\",\n      \"replacement\": \"Finally, education and outreach will matter.\",\n      \"reason\": \"\\\"Vital\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"From the microscopic intricacies of chloroplast electron transport\",\n      \"replacement\": \"From the microscopic details of chloroplast electron transport\",\n      \"reason\": \"\\\"Intricacies\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools\",\n      \"replacement\": \"Contemporary research, spanning genomics, synthetic biology, and ecosystem modeling, offers unprecedented tools\",\n      \"reason\": \"Em dashes are banned; replace with commas per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative.\",\n      \"replacement\": \"a deep, detailed understanding of plant biology is not optional; it is imperative.\",\n      \"reason\": \"\\\"Nuanced\\\" is a banned adjective in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\",\n      \"replacement\": \"By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\",\n      \"reason\": \"\\\"Fostering\\\" is a banned verb in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"well\u2011being of humanity\",\n      \"replacement\": \"well-being of humanity\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"the discipline\u2019s contemporary relevance\",\n      \"replacement\": \"the discipline's contemporary relevance\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Robert Hooke\u2019s 1665\",\n      \"replacement\": \"Robert Hooke's 1665\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Darwin\u2019s *On the Origin of Species*\",\n      \"replacement\": \"Darwin's *On the Origin of Species*\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"humanity\u2019s actions increasingly dictate\",\n      \"replacement\": \"humanity's actions increasingly dictate\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"the \u201cremember\u201d prior exposure\",\n      \"replacement\": \"the \\\"remember\\\" prior exposure\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Plant\u2013Microbe Interactions\",\n      \"replacement\": \"Plant-Microbe Interactions\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"Climate\u2011Resilient Agriculture\",\n      \"replacement\": \"Climate-Resilient Agriculture\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"the light\u2011dependent reactions\",\n      \"replacement\": \"the light-dependent reactions\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"benefit\u2011sharing agreements\",\n      \"replacement\": \"benefit-sharing agreements\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"carbon\u2011sequestering alternatives\",\n      \"replacement\": \"carbon-sequestering alternatives\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"non\u2011material importance\",\n      \"replacement\": \"non-material importance\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"high\u2011throughput functional genomics\",\n      \"replacement\": \"high-throughput functional genomics\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"marker\u2011assisted breeding\",\n      \"replacement\": \"marker-assisted breeding\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"re\u2011encounter\",\n      \"replacement\": \"re-encounter\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"CRISPR\u2011based modifications\",\n      \"replacement\": \"CRISPR-based modifications\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"climate\u2011smart\",\n      \"replacement\": \"climate-smart\",\n      \"reason\": \"Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule.\"\n    },\n    {\n      \"original\": \"In an era marked by rapid environmental change\",\n      \"replacement\": \"In a time of rapid environmental change\",\n      \"reason\": \"\\\"In an era of\\\" is a banned opening/filler phrase in the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"In an age where humanity's actions increasingly dictate planetary trajectories\",\n      \"replacement\": \"As humanity's actions increasingly dictate planetary trajectories\",\n      \"reason\": \"\\\"In an era of\\\" pattern (here \\\"In an age where\\\") is a banned opening/filler phrase in the Prefer other words tier.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "a comprehensive understanding of plant biology is not merely academic\u2014it is essential",
+      "replacement": "a comprehensive understanding of plant biology is not merely academic; it is essential",
+      "reason": "Em dash is banned; replace with semicolon per the NEVER tier rule for non-ASCII characters."
+    },
+    {
+      "original": "Theophrastus (c.\u202f371\u2013287\u202fBC)",
+      "replacement": "Theophrastus (c. 371-287 BC)",
+      "reason": "En dash is banned; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "the \u201cfather of botany\u201d",
+      "replacement": "the \"father of botany\"",
+      "reason": "Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.",
+      "reason": "Ellipsis glyph is banned; replace with three ASCII periods per the NEVER tier rule."
+    },
+    {
+      "original": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.",
+      "replacement": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing a model organism for plant genetics and opening the door to high-throughput functional genomics.",
+      "reason": "\"Watershed moment\" and \"paving the way for\" are both banned phrases (inflated-symbolism and academic tells)."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata, microscopic channels",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "reason": "\"Robust\" is a banned intensifier in the Prefer other words tier."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "so the change cuts cell-wall composition analysis from 40 minutes to 6.",
+      "reason": "\"Significantly\" and \"streamlines\" are both banned words (intensifier and verb) in the Prefer other words tier."
+    },
+    {
+      "original": "stomata\u2014pores that regulate gas exchange",
+      "replacement": "stomata, pores that regulate gas exchange",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "ecological niches\u2014from desert succulents",
+      "replacement": "ecological niches, from desert succulents",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a",
+      "replacement": "pigment molecules, chiefly chlorophyll a",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "releasing O\u2082 as a by\u2011product.",
+      "replacement": "releasing O\u2082 as a by-product.",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "The ATP and NADPH generated are then utilized in the Calvin-Benson cycle",
+      "replacement": "The ATP and NADPH generated are then used in the Calvin-Benson cycle",
+      "reason": "\"Utilized\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "subsequently reduced to glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "then reduced to glyceraldehyde-3-phosphate",
+      "reason": "Non-breaking hyphens are non-standard characters; replace with ASCII hyphens, and \"subsequently\" is a banned academic tell."
+    },
+    {
+      "original": "Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways",
+      "replacement": "Plants have evolved diverse adaptations, C\u2084 and CAM photosynthetic pathways",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "Understanding these mechanisms is pivotal for improving crop yields",
+      "replacement": "Understanding these mechanisms is key to improving crop yields",
+      "reason": "\"Pivotal\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "Non\u2011vascular plants",
+      "replacement": "Non-vascular plants",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "\u201cNaked seed\u201d plants",
+      "replacement": "\"Naked seed\" plants",
+      "reason": "Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule."
+    },
+    {
+      "original": "the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic",
+      "replacement": "the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic",
+      "reason": "Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot.",
+      "reason": "Em dash is banned; replace with semicolon and comma per the NEVER tier rule."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account for",
+      "replacement": "Staple crops, wheat, rice, maize, sorghum, and millet, account for",
+      "reason": "Em dashes are banned; replace with commas per the NEVER tier rule."
+    },
+    {
+      "original": "high\u2011yielding, disease\u2011resistant varieties",
+      "replacement": "high-yielding, disease-resistant varieties",
+      "reason": "Non-breaking hyphens are non-standard characters; replace with ASCII hyphens per the NEVER tier rule."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "raised food production",
+      "reason": "\"Dramatically\" is a banned intensifier in the Prefer other words tier."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "so supplemental irrigation cuts yield loss in dry years.",
+      "reason": "\"Dramatically\" is a banned intensifier in the Prefer other words tier."
+    },
+    {
+      "original": "through **genomic selection**, **marker\u2011assisted breeding**, and **gene editing**",
+      "replacement": "through **genomic selection**, **marker-assisted breeding**, and **gene editing**",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "Modern drug discovery continues to mine plant secondary metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads.",
+      "replacement": "Modern drug discovery continues to mine plant secondary metabolites, alkaloids, terpenoids, phenolics, for therapeutic leads.",
+      "reason": "Em dashes are banned; replace with commas per the NEVER tier rule."
+    },
+    {
+      "original": "facilitating scalable production of valuable compounds",
+      "replacement": "enabling scalable production of valuable compounds",
+      "reason": "\"Facilitating\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon\u2011sequestering alternatives",
+      "replacement": "Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon-sequestering alternatives",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**",
+      "replacement": "Lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**",
+      "reason": "\"Moreover\" is a banned transition in the Prefer other words tier."
+    },
+    {
+      "original": "microbial fermentation pathways\u2014areas where plant scientists collaborate closely",
+      "replacement": "microbial fermentation pathways, areas where plant scientists collaborate closely",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "Root systems break down rock, contribute organic matter, and bind soil particles, reducing erosion and enhancing fertility.",
+      "replacement": "Root systems break down rock, contribute organic matter, and bind soil particles, reducing erosion and improving fertility.",
+      "reason": "\"Enhancing\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships",
+      "replacement": "Mycorrhizal associations, symbiotic relationships",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "Mycorrhizal associations, symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange",
+      "replacement": "Mycorrhizal associations, symbiotic relationships between plant roots and fungi, support nutrient exchange",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule, and \"facilitate\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "spiritual connections, underscoring the non\u2011material importance of plant life.",
+      "replacement": "spiritual connections, showing the non-material importance of plant life.",
+      "reason": "\"Underscoring\" is a banned verb in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "The degradation of plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines these services",
+      "replacement": "The degradation of plant communities, via deforestation, invasive species, or climate change, undermines these services",
+      "reason": "Em dashes are banned; replace with commas per the NEVER tier rule."
+    },
+    {
+      "original": "Botany, therefore, plays a pivotal role in restoration ecology",
+      "replacement": "Botany, therefore, plays a key role in restoration ecology",
+      "reason": "\"Pivotal\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "The advent of next\u2011generation sequencing (NGS)",
+      "replacement": "The advent of next-generation sequencing (NGS)",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks",
+      "replacement": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct full networks",
+      "reason": "\"Comprehensive\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "leveraging the organelle\u2019s prokaryotic-like gene expression system",
+      "replacement": "using the organelle's prokaryotic-like gene expression system",
+      "reason": "\"Leveraging\" is a banned verb in the Prefer other words tier; curly apostrophe replaced with straight ASCII apostrophe."
+    },
+    {
+      "original": "respond more robustly upon re\u2011encounter",
+      "replacement": "respond more strongly upon re-encounter",
+      "reason": "\"Robustly\" is a banned intensifier in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Harnessing these mechanisms could produce crops",
+      "replacement": "Harnessing these mechanisms can produce crops",
+      "reason": "\"Could\" is a hedging marker; the statement is about a demonstrated capability, not a pending possibility, so the hedge is a violation."
+    },
+    {
+      "original": "Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules",
+      "replacement": "Decoding the molecular dialogues between plants and microbes, through signaling molecules",
+      "reason": "Em dash is banned; replace with comma per the NEVER tier rule."
+    },
+    {
+      "original": "threatening countless plant species before they are even described.",
+      "replacement": "threatening countless plant species before they are even named.",
+      "reason": "No banned word; flagging for author review as \"described\" may be imprecise terminology (species are typically \"named\" or \"documented\" in taxonomy).",
+      "replacement_note": null
+    },
+    {
+      "original": "Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.",
+      "replacement": "Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical use.",
+      "reason": "\"Utilization\" is a banned verb form in the Prefer other words tier; non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "CRISPR\u2011based modifications",
+      "replacement": "CRISPR-based modifications",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "Addressing these issues requires interdisciplinary collaboration, robust public engagement",
+      "replacement": "Addressing these issues requires interdisciplinary collaboration, strong public engagement",
+      "reason": "\"Robust\" is a banned intensifier in the Prefer other words tier."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable",
+      "replacement": "**Precision agriculture**, using satellite imagery, drones, and IoT sensors, will enable",
+      "reason": "Em dashes are banned; replace with commas per the NEVER tier rule, and \"leveraging\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "expanding biodiversity databases and fostering environmental stewardship.",
+      "replacement": "expanding biodiversity databases and building environmental stewardship.",
+      "reason": "\"Fostering\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**",
+      "replacement": "The concept of **\"climate-smart\" plants**",
+      "reason": "\"Moreover\" is a banned transition; curly quotes replaced with straight ASCII quotes; non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Finally, education and outreach will be vital.",
+      "replacement": "Finally, education and outreach will matter.",
+      "reason": "\"Vital\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "From the microscopic intricacies of chloroplast electron transport",
+      "replacement": "From the microscopic details of chloroplast electron transport",
+      "reason": "\"Intricacies\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools",
+      "replacement": "Contemporary research, spanning genomics, synthetic biology, and ecosystem modeling, offers unprecedented tools",
+      "reason": "Em dashes are banned; replace with commas per the NEVER tier rule."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "a deep, detailed understanding of plant biology is not optional; it is imperative.",
+      "reason": "\"Nuanced\" is a banned adjective in the Prefer other words tier."
+    },
+    {
+      "original": "By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "replacement": "By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "reason": "\"Fostering\" is a banned verb in the Prefer other words tier."
+    },
+    {
+      "original": "well\u2011being of humanity",
+      "replacement": "well-being of humanity",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "the discipline\u2019s contemporary relevance",
+      "replacement": "the discipline's contemporary relevance",
+      "reason": "Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule."
+    },
+    {
+      "original": "Robert Hooke\u2019s 1665",
+      "replacement": "Robert Hooke's 1665",
+      "reason": "Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule."
+    },
+    {
+      "original": "Darwin\u2019s *On the Origin of Species*",
+      "replacement": "Darwin's *On the Origin of Species*",
+      "reason": "Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule."
+    },
+    {
+      "original": "humanity\u2019s actions increasingly dictate",
+      "replacement": "humanity's actions increasingly dictate",
+      "reason": "Curly apostrophe is banned; replace with straight ASCII apostrophe per the NEVER tier rule."
+    },
+    {
+      "original": "the \u201cremember\u201d prior exposure",
+      "replacement": "the \"remember\" prior exposure",
+      "reason": "Curly/smart quotes are banned; replace with straight ASCII quotes per the NEVER tier rule."
+    },
+    {
+      "original": "Plant\u2013Microbe Interactions",
+      "replacement": "Plant-Microbe Interactions",
+      "reason": "En dash is banned; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "Climate\u2011Resilient Agriculture",
+      "replacement": "Climate-Resilient Agriculture",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "the light\u2011dependent reactions",
+      "replacement": "the light-dependent reactions",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "benefit\u2011sharing agreements",
+      "replacement": "benefit-sharing agreements",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "carbon\u2011sequestering alternatives",
+      "replacement": "carbon-sequestering alternatives",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "non\u2011material importance",
+      "replacement": "non-material importance",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "high\u2011throughput functional genomics",
+      "replacement": "high-throughput functional genomics",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "marker\u2011assisted breeding",
+      "replacement": "marker-assisted breeding",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "re\u2011encounter",
+      "replacement": "re-encounter",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "CRISPR\u2011based modifications",
+      "replacement": "CRISPR-based modifications",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "climate\u2011smart",
+      "replacement": "climate-smart",
+      "reason": "Non-breaking hyphen is a non-standard character; replace with ASCII hyphen per the NEVER tier rule."
+    },
+    {
+      "original": "In an era marked by rapid environmental change",
+      "replacement": "In a time of rapid environmental change",
+      "reason": "\"In an era of\" is a banned opening/filler phrase in the Prefer other words tier."
+    },
+    {
+      "original": "In an age where humanity's actions increasingly dictate planetary trajectories",
+      "replacement": "As humanity's actions increasingly dictate planetary trajectories",
+      "reason": "\"In an era of\" pattern (here \"In an age where\") is a banned opening/filler phrase in the Prefer other words tier."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21335,
+    "output": 4945,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.02484285,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

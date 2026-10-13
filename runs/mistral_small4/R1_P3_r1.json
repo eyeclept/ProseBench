@@ -1,0 +1,42 @@
+{
+  "run_id": "R1_P3_r1",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:09:38.495405+00:00",
+  "duration_s": 24.12310756399529,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"This change significantly streamlines cell-wall composition analysis.\", \"replacement\": \"This change cuts the cell-wall composition analysis from 40 minutes to 6.\", \"reason\": \"Replaced 'streamlines' with a more precise and direct phrasing per Rule 1.\"}]}",
+  "edits": [
+    {
+      "original": "This change significantly streamlines cell-wall composition analysis.",
+      "replacement": "This change cuts the cell-wall composition analysis from 40 minutes to 6.",
+      "reason": "Replaced 'streamlines' with a more precise and direct phrasing per Rule 1."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21907,
+    "output": 69,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00332745,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

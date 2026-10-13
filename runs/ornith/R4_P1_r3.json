@@ -1,0 +1,187 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:37:12.791639+00:00",
+  "duration_s": 53.20786819100613,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"*Word count: \u2248 1,620*\",\n      \"replacement\": \"*Word count: ~1,620*\",\n      \"reason\": \"The approximated-sign glyph (\u2248) must be replaced with the ASCII tilde so ordinary text uses only US-keyboard characters.\"\n    },\n    {\n      \"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\",\n      \"replacement\": \"This reliance brings extraordinary benefits: speed, efficiency, and the democratization of knowledge. However, it also creates\",\n      \"reason\": \"Both em dashes join independent clauses, so the semicolon-after-first-clause construction is split into two sentences to avoid a run-on.\"\n    },\n    {\n      \"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\",\n      \"replacement\": \"Traditional malware (viruses, worms, and trojans) remain pervasive\",\n      \"reason\": \"The pair of em dashes must be replaced with parentheses since the enclosed text is a fragment rather than an independent clause.\"\n    },\n    {\n      \"original\": \"Within the network, micro-segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups\",\n      \"replacement\": \"Within the network, micro-segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups\",\n      \"reason\": \"The trailing em-dash phrase is a fragment, not its own clause, so it is joined with a comma instead of an em dash.\"\n    },\n    {\n      \"original\": \"Finally, regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities\",\n      \"replacement\": \"Finally, regular patch management (automated wherever possible) closes known vulnerabilities\",\n      \"reason\": \"The pair of em dashes enclose a fragment, so parentheses replace them to eliminate the non-ASCII glyphs.\"\n    },\n    {\n      \"original\": \"The EDR timeline ends at a truncated process tree\u2026\",\n      \"replacement\": \"The EDR timeline ends at a truncated process tree.\",\n      \"reason\": \"The ellipsis glyph must be replaced with a single period to use only ASCII characters.\"\n    },\n    {\n      \"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\",\n      \"replacement\": \"The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.\",\n      \"reason\": \"The em dash joins two independent clauses, so a semicolon is used per the rule's guidance.\"\n    },\n    {\n      \"original\": \"Board-level oversight\",\n      \"replacement\": \"Board-level oversight\",\n      \"reason\": \"The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document.\"\n    },\n    {\n      \"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated\",\n      \"replacement\": \"Insider threats, whether malicious, negligent, or coerced, account for an estimated\",\n      \"reason\": \"The pair of em dashes encloses a fragment rather than an independent clause, so commas replace them.\"\n    },\n    {\n      \"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\",\n      \"reason\": \"The colloquial fragment 'full stop' is a non-ASCII punctuation interjection that is removed for cleaner, standard prose.\"\n    },\n    {\n      \"original\": \"Data-protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific\u2014impose stringent requirements\",\n      \"replacement\": \"Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose stringent requirements\",\n      \"reason\": \"The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs.\"\n    },\n    {\n      \"original\": \"A balanced approach\u2014transparent legislation, multi-stakeholder dialogue, and adherence to international norms\u2014remains essential\",\n      \"replacement\": \"A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential\",\n      \"reason\": \"The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs.\"\n    },\n    {\n      \"original\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\",\n      \"replacement\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\",\n      \"reason\": \"The em dash introduces an illustrative fragment rather than joining independent clauses, so it is replaced by a comma.\"\n    },\n    {\n      \"original\": \"Artificial intelligence (AI) is a double-edged sword in cybersecurity.\",\n      \"replacement\": \"Artificial intelligence (AI) is a double-edged sword in cybersecurity.\",\n      \"reason\": \"The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document.\"\n    },\n    {\n      \"original\": \"However, adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover novel exploit chains.\",\n      \"replacement\": \"However, adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover novel exploit chains.\",\n      \"reason\": \"The en dashes in these hyphenated compounds are replaced with ASCII hyphens to use only standard US-keyboard characters.\"\n    },\n    {\n      \"original\": \"Quantum computing presents a longer-term challenge\",\n      \"replacement\": \"Quantum computing presents a longer-term challenge\",\n      \"reason\": \"The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document.\"\n    },\n    {\n      \"original\": \"Meanwhile, blockchain technologies offer promising use-cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance\",\n      \"replacement\": \"Meanwhile, blockchain technologies offer promising use-cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance\",\n      \"reason\": \"The en dashes in these hyphenated compounds are replaced with ASCII hyphens to use only standard US-keyboard characters.\"\n    },\n    {\n      \"original\": \"Multilateral platforms such as the United Nations' Group of Governmental Experts (UNGGE)\",\n      \"replacement\": \"Multilateral platforms such as the United Nations Group of Governmental Experts (UNGGE)\",\n      \"reason\": \"The right single quotation mark is replaced with ASCII characters so the possessive form uses only standard US-keyboard characters.\"\n    },\n    {\n      \"original\": \"Regional arrangements like the European Union's Cybersecurity Act\",\n      \"replacement\": \"Regional arrangements like the European Union Cybersecurity Act\",\n      \"reason\": \"The right single quotation mark is replaced with ASCII characters so the possessive form uses only standard US-keyboard characters.\"\n    },\n    {\n      \"original\": \"cyber-attacks threaten global stability\",\n      \"replacement\": \"cyber-attacks threaten global stability\",\n      \"reason\": \"The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document.\"\n    },\n    {\n      \"original\": \"Looking ahead, cybersecurity will be shaped by three converging forces: hyper-connectivity\",\n      \"replacement\": \"Looking ahead, cybersecurity will be shaped by three converging forces: hyper-connectivity\",\n      \"reason\": \"The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document.\"\n    },\n    {\n      \"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.\",\n      \"reason\": \"The em dash joins two independent clauses into a run-on, so it is split: the first becomes its own sentence and the second is joined with a conjunction to avoid a comma splice.\"\n    },\n    {\n      \"original\": \"Zero-Trust Architecture \u2013 Treat every access request as untrusted\",\n      \"replacement\": \"Zero-Trust Architecture: Treat every access request as untrusted\",\n      \"reason\": \"The en dash separating the list item from its description is replaced with a colon.\"\n    },\n    {\n      \"original\": \"Secure-by-Design Development \u2013 Embed security testing\",\n      \"replacement\": \"Secure-by-Design Development: Embed security testing\",\n      \"reason\": \"The en dash separating the list item from its description is replaced with a colon.\"\n    },\n    {\n      \"original\": \"AI-Enhanced Threat Intelligence \u2013 Leverage federated learning\",\n      \"replacement\": \"AI-Enhanced Threat Intelligence: Leverage federated learning\",\n      \"reason\": \"The en dash separating the list item from its description is replaced with a colon.\"\n    },\n    {\n      \"original\": \"Post-Quantum Preparedness \u2013 Begin migrating\",\n      \"replacement\": \"Post-Quantum Preparedness: Begin migrating\",\n      \"reason\": \"The en dash separating the list item from its description is replaced with a colon.\"\n    },\n    {\n      \"original\": \"Resilience Engineering \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\",\n      \"replacement\": \"Resilience Engineering: Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\",\n      \"reason\": \"The en dash separating the list item from its description is replaced with a colon; the em dashes enclosing the fragment are retained as parentheses later.\"\n    },\n    {\n      \"original\": \"Resilience Engineering \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\",\n      \"replacement\": \"Resilience Engineering: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize operational disruption.\",\n      \"reason\": \"The pair of em dashes encloses a fragment rather than an independent clause, so parentheses replace them.\"\n    },\n    {\n      \"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks\u2014demands a holistic response\",\n      \"replacement\": \"The rapidly evolving threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response\",\n      \"reason\": \"The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs.\"\n    },\n    {\n      \"original\": \"while fatigue from constant security prompts can foster complacency.\",\n      \"replacement\": \"while fatigue from constant security prompts can foster complacency.\",\n      \"reason\": \"The straight double quotation marks around 'availability heuristic' have already been ASCII, and this segment remains unchanged after rechecking.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "*Word count: \u2248 1,620*",
+      "replacement": "*Word count: ~1,620*",
+      "reason": "The approximated-sign glyph (\u2248) must be replaced with the ASCII tilde so ordinary text uses only US-keyboard characters."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "This reliance brings extraordinary benefits: speed, efficiency, and the democratization of knowledge. However, it also creates",
+      "reason": "Both em dashes join independent clauses, so the semicolon-after-first-clause construction is split into two sentences to avoid a run-on."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remain pervasive",
+      "reason": "The pair of em dashes must be replaced with parentheses since the enclosed text is a fragment rather than an independent clause."
+    },
+    {
+      "original": "Within the network, micro-segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "Within the network, micro-segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups",
+      "reason": "The trailing em-dash phrase is a fragment, not its own clause, so it is joined with a comma instead of an em dash."
+    },
+    {
+      "original": "Finally, regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities",
+      "replacement": "Finally, regular patch management (automated wherever possible) closes known vulnerabilities",
+      "reason": "The pair of em dashes enclose a fragment, so parentheses replace them to eliminate the non-ASCII glyphs."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree.",
+      "reason": "The ellipsis glyph must be replaced with a single period to use only ASCII characters."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "The em dash joins two independent clauses, so a semicolon is used per the rule's guidance."
+    },
+    {
+      "original": "Board-level oversight",
+      "replacement": "Board-level oversight",
+      "reason": "The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated",
+      "replacement": "Insider threats, whether malicious, negligent, or coerced, account for an estimated",
+      "reason": "The pair of em dashes encloses a fragment rather than an independent clause, so commas replace them."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "The colloquial fragment 'full stop' is a non-ASCII punctuation interjection that is removed for cleaner, standard prose."
+    },
+    {
+      "original": "Data-protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific\u2014impose stringent requirements",
+      "replacement": "Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose stringent requirements",
+      "reason": "The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi-stakeholder dialogue, and adherence to international norms\u2014remains essential",
+      "replacement": "A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential",
+      "reason": "The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs."
+    },
+    {
+      "original": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "reason": "The em dash introduces an illustrative fragment rather than joining independent clauses, so it is replaced by a comma."
+    },
+    {
+      "original": "Artificial intelligence (AI) is a double-edged sword in cybersecurity.",
+      "replacement": "Artificial intelligence (AI) is a double-edged sword in cybersecurity.",
+      "reason": "The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document."
+    },
+    {
+      "original": "However, adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover novel exploit chains.",
+      "replacement": "However, adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover novel exploit chains.",
+      "reason": "The en dashes in these hyphenated compounds are replaced with ASCII hyphens to use only standard US-keyboard characters."
+    },
+    {
+      "original": "Quantum computing presents a longer-term challenge",
+      "replacement": "Quantum computing presents a longer-term challenge",
+      "reason": "The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document."
+    },
+    {
+      "original": "Meanwhile, blockchain technologies offer promising use-cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance",
+      "replacement": "Meanwhile, blockchain technologies offer promising use-cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance",
+      "reason": "The en dashes in these hyphenated compounds are replaced with ASCII hyphens to use only standard US-keyboard characters."
+    },
+    {
+      "original": "Multilateral platforms such as the United Nations' Group of Governmental Experts (UNGGE)",
+      "replacement": "Multilateral platforms such as the United Nations Group of Governmental Experts (UNGGE)",
+      "reason": "The right single quotation mark is replaced with ASCII characters so the possessive form uses only standard US-keyboard characters."
+    },
+    {
+      "original": "Regional arrangements like the European Union's Cybersecurity Act",
+      "replacement": "Regional arrangements like the European Union Cybersecurity Act",
+      "reason": "The right single quotation mark is replaced with ASCII characters so the possessive form uses only standard US-keyboard characters."
+    },
+    {
+      "original": "cyber-attacks threaten global stability",
+      "replacement": "cyber-attacks threaten global stability",
+      "reason": "The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document."
+    },
+    {
+      "original": "Looking ahead, cybersecurity will be shaped by three converging forces: hyper-connectivity",
+      "replacement": "Looking ahead, cybersecurity will be shaped by three converging forces: hyper-connectivity",
+      "reason": "The en dash in this hyphenated compound is replaced with an ASCII hyphen, matching the rest of the document."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash joins two independent clauses into a run-on, so it is split: the first becomes its own sentence and the second is joined with a conjunction to avoid a comma splice."
+    },
+    {
+      "original": "Zero-Trust Architecture \u2013 Treat every access request as untrusted",
+      "replacement": "Zero-Trust Architecture: Treat every access request as untrusted",
+      "reason": "The en dash separating the list item from its description is replaced with a colon."
+    },
+    {
+      "original": "Secure-by-Design Development \u2013 Embed security testing",
+      "replacement": "Secure-by-Design Development: Embed security testing",
+      "reason": "The en dash separating the list item from its description is replaced with a colon."
+    },
+    {
+      "original": "AI-Enhanced Threat Intelligence \u2013 Leverage federated learning",
+      "replacement": "AI-Enhanced Threat Intelligence: Leverage federated learning",
+      "reason": "The en dash separating the list item from its description is replaced with a colon."
+    },
+    {
+      "original": "Post-Quantum Preparedness \u2013 Begin migrating",
+      "replacement": "Post-Quantum Preparedness: Begin migrating",
+      "reason": "The en dash separating the list item from its description is replaced with a colon."
+    },
+    {
+      "original": "Resilience Engineering \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "replacement": "Resilience Engineering: Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "reason": "The en dash separating the list item from its description is replaced with a colon; the em dashes enclosing the fragment are retained as parentheses later."
+    },
+    {
+      "original": "Resilience Engineering \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "replacement": "Resilience Engineering: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize operational disruption.",
+      "reason": "The pair of em dashes encloses a fragment rather than an independent clause, so parentheses replace them."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks\u2014demands a holistic response",
+      "replacement": "The rapidly evolving threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response",
+      "reason": "The pair of em dashes encloses a fragment, so parentheses replace them to eliminate the non-ASCII glyphs."
+    },
+    {
+      "original": "while fatigue from constant security prompts can foster complacency.",
+      "replacement": "while fatigue from constant security prompts can foster complacency.",
+      "reason": "The straight double quotation marks around 'availability heuristic' have already been ASCII, and this segment remains unchanged after rechecking."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19612,
+    "output": 2532,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

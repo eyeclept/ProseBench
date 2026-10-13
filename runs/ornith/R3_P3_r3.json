@@ -1,0 +1,47 @@
+{
+  "run_id": "R3_P3_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:36:17.696505+00:00",
+  "duration_s": 5.8187279000121634,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles.\",\n      \"reason\": \"'on purpose, rather than by accident' tacks an ordinary-knowledge antonym trailer (by purpose vs. by accident) onto the sentence, adding nothing.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": null,\n      \"reason\": \"Whether 'chloroplast vs. nuclear transformation' is a genuinely meaningful distinction or an ordinary-knowledge antonym trailer is ambiguous under Rule 3; flagging rather than silently cutting so it can be decided together.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles.",
+      "reason": "'on purpose, rather than by accident' tacks an ordinary-knowledge antonym trailer (by purpose vs. by accident) onto the sentence, adding nothing."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": null,
+      "reason": "Whether 'chloroplast vs. nuclear transformation' is a genuinely meaningful distinction or an ordinary-knowledge antonym trailer is ambiguous under Rule 3; flagging rather than silently cutting so it can be decided together."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20725,
+    "output": 178,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

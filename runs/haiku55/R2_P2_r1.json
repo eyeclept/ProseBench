@@ -1,0 +1,52 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:45:24.647977+00:00",
+  "duration_s": 4.190294171974529,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Those upgrades are planned on purpose, rather than by accident. \", \"replacement\": \"\", \"reason\": \"The negative-free windup 'planned on purpose, rather than by accident' restates nothing new and deleting it loses no checkable claim.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"\", \"reason\": \"The 'end of story' flourish is a restatement emphasis that adds no fact beyond the preceding claim about islanded operation.\"}, {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies. \", \"replacement\": \"\", \"reason\": \"This sentence is an unrelated tangent with no bearing on the surrounding argument, so it is filler under the delete-and-reread test rather than a windup for a claim.\"}]}",
+  "edits": [
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident. ",
+      "replacement": "",
+      "reason": "The negative-free windup 'planned on purpose, rather than by accident' restates nothing new and deleting it loses no checkable claim."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "",
+      "reason": "The 'end of story' flourish is a restatement emphasis that adds no fact beyond the preceding claim about islanded operation."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies. ",
+      "replacement": "",
+      "reason": "This sentence is an unrelated tangent with no bearing on the surrounding argument, so it is filler under the delete-and-reread test rather than a windup for a claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 291,
+    "cache_read": 23505,
+    "cache_write": 8267,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0020343500000000003,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P2_r2",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:00:27.168457+00:00",
+  "duration_s": 18.249697474006098,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Inertia still matters for the first few cycles after a trip, full stop. Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": \"Inertia still matters for the first few cycles after a trip. Operators procured spinning reserve.\",\n      \"reason\": \"\\\"full stop\\\" is padded emphasis and \\\"rather than non-spinning reserve\\\" is a padded negation; deleting both loses nothing checkable.\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"replacement\": \"The Texas failure came from frozen gas wells and unheated thermal auxiliaries, which accounted for the lost megawatts.\",\n      \"reason\": \"The negative half \\\"was not a nameplate shortfall of wind\\\" is windup; the positive half alone states the cause.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned on purpose.\",\n      \"reason\": \"\\\"rather than by accident\\\" is a padded negation restating the same claim; deleting it loses nothing.\"\n    },\n    {\n      \"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n      \"replacement\": \"Islanded operation is the only backup path for those hospitals.\",\n      \"reason\": \"\\\"end of story\\\" is padded emphasis with no checkable content; deleting it loses nothing.\"\n    },\n    {\n      \"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\",\n      \"replacement\": null,\n      \"reason\": \"This sentence is garbled (\\\"the next week they also file\\\") and may contain a padded construction, but the intended meaning is unclear; flagging for the author rather than guessing.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop. Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Inertia still matters for the first few cycles after a trip. Operators procured spinning reserve.",
+      "reason": "\"full stop\" is padded emphasis and \"rather than non-spinning reserve\" is a padded negation; deleting both loses nothing checkable."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "The Texas failure came from frozen gas wells and unheated thermal auxiliaries, which accounted for the lost megawatts.",
+      "reason": "The negative half \"was not a nameplate shortfall of wind\" is windup; the positive half alone states the cause."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "\"rather than by accident\" is a padded negation restating the same claim; deleting it loses nothing."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "\"end of story\" is padded emphasis with no checkable content; deleting it loses nothing."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": null,
+      "reason": "This sentence is garbled (\"the next week they also file\") and may contain a padded construction, but the intended meaning is unclear; flagging for the author rather than guessing."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 954,
+    "output": 429,
+    "cache_read": 19436,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00290585,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

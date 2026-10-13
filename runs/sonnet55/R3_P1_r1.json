@@ -1,0 +1,47 @@
+{
+  "run_id": "R3_P1_r1",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "be7242a4ea21d9044ef6e43950de701d89e8f6f7f8bdaf6288c5e1becb678454",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:46:16.129792+00:00",
+  "duration_s": 6.38249873300083,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "I found two trailing-antonym clauses in the passage.\n\n1. \"Access checks default to fail-closed, rather than open.\" The trailer \"rather than open\" names the ordinary antonym of \"closed\". Anyone would know it, so I cut it.\n\n2. \"Those privilege limits are imposed on purpose, rather than by accident.\" This matches the rule's own example of on purpose/by accident, so I cut it.\n\nI left the other negation phrases alone. \"Not merely an IT concern\" in the conclusion is a leading \"not merely\", not a trailing clause. \"Rather than exploit them\" in the bug-bounty sentence is a genuine behavioral contrast, not an ordinary antonym of \"report\". It sits inside the sentence and describes what the incentive steers away from, so it needs no change under this rule.\n\n```json\n{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"\\\"Open\\\" is the ordinary-knowledge antonym of \\\"closed\\\", so the trailer adds nothing.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"\\\"By accident\\\" is the ordinary-knowledge antonym of \\\"on purpose\\\", so the trailer is redundant.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "\"Open\" is the ordinary-knowledge antonym of \"closed\", so the trailer adds nothing."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\"By accident\" is the ordinary-knowledge antonym of \"on purpose\", so the trailer is redundant."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 457,
+    "cache_read": 23505,
+    "cache_write": 6454,
+    "reasoning": 0
+  },
+  "cost_usd": 0.032744499999999996,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

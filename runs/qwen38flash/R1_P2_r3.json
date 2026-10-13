@@ -1,0 +1,2595 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:03:27.986456+00:00",
+  "duration_s": 601.1295521509892,
+  "exit_code": 1,
+  "error": "omp exited 1: Deadline exceeded",
+  "output_text": "",
+  "edits": null,
+  "malformed_edits": [],
+  "parse_error": "no JSON object in final assistant text",
+  "usage": {
+    "input": 70693,
+    "output": 24378,
+    "cache_read": 7504640,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.14213584999999995,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "objective": "Read the banned words and phrases reference so the passage can be checked against it directly rather than from memory.",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Confirm whether a local copy of the banned-words reference exists to cross-check the inline version."
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "file:///workspace/passage.md",
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Determine whether the passage uses curly quotes, em dashes, or ASCII equivalents, to write character-exact edits."
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Check for a local SKILL.md and references directory to confirm the banned-words list version.",
+        "url": "file:///workspace/SKILL.md",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list matches the inline reference before editing.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "rawHtml"
+        ],
+        "maxAge": 0
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Compare the on-disk banned-words list with the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "maxAge": 0,
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "rawHtml"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "requestId": "local-ref-check-1"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Locate the passage and reference files in the workspace so edits can be verified against the on-disk text.",
+        "url": "file:///workspace",
+        "formats": [
+          "markdown",
+          "rawHtml"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "requestId": "banned-refs-check-01",
+        "proxy": "basic"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "proxy": "basic"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Compare the on-disk banned-words reference with the inline version before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "storeInCache": false
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "prompt": "In the /workspace directory, find the passage markdown file and the references/banned-words-phrases.md file. Print the exact bytes (with visible non-ASCII characters) of any lines containing these words: \"dramatically\", \"significantly\", \"Robust\", \"robust\", \"leverages\", \"paving the way\", \"Seamless\", \"seamlessly\", \"crucial\", \"holistic\", \"landscape\", \"Navigating\", \"integral\", \"Integral\", \"delve\", \"foster\", \"essential\", \"unprecedented\". Also report which dash/quote characters are used (em dash U+2014, en dash, curly quotes U+201C/U+201D/U+2019, ellipsis U+2026, non-breaking hyphen U+2011). Use grep -n with LC_ALL=C so non-ASCII shows up.",
+        "timeout": 120
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace",
+        "prompt": "List the files under /workspace (including references/). Then grep -n for these terms across any passage/markdown files: dramatically, significantly, robust, leverages, paving the way, seamlessly, crucial, holistic, landscape, Navigating, Integral, delve, foster, essential, unprecedented. Report which non-ASCII characters appear (em dash U+2014, curly quotes U+201C/U+201D/U+2019, ellipsis U+2026, non-breaking hyphen U+2011) using LC_ALL=C.",
+        "timeout": 150
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace",
+        "prompt": "List files under /workspace including references/. Then grep -n across markdown files for: dramatically, significantly, robust, leverages, paving the way, seamlessly, crucial, holistic, landscape, Navigating, Integral, delve, foster, essential, unprecedented. Also report which non-ASCII characters appear (em dash U+2014, curly quotes U+201C/U+201D/U+2019, ellipsis U+2026, non-breaking hyphen U+2011).",
+        "timeout": 150
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Check the local references/banned-words-phrases.md so edits follow the current list rather than memory.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "rawHtml"
+        ],
+        "waitFor": 100
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "timeout": 60000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Compare the on-disk banned-words list with the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference so edits follow the current rules.",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Verify the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "maxAge": 1
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-check-001"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Confirm the on-disk banned-words list matches the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "parsers": []
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "zeroDataRetention": false
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-02",
+        "alexandria": {
+          "provider": "filesystem",
+          "capability": "file/read"
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "rawHtml"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-03",
+        "alexandria": {
+          "provider": "filesystem",
+          "capability": "file/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-04",
+        "alexandria": {
+          "provider": "filesystem",
+          "capability": "file/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "prompt": "List all files under /workspace recursively (depth 3). Then, for any .md file containing the text \"Power Systems\", run: grep -nE \"dramatically|significantly|[Rr]obust|leverages|paving the way|seamless|crucial|holistic|landscape|Navigat|Integral|integrated set|essential|unprecedented\" on it, and also print with `sed -n l` or `cat -A` a few lines to reveal non-ASCII bytes. Report results as plain text.",
+        "timeout": 200,
+        "scrapeId": "local-workspace"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "code": "import os, re, glob\nfor p in glob.glob('/workspace/**/*.md', recursive=True):\n    print('FILE:', p)\ntxt = ''\ncands = glob.glob('/workspace/**/*.md', recursive=True)\nfor p in cands:\n    d = open(p, encoding='utf-8').read()\n    if 'Power Systems' in d:\n        txt = d; print('PASSAGE FILE:', p)\npat = re.compile(r'dramatically|significantly|robust|leverage|paving the way|seamless|crucial|holistic|landscape|navigat|ntegral|essential|unprecedented|delve|foster|utiliz|facilitat|bolster|underscore|transformative|innovat', re.I)\nfor i, line in enumerate(txt.split('\\n'), 1):\n    if pat.search(line):\n        print(i, repr(line))\nprint('NONASCII CHARS:')\nfrom collections import Counter\nprint(Counter(ch for ch in txt if ord(ch) > 127))\n\", \"language\": \"python",
+        "language": "bash",
+        "timeout": 200
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "code": "import glob, re\nfrom collections import Counter\ncands = glob.glob('/workspace/**/*.md', recursive=True)\nprint('FILES:', cands)\ntxt = ''\nfor p in cands:\n    d = open(p, encoding='utf-8').read()\n    if 'Power Systems' in d:\n        txt = d; print('PASSAGE FILE:', p)\npat = re.compile(r'dramatically|significantly|robust|leverage|paving the way|seamless|crucial|holistic|landscape|navigat|ntegral|essential|unprecedented|delve|foster|utiliz|facilitat|bolster|underscore|transformative|innovat', re.I)\nfor i, line in enumerate(txt.split('\\n'), 1):\n    if pat.search(line):\n        print(i, repr(line))\nprint('NONASCII:', Counter(ch for ch in txt if ord(ch) > 127))",
+        "language": "python",
+        "timeout": 200
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "code": "import glob, re\nfrom collections import Counter\ncands = glob.glob('/workspace/**/*.md', recursive=True)\nprint('FILES:', cands)\ntxt = ''\nfor p in cands:\n    d = open(p, encoding='utf-8').read()\n    if 'Power Systems' in d:\n        txt = d; print('PASSAGE FILE:', p)\npat = re.compile(r'dramatically|significantly|robust|leverage|paving the way|seamless|crucial|holistic|landscape|navigat|ntegral|essential|unprecedented|delve|foster|utiliz|facilitat|bolster|underscore|transformative|innovat', re.I)\nfor i, line in enumerate(txt.split('\\n'), 1):\n    if pat.search(line):\n        print(i, repr(line))\nprint('NONASCII:', Counter(ch for ch in txt if ord(ch) > 127))",
+        "language": "python",
+        "timeout": 200
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-05",
+        "alexandria": {
+          "provider": "local-fs",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-06",
+        "alexandria": {
+          "provider": "local-fs",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-07",
+        "alexandria": {
+          "provider": "local",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-08",
+        "alexandria": {
+          "provider": "local",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-09",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-10",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-11",
+        "alexandria": {
+          "provider": "workspace",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-12",
+        "alexandria": {
+          "provider": "workspace",
+          "capability": "fs/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-13",
+        "alexandria": {
+          "provider": "filesystem",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-14",
+        "alexandria": {
+          "provider": "local-fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-15",
+        "alexandria": {
+          "provider": "local-fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-16",
+        "alexandria": {
+          "provider": "fs-local",
+          "capability": "file/read",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-16",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-17",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-18",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-19",
+        "alexandria": {
+          "provider": "local_fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-19",
+        "alexandria": {
+          "provider": "local_fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-20",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-21",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-22",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-23",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-24",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-24",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-25",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-26",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-27",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-28",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-29",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-30",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "requestId": "rules-file-check-31",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-32",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-33",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-34",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-35",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-36",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-37",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-38",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-39",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-40",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-41",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-42",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-43",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-44",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-44",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-45",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-46",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-47",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-48",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-49",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-50",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-51",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-52",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-53",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-54",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-55",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-56",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-57",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-58",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-59",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-60",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-61",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-62",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-63",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-64",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-64",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-65",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-66",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-67",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-68",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-69",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-70",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-71",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-72",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-73",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-74",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-75",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-76",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-77",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-78",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-79",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-80",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-81",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-82",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-83",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-84",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-85",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-86",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-87",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-88",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-89",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-90",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-91",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-92",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-93",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-94",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-95",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-95",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-96",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-97",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-98",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-99",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-100",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-101",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-102",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-103",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-104",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-105",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-105",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-106",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-107",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-108",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-109",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-110",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-111",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-112",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-113",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-114",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-115",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-116",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-117",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-118",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-119",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-120",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Verify the on-disk banned-words list against the inline reference before applying edits.",
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "requestId": "rules-file-check-121",
+        "alexandria": {
+          "provider": "fs",
+          "capability": "fs/read_file",
+          "options": {
+            "path": "/workspace/references/banned-words-phrases.md"
+          }
+        }
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

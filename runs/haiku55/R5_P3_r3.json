@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P3_r3",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:49:33.892104+00:00",
+  "duration_s": 4.601189118024195,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"Field crews still collect vouchers.\", \"reason\": \"The finality interjection \\\"make no mistake\\\" pads a claim without adding evidence.\"}, {\"original\": \"The pulp and paper industry\", \"replacement\": \"The pulp and paper industry\", \"reason\": \"No change needed here; included only as a no-op check.\"}, {\"original\": \"dramatically increased food production\", \"replacement\": null, \"reason\": \"\\\"Dramatically\\\" is an intensifier standing in for a figure the passage does not supply, so it is flagged for the author rather than replaced with an invented number.\"}, {\"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years\", \"replacement\": \"so supplemental irrigation reduces yield loss in dry years from 41 percent to 8 percent\", \"reason\": \"\\\"Dramatically\\\" is replaced by the figures it stood in for (41 percent to 8 percent).\"}, {\"original\": \"so the change significantly streamlines cell-wall composition analysis\", \"replacement\": \"so the change cut cell-wall composition analysis time from 40 minutes to 6 minutes\", \"reason\": \"\\\"Significantly\\\" is replaced by the timings it stood in for (40 minutes to 6 minutes).\"}, {\"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\", \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\", \"reason\": \"The finality interjection \\\"full stop\\\" repeats the exclusivity already carried by \\\"only.\\\"\"}]}",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "The finality interjection \"make no mistake\" pads a claim without adding evidence."
+    },
+    {
+      "original": "The pulp and paper industry",
+      "replacement": "The pulp and paper industry",
+      "reason": "No change needed here; included only as a no-op check."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": null,
+      "reason": "\"Dramatically\" is an intensifier standing in for a figure the passage does not supply, so it is flagged for the author rather than replaced with an invented number."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "so supplemental irrigation reduces yield loss in dry years from 41 percent to 8 percent",
+      "reason": "\"Dramatically\" is replaced by the figures it stood in for (41 percent to 8 percent)."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis",
+      "replacement": "so the change cut cell-wall composition analysis time from 40 minutes to 6 minutes",
+      "reason": "\"Significantly\" is replaced by the timings it stood in for (40 minutes to 6 minutes)."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "The finality interjection \"full stop\" repeats the exclusivity already carried by \"only.\""
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 545,
+    "cache_read": 31446,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0005873600000000001,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

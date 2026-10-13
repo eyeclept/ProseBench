@@ -1,0 +1,57 @@
+{
+  "run_id": "R3_P3_r1",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:46:47.998242+00:00",
+  "duration_s": 4.109665963012958,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"The trailer \\\"rather than by accident\\\" is the ordinary-knowledge antonym of \\\"on purpose,\\\" so it adds nothing and is cut.\"}, {\"original\": \" The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": null, \"reason\": \"Flagged for the author: \\\"not nuclear transformation\\\" is a checkable distinction (chloroplast vs. nuclear transformation), not an ordinary-knowledge antonym, so it should be given its own factual sentence rather than a trailer; left unchanged pending the author's decision.\"}, {\"original\": \" Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": null, \"reason\": \"Flagged for the author: this \\\"not X\\\" clause states a genuine, checkable botanical distinction, so per the rule it should be restated as its own sentence rather than trailed on; left unchanged pending the author's decision.\"}, {\"original\": \" Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Flagged for the author: \\\"rather than heirlooms\\\" is a genuine, domain-specific distinction (landraces vs. heirlooms), not an ordinary-knowledge antonym, so it needs its own stated sentence; left unchanged pending the author's decision.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "The trailer \"rather than by accident\" is the ordinary-knowledge antonym of \"on purpose,\" so it adds nothing and is cut."
+    },
+    {
+      "original": " The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": null,
+      "reason": "Flagged for the author: \"not nuclear transformation\" is a checkable distinction (chloroplast vs. nuclear transformation), not an ordinary-knowledge antonym, so it should be given its own factual sentence rather than a trailer; left unchanged pending the author's decision."
+    },
+    {
+      "original": " Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": null,
+      "reason": "Flagged for the author: this \"not X\" clause states a genuine, checkable botanical distinction, so per the rule it should be restated as its own sentence rather than trailed on; left unchanged pending the author's decision."
+    },
+    {
+      "original": " Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Flagged for the author: \"rather than heirlooms\" is a genuine, domain-specific distinction (landraces vs. heirlooms), not an ordinary-knowledge antonym, so it needs its own stated sentence; left unchanged pending the author's decision."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 514,
+    "cache_read": 23505,
+    "cache_write": 8303,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00215305,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

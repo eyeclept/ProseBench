@@ -1,0 +1,60 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:50:38.359117+00:00",
+  "duration_s": 16.369728087011026,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts in the Texas failure.\", \"reason\": \"The positive clause alone states the cause of the lost megawatts, making the negative windup removable.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"The paired contrast adds no checkable information beyond the preceding sentence's point about planned investment.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"The contrast clause restates no new fact and functions purely as filler after the investment statement.\"}]}",
+  "edits": [
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts in the Texas failure.",
+      "reason": "The positive clause alone states the cause of the lost megawatts, making the negative windup removable."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The paired contrast adds no checkable information beyond the preceding sentence's point about planned investment."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The contrast clause restates no new fact and functions purely as filler after the investment statement."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4782,
+    "output": 250,
+    "cache_read": 36992,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.002445638,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "edit passage \"delete-and-reread\" padded negation restatement test copy editing rule",
+        "objective": "Confirm passage integrity before applying Rule 2 edits"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

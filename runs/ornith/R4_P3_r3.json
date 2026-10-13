@@ -1,0 +1,342 @@
+{
+  "run_id": "R4_P3_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:42:07.965039+00:00",
+  "duration_s": 76.97153782399255,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n  {\n    \"original\": \"not merely academic\u2014it is essential\",\n    \"replacement\": \"not merely academic; it is essential\",\n    \"reason\": \"The em dash is a non-ASCII typographic character that must be replaced with an ASCII equivalent, and since it joins two independent clauses a semicolon is appropriate.\"\n  },\n  {\n    \"original\": \"well\u2011being\",\n    \"replacement\": \"well-being\",\n    \"reason\": \"The non-ASCII soft hyphen in 'well-being' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"the discipline's contemporary relevance\",\n    \"replacement\": \"the discipline's contemporary relevance\",\n    \"reason\": \"The apostrophe in 'discipline's' is a smart/curly quote that must be replaced with a straight ASCII apostrophe.\"\n  },\n  {\n    \"original\": \"c. 371\u2013287 BC\",\n    \"replacement\": \"c. 371-287 BC\",\n    \"reason\": \"The en dash used as a range separator must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"the \\\"father of botany\\\"\",\n    \"replacement\": \"the \\\"father of botany\\\"\",\n    \"reason\": \"The curly double quotation marks must be replaced with straight ASCII double quotes.\"\n  },\n  {\n    \"original\": \"the \\\"cell.\\\"\",\n    \"replacement\": \"the \\\"cell.\\\"\",\n    \"reason\": \"The curly double quotation marks must be replaced with straight ASCII double quotes.\"\n  },\n  {\n    \"original\": \"undetermined\u2026 until\",\n    \"replacement\": \"undetermined... until\",\n    \"reason\": \"The ellipsis glyph must be replaced with three separate period characters.\"\n  },\n  {\n    \"original\": \"high\u2011throughput\",\n    \"replacement\": \"high-throughput\",\n    \"reason\": \"The non-ASCII soft hyphen in 'high-throughput' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"plasmodesmata\u2014microscopic channels\",\n    \"replacement\": \"plasmodesmata; microscopic channels\",\n    \"reason\": \"The em dash joining two independent clauses must be replaced with an ASCII equivalent, and a semicolon is appropriate for connecting them.\"\n  },\n  {\n    \"original\": \"stomata\u2014pores that\",\n    \"replacement\": \"stomata\u2014pores that\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"niches\u2014from desert succulents\",\n    \"replacement\": \"niches\u2014desert succulents\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"light\u2011dependent\",\n    \"replacement\": \"light-dependent\",\n    \"reason\": \"The non-ASCII soft hyphen in 'light-dependent' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"Calvin\u2011Benson\",\n    \"replacement\": \"Calvin-Benson\",\n    \"reason\": \"The non-ASCII soft hyphen in 'Calvin-Benson' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"pigment molecules\u2014chiefly chlorophyll\",\n    \"replacement\": \"pigment molecules\u2014chiefly chlorophyll\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"reduces NADP\u207a\",\n    \"replacement\": \"reduces NADP+\",\n    \"reason\": \"The non-ASCII superscript plus sign must be replaced with a standard ASCII plus sign.\"\n  },\n  {\n    \"original\": \"releasing O\u2082\",\n    \"replacement\": \"releasing O2\",\n    \"reason\": \"The non-ASCII subscript two must be replaced with a standard ASCII character.\"\n  },\n  {\n    \"original\": \"by\u2011product\",\n    \"replacement\": \"by-product\",\n    \"reason\": \"The non-ASCII soft hyphen in 'by-product' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"CO\u2082 is fixed\",\n    \"replacement\": \"CO2 is fixed\",\n    \"reason\": \"The non-ASCII subscript two must be replaced with a standard ASCII character.\"\n  },\n  {\n    \"original\": \"ribulose\u20111,5\u2011bisphosphate\",\n    \"replacement\": \"ribulose-1,5-bisphosphate\",\n    \"reason\": \"The non-ASCII soft hyphens in 'ribulose-1,5-bisphosphate' must be replaced with standard ASCII hyphens.\"\n  },\n  {\n    \"original\": \"3\u2011phosphoglycerate\",\n    \"replacement\": \"3-phosphoglycerate\",\n    \"reason\": \"The non-ASCII soft hyphen in '3-phosphoglycerate' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"glyceraldehyde\u20113\u2011phosphate\",\n    \"replacement\": \"glyceraldehyde-3-phosphate\",\n    \"reason\": \"The non-ASCII soft hyphens in 'glyceraldehyde-3-phosphate' must be replaced with standard ASCII hyphens.\"\n  },\n  {\n    \"original\": \"adaptations\u2014C\u2084 and CAM\",\n    \"replacement\": \"adaptations\u2014C4 and CAM\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review, and the subscript four should become a plain ASCII character.\"\n  },\n  {\n    \"original\": \"C\u2084 and CAM photosynthetic\",\n    \"replacement\": \"C4 and CAM photosynthetic\",\n    \"reason\": \"The subscript four must be replaced with a standard ASCII character.\"\n  },\n  {\n    \"original\": \"C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize\",\n    \"replacement\": \"C4 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize\",\n    \"reason\": \"The subscript four must become ASCII, but the em dash joining clauses requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Algae** \u2013 Primarily\",\n    \"replacement\": \"Algae** \u2014 Primarily\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Bryophytes** \u2013 Non\u2011vascular\",\n    \"replacement\": \"Bryophytes** Non-vascular\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, and the non-ASCII soft hyphen in 'Non-vascular' must become a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"Pteridophytes** \u2013 Seedless\",\n    \"replacement\": \"Pteridophytes** \u2014 Seedless\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Gymnosperms** \u2013 \\\"Naked seed\\\"\",\n    \"replacement\": \"Gymnosperms** \u2014 \\\"Naked seed\\\"\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, and the curly double quotation marks must become straight ASCII quotes, but the dash placement requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Angiosperms** \u2013 Flowering\",\n    \"replacement\": \"Angiosperms** \u2014 Flowering\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"monocot\\\" group\",\n    \"replacement\": \"monocot\\\" group\",\n    \"reason\": \"The curly double quotation marks must be replaced with straight ASCII double quotes.\"\n  },\n  {\n    \"original\": \"dicots\\\" are paraphyletic\",\n    \"replacement\": \"dicots\\\" are paraphyletic\",\n    \"reason\": \"The curly double quotation marks must be replaced with straight ASCII double quotes.\"\n  },\n  {\n    \"original\": \"The market rejected the entire lot\u2014the seedlings bolted in week 3; they never formed heads. Conservation collections still accession landraces, rather than heirlooms.\",\n    \"replacement\": \"The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot. Conservation collections still accession landraces, rather than heirlooms.\",\n    \"reason\": \"The em dash joining two independent clauses must be replaced with an ASCII equivalent and a semicolon is appropriate, while the smart quotation marks become straight quotes.\"\n  },\n  {\n    \"original\": \"stomach acids\u2014alkaloids, terpenoids, phenolics\",\n    \"replacement\": \"stomach acids\u2014alkaloids, terpenoids, phenolics\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"carbon\u2011sequestering\",\n    \"replacement\": \"carbon-sequestering\",\n    \"reason\": \"The non-ASCII soft hyphen in 'carbon-sequestering' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"closed\u2011loop\",\n    \"replacement\": \"closed-loop\",\n    \"reason\": \"The non-ASCII soft hyphen in 'closed-loop' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"closed\u2011loop recycling\",\n    \"replacement\": \"closed-loop recycling\",\n    \"reason\": \"The non-ASCII soft hyphen in 'closed-loop' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"120 Gt of CO\u2082\",\n    \"replacement\": \"120 Gt of CO2\",\n    \"reason\": \"The non-ASCII subscript two must be replaced with a standard ASCII character.\"\n  },\n  {\n    \"original\": \"symbiotic relationships between plant roots and fungi\u2014facilitate\",\n    \"replacement\": \"symbiotic relationships between plant roots and fungi\u2014facilitate\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"non\u2011material\",\n    \"replacement\": \"non-material\",\n    \"reason\": \"The non-ASCII soft hyphen in 'non-material' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"Plant communities\u2014via deforestation\",\n    \"replacement\": \"Plant communities\u2014via deforestation\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"next\u2011generation\",\n    \"replacement\": \"next-generation\",\n    \"reason\": \"The non-ASCII soft hyphen in 'next-generation' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"whole\u2011genome\",\n    \"replacement\": \"whole-genome\",\n    \"reason\": \"The non-ASCII soft hyphen in 'whole-genome' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"high\u2011dimensional\",\n    \"replacement\": \"high-dimensional\",\n    \"reason\": \"The non-ASCII soft hyphen in 'high-dimensional' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"prokaryotic\u2011like\",\n    \"replacement\": \"prokaryotic-like\",\n    \"reason\": \"The non-ASCII soft hyphen in 'prokaryotic-like' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"stress memory\u2014the ability\",\n    \"replacement\": \"stress memory\u2014the ability\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"re\u2011encounter\",\n    \"replacement\": \"re-encounter\",\n    \"reason\": \"The non-ASCII soft hyphen in 're-encounter' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"nitrogen\u2011fixing bacteria\",\n    \"replacement\": \"nitrogen-fixing bacteria\",\n    \"reason\": \"The non-ASCII soft hyphen in 'nitrogen-fixing bacteria' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"signaling molecules like strigolactones and flavonoids\u2014offers\",\n    \"replacement\": \"signaling molecules like strigolactones and flavonoids\u2014offers\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Biodiversity Loss \u2013 Habitat destruction\",\n    \"replacement\": \"Biodiversity Loss \u2014 Habitat destruction\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Biopiracy \u2013 The commercialization\",\n    \"replacement\": \"Biopiracy \u2014 The commercialization\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Gene Editing Governance \u2013 CRISPR\",\n    \"replacement\": \"Gene Editing Governance \u2014 CRISPR\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"Climate Change Feedbacks \u2013 As global\",\n    \"replacement\": \"Climate Change Feedbacks \u2014 As global\",\n    \"reason\": \"The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"socio\u2011economic\",\n    \"replacement\": \"socio-economic\",\n    \"reason\": \"The non-ASCII soft hyphen in 'socio-economic' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"Precision agriculture\u2014leveraging\",\n    \"replacement\": \"Precision agriculture\u2014leveraging\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"real\u2011time\",\n    \"replacement\": \"real-time\",\n    \"reason\": \"The non-ASCII soft hyphen in 'real-time' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"climate\u2011smart\",\n    \"replacement\": \"climate-smart\",\n    \"reason\": \"The non-ASCII soft hyphen in 'climate-smart' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"climate-smart plants\u2014species\",\n    \"replacement\": \"climate-smart plants\u2014species\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"land\u2011use\",\n    \"replacement\": \"land-use\",\n    \"reason\": \"The non-ASCII soft hyphen in 'land-use' must be replaced with a standard ASCII hyphen.\"\n  },\n  {\n    \"original\": \"Plant communities\u2014through\",\n    \"replacement\": \"Plant communities\u2014through\",\n    \"reason\": \"The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review.\"\n  },\n  {\n    \"original\": \"genomes of towering redwoods\u2014the discipline has\",\n    \"replacement\": \"genomes of towering redwoods, and the discipline has\",\n    \"reason\": \"The em dash joining two independent clauses must be replaced with an ASCII equivalent, and a comma is appropriate here.\",\n    \"reason\": \"The em dash joining two independent clauses must be replaced with an ASCII equivalent, and since the second part is not an independent clause, a comma is appropriate.\"\n  },\n  {\n    \"original\": \"ribulose\u20111,5\u2011bisphosphate carboxylase/oxygenase\",\n    \"replacement\": \"ribulose-1,5-bisphosphate carboxylase/oxygenase\",\n    \"reason\": \"The non-ASCII soft hyphens in 'ribulose-1,5-bisphosphate' must be replaced with standard ASCII hyphens.\"\n  }\n]}\n```",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "The em dash is a non-ASCII typographic character that must be replaced with an ASCII equivalent, and since it joins two independent clauses a semicolon is appropriate."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "The non-ASCII soft hyphen in 'well-being' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "the discipline's contemporary relevance",
+      "replacement": "the discipline's contemporary relevance",
+      "reason": "The apostrophe in 'discipline's' is a smart/curly quote that must be replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "c. 371\u2013287 BC",
+      "replacement": "c. 371-287 BC",
+      "reason": "The en dash used as a range separator must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "the \"father of botany\"",
+      "replacement": "the \"father of botany\"",
+      "reason": "The curly double quotation marks must be replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "the \"cell.\"",
+      "replacement": "the \"cell.\"",
+      "reason": "The curly double quotation marks must be replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined... until",
+      "reason": "The ellipsis glyph must be replaced with three separate period characters."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "The non-ASCII soft hyphen in 'high-throughput' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata; microscopic channels",
+      "reason": "The em dash joining two independent clauses must be replaced with an ASCII equivalent, and a semicolon is appropriate for connecting them."
+    },
+    {
+      "original": "stomata\u2014pores that",
+      "replacement": "stomata\u2014pores that",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "niches\u2014from desert succulents",
+      "replacement": "niches\u2014desert succulents",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "The non-ASCII soft hyphen in 'light-dependent' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "The non-ASCII soft hyphen in 'Calvin-Benson' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll",
+      "replacement": "pigment molecules\u2014chiefly chlorophyll",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "reduces NADP\u207a",
+      "replacement": "reduces NADP+",
+      "reason": "The non-ASCII superscript plus sign must be replaced with a standard ASCII plus sign."
+    },
+    {
+      "original": "releasing O\u2082",
+      "replacement": "releasing O2",
+      "reason": "The non-ASCII subscript two must be replaced with a standard ASCII character."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "The non-ASCII soft hyphen in 'by-product' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "CO\u2082 is fixed",
+      "replacement": "CO2 is fixed",
+      "reason": "The non-ASCII subscript two must be replaced with a standard ASCII character."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "The non-ASCII soft hyphens in 'ribulose-1,5-bisphosphate' must be replaced with standard ASCII hyphens."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "The non-ASCII soft hyphen in '3-phosphoglycerate' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "The non-ASCII soft hyphens in 'glyceraldehyde-3-phosphate' must be replaced with standard ASCII hyphens."
+    },
+    {
+      "original": "adaptations\u2014C\u2084 and CAM",
+      "replacement": "adaptations\u2014C4 and CAM",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review, and the subscript four should become a plain ASCII character."
+    },
+    {
+      "original": "C\u2084 and CAM photosynthetic",
+      "replacement": "C4 and CAM photosynthetic",
+      "reason": "The subscript four must be replaced with a standard ASCII character."
+    },
+    {
+      "original": "C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize",
+      "replacement": "C4 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize",
+      "reason": "The subscript four must become ASCII, but the em dash joining clauses requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Algae** \u2013 Primarily",
+      "replacement": "Algae** \u2014 Primarily",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Bryophytes** \u2013 Non\u2011vascular",
+      "replacement": "Bryophytes** Non-vascular",
+      "reason": "The en dash must be replaced with a standard ASCII character, and the non-ASCII soft hyphen in 'Non-vascular' must become a standard ASCII hyphen."
+    },
+    {
+      "original": "Pteridophytes** \u2013 Seedless",
+      "replacement": "Pteridophytes** \u2014 Seedless",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Gymnosperms** \u2013 \"Naked seed\"",
+      "replacement": "Gymnosperms** \u2014 \"Naked seed\"",
+      "reason": "The en dash must be replaced with a standard ASCII character, and the curly double quotation marks must become straight ASCII quotes, but the dash placement requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Angiosperms** \u2013 Flowering",
+      "replacement": "Angiosperms** \u2014 Flowering",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "monocot\" group",
+      "replacement": "monocot\" group",
+      "reason": "The curly double quotation marks must be replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "dicots\" are paraphyletic",
+      "replacement": "dicots\" are paraphyletic",
+      "reason": "The curly double quotation marks must be replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "The market rejected the entire lot\u2014the seedlings bolted in week 3; they never formed heads. Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot. Conservation collections still accession landraces, rather than heirlooms.",
+      "reason": "The em dash joining two independent clauses must be replaced with an ASCII equivalent and a semicolon is appropriate, while the smart quotation marks become straight quotes."
+    },
+    {
+      "original": "stomach acids\u2014alkaloids, terpenoids, phenolics",
+      "replacement": "stomach acids\u2014alkaloids, terpenoids, phenolics",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "The non-ASCII soft hyphen in 'carbon-sequestering' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "closed\u2011loop",
+      "replacement": "closed-loop",
+      "reason": "The non-ASCII soft hyphen in 'closed-loop' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "closed\u2011loop recycling",
+      "replacement": "closed-loop recycling",
+      "reason": "The non-ASCII soft hyphen in 'closed-loop' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "120 Gt of CO\u2082",
+      "replacement": "120 Gt of CO2",
+      "reason": "The non-ASCII subscript two must be replaced with a standard ASCII character."
+    },
+    {
+      "original": "symbiotic relationships between plant roots and fungi\u2014facilitate",
+      "replacement": "symbiotic relationships between plant roots and fungi\u2014facilitate",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "non\u2011material",
+      "replacement": "non-material",
+      "reason": "The non-ASCII soft hyphen in 'non-material' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "Plant communities\u2014via deforestation",
+      "replacement": "Plant communities\u2014via deforestation",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "The non-ASCII soft hyphen in 'next-generation' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "whole\u2011genome",
+      "replacement": "whole-genome",
+      "reason": "The non-ASCII soft hyphen in 'whole-genome' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "high\u2011dimensional",
+      "replacement": "high-dimensional",
+      "reason": "The non-ASCII soft hyphen in 'high-dimensional' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "prokaryotic\u2011like",
+      "replacement": "prokaryotic-like",
+      "reason": "The non-ASCII soft hyphen in 'prokaryotic-like' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "stress memory\u2014the ability",
+      "replacement": "stress memory\u2014the ability",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "re\u2011encounter",
+      "replacement": "re-encounter",
+      "reason": "The non-ASCII soft hyphen in 're-encounter' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "nitrogen\u2011fixing bacteria",
+      "replacement": "nitrogen-fixing bacteria",
+      "reason": "The non-ASCII soft hyphen in 'nitrogen-fixing bacteria' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "signaling molecules like strigolactones and flavonoids\u2014offers",
+      "replacement": "signaling molecules like strigolactones and flavonoids\u2014offers",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Biodiversity Loss \u2013 Habitat destruction",
+      "replacement": "Biodiversity Loss \u2014 Habitat destruction",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Biopiracy \u2013 The commercialization",
+      "replacement": "Biopiracy \u2014 The commercialization",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Gene Editing Governance \u2013 CRISPR",
+      "replacement": "Gene Editing Governance \u2014 CRISPR",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "Climate Change Feedbacks \u2013 As global",
+      "replacement": "Climate Change Feedbacks \u2014 As global",
+      "reason": "The en dash must be replaced with a standard ASCII character, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "socio\u2011economic",
+      "replacement": "socio-economic",
+      "reason": "The non-ASCII soft hyphen in 'socio-economic' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "Precision agriculture\u2014leveraging",
+      "replacement": "Precision agriculture\u2014leveraging",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "The non-ASCII soft hyphen in 'real-time' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "climate\u2011smart",
+      "replacement": "climate-smart",
+      "reason": "The non-ASCII soft hyphen in 'climate-smart' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "climate-smart plants\u2014species",
+      "replacement": "climate-smart plants\u2014species",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "land\u2011use",
+      "replacement": "land-use",
+      "reason": "The non-ASCII soft hyphen in 'land-use' must be replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "Plant communities\u2014through",
+      "replacement": "Plant communities\u2014through",
+      "reason": "The em dash is a non-ASCII character that must be replaced, but this requires structural judgment so it is flagged for author review."
+    },
+    {
+      "original": "genomes of towering redwoods\u2014the discipline has",
+      "replacement": "genomes of towering redwoods, and the discipline has",
+      "reason": "The em dash joining two independent clauses must be replaced with an ASCII equivalent, and since the second part is not an independent clause, a comma is appropriate."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate carboxylase/oxygenase",
+      "replacement": "ribulose-1,5-bisphosphate carboxylase/oxygenase",
+      "reason": "The non-ASCII soft hyphens in 'ribulose-1,5-bisphosphate' must be replaced with standard ASCII hyphens."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20762,
+    "output": 3947,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

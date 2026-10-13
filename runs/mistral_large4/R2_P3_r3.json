@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P3_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:01:35.136385+00:00",
+  "duration_s": 23.398807613993995,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity\",\n      \"replacement\": \"a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity\",\n      \"reason\": \"The negative half 'not merely academic' is windup; deleting it leaves the same claim with nothing lost.\"\n    },\n    {\n      \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (the C4 case), and a temporal regime, where stomata open at night (the CAM case).\",\n      \"reason\": \"The trailing clause 'close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one' restates the same distinction through analogy/synonym without adding new information.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is produced in Papaver somniferum latex.\",\n      \"reason\": \"The negative half 'is not synthesized by the Pacific yew' is filler; the positive half alone states the claim with nothing lost.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": \"The construct was designed for chloroplast transformation.\",\n      \"reason\": \"The negative half 'not nuclear transformation' is windup; the positive half alone states the same claim.\"\n    },\n    {\n      \"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative\",\n      \"replacement\": \"a deep, nuanced understanding of plant biology is imperative\",\n      \"reason\": \"The negative half 'is not optional' is filler; deleting it leaves the same claim with nothing lost.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity",
+      "replacement": "a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity",
+      "reason": "The negative half 'not merely academic' is windup; deleting it leaves the same claim with nothing lost."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (the C4 case), and a temporal regime, where stomata open at night (the CAM case).",
+      "reason": "The trailing clause 'close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one' restates the same distinction through analogy/synonym without adding new information."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative half 'is not synthesized by the Pacific yew' is filler; the positive half alone states the claim with nothing lost."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negative half 'not nuclear transformation' is windup; the positive half alone states the same claim."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative",
+      "replacement": "a deep, nuanced understanding of plant biology is imperative",
+      "reason": "The negative half 'is not optional' is filler; deleting it leaves the same claim with nothing lost."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 456,
+    "output": 494,
+    "cache_read": 19948,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0027389,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

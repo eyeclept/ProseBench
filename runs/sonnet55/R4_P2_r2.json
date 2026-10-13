@@ -1,0 +1,476 @@
+{
+  "run_id": "R4_P2_r2",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "dadd6a00a261be1b0fe1f55061cc96c151401a6bc3a021a0e164951984ae1cc9",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:50:29.117752+00:00",
+  "duration_s": 41.74290588698932,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "I made that search call by mistake; the edit needs no tools. The search failed because the Firecrawl account is out of credits, so that is no obstacle here (you can add credits at https://www.firecrawl.dev/app/settings?tab=billing if you want to use it later). Here is the edit list.\n\n```json\n{\"edits\": [\n{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophe becomes a straight apostrophe.\"},\n{\"original\": \"power system\u2014commonly referred to simply as a *power system*\u2014is\", \"replacement\": \"power system, commonly referred to simply as a *power system*, is\", \"reason\": \"Paired em dashes around a parenthetical become commas.\"},\n{\"original\": \"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged\", \"replacement\": \"While the basic principle (converting a primary energy source into usable electrical power) remains unchanged\", \"reason\": \"Paired em dashes around an aside become parentheses.\"},\n{\"original\": \"end\u2011users. Three core\", \"replacement\": \"end-users. Three core\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"1. **Generation** \u2013 Conversion\", \"replacement\": \"1. **Generation**: Conversion\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"2. **Transmission & Distribution (T&D)** \u2013 Transport of electric power from the generation site to the load center using high\u2011voltage lines (transmission) and lower\u2011voltage feeders\", \"replacement\": \"2. **Transmission & Distribution (T&D)**: Transport of electric power from the generation site to the load center using high-voltage lines (transmission) and lower-voltage feeders\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"3. **Control & Protection** \u2013 Continuous\", \"replacement\": \"3. **Control & Protection**: Continuous\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"complex socio\u2011technical system\", \"replacement\": \"complex socio-technical system\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"information\u2011communication technologies\", \"replacement\": \"information-communication technologies\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"short\u2011term stability\", \"replacement\": \"short-term stability\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\", \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides\", \"reason\": \"Paired em dashes around an aside become parentheses.\"},\n{\"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\", \"replacement\": \"Forecasts still miss cloud-driven ramps... Wind turbines\", \"reason\": \"Ellipsis glyph becomes three periods.\"},\n{\"original\": \"- **Intermittency** \u2013 Power output\", \"replacement\": \"- **Intermittency**: Power output\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Geographic Dispersion** \u2013 Renewable\", \"replacement\": \"- **Geographic Dispersion**: Renewable\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Inverter\u2011Based Interface** \u2013 Many\", \"replacement\": \"- **Inverter-Based Interface**: Many\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"Beyond utility\u2011scale renewables, the advent of small\u2011scale generation\", \"replacement\": \"Beyond utility-scale renewables, the advent of small-scale generation\", \"reason\": \"Non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"grid\u2011connected mode, augmenting\", \"replacement\": \"grid-connected mode, augmenting\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed\", \"replacement\": \"High voltages (typically ranging from 115 kV to 1,200 kV) are employed\", \"reason\": \"Paired em dashes around an aside become parentheses.\"},\n{\"original\": \"- **Transmission Lines** \u2013 Overhead conductors (steel\u2011reinforced aluminum, ACSR) or underground/high\u2011temperature\", \"replacement\": \"- **Transmission Lines**: Overhead conductors (steel-reinforced aluminum, ACSR) or underground/high-temperature\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Substations** \u2013 Nodes\", \"replacement\": \"- **Substations**: Nodes\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Converters** \u2013 For High\u2011Voltage Direct Current (HVDC) links, line\u2011commutated converters (LCC) or Voltage\u2011Sourced Converters (VSC) enable long\u2011distance, low\u2011loss power\", \"replacement\": \"- **Converters**: For High-Voltage Direct Current (HVDC) links, line-commutated converters (LCC) or Voltage-Sourced Converters (VSC) enable long-distance, low-loss power\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"(FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides\", \"replacement\": \"(FACTS) devices (static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides\", \"reason\": \"Paired em dashes become parentheses; non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"the \u201clast mile\u201d of the power system\", \"replacement\": \"the \\\"last mile\\\" of the power system\", \"reason\": \"Curly quotes become straight quotes.\"},\n{\"original\": \"1. **Primary Substations** \u2013 Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via\", \"replacement\": \"1. **Primary Substations**: Reduce transmission-level voltages (e.g., 138 kV) to medium voltages (4 kV-35 kV) via\", \"reason\": \"En dash separator becomes a colon; en dash range becomes a hyphen; non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"2. **Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs\", \"replacement\": \"2. **Radial or Mesh Feeders**: \\\"Radial\\\" designs\", \"reason\": \"En dash becomes a colon; curly quotes become straight quotes.\"},\n{\"original\": \"3. **Secondary Distribution Transformers** \u2013 Further\", \"replacement\": \"3. **Secondary Distribution Transformers**: Further\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"4. **Smart Devices** \u2013 Automated\", \"replacement\": \"4. **Smart Devices**: Automated\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Primary (Local) Control** \u2013 Governor\", \"replacement\": \"- **Primary (Local) Control**: Governor\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Secondary (AGC) Control** \u2013 Automatic Generation Control adjusts generator set\u2011points\", \"replacement\": \"- **Secondary (AGC) Control**: Automatic Generation Control adjusts generator set-points\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"- **Tertiary (Economic Dispatch)** \u2013 Centralized\", \"replacement\": \"- **Tertiary (Economic Dispatch)**: Centralized\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"act as the grid\u2019s immune system\", \"replacement\": \"act as the grid's immune system\", \"reason\": \"Curly apostrophe becomes a straight apostrophe.\"},\n{\"original\": \"- **Overcurrent Protection** \u2013 Detects\", \"replacement\": \"- **Overcurrent Protection**: Detects\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Distance Protection** \u2013 Measures\", \"replacement\": \"- **Distance Protection**: Measures\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Differential Protection** \u2013 Compares\", \"replacement\": \"- **Differential Protection**: Compares\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"microprocessor\u2011based Intelligent\", \"replacement\": \"microprocessor-based Intelligent\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events, cyber\u2011attacks, and\", \"replacement\": \"While electricity is expected to be \\\"always-on,\\\" extreme weather events, cyber-attacks, and\", \"reason\": \"Curly quotes become straight quotes; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"and large\u2011scale blackouts in India\", \"replacement\": \"and large-scale blackouts in India\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\", \"replacement\": \"Frozen wellheads cut gas supply; thermal units then tripped on auxiliary freeze.\", \"reason\": \"Em dash joining two independent clauses becomes a semicolon.\"},\n{\"original\": \"- **Hardening Infrastructure** \u2013 Substation\", \"replacement\": \"- **Hardening Infrastructure**: Substation\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Grid Flexibility** \u2013 Fast\u2011acting storage, demand\u2011response programs, and synthetic inertia from inverter\u2011based resources.\", \"replacement\": \"- **Grid Flexibility**: Fast-acting storage, demand-response programs, and synthetic inertia from inverter-based resources.\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Decentralized Backup** \u2013 Microgrids\", \"replacement\": \"- **Decentralized Backup**: Microgrids\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"1. **Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity\", \"replacement\": \"1. **Supply-Demand Balancing**: The net load curve becomes flatter during sunny windy days, diminishing the \\\"ramping\\\" capacity\", \"reason\": \"En dash becomes a colon; non-breaking hyphen and curly quotes become ASCII.\"},\n{\"original\": \"2. **Grid Stability** \u2013 Reduced\", \"replacement\": \"2. **Grid Stability**: Reduced\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"compressed\u2011air energy storage, battery\u2011energy\u2011storage systems\", \"replacement\": \"compressed-air energy storage, battery-energy-storage systems\", \"reason\": \"Non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Cost\u2011reflective tariffs**\", \"replacement\": \"- **Cost-reflective tariffs**\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"as more devices become network\u2011connected\", \"replacement\": \"as more devices become network-connected\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"#### 6.4 Cyber\u2011Physical Security\", \"replacement\": \"#### 6.4 Cyber-Physical Security\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"Cyber\u2011physical attacks, such as\", \"replacement\": \"Cyber-physical attacks, such as\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"*defense\u2011in\u2011depth* architectures\", \"replacement\": \"*defense-in-depth* architectures\", \"reason\": \"Non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Real\u2011time anomaly detection**\", \"replacement\": \"- **Real-time anomaly detection**\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network\", \"replacement\": \"two-way communication, and advanced analytics to create a responsive, self-optimizing network\", \"reason\": \"Non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Advanced Metering Infrastructure (AMI)** \u2013 Provides\", \"replacement\": \"- **Advanced Metering Infrastructure (AMI)**: Provides\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Distribution Management Systems (DMS)** \u2013 Automate\", \"replacement\": \"- **Distribution Management Systems (DMS)**: Automate\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120 samples/second\", \"replacement\": \"- **Wide-Area Monitoring Systems (WAMS)**: Phasor Measurement Units (PMUs) deliver synchrophasor data at 30-120 samples/second\", \"reason\": \"En dash separator becomes a colon; en dash range becomes a hyphen; non-breaking hyphen becomes plain.\"},\n{\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\", \"replacement\": \"Digital twins (high-fidelity virtual replicas of physical grid assets) allow\", \"reason\": \"Paired em dashes become parentheses; non-breaking hyphen becomes plain.\"},\n{\"original\": \"- **Lithium\u2011Ion Batteries** \u2013 Dominant for short\u2011 to medium\u2011duration (minutes to hours)\", \"replacement\": \"- **Lithium-Ion Batteries**: Dominant for short- to medium-duration (minutes to hours)\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer scalable, long\u2011duration\", \"replacement\": \"- **Flow Batteries** (Vanadium Redox, Zinc-Bromine): Offer scalable, long-duration\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"- **Thermal and Mechanical Storage** \u2013 Cryogenic\", \"replacement\": \"- **Thermal and Mechanical Storage**: Cryogenic\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"gravity\u2011based systems\", \"replacement\": \"gravity-based systems\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"- **Full Renewable Transition** \u2013 100 % renewable\", \"replacement\": \"- **Full Renewable Transition**: 100 % renewable\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting existing fossil\u2011fuel plants\", \"replacement\": \"- **Carbon Capture, Utilization, and Storage (CCUS)**: Retrofitting existing fossil-fuel plants\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"- **Hydrogen Integration** \u2013 Using\", \"replacement\": \"- **Hydrogen Integration**: Using\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"#### 7.4 Grid\u2011Forming Inverters\", \"replacement\": \"#### 7.4 Grid-Forming Inverters\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"operate in *grid\u2011following* mode\", \"replacement\": \"operate in *grid-following* mode\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"new *grid\u2011forming* inverters can establish\", \"replacement\": \"new *grid-forming* inverters can establish\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"- **Provides Synthetic Inertia** \u2013 Emulates\", \"replacement\": \"- **Provides Synthetic Inertia**: Emulates\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone\", \"replacement\": \"- **Enables Islanded Microgrids**: Seamless transition between grid-connected and standalone\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"#### 7.5 Power\u2011to\u2011X (P2X)\", \"replacement\": \"#### 7.5 Power-to-X (P2X)\", \"reason\": \"Non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).\", \"replacement\": \"\\\"Power-to-X\\\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).\", \"reason\": \"Curly quotes become straight quotes; non-breaking hyphens become plain hyphens.\"},\n{\"original\": \"### 8. Case Study: A Smart, Renewable\u2011Heavy Grid\", \"replacement\": \"### 8. Case Study: A Smart, Renewable-Heavy Grid\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"**European Union\u2019s \u201cElectricity Interconnection\u201d** project\", \"replacement\": \"**European Union's \\\"Electricity Interconnection\\\"** project\", \"reason\": \"Curly apostrophe and quotes become straight.\"},\n{\"original\": \"- **HVDC Links** \u2013 Multi\u2011terminal\", \"replacement\": \"- **HVDC Links**: Multi-terminal\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"- **Coordinated Market Coupling** \u2013 Harmonized market rules allow cross\u2011border trading\", \"replacement\": \"- **Coordinated Market Coupling**: Harmonized market rules allow cross-border trading\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"- **Real\u2011Time Grid Operations** \u2013 A continent\u2011wide WAMS\", \"replacement\": \"- **Real-Time Grid Operations**: A continent-wide WAMS\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain.\"},\n{\"original\": \"robust transmission, advanced controls, and market integration co\u2011exist\", \"replacement\": \"robust transmission, advanced controls, and market integration co-exist\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"*centrally\u2011controlled, unidirectional* network\", \"replacement\": \"*centrally-controlled, unidirectional* network\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"- **Massive DER Penetration** \u2013 Millions\", \"replacement\": \"- **Massive DER Penetration**: Millions\", \"reason\": \"En dash used as a separator becomes a colon.\"},\n{\"original\": \"- **Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive\", \"replacement\": \"- **Artificial-Intelligence-Driven Operations**: Predictive\", \"reason\": \"En dash becomes a colon; non-breaking hyphens become plain.\"},\n{\"original\": \"- **Resilient Architecture** \u2013 Multi\u2011layered\", \"replacement\": \"- **Resilient Architecture**: Multi-layered\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"- **Policy\u2011Driven Decarbonization** \u2013 Carbon pricing\", \"replacement\": \"- **Policy-Driven Decarbonization**: Carbon pricing\", \"reason\": \"En dash becomes a colon; non-breaking hyphen becomes plain.\"},\n{\"original\": \"net\u2011zero electricity sector\", \"replacement\": \"net-zero electricity sector\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"},\n{\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite\", \"replacement\": \"Ice storms still take lines out of service for days; planners rewrite\", \"reason\": \"Em dash joining independent clauses becomes a semicolon.\"},\n{\"original\": \"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\", \"replacement\": \"The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy landscape) promise\", \"reason\": \"Paired em dashes around an aside become parentheses.\"},\n{\"original\": \"innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust\", \"replacement\": \"innovative technologies (smart grids, energy storage, grid-forming inverters) and robust\", \"reason\": \"Paired em dashes become parentheses; non-breaking hyphen becomes plain.\"},\n{\"original\": \"sustain the grid\u2019s reliability\", \"replacement\": \"sustain the grid's reliability\", \"reason\": \"Curly apostrophe becomes a straight apostrophe.\"},\n{\"original\": \"climate\u2011friendly technologies\", \"replacement\": \"climate-friendly technologies\", \"reason\": \"Non-breaking hyphen becomes a plain hyphen.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "power system, commonly referred to simply as a *power system*, is",
+      "reason": "Paired em dashes around a parenthetical become commas."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged",
+      "replacement": "While the basic principle (converting a primary energy source into usable electrical power) remains unchanged",
+      "reason": "Paired em dashes around an aside become parentheses."
+    },
+    {
+      "original": "end\u2011users. Three core",
+      "replacement": "end-users. Three core",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "1. **Generation** \u2013 Conversion",
+      "replacement": "1. **Generation**: Conversion",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "2. **Transmission & Distribution (T&D)** \u2013 Transport of electric power from the generation site to the load center using high\u2011voltage lines (transmission) and lower\u2011voltage feeders",
+      "replacement": "2. **Transmission & Distribution (T&D)**: Transport of electric power from the generation site to the load center using high-voltage lines (transmission) and lower-voltage feeders",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "3. **Control & Protection** \u2013 Continuous",
+      "replacement": "3. **Control & Protection**: Continuous",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "complex socio\u2011technical system",
+      "replacement": "complex socio-technical system",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "information\u2011communication technologies",
+      "replacement": "information-communication technologies",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "short\u2011term stability",
+      "replacement": "short-term stability",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides",
+      "reason": "Paired em dashes around an aside become parentheses."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps... Wind turbines",
+      "reason": "Ellipsis glyph becomes three periods."
+    },
+    {
+      "original": "- **Intermittency** \u2013 Power output",
+      "replacement": "- **Intermittency**: Power output",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Geographic Dispersion** \u2013 Renewable",
+      "replacement": "- **Geographic Dispersion**: Renewable",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Inverter\u2011Based Interface** \u2013 Many",
+      "replacement": "- **Inverter-Based Interface**: Many",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "Beyond utility\u2011scale renewables, the advent of small\u2011scale generation",
+      "replacement": "Beyond utility-scale renewables, the advent of small-scale generation",
+      "reason": "Non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "grid\u2011connected mode, augmenting",
+      "replacement": "grid-connected mode, augmenting",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed",
+      "replacement": "High voltages (typically ranging from 115 kV to 1,200 kV) are employed",
+      "reason": "Paired em dashes around an aside become parentheses."
+    },
+    {
+      "original": "- **Transmission Lines** \u2013 Overhead conductors (steel\u2011reinforced aluminum, ACSR) or underground/high\u2011temperature",
+      "replacement": "- **Transmission Lines**: Overhead conductors (steel-reinforced aluminum, ACSR) or underground/high-temperature",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Substations** \u2013 Nodes",
+      "replacement": "- **Substations**: Nodes",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Converters** \u2013 For High\u2011Voltage Direct Current (HVDC) links, line\u2011commutated converters (LCC) or Voltage\u2011Sourced Converters (VSC) enable long\u2011distance, low\u2011loss power",
+      "replacement": "- **Converters**: For High-Voltage Direct Current (HVDC) links, line-commutated converters (LCC) or Voltage-Sourced Converters (VSC) enable long-distance, low-loss power",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "(FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides",
+      "replacement": "(FACTS) devices (static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides",
+      "reason": "Paired em dashes become parentheses; non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the \"last mile\" of the power system",
+      "reason": "Curly quotes become straight quotes."
+    },
+    {
+      "original": "1. **Primary Substations** \u2013 Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via",
+      "replacement": "1. **Primary Substations**: Reduce transmission-level voltages (e.g., 138 kV) to medium voltages (4 kV-35 kV) via",
+      "reason": "En dash separator becomes a colon; en dash range becomes a hyphen; non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "2. **Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs",
+      "replacement": "2. **Radial or Mesh Feeders**: \"Radial\" designs",
+      "reason": "En dash becomes a colon; curly quotes become straight quotes."
+    },
+    {
+      "original": "3. **Secondary Distribution Transformers** \u2013 Further",
+      "replacement": "3. **Secondary Distribution Transformers**: Further",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "4. **Smart Devices** \u2013 Automated",
+      "replacement": "4. **Smart Devices**: Automated",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Primary (Local) Control** \u2013 Governor",
+      "replacement": "- **Primary (Local) Control**: Governor",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Secondary (AGC) Control** \u2013 Automatic Generation Control adjusts generator set\u2011points",
+      "replacement": "- **Secondary (AGC) Control**: Automatic Generation Control adjusts generator set-points",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "- **Tertiary (Economic Dispatch)** \u2013 Centralized",
+      "replacement": "- **Tertiary (Economic Dispatch)**: Centralized",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "act as the grid\u2019s immune system",
+      "replacement": "act as the grid's immune system",
+      "reason": "Curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "- **Overcurrent Protection** \u2013 Detects",
+      "replacement": "- **Overcurrent Protection**: Detects",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Distance Protection** \u2013 Measures",
+      "replacement": "- **Distance Protection**: Measures",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Differential Protection** \u2013 Compares",
+      "replacement": "- **Differential Protection**: Compares",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "microprocessor\u2011based Intelligent",
+      "replacement": "microprocessor-based Intelligent",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events, cyber\u2011attacks, and",
+      "replacement": "While electricity is expected to be \"always-on,\" extreme weather events, cyber-attacks, and",
+      "reason": "Curly quotes become straight quotes; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "and large\u2011scale blackouts in India",
+      "replacement": "and large-scale blackouts in India",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen wellheads cut gas supply; thermal units then tripped on auxiliary freeze.",
+      "reason": "Em dash joining two independent clauses becomes a semicolon."
+    },
+    {
+      "original": "- **Hardening Infrastructure** \u2013 Substation",
+      "replacement": "- **Hardening Infrastructure**: Substation",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Grid Flexibility** \u2013 Fast\u2011acting storage, demand\u2011response programs, and synthetic inertia from inverter\u2011based resources.",
+      "replacement": "- **Grid Flexibility**: Fast-acting storage, demand-response programs, and synthetic inertia from inverter-based resources.",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Decentralized Backup** \u2013 Microgrids",
+      "replacement": "- **Decentralized Backup**: Microgrids",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "1. **Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity",
+      "replacement": "1. **Supply-Demand Balancing**: The net load curve becomes flatter during sunny windy days, diminishing the \"ramping\" capacity",
+      "reason": "En dash becomes a colon; non-breaking hyphen and curly quotes become ASCII."
+    },
+    {
+      "original": "2. **Grid Stability** \u2013 Reduced",
+      "replacement": "2. **Grid Stability**: Reduced",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "compressed\u2011air energy storage, battery\u2011energy\u2011storage systems",
+      "replacement": "compressed-air energy storage, battery-energy-storage systems",
+      "reason": "Non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Cost\u2011reflective tariffs**",
+      "replacement": "- **Cost-reflective tariffs**",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "as more devices become network\u2011connected",
+      "replacement": "as more devices become network-connected",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "#### 6.4 Cyber\u2011Physical Security",
+      "replacement": "#### 6.4 Cyber-Physical Security",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "Cyber\u2011physical attacks, such as",
+      "replacement": "Cyber-physical attacks, such as",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "*defense\u2011in\u2011depth* architectures",
+      "replacement": "*defense-in-depth* architectures",
+      "reason": "Non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Real\u2011time anomaly detection**",
+      "replacement": "- **Real-time anomaly detection**",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network",
+      "replacement": "two-way communication, and advanced analytics to create a responsive, self-optimizing network",
+      "reason": "Non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Advanced Metering Infrastructure (AMI)** \u2013 Provides",
+      "replacement": "- **Advanced Metering Infrastructure (AMI)**: Provides",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Distribution Management Systems (DMS)** \u2013 Automate",
+      "replacement": "- **Distribution Management Systems (DMS)**: Automate",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120 samples/second",
+      "replacement": "- **Wide-Area Monitoring Systems (WAMS)**: Phasor Measurement Units (PMUs) deliver synchrophasor data at 30-120 samples/second",
+      "reason": "En dash separator becomes a colon; en dash range becomes a hyphen; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins (high-fidelity virtual replicas of physical grid assets) allow",
+      "reason": "Paired em dashes become parentheses; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "- **Lithium\u2011Ion Batteries** \u2013 Dominant for short\u2011 to medium\u2011duration (minutes to hours)",
+      "replacement": "- **Lithium-Ion Batteries**: Dominant for short- to medium-duration (minutes to hours)",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer scalable, long\u2011duration",
+      "replacement": "- **Flow Batteries** (Vanadium Redox, Zinc-Bromine): Offer scalable, long-duration",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "- **Thermal and Mechanical Storage** \u2013 Cryogenic",
+      "replacement": "- **Thermal and Mechanical Storage**: Cryogenic",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "gravity\u2011based systems",
+      "replacement": "gravity-based systems",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "- **Full Renewable Transition** \u2013 100 % renewable",
+      "replacement": "- **Full Renewable Transition**: 100 % renewable",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting existing fossil\u2011fuel plants",
+      "replacement": "- **Carbon Capture, Utilization, and Storage (CCUS)**: Retrofitting existing fossil-fuel plants",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "- **Hydrogen Integration** \u2013 Using",
+      "replacement": "- **Hydrogen Integration**: Using",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "#### 7.4 Grid\u2011Forming Inverters",
+      "replacement": "#### 7.4 Grid-Forming Inverters",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "operate in *grid\u2011following* mode",
+      "replacement": "operate in *grid-following* mode",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "new *grid\u2011forming* inverters can establish",
+      "replacement": "new *grid-forming* inverters can establish",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "- **Provides Synthetic Inertia** \u2013 Emulates",
+      "replacement": "- **Provides Synthetic Inertia**: Emulates",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone",
+      "replacement": "- **Enables Islanded Microgrids**: Seamless transition between grid-connected and standalone",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "#### 7.5 Power\u2011to\u2011X (P2X)",
+      "replacement": "#### 7.5 Power-to-X (P2X)",
+      "reason": "Non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).",
+      "replacement": "\"Power-to-X\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).",
+      "reason": "Curly quotes become straight quotes; non-breaking hyphens become plain hyphens."
+    },
+    {
+      "original": "### 8. Case Study: A Smart, Renewable\u2011Heavy Grid",
+      "replacement": "### 8. Case Study: A Smart, Renewable-Heavy Grid",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "**European Union\u2019s \u201cElectricity Interconnection\u201d** project",
+      "replacement": "**European Union's \"Electricity Interconnection\"** project",
+      "reason": "Curly apostrophe and quotes become straight."
+    },
+    {
+      "original": "- **HVDC Links** \u2013 Multi\u2011terminal",
+      "replacement": "- **HVDC Links**: Multi-terminal",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "- **Coordinated Market Coupling** \u2013 Harmonized market rules allow cross\u2011border trading",
+      "replacement": "- **Coordinated Market Coupling**: Harmonized market rules allow cross-border trading",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "- **Real\u2011Time Grid Operations** \u2013 A continent\u2011wide WAMS",
+      "replacement": "- **Real-Time Grid Operations**: A continent-wide WAMS",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain."
+    },
+    {
+      "original": "robust transmission, advanced controls, and market integration co\u2011exist",
+      "replacement": "robust transmission, advanced controls, and market integration co-exist",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "*centrally\u2011controlled, unidirectional* network",
+      "replacement": "*centrally-controlled, unidirectional* network",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "- **Massive DER Penetration** \u2013 Millions",
+      "replacement": "- **Massive DER Penetration**: Millions",
+      "reason": "En dash used as a separator becomes a colon."
+    },
+    {
+      "original": "- **Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive",
+      "replacement": "- **Artificial-Intelligence-Driven Operations**: Predictive",
+      "reason": "En dash becomes a colon; non-breaking hyphens become plain."
+    },
+    {
+      "original": "- **Resilient Architecture** \u2013 Multi\u2011layered",
+      "replacement": "- **Resilient Architecture**: Multi-layered",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "- **Policy\u2011Driven Decarbonization** \u2013 Carbon pricing",
+      "replacement": "- **Policy-Driven Decarbonization**: Carbon pricing",
+      "reason": "En dash becomes a colon; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "net\u2011zero electricity sector",
+      "replacement": "net-zero electricity sector",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite",
+      "replacement": "Ice storms still take lines out of service for days; planners rewrite",
+      "reason": "Em dash joining independent clauses becomes a semicolon."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy landscape) promise",
+      "reason": "Paired em dashes around an aside become parentheses."
+    },
+    {
+      "original": "innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust",
+      "replacement": "innovative technologies (smart grids, energy storage, grid-forming inverters) and robust",
+      "reason": "Paired em dashes become parentheses; non-breaking hyphen becomes plain."
+    },
+    {
+      "original": "sustain the grid\u2019s reliability",
+      "replacement": "sustain the grid's reliability",
+      "reason": "Curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "climate\u2011friendly technologies",
+      "replacement": "climate-friendly technologies",
+      "reason": "Non-breaking hyphen becomes a plain hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 6,
+    "output": 7957,
+    "cache_read": 63662,
+    "cache_write": 717,
+    "reasoning": 0
+  },
+  "cost_usd": 0.08881620000000001,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "noop",
+        "objective": "noop",
+        "limit": 1
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

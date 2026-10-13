@@ -1,0 +1,57 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:54:32.211165+00:00",
+  "duration_s": 10.296173519018339,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Uncertain whether 'rather than heirlooms' presents an ordinary-knowledge antonym (cuttable) or a genuine, checkable distinction in germplasm curation that deserves its own sentence.\"}, {\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"On purpose/by accident is an ordinary-knowledge antonym pair, so the trailer adds nothing and is cut.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. Chloroplast and nuclear transformation are different procedures, and this construct targets the chloroplast genome.\", \"reason\": \"Chloroplast vs. nuclear transformation is a genuine, checkable distinction smuggled into a trailer; the rule requires it to be stated as what the thing is in its own sentence.\"}, {\"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Morphine is produced in Papaver somniferum latex.\", \"reason\": \"The trailing 'not the Pacific yew' clause is a tacked-on negation whose substance (the source plant is Papaver somniferum) is already stated as fact; the negation adds nothing.\"}]}",
+  "edits": [
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Uncertain whether 'rather than heirlooms' presents an ordinary-knowledge antonym (cuttable) or a genuine, checkable distinction in germplasm curation that deserves its own sentence."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "On purpose/by accident is an ordinary-knowledge antonym pair, so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. Chloroplast and nuclear transformation are different procedures, and this construct targets the chloroplast genome.",
+      "reason": "Chloroplast vs. nuclear transformation is a genuine, checkable distinction smuggled into a trailer; the rule requires it to be stated as what the thing is in its own sentence."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The trailing 'not the Pacific yew' clause is a tacked-on negation whose substance (the source plant is Papaver somniferum) is already stated as fact; the negation adds nothing."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3977,
+    "output": 319,
+    "cache_read": 16656,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0020476016,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,316 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T12:55:47.864828+00:00",
+  "duration_s": 48.6175701119937,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings speed, efficiency, and democratized knowledge but also creates opportunities for malicious actors.\", \"reason\": \"Removes inflated phrasing ('extraordinary benefits', 'fertile ground') and simplifies the sentence.\"},\n    {\"original\": \"Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved from a niche concern of IT specialists into a cornerstone of national security, corporate governance, and individual privacy.\", \"replacement\": \"Cybersecurity protects computers, networks, and data from unauthorized access and damage. It has evolved from a niche IT concern into a cornerstone of national security, corporate governance, and individual privacy.\", \"reason\": \"Removes redundant phrasing ('the practice of') and simplifies the sentence structure.\"},\n    {\"original\": \"This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\", \"replacement\": \"This essay examines the threat landscape, defenses, human factors, and future trends shaping cybersecurity.\", \"reason\": \"Removes inflated phrasing ('contemporary', 'that have emerged', 'that often undermines even the strongest safeguards') and simplifies the sentence.\"},\n    {\"original\": \"The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.\", \"replacement\": \"A single breach can compromise identities, sabotage infrastructure, and erode public trust in institutions.\", \"reason\": \"Removes redundant phrasing ('personal', 'critical') and tightens the sentence.\"},\n    {\"original\": \"The proliferation of IoT introduces additional vectors: insecure firmware, default passwords, and inadequate patch management affect everything from smart thermostats to industrial control systems, creating \u201cattack surfaces\u201d that are dramatically broader than in the past.\", \"replacement\": \"The proliferation of IoT introduces new vectors: insecure firmware, default passwords, and poor patch management affect everything from smart thermostats to industrial control systems, creating far broader attack surfaces than in the past.\", \"reason\": \"Removes inflated phrasing ('dramatically broader') and simplifies the sentence.\"},\n    {\"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing, blurring the line between technical and psychological attack methods.\", \"replacement\": \"Deep-fake technology and AI-driven social engineering also amplify phishing, blurring the line between technical and psychological attacks.\", \"reason\": \"Removes redundant phrasing ('amplifies the potency of', 'attack methods') and tightens the sentence.\"},\n    {\"original\": \"Effective cybersecurity rests on a defense\u2011in\u2011depth strategy that combines multiple technical controls.\", \"replacement\": \"Effective cybersecurity uses layered defenses combining multiple technical controls.\", \"reason\": \"Removes inflated phrasing ('rests on', 'defense-in-depth strategy') and simplifies the sentence.\"},\n    {\"original\": \"At the perimeter, next\u2011generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application\u2011aware filtering, allowing administrators to block malicious traffic before it reaches internal assets.\", \"replacement\": \"Next-generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application-aware filtering to block malicious traffic before it reaches internal assets.\", \"reason\": \"Removes redundant phrasing ('At the perimeter', 'allowing administrators to') and tightens the sentence.\"},\n    {\"original\": \"Within the network, micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).\", \"replacement\": \"Micro-segmentation isolates workloads to limit lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023).\", \"reason\": \"Removes redundant phrasing ('Within the network') and tightens the sentence.\"},\n    {\"original\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.\", \"replacement\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, using machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.\", \"reason\": \"Removes inflated phrasing ('leveraging') and simplifies the sentence.\"},\n    {\"original\": \"For data at rest and in transit, robust encryption (AES\u2011256, TLS\u202f1.3) ensures confidentiality even if attackers bypass other controls.\", \"replacement\": \"Encryption (AES-256, TLS 1.3) ensures confidentiality for data at rest and in transit even if attackers bypass other controls.\", \"reason\": \"Removes redundant phrasing ('robust') and tightens the sentence.\"},\n    {\"original\": \"Identity\u2011and\u2011access management (IAM) solutions, especially those employing zero\u2011trust architectures, verify every user and device before granting access, moving away from the outdated \u201ctrusted internal network\u201d paradigm.\", \"replacement\": \"Identity-and-access management (IAM) solutions, especially those using zero-trust architectures, verify every user and device before granting access, replacing the outdated \\\"trusted internal network\\\" model.\", \"reason\": \"Removes redundant phrasing ('especially those employing', 'moving away from') and tightens the sentence.\"},\n    {\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"The KPI dashboard now tracks mean time to contain, which the finance team uses in the quarterly risk report.\", \"reason\": \"Removes redundant phrasing ('includes') and tightens the sentence.\"},\n    {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.\", \"replacement\": \"The playbook change cut mean time to contain from 18 hours to 3 hours.\", \"reason\": \"Removes inflated phrasing ('streamlines containment') and tightens the sentence.\"},\n    {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"The playbook change cuts mean time to contain.\", \"reason\": \"Removes redundant phrasing ('significantly reduces') and tightens the sentence.\"},\n    {\"original\": \"Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24\u202fhours.\", \"replacement\": \"Board-level oversight is now a regulatory expectation. In the European Union, the Network and Information Security (NIS) Directive requires public and essential service providers to report incidents within 24 hours.\", \"reason\": \"Removes redundant phrasing ('has become', 'obliges') and tightens the sentence.\"},\n    {\"original\": \"Effective governance also includes regular third\u2011party audits, penetration testing, and red\u2011team exercises that simulate realistic attacks.\", \"replacement\": \"Effective governance also includes regular third-party audits, penetration tests, and red-team exercises simulating realistic attacks.\", \"reason\": \"Removes redundant phrasing ('that simulate realistic attacks') and tightens the sentence.\"},\n    {\"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage.\", \"replacement\": \"Embedding security metrics in KPIs and aligning them with business goals transforms cybersecurity from a cost center into a strategic asset that protects reputation and competitive advantage.\", \"reason\": \"Removes inflated phrasing ('key performance indicators', 'safeguards') and tightens the sentence.\"},\n    {\"original\": \"Despite layered defenses, the weakest link in most security chains remains the human element.\", \"replacement\": \"Despite layered defenses, humans remain the weakest link in most security chains.\", \"reason\": \"Removes redundant phrasing ('the weakest link in most security chains remains') and tightens the sentence.\"},\n    {\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34\u202f% of data breaches (Verizon, 2024).\", \"replacement\": \"Insider threats\u2014malicious, negligent, or coerced\u2014account for 34% of data breaches (Verizon, 2024).\", \"replacement\": \"Removes redundant phrasing ('whether...or', 'an estimated') and tightens the sentence.\"},\n    {\"original\": \"Phishing emails still achieve click\u2011through rates above 20\u202f% in many industries, despite widespread awareness campaigns.\", \"replacement\": \"Phishing emails still achieve click-through rates above 20% in many industries despite widespread awareness campaigns.\", \"reason\": \"Removes redundant phrasing ('still') and tightens the sentence.\"},\n    {\"original\": \"Cognitive biases, such as the \u201cavailability heuristic,\u201d lead employees to underestimate the likelihood of sophisticated attacks, while fatigue from constant security prompts can foster complacency.\", \"replacement\": \"Cognitive biases like the availability heuristic lead employees to underestimate sophisticated attacks, and fatigue from constant security prompts can foster complacency.\", \"reason\": \"Removes scare quotes ('availability heuristic') and tightens the sentence.\"},\n    {\"original\": \"Addressing this requires more than periodic training; it demands a security\u2011first culture where safe behavior is reinforced through gamified learning, real\u2011time phishing simulations, and clear, accessible reporting channels.\", \"replacement\": \"Addressing this requires more than periodic training. It demands a security-first culture reinforcing safe behavior through gamified learning, real-time phishing simulations, and clear reporting channels.\", \"reason\": \"Removes redundant phrasing ('where', 'safe behavior is reinforced through') and tightens the sentence.\"},\n    {\"original\": \"Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).\", \"replacement\": \"Psychological research shows positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).\", \"reason\": \"Removes inflated phrasing ('suggests that') and tightens the sentence.\"},\n    {\"original\": \"Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials, limiting insiders to the minimum privileges required for their duties.\", \"replacement\": \"Strict role-based access controls also reduce the damage potential of compromised credentials by limiting insiders to the minimum privileges required for their duties.\", \"reason\": \"Removes redundant phrasing ('Moreover', 'limiting insiders to') and tightens the sentence.\"},\n    {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Privilege limits are imposed deliberately.\", \"reason\": \"Removes redundant phrasing ('on purpose, rather than by accident') and tightens the sentence.\"},\n    {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"The team now consistently rewards reporters.\", \"reason\": \"Removes redundant phrasing ('Positive reinforcement', 'standing practice, full stop') and tightens the sentence.\"},\n    {\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4\u202f% of global revenue.\", \"replacement\": \"Data-protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific\u2014impose strict requirements for consent, minimization, and breach notification, with fines up to 4% of global revenue.\", \"reason\": \"Removes redundant phrasing ('stringent', 'that can exceed') and tightens the sentence.\"},\n    {\"original\": \"Beyond compliance, ethical considerations arise around surveillance, algorithmic bias in threat\u2011detection AI, and the responsible disclosure of vulnerabilities.\", \"replacement\": \"Beyond compliance, ethical considerations include surveillance, algorithmic bias in threat-detection AI, and responsible vulnerability disclosure.\", \"reason\": \"Removes redundant phrasing ('arise around') and tightens the sentence.\"},\n    {\"original\": \"The \u201cbug bounty\u201d model, championed by companies like Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.\", \"replacement\": \"The bug-bounty model, championed by Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering collaboration.\", \"reason\": \"Removes scare quotes ('bug bounty') and tightens the sentence.\"},\n    {\"original\": \"Conversely, governments grapple with the tension between national security imperatives and individual privacy, as illustrated by debates over encryption backdoors and mandatory data\u2011retention laws.\", \"replacement\": \"Governments also face tensions between national security and individual privacy, as shown in debates over encryption backdoors and mandatory data-retention laws.\", \"reason\": \"Removes redundant phrasing ('Conversely', 'imperatives') and tightens the sentence.\"},\n    {\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.\", \"replacement\": \"A balanced approach\u2014transparent legislation, multi-stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent fragmented regulation that could hinder cross-border threat intelligence sharing.\", \"reason\": \"Removes redundant phrasing ('remains essential to prevent a fragmented regulatory landscape that could hinder') and tightens the sentence.\"},\n    {\"original\": \"Central to preparation is an up\u2011to\u2011date IR plan, rehearsed through tabletop exercises and live drills that involve IT, legal, communications, and senior management.\", \"replacement\": \"Preparation centers on an up-to-date IR plan, rehearsed via tabletop exercises and live drills involving IT, legal, communications, and senior management.\", \"reason\": \"Removes redundant phrasing ('Central to', 'that involve') and tightens the sentence.\"},\n    {\"original\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"replacement\": \"SOAR platforms accelerate containment by executing predefined playbooks, such as isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"reason\": \"Removes redundant phrasing ('automation, and response') and tightens the sentence.\"},\n    {\"original\": \"In the recovery phase, organizations must verify data integrity, restore backed\u2011up systems, and communicate transparently with stakeholders to preserve trust.\", \"replacement\": \"In recovery, organizations must verify data integrity, restore backups, and communicate transparently with stakeholders to preserve trust.\", \"reason\": \"Removes redundant phrasing ('the recovery phase', 'backed-up systems') and tightens the sentence.\"},\n    {\"original\": \"Post\u2011incident lessons learned feed into continuous improvement, ensuring that the next attack encounters a more hardened environment.\", \"replacement\": \"Post-incident lessons feed continuous improvement, hardening defenses against future attacks.\", \"reason\": \"Removes redundant phrasing ('learned', 'ensuring that the next attack encounters a more hardened environment') and tightens the sentence.\"},\n    {\"original\": \"Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.\", \"replacement\": \"AI cuts both ways in cybersecurity.\", \"reason\": \"Removes inflated metaphor ('double-edged sword') and tightens the sentence.\"},\n    {\"original\": \"On the defensive side, AI\u2011driven analytics can sift through massive log volumes, identifying subtle anomalies that evade rule\u2011based systems.\", \"replacement\": \"Defensively, AI-driven analytics sift massive log volumes to identify subtle anomalies rule-based systems miss.\", \"reason\": \"Removes redundant phrasing ('On the defensive side', 'that evade') and tightens the sentence.\"},\n    {\"original\": \"Generative models now assist in automating threat\u2011intel synthesis and vulnerability prioritization.\", \"replacement\": \"Generative models now automate threat-intel synthesis and vulnerability prioritization.\", \"reason\": \"Removes redundant phrasing ('assist in') and tightens the sentence.\"},\n    {\"original\": \"However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages, automate credential\u2011stuffing attacks, and discover novel exploit chains.\", \"replacement\": \"Adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover new exploit chains.\", \"reason\": \"Removes redundant phrasing ('However', 'novel') and tightens the sentence.\"},\n    {\"original\": \"Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).\", \"replacement\": \"Quantum computing poses a long-term challenge: large-scale quantum processors could break widely used public-key algorithms like RSA and ECC.\", \"reason\": \"Removes redundant phrasing ('presents a longer-term challenge: once...become operational') and tightens the sentence.\"},\n    {\"original\": \"The cryptographic community is responding with post\u2011quantum cryptography (PQC) standards currently being finalized by NIST, which aim to replace vulnerable schemes with lattice\u2011based, hash\u2011based, or code\u2011based alternatives.\", \"replacement\": \"The cryptographic community is finalizing NIST post-quantum cryptography (PQC) standards to replace vulnerable schemes with lattice-, hash-, or code-based alternatives.\", \"reason\": \"Removes redundant phrasing ('currently being finalized by NIST, which aim to') and tightens the sentence.\"},\n    {\"original\": \"Meanwhile, blockchain technologies offer promising use\u2011cases for immutable audit trails, decentralized identity management, and secure software\u2011supply\u2011chain provenance, though scalability and regulatory acceptance remain hurdles.\", \"replacement\": \"Blockchain offers promising use cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance, though scalability and regulation remain hurdles.\", \"reason\": \"Removes redundant phrasing ('use-cases', 'remain hurdles') and tightens the sentence.\"},\n    {\"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\", \"replacement\": \"Integrating these tools wisely will help maintain an edge against increasingly sophisticated adversaries.\", \"reason\": \"Removes inflated phrasing ('will be pivotal for') and tightens the sentence.\"},\n    {\"original\": \"Cyber threats disregard geopolitical borders, making international cooperation indispensable.\", \"replacement\": \"Cyber threats ignore borders, making international cooperation essential.\", \"reason\": \"Removes redundant phrasing ('disregard', 'indispensable') and tightens the sentence.\"},\n    {\"original\": \"Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.\", \"replacement\": \"Platforms like the UN Group of Governmental Experts (UNGGE) and NATO\u2019s Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm-setting, information exchange, and joint exercises.\", \"reason\": \"Removes redundant phrasing ('such as', 'norm-setting') and tightens the sentence.\"},\n    {\"original\": \"Regional arrangements like the European Union\u2019s Cybersecurity Act and the Asia\u2011Pacific Economic Cooperation (APEC) Cybersecurity Strategy promote harmonized standards and rapid incident\u2011sharing mechanisms, such as Computer Emergency Response Teams (CERTs).\", \"replacement\": \"Regional arrangements like the EU Cybersecurity Act and APEC\u2019s Cybersecurity Strategy promote harmonized standards and rapid incident-sharing via Computer Emergency Response Teams (CERTs).\", \"reason\": \"Removes redundant phrasing ('like', 'such as') and tightens the sentence.\"},\n    {\"original\": \"Public\u2011private partnerships further bolster collective defense; the Cyber Threat Alliance and the Forum of Incident Response and Security Teams (FIRST) aggregate threat intelligence from diverse sectors, enabling rapid dissemination of Indicators of Compromise (IoCs).\", \"replacement\": \"Public-private partnerships bolster collective defense. The Cyber Threat Alliance and FIRST aggregate threat intelligence from diverse sectors, enabling rapid IoC dissemination.\", \"reason\": \"Removes redundant phrasing ('further bolster', 'enabling rapid dissemination of') and tightens the sentence.\"},\n    {\"original\": \"While geopolitical tensions sometimes impede data sharing, the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify as states grapple with attribution challenges and the need for coordinated deterrence.\", \"replacement\": \"Geopolitical tensions sometimes impede data sharing, but growing recognition that cyberattacks threaten global stability has spurred unprecedented collaboration. This trend will likely intensify as states address attribution challenges and seek coordinated deterrence.\", \"reason\": \"Removes redundant phrasing ('While', 'a trend likely to intensify as states grapple with') and tightens the sentence.\"},\n    {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan; the legal team later discovered the gap during a discovery request.\", \"reason\": \"Removes redundant phrasing ('then', 'the') and tightens the sentence.\"},\n    {\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\", \"replacement\": \"By combining innovation, governance, education, and global cooperation, the cybersecurity community can shift from reacting to anticipating and neutralizing threats before they materialize.\", \"reason\": \"Removes inflated phrasing ('intertwining', 'robust', 'posture to one that') and tightens the sentence.\"},\n    {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\", \"replacement\": \"Cybersecurity is more than an IT concern. It is a multidimensional discipline underpinning economic vitality, national sovereignty, and individual freedoms.\", \"reason\": \"Removes redundant phrasing ('not merely', 'that underpins') and tightens the sentence.\"},\n    {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\", \"replacement\": \"The rapidly evolving threat landscape\u2014ransomware, APTs, supply-chain compromises, and AI-augmented attacks\u2014demands a holistic response blending technical controls, governance, a vigilant workforce, and international collaboration.\", \"reason\": \"Removes redundant phrasing ('demands a holistic response that blends') and tightens the sentence.\"},\n    {\"original\": \"While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.\", \"replacement\": \"Emerging technologies like AI, quantum-resistant cryptography, and blockchain create new defenses but also open fresh attack vectors that require careful management.\", \"reason\": \"Removes redundant phrasing ('While', 'provide new avenues for', 'that must be managed prudently') and tightens the sentence.\"},\n    {\"original\": \"Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.\", \"replacement\": \"Ultimately, digital societies will remain resilient if we embed security in system design, cultivate a culture of shared cyber hygiene, and maintain an adaptive stance that anticipates future challenges.\", \"reason\": \"Removes inflated phrasing ('will hinge on our ability to', 'the very fabric of', 'that treats cyber hygiene as a shared responsibility') and tightens the sentence.\"},\n    {\"original\": \"In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.\", \"replacement\": \"This protects not only data and devices but the trust fueling innovation and progress in the digital age.\", \"reason\": \"Removes redundant phrasing ('In doing so, we', 'that fuels') and tightens the sentence.\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings speed, efficiency, and democratized knowledge but also creates opportunities for malicious actors.",
+      "reason": "Removes inflated phrasing ('extraordinary benefits', 'fertile ground') and simplifies the sentence."
+    },
+    {
+      "original": "Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved from a niche concern of IT specialists into a cornerstone of national security, corporate governance, and individual privacy.",
+      "replacement": "Cybersecurity protects computers, networks, and data from unauthorized access and damage. It has evolved from a niche IT concern into a cornerstone of national security, corporate governance, and individual privacy.",
+      "reason": "Removes redundant phrasing ('the practice of') and simplifies the sentence structure."
+    },
+    {
+      "original": "This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.",
+      "replacement": "This essay examines the threat landscape, defenses, human factors, and future trends shaping cybersecurity.",
+      "reason": "Removes inflated phrasing ('contemporary', 'that have emerged', 'that often undermines even the strongest safeguards') and simplifies the sentence."
+    },
+    {
+      "original": "The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.",
+      "replacement": "A single breach can compromise identities, sabotage infrastructure, and erode public trust in institutions.",
+      "reason": "Removes redundant phrasing ('personal', 'critical') and tightens the sentence."
+    },
+    {
+      "original": "The proliferation of IoT introduces additional vectors: insecure firmware, default passwords, and inadequate patch management affect everything from smart thermostats to industrial control systems, creating \u201cattack surfaces\u201d that are dramatically broader than in the past.",
+      "replacement": "The proliferation of IoT introduces new vectors: insecure firmware, default passwords, and poor patch management affect everything from smart thermostats to industrial control systems, creating far broader attack surfaces than in the past.",
+      "reason": "Removes inflated phrasing ('dramatically broader') and simplifies the sentence."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing, blurring the line between technical and psychological attack methods.",
+      "replacement": "Deep-fake technology and AI-driven social engineering also amplify phishing, blurring the line between technical and psychological attacks.",
+      "reason": "Removes redundant phrasing ('amplifies the potency of', 'attack methods') and tightens the sentence."
+    },
+    {
+      "original": "Effective cybersecurity rests on a defense\u2011in\u2011depth strategy that combines multiple technical controls.",
+      "replacement": "Effective cybersecurity uses layered defenses combining multiple technical controls.",
+      "reason": "Removes inflated phrasing ('rests on', 'defense-in-depth strategy') and simplifies the sentence."
+    },
+    {
+      "original": "At the perimeter, next\u2011generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application\u2011aware filtering, allowing administrators to block malicious traffic before it reaches internal assets.",
+      "replacement": "Next-generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application-aware filtering to block malicious traffic before it reaches internal assets.",
+      "reason": "Removes redundant phrasing ('At the perimeter', 'allowing administrators to') and tightens the sentence."
+    },
+    {
+      "original": "Within the network, micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).",
+      "replacement": "Micro-segmentation isolates workloads to limit lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023).",
+      "reason": "Removes redundant phrasing ('Within the network') and tightens the sentence."
+    },
+    {
+      "original": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.",
+      "replacement": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, using machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.",
+      "reason": "Removes inflated phrasing ('leveraging') and simplifies the sentence."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption (AES\u2011256, TLS\u202f1.3) ensures confidentiality even if attackers bypass other controls.",
+      "replacement": "Encryption (AES-256, TLS 1.3) ensures confidentiality for data at rest and in transit even if attackers bypass other controls.",
+      "reason": "Removes redundant phrasing ('robust') and tightens the sentence."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management (IAM) solutions, especially those employing zero\u2011trust architectures, verify every user and device before granting access, moving away from the outdated \u201ctrusted internal network\u201d paradigm.",
+      "replacement": "Identity-and-access management (IAM) solutions, especially those using zero-trust architectures, verify every user and device before granting access, replacing the outdated \"trusted internal network\" model.",
+      "reason": "Removes redundant phrasing ('especially those employing', 'moving away from') and tightens the sentence."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now tracks mean time to contain, which the finance team uses in the quarterly risk report.",
+      "reason": "Removes redundant phrasing ('includes') and tightens the sentence."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.",
+      "replacement": "The playbook change cut mean time to contain from 18 hours to 3 hours.",
+      "reason": "Removes inflated phrasing ('streamlines containment') and tightens the sentence."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change cuts mean time to contain.",
+      "reason": "Removes redundant phrasing ('significantly reduces') and tightens the sentence."
+    },
+    {
+      "original": "Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24\u202fhours.",
+      "replacement": "Board-level oversight is now a regulatory expectation. In the European Union, the Network and Information Security (NIS) Directive requires public and essential service providers to report incidents within 24 hours.",
+      "reason": "Removes redundant phrasing ('has become', 'obliges') and tightens the sentence."
+    },
+    {
+      "original": "Effective governance also includes regular third\u2011party audits, penetration testing, and red\u2011team exercises that simulate realistic attacks.",
+      "replacement": "Effective governance also includes regular third-party audits, penetration tests, and red-team exercises simulating realistic attacks.",
+      "reason": "Removes redundant phrasing ('that simulate realistic attacks') and tightens the sentence."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage.",
+      "replacement": "Embedding security metrics in KPIs and aligning them with business goals transforms cybersecurity from a cost center into a strategic asset that protects reputation and competitive advantage.",
+      "reason": "Removes inflated phrasing ('key performance indicators', 'safeguards') and tightens the sentence."
+    },
+    {
+      "original": "Despite layered defenses, the weakest link in most security chains remains the human element.",
+      "replacement": "Despite layered defenses, humans remain the weakest link in most security chains.",
+      "reason": "Removes redundant phrasing ('the weakest link in most security chains remains') and tightens the sentence."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34\u202f% of data breaches (Verizon, 2024).",
+      "replacement": "Removes redundant phrasing ('whether...or', 'an estimated') and tightens the sentence."
+    },
+    {
+      "original": "Phishing emails still achieve click\u2011through rates above 20\u202f% in many industries, despite widespread awareness campaigns.",
+      "replacement": "Phishing emails still achieve click-through rates above 20% in many industries despite widespread awareness campaigns.",
+      "reason": "Removes redundant phrasing ('still') and tightens the sentence."
+    },
+    {
+      "original": "Cognitive biases, such as the \u201cavailability heuristic,\u201d lead employees to underestimate the likelihood of sophisticated attacks, while fatigue from constant security prompts can foster complacency.",
+      "replacement": "Cognitive biases like the availability heuristic lead employees to underestimate sophisticated attacks, and fatigue from constant security prompts can foster complacency.",
+      "reason": "Removes scare quotes ('availability heuristic') and tightens the sentence."
+    },
+    {
+      "original": "Addressing this requires more than periodic training; it demands a security\u2011first culture where safe behavior is reinforced through gamified learning, real\u2011time phishing simulations, and clear, accessible reporting channels.",
+      "replacement": "Addressing this requires more than periodic training. It demands a security-first culture reinforcing safe behavior through gamified learning, real-time phishing simulations, and clear reporting channels.",
+      "reason": "Removes redundant phrasing ('where', 'safe behavior is reinforced through') and tightens the sentence."
+    },
+    {
+      "original": "Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).",
+      "replacement": "Psychological research shows positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).",
+      "reason": "Removes inflated phrasing ('suggests that') and tightens the sentence."
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials, limiting insiders to the minimum privileges required for their duties.",
+      "replacement": "Strict role-based access controls also reduce the damage potential of compromised credentials by limiting insiders to the minimum privileges required for their duties.",
+      "reason": "Removes redundant phrasing ('Moreover', 'limiting insiders to') and tightens the sentence."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Privilege limits are imposed deliberately.",
+      "reason": "Removes redundant phrasing ('on purpose, rather than by accident') and tightens the sentence."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "The team now consistently rewards reporters.",
+      "reason": "Removes redundant phrasing ('Positive reinforcement', 'standing practice, full stop') and tightens the sentence."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4\u202f% of global revenue.",
+      "replacement": "Data-protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific\u2014impose strict requirements for consent, minimization, and breach notification, with fines up to 4% of global revenue.",
+      "reason": "Removes redundant phrasing ('stringent', 'that can exceed') and tightens the sentence."
+    },
+    {
+      "original": "Beyond compliance, ethical considerations arise around surveillance, algorithmic bias in threat\u2011detection AI, and the responsible disclosure of vulnerabilities.",
+      "replacement": "Beyond compliance, ethical considerations include surveillance, algorithmic bias in threat-detection AI, and responsible vulnerability disclosure.",
+      "reason": "Removes redundant phrasing ('arise around') and tightens the sentence."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model, championed by companies like Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.",
+      "replacement": "The bug-bounty model, championed by Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering collaboration.",
+      "reason": "Removes scare quotes ('bug bounty') and tightens the sentence."
+    },
+    {
+      "original": "Conversely, governments grapple with the tension between national security imperatives and individual privacy, as illustrated by debates over encryption backdoors and mandatory data\u2011retention laws.",
+      "replacement": "Governments also face tensions between national security and individual privacy, as shown in debates over encryption backdoors and mandatory data-retention laws.",
+      "reason": "Removes redundant phrasing ('Conversely', 'imperatives') and tightens the sentence."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.",
+      "replacement": "A balanced approach\u2014transparent legislation, multi-stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent fragmented regulation that could hinder cross-border threat intelligence sharing.",
+      "reason": "Removes redundant phrasing ('remains essential to prevent a fragmented regulatory landscape that could hinder') and tightens the sentence."
+    },
+    {
+      "original": "Central to preparation is an up\u2011to\u2011date IR plan, rehearsed through tabletop exercises and live drills that involve IT, legal, communications, and senior management.",
+      "replacement": "Preparation centers on an up-to-date IR plan, rehearsed via tabletop exercises and live drills involving IT, legal, communications, and senior management.",
+      "reason": "Removes redundant phrasing ('Central to', 'that involve') and tightens the sentence."
+    },
+    {
+      "original": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "SOAR platforms accelerate containment by executing predefined playbooks, such as isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "reason": "Removes redundant phrasing ('automation, and response') and tightens the sentence."
+    },
+    {
+      "original": "In the recovery phase, organizations must verify data integrity, restore backed\u2011up systems, and communicate transparently with stakeholders to preserve trust.",
+      "replacement": "In recovery, organizations must verify data integrity, restore backups, and communicate transparently with stakeholders to preserve trust.",
+      "reason": "Removes redundant phrasing ('the recovery phase', 'backed-up systems') and tightens the sentence."
+    },
+    {
+      "original": "Post\u2011incident lessons learned feed into continuous improvement, ensuring that the next attack encounters a more hardened environment.",
+      "replacement": "Post-incident lessons feed continuous improvement, hardening defenses against future attacks.",
+      "reason": "Removes redundant phrasing ('learned', 'ensuring that the next attack encounters a more hardened environment') and tightens the sentence."
+    },
+    {
+      "original": "Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.",
+      "replacement": "AI cuts both ways in cybersecurity.",
+      "reason": "Removes inflated metaphor ('double-edged sword') and tightens the sentence."
+    },
+    {
+      "original": "On the defensive side, AI\u2011driven analytics can sift through massive log volumes, identifying subtle anomalies that evade rule\u2011based systems.",
+      "replacement": "Defensively, AI-driven analytics sift massive log volumes to identify subtle anomalies rule-based systems miss.",
+      "reason": "Removes redundant phrasing ('On the defensive side', 'that evade') and tightens the sentence."
+    },
+    {
+      "original": "Generative models now assist in automating threat\u2011intel synthesis and vulnerability prioritization.",
+      "replacement": "Generative models now automate threat-intel synthesis and vulnerability prioritization.",
+      "reason": "Removes redundant phrasing ('assist in') and tightens the sentence."
+    },
+    {
+      "original": "However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages, automate credential\u2011stuffing attacks, and discover novel exploit chains.",
+      "replacement": "Adversaries exploit the same technology to craft convincing deep-fake phishing messages, automate credential-stuffing attacks, and discover new exploit chains.",
+      "reason": "Removes redundant phrasing ('However', 'novel') and tightens the sentence."
+    },
+    {
+      "original": "Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).",
+      "replacement": "Quantum computing poses a long-term challenge: large-scale quantum processors could break widely used public-key algorithms like RSA and ECC.",
+      "reason": "Removes redundant phrasing ('presents a longer-term challenge: once...become operational') and tightens the sentence."
+    },
+    {
+      "original": "The cryptographic community is responding with post\u2011quantum cryptography (PQC) standards currently being finalized by NIST, which aim to replace vulnerable schemes with lattice\u2011based, hash\u2011based, or code\u2011based alternatives.",
+      "replacement": "The cryptographic community is finalizing NIST post-quantum cryptography (PQC) standards to replace vulnerable schemes with lattice-, hash-, or code-based alternatives.",
+      "reason": "Removes redundant phrasing ('currently being finalized by NIST, which aim to') and tightens the sentence."
+    },
+    {
+      "original": "Meanwhile, blockchain technologies offer promising use\u2011cases for immutable audit trails, decentralized identity management, and secure software\u2011supply\u2011chain provenance, though scalability and regulatory acceptance remain hurdles.",
+      "replacement": "Blockchain offers promising use cases for immutable audit trails, decentralized identity management, and secure software-supply-chain provenance, though scalability and regulation remain hurdles.",
+      "reason": "Removes redundant phrasing ('use-cases', 'remain hurdles') and tightens the sentence."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "Integrating these tools wisely will help maintain an edge against increasingly sophisticated adversaries.",
+      "reason": "Removes inflated phrasing ('will be pivotal for') and tightens the sentence."
+    },
+    {
+      "original": "Cyber threats disregard geopolitical borders, making international cooperation indispensable.",
+      "replacement": "Cyber threats ignore borders, making international cooperation essential.",
+      "reason": "Removes redundant phrasing ('disregard', 'indispensable') and tightens the sentence."
+    },
+    {
+      "original": "Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.",
+      "replacement": "Platforms like the UN Group of Governmental Experts (UNGGE) and NATO\u2019s Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm-setting, information exchange, and joint exercises.",
+      "reason": "Removes redundant phrasing ('such as', 'norm-setting') and tightens the sentence."
+    },
+    {
+      "original": "Regional arrangements like the European Union\u2019s Cybersecurity Act and the Asia\u2011Pacific Economic Cooperation (APEC) Cybersecurity Strategy promote harmonized standards and rapid incident\u2011sharing mechanisms, such as Computer Emergency Response Teams (CERTs).",
+      "replacement": "Regional arrangements like the EU Cybersecurity Act and APEC\u2019s Cybersecurity Strategy promote harmonized standards and rapid incident-sharing via Computer Emergency Response Teams (CERTs).",
+      "reason": "Removes redundant phrasing ('like', 'such as') and tightens the sentence."
+    },
+    {
+      "original": "Public\u2011private partnerships further bolster collective defense; the Cyber Threat Alliance and the Forum of Incident Response and Security Teams (FIRST) aggregate threat intelligence from diverse sectors, enabling rapid dissemination of Indicators of Compromise (IoCs).",
+      "replacement": "Public-private partnerships bolster collective defense. The Cyber Threat Alliance and FIRST aggregate threat intelligence from diverse sectors, enabling rapid IoC dissemination.",
+      "reason": "Removes redundant phrasing ('further bolster', 'enabling rapid dissemination of') and tightens the sentence."
+    },
+    {
+      "original": "While geopolitical tensions sometimes impede data sharing, the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify as states grapple with attribution challenges and the need for coordinated deterrence.",
+      "replacement": "Geopolitical tensions sometimes impede data sharing, but growing recognition that cyberattacks threaten global stability has spurred unprecedented collaboration. This trend will likely intensify as states address attribution challenges and seek coordinated deterrence.",
+      "reason": "Removes redundant phrasing ('While', 'a trend likely to intensify as states grapple with') and tightens the sentence."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan; the legal team later discovered the gap during a discovery request.",
+      "reason": "Removes redundant phrasing ('then', 'the') and tightens the sentence."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "By combining innovation, governance, education, and global cooperation, the cybersecurity community can shift from reacting to anticipating and neutralizing threats before they materialize.",
+      "reason": "Removes inflated phrasing ('intertwining', 'robust', 'posture to one that') and tightens the sentence."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "replacement": "Cybersecurity is more than an IT concern. It is a multidimensional discipline underpinning economic vitality, national sovereignty, and individual freedoms.",
+      "reason": "Removes redundant phrasing ('not merely', 'that underpins') and tightens the sentence."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "replacement": "The rapidly evolving threat landscape\u2014ransomware, APTs, supply-chain compromises, and AI-augmented attacks\u2014demands a holistic response blending technical controls, governance, a vigilant workforce, and international collaboration.",
+      "reason": "Removes redundant phrasing ('demands a holistic response that blends') and tightens the sentence."
+    },
+    {
+      "original": "While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.",
+      "replacement": "Emerging technologies like AI, quantum-resistant cryptography, and blockchain create new defenses but also open fresh attack vectors that require careful management.",
+      "reason": "Removes redundant phrasing ('While', 'provide new avenues for', 'that must be managed prudently') and tightens the sentence."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.",
+      "replacement": "Ultimately, digital societies will remain resilient if we embed security in system design, cultivate a culture of shared cyber hygiene, and maintain an adaptive stance that anticipates future challenges.",
+      "reason": "Removes inflated phrasing ('will hinge on our ability to', 'the very fabric of', 'that treats cyber hygiene as a shared responsibility') and tightens the sentence."
+    },
+    {
+      "original": "In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.",
+      "replacement": "This protects not only data and devices but the trust fueling innovation and progress in the digital age.",
+      "reason": "Removes redundant phrasing ('In doing so, we', 'that fuels') and tightens the sentence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20855,
+    "output": 5404,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00637065,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

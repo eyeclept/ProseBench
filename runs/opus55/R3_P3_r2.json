@@ -1,0 +1,52 @@
+{
+  "run_id": "R3_P3_r2",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:49:54.857748+00:00",
+  "duration_s": 5.670043430000078,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"'By accident' is the everyday opposite of 'on purpose', so the trailer adds nothing and is cut.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Landraces vs. heirlooms may be a real, checkable distinction that should get its own sentence, but I can't tell from the passage what the intended distinction is, so I'm flagging this one for the author instead of rewriting it.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation, integrating into the plastid genome so that it is maternally inherited.\", \"reason\": \"Chloroplast vs. nuclear transformation is a real technical distinction, so I've rewritten it as a positive statement of what the construct does, using facts the passage already states.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'By accident' is the everyday opposite of 'on purpose', so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Landraces vs. heirlooms may be a real, checkable distinction that should get its own sentence, but I can't tell from the passage what the intended distinction is, so I'm flagging this one for the author instead of rewriting it."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation, integrating into the plastid genome so that it is maternally inherited.",
+      "reason": "Chloroplast vs. nuclear transformation is a real technical distinction, so I've rewritten it as a positive statement of what the construct does, using facts the passage already states."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 359,
+    "cache_read": 31808,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.013557600000000001,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

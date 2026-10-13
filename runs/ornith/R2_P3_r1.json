@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P3_r1",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:30:36.945784+00:00",
+  "duration_s": 26.791515197022818,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize carbon fixation under specific environmental conditions. Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one. Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.\",\n      \"replacement\": \"Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize carbon fixation under specific environmental conditions. These carbon-concentrating mechanisms fall into two types: spatial, where mesophyll and bundle-sheath cells share the work (C\u2084), and temporal, where stomata open at night (CAM). Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.\",\n      \"reason\": \"The sentence restated the spatial/temporal distinction first through a clause then again via a whitebox/blackbox-style analogy, adding no new fact.\"\n    },\n    {\n      \"original\": \"In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.\",\n      \"replacement\": \"In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity.\",\n      \"reason\": \"The positive half alone states the same claim, so the negated windup adds nothing.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is produced in Papaver somniferum latex, not by the Pacific yew.\",\n      \"reason\": \"Deleting the negative half leaves the full claim, so the negation functions as filler.\"\n    },\n    {\n      \"original\": \"Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\",\n      \"replacement\": \"Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\",\n      \"reason\": \"The negated windup adds no checkable information once the positive claim is read.\"\n    },\n    {\n      \"original\": \"Building a robust portfolio means diversifying holdings to spread risk, spreading risk across different asset classes to reduce overall exposure.\",\n      \"replacement\": \"Building a robust portfolio means diversifying holdings across different asset classes.\",\n      \"reason\": \"The second half restates the distinction via a synonym without adding any new fact.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize carbon fixation under specific environmental conditions. Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one. Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.",
+      "replacement": "Plants have evolved diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize carbon fixation under specific environmental conditions. These carbon-concentrating mechanisms fall into two types: spatial, where mesophyll and bundle-sheath cells share the work (C\u2084), and temporal, where stomata open at night (CAM). Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.",
+      "reason": "The sentence restated the spatial/temporal distinction first through a clause then again via a whitebox/blackbox-style analogy, adding no new fact."
+    },
+    {
+      "original": "In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.",
+      "replacement": "In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity.",
+      "reason": "The positive half alone states the same claim, so the negated windup adds nothing."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex, not by the Pacific yew.",
+      "reason": "Deleting the negative half leaves the full claim, so the negation functions as filler."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "replacement": "Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "reason": "The negated windup adds no checkable information once the positive claim is read."
+    },
+    {
+      "original": "Building a robust portfolio means diversifying holdings to spread risk, spreading risk across different asset classes to reduce overall exposure.",
+      "replacement": "Building a robust portfolio means diversifying holdings across different asset classes.",
+      "reason": "The second half restates the distinction via a synonym without adding any new fact."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20753,
+    "output": 657,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

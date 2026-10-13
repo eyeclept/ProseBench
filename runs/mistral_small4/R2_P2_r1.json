@@ -1,0 +1,77 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:20:04.001533+00:00",
+  "duration_s": 9.137412248994224,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\", \"replacement\": \"The architecture of a power system is a complex socio\u2011technical system incorporating market mechanisms, regulatory frameworks, and sophisticated information\u2011communication technologies (ICT).\", \"reason\": \"The negative clause 'not merely a physical infrastructure' is filler; the positive half alone conveys the same meaning.\"},\n    {\"original\": \"Forecasts still miss cloud-driven ramps\u2026\", \"replacement\": \"Forecasts miss cloud-driven ramps\u2026\", \"reason\": \"The phrase 'still miss' is redundant filler; the positive half alone suffices.\"},\n    {\"original\": \"The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia). Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability, smoothing sudden load changes and momentarily buffering power imbalances.\", \"replacement\": \"The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia). Its intrinsic inertia\u2014massive rotating masses storing kinetic energy\u2014provides short\u2011term stability, smoothing sudden load changes and buffering power imbalances.\", \"reason\": \"The phrase 'and momentarily' is redundant filler; the positive half alone suffices.\"},\n    {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"The Texas failure was a shortfall caused by frozen gas wells and unheated thermal auxiliaries, not a nameplate shortfall of wind.\", \"reason\": \"The negative clause 'was not a nameplate shortfall of wind' is filler; the positive half alone conveys the same meaning.\"},\n    {\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\", \"replacement\": \"Frozen wellheads cut gas supply, causing thermal units to trip on auxiliary freeze.\", \"reason\": \"The em dash and 'then' are redundant filler; the positive half alone suffices.\"},\n    {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned purposefully.\", \"reason\": \"The negative clause 'rather than by accident' is filler; the positive half alone conveys the same meaning.\"},\n    {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"Islanded operation is the only backup path for those hospitals.\", \"reason\": \"The phrase 'end of story' is redundant filler; the positive half alone suffices.\"},\n    {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"Ice storms take lines out of service for days; planners rewrite protection settings and file new interconnection studies the following week.\", \"reason\": \"The phrase 'still take' and 'they also' are redundant filler; the positive half alone suffices.\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is a complex socio\u2011technical system incorporating market mechanisms, regulatory frameworks, and sophisticated information\u2011communication technologies (ICT).",
+      "reason": "The negative clause 'not merely a physical infrastructure' is filler; the positive half alone conveys the same meaning."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Forecasts miss cloud-driven ramps\u2026",
+      "reason": "The phrase 'still miss' is redundant filler; the positive half alone suffices."
+    },
+    {
+      "original": "The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia). Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability, smoothing sudden load changes and momentarily buffering power imbalances.",
+      "replacement": "The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia). Its intrinsic inertia\u2014massive rotating masses storing kinetic energy\u2014provides short\u2011term stability, smoothing sudden load changes and buffering power imbalances.",
+      "reason": "The phrase 'and momentarily' is redundant filler; the positive half alone suffices."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "The Texas failure was a shortfall caused by frozen gas wells and unheated thermal auxiliaries, not a nameplate shortfall of wind.",
+      "reason": "The negative clause 'was not a nameplate shortfall of wind' is filler; the positive half alone conveys the same meaning."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen wellheads cut gas supply, causing thermal units to trip on auxiliary freeze.",
+      "reason": "The em dash and 'then' are redundant filler; the positive half alone suffices."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned purposefully.",
+      "reason": "The negative clause 'rather than by accident' is filler; the positive half alone conveys the same meaning."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "The phrase 'end of story' is redundant filler; the positive half alone suffices."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms take lines out of service for days; planners rewrite protection settings and file new interconnection studies the following week.",
+      "reason": "The phrase 'still take' and 'they also' are redundant filler; the positive half alone suffices."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21093,
+    "output": 734,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00360435,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,457 @@
+{
+  "run_id": "R4_P1_r2",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:51:16.708626+00:00",
+  "duration_s": 56.15552761498839,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n{\"original\": \"\u2248 1,620\", \"replacement\": \"approx. 1,620\", \"reason\": \"The approximately sign is not on a US keyboard.\"},\n{\"original\": \"twenty\u2011first\", \"replacement\": \"twenty-first\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"cloud\u2011based\", \"replacement\": \"cloud-based\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Internet\u2011of\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\", \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge), but\", \"reason\": \"Replace the em dashes around an aside with parentheses.\"},\n{\"original\": \"malware\u2014viruses, worms, and trojans\u2014remain\", \"replacement\": \"malware (viruses, worms, and trojans) remain\", \"reason\": \"Replace the em dashes around an aside with parentheses.\"},\n{\"original\": \"supply\u2011chain attacks\", \"replacement\": \"supply-chain attacks\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"APT\u2011related\", \"replacement\": \"APT-related\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"year\u2011over\u2011year\", \"replacement\": \"year-over-year\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"Nation\u2011state\", \"replacement\": \"Nation-state\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"dark\u2011web\", \"replacement\": \"dark-web\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"\u201cattack surfaces\u201d\", \"replacement\": \"\\\"attack surfaces\\\"\", \"reason\": \"Swap the curly quotes for straight quotes.\"},\n{\"original\": \"deep\u2011fake technology and AI\u2011driven social\", \"replacement\": \"deep-fake technology and AI-driven social\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"defense\u2011in\u2011depth\", \"replacement\": \"defense-in-depth\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"next\u2011generation\", \"replacement\": \"next-generation\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"application\u2011aware\", \"replacement\": \"application-aware\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"micro\u2011segmentation isolates\", \"replacement\": \"micro-segmentation isolates\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"movement\u2014a key tactic\", \"replacement\": \"movement, a key tactic\", \"reason\": \"A trailing fragment takes a comma instead of an em dash.\"},\n{\"original\": \"machine\u2011learning\", \"replacement\": \"machine-learning\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"credential\u2011dumping\", \"replacement\": \"credential-dumping\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"AES\u2011256\", \"replacement\": \"AES-256\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Identity\u2011and\u2011access\", \"replacement\": \"Identity-and-access\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"zero\u2011trust architectures\", \"replacement\": \"zero-trust architectures\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"\u201ctrusted internal network\u201d\", \"replacement\": \"\\\"trusted internal network\\\"\", \"reason\": \"Swap the curly quotes for straight quotes.\"},\n{\"original\": \"management\u2014automated wherever possible\u2014closes\", \"replacement\": \"management, automated wherever possible, closes\", \"reason\": \"Replace the em dashes around an aside with commas.\"},\n{\"original\": \"process tree\u2026\", \"replacement\": \"process tree...\", \"reason\": \"Replace the ellipsis glyph with three periods.\"},\n{\"original\": \"contain\u2014the finance team\", \"replacement\": \"contain. The finance team\", \"reason\": \"The em dash joins two independent clauses, so split them with a period.\"},\n{\"original\": \"Board\u2011level\", \"replacement\": \"Board-level\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"third\u2011party\", \"replacement\": \"third-party\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"red\u2011team\", \"replacement\": \"red-team\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account\", \"replacement\": \"Insider threats, whether malicious, negligent, or coerced, account\", \"reason\": \"Replace the em dashes around an aside with commas.\"},\n{\"original\": \"click\u2011through\", \"replacement\": \"click-through\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"\u201cavailability heuristic,\u201d\", \"replacement\": \"\\\"availability heuristic,\\\"\", \"reason\": \"Swap the curly quotes for straight quotes.\"},\n{\"original\": \"security\u2011first\", \"replacement\": \"security-first\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"real\u2011time phishing\", \"replacement\": \"real-time phishing\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"reinforcement (recognizing employees who flag suspicious activity) outperforms\", \"reason\": \"Replace the em dashes around an aside with parentheses.\"},\n{\"original\": \"role\u2011based\", \"replacement\": \"role-based\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\", \"replacement\": \"Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose\", \"reason\": \"Replace the em dashes with parentheses and swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"threat\u2011detection\", \"replacement\": \"threat-detection\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"\u201cbug bounty\u201d\", \"replacement\": \"\\\"bug bounty\\\"\", \"reason\": \"Swap the curly quotes for straight quotes.\"},\n{\"original\": \"data\u2011retention\", \"replacement\": \"data-retention\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains\", \"replacement\": \"approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains\", \"reason\": \"Replace the em dashes with parentheses and swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"cross\u2011border\", \"replacement\": \"cross-border\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"post\u2011incident analysis\", \"replacement\": \"post-incident analysis\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"up\u2011to\u2011date\", \"replacement\": \"up-to-date\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"playbooks\u2014for example,\", \"replacement\": \"playbooks, for example,\", \"reason\": \"A trailing fragment takes a comma instead of an em dash.\"},\n{\"original\": \"backed\u2011up\", \"replacement\": \"backed-up\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Post\u2011incident lessons\", \"replacement\": \"Post-incident lessons\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"cyber\u2011insurance\", \"replacement\": \"cyber-insurance\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"double\u2011edged\", \"replacement\": \"double-edged\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"AI\u2011driven analytics\", \"replacement\": \"AI-driven analytics\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"rule\u2011based\", \"replacement\": \"rule-based\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"threat\u2011intel\", \"replacement\": \"threat-intel\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"deep\u2011fake phishing\", \"replacement\": \"deep-fake phishing\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"credential\u2011stuffing\", \"replacement\": \"credential-stuffing\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"longer\u2011term\", \"replacement\": \"longer-term\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"large\u2011scale\", \"replacement\": \"large-scale\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"public\u2011key\", \"replacement\": \"public-key\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"post\u2011quantum cryptography\", \"replacement\": \"post-quantum cryptography\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"lattice\u2011based, hash\u2011based, or code\u2011based\", \"replacement\": \"lattice-based, hash-based, or code-based\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"use\u2011cases\", \"replacement\": \"use-cases\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"software\u2011supply\u2011chain\", \"replacement\": \"software-supply-chain\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"United Nations\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Swap the curly apostrophe for a straight one.\"},\n{\"original\": \"norm\u2011setting\", \"replacement\": \"norm-setting\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"European Union\u2019s\", \"replacement\": \"European Union's\", \"reason\": \"Swap the curly apostrophe for a straight one.\"},\n{\"original\": \"Asia\u2011Pacific Economic\", \"replacement\": \"Asia-Pacific Economic\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"incident\u2011sharing\", \"replacement\": \"incident-sharing\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"Public\u2011private\", \"replacement\": \"Public-private\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"cyber\u2011attacks\", \"replacement\": \"cyber-attacks\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"hyper\u2011connectivity\", \"replacement\": \"hyper-connectivity\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team\", \"replacement\": \"radios. The SOC ingested the extra syslog without a retention plan; the legal team\", \"reason\": \"Fix the run-on: use a period for the em dash and a semicolon for the comma splice.\"},\n{\"original\": \"real\u2011time, AI\u2011assisted\", \"replacement\": \"real-time, AI-assisted\", \"reason\": \"Swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"**Zero\u2011Trust Architecture** \u2013\", \"replacement\": \"**Zero-Trust Architecture** -\", \"reason\": \"Swap the non-breaking hyphen and en dash for ASCII hyphens.\"},\n{\"original\": \"least\u2011privilege\", \"replacement\": \"least-privilege\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"**Secure\u2011by\u2011Design Development** \u2013\", \"replacement\": \"**Secure-by-Design Development** -\", \"reason\": \"Swap the non-breaking hyphens and en dash for ASCII hyphens.\"},\n{\"original\": \"software\u2011bill\", \"replacement\": \"software-bill\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013\", \"replacement\": \"**AI-Enhanced Threat Intelligence** -\", \"reason\": \"Swap the non-breaking hyphen and en dash for ASCII hyphens.\"},\n{\"original\": \"privacy\u2011preserving\", \"replacement\": \"privacy-preserving\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"**Post\u2011Quantum Preparedness** \u2013\", \"replacement\": \"**Post-Quantum Preparedness** -\", \"reason\": \"Swap the non-breaking hyphen and en dash for ASCII hyphens.\"},\n{\"original\": \"long\u2011term sensitive\", \"replacement\": \"long-term sensitive\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"},\n{\"original\": \"**Resilience Engineering** \u2013\", \"replacement\": \"**Resilience Engineering** -\", \"reason\": \"Swap the en dash for a hyphen.\"},\n{\"original\": \"capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to\", \"replacement\": \"capabilities (immutable backups, diversified cloud regions, and automated failover) to\", \"reason\": \"Replace the em dashes around an aside with parentheses.\"},\n{\"original\": \"landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands\", \"replacement\": \"landscape, characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks, demands\", \"reason\": \"Replace the em dashes with commas and swap the non-breaking hyphens for ASCII hyphens.\"},\n{\"original\": \"quantum\u2011resistant\", \"replacement\": \"quantum-resistant\", \"reason\": \"Swap the non-breaking hyphen for an ASCII hyphen.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "\u2248 1,620",
+      "replacement": "approx. 1,620",
+      "reason": "The approximately sign is not on a US keyboard."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge), but",
+      "reason": "Replace the em dashes around an aside with parentheses."
+    },
+    {
+      "original": "malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "malware (viruses, worms, and trojans) remain",
+      "reason": "Replace the em dashes around an aside with parentheses."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "APT\u2011related",
+      "replacement": "APT-related",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "year\u2011over\u2011year",
+      "replacement": "year-over-year",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "Nation\u2011state",
+      "replacement": "Nation-state",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "dark\u2011web",
+      "replacement": "dark-web",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Swap the curly quotes for straight quotes."
+    },
+    {
+      "original": "deep\u2011fake technology and AI\u2011driven social",
+      "replacement": "deep-fake technology and AI-driven social",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "micro\u2011segmentation isolates",
+      "replacement": "micro-segmentation isolates",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "movement\u2014a key tactic",
+      "replacement": "movement, a key tactic",
+      "reason": "A trailing fragment takes a comma instead of an em dash."
+    },
+    {
+      "original": "machine\u2011learning",
+      "replacement": "machine-learning",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "credential\u2011dumping",
+      "replacement": "credential-dumping",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "AES\u2011256",
+      "replacement": "AES-256",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Identity\u2011and\u2011access",
+      "replacement": "Identity-and-access",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "zero\u2011trust architectures",
+      "replacement": "zero-trust architectures",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Swap the curly quotes for straight quotes."
+    },
+    {
+      "original": "management\u2014automated wherever possible\u2014closes",
+      "replacement": "management, automated wherever possible, closes",
+      "reason": "Replace the em dashes around an aside with commas."
+    },
+    {
+      "original": "process tree\u2026",
+      "replacement": "process tree...",
+      "reason": "Replace the ellipsis glyph with three periods."
+    },
+    {
+      "original": "contain\u2014the finance team",
+      "replacement": "contain. The finance team",
+      "reason": "The em dash joins two independent clauses, so split them with a period."
+    },
+    {
+      "original": "Board\u2011level",
+      "replacement": "Board-level",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "third\u2011party",
+      "replacement": "third-party",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "red\u2011team",
+      "replacement": "red-team",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "Insider threats, whether malicious, negligent, or coerced, account",
+      "reason": "Replace the em dashes around an aside with commas."
+    },
+    {
+      "original": "click\u2011through",
+      "replacement": "click-through",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Swap the curly quotes for straight quotes."
+    },
+    {
+      "original": "security\u2011first",
+      "replacement": "security-first",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "real\u2011time phishing",
+      "replacement": "real-time phishing",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Replace the em dashes around an aside with parentheses."
+    },
+    {
+      "original": "role\u2011based",
+      "replacement": "role-based",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose",
+      "reason": "Replace the em dashes with parentheses and swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "threat\u2011detection",
+      "replacement": "threat-detection",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Swap the curly quotes for straight quotes."
+    },
+    {
+      "original": "data\u2011retention",
+      "replacement": "data-retention",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains",
+      "reason": "Replace the em dashes with parentheses and swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "cross\u2011border",
+      "replacement": "cross-border",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "up\u2011to\u2011date",
+      "replacement": "up-to-date",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "playbooks\u2014for example,",
+      "replacement": "playbooks, for example,",
+      "reason": "A trailing fragment takes a comma instead of an em dash."
+    },
+    {
+      "original": "backed\u2011up",
+      "replacement": "backed-up",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Post\u2011incident lessons",
+      "replacement": "Post-incident lessons",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "cyber\u2011insurance",
+      "replacement": "cyber-insurance",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "double\u2011edged",
+      "replacement": "double-edged",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "rule\u2011based",
+      "replacement": "rule-based",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "threat\u2011intel",
+      "replacement": "threat-intel",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "deep\u2011fake phishing",
+      "replacement": "deep-fake phishing",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "credential\u2011stuffing",
+      "replacement": "credential-stuffing",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "longer\u2011term",
+      "replacement": "longer-term",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "large\u2011scale",
+      "replacement": "large-scale",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "public\u2011key",
+      "replacement": "public-key",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "post\u2011quantum cryptography",
+      "replacement": "post-quantum cryptography",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "lattice\u2011based, hash\u2011based, or code\u2011based",
+      "replacement": "lattice-based, hash-based, or code-based",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Swap the curly apostrophe for a straight one."
+    },
+    {
+      "original": "norm\u2011setting",
+      "replacement": "norm-setting",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "European Union\u2019s",
+      "replacement": "European Union's",
+      "reason": "Swap the curly apostrophe for a straight one."
+    },
+    {
+      "original": "Asia\u2011Pacific Economic",
+      "replacement": "Asia-Pacific Economic",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "Public\u2011private",
+      "replacement": "Public-private",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team",
+      "replacement": "radios. The SOC ingested the extra syslog without a retention plan; the legal team",
+      "reason": "Fix the run-on: use a period for the em dash and a semicolon for the comma splice."
+    },
+    {
+      "original": "real\u2011time, AI\u2011assisted",
+      "replacement": "real-time, AI-assisted",
+      "reason": "Swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013",
+      "replacement": "**Zero-Trust Architecture** -",
+      "reason": "Swap the non-breaking hyphen and en dash for ASCII hyphens."
+    },
+    {
+      "original": "least\u2011privilege",
+      "replacement": "least-privilege",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013",
+      "replacement": "**Secure-by-Design Development** -",
+      "reason": "Swap the non-breaking hyphens and en dash for ASCII hyphens."
+    },
+    {
+      "original": "software\u2011bill",
+      "replacement": "software-bill",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013",
+      "replacement": "**AI-Enhanced Threat Intelligence** -",
+      "reason": "Swap the non-breaking hyphen and en dash for ASCII hyphens."
+    },
+    {
+      "original": "privacy\u2011preserving",
+      "replacement": "privacy-preserving",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013",
+      "replacement": "**Post-Quantum Preparedness** -",
+      "reason": "Swap the non-breaking hyphen and en dash for ASCII hyphens."
+    },
+    {
+      "original": "long\u2011term sensitive",
+      "replacement": "long-term sensitive",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013",
+      "replacement": "**Resilience Engineering** -",
+      "reason": "Swap the en dash for a hyphen."
+    },
+    {
+      "original": "capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to",
+      "replacement": "capabilities (immutable backups, diversified cloud regions, and automated failover) to",
+      "reason": "Replace the em dashes around an aside with parentheses."
+    },
+    {
+      "original": "landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands",
+      "replacement": "landscape, characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks, demands",
+      "reason": "Replace the em dashes with commas and swap the non-breaking hyphens for ASCII hyphens."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "Swap the non-breaking hyphen for an ASCII hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 7552,
+    "cache_read": 29995,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.157055,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

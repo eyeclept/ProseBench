@@ -1,0 +1,502 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T12:55:47.866269+00:00",
+  "duration_s": 122.05042882799171,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "That last call was unnecessary; the reference is inline, so no further tool use is needed. I've completed a full pass of the passage against every tier of the list (non-ASCII characters, hallucinated markup, scare quotes, hedging density, metaphorical nouns, prefer-verbs, prefer-adjectives, weasels, transitions, academic tells, structural phrasing, inflated-symbolism phrases).\n\n{\"edits\": [{\"original\": \"Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions\", \"replacement\": \"Cybersecurity Now: Challenges, Strategies, and Future Directions\", \"reason\": \"\\\"in today's [anything]\\\"-family opening/filler phrase is banned in titles too.\"}, {\"original\": \"*Word count: \u2248 1,620*\", \"replacement\": \"*Word count: about 1,620*\", \"reason\": \"The approximation symbol is not on a standard US keyboard and must be replaced with ASCII text.\"}, {\"original\": \"The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.\", \"replacement\": \"The twenty-first century has seen a rapid rise in digital connectivity.\", \"reason\": \"Non-ASCII hyphen corrected, and \\\"unprecedented\\\" is a banned intensifier.\"}, {\"original\": \"From cloud\u2011based services that power global commerce to the Internet\u2011of\u2011Things (IoT) devices that monitor our homes and cities, virtually every facet of modern life now depends on information systems.\", \"replacement\": \"From cloud-based services that power global commerce to Internet-of-Things (IoT) devices that monitor our homes and cities, nearly every part of modern life now depends on information systems.\", \"reason\": \"Non-ASCII hyphens corrected; \\\"virtually\\\" and \\\"facet\\\" are hedge/inflated words with plain alternatives.\"}, {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings real benefits: speed, efficiency, and wider access to knowledge. It also gives malicious actors more to attack.\", \"reason\": \"Em dashes are NEVER-allowed characters and \\\"extraordinary\\\" is a banned intensifier.\"}, {\"original\": \"has evolved from a niche concern of IT specialists into a cornerstone of national security, corporate governance, and individual privacy.\", \"replacement\": \"has grown from a niche concern of IT specialists into a core element of national security, corporate governance, and individual privacy.\", \"reason\": \"\\\"cornerstone\\\" is an inflated-symbolism noun; pick a plain alternative.\"}, {\"original\": \"a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.\", \"replacement\": \"a single breach can expose personal identities, disrupt essential infrastructure, and reduce public trust in institutions.\", \"reason\": \"\\\"compromise\\\" reads as jargon here and \\\"critical\\\" is a preferred-to-avoid adjective; plain verbs work better.\"}, {\"original\": \"This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\", \"replacement\": \"This essay examines current cyber threats, the technical and organizational defenses that have emerged, the human errors that undermine even strong safeguards, and the trends likely to shape cybersecurity over the next decade.\", \"reason\": \"\\\"threat landscape\\\" uses the banned metaphorical sense of \\\"landscape,\\\" and \\\"future trends\\\" is redundant.\"}, {\"original\": \"### The Expanding Threat Landscape\", \"replacement\": \"### The Expanding Set of Cyber Threats\", \"reason\": \"Heading uses \\\"landscape\\\" in its banned inflated-metaphor sense.\"}, {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive, but they are now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remains common, joined by ransomware that encrypts data and demands payment, supply-chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that stay undetected for months.\", \"reason\": \"Em dashes are banned characters and \\\"pervasive\\\"/\\\"augmented\\\" have plainer equivalents.\"}, {\"original\": \"According to the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28 % of all confirmed breaches, while APT\u2011related incidents grew by 17 % year\u2011over\u2011year (Verizon, 2024).\", \"replacement\": \"According to the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28% of all confirmed breaches, while APT-related incidents grew by 17% year-over-year (Verizon, 2024).\", \"reason\": \"Non-ASCII hyphens corrected and the space before the percent sign normalized.\"}, {\"original\": \"Nation\u2011state actors exploit zero\u2011day vulnerabilities to conduct espionage, while cybercriminals monetize stolen credentials through dark\u2011web marketplaces.\", \"replacement\": \"Nation-state actors exploit zero-day vulnerabilities for espionage, while cybercriminals sell stolen credentials on dark-web marketplaces.\", \"reason\": \"Non-ASCII hyphens corrected; \\\"conduct espionage\\\" padded the sentence.\"}, {\"original\": \"The proliferation of IoT introduces additional vectors: insecure firmware, default passwords, and inadequate patch management affect everything from smart thermostats to industrial control systems, creating \u201cattack surfaces\u201d that are dramatically broader than in the past.\", \"replacement\": \"The spread of IoT adds attack paths: insecure firmware, default passwords, and weak patch management affect everything from smart thermostats to industrial control systems, making the attack surface far larger than before.\", \"reason\": \"Curly quotes around a normal term violate the scare-quote ban, \\\"dramatically\\\" is a banned intensifier, and non-ASCII apostrophes must be ASCII.\"}, {\"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing, blurring the line between technical and psychological attack methods.\", \"replacement\": \"Deep-fake technology and AI-driven social engineering also make phishing more effective, mixing technical and psychological attack methods.\", \"reason\": \"\\\"Moreover\\\" is a banned connector, non-ASCII hyphens corrected, and \\\"blurring the line\\\" is inflated phrasing.\"}, {\"original\": \"Effective cybersecurity rests on a defense\u2011in\u2011depth strategy that combines multiple technical controls.\", \"replacement\": \"Effective cybersecurity rests on a defense-in-depth strategy that layers technical controls.\", \"reason\": \"Non-ASCII hyphens corrected; \\\"combines multiple\\\" is wordy.\"}, {\"original\": \"At the perimeter, next\u2011generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application\u2011aware filtering, allowing administrators to block malicious traffic before it reaches internal assets.\", \"replacement\": \"At the perimeter, next-generation firewalls (NGFWs) combine intrusion detection and prevention systems (IDPS) with application-aware filtering so administrators can block malicious traffic before it reaches internal systems.\", \"reason\": \"Non-ASCII hyphens corrected; \\\"assets\\\" is business jargon for \\\"systems.\\\"\"}, {\"original\": \"Within the network, micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).\", \"replacement\": \"Within the network, micro-segmentation isolates workloads and limits lateral movement, a key tactic used by APT groups (Miller and Zhou, 2023).\", \"reason\": \"Em dash is a banned character, non-ASCII hyphen corrected, and the ampersand in the citation standardized to \\\"and.\\\"\"}, {\"original\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.\", \"replacement\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools watch devices for unusual behavior, using machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.\", \"reason\": \"\\\"Leveraging\\\" is a banned verb and non-ASCII hyphens must be ASCII.\"}, {\"original\": \"For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality even if attackers bypass other controls.\", \"replacement\": \"For data at rest and in transit, strong encryption (AES-256, TLS 1.3) keeps it confidential even if attackers bypass other controls.\", \"reason\": \"\\\"Robust\\\" is a preferred-to-avoid adjective, non-ASCII hyphen corrected, and \\\"ensures confidentiality\\\" is nominal padding.\"}, {\"original\": \"Identity\u2011and\u2011access management (IAM) solutions, especially those employing zero\u2011trust architectures, verify every user and device before granting access, moving away from the outdated \u201ctrusted internal network\u201d paradigm.\", \"replacement\": \"Identity-and-access management (IAM) products, especially those built on zero-trust architectures, verify every user and device before granting access, dropping the old assumption that the internal network can be trusted.\", \"reason\": \"Non-ASCII hyphens corrected; the quoted phrase is a normal concept, so scare quotes and \\\"paradigm\\\" removed.\"}, {\"original\": \"Finally, regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities, a simple yet often neglected step that accounts for a large proportion of exploit success (Microsoft, 2022).\", \"replacement\": \"Patch management, automated wherever possible, closes known vulnerabilities, a simple step that is often skipped and that explains much exploit success (Microsoft, 2022).\", \"reason\": \"Em dashes are banned characters and \\\"accounts for a large proportion of\\\" is wordy.\"}, {\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks should default to fail-closed, not open.\", \"reason\": \"The bare present tense reads as a false factual claim; this states the intended design rule.\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Fail-closed is the right default for those checks.\", \"reason\": \"\\\"end of story\\\" is an informal rhetorical flourish that undercuts the document's register.\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree.\", \"reason\": \"The ellipsis glyph is a banned character; replace with a period.\"}, {\"original\": \"Technical tools cannot succeed in isolation; they require clear policies, governance frameworks, and an organizational culture that prioritizes security.\", \"replacement\": \"Technical tools cannot succeed alone; they need clear policies, governance frameworks, and a culture that puts security first.\", \"reason\": \"\\\"prioritizes\\\" is corporate filler for a plain verb.\"}, {\"original\": \"Many enterprises adopt internationally recognized standards such as ISO/IEC 27001 or the NIST Cybersecurity Framework (CSF) to structure risk assessment, incident response, and continuous improvement.\", \"replacement\": \"Many companies adopt international standards such as ISO/IEC 27001 or the NIST Cybersecurity Framework (CSF) to organize risk assessment, incident response, and ongoing improvement.\", \"reason\": \"\\\"enterprises\\\" and \\\"internationally recognized\\\" are inflated for the plain terms.\"}, {\"original\": \"These frameworks promote a systematic process: identify critical assets, protect them with appropriate controls, detect anomalies, respond promptly, and recover to a resilient state.\", \"replacement\": \"These frameworks set out one process: find the important systems, protect them with suitable controls, spot anomalies, respond quickly, and restore operations.\", \"reason\": \"\\\"critical assets\\\" and \\\"resilient state\\\" are jargon; \\\"systematic\\\" adds nothing here.\"}, {\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"The KPI dashboard now tracks mean time to contain, which the finance team cites in the quarterly risk report.\", \"reason\": \"Em dash is a banned character and the two clauses read as fragments glued together.\"}, {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.\", \"replacement\": \"After the playbook change, mean time to contain fell from 18 hours to 3 hours.\", \"reason\": \"\\\"streamlines\\\" is a banned verb, and the number already carries the point.\"}, {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"\", \"reason\": \"Duplicate of the preceding statistic, and \\\"significantly\\\" is a banned intensifier.\"}, {\"original\": \"Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.\", \"replacement\": \"Board-level oversight is now a regulatory expectation; in the European Union, the Network and Information Security (NIS2) Directive requires operators of essential services to report incidents within 24 hours.\", \"reason\": \"Non-ASCII hyphen corrected and the directive name updated to the version that sets the 24-hour rule.\"}, {\"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage.\", \"replacement\": \"When security metrics sit inside key performance indicators (KPIs) and match business goals, leaders treat cybersecurity as something that protects reputation and competitive position rather than as a cost.\", \"reason\": \"Banned \\\"By [gerund]\\\" sentence opener plus \\\"transform\\\" and \\\"strategic asset\\\" phrasing.\"}, {\"original\": \"Despite layered defenses, the weakest link in most security chains remains the human element.\", \"replacement\": \"Even with layered defenses, people cause most breaches.\", \"reason\": \"\\\"the weakest link\\\" is a clich\u00e9 and \\\"human element\\\" is vague; the plain claim is stronger.\"}, {\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34 % of data breaches (Verizon, 2024).\", \"replacement\": \"Insider threats, whether deliberate, careless, or coerced, account for about 34% of data breaches (Verizon, 2024).\", \"reason\": \"Em dashes are banned characters and the space before the percent sign normalized.\"}, {\"original\": \"Phishing emails still achieve click\u2011through rates above 20 % in many industries, despite widespread awareness campaigns.\", \"replacement\": \"Phishing emails still get click-through rates above 20% in many industries, even after years of awareness training.\", \"reason\": \"Non-ASCII hyphen corrected and the doubled \\\"despite\\\" construction tightened.\"}, {\"original\": \"Cognitive biases, such as the \u201cavailability heuristic,\u201d lead employees to underestimate the likelihood of sophisticated attacks, while fatigue from constant security prompts can foster complacency.\", \"replacement\": \"Mental shortcuts such as the availability heuristic lead employees to underestimate how likely attacks are, while fatigue from repeated security prompts breeds carelessness.\", \"reason\": \"Scare quotes on a normal term are banned, and \\\"foster\\\" is a banned verb.\"}, {\"original\": \"Addressing this requires more than periodic training; it demands a security\u2011first culture where safe behavior is reinforced through gamified learning, real\u2011time phishing simulations, and clear, accessible reporting channels.\", \"replacement\": \"Fixing this takes more than occasional training: teams need security habits supported by game-based learning, live phishing simulations, and reporting channels that are easy to find and use.\", \"reason\": \"Non-ASCII hyphens corrected, and \\\"more than X; it demands Y\\\" is the banned contrast structure.\"}, {\"original\": \"Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).\", \"replacement\": \"Research on behavior shows that recognizing employees who flag suspicious activity works better than punishing mistakes at keeping people alert (Anderson and Lee, 2022).\", \"reason\": \"Em dashes are banned characters and the ampersand in the citation standardized.\"}, {\"original\": \"Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials, limiting insiders to the minimum privileges required for their duties.\", \"replacement\": \"Strict role-based access controls also cut the damage a stolen or misused credential can do, by giving insiders only the permissions their job needs.\", \"reason\": \"\\\"Moreover\\\" is a banned connector, non-ASCII hyphen corrected, and \\\"damage potential of compromised credentials\\\" is nominal.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Set those limits deliberately, not by default.\", \"reason\": \"The sentence states a truism in passive voice and adds nothing to the paragraph.\"}, {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Make recognition for reporters routine.\", \"reason\": \"\\\"full stop\\\" is a rhetorical flourish and the sentence repeats the previous point.\"}, {\"original\": \"Cybersecurity operates within a complex web of legal and ethical obligations.\", \"replacement\": \"Cybersecurity carries legal and ethical duties that overlap across jurisdictions.\", \"reason\": \"\\\"complex web of\\\" is an inflated metaphor with no added information.\"}, {\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4 % of global revenue.\", \"replacement\": \"Data-protection rules (GDPR in Europe, CCPA in California, and newer laws across Asia-Pacific) set strict requirements for consent, data minimization, and breach notification, with fines up to 4% of global revenue.\", \"reason\": \"Em dashes and non-ASCII hyphens replaced with ASCII punctuation; the space before the percent sign removed.\"}, {\"original\": \"Beyond compliance, ethical considerations arise around surveillance, algorithmic bias in threat\u2011detection AI, and the responsible disclosure of vulnerabilities.\", \"replacement\": \"Ethics questions extend past compliance to surveillance, bias in threat-detection AI, and how vulnerabilities get disclosed.\", \"reason\": \"Non-ASCII hyphen corrected and \\\"ethical considerations arise around\\\" is passive padding.\"}, {\"original\": \"The \u201cbug bounty\u201d model, championed by companies like Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.\", \"replacement\": \"Bug bounties, run by Google, Microsoft, and others, pay researchers to report flaws instead of exploiting them, which makes defense a shared effort.\", \"reason\": \"Scare quotes on a normal term are banned, \\\"fostering\\\" is a banned verb, and \\\"security ecosystem\\\" uses the banned metaphorical sense of \\\"ecosystem.\\\"\"}, {\"original\": \"Conversely, governments grapple with the tension between national security imperatives and individual privacy, as illustrated by debates over encryption backdoors and mandatory data\u2011retention laws.\", \"replacement\": \"Governments also weigh national-security demands against individual privacy, a conflict visible in fights over encryption backdoors and mandatory data-retention laws.\", \"reason\": \"\\\"Conversely\\\" mislabels the relation, \\\"grapple with the tension\\\" is inflated, and non-ASCII hyphens corrected.\"}, {\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.\", \"replacement\": \"Transparent law, input from industry and civil society, and shared international norms keep rules from fragmenting in ways that slow cross-border threat-intelligence sharing.\", \"reason\": \"Em dashes and non-ASCII hyphens replaced, \\\"regulatory landscape\\\" is the banned metaphor, and the hedge stack trimmed.\"}, {\"original\": \"When prevention fails, rapid detection and coordinated response become critical.\", \"replacement\": \"When prevention fails, what matters is detecting the intrusion fast and responding in a coordinated way.\", \"reason\": \"\\\"become critical\\\" is a banned-adjective shortcut for the actual claim.\"}, {\"original\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"replacement\": \"Security orchestration, automation, and response (SOAR) platforms speed containment by running prewritten playbooks, such as isolating an infected endpoint seconds after ransomware encryption appears.\", \"reason\": \"Em dash is a banned character and \\\"Automated ... automation\\\" is redundant.\"}, {\"original\": \"In the recovery phase, organizations must verify data integrity, restore backed\u2011up systems, and communicate transparently with stakeholders to preserve trust.\", \"replacement\": \"During recovery, teams check data integrity, restore systems from backup, and tell customers and partners what happened.\", \"reason\": \"Non-ASCII hyphen corrected; \\\"communicate transparently with stakeholders\\\" is corporate phrasing for a concrete act.\"}, {\"original\": \"Post\u2011incident lessons learned feed into continuous improvement, ensuring that the next attack encounters a more hardened environment.\", \"replacement\": \"Findings from each incident go back into the controls, so the next attacker meets a harder target.\", \"reason\": \"Non-ASCII hyphen corrected and \\\"continuous improvement\\\" / \\\"ensuring\\\" are management filler.\"}, {\"original\": \"Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.\", \"replacement\": \"Artificial intelligence (AI) helps defenders and attackers alike.\", \"reason\": \"Non-ASCII hyphen corrected and \\\"double-edged sword\\\" is a worn metaphor.\"}, {\"original\": \"On the defensive side, AI\u2011driven analytics can sift through massive log volumes, identifying subtle anomalies that evade rule\u2011based systems.\", \"replacement\": \"For defense, AI-driven analytics sort through huge log volumes and catch small anomalies that rule-based systems miss.\", \"reason\": \"Non-ASCII hyphens corrected and \\\"can sift\\\" hedged an established capability.\"}, {\"original\": \"Generative models now assist in automating threat\u2011intel synthesis and vulnerability prioritization.\", \"replacement\": \"Generative models now summarize threat intelligence and rank which vulnerabilities to fix first.\", \"reason\": \"Non-ASCII hyphen corrected and two nominalizations replaced with verbs.\"}, {\"original\": \"However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages, automate credential\u2011stuffing attacks, and discover novel exploit chains.\", \"replacement\": \"Attackers use the same tools for believable deep-fake phishing messages, automated credential stuffing, and new exploit chains.\", \"reason\": \"Non-ASCII hyphens corrected; \\\"novel\\\" and \\\"craft\\\" are inflated for the plain terms.\"}, {\"original\": \"Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).\", \"replacement\": \"Quantum computing is a longer-term problem: once large-scale quantum machines exist, they will break the public-key algorithms used everywhere today (RSA, ECC).\", \"reason\": \"Non-ASCII hyphens corrected and the hedge dropped because the cryptographic consequence is settled science.\"}, {\"original\": \"The cryptographic community is responding with post\u2011quantum cryptography (PQC) standards currently being finalized by NIST, which aim to replace vulnerable schemes with lattice\u2011based, hash\u2011based, or code\u2011based alternatives.\", \"replacement\": \"NIST is finishing post-quantum cryptography (PQC) standards that swap those schemes for lattice-based, hash-based, or code-based ones.\", \"reason\": \"Non-ASCII hyphens corrected and \\\"The cryptographic community is responding\\\" pads the subject.\"}, {\"original\": \"Meanwhile, blockchain technologies offer promising use\u2011cases for immutable audit trails, decentralized identity management, and secure software\u2011supply\u2011chain provenance, though scalability and regulatory acceptance remain hurdles.\", \"replacement\": \"Blockchain suits a few jobs, such as tamper-evident audit trails, decentralized identity, and software supply-chain provenance, but scalability and legal acceptance still limit it.\", \"reason\": \"Non-ASCII hyphens corrected and \\\"promising use-cases\\\" is hype for a qualified claim.\"}, {\"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\", \"replacement\": \"How carefully organizations adopt these tools decides whether they stay ahead of attackers.\", \"reason\": \"\\\"pivotal\\\" is a preferred-to-avoid adjective and \\\"technological edge\\\" is inflated.\"}, {\"original\": \"Cyber threats disregard geopolitical borders, making international cooperation indispensable.\", \"replacement\": \"Cyber threats cross borders, so countries have to cooperate.\", \"reason\": \"\\\"indispensible\\\"-class intensifier replaced with the plain reason.\"}, {\"original\": \"Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.\", \"replacement\": \"UN bodies such as the Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) work on shared norms, information exchange, and joint exercises.\", \"reason\": \"\\\"facilitate\\\" is a banned verb, non-ASCII hyphen corrected, and the curly apostrophe replaced.\"}, {\"original\": \"Regional arrangements like the European Union\u2019s Cybersecurity Act and the Asia\u2011Pacific Economic Cooperation (APEC) Cybersecurity Strategy promote harmonized standards and rapid incident\u2011sharing mechanisms, such as Computer Emergency Response Teams (CERTs).\", \"replacement\": \"Regional deals such as the EU Cybersecurity Act and the Asia-Pacific Economic Cooperation (APEC) cybersecurity strategy push aligned standards and fast incident sharing through Computer Emergency Response Teams (CERTs).\", \"reason\": \"Non-ASCII hyphens and curly apostrophe replaced with ASCII.\"}, {\"original\": \"Public\u2011private partnerships further bolster collective defense; the Cyber Threat Alliance and the Forum of Incident Response and Security Teams (FIRST) aggregate threat intelligence from diverse sectors, enabling rapid dissemination of Indicators of Compromise (IoCs).\", \"replacement\": \"Public-private partnerships add to this: the Cyber Threat Alliance and FIRST pool threat intelligence across sectors so Indicators of Compromise (IoCs) reach members quickly.\", \"reason\": \"\\\"bolster\\\" is a banned verb, \\\"further\\\" stacks with the prior sentence, and non-ASCII hyphen corrected.\"}, {\"original\": \"While geopolitical tensions sometimes impede data sharing, the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify as states grapple with attribution challenges and the need for coordinated deterrence.\", \"replacement\": \"Geopolitical friction still limits sharing, but states now accept that cyber-attacks endanger stability, which has produced more cooperation than ever, especially as they struggle to attribute attacks and deter them jointly.\", \"reason\": \"Non-ASCII hyphen corrected; \\\"unprecedented\\\" is a banned intensifier and \\\"grapple with\\\" is inflated.\"}, {\"original\": \"Looking ahead, cybersecurity will be shaped by three converging forces: hyper\u2011connectivity, autonomous systems, and an increasingly skilled adversary pool.\", \"replacement\": \"Three changes will drive cybersecurity over the next decade: more connected devices, autonomous systems, and more capable attackers.\", \"reason\": \"Non-ASCII hyphen corrected and \\\"converging forces\\\" / \\\"adversary pool\\\" are abstract padding.\"}, {\"original\": \"The expansion of 5G and edge computing will generate billions of new endpoints, each a potential foothold for attackers.\", \"replacement\": \"5G and edge computing will add billions of new endpoints, each a way in for attackers.\", \"reason\": \"\\\"potential\\\" hedged a straightforward consequence.\"}, {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios; the SOC took in the extra syslog without a retention plan, and legal found the gap during a discovery request.\", \"reason\": \"Em dash is a banned character and the comma splice joined with a conjunction.\"}, {\"original\": \"Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted security controls that can react without human intervention.\", \"replacement\": \"Self-driving cars, smart grids, and industrial robots will need security controls that react in real time without waiting for a person, which means AI-assisted detection and response.\", \"reason\": \"Non-ASCII hyphens corrected and the vague \\\"demand\\\" made specific.\"}, {\"original\": \"To meet these demands, organizations should adopt the following strategic recommendations:\", \"replacement\": \"Organizations should act on five fronts:\", \"reason\": \"\\\"strategic recommendations\\\" is filler for the list that follows.\"}, {\"original\": \"**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted, enforcing continuous verification, least\u2011privilege policies, and micro\u2011segmentation.\", \"replacement\": \"**Zero trust**: assume no request is trustworthy, verify continuously, grant least privilege, and segment the network.\", \"reason\": \"Non-ASCII hyphen and en-dash bullet separator replaced with ASCII punctuation.\"}, {\"original\": \"**Secure\u2011by\u2011Design Development** \u2013 Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.\", \"replacement\": \"**Secure by design**: test security early in development (static and dynamic analysis, software bill of materials) so fewer vulnerabilities ship.\", \"reason\": \"En dash and non-ASCII hyphens replaced; \\\"lifecycle\\\" and \\\"deployment\\\" are jargon here.\"}, {\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.\", \"replacement\": \"**Better threat intelligence with AI**: use federated learning and privacy-preserving models to share findings across companies without revealing sensitive data.\", \"reason\": \"\\\"Leverage\\\" is a banned verb, en dash and non-ASCII hyphens replaced, \\\"insights\\\" is vague.\"}, {\"original\": \"**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems to PQC algorithms, prioritizing those that handle high\u2011value or long\u2011term sensitive data.\", \"replacement\": \"**Post-quantum readiness**: start moving important systems to PQC algorithms, beginning with those holding valuable or long-lived sensitive data.\", \"reason\": \"En dash and non-ASCII hyphens replaced; \\\"critical\\\" swapped for a plainer adjective.\"}, {\"original\": \"**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\", \"replacement\": \"**Recovery engineering**: build fast restore paths (immutable backups, several cloud regions, automated failover) to cut downtime.\", \"reason\": \"Em dashes are banned characters and \\\"capabilities\\\" / \\\"operational disruption\\\" are filler.\"}, {\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\", \"replacement\": \"Combining new tools with clear governance, ongoing training, and international cooperation lets defenders stop attacks earlier instead of reacting after the fact.\", \"reason\": \"Banned \\\"By [gerund]\\\" opener, \\\"robust\\\" is a preferred-to-avoid adjective, and \\\"intertwining\\\" is inflated.\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\", \"replacement\": \"Cybersecurity is an IT problem and also an economic, political, and civil-liberties problem.\", \"reason\": \"\\\"It's not just X, it's Y\\\" is a flagged structure and \\\"multidimensional discipline\\\" / \\\"economic vitality\\\" are inflated.\"}, {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\", \"replacement\": \"Ransomware, APTs, supply-chain intrusions, and AI-assisted attacks require a response that covers technical controls, governance, trained staff, and international agreements.\", \"reason\": \"Em dashes and non-ASCII hyphens replaced, \\\"threat landscape\\\" is the banned metaphor, and \\\"holistic\\\" is a preferred-to-avoid adjective.\"}, {\"original\": \"While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.\", \"replacement\": \"AI, quantum-resistant cryptography, and blockchain give defenders new options and attackers new routes, so adoption needs review before rollout.\", \"reason\": \"Non-ASCII hyphen corrected and \\\"provide new avenues\\\" / \\\"open fresh\\\" echo the banned \\\"open a new avenue\\\" family.\"}, {\"original\": \"Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.\", \"replacement\": \"Digital societies stay safe when security shapes system design from the start, when everyone owns cyber hygiene, and when defenses keep adapting to new threats.\", \"reason\": \"\\\"Ultimately\\\" is a banned transition, \\\"very fabric\\\" and \\\"adaptive posture\\\" are inflated, and the serial \\\"when\\\" clauses replace the noun pile.\"}, {\"original\": \"In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.\", \"replacement\": \"That protects data and devices, and the trust people place in online services.\", \"reason\": \"\\\"not only X but Y\\\" structure plus \\\"fuels innovation and progress\\\" and the \\\"digital age\\\" framing are all on the discouraged lists.\"}]}",
+  "edits": [
+    {
+      "original": "Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions",
+      "replacement": "Cybersecurity Now: Challenges, Strategies, and Future Directions",
+      "reason": "\"in today's [anything]\"-family opening/filler phrase is banned in titles too."
+    },
+    {
+      "original": "*Word count: \u2248 1,620*",
+      "replacement": "*Word count: about 1,620*",
+      "reason": "The approximation symbol is not on a standard US keyboard and must be replaced with ASCII text."
+    },
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.",
+      "replacement": "The twenty-first century has seen a rapid rise in digital connectivity.",
+      "reason": "Non-ASCII hyphen corrected, and \"unprecedented\" is a banned intensifier."
+    },
+    {
+      "original": "From cloud\u2011based services that power global commerce to the Internet\u2011of\u2011Things (IoT) devices that monitor our homes and cities, virtually every facet of modern life now depends on information systems.",
+      "replacement": "From cloud-based services that power global commerce to Internet-of-Things (IoT) devices that monitor our homes and cities, nearly every part of modern life now depends on information systems.",
+      "reason": "Non-ASCII hyphens corrected; \"virtually\" and \"facet\" are hedge/inflated words with plain alternatives."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings real benefits: speed, efficiency, and wider access to knowledge. It also gives malicious actors more to attack.",
+      "reason": "Em dashes are NEVER-allowed characters and \"extraordinary\" is a banned intensifier."
+    },
+    {
+      "original": "has evolved from a niche concern of IT specialists into a cornerstone of national security, corporate governance, and individual privacy.",
+      "replacement": "has grown from a niche concern of IT specialists into a core element of national security, corporate governance, and individual privacy.",
+      "reason": "\"cornerstone\" is an inflated-symbolism noun; pick a plain alternative."
+    },
+    {
+      "original": "a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.",
+      "replacement": "a single breach can expose personal identities, disrupt essential infrastructure, and reduce public trust in institutions.",
+      "reason": "\"compromise\" reads as jargon here and \"critical\" is a preferred-to-avoid adjective; plain verbs work better."
+    },
+    {
+      "original": "This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.",
+      "replacement": "This essay examines current cyber threats, the technical and organizational defenses that have emerged, the human errors that undermine even strong safeguards, and the trends likely to shape cybersecurity over the next decade.",
+      "reason": "\"threat landscape\" uses the banned metaphorical sense of \"landscape,\" and \"future trends\" is redundant."
+    },
+    {
+      "original": "### The Expanding Threat Landscape",
+      "replacement": "### The Expanding Set of Cyber Threats",
+      "reason": "Heading uses \"landscape\" in its banned inflated-metaphor sense."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive, but they are now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remains common, joined by ransomware that encrypts data and demands payment, supply-chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that stay undetected for months.",
+      "reason": "Em dashes are banned characters and \"pervasive\"/\"augmented\" have plainer equivalents."
+    },
+    {
+      "original": "According to the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28 % of all confirmed breaches, while APT\u2011related incidents grew by 17 % year\u2011over\u2011year (Verizon, 2024).",
+      "replacement": "According to the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28% of all confirmed breaches, while APT-related incidents grew by 17% year-over-year (Verizon, 2024).",
+      "reason": "Non-ASCII hyphens corrected and the space before the percent sign normalized."
+    },
+    {
+      "original": "Nation\u2011state actors exploit zero\u2011day vulnerabilities to conduct espionage, while cybercriminals monetize stolen credentials through dark\u2011web marketplaces.",
+      "replacement": "Nation-state actors exploit zero-day vulnerabilities for espionage, while cybercriminals sell stolen credentials on dark-web marketplaces.",
+      "reason": "Non-ASCII hyphens corrected; \"conduct espionage\" padded the sentence."
+    },
+    {
+      "original": "The proliferation of IoT introduces additional vectors: insecure firmware, default passwords, and inadequate patch management affect everything from smart thermostats to industrial control systems, creating \u201cattack surfaces\u201d that are dramatically broader than in the past.",
+      "replacement": "The spread of IoT adds attack paths: insecure firmware, default passwords, and weak patch management affect everything from smart thermostats to industrial control systems, making the attack surface far larger than before.",
+      "reason": "Curly quotes around a normal term violate the scare-quote ban, \"dramatically\" is a banned intensifier, and non-ASCII apostrophes must be ASCII."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing, blurring the line between technical and psychological attack methods.",
+      "replacement": "Deep-fake technology and AI-driven social engineering also make phishing more effective, mixing technical and psychological attack methods.",
+      "reason": "\"Moreover\" is a banned connector, non-ASCII hyphens corrected, and \"blurring the line\" is inflated phrasing."
+    },
+    {
+      "original": "Effective cybersecurity rests on a defense\u2011in\u2011depth strategy that combines multiple technical controls.",
+      "replacement": "Effective cybersecurity rests on a defense-in-depth strategy that layers technical controls.",
+      "reason": "Non-ASCII hyphens corrected; \"combines multiple\" is wordy."
+    },
+    {
+      "original": "At the perimeter, next\u2011generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application\u2011aware filtering, allowing administrators to block malicious traffic before it reaches internal assets.",
+      "replacement": "At the perimeter, next-generation firewalls (NGFWs) combine intrusion detection and prevention systems (IDPS) with application-aware filtering so administrators can block malicious traffic before it reaches internal systems.",
+      "reason": "Non-ASCII hyphens corrected; \"assets\" is business jargon for \"systems.\""
+    },
+    {
+      "original": "Within the network, micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).",
+      "replacement": "Within the network, micro-segmentation isolates workloads and limits lateral movement, a key tactic used by APT groups (Miller and Zhou, 2023).",
+      "reason": "Em dash is a banned character, non-ASCII hyphen corrected, and the ampersand in the citation standardized to \"and.\""
+    },
+    {
+      "original": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.",
+      "replacement": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools watch devices for unusual behavior, using machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.",
+      "reason": "\"Leveraging\" is a banned verb and non-ASCII hyphens must be ASCII."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality even if attackers bypass other controls.",
+      "replacement": "For data at rest and in transit, strong encryption (AES-256, TLS 1.3) keeps it confidential even if attackers bypass other controls.",
+      "reason": "\"Robust\" is a preferred-to-avoid adjective, non-ASCII hyphen corrected, and \"ensures confidentiality\" is nominal padding."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management (IAM) solutions, especially those employing zero\u2011trust architectures, verify every user and device before granting access, moving away from the outdated \u201ctrusted internal network\u201d paradigm.",
+      "replacement": "Identity-and-access management (IAM) products, especially those built on zero-trust architectures, verify every user and device before granting access, dropping the old assumption that the internal network can be trusted.",
+      "reason": "Non-ASCII hyphens corrected; the quoted phrase is a normal concept, so scare quotes and \"paradigm\" removed."
+    },
+    {
+      "original": "Finally, regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities, a simple yet often neglected step that accounts for a large proportion of exploit success (Microsoft, 2022).",
+      "replacement": "Patch management, automated wherever possible, closes known vulnerabilities, a simple step that is often skipped and that explains much exploit success (Microsoft, 2022).",
+      "reason": "Em dashes are banned characters and \"accounts for a large proportion of\" is wordy."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks should default to fail-closed, not open.",
+      "reason": "The bare present tense reads as a false factual claim; this states the intended design rule."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the right default for those checks.",
+      "reason": "\"end of story\" is an informal rhetorical flourish that undercuts the document's register."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree.",
+      "reason": "The ellipsis glyph is a banned character; replace with a period."
+    },
+    {
+      "original": "Technical tools cannot succeed in isolation; they require clear policies, governance frameworks, and an organizational culture that prioritizes security.",
+      "replacement": "Technical tools cannot succeed alone; they need clear policies, governance frameworks, and a culture that puts security first.",
+      "reason": "\"prioritizes\" is corporate filler for a plain verb."
+    },
+    {
+      "original": "Many enterprises adopt internationally recognized standards such as ISO/IEC 27001 or the NIST Cybersecurity Framework (CSF) to structure risk assessment, incident response, and continuous improvement.",
+      "replacement": "Many companies adopt international standards such as ISO/IEC 27001 or the NIST Cybersecurity Framework (CSF) to organize risk assessment, incident response, and ongoing improvement.",
+      "reason": "\"enterprises\" and \"internationally recognized\" are inflated for the plain terms."
+    },
+    {
+      "original": "These frameworks promote a systematic process: identify critical assets, protect them with appropriate controls, detect anomalies, respond promptly, and recover to a resilient state.",
+      "replacement": "These frameworks set out one process: find the important systems, protect them with suitable controls, spot anomalies, respond quickly, and restore operations.",
+      "reason": "\"critical assets\" and \"resilient state\" are jargon; \"systematic\" adds nothing here."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now tracks mean time to contain, which the finance team cites in the quarterly risk report.",
+      "reason": "Em dash is a banned character and the two clauses read as fragments glued together."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.",
+      "replacement": "After the playbook change, mean time to contain fell from 18 hours to 3 hours.",
+      "reason": "\"streamlines\" is a banned verb, and the number already carries the point."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "",
+      "reason": "Duplicate of the preceding statistic, and \"significantly\" is a banned intensifier."
+    },
+    {
+      "original": "Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.",
+      "replacement": "Board-level oversight is now a regulatory expectation; in the European Union, the Network and Information Security (NIS2) Directive requires operators of essential services to report incidents within 24 hours.",
+      "reason": "Non-ASCII hyphen corrected and the directive name updated to the version that sets the 24-hour rule."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage.",
+      "replacement": "When security metrics sit inside key performance indicators (KPIs) and match business goals, leaders treat cybersecurity as something that protects reputation and competitive position rather than as a cost.",
+      "reason": "Banned \"By [gerund]\" sentence opener plus \"transform\" and \"strategic asset\" phrasing."
+    },
+    {
+      "original": "Despite layered defenses, the weakest link in most security chains remains the human element.",
+      "replacement": "Even with layered defenses, people cause most breaches.",
+      "reason": "\"the weakest link\" is a clich\u00e9 and \"human element\" is vague; the plain claim is stronger."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34 % of data breaches (Verizon, 2024).",
+      "replacement": "Insider threats, whether deliberate, careless, or coerced, account for about 34% of data breaches (Verizon, 2024).",
+      "reason": "Em dashes are banned characters and the space before the percent sign normalized."
+    },
+    {
+      "original": "Phishing emails still achieve click\u2011through rates above 20 % in many industries, despite widespread awareness campaigns.",
+      "replacement": "Phishing emails still get click-through rates above 20% in many industries, even after years of awareness training.",
+      "reason": "Non-ASCII hyphen corrected and the doubled \"despite\" construction tightened."
+    },
+    {
+      "original": "Cognitive biases, such as the \u201cavailability heuristic,\u201d lead employees to underestimate the likelihood of sophisticated attacks, while fatigue from constant security prompts can foster complacency.",
+      "replacement": "Mental shortcuts such as the availability heuristic lead employees to underestimate how likely attacks are, while fatigue from repeated security prompts breeds carelessness.",
+      "reason": "Scare quotes on a normal term are banned, and \"foster\" is a banned verb."
+    },
+    {
+      "original": "Addressing this requires more than periodic training; it demands a security\u2011first culture where safe behavior is reinforced through gamified learning, real\u2011time phishing simulations, and clear, accessible reporting channels.",
+      "replacement": "Fixing this takes more than occasional training: teams need security habits supported by game-based learning, live phishing simulations, and reporting channels that are easy to find and use.",
+      "reason": "Non-ASCII hyphens corrected, and \"more than X; it demands Y\" is the banned contrast structure."
+    },
+    {
+      "original": "Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022).",
+      "replacement": "Research on behavior shows that recognizing employees who flag suspicious activity works better than punishing mistakes at keeping people alert (Anderson and Lee, 2022).",
+      "reason": "Em dashes are banned characters and the ampersand in the citation standardized."
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials, limiting insiders to the minimum privileges required for their duties.",
+      "replacement": "Strict role-based access controls also cut the damage a stolen or misused credential can do, by giving insiders only the permissions their job needs.",
+      "reason": "\"Moreover\" is a banned connector, non-ASCII hyphen corrected, and \"damage potential of compromised credentials\" is nominal."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Set those limits deliberately, not by default.",
+      "reason": "The sentence states a truism in passive voice and adds nothing to the paragraph."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Make recognition for reporters routine.",
+      "reason": "\"full stop\" is a rhetorical flourish and the sentence repeats the previous point."
+    },
+    {
+      "original": "Cybersecurity operates within a complex web of legal and ethical obligations.",
+      "replacement": "Cybersecurity carries legal and ethical duties that overlap across jurisdictions.",
+      "reason": "\"complex web of\" is an inflated metaphor with no added information."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4 % of global revenue.",
+      "replacement": "Data-protection rules (GDPR in Europe, CCPA in California, and newer laws across Asia-Pacific) set strict requirements for consent, data minimization, and breach notification, with fines up to 4% of global revenue.",
+      "reason": "Em dashes and non-ASCII hyphens replaced with ASCII punctuation; the space before the percent sign removed."
+    },
+    {
+      "original": "Beyond compliance, ethical considerations arise around surveillance, algorithmic bias in threat\u2011detection AI, and the responsible disclosure of vulnerabilities.",
+      "replacement": "Ethics questions extend past compliance to surveillance, bias in threat-detection AI, and how vulnerabilities get disclosed.",
+      "reason": "Non-ASCII hyphen corrected and \"ethical considerations arise around\" is passive padding."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model, championed by companies like Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.",
+      "replacement": "Bug bounties, run by Google, Microsoft, and others, pay researchers to report flaws instead of exploiting them, which makes defense a shared effort.",
+      "reason": "Scare quotes on a normal term are banned, \"fostering\" is a banned verb, and \"security ecosystem\" uses the banned metaphorical sense of \"ecosystem.\""
+    },
+    {
+      "original": "Conversely, governments grapple with the tension between national security imperatives and individual privacy, as illustrated by debates over encryption backdoors and mandatory data\u2011retention laws.",
+      "replacement": "Governments also weigh national-security demands against individual privacy, a conflict visible in fights over encryption backdoors and mandatory data-retention laws.",
+      "reason": "\"Conversely\" mislabels the relation, \"grapple with the tension\" is inflated, and non-ASCII hyphens corrected."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.",
+      "replacement": "Transparent law, input from industry and civil society, and shared international norms keep rules from fragmenting in ways that slow cross-border threat-intelligence sharing.",
+      "reason": "Em dashes and non-ASCII hyphens replaced, \"regulatory landscape\" is the banned metaphor, and the hedge stack trimmed."
+    },
+    {
+      "original": "When prevention fails, rapid detection and coordinated response become critical.",
+      "replacement": "When prevention fails, what matters is detecting the intrusion fast and responding in a coordinated way.",
+      "reason": "\"become critical\" is a banned-adjective shortcut for the actual claim."
+    },
+    {
+      "original": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "Security orchestration, automation, and response (SOAR) platforms speed containment by running prewritten playbooks, such as isolating an infected endpoint seconds after ransomware encryption appears.",
+      "reason": "Em dash is a banned character and \"Automated ... automation\" is redundant."
+    },
+    {
+      "original": "In the recovery phase, organizations must verify data integrity, restore backed\u2011up systems, and communicate transparently with stakeholders to preserve trust.",
+      "replacement": "During recovery, teams check data integrity, restore systems from backup, and tell customers and partners what happened.",
+      "reason": "Non-ASCII hyphen corrected; \"communicate transparently with stakeholders\" is corporate phrasing for a concrete act."
+    },
+    {
+      "original": "Post\u2011incident lessons learned feed into continuous improvement, ensuring that the next attack encounters a more hardened environment.",
+      "replacement": "Findings from each incident go back into the controls, so the next attacker meets a harder target.",
+      "reason": "Non-ASCII hyphen corrected and \"continuous improvement\" / \"ensuring\" are management filler."
+    },
+    {
+      "original": "Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.",
+      "replacement": "Artificial intelligence (AI) helps defenders and attackers alike.",
+      "reason": "Non-ASCII hyphen corrected and \"double-edged sword\" is a worn metaphor."
+    },
+    {
+      "original": "On the defensive side, AI\u2011driven analytics can sift through massive log volumes, identifying subtle anomalies that evade rule\u2011based systems.",
+      "replacement": "For defense, AI-driven analytics sort through huge log volumes and catch small anomalies that rule-based systems miss.",
+      "reason": "Non-ASCII hyphens corrected and \"can sift\" hedged an established capability."
+    },
+    {
+      "original": "Generative models now assist in automating threat\u2011intel synthesis and vulnerability prioritization.",
+      "replacement": "Generative models now summarize threat intelligence and rank which vulnerabilities to fix first.",
+      "reason": "Non-ASCII hyphen corrected and two nominalizations replaced with verbs."
+    },
+    {
+      "original": "However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages, automate credential\u2011stuffing attacks, and discover novel exploit chains.",
+      "replacement": "Attackers use the same tools for believable deep-fake phishing messages, automated credential stuffing, and new exploit chains.",
+      "reason": "Non-ASCII hyphens corrected; \"novel\" and \"craft\" are inflated for the plain terms."
+    },
+    {
+      "original": "Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).",
+      "replacement": "Quantum computing is a longer-term problem: once large-scale quantum machines exist, they will break the public-key algorithms used everywhere today (RSA, ECC).",
+      "reason": "Non-ASCII hyphens corrected and the hedge dropped because the cryptographic consequence is settled science."
+    },
+    {
+      "original": "The cryptographic community is responding with post\u2011quantum cryptography (PQC) standards currently being finalized by NIST, which aim to replace vulnerable schemes with lattice\u2011based, hash\u2011based, or code\u2011based alternatives.",
+      "replacement": "NIST is finishing post-quantum cryptography (PQC) standards that swap those schemes for lattice-based, hash-based, or code-based ones.",
+      "reason": "Non-ASCII hyphens corrected and \"The cryptographic community is responding\" pads the subject."
+    },
+    {
+      "original": "Meanwhile, blockchain technologies offer promising use\u2011cases for immutable audit trails, decentralized identity management, and secure software\u2011supply\u2011chain provenance, though scalability and regulatory acceptance remain hurdles.",
+      "replacement": "Blockchain suits a few jobs, such as tamper-evident audit trails, decentralized identity, and software supply-chain provenance, but scalability and legal acceptance still limit it.",
+      "reason": "Non-ASCII hyphens corrected and \"promising use-cases\" is hype for a qualified claim."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "How carefully organizations adopt these tools decides whether they stay ahead of attackers.",
+      "reason": "\"pivotal\" is a preferred-to-avoid adjective and \"technological edge\" is inflated."
+    },
+    {
+      "original": "Cyber threats disregard geopolitical borders, making international cooperation indispensable.",
+      "replacement": "Cyber threats cross borders, so countries have to cooperate.",
+      "reason": "\"indispensible\"-class intensifier replaced with the plain reason."
+    },
+    {
+      "original": "Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.",
+      "replacement": "UN bodies such as the Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) work on shared norms, information exchange, and joint exercises.",
+      "reason": "\"facilitate\" is a banned verb, non-ASCII hyphen corrected, and the curly apostrophe replaced."
+    },
+    {
+      "original": "Regional arrangements like the European Union\u2019s Cybersecurity Act and the Asia\u2011Pacific Economic Cooperation (APEC) Cybersecurity Strategy promote harmonized standards and rapid incident\u2011sharing mechanisms, such as Computer Emergency Response Teams (CERTs).",
+      "replacement": "Regional deals such as the EU Cybersecurity Act and the Asia-Pacific Economic Cooperation (APEC) cybersecurity strategy push aligned standards and fast incident sharing through Computer Emergency Response Teams (CERTs).",
+      "reason": "Non-ASCII hyphens and curly apostrophe replaced with ASCII."
+    },
+    {
+      "original": "Public\u2011private partnerships further bolster collective defense; the Cyber Threat Alliance and the Forum of Incident Response and Security Teams (FIRST) aggregate threat intelligence from diverse sectors, enabling rapid dissemination of Indicators of Compromise (IoCs).",
+      "replacement": "Public-private partnerships add to this: the Cyber Threat Alliance and FIRST pool threat intelligence across sectors so Indicators of Compromise (IoCs) reach members quickly.",
+      "reason": "\"bolster\" is a banned verb, \"further\" stacks with the prior sentence, and non-ASCII hyphen corrected."
+    },
+    {
+      "original": "While geopolitical tensions sometimes impede data sharing, the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify as states grapple with attribution challenges and the need for coordinated deterrence.",
+      "replacement": "Geopolitical friction still limits sharing, but states now accept that cyber-attacks endanger stability, which has produced more cooperation than ever, especially as they struggle to attribute attacks and deter them jointly.",
+      "reason": "Non-ASCII hyphen corrected; \"unprecedented\" is a banned intensifier and \"grapple with\" is inflated."
+    },
+    {
+      "original": "Looking ahead, cybersecurity will be shaped by three converging forces: hyper\u2011connectivity, autonomous systems, and an increasingly skilled adversary pool.",
+      "replacement": "Three changes will drive cybersecurity over the next decade: more connected devices, autonomous systems, and more capable attackers.",
+      "reason": "Non-ASCII hyphen corrected and \"converging forces\" / \"adversary pool\" are abstract padding."
+    },
+    {
+      "original": "The expansion of 5G and edge computing will generate billions of new endpoints, each a potential foothold for attackers.",
+      "replacement": "5G and edge computing will add billions of new endpoints, each a way in for attackers.",
+      "reason": "\"potential\" hedged a straightforward consequence."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios; the SOC took in the extra syslog without a retention plan, and legal found the gap during a discovery request.",
+      "reason": "Em dash is a banned character and the comma splice joined with a conjunction."
+    },
+    {
+      "original": "Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted security controls that can react without human intervention.",
+      "replacement": "Self-driving cars, smart grids, and industrial robots will need security controls that react in real time without waiting for a person, which means AI-assisted detection and response.",
+      "reason": "Non-ASCII hyphens corrected and the vague \"demand\" made specific."
+    },
+    {
+      "original": "To meet these demands, organizations should adopt the following strategic recommendations:",
+      "replacement": "Organizations should act on five fronts:",
+      "reason": "\"strategic recommendations\" is filler for the list that follows."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted, enforcing continuous verification, least\u2011privilege policies, and micro\u2011segmentation.",
+      "replacement": "**Zero trust**: assume no request is trustworthy, verify continuously, grant least privilege, and segment the network.",
+      "reason": "Non-ASCII hyphen and en-dash bullet separator replaced with ASCII punctuation."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013 Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.",
+      "replacement": "**Secure by design**: test security early in development (static and dynamic analysis, software bill of materials) so fewer vulnerabilities ship.",
+      "reason": "En dash and non-ASCII hyphens replaced; \"lifecycle\" and \"deployment\" are jargon here."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.",
+      "replacement": "**Better threat intelligence with AI**: use federated learning and privacy-preserving models to share findings across companies without revealing sensitive data.",
+      "reason": "\"Leverage\" is a banned verb, en dash and non-ASCII hyphens replaced, \"insights\" is vague."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems to PQC algorithms, prioritizing those that handle high\u2011value or long\u2011term sensitive data.",
+      "replacement": "**Post-quantum readiness**: start moving important systems to PQC algorithms, beginning with those holding valuable or long-lived sensitive data.",
+      "reason": "En dash and non-ASCII hyphens replaced; \"critical\" swapped for a plainer adjective."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "replacement": "**Recovery engineering**: build fast restore paths (immutable backups, several cloud regions, automated failover) to cut downtime.",
+      "reason": "Em dashes are banned characters and \"capabilities\" / \"operational disruption\" are filler."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "Combining new tools with clear governance, ongoing training, and international cooperation lets defenders stop attacks earlier instead of reacting after the fact.",
+      "reason": "Banned \"By [gerund]\" opener, \"robust\" is a preferred-to-avoid adjective, and \"intertwining\" is inflated."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "replacement": "Cybersecurity is an IT problem and also an economic, political, and civil-liberties problem.",
+      "reason": "\"It's not just X, it's Y\" is a flagged structure and \"multidimensional discipline\" / \"economic vitality\" are inflated."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "replacement": "Ransomware, APTs, supply-chain intrusions, and AI-assisted attacks require a response that covers technical controls, governance, trained staff, and international agreements.",
+      "reason": "Em dashes and non-ASCII hyphens replaced, \"threat landscape\" is the banned metaphor, and \"holistic\" is a preferred-to-avoid adjective."
+    },
+    {
+      "original": "While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.",
+      "replacement": "AI, quantum-resistant cryptography, and blockchain give defenders new options and attackers new routes, so adoption needs review before rollout.",
+      "reason": "Non-ASCII hyphen corrected and \"provide new avenues\" / \"open fresh\" echo the banned \"open a new avenue\" family."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.",
+      "replacement": "Digital societies stay safe when security shapes system design from the start, when everyone owns cyber hygiene, and when defenses keep adapting to new threats.",
+      "reason": "\"Ultimately\" is a banned transition, \"very fabric\" and \"adaptive posture\" are inflated, and the serial \"when\" clauses replace the noun pile."
+    },
+    {
+      "original": "In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.",
+      "replacement": "That protects data and devices, and the trust people place in online services.",
+      "reason": "\"not only X but Y\" structure plus \"fuels innovation and progress\" and the \"digital age\" framing are all on the discouraged lists."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 24455,
+    "output": 8048,
+    "cache_read": 150016,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.009851065999999999,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "objective": "Read the banned words and phrases reference so edits follow the exact current list",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_parse",
+      "arguments": {
+        "filePath": "/workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_parse",
+      "arguments": {
+        "filePath": "/workspace/references/banned-words-phrases.md",
+        "formats": [
+          "markdown"
+        ],
+        "contentType": "text/plain"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Locate the banned-words-phrases reference file in the workspace to verify the current ban list before editing",
+        "url": "file:///workspace/references/banned-words-phrases.md"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_interact",
+      "arguments": {
+        "url": "file:///workspace/references/banned-words-phrases.md",
+        "code": "cat /workspace/references/banned-words-phrases.md 2>/dev/null || ls -R /workspace | head -50",
+        "language": "bash"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_find_tools",
+      "arguments": {
+        "objective": "Read a local markdown file in the workspace to confirm the banned-words list matches the inline reference",
+        "query": "read local filesystem file contents"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "alexandria": {
+          "provider": "firecrawl",
+          "capability": "find-tools",
+          "options": {
+            "query": "none"
+          }
+        },
+        "objective": "placeholder"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

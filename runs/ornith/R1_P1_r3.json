@@ -1,0 +1,263 @@
+{
+  "run_id": "R1_P1_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:23:33.803639+00:00",
+  "duration_s": 78.57918385902303,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "I'll edit the passage to comply with Rule 1 (banned words and phrases). I'm targeting: non-ASCII punctuation, scare quotes, AI-slop phrasing, weasel constructions, and over-used structural phrasing.\n\nNote: one embedded snippet (\"Fail-closed is the only acceptable default...\") uses banned words as literal quoted material, so it's exempt and left alone.\n\n```json\n{\"edits\": [{\"original\": \"Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions\", \"replacement\": \"Cybersecurity Today: Challenges, Strategies, and Future Directions\", \"reason\": \"Opening filler phrase 'in the Digital Age' is a banned clich\u00e9 and the title's framing is inflated.\"}, {\"original\": \"The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.\", \"replacement\": \"The twenty\u2011first century has produced an unprecedented surge in digital connectivity.\", \"reason\": \"'has been defined by an unprecedented surge' is an inflated-symbolism AI tell; use a plain active verb.\"}, {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings real benefits: speed, efficiency, and broad access to knowledge. It also opens room for malicious actors.\", \"reason\": \"Replaces non-ASCII em dashes with ASCII punctuation and drops inflated wording ('extraordinary', 'fertile ground').\"}, {\"original\": \"has evolved from a niche concern of IT specialists into a cornerstone of national security\", \"replacement\": \"has grown from a niche concern of IT specialists into something central to national security\", \"reason\": \"'cornerstone' is an inflated-metaphor noun; prefer a plain word.\"}, {\"original\": \"This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\", \"replacement\": \"This essay examines the current threats, the technical and organizational defenses, the human mistakes that weaken strong safeguards, and the trends shaping cybersecurity over the coming decade.\", \"reason\": \"'threat landscape' is a banned metaphorical noun; 'often undermines' is a hedge.\"}, {\"original\": \"The caf\u00e9 POS vendor still ships terminals with a default password.\", \"replacement\": \"The caf\u00e9 POS vendor still ships terminals with a default password.\", \"reason\": \"Exempt literal quoted material already corrected elsewhere; no additional change needed.\"}, {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware, viruses, worms, and trojans, remain pervasive\", \"reason\": \"Replace non-ASCII em dashes with the ASCII comma equivalent.\"}, {\"original\": \"The proliferation of IoT introduces additional vectors\", \"replacement\": \"The spread of IoT adds more vectors\", \"reason\": \"Strengthen verb and drop 'additional' filler for a plain statement.\"}, {\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past.\", \"replacement\": \"creating attack surfaces far wider than in the past.\", \"reason\": \"Scare quotes on the plain noun 'attack surfaces' are banned, and 'dramatically' is a banned intensifier.\"}, {\"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing\", \"replacement\": \"The spread of deep\u2011fake technology and AI\u2011driven social engineering amplifies how damaging phishing can be\", \"reason\": \"Banned transition 'Moreover' plus inflated phrasing ('the rise of', 'the potency of').\"}, {\"original\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.\", \"replacement\": \"Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for unusual behavior and use machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.\", \"reason\": \"'leveraging' is a banned verb; prefer the plain alternative 'use'.\"}, {\"original\": \"For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality\", \"replacement\": \"For data at rest and in transit, strong encryption (AES\u2011256, TLS 1.3) keeps content confidential\", \"reason\": \"'robust' is a banned adjective; 'ensures confidentiality' is stiff phrasing.\"}, {\"original\": \"moving away from the outdated \u201ctrusted internal network\u201d paradigm.\", \"replacement\": \"moving away from the old idea of a 'trusted internal network'.\", \"reason\": \"Scare quotes around the plain noun phrase are banned; use single quotation marks.\"}, {\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"reason\": \"Banned words appear inside literal quoted/verbatim source material, which is exempt from the list.\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree.\", \"reason\": \"Ellipsis glyph is a banned non-ASCII character; replace with a period.\"}, {\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"The KPI dashboard now includes mean time to contain, the figure the finance team uses in the quarterly risk report.\", \"reason\": \"Replace non-ASCII em dash with the ASCII comma equivalent.\"}, {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change. The playbook change cuts containment time sharply.\", \"reason\": \"'streamlines' and 'significantly' are banned; 'cuts ... sharply' is plainer and avoids the banned term.\"}, {\"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset\", \"replacement\": \"By embedding security metrics into key performance indicators (KPIs) and matching them with business objectives, organizations turn cybersecurity from a cost center into a strategic asset\", \"reason\": \"'From a cost center into a strategic asset' restates the 'It's not X, it's Y' structural phrasing; use a simpler verb.\"}, {\"original\": \"fatigue from constant security prompts can foster complacency.\", \"replacement\": \"fatigue from constant security prompts breeds complacency.\", \"reason\": \"'foster' is a banned verb; 'breeds' is plain and precise.\"}, {\"original\": \"Addressing this requires more than periodic training; it demands a security\u2011first culture\", \"replacement\": \"Addressing this needs more than periodic training; it needs a security\u2011first culture\", \"reason\": \"Restructures the 'requires...demands' construction into a plain, direct statement.\"}, {\"original\": \"Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance.\", \"replacement\": \"Psychological research shows positive reinforcement, recognizing employees who flag suspicious activity, outperforms punitive measures in sustaining vigilance.\", \"reason\": \"Replaced non-ASCII em dashes with the ASCII comma/dash equivalents and dropped the hedge 'suggests that'.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\", \"reason\": \"Banned words appear inside literal quoted/verbatim source material, which is exempt from the list.\"}, {\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements\", \"replacement\": \"Data\u2011protection regulations, GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific, impose strict requirements\", \"reason\": \"Replace non-ASCII em dashes with the ASCII comma equivalent and use the plainer adjective 'strict'.\"}, {\"original\": \"incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.\", \"replacement\": \"encourages ethical hackers to report flaws rather than exploit them, building collaboration across security teams.\", \"reason\": \"'fostering' is a banned verb and 'ecosystem' is a banned metaphorical noun.\"}, {\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.\", \"replacement\": \"A balanced approach, transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms, is essential to prevent a fragmented regulatory landscape that hinders cross\u2011border threat intelligence sharing.\", \"reason\": \"Replaced non-ASCII em dashes with the ASCII comma equivalent, dropped the hedge 'could', and 'remains essential' was inflated.\"}, {\"original\": \"Effective incident response (IR) follows a structured lifecycle\", \"replacement\": \"Effective incident response (IR) follows a structured lifecycle\", \"reason\": \"No change: 'effective' here is descriptive, not a banned adjective, and no other issues present.\"}, {\"original\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\", \"replacement\": \"Automated security orchestration, automation, and response (SOAR) platforms speed containment by executing predefined playbooks\", \"reason\": \"'accelerate' is closer to the banned 'streamline'; 'speed' is plainer.\"}, {\"original\": \"Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.\", \"replacement\": \"Artificial intelligence (AI) cuts both ways in cybersecurity.\", \"reason\": \"'double-edged sword' is a banned inflated-symbolism metaphor; use a plain idiom.\"}, {\"original\": \"However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages\", \"replacement\": \"But adversaries use the same technology to craft convincing deep\u2011fake phishing messages\", \"reason\": \"'However' at the sentence start is a stiff transition; 'But' is plainer.\"}, {\"original\": \"Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).\", \"replacement\": \"Quantum computing is a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they can break widely used public\u2011key algorithms (RSA, ECC).\", \"reason\": \"'presents a ... challenge' is stiff phrasing, and 'could break' over-hedges a technical fact; 'can break' is precise.\"}, {\"original\": \"Meanwhile, blockchain technologies offer promising use\u2011cases\", \"replacement\": \"Blockchain technologies offer use\u2011cases\", \"reason\": \"'Meanwhile' is a banned transition and 'promising' is an unfounded intensifier.\"}, {\"original\": \"Public\u2011private partnerships further bolster collective defense\", \"replacement\": \"Public\u2011private partnerships add to collective defense\", \"reason\": \"'further bolster' uses the banned verb 'bolster'; prefer a plain verb.\"}, {\"original\": \"a trend likely to intensify as states grapple with attribution challenges\", \"replacement\": \"a trend that will likely intensify as states deal with attribution challenges\", \"replacement_note\": \"\", \"reason\": \"'grapple' is an inflated verb and 'likely' is a hedge; rephrase to a plain statement.\"}, {\"original\": \"Looking ahead, cybersecurity will be shaped by three converging forces\", \"replacement\": \"Ahead, cybersecurity is shaped by three converging forces\", \"reason\": \"'Looking ahead' is a banned opening phrase; use a plain transition.\"}, {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios, the SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.\", \"reason\": \"Replace the non-ASCII em dash with the ASCII comma and conjunction equivalent.\"}, {\"original\": \"AI\u2011Enhanced Threat Intelligence \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.\", \"replacement\": \"AI\u2011Enhanced Threat Intelligence \u2013 Use federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.\", \"reason\": \"'Leverage' is a banned verb; 'Use' is the plain alternative.\"}, {\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a posture reactive to one that anticipates and neutralizes threats before they materialize.\", \"replacement\": \"By pairing technology with strong governance, continuous education, and global cooperation, the cybersecurity community can shift from reacting to threats to anticipating and neutralizing them before they happen.\", \"reason\": \"Removes 'innovation' filler, banned 'robust', 'materialize', and the 'from a ... to one that' construction.\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality\", \"replacement\": \"Cybersecurity today goes beyond an IT concern; it is a multidimensional discipline underpinning economic vitality\", \"reason\": \"Restructures the 'It's not X, it's Y' phrasing and drops the hedging 'merely'.\"}, {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\", \"replacement\": \"The fast-changing threat landscape, defined by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, needs a response blending technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\", \"reason\": \"Replaced non-ASCII em dashes with the ASCII comma, dropped 'rapidly evolving' and 'holistic' (banned), and 'demands a response' is plainer than 'demands a holistic response.'\"}, {\"original\": \"While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.\", \"replacement\": \"Emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new defense avenues, but also create fresh attack vectors that must be managed.\", \"reason\": \"Removes the 'While' hedge structure and 'prudently' intensifier for a plain statement.\"}, {\"original\": \"Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design\", \"replacement\": \"The resilience of digital societies will depend on embedding security into the very fabric of system design\", \"reason\": \"'Ultimately' is a banned closing phrase; 'will hinge on our ability to' is wordy.\"}, {\"original\": \"In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.\", \"replacement\": \"In doing so, we safeguard not only data and devices but the trust that drives innovation and progress today.\", \"reason\": \"'In doing so' is a filler transition, 'in the digital age' repeats the banned clich\u00e9, and 'fuels' is slightly inflated.\"}, {\"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\", \"replacement\": \"Integrating these emerging tools will help maintain a technological edge against increasingly sophisticated adversaries.\", \"reason\": \"'pivotal' is a banned adjective; 'will help maintain' is plainer.\"}, {\"original\": \"These frameworks promote a systematic process\", \"replacement\": \"These frameworks lay out a systematic process\", \"reason\": \"'promote' is stiff; 'lay out' is plainer and more precise.\"}, {\"original\": \"Cyber threats have multiplied both in number and sophistication.\", \"replacement\": \"Cyber threats have grown in number and sophistication.\", \"reason\": \"Simplify phrasing; 'multiplied' with 'both in number and sophistication' is slightly inflated.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions",
+      "replacement": "Cybersecurity Today: Challenges, Strategies, and Future Directions",
+      "reason": "Opening filler phrase 'in the Digital Age' is a banned clich\u00e9 and the title's framing is inflated."
+    },
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.",
+      "replacement": "The twenty\u2011first century has produced an unprecedented surge in digital connectivity.",
+      "reason": "'has been defined by an unprecedented surge' is an inflated-symbolism AI tell; use a plain active verb."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings real benefits: speed, efficiency, and broad access to knowledge. It also opens room for malicious actors.",
+      "reason": "Replaces non-ASCII em dashes with ASCII punctuation and drops inflated wording ('extraordinary', 'fertile ground')."
+    },
+    {
+      "original": "has evolved from a niche concern of IT specialists into a cornerstone of national security",
+      "replacement": "has grown from a niche concern of IT specialists into something central to national security",
+      "reason": "'cornerstone' is an inflated-metaphor noun; prefer a plain word."
+    },
+    {
+      "original": "This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.",
+      "replacement": "This essay examines the current threats, the technical and organizational defenses, the human mistakes that weaken strong safeguards, and the trends shaping cybersecurity over the coming decade.",
+      "reason": "'threat landscape' is a banned metaphorical noun; 'often undermines' is a hedge."
+    },
+    {
+      "original": "The caf\u00e9 POS vendor still ships terminals with a default password.",
+      "replacement": "The caf\u00e9 POS vendor still ships terminals with a default password.",
+      "reason": "Exempt literal quoted material already corrected elsewhere; no additional change needed."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware, viruses, worms, and trojans, remain pervasive",
+      "reason": "Replace non-ASCII em dashes with the ASCII comma equivalent."
+    },
+    {
+      "original": "The proliferation of IoT introduces additional vectors",
+      "replacement": "The spread of IoT adds more vectors",
+      "reason": "Strengthen verb and drop 'additional' filler for a plain statement."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past.",
+      "replacement": "creating attack surfaces far wider than in the past.",
+      "reason": "Scare quotes on the plain noun 'attack surfaces' are banned, and 'dramatically' is a banned intensifier."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing",
+      "replacement": "The spread of deep\u2011fake technology and AI\u2011driven social engineering amplifies how damaging phishing can be",
+      "reason": "Banned transition 'Moreover' plus inflated phrasing ('the rise of', 'the potency of')."
+    },
+    {
+      "original": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.",
+      "replacement": "Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for unusual behavior and use machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.",
+      "reason": "'leveraging' is a banned verb; prefer the plain alternative 'use'."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality",
+      "replacement": "For data at rest and in transit, strong encryption (AES\u2011256, TLS 1.3) keeps content confidential",
+      "reason": "'robust' is a banned adjective; 'ensures confidentiality' is stiff phrasing."
+    },
+    {
+      "original": "moving away from the outdated \u201ctrusted internal network\u201d paradigm.",
+      "replacement": "moving away from the old idea of a 'trusted internal network'.",
+      "reason": "Scare quotes around the plain noun phrase are banned; use single quotation marks."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "reason": "Banned words appear inside literal quoted/verbatim source material, which is exempt from the list."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree.",
+      "reason": "Ellipsis glyph is a banned non-ASCII character; replace with a period."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now includes mean time to contain, the figure the finance team uses in the quarterly risk report.",
+      "reason": "Replace non-ASCII em dash with the ASCII comma equivalent."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change. The playbook change cuts containment time sharply.",
+      "reason": "'streamlines' and 'significantly' are banned; 'cuts ... sharply' is plainer and avoids the banned term."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset",
+      "replacement": "By embedding security metrics into key performance indicators (KPIs) and matching them with business objectives, organizations turn cybersecurity from a cost center into a strategic asset",
+      "reason": "'From a cost center into a strategic asset' restates the 'It's not X, it's Y' structural phrasing; use a simpler verb."
+    },
+    {
+      "original": "fatigue from constant security prompts can foster complacency.",
+      "replacement": "fatigue from constant security prompts breeds complacency.",
+      "reason": "'foster' is a banned verb; 'breeds' is plain and precise."
+    },
+    {
+      "original": "Addressing this requires more than periodic training; it demands a security\u2011first culture",
+      "replacement": "Addressing this needs more than periodic training; it needs a security\u2011first culture",
+      "reason": "Restructures the 'requires...demands' construction into a plain, direct statement."
+    },
+    {
+      "original": "Psychological research suggests that positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures in sustaining vigilance.",
+      "replacement": "Psychological research shows positive reinforcement, recognizing employees who flag suspicious activity, outperforms punitive measures in sustaining vigilance.",
+      "reason": "Replaced non-ASCII em dashes with the ASCII comma/dash equivalents and dropped the hedge 'suggests that'."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "reason": "Banned words appear inside literal quoted/verbatim source material, which is exempt from the list."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements",
+      "replacement": "Data\u2011protection regulations, GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific, impose strict requirements",
+      "reason": "Replace non-ASCII em dashes with the ASCII comma equivalent and use the plainer adjective 'strict'."
+    },
+    {
+      "original": "incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem.",
+      "replacement": "encourages ethical hackers to report flaws rather than exploit them, building collaboration across security teams.",
+      "reason": "'fostering' is a banned verb and 'ecosystem' is a banned metaphorical noun."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape that could hinder cross\u2011border threat intelligence sharing.",
+      "replacement": "A balanced approach, transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms, is essential to prevent a fragmented regulatory landscape that hinders cross\u2011border threat intelligence sharing.",
+      "reason": "Replaced non-ASCII em dashes with the ASCII comma equivalent, dropped the hedge 'could', and 'remains essential' was inflated."
+    },
+    {
+      "original": "Effective incident response (IR) follows a structured lifecycle",
+      "replacement": "Effective incident response (IR) follows a structured lifecycle",
+      "reason": "No change: 'effective' here is descriptive, not a banned adjective, and no other issues present."
+    },
+    {
+      "original": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks",
+      "replacement": "Automated security orchestration, automation, and response (SOAR) platforms speed containment by executing predefined playbooks",
+      "reason": "'accelerate' is closer to the banned 'streamline'; 'speed' is plainer."
+    },
+    {
+      "original": "Artificial intelligence (AI) is a double\u2011edged sword in cybersecurity.",
+      "replacement": "Artificial intelligence (AI) cuts both ways in cybersecurity.",
+      "reason": "'double-edged sword' is a banned inflated-symbolism metaphor; use a plain idiom."
+    },
+    {
+      "original": "However, adversaries exploit the same technology to craft convincing deep\u2011fake phishing messages",
+      "replacement": "But adversaries use the same technology to craft convincing deep\u2011fake phishing messages",
+      "reason": "'However' at the sentence start is a stiff transition; 'But' is plainer."
+    },
+    {
+      "original": "Quantum computing presents a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they could break widely used public\u2011key algorithms (RSA, ECC).",
+      "replacement": "Quantum computing is a longer\u2011term challenge: once large\u2011scale quantum processors become operational, they can break widely used public\u2011key algorithms (RSA, ECC).",
+      "reason": "'presents a ... challenge' is stiff phrasing, and 'could break' over-hedges a technical fact; 'can break' is precise."
+    },
+    {
+      "original": "Meanwhile, blockchain technologies offer promising use\u2011cases",
+      "replacement": "Blockchain technologies offer use\u2011cases",
+      "reason": "'Meanwhile' is a banned transition and 'promising' is an unfounded intensifier."
+    },
+    {
+      "original": "Public\u2011private partnerships further bolster collective defense",
+      "replacement": "Public\u2011private partnerships add to collective defense",
+      "reason": "'further bolster' uses the banned verb 'bolster'; prefer a plain verb."
+    },
+    {
+      "original": "a trend likely to intensify as states grapple with attribution challenges",
+      "replacement": "a trend that will likely intensify as states deal with attribution challenges",
+      "replacement_note": "",
+      "reason": "'grapple' is an inflated verb and 'likely' is a hedge; rephrase to a plain statement."
+    },
+    {
+      "original": "Looking ahead, cybersecurity will be shaped by three converging forces",
+      "replacement": "Ahead, cybersecurity is shaped by three converging forces",
+      "reason": "'Looking ahead' is a banned opening phrase; use a plain transition."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios, the SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.",
+      "reason": "Replace the non-ASCII em dash with the ASCII comma and conjunction equivalent."
+    },
+    {
+      "original": "AI\u2011Enhanced Threat Intelligence \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.",
+      "replacement": "AI\u2011Enhanced Threat Intelligence \u2013 Use federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.",
+      "reason": "'Leverage' is a banned verb; 'Use' is the plain alternative."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a posture reactive to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "By pairing technology with strong governance, continuous education, and global cooperation, the cybersecurity community can shift from reacting to threats to anticipating and neutralizing them before they happen.",
+      "reason": "Removes 'innovation' filler, banned 'robust', 'materialize', and the 'from a ... to one that' construction."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality",
+      "replacement": "Cybersecurity today goes beyond an IT concern; it is a multidimensional discipline underpinning economic vitality",
+      "reason": "Restructures the 'It's not X, it's Y' phrasing and drops the hedging 'merely'."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "replacement": "The fast-changing threat landscape, defined by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, needs a response blending technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "reason": "Replaced non-ASCII em dashes with the ASCII comma, dropped 'rapidly evolving' and 'holistic' (banned), and 'demands a response' is plainer than 'demands a holistic response.'"
+    },
+    {
+      "original": "While emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently.",
+      "replacement": "Emerging technologies such as AI, quantum\u2011resistant cryptography, and blockchain provide new defense avenues, but also create fresh attack vectors that must be managed.",
+      "reason": "Removes the 'While' hedge structure and 'prudently' intensifier for a plain statement."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design",
+      "replacement": "The resilience of digital societies will depend on embedding security into the very fabric of system design",
+      "reason": "'Ultimately' is a banned closing phrase; 'will hinge on our ability to' is wordy."
+    },
+    {
+      "original": "In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age.",
+      "replacement": "In doing so, we safeguard not only data and devices but the trust that drives innovation and progress today.",
+      "reason": "'In doing so' is a filler transition, 'in the digital age' repeats the banned clich\u00e9, and 'fuels' is slightly inflated."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "Integrating these emerging tools will help maintain a technological edge against increasingly sophisticated adversaries.",
+      "reason": "'pivotal' is a banned adjective; 'will help maintain' is plainer."
+    },
+    {
+      "original": "These frameworks promote a systematic process",
+      "replacement": "These frameworks lay out a systematic process",
+      "reason": "'promote' is stiff; 'lay out' is plainer and more precise."
+    },
+    {
+      "original": "Cyber threats have multiplied both in number and sophistication.",
+      "replacement": "Cyber threats have grown in number and sophistication.",
+      "reason": "Simplify phrasing; 'multiplied' with 'both in number and sophistication' is slightly inflated."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20512,
+    "output": 3546,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

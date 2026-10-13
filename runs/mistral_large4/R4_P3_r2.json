@@ -1,0 +1,379 @@
+{
+  "run_id": "R4_P3_r2",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:11:07.300812+00:00",
+  "duration_s": 39.073017536022235,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"not merely academic\u2014it is essential\",\n      \"replacement\": \"not merely academic; it is essential\",\n      \"reason\": \"Em dash joining two independent clauses should be a semicolon.\"\n    },\n    {\n      \"original\": \"\u201cfather of botany\u201d\",\n      \"replacement\": \"\\\"father of botany\\\"\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes.\"\n    },\n    {\n      \"original\": \"coining the term \u201ccell.\u201d\",\n      \"replacement\": \"coining the term \\\"cell.\\\"\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes.\"\n    },\n    {\n      \"original\": \"undetermined\u2026 until\",\n      \"replacement\": \"undetermined... until\",\n      \"reason\": \"Single ellipsis glyph must become three separate period characters.\"\n    },\n    {\n      \"original\": \"plasmodesmata\u2014microscopic channels\",\n      \"replacement\": \"plasmodesmata: microscopic channels\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"stomata\u2014pores that regulate\",\n      \"replacement\": \"stomata: pores that regulate\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"ecological niches\u2014from desert succulents\",\n      \"replacement\": \"ecological niches: from desert succulents\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"pigment molecules\u2014chiefly chlorophyll a\",\n      \"replacement\": \"pigment molecules: chiefly chlorophyll a\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads\",\n      \"replacement\": \"metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads\",\n      \"reason\": \"Paired em dashes setting off a parenthetical should be parentheses.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations\u2014symbiotic relationships\",\n      \"replacement\": \"Mycorrhizal associations: symbiotic relationships\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"plant communities\u2014via deforestation\",\n      \"replacement\": \"plant communities (via deforestation\",\n      \"reason\": \"Em dash introducing a parenthetical phrase; opening parenthesis needed, closing parenthesis follows 'climate change'.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"invasive species, or climate change\u2014undermines\",\n      \"replacement\": \"invasive species, or climate change) undermines\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'plant communities'.\"\n    },\n    {\n      \"original\": \"\u201cNaked seed\u201d plants\",\n      \"replacement\": \"\\\"Naked seed\\\" plants\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes.\"\n    },\n    {\n      \"original\": \"traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic\",\n      \"replacement\": \"traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes.\"\n    },\n    {\n      \"original\": \"formed heads\u2014the market rejected\",\n      \"replacement\": \"formed heads; the market rejected\",\n      \"reason\": \"Em dash joining two independent clauses should be a semicolon.\"\n    },\n    {\n      \"original\": \"Staple crops\u2014wheat, rice, maize\",\n      \"replacement\": \"Staple crops: wheat, rice, maize\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"metabolites\u2014alkaloids\",\n      \"replacement\": \"metabolites (alkaloids\",\n      \"reason\": \"Em dash opening a parenthetical list; opening parenthesis needed.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"terpenoids, phenolics\u2014for therapeutic\",\n      \"replacement\": \"terpenoids, phenolics) for therapeutic\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'metabolites'.\"\n    },\n    {\n      \"original\": \"pathways\u2014areas where plant scientists\",\n      \"replacement\": \"pathways: areas where plant scientists\",\n      \"reason\": \"Em dash introducing an appositive fragment should be a colon.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate\",\n      \"replacement\": \"Mycorrhizal associations (symbiotic relationships between plant roots and fungi) facilitate\",\n      \"reason\": \"Paired em dashes setting off a parenthetical should be parentheses.\"\n    },\n    {\n      \"original\": \"plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines\",\n      \"replacement\": \"plant communities (via deforestation, invasive species, or climate change) undermines\",\n      \"reason\": \"Paired em dashes setting off a parenthetical should be parentheses.\"\n    },\n    {\n      \"original\": \"stress memory\u201d\u2014\u2014the ability\",\n      \"replacement\": \"stress memory\\\" -- the ability\",\n      \"reason\": \"Curly/smart closing quote must become straight double quote; double em dash should be replaced with spaced hyphens or restructured.\",\n      \"replacement_note\": \"Actually see corrected edit below\"\n    },\n    {\n      \"original\": \"**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure\",\n      \"replacement\": \"**stress memory** (the ability of plants to \\\"remember\\\" prior exposure\",\n      \"reason\": \"Em dash introducing a parenthetical definition should be an opening parenthesis; curly quotes become straight quotes.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"upon re\u2011encounter\u2014is a burgeoning field\",\n      \"replacement\": \"upon re-encounter) is a burgeoning field\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'stress memory'.\"\n    },\n    {\n      \"original\": \"\u201cremember\u201d prior exposure\",\n      \"replacement\": \"\\\"remember\\\" prior exposure\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes.\"\n    },\n    {\n      \"original\": \"between plants and microbes\u2014through signaling molecules\",\n      \"replacement\": \"between plants and microbes: through signaling molecules\",\n      \"reason\": \"Em dash introducing an explanatory fragment should be a colon.\"\n    },\n    {\n      \"original\": \"**Precision agriculture**\u2014leveraging satellite imagery\",\n      \"replacement\": \"**Precision agriculture** (leveraging satellite imagery\",\n      \"reason\": \"Em dash introducing a participial phrase should be an opening parenthesis.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"drones, and IoT sensors\u2014will enable\",\n      \"replacement\": \"drones, and IoT sensors) will enable\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'Precision agriculture'.\"\n    },\n    {\n      \"original\": \"**\u201cclimate\u2011smart\u201d plants**\u2014species engineered\",\n      \"replacement\": \"**\\\"climate-smart\\\" plants** (species engineered\",\n      \"reason\": \"Curly/smart double quotes must become straight double quotes; em dash introducing a participial phrase should be an opening parenthesis.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"delivering ecosystem services\u2014will become central\",\n      \"replacement\": \"delivering ecosystem services) will become central\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'climate-smart plants'.\"\n    },\n    {\n      \"original\": \"Contemporary research\u2014spanning genomics\",\n      \"replacement\": \"Contemporary research (spanning genomics\",\n      \"reason\": \"Em dash introducing a participial phrase should be an opening parenthesis.\",\n      \"replacement_note\": \"See paired edit below\"\n    },\n    {\n      \"original\": \"ecosystem modeling\u2014offers unprecedented tools\",\n      \"replacement\": \"ecosystem modeling) offers unprecedented tools\",\n      \"reason\": \"Closing parenthesis for the parenthetical opened at 'Contemporary research'.\"\n    },\n    {\n      \"original\": \"humanity\u2019s\",\n      \"replacement\": \"humanity's\",\n      \"reason\": \"Curly/smart apostrophe must become a straight apostrophe.\"\n    },\n    {\n      \"original\": \"discipline\u2019s contemporary relevance\",\n      \"replacement\": \"discipline's contemporary relevance\",\n      \"reason\": \"Curly/smart apostrophe must become a straight apostrophe.\"\n    },\n    {\n      \"original\": \"Hooke\u2019s 1665\",\n      \"replacement\": \"Hooke's 1665\",\n      \"reason\": \"Curly/smart apostrophe must become a straight apostrophe.\"\n    },\n    {\n      \"original\": \"Darwin\u2019s *On the Origin of Species*\",\n      \"replacement\": \"Darwin's *On the Origin of Species*\",\n      \"reason\": \"Curly/smart apostrophe must become a straight apostrophe.\"\n    },\n    {\n      \"original\": \"organelle\u2019s prokaryotic-like\",\n      \"replacement\": \"organelle's prokaryotic-like\",\n      \"reason\": \"Curly/smart apostrophe must become a straight apostrophe.\"\n    },\n    {\n      \"original\": \"c.\u202f371\u2013287\u202fBC\",\n      \"replacement\": \"c. 371-287 BC\",\n      \"reason\": \"En dash used as a range separator must become a hyphen.\"\n    },\n    {\n      \"original\": \"well\u2011being\",\n      \"replacement\": \"well-being\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011throughput\",\n      \"replacement\": \"high-throughput\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"light\u2011dependent\",\n      \"replacement\": \"light-dependent\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"Calvin\u2011Benson\",\n      \"replacement\": \"Calvin-Benson\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"by\u2011product\",\n      \"replacement\": \"by-product\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"ribulose\u20111,5\u2011bisphosphate\",\n      \"replacement\": \"ribulose-1,5-bisphosphate\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"glyceraldehyde\u20113\u2011phosphate\",\n      \"replacement\": \"glyceraldehyde-3-phosphate\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"3\u2011phosphoglycerate\",\n      \"replacement\": \"3-phosphoglycerate\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"Non\u2011vascular\",\n      \"replacement\": \"Non-vascular\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"carbon\u2011sequestering\",\n      \"replacement\": \"carbon-sequestering\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"non\u2011material\",\n      \"replacement\": \"non-material\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"next\u2011generation\",\n      \"replacement\": \"next-generation\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011level\",\n      \"replacement\": \"high-level\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"Climate\u2011Resilient\",\n      \"replacement\": \"Climate-Resilient\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"Plant\u2013Microbe\",\n      \"replacement\": \"Plant-Microbe\",\n      \"reason\": \"En dash used as a hyphen must become a regular hyphen.\"\n    },\n    {\n      \"original\": \"benefit\u2011sharing\",\n      \"replacement\": \"benefit-sharing\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"CRISPR\u2011based\",\n      \"replacement\": \"CRISPR-based\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"socio\u2011economic\",\n      \"replacement\": \"socio-economic\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"real\u2011time\",\n      \"replacement\": \"real-time\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"marker\u2011assisted\",\n      \"replacement\": \"marker-assisted\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011yielding\",\n      \"replacement\": \"high-yielding\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"re\u2011encounter\",\n      \"replacement\": \"re-encounter\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"climate\u2011smart\",\n      \"replacement\": \"climate-smart\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen.\"\n    },\n    {\n      \"original\": \"120\u202fGt\",\n      \"replacement\": \"120 Gt\",\n      \"reason\": \"Narrow no-break space (U+202F) is not a standard US keyboard character; use a regular space.\"\n    },\n    {\n      \"original\": \"NADP\u207a\",\n      \"replacement\": \"NADP+\",\n      \"reason\": \"Superscript plus sign (U+207A) is not a standard US keyboard character; use a regular plus sign.\"\n    },\n    {\n      \"original\": \"O\u2082\",\n      \"replacement\": \"O2\",\n      \"reason\": \"Subscript two (U+2082) is not a standard US keyboard character; use a regular digit.\"\n    },\n    {\n      \"original\": \"CO\u2082\",\n      \"replacement\": \"CO2\",\n      \"reason\": \"Subscript two (U+2082) is not a standard US keyboard character; use a regular digit.\"\n    },\n    {\n      \"original\": \"CO\u2082\",\n      \"replacement\": \"CO2\",\n      \"reason\": \"Subscript two (U+2082) is not a standard US keyboard character; use a regular digit.\"\n    },\n    {\n      \"original\": \"caf\u00e9\",\n      \"replacement\": null,\n      \"reason\": \"Flagging for author: 'caf\u00e9' uses a diacritic, which is correct spelling for this French loanword and not a violation of Rule 4.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Em dash joining two independent clauses should be a semicolon."
+    },
+    {
+      "original": "\u201cfather of botany\u201d",
+      "replacement": "\"father of botany\"",
+      "reason": "Curly/smart double quotes must become straight double quotes."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly/smart double quotes must become straight double quotes."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined... until",
+      "reason": "Single ellipsis glyph must become three separate period characters."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata: microscopic channels",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "stomata\u2014pores that regulate",
+      "replacement": "stomata: pores that regulate",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "ecological niches\u2014from desert succulents",
+      "replacement": "ecological niches: from desert succulents",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a",
+      "replacement": "pigment molecules: chiefly chlorophyll a",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads",
+      "replacement": "metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads",
+      "reason": "Paired em dashes setting off a parenthetical should be parentheses."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships",
+      "replacement": "Mycorrhizal associations: symbiotic relationships",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "plant communities\u2014via deforestation",
+      "replacement": "plant communities (via deforestation",
+      "reason": "Em dash introducing a parenthetical phrase; opening parenthesis needed, closing parenthesis follows 'climate change'.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "invasive species, or climate change\u2014undermines",
+      "replacement": "invasive species, or climate change) undermines",
+      "reason": "Closing parenthesis for the parenthetical opened at 'plant communities'."
+    },
+    {
+      "original": "\u201cNaked seed\u201d plants",
+      "replacement": "\"Naked seed\" plants",
+      "reason": "Curly/smart double quotes must become straight double quotes."
+    },
+    {
+      "original": "traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic",
+      "replacement": "traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic",
+      "reason": "Curly/smart double quotes must become straight double quotes."
+    },
+    {
+      "original": "formed heads\u2014the market rejected",
+      "replacement": "formed heads; the market rejected",
+      "reason": "Em dash joining two independent clauses should be a semicolon."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize",
+      "replacement": "Staple crops: wheat, rice, maize",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "metabolites\u2014alkaloids",
+      "replacement": "metabolites (alkaloids",
+      "reason": "Em dash opening a parenthetical list; opening parenthesis needed.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "terpenoids, phenolics\u2014for therapeutic",
+      "replacement": "terpenoids, phenolics) for therapeutic",
+      "reason": "Closing parenthesis for the parenthetical opened at 'metabolites'."
+    },
+    {
+      "original": "pathways\u2014areas where plant scientists",
+      "replacement": "pathways: areas where plant scientists",
+      "reason": "Em dash introducing an appositive fragment should be a colon."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate",
+      "replacement": "Mycorrhizal associations (symbiotic relationships between plant roots and fungi) facilitate",
+      "reason": "Paired em dashes setting off a parenthetical should be parentheses."
+    },
+    {
+      "original": "plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines",
+      "replacement": "plant communities (via deforestation, invasive species, or climate change) undermines",
+      "reason": "Paired em dashes setting off a parenthetical should be parentheses."
+    },
+    {
+      "original": "stress memory\u201d\u2014\u2014the ability",
+      "replacement": "stress memory\" -- the ability",
+      "reason": "Curly/smart closing quote must become straight double quote; double em dash should be replaced with spaced hyphens or restructured.",
+      "replacement_note": "Actually see corrected edit below"
+    },
+    {
+      "original": "**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure",
+      "replacement": "**stress memory** (the ability of plants to \"remember\" prior exposure",
+      "reason": "Em dash introducing a parenthetical definition should be an opening parenthesis; curly quotes become straight quotes.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "upon re\u2011encounter\u2014is a burgeoning field",
+      "replacement": "upon re-encounter) is a burgeoning field",
+      "reason": "Closing parenthesis for the parenthetical opened at 'stress memory'."
+    },
+    {
+      "original": "\u201cremember\u201d prior exposure",
+      "replacement": "\"remember\" prior exposure",
+      "reason": "Curly/smart double quotes must become straight double quotes."
+    },
+    {
+      "original": "between plants and microbes\u2014through signaling molecules",
+      "replacement": "between plants and microbes: through signaling molecules",
+      "reason": "Em dash introducing an explanatory fragment should be a colon."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery",
+      "replacement": "**Precision agriculture** (leveraging satellite imagery",
+      "reason": "Em dash introducing a participial phrase should be an opening parenthesis.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "drones, and IoT sensors\u2014will enable",
+      "replacement": "drones, and IoT sensors) will enable",
+      "reason": "Closing parenthesis for the parenthetical opened at 'Precision agriculture'."
+    },
+    {
+      "original": "**\u201cclimate\u2011smart\u201d plants**\u2014species engineered",
+      "replacement": "**\"climate-smart\" plants** (species engineered",
+      "reason": "Curly/smart double quotes must become straight double quotes; em dash introducing a participial phrase should be an opening parenthesis.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "delivering ecosystem services\u2014will become central",
+      "replacement": "delivering ecosystem services) will become central",
+      "reason": "Closing parenthesis for the parenthetical opened at 'climate-smart plants'."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics",
+      "replacement": "Contemporary research (spanning genomics",
+      "reason": "Em dash introducing a participial phrase should be an opening parenthesis.",
+      "replacement_note": "See paired edit below"
+    },
+    {
+      "original": "ecosystem modeling\u2014offers unprecedented tools",
+      "replacement": "ecosystem modeling) offers unprecedented tools",
+      "reason": "Closing parenthesis for the parenthetical opened at 'Contemporary research'."
+    },
+    {
+      "original": "humanity\u2019s",
+      "replacement": "humanity's",
+      "reason": "Curly/smart apostrophe must become a straight apostrophe."
+    },
+    {
+      "original": "discipline\u2019s contemporary relevance",
+      "replacement": "discipline's contemporary relevance",
+      "reason": "Curly/smart apostrophe must become a straight apostrophe."
+    },
+    {
+      "original": "Hooke\u2019s 1665",
+      "replacement": "Hooke's 1665",
+      "reason": "Curly/smart apostrophe must become a straight apostrophe."
+    },
+    {
+      "original": "Darwin\u2019s *On the Origin of Species*",
+      "replacement": "Darwin's *On the Origin of Species*",
+      "reason": "Curly/smart apostrophe must become a straight apostrophe."
+    },
+    {
+      "original": "organelle\u2019s prokaryotic-like",
+      "replacement": "organelle's prokaryotic-like",
+      "reason": "Curly/smart apostrophe must become a straight apostrophe."
+    },
+    {
+      "original": "c.\u202f371\u2013287\u202fBC",
+      "replacement": "c. 371-287 BC",
+      "reason": "En dash used as a range separator must become a hyphen."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "Non\u2011vascular",
+      "replacement": "Non-vascular",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "non\u2011material",
+      "replacement": "non-material",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "high\u2011level",
+      "replacement": "high-level",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "Climate\u2011Resilient",
+      "replacement": "Climate-Resilient",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "Plant\u2013Microbe",
+      "replacement": "Plant-Microbe",
+      "reason": "En dash used as a hyphen must become a regular hyphen."
+    },
+    {
+      "original": "benefit\u2011sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "CRISPR\u2011based",
+      "replacement": "CRISPR-based",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "socio\u2011economic",
+      "replacement": "socio-economic",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "re\u2011encounter",
+      "replacement": "re-encounter",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "climate\u2011smart",
+      "replacement": "climate-smart",
+      "reason": "Non-breaking hyphen (U+2011) is not a standard US keyboard character; use a regular hyphen."
+    },
+    {
+      "original": "120\u202fGt",
+      "replacement": "120 Gt",
+      "reason": "Narrow no-break space (U+202F) is not a standard US keyboard character; use a regular space."
+    },
+    {
+      "original": "NADP\u207a",
+      "replacement": "NADP+",
+      "reason": "Superscript plus sign (U+207A) is not a standard US keyboard character; use a regular plus sign."
+    },
+    {
+      "original": "O\u2082",
+      "replacement": "O2",
+      "reason": "Subscript two (U+2082) is not a standard US keyboard character; use a regular digit."
+    },
+    {
+      "original": "CO\u2082",
+      "replacement": "CO2",
+      "reason": "Subscript two (U+2082) is not a standard US keyboard character; use a regular digit."
+    },
+    {
+      "original": "CO\u2082",
+      "replacement": "CO2",
+      "reason": "Subscript two (U+2082) is not a standard US keyboard character; use a regular digit."
+    },
+    {
+      "original": "caf\u00e9",
+      "replacement": null,
+      "reason": "Flagging for author: 'caf\u00e9' uses a diacritic, which is correct spelling for this French loanword and not a violation of Rule 4."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 977,
+    "output": 3763,
+    "cache_read": 19436,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00988955,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,119 @@
+{
+  "run_id": "R3_P3_r3_easy",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:37:48.866219+00:00",
+  "duration_s": 31.507278067001607,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"\", \"reason\": \"The phrase \\\"make no mistake\\\" is a redundant trailer equivalent to the rule's \\\"not X\\\" clauses: it adds nothing to the ordinary-knowledge point that field crews collect vouchers.\"}, {\"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\", \"replacement\": \"Herbarium staff still mark sterile Carex sheets as undetermined until a fruiting collection arrives.\", \"reason\": \"The ellipsis-plus-space \\\"\u2026 until\\\" tacked onto the clause reads as a bolted-on trailer; tightening it to a single flowing clause removes the pause without changing meaning.\"}, {\"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\", \"replacement\": \"In allometric studies, a robust regression of leaf mass on area down-weights herbivore-damaged outliers.\", \"reason\": \"The trailing prepositional phrase \\\"in allometric studies\\\" is a checkable qualifier smuggled into a bolted-on tail; fronting it gives the distinction its proper place in the sentence.\"}, {\"original\": \"so the change significantly streamlines cell-wall composition analysis\", \"replacement\": \"so the change streamlines cell-wall composition analysis\", \"reason\": \"The adverb \\\"significantly\\\" is a redundant intensifier trailer after the stated 40-to-6-minute drop, which already shows the magnitude.\"}, {\"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\", \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\", \"reason\": \"\\\"Full stop\\\" is an emphatic trailer equivalent to the rule's \\\"not X\\\" clauses; the claim stands on its own and the assertion is verifiable from standard biochemistry texts.\"}, {\"original\": \"close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"a division that parallels the C4-versus-CAM distinction between spatial and temporal carbon concentration.\", \"reason\": \"The comma-spliced trailer restates the preceding two regimes in clipped fragments (\\\"the C4 case... the CAM one\\\"), so folding it into the sentence removes the bolted-on repetition while preserving the same content.\"}, {\"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\", \"replacement\": \"The seedlings bolted in week 3 and never formed heads, so the market rejected the entire lot.\", \"reason\": \"The run-on trailer \\\"they never formed heads\\\" duplicates the bolting claim and hangs off the sentence without a connector; joining the clauses makes the consequence explicit rather than tacked on.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Uncertain under the ordinary-knowledge test: \\\"heirlooms\\\" is arguably the natural counterpart of \\\"landraces,\\\" but the terms overlap in horticultural usage, so I cannot tell whether this trailer is a redundant antonym to cut or a genuine distinction needing its own sentence.\"}, {\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"\\\"By accident\\\" is the ordinary, general-knowledge antonym of \\\"on purpose,\\\" so the trailer adds nothing and should be cut.\"}, {\"original\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\", \"replacement\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation reduces yield loss in dry years.\", \"reason\": \"The intensifier \\\"dramatically\\\" is a redundant trailer; the 41-to-8-percent figures already convey the size of the reduction.\"}, {\"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Morphine is produced in *Papaver somniferum* latex.\", \"reason\": \"The negative clause merely denies what the preceding sentence already established (morphine from *Papaver somniferum*, paclitaxel from the Pacific yew), so it is a redundant \\\"not X\\\" statement that can be cut.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct targets the chloroplast genome rather than the nuclear one.\", \"reason\": \"Rewritten as a single positive statement of what the construct does instead of a claim plus a bolted-on \\\"not X\\\" denial.\"}]}",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "",
+      "reason": "The phrase \"make no mistake\" is a redundant trailer equivalent to the rule's \"not X\" clauses: it adds nothing to the ordinary-knowledge point that field crews collect vouchers."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "Herbarium staff still mark sterile Carex sheets as undetermined until a fruiting collection arrives.",
+      "reason": "The ellipsis-plus-space \"\u2026 until\" tacked onto the clause reads as a bolted-on trailer; tightening it to a single flowing clause removes the pause without changing meaning."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "In allometric studies, a robust regression of leaf mass on area down-weights herbivore-damaged outliers.",
+      "reason": "The trailing prepositional phrase \"in allometric studies\" is a checkable qualifier smuggled into a bolted-on tail; fronting it gives the distinction its proper place in the sentence."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis",
+      "replacement": "so the change streamlines cell-wall composition analysis",
+      "reason": "The adverb \"significantly\" is a redundant intensifier trailer after the stated 40-to-6-minute drop, which already shows the magnitude."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "\"Full stop\" is an emphatic trailer equivalent to the rule's \"not X\" clauses; the claim stands on its own and the assertion is verifiable from standard biochemistry texts."
+    },
+    {
+      "original": "close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "a division that parallels the C4-versus-CAM distinction between spatial and temporal carbon concentration.",
+      "reason": "The comma-spliced trailer restates the preceding two regimes in clipped fragments (\"the C4 case... the CAM one\"), so folding it into the sentence removes the bolted-on repetition while preserving the same content."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3 and never formed heads, so the market rejected the entire lot.",
+      "reason": "The run-on trailer \"they never formed heads\" duplicates the bolting claim and hangs off the sentence without a connector; joining the clauses makes the consequence explicit rather than tacked on."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Uncertain under the ordinary-knowledge test: \"heirlooms\" is arguably the natural counterpart of \"landraces,\" but the terms overlap in horticultural usage, so I cannot tell whether this trailer is a redundant antonym to cut or a genuine distinction needing its own sentence."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\"By accident\" is the ordinary, general-knowledge antonym of \"on purpose,\" so the trailer adds nothing and should be cut."
+    },
+    {
+      "original": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation reduces yield loss in dry years.",
+      "reason": "The intensifier \"dramatically\" is a redundant trailer; the 41-to-8-percent figures already convey the size of the reduction."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in *Papaver somniferum* latex.",
+      "reason": "The negative clause merely denies what the preceding sentence already established (morphine from *Papaver somniferum*, paclitaxel from the Pacific yew), so it is a redundant \"not X\" statement that can be cut."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct targets the chloroplast genome rather than the nuclear one.",
+      "reason": "Rewritten as a single positive statement of what the construct does instead of a claim plus a bolted-on \"not X\" denial."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 763,
+    "output": 1218,
+    "cache_read": 62464,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0016863339999999998,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://www.firecrawl.dev/app/credits",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://www.firecrawl.dev/app/credits",
+        "objective": "Determine the team's remaining Firecrawl credits before running multi-source web research on botanical survey accuracy.",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,352 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:48:44.696254+00:00",
+  "duration_s": 123.73952986000222,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"humanity\u2019s ability\",\n      \"replacement\": \"humanity's ability\",\n      \"reason\": \"Curly/smart apostrophe is a NEVER-tier banned character; replace with straight ASCII apostrophe.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is\",\n      \"replacement\": \"The contemporary electric power system (commonly referred to simply as a *power system*) is\",\n      \"reason\": \"Em dash is a NEVER-tier banned character; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged\",\n      \"replacement\": \"the basic principle (converting a primary energy source into usable electrical power) remains unchanged\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"end\u2011users\",\n      \"replacement\": \"end-users\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011voltage lines\",\n      \"replacement\": \"high-voltage lines\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"socio\u2011technical\",\n      \"replacement\": \"socio-technical\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"so the retune significantly shortens frequency restoration\",\n      \"replacement\": \"so the retune shortens frequency restoration\",\n      \"reason\": \"'significantly' is a prefer-other-words intensifier; the sentence is clear without it.\"\n    },\n    {\n      \"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\",\n      \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. Also non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Robust control keeps voltage inside limits when plant parameters are uncertain.\",\n      \"replacement\": \"Control keeps voltage inside limits when plant parameters are uncertain.\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; the sentence is clear without it.\"\n    },\n    {\n      \"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\",\n      \"replacement\": \"Forecasts still miss cloud-driven ramps. Wind turbines\",\n      \"reason\": \"Ellipsis glyph is a NEVER-tier banned character; replace with three periods or a period.\"\n    },\n    {\n      \"original\": \"requiring robust transmission networks\",\n      \"replacement\": \"requiring strong transmission networks\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative.\"\n    },\n    {\n      \"original\": \"Inverter\u2011Based Interface\",\n      \"replacement\": \"Inverter-Based Interface\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"short\u2011term stability\",\n      \"replacement\": \"short-term stability\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"small\u2011scale generation\",\n      \"replacement\": \"small-scale generation\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Utility\u2011scale renewables\",\n      \"replacement\": \"Utility-scale renewables\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Beyond utility\u2011scale renewables\",\n      \"replacement\": \"Beyond utility-scale renewables\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"steel\u2011reinforced aluminum\",\n      \"replacement\": \"steel-reinforced aluminum\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"underground/high\u2011temperature superconducting cables\",\n      \"replacement\": \"underground/high-temperature superconducting cables\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"thyristor\u2011controlled series capacitors\",\n      \"replacement\": \"thyristor-controlled series capacitors\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Modern transmission planning leverages *optimal power flow* (OPF) algorithms\",\n      \"replacement\": \"Modern transmission planning uses *optimal power flow* (OPF) algorithms\",\n      \"reason\": \"'Leverages' is a prefer-other-words verb; 'uses' is a natural alternative.\"\n    },\n    {\n      \"original\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.\",\n      \"replacement\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices (static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides operators with dynamic voltage and power-flow regulation, adding capacity without building new lines.\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Enhancing' is a prefer-other-words verb; 'adding' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The architecture of a typical distribution system consists of:\",\n      \"replacement\": \"A typical distribution system consists of:\",\n      \"reason\": \"Removes filler phrasing; the sentence is clearer and more direct without 'The architecture of'.\"\n    },\n    {\n      \"original\": \"\u201clast mile\u201d\",\n      \"replacement\": \"\\\"last mile\\\"\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"\u201cRadial\u201d designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability.\",\n      \"replacement\": \"\\\"Radial\\\" designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability.\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"Further step down voltage for end\u2011use customers.\",\n      \"replacement\": \"Further step down voltage for end-use customers.\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The transition toward *digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.\",\n      \"replacement\": \"The transition toward *digital relaying* (using microprocessor-based Intelligent Electronic Devices (IEDs)) allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, opening the door to *wide-area protection* that can coordinate responses across regional or inter-regional grids.\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Paving the way for' is an academic tell; 'opening the door to' is a natural alternative. Non-breaking hyphens replaced with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"\u201calways\u2011on,\u201d\",\n      \"replacement\": \"\\\"always-on,\\\"\",\n      \"reason\": \"Curly/smart quotes and non-breaking hyphen are NEVER-tier banned characters; replace with straight ASCII quotes and hyphen.\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\",\n      \"replacement\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply; thermal units then tripped on auxiliary freeze.\",\n      \"reason\": \"Em dash is a NEVER-tier banned character; replace with semicolon.\"\n    },\n    {\n      \"original\": \"Supply\u2011Demand Balancing\",\n      \"replacement\": \"Supply-Demand Balancing\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity traditionally supplied by flexible thermal generators.\",\n      \"replacement\": \"The net load curve becomes flatter during sunny windy days, diminishing the \\\"ramping\\\" capacity traditionally supplied by flexible thermal generators.\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"The deregulated electricity market, while fostering competition, also introduces price volatility and complex settlement mechanisms.\",\n      \"replacement\": \"The deregulated electricity market, while encouraging competition, also introduces price volatility and complex settlement mechanisms.\",\n      \"reason\": \"'Fostering' is a prefer-other-words verb; 'encouraging' is a natural alternative.\"\n    },\n    {\n      \"original\": \"Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.\",\n      \"replacement\": \"Long-duration storage is emerging as a cornerstone for high VRE penetration.\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"short\u2011 to medium\u2011duration\",\n      \"replacement\": \"short- to medium-duration\",\n      \"reason\": \"Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"long\u2011duration (>10\u202fh)\",\n      \"replacement\": \"long-duration (>10 h)\",\n      \"reason\": \"Non-breaking hyphen (U+2011) and narrow no-break space (U+202F) are non-standard US keyboard characters; replace with ASCII hyphen and space.\"\n    },\n    {\n      \"original\": \"Renewable\u2011Heavy Grid\",\n      \"replacement\": \"Renewable-Heavy Grid\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The **European Union\u2019s \u201cElectricity Interconnection\u201d** project\",\n      \"replacement\": \"The **European Union's \\\"Electricity Interconnection\\\"** project\",\n      \"reason\": \"Curly/smart apostrophe and quotes are NEVER-tier banned characters; replace with straight ASCII equivalents.\"\n    },\n    {\n      \"original\": \"at least **15\u202f% cross\u2011border interconnection capacity**\",\n      \"replacement\": \"at least **15% cross-border interconnection capacity**\",\n      \"reason\": \"Narrow no-break space (U+202F) and non-breaking hyphen (U+2011) are non-standard US keyboard characters; replace with ASCII space and hyphen.\"\n    },\n    {\n      \"original\": \"Multi\u2011terminal VSC\u2011HVDC converters\",\n      \"replacement\": \"Multi-terminal VSC-HVDC converters\",\n      \"reason\": \"Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"A continent\u2011wide WAMS platform\",\n      \"replacement\": \"A continent-wide WAMS platform\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"when robust transmission, advanced controls, and market integration co\u2011exist.\",\n      \"replacement\": \"when strong transmission, advanced controls, and market integration co-exist.\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative.\"\n    },\n    {\n      \"original\": \"from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.\",\n      \"replacement\": \"from a *centrally-controlled, unidirectional* network into a *decentralized, cyber-physical system* that integrates electricity with heat, transport, and industry.\",\n      \"reason\": \"Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens. 'Ecosystem' is a metaphorical noun banned in inflated use; 'system' is literal and accurate. 'Seamlessly' is a prefer-other-words adjective; removed as unnecessary.\"\n    },\n    {\n      \"original\": \"at 30\u2013120\u202fsamples/second\",\n      \"replacement\": \"at 30-120 samples/second\",\n      \"reason\": \"En dash and narrow no-break space (U+202F) are non-standard US keyboard characters; replace with ASCII hyphen and space.\"\n    },\n    {\n      \"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance, scenario testing, and accelerated planning.\",\n      \"replacement\": \"Digital twins (high-fidelity virtual replicas of physical grid assets) allow predictive maintenance, scenario testing, and accelerated planning.\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. Non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine)\",\n      \"replacement\": \"Flow Batteries** (Vanadium Redox, Zinc-Bromine)\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Grid\u2011Forming Inverters and Microgrid Evolution\",\n      \"replacement\": \"Grid-Forming Inverters and Microgrid Evolution\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Traditional inverters operate in *grid\u2011following* mode\",\n      \"replacement\": \"Traditional inverters operate in *grid-following* mode\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"New *grid\u2011forming* inverters\",\n      \"replacement\": \"New *grid-forming* inverters\",\n      \"reason\": \"Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).\",\n      \"replacement\": \"Smooth transition between grid-connected and standalone operation, important for critical facilities (hospitals, data centers).\",\n      \"reason\": \"'Seamless' is a prefer-other-words adjective; 'smooth' is a natural alternative. 'Crucial' is a prefer-other-words adjective; 'important' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Power\u2011to\u2011X (P2X) and Sector Coupling\",\n      \"replacement\": \"Power-to-X (P2X) and Sector Coupling\",\n      \"reason\": \"Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).\",\n      \"replacement\": \"\\\"Power-to-X\\\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).\",\n      \"reason\": \"Curly/smart quotes and non-breaking hyphens (U+2011) are NEVER-tier banned characters; replace with straight ASCII quotes and hyphens.\"\n    },\n    {\n      \"original\": \"a more holistic energy system emerges\",\n      \"replacement\": \"a more integrated energy system emerges\",\n      \"reason\": \"'Holistic' is a prefer-other-words adjective; 'integrated' is a natural alternative.\"\n    },\n    {\n      \"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\",\n      \"replacement\": \"Meeting reliability, resilience, and market challenges demands new technologies (smart grids, energy storage, grid-forming inverters) and strong regulatory frameworks.\",\n      \"reason\": \"'Navigating' is a prefer-other-words verb in metaphorical use; 'meeting' is literal. 'Innovative' is a prefer-other-words adjective; 'new' is a natural alternative. Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.\",\n      \"replacement\": \"The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin sustainable economic growth for generations to come.\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Landscape' is a metaphorical noun banned in inflated use; 'system' is literal and accurate.\"\n    },\n    {\n      \"original\": \"the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize.\",\n      \"replacement\": \"the composition of the grid is undergoing a major transformation driven by renewable energy, digitalization, and the imperative to decarbonize.\",\n      \"reason\": \"'Profound' is an intensifier in the prefer-other-words tier; 'major' is a natural alternative.\"\n    },\n    {\n      \"original\": \"IEC\u202f61850\",\n      \"replacement\": \"IEC 61850\",\n      \"reason\": \"Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space.\"\n    },\n    {\n      \"original\": \"13.8\u202fkV, 115\u202fkV, 345\u202fkV, 765\u202fkV\",\n      \"replacement\": \"13.8 kV, 115 kV, 345 kV, 765 kV\",\n      \"reason\": \"Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces.\"\n    },\n    {\n      \"original\": \"60\u202fHz in North America, 50\u202fHz\",\n      \"replacement\": \"60 Hz in North America, 50 Hz\",\n      \"reason\": \"Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces.\"\n    },\n    {\n      \"original\": \"115\u202fkV to 1,200\u202fkV\",\n      \"replacement\": \"115 kV to 1,200 kV\",\n      \"reason\": \"Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces.\"\n    },\n    {\n      \"original\": \"120/240\u202fV\",\n      \"replacement\": \"120/240 V\",\n      \"reason\": \"Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space.\"\n    },\n    {\n      \"original\": \"138\u202fkV\",\n      \"replacement\": \"138 kV\",\n      \"reason\": \"Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space.\"\n    },\n    {\n      \"original\": \"4\u202fkV\u201335\u202fkV\",\n      \"replacement\": \"4 kV-35 kV\",\n      \"reason\": \"Narrow no-break spaces (U+202F) and en dash are non-standard US keyboard characters; replace with ASCII spaces and hyphen.\"\n    },\n    {\n      \"original\": \"100\u202f% renewable portfolios\",\n      \"replacement\": \"100% renewable portfolios\",\n      \"reason\": \"Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space.\"\n    },\n    {\n      \"original\": \"Qu\u00e9bec\",\n      \"replacement\": \"Quebec\",\n      \"reason\": \"While diacritics in foreign words are exempt, 'Quebec' is the standard English spelling and the accent is not required for correctness in English prose.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly/smart apostrophe is a NEVER-tier banned character; replace with straight ASCII apostrophe."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "The contemporary electric power system (commonly referred to simply as a *power system*) is",
+      "reason": "Em dash is a NEVER-tier banned character; restructure with parentheses."
+    },
+    {
+      "original": "the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged",
+      "replacement": "the basic principle (converting a primary energy source into usable electrical power) remains unchanged",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses."
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "high\u2011voltage lines",
+      "replacement": "high-voltage lines",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "socio\u2011technical",
+      "replacement": "socio-technical",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "'significantly' is a prefer-other-words intensifier; the sentence is clear without it."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. Also non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits when plant parameters are uncertain.",
+      "replacement": "Control keeps voltage inside limits when plant parameters are uncertain.",
+      "reason": "'Robust' is a prefer-other-words adjective; the sentence is clear without it."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps. Wind turbines",
+      "reason": "Ellipsis glyph is a NEVER-tier banned character; replace with three periods or a period."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative."
+    },
+    {
+      "original": "Inverter\u2011Based Interface",
+      "replacement": "Inverter-Based Interface",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "short\u2011term stability",
+      "replacement": "short-term stability",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "small\u2011scale generation",
+      "replacement": "small-scale generation",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Utility\u2011scale renewables",
+      "replacement": "Utility-scale renewables",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Beyond utility\u2011scale renewables",
+      "replacement": "Beyond utility-scale renewables",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "steel\u2011reinforced aluminum",
+      "replacement": "steel-reinforced aluminum",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "underground/high\u2011temperature superconducting cables",
+      "replacement": "underground/high-temperature superconducting cables",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "thyristor\u2011controlled series capacitors",
+      "replacement": "thyristor-controlled series capacitors",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow* (OPF) algorithms",
+      "replacement": "Modern transmission planning uses *optimal power flow* (OPF) algorithms",
+      "reason": "'Leverages' is a prefer-other-words verb; 'uses' is a natural alternative."
+    },
+    {
+      "original": "The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.",
+      "replacement": "The advent of *Flexible AC Transmission Systems* (FACTS) devices (static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides operators with dynamic voltage and power-flow regulation, adding capacity without building new lines.",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Enhancing' is a prefer-other-words verb; 'adding' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "The architecture of a typical distribution system consists of:",
+      "replacement": "A typical distribution system consists of:",
+      "reason": "Removes filler phrasing; the sentence is clearer and more direct without 'The architecture of'."
+    },
+    {
+      "original": "\u201clast mile\u201d",
+      "replacement": "\"last mile\"",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability.",
+      "replacement": "\"Radial\" designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability.",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "Further step down voltage for end\u2011use customers.",
+      "replacement": "Further step down voltage for end-use customers.",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "The transition toward *digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.",
+      "replacement": "The transition toward *digital relaying* (using microprocessor-based Intelligent Electronic Devices (IEDs)) allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, opening the door to *wide-area protection* that can coordinate responses across regional or inter-regional grids.",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Paving the way for' is an academic tell; 'opening the door to' is a natural alternative. Non-breaking hyphens replaced with ASCII hyphens."
+    },
+    {
+      "original": "\u201calways\u2011on,\u201d",
+      "replacement": "\"always-on,\"",
+      "reason": "Curly/smart quotes and non-breaking hyphen are NEVER-tier banned characters; replace with straight ASCII quotes and hyphen."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply; thermal units then tripped on auxiliary freeze.",
+      "reason": "Em dash is a NEVER-tier banned character; replace with semicolon."
+    },
+    {
+      "original": "Supply\u2011Demand Balancing",
+      "replacement": "Supply-Demand Balancing",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity traditionally supplied by flexible thermal generators.",
+      "replacement": "The net load curve becomes flatter during sunny windy days, diminishing the \"ramping\" capacity traditionally supplied by flexible thermal generators.",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition, also introduces price volatility and complex settlement mechanisms.",
+      "replacement": "The deregulated electricity market, while encouraging competition, also introduces price volatility and complex settlement mechanisms.",
+      "reason": "'Fostering' is a prefer-other-words verb; 'encouraging' is a natural alternative."
+    },
+    {
+      "original": "Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.",
+      "replacement": "Long-duration storage is emerging as a cornerstone for high VRE penetration.",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "short\u2011 to medium\u2011duration",
+      "replacement": "short- to medium-duration",
+      "reason": "Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens."
+    },
+    {
+      "original": "long\u2011duration (>10\u202fh)",
+      "replacement": "long-duration (>10 h)",
+      "reason": "Non-breaking hyphen (U+2011) and narrow no-break space (U+202F) are non-standard US keyboard characters; replace with ASCII hyphen and space."
+    },
+    {
+      "original": "Renewable\u2011Heavy Grid",
+      "replacement": "Renewable-Heavy Grid",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "The **European Union\u2019s \u201cElectricity Interconnection\u201d** project",
+      "replacement": "The **European Union's \"Electricity Interconnection\"** project",
+      "reason": "Curly/smart apostrophe and quotes are NEVER-tier banned characters; replace with straight ASCII equivalents."
+    },
+    {
+      "original": "at least **15\u202f% cross\u2011border interconnection capacity**",
+      "replacement": "at least **15% cross-border interconnection capacity**",
+      "reason": "Narrow no-break space (U+202F) and non-breaking hyphen (U+2011) are non-standard US keyboard characters; replace with ASCII space and hyphen."
+    },
+    {
+      "original": "Multi\u2011terminal VSC\u2011HVDC converters",
+      "replacement": "Multi-terminal VSC-HVDC converters",
+      "reason": "Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens."
+    },
+    {
+      "original": "A continent\u2011wide WAMS platform",
+      "replacement": "A continent-wide WAMS platform",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "replacement": "when strong transmission, advanced controls, and market integration co-exist.",
+      "reason": "'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative."
+    },
+    {
+      "original": "from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.",
+      "replacement": "from a *centrally-controlled, unidirectional* network into a *decentralized, cyber-physical system* that integrates electricity with heat, transport, and industry.",
+      "reason": "Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens. 'Ecosystem' is a metaphorical noun banned in inflated use; 'system' is literal and accurate. 'Seamlessly' is a prefer-other-words adjective; removed as unnecessary."
+    },
+    {
+      "original": "at 30\u2013120\u202fsamples/second",
+      "replacement": "at 30-120 samples/second",
+      "reason": "En dash and narrow no-break space (U+202F) are non-standard US keyboard characters; replace with ASCII hyphen and space."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance, scenario testing, and accelerated planning.",
+      "replacement": "Digital twins (high-fidelity virtual replicas of physical grid assets) allow predictive maintenance, scenario testing, and accelerated planning.",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. Non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine)",
+      "replacement": "Flow Batteries** (Vanadium Redox, Zinc-Bromine)",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Grid\u2011Forming Inverters and Microgrid Evolution",
+      "replacement": "Grid-Forming Inverters and Microgrid Evolution",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Traditional inverters operate in *grid\u2011following* mode",
+      "replacement": "Traditional inverters operate in *grid-following* mode",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "New *grid\u2011forming* inverters",
+      "replacement": "New *grid-forming* inverters",
+      "reason": "Non-breaking hyphen (U+2011) is a non-standard US keyboard character; replace with ASCII hyphen."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).",
+      "replacement": "Smooth transition between grid-connected and standalone operation, important for critical facilities (hospitals, data centers).",
+      "reason": "'Seamless' is a prefer-other-words adjective; 'smooth' is a natural alternative. 'Crucial' is a prefer-other-words adjective; 'important' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Power\u2011to\u2011X (P2X) and Sector Coupling",
+      "replacement": "Power-to-X (P2X) and Sector Coupling",
+      "reason": "Non-breaking hyphens (U+2011) are non-standard US keyboard characters; replace with ASCII hyphens."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).",
+      "replacement": "\"Power-to-X\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).",
+      "reason": "Curly/smart quotes and non-breaking hyphens (U+2011) are NEVER-tier banned characters; replace with straight ASCII quotes and hyphens."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "'Holistic' is a prefer-other-words adjective; 'integrated' is a natural alternative."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Meeting reliability, resilience, and market challenges demands new technologies (smart grids, energy storage, grid-forming inverters) and strong regulatory frameworks.",
+      "reason": "'Navigating' is a prefer-other-words verb in metaphorical use; 'meeting' is literal. 'Innovative' is a prefer-other-words adjective; 'new' is a natural alternative. Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Robust' is a prefer-other-words adjective; 'strong' is a natural alternative. Non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.",
+      "replacement": "The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin sustainable economic growth for generations to come.",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Landscape' is a metaphorical noun banned in inflated use; 'system' is literal and accurate."
+    },
+    {
+      "original": "the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize.",
+      "replacement": "the composition of the grid is undergoing a major transformation driven by renewable energy, digitalization, and the imperative to decarbonize.",
+      "reason": "'Profound' is an intensifier in the prefer-other-words tier; 'major' is a natural alternative."
+    },
+    {
+      "original": "IEC\u202f61850",
+      "replacement": "IEC 61850",
+      "reason": "Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space."
+    },
+    {
+      "original": "13.8\u202fkV, 115\u202fkV, 345\u202fkV, 765\u202fkV",
+      "replacement": "13.8 kV, 115 kV, 345 kV, 765 kV",
+      "reason": "Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces."
+    },
+    {
+      "original": "60\u202fHz in North America, 50\u202fHz",
+      "replacement": "60 Hz in North America, 50 Hz",
+      "reason": "Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces."
+    },
+    {
+      "original": "115\u202fkV to 1,200\u202fkV",
+      "replacement": "115 kV to 1,200 kV",
+      "reason": "Narrow no-break spaces (U+202F) are non-standard US keyboard characters; replace with ASCII spaces."
+    },
+    {
+      "original": "120/240\u202fV",
+      "replacement": "120/240 V",
+      "reason": "Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space."
+    },
+    {
+      "original": "138\u202fkV",
+      "replacement": "138 kV",
+      "reason": "Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space."
+    },
+    {
+      "original": "4\u202fkV\u201335\u202fkV",
+      "replacement": "4 kV-35 kV",
+      "reason": "Narrow no-break spaces (U+202F) and en dash are non-standard US keyboard characters; replace with ASCII spaces and hyphen."
+    },
+    {
+      "original": "100\u202f% renewable portfolios",
+      "replacement": "100% renewable portfolios",
+      "reason": "Narrow no-break space (U+202F) is a non-standard US keyboard character; replace with ASCII space."
+    },
+    {
+      "original": "Qu\u00e9bec",
+      "replacement": "Quebec",
+      "reason": "While diacritics in foreign words are exempt, 'Quebec' is the standard English spelling and the accent is not required for correctness in English prose."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 861,
+    "output": 4892,
+    "cache_read": 20460,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01224196,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

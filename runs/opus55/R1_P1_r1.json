@@ -1,0 +1,257 @@
+{
+  "run_id": "R1_P1_r1",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:41:53.846540+00:00",
+  "duration_s": 40.53773464501137,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n{\"original\": \"twenty\u2011first\", \"replacement\": null, \"reason\": \"The passage uses non-breaking hyphens (U+2011) in dozens of compounds; these are non-keyboard characters and each should become an ASCII hyphen.\"},\n{\"original\": \"\u2248 1,620\", \"replacement\": \"about 1,620\", \"reason\": \"The approximately-equal sign is not a standard keyboard character.\"},\n{\"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\", \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge), but\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"examines the contemporary threat landscape\", \"replacement\": \"examines contemporary threats\", \"reason\": \"'Landscape' is used as a metaphor here.\"},\n{\"original\": \"### The Expanding Threat Landscape\", \"replacement\": \"### The Expanding Range of Threats\", \"reason\": \"'Landscape' is used as a metaphor here.\"},\n{\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remain\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader\", \"replacement\": \"creating attack surfaces that are far broader\", \"reason\": \"Removes scare quotes and curly quotes and replaces the discouraged intensifier 'dramatically'.\"},\n{\"original\": \"Moreover, the rise\", \"replacement\": \"The rise\", \"reason\": \"'Moreover' is a discouraged transition.\"},\n{\"original\": \"lateral movement\u2014a key tactic\", \"replacement\": \"lateral movement, a key tactic\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"leveraging machine\u2011learning\", \"replacement\": \"using machine\u2011learning\", \"reason\": \"'Leverage' is a discouraged verb.\"},\n{\"original\": \"robust encryption\", \"replacement\": \"strong encryption\", \"reason\": \"'Robust' is a discouraged adjective.\"},\n{\"original\": \"the outdated \u201ctrusted internal network\u201d paradigm\", \"replacement\": \"the outdated trusted-internal-network paradigm\", \"reason\": \"Removes scare quotes and curly quotes.\"},\n{\"original\": \"patch management\u2014automated wherever possible\u2014closes\", \"replacement\": \"patch management, automated wherever possible, closes\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"truncated process tree\u2026\", \"replacement\": \"truncated process tree...\", \"reason\": \"Ellipsis glyphs are banned.\"},\n{\"original\": \"mean time to contain\u2014the finance\", \"replacement\": \"mean time to contain; the finance\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"after the playbook change, which streamlines containment.\", \"replacement\": \"after the playbook change.\", \"reason\": \"'Streamline' is a discouraged verb, and the figures already make the point.\"},\n{\"original\": \"The playbook change significantly reduces\", \"replacement\": \"The playbook change reduces\", \"reason\": \"'Significantly' is a discouraged intensifier.\"},\n{\"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform\", \"replacement\": \"Organizations that embed security metrics into key performance indicators (KPIs) and align them with business objectives transform\", \"reason\": \"Starting a sentence with 'By [gerund]' is discouraged phrasing.\"},\n{\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account\", \"replacement\": \"Insider threats (whether malicious, negligent, or coerced) account\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"the \u201cavailability heuristic,\u201d lead\", \"replacement\": \"the availability heuristic, lead\", \"reason\": \"Removes curly quotes.\"},\n{\"original\": \"can foster complacency\", \"replacement\": \"can breed complacency\", \"reason\": \"'Foster' is a discouraged verb.\"},\n{\"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"positive reinforcement (recognizing employees who flag suspicious activity) outperforms\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"Moreover, strict\", \"replacement\": \"Strict\", \"reason\": \"'Moreover' is a discouraged transition.\"},\n{\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\", \"replacement\": \"Data\u2011protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific) impose\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"The \u201cbug bounty\u201d model\", \"replacement\": \"The bug bounty model\", \"reason\": \"Removes scare quotes and curly quotes.\"},\n{\"original\": \"fostering a collaborative security ecosystem\", \"replacement\": \"encouraging collaboration on security\", \"reason\": \"'Foster' is discouraged, and 'ecosystem' is used as a metaphor.\"},\n{\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains\", \"replacement\": \"A balanced approach (transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms) remains\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"a fragmented regulatory landscape\", \"replacement\": \"fragmented regulation\", \"reason\": \"'Landscape' is used as a metaphor here.\"},\n{\"original\": \"playbooks\u2014for example\", \"replacement\": \"playbooks, for example\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"will be pivotal for\", \"replacement\": \"will matter for\", \"reason\": \"'Pivotal' is a discouraged adjective.\"},\n{\"original\": \"United Nations\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Curly apostrophes are banned.\"},\n{\"original\": \"facilitate norm\u2011setting\", \"replacement\": \"support norm\u2011setting\", \"reason\": \"'Facilitate' is a discouraged verb.\"},\n{\"original\": \"further bolster collective defense\", \"replacement\": \"strengthen collective defense\", \"reason\": \"'Bolster' is a discouraged verb.\"},\n{\"original\": \"new radios\u2014the SOC\", \"replacement\": \"new radios; the SOC\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"**Zero\u2011Trust Architecture** \u2013\", \"replacement\": \"**Zero\u2011Trust Architecture** -\", \"reason\": \"En dashes are banned.\"},\n{\"original\": \"**Secure\u2011by\u2011Design Development** \u2013\", \"replacement\": \"**Secure\u2011by\u2011Design Development** -\", \"reason\": \"En dashes are banned.\"},\n{\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage\", \"replacement\": \"**AI\u2011Enhanced Threat Intelligence** - Use\", \"reason\": \"En dashes are banned, and 'leverage' is a discouraged verb.\"},\n{\"original\": \"**Post\u2011Quantum Preparedness** \u2013\", \"replacement\": \"**Post\u2011Quantum Preparedness** -\", \"reason\": \"En dashes are banned.\"},\n{\"original\": \"**Resilience Engineering** \u2013\", \"replacement\": \"**Resilience Engineering** -\", \"reason\": \"En dashes are banned.\"},\n{\"original\": \"capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to\", \"replacement\": \"capabilities (immutable backups, diversified cloud regions, and automated failover) to\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community\", \"replacement\": \"With technological innovation, strong governance, continuous education, and global cooperation, the cybersecurity community\", \"reason\": \"Removes the 'By [gerund]' opening and the discouraged word 'robust'.\"},\n{\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a discipline\", \"reason\": \"Removes the 'not X, it's Y' construction and the discouraged word 'multidimensional'.\"},\n{\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"The rapidly evolving set of threats (ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks) demands a response\", \"reason\": \"Removes em dashes, the metaphorical 'landscape', and the discouraged word 'holistic'.\"},\n{\"original\": \"Ultimately, the resilience\", \"replacement\": \"The resilience\", \"reason\": \"'Ultimately' is a discouraged intensifier.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "twenty\u2011first",
+      "replacement": null,
+      "reason": "The passage uses non-breaking hyphens (U+2011) in dozens of compounds; these are non-keyboard characters and each should become an ASCII hyphen."
+    },
+    {
+      "original": "\u2248 1,620",
+      "replacement": "about 1,620",
+      "reason": "The approximately-equal sign is not a standard keyboard character."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge), but",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "examines the contemporary threat landscape",
+      "replacement": "examines contemporary threats",
+      "reason": "'Landscape' is used as a metaphor here."
+    },
+    {
+      "original": "### The Expanding Threat Landscape",
+      "replacement": "### The Expanding Range of Threats",
+      "reason": "'Landscape' is used as a metaphor here."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remain",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader",
+      "replacement": "creating attack surfaces that are far broader",
+      "reason": "Removes scare quotes and curly quotes and replaces the discouraged intensifier 'dramatically'."
+    },
+    {
+      "original": "Moreover, the rise",
+      "replacement": "The rise",
+      "reason": "'Moreover' is a discouraged transition."
+    },
+    {
+      "original": "lateral movement\u2014a key tactic",
+      "replacement": "lateral movement, a key tactic",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "leveraging machine\u2011learning",
+      "replacement": "using machine\u2011learning",
+      "reason": "'Leverage' is a discouraged verb."
+    },
+    {
+      "original": "robust encryption",
+      "replacement": "strong encryption",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "the outdated \u201ctrusted internal network\u201d paradigm",
+      "replacement": "the outdated trusted-internal-network paradigm",
+      "reason": "Removes scare quotes and curly quotes."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes",
+      "replacement": "patch management, automated wherever possible, closes",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "truncated process tree\u2026",
+      "replacement": "truncated process tree...",
+      "reason": "Ellipsis glyphs are banned."
+    },
+    {
+      "original": "mean time to contain\u2014the finance",
+      "replacement": "mean time to contain; the finance",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "after the playbook change, which streamlines containment.",
+      "replacement": "after the playbook change.",
+      "reason": "'Streamline' is a discouraged verb, and the figures already make the point."
+    },
+    {
+      "original": "The playbook change significantly reduces",
+      "replacement": "The playbook change reduces",
+      "reason": "'Significantly' is a discouraged intensifier."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform",
+      "replacement": "Organizations that embed security metrics into key performance indicators (KPIs) and align them with business objectives transform",
+      "reason": "Starting a sentence with 'By [gerund]' is discouraged phrasing."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "Insider threats (whether malicious, negligent, or coerced) account",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "the \u201cavailability heuristic,\u201d lead",
+      "replacement": "the availability heuristic, lead",
+      "reason": "Removes curly quotes."
+    },
+    {
+      "original": "can foster complacency",
+      "replacement": "can breed complacency",
+      "reason": "'Foster' is a discouraged verb."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "positive reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "Moreover, strict",
+      "replacement": "Strict",
+      "reason": "'Moreover' is a discouraged transition."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "Data\u2011protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific) impose",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model",
+      "replacement": "The bug bounty model",
+      "reason": "Removes scare quotes and curly quotes."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "encouraging collaboration on security",
+      "reason": "'Foster' is discouraged, and 'ecosystem' is used as a metaphor."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "A balanced approach (transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms) remains",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "a fragmented regulatory landscape",
+      "replacement": "fragmented regulation",
+      "reason": "'Landscape' is used as a metaphor here."
+    },
+    {
+      "original": "playbooks\u2014for example",
+      "replacement": "playbooks, for example",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "will be pivotal for",
+      "replacement": "will matter for",
+      "reason": "'Pivotal' is a discouraged adjective."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Curly apostrophes are banned."
+    },
+    {
+      "original": "facilitate norm\u2011setting",
+      "replacement": "support norm\u2011setting",
+      "reason": "'Facilitate' is a discouraged verb."
+    },
+    {
+      "original": "further bolster collective defense",
+      "replacement": "strengthen collective defense",
+      "reason": "'Bolster' is a discouraged verb."
+    },
+    {
+      "original": "new radios\u2014the SOC",
+      "replacement": "new radios; the SOC",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013",
+      "replacement": "**Zero\u2011Trust Architecture** -",
+      "reason": "En dashes are banned."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013",
+      "replacement": "**Secure\u2011by\u2011Design Development** -",
+      "reason": "En dashes are banned."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "**AI\u2011Enhanced Threat Intelligence** - Use",
+      "reason": "En dashes are banned, and 'leverage' is a discouraged verb."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013",
+      "replacement": "**Post\u2011Quantum Preparedness** -",
+      "reason": "En dashes are banned."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013",
+      "replacement": "**Resilience Engineering** -",
+      "reason": "En dashes are banned."
+    },
+    {
+      "original": "capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to",
+      "replacement": "capabilities (immutable backups, diversified cloud regions, and automated failover) to",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community",
+      "replacement": "With technological innovation, strong governance, continuous education, and global cooperation, the cybersecurity community",
+      "reason": "Removes the 'By [gerund]' opening and the discouraged word 'robust'."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a discipline",
+      "reason": "Removes the 'not X, it's Y' construction and the discouraged word 'multidimensional'."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "The rapidly evolving set of threats (ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks) demands a response",
+      "reason": "Removes em dashes, the metaphorical 'landscape', and the discouraged word 'holistic'."
+    },
+    {
+      "original": "Ultimately, the resilience",
+      "replacement": "The resilience",
+      "reason": "'Ultimately' is a discouraged intensifier."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 4892,
+    "cache_read": 23506,
+    "cache_write": 7863,
+    "reasoning": 0
+  },
+  "cost_usd": 0.16546120000000003,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

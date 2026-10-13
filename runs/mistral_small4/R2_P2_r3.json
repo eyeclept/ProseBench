@@ -1,0 +1,42 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:25:11.101754+00:00",
+  "duration_s": 52.689143254974624,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings and file new interconnection studies the following week.\", \"reason\": \"Removed redundant restatement of the same action ('planners rewrite protection settings') without adding new information.\"}]}",
+  "edits": [
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings and file new interconnection studies the following week.",
+      "reason": "Removed redundant restatement of the same action ('planners rewrite protection settings') without adding new information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21093,
+    "output": 94,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00322035,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

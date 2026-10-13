@@ -1,0 +1,52 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:45:13.471292+00:00",
+  "duration_s": 3.309794470987981,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"The second sentence restates the first with added emphasis and no new fact, so it is filler.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Those privilege limits are imposed on purpose. Positive reinforcement for reporters is now a standing practice.\", \"reason\": \"The 'rather than by accident' clause and 'full stop' add no checkable content, so they are windup.\"}, {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"\", \"reason\": \"This sentence restates the preceding fact about the playbook change reducing mean time to contain without adding new information.\"}]}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The second sentence restates the first with added emphasis and no new fact, so it is filler."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Those privilege limits are imposed on purpose. Positive reinforcement for reporters is now a standing practice.",
+      "reason": "The 'rather than by accident' clause and 'full stop' add no checkable content, so they are windup."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "",
+      "reason": "This sentence restates the preceding fact about the playbook change reducing mean time to contain without adding new information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 314,
+    "cache_read": 23505,
+    "cache_write": 6432,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00167885,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

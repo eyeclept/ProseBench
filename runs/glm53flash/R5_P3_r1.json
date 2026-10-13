@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P3_r1",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "minimal",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:10:22.593470+00:00",
+  "duration_s": 8.165059990016744,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Field crews still collect vouchers, make no mistake.\",\n      \"replacement\": \"Field crews still collect vouchers.\",\n      \"reason\": \"\\\"make no mistake\\\" is a finality interjection that adds no evidence to the claim.\"\n    },\n    {\n      \"original\": \"so the change significantly streamlines cell-wall composition analysis\",\n      \"replacement\": \"so the change cuts cell-wall composition analysis time from 40 minutes to 6 minutes\",\n      \"reason\": \"\\\"significantly\\\" is replaced with the numbers it stood in for.\"\n    },\n    {\n      \"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\",\n      \"reason\": \"\\\"full stop\\\" repeats the exclusivity already carried by \\\"only\\\" without adding evidence.\"\n    },\n    {\n      \"original\": \"dramatically increased food production\",\n      \"replacement\": \"increased food production\",\n      \"reason\": \"\\\"dramatically\\\" is an unsupported intensifier standing in for evidence not supplied in the text.\"\n    },\n    {\n      \"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years\",\n      \"replacement\": \"so supplemental irrigation cut yield loss in dry years from 41 percent to 8 percent\",\n      \"reason\": \"\\\"dramatically\\\" is replaced with the numbers it stood in for.\"\n    },\n    {\n      \"original\": \"profoundly influences plant health\",\n      \"replacement\": \"influences plant health\",\n      \"reason\": \"\\\"profoundly\\\" is an intensifier with no supporting evidence.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "\"make no mistake\" is a finality interjection that adds no evidence to the claim."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis",
+      "replacement": "so the change cuts cell-wall composition analysis time from 40 minutes to 6 minutes",
+      "reason": "\"significantly\" is replaced with the numbers it stood in for."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "\"full stop\" repeats the exclusivity already carried by \"only\" without adding evidence."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "increased food production",
+      "reason": "\"dramatically\" is an unsupported intensifier standing in for evidence not supplied in the text."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "so supplemental irrigation cut yield loss in dry years from 41 percent to 8 percent",
+      "reason": "\"dramatically\" is replaced with the numbers it stood in for."
+    },
+    {
+      "original": "profoundly influences plant health",
+      "replacement": "influences plant health",
+      "reason": "\"profoundly\" is an intensifier with no supporting evidence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19757,
+    "output": 1139,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 834
+  },
+  "cost_usd": 0.00353305,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

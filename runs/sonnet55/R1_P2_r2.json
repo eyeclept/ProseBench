@@ -1,0 +1,192 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:43:21.863204+00:00",
+  "duration_s": 17.44092165402253,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"humanity\u2019s ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap. The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\", \"replacement\": \"humanity's ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap. The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network\", \"reason\": \"Replace curly apostrophe and em dashes with ASCII equivalents.\"}, {\"original\": \"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate\", \"replacement\": \"While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved sharply to accommodate\", \"reason\": \"Em dashes are banned; 'dramatically' is a discouraged intensifier.\"}, {\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune shortens frequency restoration\", \"reason\": \"Remove the discouraged intensifier 'significantly'.\"}, {\"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\", \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short\u2011term stability\", \"reason\": \"Em dashes are banned.\"}, {\"original\": \"Robust control keeps voltage inside limits\", \"replacement\": \"Well-tuned control keeps voltage inside limits\", \"reason\": \"'Robust' is a discouraged adjective.\"}, {\"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\", \"replacement\": \"Forecasts still miss cloud-driven ramps... Wind turbines\", \"reason\": \"Replace ellipsis glyph with three periods.\"}, {\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring strong transmission networks\", \"reason\": \"'Robust' is a discouraged adjective.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses\", \"replacement\": \"The 345 kV reconductor reduces line losses\", \"reason\": \"Remove the discouraged intensifier 'significantly'.\"}, {\"original\": \"Modern transmission planning leverages *optimal power flow*\", \"replacement\": \"Modern transmission planning uses *optimal power flow*\", \"reason\": \"'Leverages' is a discouraged verb.\"}, {\"original\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity\", \"replacement\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices, including static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC), provides operators with dynamic voltage and power\u2011flow regulation, adding capacity\", \"reason\": \"Em dashes are banned; 'enhancing' is a discouraged verb.\"}, {\"original\": \"\u201clast mile\u201d of the power system\", \"replacement\": \"\\\"last mile\\\" of the power system\", \"reason\": \"Curly quotes are banned (and scare quotes on a normal term).\"}, {\"original\": \"\u201cRadial\u201d designs are common\", \"replacement\": \"Radial designs are common\", \"reason\": \"Curly quotes and scare quotes are banned.\"}, {\"original\": \"the grid\u2019s immune system\", \"replacement\": \"the grid's immune system\", \"reason\": \"Replace curly apostrophe with straight.\"}, {\"original\": \"expected to be \u201calways\u2011on,\u201d extreme\", \"replacement\": \"expected to be always on, extreme\", \"reason\": \"Curly quotes and scare quotes are banned.\"}, {\"original\": \"the \u201cramping\u201d capacity\", \"replacement\": \"the ramping capacity\", \"reason\": \"Curly quotes and scare quotes are banned.\"}, {\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped\", \"replacement\": \"Frozen wellheads cut gas supply; thermal units then tripped\", \"reason\": \"Em dash is banned.\"}, {\"original\": \"Strengthening resilience now demands:\", \"replacement\": \"Strengthening resilience now demands:\", \"reason\": \"No change needed here; placeholder avoided.\"}, {\"original\": \"the deregulated electricity market, while fostering competition\", \"replacement\": \"the deregulated electricity market, while encouraging competition\", \"reason\": \"'Fostering' is a discouraged verb.\"}, {\"original\": \"The deregulated electricity market, while fostering competition\", \"replacement\": \"The deregulated electricity market, while encouraging competition\", \"reason\": \"'Fostering' is a discouraged verb.\"}, {\"original\": \"Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for\", \"replacement\": \"Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, show that\", \"reason\": \"Hedging-style 'potential for' removed for a direct statement.\"}, {\"original\": \"coordinated digital assaults to trigger physical outages.\", \"replacement\": \"coordinated digital assaults can trigger physical outages.\", \"reason\": \"Completes the sentence after the direct-statement rewrite.\"}, {\"original\": \"granting operators unprecedented visibility\", \"replacement\": \"giving operators far greater visibility\", \"reason\": \"Avoid inflated phrasing.\"}, {\"original\": \"- **Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).\", \"replacement\": \"- **Enables Islanded Microgrids** \u2013 Smooth transition between grid\u2011connected and standalone operation, needed for critical facilities (hospitals, data centers).\", \"reason\": \"'Seamless' and 'crucial' are discouraged adjectives.\"}, {\"original\": \"a more holistic energy system emerges\", \"replacement\": \"a more integrated energy system emerges\", \"reason\": \"'Holistic' is a discouraged adjective.\"}, {\"original\": \"when robust transmission, advanced controls\", \"replacement\": \"when strong transmission, advanced controls\", \"reason\": \"'Robust' is a discouraged adjective.\"}, {\"original\": \"a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity\", \"replacement\": \"a *decentralized, cyber\u2011physical system* that integrates electricity\", \"reason\": \"Inflated-metaphor 'ecosystem' and discouraged 'seamlessly'.\"}, {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite\", \"replacement\": \"Ice storms still take lines out of service for days; planners rewrite\", \"reason\": \"Em dash is banned.\"}, {\"original\": \"a more democratic energy landscape\u2014promise to underpin\", \"replacement\": \"a more democratic energy system, promise to underpin\", \"reason\": \"Em dash is banned; 'landscape' used metaphorically.\"}, {\"original\": \"The challenges are formidable, yet the benefits\u2014reliable power\", \"replacement\": \"The challenges are formidable, yet the benefits, reliable power\", \"reason\": \"Em dash is banned.\"}, {\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\", \"replacement\": \"Addressing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and strong regulatory frameworks.\", \"reason\": \"Metaphorical 'navigating', 'innovative', 'robust', and em dashes are banned or discouraged.\"}, {\"original\": \"the composition of the grid is undergoing a profound transformation\", \"replacement\": \"the composition of the grid is changing substantially\", \"reason\": \"Avoid inflated phrasing.\"}]}",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap. The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "humanity's ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap. The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network",
+      "reason": "Replace curly apostrophe and em dashes with ASCII equivalents."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate",
+      "replacement": "While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved sharply to accommodate",
+      "reason": "Em dashes are banned; 'dramatically' is a discouraged intensifier."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "Remove the discouraged intensifier 'significantly'."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short\u2011term stability",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits",
+      "replacement": "Well-tuned control keeps voltage inside limits",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps... Wind turbines",
+      "reason": "Replace ellipsis glyph with three periods."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "Remove the discouraged intensifier 'significantly'."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow*",
+      "replacement": "Modern transmission planning uses *optimal power flow*",
+      "reason": "'Leverages' is a discouraged verb."
+    },
+    {
+      "original": "The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity",
+      "replacement": "The advent of *Flexible AC Transmission Systems* (FACTS) devices, including static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC), provides operators with dynamic voltage and power\u2011flow regulation, adding capacity",
+      "reason": "Em dashes are banned; 'enhancing' is a discouraged verb."
+    },
+    {
+      "original": "\u201clast mile\u201d of the power system",
+      "replacement": "\"last mile\" of the power system",
+      "reason": "Curly quotes are banned (and scare quotes on a normal term)."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common",
+      "replacement": "Radial designs are common",
+      "reason": "Curly quotes and scare quotes are banned."
+    },
+    {
+      "original": "the grid\u2019s immune system",
+      "replacement": "the grid's immune system",
+      "reason": "Replace curly apostrophe with straight."
+    },
+    {
+      "original": "expected to be \u201calways\u2011on,\u201d extreme",
+      "replacement": "expected to be always on, extreme",
+      "reason": "Curly quotes and scare quotes are banned."
+    },
+    {
+      "original": "the \u201cramping\u201d capacity",
+      "replacement": "the ramping capacity",
+      "reason": "Curly quotes and scare quotes are banned."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped",
+      "replacement": "Frozen wellheads cut gas supply; thermal units then tripped",
+      "reason": "Em dash is banned."
+    },
+    {
+      "original": "Strengthening resilience now demands:",
+      "replacement": "Strengthening resilience now demands:",
+      "reason": "No change needed here; placeholder avoided."
+    },
+    {
+      "original": "the deregulated electricity market, while fostering competition",
+      "replacement": "the deregulated electricity market, while encouraging competition",
+      "reason": "'Fostering' is a discouraged verb."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition",
+      "replacement": "The deregulated electricity market, while encouraging competition",
+      "reason": "'Fostering' is a discouraged verb."
+    },
+    {
+      "original": "Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for",
+      "replacement": "Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, show that",
+      "reason": "Hedging-style 'potential for' removed for a direct statement."
+    },
+    {
+      "original": "coordinated digital assaults to trigger physical outages.",
+      "replacement": "coordinated digital assaults can trigger physical outages.",
+      "reason": "Completes the sentence after the direct-statement rewrite."
+    },
+    {
+      "original": "granting operators unprecedented visibility",
+      "replacement": "giving operators far greater visibility",
+      "reason": "Avoid inflated phrasing."
+    },
+    {
+      "original": "- **Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).",
+      "replacement": "- **Enables Islanded Microgrids** \u2013 Smooth transition between grid\u2011connected and standalone operation, needed for critical facilities (hospitals, data centers).",
+      "reason": "'Seamless' and 'crucial' are discouraged adjectives."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "'Holistic' is a discouraged adjective."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity",
+      "replacement": "a *decentralized, cyber\u2011physical system* that integrates electricity",
+      "reason": "Inflated-metaphor 'ecosystem' and discouraged 'seamlessly'."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite",
+      "replacement": "Ice storms still take lines out of service for days; planners rewrite",
+      "reason": "Em dash is banned."
+    },
+    {
+      "original": "a more democratic energy landscape\u2014promise to underpin",
+      "replacement": "a more democratic energy system, promise to underpin",
+      "reason": "Em dash is banned; 'landscape' used metaphorically."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power",
+      "replacement": "The challenges are formidable, yet the benefits, reliable power",
+      "reason": "Em dash is banned."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Addressing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and strong regulatory frameworks.",
+      "reason": "Metaphorical 'navigating', 'innovative', 'robust', and em dashes are banned or discouraged."
+    },
+    {
+      "original": "the composition of the grid is undergoing a profound transformation",
+      "replacement": "the composition of the grid is changing substantially",
+      "reason": "Avoid inflated phrasing."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 2817,
+    "cache_read": 33205,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0314985,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

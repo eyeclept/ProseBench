@@ -1,0 +1,212 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "minimal",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:25:37.575346+00:00",
+  "duration_s": 46.090750258998014,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"system\u2014is an elaborate network\", \"replacement\": \"system, is an elaborate network\", \"reason\": \"Em dash is a banned character outside a standard US keyboard.\"}, {\"original\": \"principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged\", \"replacement\": \"principle, converting a primary energy source into usable electrical power, remains unchanged\", \"reason\": \"Em dashes must be replaced with ASCII punctuation.\"}, {\"original\": \"inertia\u2014massive rotating masses that store kinetic energy\u2014provides\", \"replacement\": \"inertia, massive rotating masses that store kinetic energy, provides\", \"reason\": \"Em dashes must be replaced with ASCII punctuation.\"}, {\"original\": \"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed\", \"replacement\": \"High voltages, typically ranging from 115 kV to 1,200 kV, are employed\", \"reason\": \"Em dashes must be replaced with ASCII punctuation.\"}, {\"original\": \"digital relaying\u2014using microprocessor\", \"replacement\": \"digital relaying, using microprocessor\", \"reason\": \"Em dash is a banned character outside a standard US keyboard.\"}, {\"original\": \"cut gas supply\u2014thermal units\", \"replacement\": \"cut gas supply; thermal units\", \"reason\": \"Em dash is a banned character outside a standard US keyboard.\"}, {\"original\": \"the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\", \"replacement\": \"the benefits, reliable power, reduced emissions, and a more democratic energy system, promise\", \"reason\": \"Em dashes are banned characters, and the metaphorical use of \\\"landscape\\\" is discouraged.\"}, {\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\", \"replacement\": \"Digital twins, high\u2011fidelity virtual replicas of physical grid assets, allow\", \"reason\": \"Em dashes must be replaced with ASCII punctuation.\"}, {\"original\": \"humanity\u2019s\", \"replacement\": \"humanity's\", \"reason\": \"Curly apostrophe is a banned character; use a straight apostrophe.\"}, {\"original\": \"grid\u2019s immune system\", \"replacement\": \"grid's immune system\", \"reason\": \"Curly apostrophe is a banned character; use a straight apostrophe.\"}, {\"original\": \"\u201clast mile\u201d\", \"replacement\": \"\\\"last mile\\\"\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"\u201calways\u2011on,\u201d\", \"replacement\": \"\\\"always-on,\\\"\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"\u201cRadial\u201d designs\", \"replacement\": \"\\\"Radial\\\" designs\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"the \u201cramping\u201d capacity\", \"replacement\": \"the \\\"ramping\\\" capacity\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies\", \"replacement\": \"\\\"Power-to-X\\\" technologies\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"\u201cElectricity Interconnection\u201d\", \"replacement\": \"\\\"Electricity Interconnection\\\"\", \"reason\": \"Curly quotes are banned characters; use straight quotes.\"}, {\"original\": \"cloud-driven ramps\u2026\", \"replacement\": \"cloud-driven ramps...\", \"reason\": \"Ellipsis glyph is a banned character; use three periods.\"}, {\"original\": \"30\u2013120 samples/second\", \"replacement\": \"30-120 samples/second\", \"reason\": \"En dash is a banned character; use a hyphen.\"}, {\"original\": \"4 kV\u201335 kV\", \"replacement\": \"4 kV-35 kV\", \"reason\": \"En dash is a banned character; use a hyphen.\"}, {\"original\": \"has evolved dramatically\", \"replacement\": \"has evolved considerably\", \"reason\": \"\\\"Dramatically\\\" is on the discouraged intensifier list; a plainer modifier fits.\"}, {\"original\": \"significantly shortens\", \"replacement\": \"shortens\", \"reason\": \"\\\"Significantly\\\" is a discouraged intensifier; the numbers already carry the weight.\"}, {\"original\": \"significantly reduces line losses\", \"replacement\": \"reduces line losses\", \"reason\": \"\\\"Significantly\\\" is a discouraged intensifier; the measured figures already state the magnitude.\"}, {\"original\": \"planning leverages\", \"replacement\": \"planning uses\", \"reason\": \"\\\"Leverage\\\" is on the discouraged verbs list.\"}, {\"original\": \"enhancing capacity without building new lines\", \"replacement\": \"adding capacity without building new lines\", \"reason\": \"\\\"Enhancing\\\" is on the discouraged verbs list.\"}, {\"original\": \"paving the way for *wide\u2011area protection*\", \"replacement\": \"making *wide\u2011area protection* possible\", \"reason\": \"\\\"Paving the way for\\\" is a banned academic tell.\"}, {\"original\": \"Seamless transition\", \"replacement\": \"Smooth transition\", \"reason\": \"\\\"Seamless\\\" is on the discouraged adjectives list.\"}, {\"original\": \"seamlessly integrates electricity\", \"replacement\": \"directly integrates electricity\", \"reason\": \"\\\"Seamlessly\\\" is on the discouraged adjectives list.\"}, {\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring strong transmission networks\", \"reason\": \"\\\"Robust\\\" is on the discouraged adjectives list.\"}, {\"original\": \"Robust control keeps voltage\", \"replacement\": \"Careful control keeps voltage\", \"reason\": \"\\\"Robust\\\" is on the discouraged adjectives list.\"}, {\"original\": \"when robust transmission, advanced controls\", \"replacement\": \"when strong transmission, advanced controls\", \"reason\": \"\\\"Robust\\\" is on the discouraged adjectives list.\"}, {\"original\": \"robust regulatory frameworks\", \"replacement\": \"strong regulatory frameworks\", \"reason\": \"\\\"Robust\\\" is on the discouraged adjectives list.\"}, {\"original\": \"while fostering competition\", \"replacement\": \"while encouraging competition\", \"reason\": \"\\\"Foster\\\" is on the discouraged verbs list.\"}, {\"original\": \"a more holistic energy system\", \"replacement\": \"a more integrated energy system\", \"reason\": \"\\\"Holistic\\\" is on the discouraged adjectives list.\"}, {\"original\": \"a *decentralized, cyber\u2011physical ecosystem*\", \"replacement\": \"a *decentralized, cyber\u2011physical network*\", \"reason\": \"\\\"Ecosystem\\\" in metaphorical use is on the banned-only-when-necessary list; \\\"network\\\" is the literal fit.\"}, {\"original\": \"Navigating reliability, resilience, and market complexities demands\", \"replacement\": \"Meeting reliability, resilience, and market complexity demands\", \"reason\": \"\\\"Navigating\\\" in metaphorical use is on the discouraged verbs list.\"}]}",
+  "edits": [
+    {
+      "original": "system\u2014is an elaborate network",
+      "replacement": "system, is an elaborate network",
+      "reason": "Em dash is a banned character outside a standard US keyboard."
+    },
+    {
+      "original": "principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged",
+      "replacement": "principle, converting a primary energy source into usable electrical power, remains unchanged",
+      "reason": "Em dashes must be replaced with ASCII punctuation."
+    },
+    {
+      "original": "inertia\u2014massive rotating masses that store kinetic energy\u2014provides",
+      "replacement": "inertia, massive rotating masses that store kinetic energy, provides",
+      "reason": "Em dashes must be replaced with ASCII punctuation."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed",
+      "replacement": "High voltages, typically ranging from 115 kV to 1,200 kV, are employed",
+      "reason": "Em dashes must be replaced with ASCII punctuation."
+    },
+    {
+      "original": "digital relaying\u2014using microprocessor",
+      "replacement": "digital relaying, using microprocessor",
+      "reason": "Em dash is a banned character outside a standard US keyboard."
+    },
+    {
+      "original": "cut gas supply\u2014thermal units",
+      "replacement": "cut gas supply; thermal units",
+      "reason": "Em dash is a banned character outside a standard US keyboard."
+    },
+    {
+      "original": "the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "the benefits, reliable power, reduced emissions, and a more democratic energy system, promise",
+      "reason": "Em dashes are banned characters, and the metaphorical use of \"landscape\" is discouraged."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins, high\u2011fidelity virtual replicas of physical grid assets, allow",
+      "reason": "Em dashes must be replaced with ASCII punctuation."
+    },
+    {
+      "original": "humanity\u2019s",
+      "replacement": "humanity's",
+      "reason": "Curly apostrophe is a banned character; use a straight apostrophe."
+    },
+    {
+      "original": "grid\u2019s immune system",
+      "replacement": "grid's immune system",
+      "reason": "Curly apostrophe is a banned character; use a straight apostrophe."
+    },
+    {
+      "original": "\u201clast mile\u201d",
+      "replacement": "\"last mile\"",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "\u201calways\u2011on,\u201d",
+      "replacement": "\"always-on,\"",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "\u201cRadial\u201d designs",
+      "replacement": "\"Radial\" designs",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "the \u201cramping\u201d capacity",
+      "replacement": "the \"ramping\" capacity",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies",
+      "replacement": "\"Power-to-X\" technologies",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "\u201cElectricity Interconnection\u201d",
+      "replacement": "\"Electricity Interconnection\"",
+      "reason": "Curly quotes are banned characters; use straight quotes."
+    },
+    {
+      "original": "cloud-driven ramps\u2026",
+      "replacement": "cloud-driven ramps...",
+      "reason": "Ellipsis glyph is a banned character; use three periods."
+    },
+    {
+      "original": "30\u2013120 samples/second",
+      "replacement": "30-120 samples/second",
+      "reason": "En dash is a banned character; use a hyphen."
+    },
+    {
+      "original": "4 kV\u201335 kV",
+      "replacement": "4 kV-35 kV",
+      "reason": "En dash is a banned character; use a hyphen."
+    },
+    {
+      "original": "has evolved dramatically",
+      "replacement": "has evolved considerably",
+      "reason": "\"Dramatically\" is on the discouraged intensifier list; a plainer modifier fits."
+    },
+    {
+      "original": "significantly shortens",
+      "replacement": "shortens",
+      "reason": "\"Significantly\" is a discouraged intensifier; the numbers already carry the weight."
+    },
+    {
+      "original": "significantly reduces line losses",
+      "replacement": "reduces line losses",
+      "reason": "\"Significantly\" is a discouraged intensifier; the measured figures already state the magnitude."
+    },
+    {
+      "original": "planning leverages",
+      "replacement": "planning uses",
+      "reason": "\"Leverage\" is on the discouraged verbs list."
+    },
+    {
+      "original": "enhancing capacity without building new lines",
+      "replacement": "adding capacity without building new lines",
+      "reason": "\"Enhancing\" is on the discouraged verbs list."
+    },
+    {
+      "original": "paving the way for *wide\u2011area protection*",
+      "replacement": "making *wide\u2011area protection* possible",
+      "reason": "\"Paving the way for\" is a banned academic tell."
+    },
+    {
+      "original": "Seamless transition",
+      "replacement": "Smooth transition",
+      "reason": "\"Seamless\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "seamlessly integrates electricity",
+      "replacement": "directly integrates electricity",
+      "reason": "\"Seamlessly\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "\"Robust\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "Robust control keeps voltage",
+      "replacement": "Careful control keeps voltage",
+      "reason": "\"Robust\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "\"Robust\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "robust regulatory frameworks",
+      "replacement": "strong regulatory frameworks",
+      "reason": "\"Robust\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "while fostering competition",
+      "replacement": "while encouraging competition",
+      "reason": "\"Foster\" is on the discouraged verbs list."
+    },
+    {
+      "original": "a more holistic energy system",
+      "replacement": "a more integrated energy system",
+      "reason": "\"Holistic\" is on the discouraged adjectives list."
+    },
+    {
+      "original": "a *decentralized, cyber\u2011physical ecosystem*",
+      "replacement": "a *decentralized, cyber\u2011physical network*",
+      "reason": "\"Ecosystem\" in metaphorical use is on the banned-only-when-necessary list; \"network\" is the literal fit."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands",
+      "replacement": "Meeting reliability, resilience, and market complexity demands",
+      "reason": "\"Navigating\" in metaphorical use is on the discouraged verbs list."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20881,
+    "output": 3839,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 2398
+  },
+  "cost_usd": 0.00165362,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

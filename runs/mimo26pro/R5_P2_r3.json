@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P2_r3",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:05:13.755346+00:00",
+  "duration_s": 10.99353436101228,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"has evolved dramatically to accommodate\",\"replacement\":\"has evolved to accommodate\",\"reason\":\"Removing the intensifier \\\"dramatically,\\\" which adds no evidence.\"},{\"original\":\"so the retune significantly shortens frequency restoration\",\"replacement\":\"so the retune shortens frequency restoration\",\"reason\":\"Removing the intensifier \\\"significantly\\\"; the 12-to-4-minute figure already carries the emphasis.\"},{\"original\":\"Inertia still matters for the first few cycles after a trip, full stop.\",\"replacement\":\"Inertia still matters for the first few cycles after a trip.\",\"reason\":\"Removing the finality interjection \\\"full stop\\\" from a claim already carrying emphasis.\"},{\"original\":\"fall dramatically as current decreases\",\"replacement\":\"fall as current decreases\",\"reason\":\"Removing the intensifier \\\"dramatically.\\\"\"},{\"original\":\"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\",\"replacement\":\"The 345 kV reconductor reduces line losses from 8 percent to 3 percent.\",\"reason\":\"Removing the intensifier \\\"significantly\\\"; the 8-to-3-percent figures already carry the emphasis.\"},{\"original\":\"Islanded operation is the only backup path for those hospitals, end of story.\",\"replacement\":\"Islanded operation is the only backup path for those hospitals.\",\"reason\":\"Removing the finality interjection \\\"end of story\\\" from a claim marked \\\"only.\\\"\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "Removing the intensifier \"dramatically,\" which adds no evidence."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "Removing the intensifier \"significantly\"; the 12-to-4-minute figure already carries the emphasis."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "Removing the finality interjection \"full stop\" from a claim already carrying emphasis."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall as current decreases",
+      "reason": "Removing the intensifier \"dramatically.\""
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent.",
+      "reason": "Removing the intensifier \"significantly\"; the 8-to-3-percent figures already carry the emphasis."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "Removing the finality interjection \"end of story\" from a claim marked \"only.\""
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20412,
+    "output": 294,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.009135,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

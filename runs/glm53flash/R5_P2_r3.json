@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P2_r3",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "minimal",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:10:16.598617+00:00",
+  "duration_s": 5.973165756993694,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune cuts frequency restoration time by two-thirds (12 minutes to 4 minutes)\", \"reason\": \"Replaces the intensifier \\\"significantly\\\" with the concrete figures it stood in for.\"}, {\"original\": \"after a trip, full stop.\", \"replacement\": \"after a trip.\", \"reason\": \"Deletes the redundant finality interjection \\\"full stop.\\\"\"}, {\"original\": \"resistive losses (I\u00b2R) fall dramatically as current decreases\", \"replacement\": \"resistive losses (I\u00b2R) fall with the square of the current\", \"reason\": \"Replaces the vague intensifier \\\"dramatically\\\" with the actual quantitative relationship (I\u00b2R scales as the square of current).\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\", \"replacement\": \"The 345 kV reconductor reduces line losses from 8 percent to 3 percent.\", \"reason\": \"Deletes the intensifier \\\"significantly,\\\" which the specific 8-to-3 percent figures already substantiate.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"Islanded operation is the only backup path for those hospitals.\", \"reason\": \"Deletes the redundant finality interjection \\\"end of story,\\\" which repeats the exclusivity already carried by \\\"only.\\\"\"}, {\"original\": \"Renewable energy technologies have been rising rapidly.\", \"replacement\": null, \"reason\": \"\\\"Rapidly\\\" is an intensifier standing in for missing evidence, but the passage supplies no figure, so it is flagged for the author rather than changed.\"}]}",
+  "edits": [
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune cuts frequency restoration time by two-thirds (12 minutes to 4 minutes)",
+      "reason": "Replaces the intensifier \"significantly\" with the concrete figures it stood in for."
+    },
+    {
+      "original": "after a trip, full stop.",
+      "replacement": "after a trip.",
+      "reason": "Deletes the redundant finality interjection \"full stop.\""
+    },
+    {
+      "original": "resistive losses (I\u00b2R) fall dramatically as current decreases",
+      "replacement": "resistive losses (I\u00b2R) fall with the square of the current",
+      "reason": "Replaces the vague intensifier \"dramatically\" with the actual quantitative relationship (I\u00b2R scales as the square of current)."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent.",
+      "reason": "Deletes the intensifier \"significantly,\" which the specific 8-to-3 percent figures already substantiate."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "Deletes the redundant finality interjection \"end of story,\" which repeats the exclusivity already carried by \"only.\""
+    },
+    {
+      "original": "Renewable energy technologies have been rising rapidly.",
+      "replacement": null,
+      "reason": "\"Rapidly\" is an intensifier standing in for missing evidence, but the passage supplies no figure, so it is flagged for the author rather than changed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19716,
+    "output": 744,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 372
+  },
+  "cost_usd": 0.0033294,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

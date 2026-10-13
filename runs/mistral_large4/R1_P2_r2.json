@@ -1,0 +1,162 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:48:08.611303+00:00",
+  "duration_s": 36.064297372009605,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"humanity\u2019s ability\",\n      \"replacement\": \"humanity's ability\",\n      \"reason\": \"Curly/smart apostrophe is a NEVER-tier banned character; replace with straight ASCII apostrophe.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is\",\n      \"replacement\": \"The contemporary electric power system (commonly referred to simply as a *power system*) is\",\n      \"reason\": \"Em dash is a NEVER-tier banned character; restructure with parentheses or semicolon.\"\n    },\n    {\n      \"original\": \"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged,\",\n      \"replacement\": \"While the basic principle (converting a primary energy source into usable electrical power) remains unchanged,\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"so the retune significantly shortens frequency restoration\",\n      \"replacement\": \"so the retune shortens frequency restoration\",\n      \"reason\": \"'significantly' is a prefer-other-words intensifier; the concrete before/after figures already carry the weight.\"\n    },\n    {\n      \"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\",\n      \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"Robust control keeps voltage inside limits when plant parameters are uncertain.\",\n      \"replacement\": \"Control keeps voltage inside limits when plant parameters are uncertain.\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; the sentence is stronger without the intensifier.\"\n    },\n    {\n      \"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\",\n      \"replacement\": \"Forecasts still miss cloud-driven ramps... Wind turbines\",\n      \"reason\": \"Ellipsis glyph is a NEVER-tier banned character; replace with three ASCII periods.\"\n    },\n    {\n      \"original\": \"requiring robust transmission networks\",\n      \"replacement\": \"requiring strong transmission networks\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative here.\"\n    },\n    {\n      \"original\": \"Modern transmission planning leverages *optimal power flow* (OPF) algorithms\",\n      \"replacement\": \"Modern transmission planning uses *optimal power flow* (OPF) algorithms\",\n      \"reason\": \"'Leverages' is a prefer-other-words verb; 'uses' is the plain alternative.\"\n    },\n    {\n      \"original\": \"provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines\",\n      \"replacement\": \"provides operators with dynamic voltage and power-flow regulation, raising capacity without building new lines\",\n      \"reason\": \"'Enhancing' is a prefer-other-words verb; 'raising' is the plain alternative.\"\n    },\n    {\n      \"original\": \"Distribution networks are the \u201clast mile\u201d of the power system\",\n      \"replacement\": \"Distribution networks are the \\\"last mile\\\" of the power system\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"\u201cRadial\u201d designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability\",\n      \"replacement\": \"\\\"Radial\\\" designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection*\",\n      \"replacement\": \"allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, leading to *wide-area protection*\",\n      \"reason\": \"'Paving the way for' is a prefer-other-words academic tell; 'leading to' is the plain alternative.\"\n    },\n    {\n      \"original\": \"While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events\",\n      \"replacement\": \"While electricity is expected to be \\\"always-on,\\\" extreme weather events\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"The deregulated electricity market, while fostering competition, also introduces price volatility\",\n      \"replacement\": \"The deregulated electricity market, while promoting competition, also introduces price volatility\",\n      \"reason\": \"'Fostering' is a prefer-other-words verb; 'promoting' is the plain alternative.\"\n    },\n    {\n      \"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity\",\n      \"replacement\": \"\\\"Power-to-X\\\" technologies convert surplus electricity\",\n      \"reason\": \"Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes.\"\n    },\n    {\n      \"original\": \"By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges\",\n      \"replacement\": \"By coupling the electricity sector with transport, industry, and heating, a more integrated energy system emerges\",\n      \"reason\": \"'Holistic' is a prefer-other-words adjective; 'integrated' is the natural alternative here.\"\n    },\n    {\n      \"original\": \"The **European Union\u2019s \u201cElectricity Interconnection\u201d** project exemplifies\",\n      \"replacement\": \"The **European Union's \\\"Electricity Interconnection\\\"** project exemplifies\",\n      \"reason\": \"Curly/smart quotes and apostrophe are NEVER-tier banned characters; replace with straight ASCII equivalents.\"\n    },\n    {\n      \"original\": \"The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist\",\n      \"replacement\": \"The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when strong transmission, advanced controls, and market integration co-exist\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative here.\"\n    },\n    {\n      \"original\": \"into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity\",\n      \"replacement\": \"into a *decentralized, cyber-physical system* that integrates electricity\",\n      \"reason\": \"'Ecosystem' in inflated-metaphor use is only-when-necessary tier; 'system' is the literal, accurate term. 'Seamlessly' is a prefer-other-words adjective; delete it.\"\n    },\n    {\n      \"original\": \"Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities\",\n      \"replacement\": \"Smooth transition between grid-connected and standalone operation, critical for critical facilities\",\n      \"reason\": \"'Seamless' is a prefer-other-words adjective; 'smooth' is the natural alternative. 'Crucial' is a prefer-other-words adjective; 'critical' is the plain alternative.\"\n    },\n    {\n      \"original\": \"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come\",\n      \"replacement\": \"The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin sustainable economic growth for generations to come\",\n      \"reason\": \"Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Landscape' in inflated-metaphor use ('energy landscape') is only-when-necessary tier; 'system' is the literal term.\"\n    },\n    {\n      \"original\": \"the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize\",\n      \"replacement\": \"the composition of the grid is undergoing a major transformation driven by renewable energy, digitalization, and the imperative to decarbonize\",\n      \"reason\": \"'Profound' is an intensifier in the prefer-other-words spirit; 'major' is the plain alternative.\"\n    },\n    {\n      \"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\",\n      \"replacement\": \"Meeting reliability, resilience, and market challenges demands new technologies\",\n      \"reason\": \"'Navigating' in metaphorical use is a prefer-other-words verb; 'meeting' is literal. 'Innovative' is a prefer-other-words adjective; 'new' is the plain alternative.\"\n    },\n    {\n      \"original\": \"and robust regulatory frameworks\",\n      \"replacement\": \"and strong regulatory frameworks\",\n      \"reason\": \"'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly/smart apostrophe is a NEVER-tier banned character; replace with straight ASCII apostrophe."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "The contemporary electric power system (commonly referred to simply as a *power system*) is",
+      "reason": "Em dash is a NEVER-tier banned character; restructure with parentheses or semicolon."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged,",
+      "replacement": "While the basic principle (converting a primary energy source into usable electrical power) remains unchanged,",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "'significantly' is a prefer-other-words intensifier; the concrete before/after figures already carry the weight."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits when plant parameters are uncertain.",
+      "replacement": "Control keeps voltage inside limits when plant parameters are uncertain.",
+      "reason": "'Robust' is a prefer-other-words adjective; the sentence is stronger without the intensifier."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps... Wind turbines",
+      "reason": "Ellipsis glyph is a NEVER-tier banned character; replace with three ASCII periods."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative here."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow* (OPF) algorithms",
+      "replacement": "Modern transmission planning uses *optimal power flow* (OPF) algorithms",
+      "reason": "'Leverages' is a prefer-other-words verb; 'uses' is the plain alternative."
+    },
+    {
+      "original": "provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines",
+      "replacement": "provides operators with dynamic voltage and power-flow regulation, raising capacity without building new lines",
+      "reason": "'Enhancing' is a prefer-other-words verb; 'raising' is the plain alternative."
+    },
+    {
+      "original": "Distribution networks are the \u201clast mile\u201d of the power system",
+      "replacement": "Distribution networks are the \"last mile\" of the power system",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability",
+      "replacement": "\"Radial\" designs are common due to simplicity; however, *mesh* or *looped* topologies are gaining favor for higher reliability",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection*",
+      "replacement": "allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, leading to *wide-area protection*",
+      "reason": "'Paving the way for' is a prefer-other-words academic tell; 'leading to' is the plain alternative."
+    },
+    {
+      "original": "While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events",
+      "replacement": "While electricity is expected to be \"always-on,\" extreme weather events",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition, also introduces price volatility",
+      "replacement": "The deregulated electricity market, while promoting competition, also introduces price volatility",
+      "reason": "'Fostering' is a prefer-other-words verb; 'promoting' is the plain alternative."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity",
+      "replacement": "\"Power-to-X\" technologies convert surplus electricity",
+      "reason": "Curly/smart quotes are NEVER-tier banned characters; replace with straight ASCII quotes."
+    },
+    {
+      "original": "By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges",
+      "replacement": "By coupling the electricity sector with transport, industry, and heating, a more integrated energy system emerges",
+      "reason": "'Holistic' is a prefer-other-words adjective; 'integrated' is the natural alternative here."
+    },
+    {
+      "original": "The **European Union\u2019s \u201cElectricity Interconnection\u201d** project exemplifies",
+      "replacement": "The **European Union's \"Electricity Interconnection\"** project exemplifies",
+      "reason": "Curly/smart quotes and apostrophe are NEVER-tier banned characters; replace with straight ASCII equivalents."
+    },
+    {
+      "original": "The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist",
+      "replacement": "The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when strong transmission, advanced controls, and market integration co-exist",
+      "reason": "'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative here."
+    },
+    {
+      "original": "into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity",
+      "replacement": "into a *decentralized, cyber-physical system* that integrates electricity",
+      "reason": "'Ecosystem' in inflated-metaphor use is only-when-necessary tier; 'system' is the literal, accurate term. 'Seamlessly' is a prefer-other-words adjective; delete it."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities",
+      "replacement": "Smooth transition between grid-connected and standalone operation, critical for critical facilities",
+      "reason": "'Seamless' is a prefer-other-words adjective; 'smooth' is the natural alternative. 'Crucial' is a prefer-other-words adjective; 'critical' is the plain alternative."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come",
+      "replacement": "The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin sustainable economic growth for generations to come",
+      "reason": "Em dashes are NEVER-tier banned characters; restructure with parentheses. 'Landscape' in inflated-metaphor use ('energy landscape') is only-when-necessary tier; 'system' is the literal term."
+    },
+    {
+      "original": "the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize",
+      "replacement": "the composition of the grid is undergoing a major transformation driven by renewable energy, digitalization, and the imperative to decarbonize",
+      "reason": "'Profound' is an intensifier in the prefer-other-words spirit; 'major' is the plain alternative."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies",
+      "replacement": "Meeting reliability, resilience, and market challenges demands new technologies",
+      "reason": "'Navigating' in metaphorical use is a prefer-other-words verb; 'meeting' is literal. 'Innovative' is a prefer-other-words adjective; 'new' is the plain alternative."
+    },
+    {
+      "original": "and robust regulatory frameworks",
+      "replacement": "and strong regulatory frameworks",
+      "reason": "'Robust' is a prefer-other-words adjective; 'strong' is the natural alternative."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21321,
+    "output": 1992,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01866156,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

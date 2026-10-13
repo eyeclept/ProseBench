@@ -1,0 +1,285 @@
+{
+  "run_id": "R1_P3_r2",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:27:33.883651+00:00",
+  "duration_s": 64.61489369202172,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "The banned words file was already provided in the reference block, so I'll work from it directly. Let me edit the passage.\n\n```json\n{\"edits\": [\n {\"original\": \"Botany: The Science of Plant Life and Its Central Role in a Sustainable Future\", \"replacement\": \"Botany: The Science of Plant Life and Its Role in a Sustainable Future\", \"reason\": \"The adjective 'Central' is an inflated, marketing-style intensifier that adds no information.\"},\n {\"original\": \"the cultural and aesthetic fabric of human societies\", \"replacement\": \"the cultural and aesthetic life of human societies\", \"reason\": \"'fabric' is an inflated metaphorical noun used in the banned metaphorical-vs-literal sense.\"},\n {\"original\": \"In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.\", \"replacement\": \"In a period of rapid environmental change, food insecurity, and dwindling natural resources, understanding plant biology is not merely academic; it is essential for the survival and well-being of humanity.\", \"reason\": \"Replaces the opening clich\u00e9 'In an era marked by', the 'Prefer other words' intensifier 'comprehensive', an em dash, curly quotes, and a soft hyphen with plain ASCII punctuation.\"},\n {\"original\": \"the discipline has continually expanded its scope and depth\", \"replacement\": \"the discipline has broadened its scope and depth\", \"reason\": \"'Continually' is a redundant intensifier; 'expanded' is replaced with the more concrete 'broadened' (both acceptable, this trims filler).\"},\n {\"original\": \"which described plant morphology, reproduction, and habitat preferences\", \"replacement\": \"which described plant morphology, reproduction, and habitats\", \"reason\": \"'preferences' is vague filler; 'habitats' is the concrete term.\"},\n {\"original\": \"During the Renaissance, the invention of the microscope opened a new realm of observation\", \"replacement\": \"During the Renaissance, the invention of the microscope opened new observation\", \"reason\": \"'a new realm of' is a inflated-metaphor phrase (realm) that is redundant with 'opened'.\"},\n {\"original\": \"is often hailed as the 'father of botany'\", \"replacement\": \"is called the 'father of botany'\", \"reason\": \"'often hailed as' is inflated filler; 'is called' states the fact directly.\"},\n {\"original\": \"provided a unifying evolutionary framework\", \"replacement\": \"provided a unifying evolutionary framework\", \"reason\": \"No change: 'unifying' is descriptive, not a banned intensifier here.\"},\n {\"original\": \"explained the astonishing diversity of plant forms\", \"replacement\": \"explained the diversity of plant forms\", \"reason\": \"'astonishing' is an unsupported intensifier from the banned adjectives list.\"},\n {\"original\": \"marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics\", \"replacement\": \"marked a turning point, establishing a model organism for plant genetics and enabling high-throughput functional genomics\", \"reason\": \"'watershed moment' and 'paving the way for' are both banned inflated-symbolism/structural phrases, and soft hyphen normalized to ASCII.\"},\n {\"original\": \"Within the plasma membrane lies a suite of organelles\", \"replacement\": \"Within the plasma membrane lies a range of organelles\", \"reason\": \"'a suite of' is an inflated-metaphor noun (suite) used loosely.\"},\n {\"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies\", \"replacement\": \"A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies\", \"reason\": \"'robust' is a banned 'Prefer other words' adjective used as filler intensifier here.\"},\n {\"original\": \"the change significantly streamlines cell-wall composition analysis\", \"replacement\": \"the change shortens cell-wall composition analysis\", \"reason\": \"'significantly' is a banned intensifier and 'streamlines' is a banned verb; both are cut for directness.\"},\n {\"original\": \"Pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb photons\", \"replacement\": \"Pigment molecules, chiefly chlorophyll a, chlorophyll b, and carotenoids, absorb photons\", \"reason\": \"Em dashes replaced with commas per the ASCII-punctuation rule.\"},\n {\"original\": \"and a myriad of secondary metabolites\", \"replacement\": \"and many secondary metabolites\", \"reason\": \"'a myriad of' is a weasel/inflated construction; 'many' is concrete.\"},\n {\"original\": \"Understanding these mechanisms is pivotal for improving crop yields\", \"replacement\": \"Understanding these mechanisms matters for improving crop yields\", \"reason\": \"'pivotal' is a banned 'Prefer other words' adjective; 'matters' is direct.\"},\n {\"original\": \"have refined our understanding of plant relationships, revealing, for instance, that the traditional 'monocot' group is monophyletic\", \"replacement\": \"have clarified plant relationships, showing for instance that the traditional 'monocot' group is monophyletic\", \"reason\": \"'refined our understanding' is inflated filler; 'refined'/'clarified' plus 'showing' is more direct.\"},\n {\"original\": \"driven by the development of high\u2011yielding, disease\u2011resistant varieties\", \"replacement\": \"driven by high-yielding, disease-resistant varieties\", \"reason\": \"Removes inflated 'the development of' filler and normalizes soft hyphens to ASCII.\"},\n {\"original\": \"dramatically increased food production\", \"replacement\": \"increased food production\", \"reason\": \"'dramatically' is a banned 'Prefer other words' intensifier.\"},\n {\"original\": \"supplemental irrigation dramatically reduces yield loss in dry years\", \"replacement\": \"supplemental irrigation reduces yield loss in dry years\", \"reason\": \"'dramatically' is a banned intensifier with no added information.\"},\n {\"original\": \"facilitating scalable production of valuable compounds while preserving wild populations\", \"replacement\": \"enabling scalable production of useful compounds while preserving wild populations\", \"reason\": \"'facilitating' is a banned verb; 'valuable' is replaced with the concrete 'useful'.\"},\n {\"original\": \"Moreover, lignocellulosic biomass is a cornerstone of the emerging bioeconomy\", \"replacement\": \"Lignocellulosic biomass is a cornerstone of the emerging bioeconomy\", \"reason\": \"The connector 'Moreover,' is a banned transition; removing it keeps the sentence direct.\"},\n {\"original\": \"are foundational to the emerging bioeconomy, serving as feedstock for biofuels\", \"replacement\": \"are foundational to the emerging bioeconomy, serving as feedstock for biofuels\", \"reason\": \"No change: 'foundational' is used descriptively here, not as a banned intensifier.\"},\n {\"original\": \"reducing erosion and enhancing fertility\", \"replacement\": \"reducing erosion and improving fertility\", \"reason\": \"'enhancing' is a banned verb; 'improving' is the plain alternative.\"},\n {\"original\": \"underscoring the non\u2011material importance of plant life\", \"replacement\": \"showing the non-material importance of plant life\", \"reason\": \"'underscoring' is a banned verb; 'showing' is direct, and soft hyphen normalized.\"},\n {\"original\": \"Botany, therefore, plays a pivotal role in restoration ecology\", \"replacement\": \"Botany, therefore, plays a role in restoration ecology\", \"reason\": \"'pivotal' is a banned 'Prefer other words' adjective; removing it states the fact plainly.\"},\n {\"original\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks that predict plant responses to environmental cues\", \"replacement\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct networks that predict plant responses to environmental cues\", \"reason\": \"'comprehensive' is a banned 'Prefer other words' adjective.\"},\n {\"original\": \"leveraging the organelle's prokaryotic-like gene expression system\", \"replacement\": \"using the organelle's prokaryotic-like gene expression system\", \"reason\": \"'leveraging' is a banned verb; 'using' is the plain alternative.\"},\n {\"original\": \"respond more robustly upon re\u2011encounter\", \"replacement\": \"respond more strongly upon re-encounter\", \"reason\": \"'robustly' is a banned 'Prefer other words' adverb; 'strongly' is concrete, and soft hyphen normalized.\"},\n {\"original\": \"is a burgeoning field\", \"replacement\": \"is a growing field\", \"reason\": \"'burgeoning' is an inflated intensifier; 'growing' is plain.\"},\n {\"original\": \"profoundly influences plant health\", \"replacement\": \"strongly influences plant health\", \"reason\": \"'profoundly' is a banned intensifier; 'strongly' is concrete.\"},\n {\"original\": \"offers routes to sustainable agricultural practices\", \"replacement\": \"offers paths to sustainable agricultural practices\", \"reason\": \"'routes' is a slightly inflated metaphorical noun; 'paths' is the plain alternative.\"},\n {\"original\": \"several challenges must be addressed\", \"replacement\": \"several challenges need addressing\", \"reason\": \"Restructures the inflated 'must be addressed' phrasing to a direct verb.\"},\n {\"original\": \"threatening countless plant species\", \"replacement\": \"threatening many plant species\", \"reason\": \"'countless' is a weasel/intensifier word that overstates; 'many' is honest.\"},\n {\"original\": \"Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization\", \"replacement\": \"Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are needed to ensure ethical use\", \"reason\": \"'essential' is a banned intensifier, 'utilization' inflated for 'use', and soft hyphen normalized.\"},\n {\"original\": \"is a delicate task for policymakers and scientists alike\", \"replacement\": \"is a hard task for policymakers and scientists\", \"reason\": \"'delicate' is a mild intensifier and 'alike' is filler; 'hard task' is direct.\"},\n {\"original\": \"robust public engagement\", \"replacement\": \"strong public engagement\", \"reason\": \"'robust' is a banned 'Prefer other words' adjective.\"},\n {\"original\": \"leveraging satellite imagery, drones, and IoT sensors\", \"replacement\": \"using satellite imagery, drones, and IoT sensors\", \"reason\": \"'leveraging' is a banned verb; 'using' is the plain alternative.\"},\n {\"original\": \"fostering environmental stewardship\", \"replacement\": \"building environmental stewardship\", \"reason\": \"'fostering' is a banned verb; 'building' is the concrete alternative.\"},\n {\"original\": \"respond more robustly upon re\u2011encounter\", \"replacement\": \"respond more strongly upon re-encounter\", \"reason\": \"Duplicate check; already handled above\u2014no separate entry needed.\"},\n {\"original\": \"By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\", \"replacement\": \"By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\", \"reason\": \"'fostering' is a banned verb; 'building' is the concrete alternative.\"},\n {\"original\": \"honors the green foundation upon which all other life depends\", \"replacement\": \"honors the green foundation all other life depends on\", \"reason\": \"Resolves the dangling preposition ('upon which ... depends') into plain English.\"},\n {\"original\": \"In an age where humanity's actions increasingly dictate planetary trajectories, a deep, nuanced understanding of plant biology is not optional; it is imperative\", \"replacement\": \"When humanity's actions increasingly dictate planetary trajectories, a deep understanding of plant biology is not optional; it is needed\", \"reason\": \"'In an age where' is a clich\u00e9d opening, 'nuanced' is a banned adjective, and 'imperative' is an inflated intensifier; 'needed' is direct.\"},\n {\"original\": \"From the microscopic intricacies of chloroplast electron transport\", \"replacement\": \"From the microscopic details of chloroplast electron transport\", \"reason\": \"'intricacies' is an inflated noun; 'details' is concrete and plain.\"},\n {\"original\": \"offers unprecedented tools to harness plant potential\", \"replacement\": \"offers new tools to harness plant potential\", \"reason\": \"'unprecedented' is a banned intensifier; 'new' is concrete.\"},\n {\"original\": \"a dynamic, integrative science\", \"replacement\": \"a dynamic, integrative science\", \"reason\": \"No change: 'dynamic' and 'integrative' are descriptive here, not banned intensifiers.\"},\n {\"original\": \"is a dynamic, integrative science that underpins food security\", \"replacement\": \"is a dynamic, integrative science that underpins food security\", \"reason\": \"No change: descriptive adjectives, not banned intensifiers.\"},\n {\"original\": \"the grand scale of forest carbon sequestration\", \"replacement\": \"the grand scale of forest carbon sequestration\", \"reason\": \"No change: 'grand scale' is literal description, not banned.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "Botany: The Science of Plant Life and Its Central Role in a Sustainable Future",
+      "replacement": "Botany: The Science of Plant Life and Its Role in a Sustainable Future",
+      "reason": "The adjective 'Central' is an inflated, marketing-style intensifier that adds no information."
+    },
+    {
+      "original": "the cultural and aesthetic fabric of human societies",
+      "replacement": "the cultural and aesthetic life of human societies",
+      "reason": "'fabric' is an inflated metaphorical noun used in the banned metaphorical-vs-literal sense."
+    },
+    {
+      "original": "In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.",
+      "replacement": "In a period of rapid environmental change, food insecurity, and dwindling natural resources, understanding plant biology is not merely academic; it is essential for the survival and well-being of humanity.",
+      "reason": "Replaces the opening clich\u00e9 'In an era marked by', the 'Prefer other words' intensifier 'comprehensive', an em dash, curly quotes, and a soft hyphen with plain ASCII punctuation."
+    },
+    {
+      "original": "the discipline has continually expanded its scope and depth",
+      "replacement": "the discipline has broadened its scope and depth",
+      "reason": "'Continually' is a redundant intensifier; 'expanded' is replaced with the more concrete 'broadened' (both acceptable, this trims filler)."
+    },
+    {
+      "original": "which described plant morphology, reproduction, and habitat preferences",
+      "replacement": "which described plant morphology, reproduction, and habitats",
+      "reason": "'preferences' is vague filler; 'habitats' is the concrete term."
+    },
+    {
+      "original": "During the Renaissance, the invention of the microscope opened a new realm of observation",
+      "replacement": "During the Renaissance, the invention of the microscope opened new observation",
+      "reason": "'a new realm of' is a inflated-metaphor phrase (realm) that is redundant with 'opened'."
+    },
+    {
+      "original": "is often hailed as the 'father of botany'",
+      "replacement": "is called the 'father of botany'",
+      "reason": "'often hailed as' is inflated filler; 'is called' states the fact directly."
+    },
+    {
+      "original": "provided a unifying evolutionary framework",
+      "replacement": "provided a unifying evolutionary framework",
+      "reason": "No change: 'unifying' is descriptive, not a banned intensifier here."
+    },
+    {
+      "original": "explained the astonishing diversity of plant forms",
+      "replacement": "explained the diversity of plant forms",
+      "reason": "'astonishing' is an unsupported intensifier from the banned adjectives list."
+    },
+    {
+      "original": "marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics",
+      "replacement": "marked a turning point, establishing a model organism for plant genetics and enabling high-throughput functional genomics",
+      "reason": "'watershed moment' and 'paving the way for' are both banned inflated-symbolism/structural phrases, and soft hyphen normalized to ASCII."
+    },
+    {
+      "original": "Within the plasma membrane lies a suite of organelles",
+      "replacement": "Within the plasma membrane lies a range of organelles",
+      "reason": "'a suite of' is an inflated-metaphor noun (suite) used loosely."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies",
+      "replacement": "A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies",
+      "reason": "'robust' is a banned 'Prefer other words' adjective used as filler intensifier here."
+    },
+    {
+      "original": "the change significantly streamlines cell-wall composition analysis",
+      "replacement": "the change shortens cell-wall composition analysis",
+      "reason": "'significantly' is a banned intensifier and 'streamlines' is a banned verb; both are cut for directness."
+    },
+    {
+      "original": "Pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb photons",
+      "replacement": "Pigment molecules, chiefly chlorophyll a, chlorophyll b, and carotenoids, absorb photons",
+      "reason": "Em dashes replaced with commas per the ASCII-punctuation rule."
+    },
+    {
+      "original": "and a myriad of secondary metabolites",
+      "replacement": "and many secondary metabolites",
+      "reason": "'a myriad of' is a weasel/inflated construction; 'many' is concrete."
+    },
+    {
+      "original": "Understanding these mechanisms is pivotal for improving crop yields",
+      "replacement": "Understanding these mechanisms matters for improving crop yields",
+      "reason": "'pivotal' is a banned 'Prefer other words' adjective; 'matters' is direct."
+    },
+    {
+      "original": "have refined our understanding of plant relationships, revealing, for instance, that the traditional 'monocot' group is monophyletic",
+      "replacement": "have clarified plant relationships, showing for instance that the traditional 'monocot' group is monophyletic",
+      "reason": "'refined our understanding' is inflated filler; 'refined'/'clarified' plus 'showing' is more direct."
+    },
+    {
+      "original": "driven by the development of high\u2011yielding, disease\u2011resistant varieties",
+      "replacement": "driven by high-yielding, disease-resistant varieties",
+      "reason": "Removes inflated 'the development of' filler and normalizes soft hyphens to ASCII."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "increased food production",
+      "reason": "'dramatically' is a banned 'Prefer other words' intensifier."
+    },
+    {
+      "original": "supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "supplemental irrigation reduces yield loss in dry years",
+      "reason": "'dramatically' is a banned intensifier with no added information."
+    },
+    {
+      "original": "facilitating scalable production of valuable compounds while preserving wild populations",
+      "replacement": "enabling scalable production of useful compounds while preserving wild populations",
+      "reason": "'facilitating' is a banned verb; 'valuable' is replaced with the concrete 'useful'."
+    },
+    {
+      "original": "Moreover, lignocellulosic biomass is a cornerstone of the emerging bioeconomy",
+      "replacement": "Lignocellulosic biomass is a cornerstone of the emerging bioeconomy",
+      "reason": "The connector 'Moreover,' is a banned transition; removing it keeps the sentence direct."
+    },
+    {
+      "original": "are foundational to the emerging bioeconomy, serving as feedstock for biofuels",
+      "replacement": "are foundational to the emerging bioeconomy, serving as feedstock for biofuels",
+      "reason": "No change: 'foundational' is used descriptively here, not as a banned intensifier."
+    },
+    {
+      "original": "reducing erosion and enhancing fertility",
+      "replacement": "reducing erosion and improving fertility",
+      "reason": "'enhancing' is a banned verb; 'improving' is the plain alternative."
+    },
+    {
+      "original": "underscoring the non\u2011material importance of plant life",
+      "replacement": "showing the non-material importance of plant life",
+      "reason": "'underscoring' is a banned verb; 'showing' is direct, and soft hyphen normalized."
+    },
+    {
+      "original": "Botany, therefore, plays a pivotal role in restoration ecology",
+      "replacement": "Botany, therefore, plays a role in restoration ecology",
+      "reason": "'pivotal' is a banned 'Prefer other words' adjective; removing it states the fact plainly."
+    },
+    {
+      "original": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks that predict plant responses to environmental cues",
+      "replacement": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct networks that predict plant responses to environmental cues",
+      "reason": "'comprehensive' is a banned 'Prefer other words' adjective."
+    },
+    {
+      "original": "leveraging the organelle's prokaryotic-like gene expression system",
+      "replacement": "using the organelle's prokaryotic-like gene expression system",
+      "reason": "'leveraging' is a banned verb; 'using' is the plain alternative."
+    },
+    {
+      "original": "respond more robustly upon re\u2011encounter",
+      "replacement": "respond more strongly upon re-encounter",
+      "reason": "'robustly' is a banned 'Prefer other words' adverb; 'strongly' is concrete, and soft hyphen normalized."
+    },
+    {
+      "original": "is a burgeoning field",
+      "replacement": "is a growing field",
+      "reason": "'burgeoning' is an inflated intensifier; 'growing' is plain."
+    },
+    {
+      "original": "profoundly influences plant health",
+      "replacement": "strongly influences plant health",
+      "reason": "'profoundly' is a banned intensifier; 'strongly' is concrete."
+    },
+    {
+      "original": "offers routes to sustainable agricultural practices",
+      "replacement": "offers paths to sustainable agricultural practices",
+      "reason": "'routes' is a slightly inflated metaphorical noun; 'paths' is the plain alternative."
+    },
+    {
+      "original": "several challenges must be addressed",
+      "replacement": "several challenges need addressing",
+      "reason": "Restructures the inflated 'must be addressed' phrasing to a direct verb."
+    },
+    {
+      "original": "threatening countless plant species",
+      "replacement": "threatening many plant species",
+      "reason": "'countless' is a weasel/intensifier word that overstates; 'many' is honest."
+    },
+    {
+      "original": "Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization",
+      "replacement": "Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are needed to ensure ethical use",
+      "reason": "'essential' is a banned intensifier, 'utilization' inflated for 'use', and soft hyphen normalized."
+    },
+    {
+      "original": "is a delicate task for policymakers and scientists alike",
+      "replacement": "is a hard task for policymakers and scientists",
+      "reason": "'delicate' is a mild intensifier and 'alike' is filler; 'hard task' is direct."
+    },
+    {
+      "original": "robust public engagement",
+      "replacement": "strong public engagement",
+      "reason": "'robust' is a banned 'Prefer other words' adjective."
+    },
+    {
+      "original": "leveraging satellite imagery, drones, and IoT sensors",
+      "replacement": "using satellite imagery, drones, and IoT sensors",
+      "reason": "'leveraging' is a banned verb; 'using' is the plain alternative."
+    },
+    {
+      "original": "fostering environmental stewardship",
+      "replacement": "building environmental stewardship",
+      "reason": "'fostering' is a banned verb; 'building' is the concrete alternative."
+    },
+    {
+      "original": "respond more robustly upon re\u2011encounter",
+      "replacement": "respond more strongly upon re-encounter",
+      "reason": "Duplicate check; already handled above\u2014no separate entry needed."
+    },
+    {
+      "original": "By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "replacement": "By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "reason": "'fostering' is a banned verb; 'building' is the concrete alternative."
+    },
+    {
+      "original": "honors the green foundation upon which all other life depends",
+      "replacement": "honors the green foundation all other life depends on",
+      "reason": "Resolves the dangling preposition ('upon which ... depends') into plain English."
+    },
+    {
+      "original": "In an age where humanity's actions increasingly dictate planetary trajectories, a deep, nuanced understanding of plant biology is not optional; it is imperative",
+      "replacement": "When humanity's actions increasingly dictate planetary trajectories, a deep understanding of plant biology is not optional; it is needed",
+      "reason": "'In an age where' is a clich\u00e9d opening, 'nuanced' is a banned adjective, and 'imperative' is an inflated intensifier; 'needed' is direct."
+    },
+    {
+      "original": "From the microscopic intricacies of chloroplast electron transport",
+      "replacement": "From the microscopic details of chloroplast electron transport",
+      "reason": "'intricacies' is an inflated noun; 'details' is concrete and plain."
+    },
+    {
+      "original": "offers unprecedented tools to harness plant potential",
+      "replacement": "offers new tools to harness plant potential",
+      "reason": "'unprecedented' is a banned intensifier; 'new' is concrete."
+    },
+    {
+      "original": "a dynamic, integrative science",
+      "replacement": "a dynamic, integrative science",
+      "reason": "No change: 'dynamic' and 'integrative' are descriptive here, not banned intensifiers."
+    },
+    {
+      "original": "is a dynamic, integrative science that underpins food security",
+      "replacement": "is a dynamic, integrative science that underpins food security",
+      "reason": "No change: descriptive adjectives, not banned intensifiers."
+    },
+    {
+      "original": "the grand scale of forest carbon sequestration",
+      "replacement": "the grand scale of forest carbon sequestration",
+      "reason": "No change: 'grand scale' is literal description, not banned."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 43700,
+    "output": 2976,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "objective": "No web search needed; editing task in local workspace",
+        "query": "check references/banned-words-phrases.md current content"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

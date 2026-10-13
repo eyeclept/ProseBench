@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P2_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:13:10.521999+00:00",
+  "duration_s": 33.65964887998416,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"the architecture of modern power systems has evolved dramatically to accommodate larger scales\",\n      \"replacement\": \"the architecture of modern power systems has evolved to accommodate larger scales\",\n      \"reason\": \"\\\"Dramatically\\\" is an intensifier placeholder for evidence; the sentence carries its meaning without it.\"\n    },\n    {\n      \"original\": \"so the retune significantly shortens frequency restoration\",\n      \"replacement\": \"so the retune shortens frequency restoration from 12 minutes to 4 minutes\",\n      \"reason\": \"\\\"Significantly\\\" is an intensifier; the numbers already in the sentence (12 minutes to 4 minutes) are the evidence it was standing in for.\"\n    },\n    {\n      \"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\",\n      \"replacement\": \"Inertia still matters for the first few cycles after a trip.\",\n      \"reason\": \"\\\"Full stop\\\" is a finality interjection tacked onto a claim; the sentence already stands on its own without the emphatic padding.\"\n    },\n    {\n      \"original\": \"resistive losses (I\u00b2R) fall dramatically as current decreases\",\n      \"replacement\": \"resistive losses (I\u00b2R) fall as current decreases\",\n      \"reason\": \"\\\"Dramatically\\\" is an intensifier placeholder for evidence; the physical relationship (I\u00b2R losses falling as current decreases) is self-evident.\"\n    },\n    {\n      \"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\",\n      \"replacement\": \"The 345 kV reconductor reduces line losses from 8 percent to 3 percent.\",\n      \"reason\": \"\\\"Significantly\\\" is an intensifier; the specific numbers (8 percent to 3 percent) are the evidence it was standing in for.\"\n    },\n    {\n      \"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n      \"replacement\": \"Islanded operation is the only backup path for those hospitals.\",\n      \"reason\": \"\\\"End of story\\\" is a finality interjection tacked onto a claim that already carries its own exclusivity marker (\\\"only\\\"); the marker already did the emphatic work.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "the architecture of modern power systems has evolved dramatically to accommodate larger scales",
+      "replacement": "the architecture of modern power systems has evolved to accommodate larger scales",
+      "reason": "\"Dramatically\" is an intensifier placeholder for evidence; the sentence carries its meaning without it."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration from 12 minutes to 4 minutes",
+      "reason": "\"Significantly\" is an intensifier; the numbers already in the sentence (12 minutes to 4 minutes) are the evidence it was standing in for."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "\"Full stop\" is a finality interjection tacked onto a claim; the sentence already stands on its own without the emphatic padding."
+    },
+    {
+      "original": "resistive losses (I\u00b2R) fall dramatically as current decreases",
+      "replacement": "resistive losses (I\u00b2R) fall as current decreases",
+      "reason": "\"Dramatically\" is an intensifier placeholder for evidence; the physical relationship (I\u00b2R losses falling as current decreases) is self-evident."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent.",
+      "reason": "\"Significantly\" is an intensifier; the specific numbers (8 percent to 3 percent) are the evidence it was standing in for."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "\"End of story\" is a finality interjection tacked onto a claim that already carries its own exclusivity marker (\"only\"); the marker already did the emphatic work."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 194,
+    "output": 496,
+    "cache_read": 19948,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00256492,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

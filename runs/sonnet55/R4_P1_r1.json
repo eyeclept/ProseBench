@@ -1,0 +1,409 @@
+{
+  "run_id": "R4_P1_r1",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:48:18.794518+00:00",
+  "duration_s": 27.90120055200532,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "The stray tool call above was unnecessary; here is the edit list.\n\n{\"edits\": [\n{\"original\": \"twenty\u2011first century\", \"replacement\": \"twenty-first century\", \"reason\": \"Non-breaking hyphen is not a US-keyboard character.\"},\n{\"original\": \"cloud\u2011based services\", \"replacement\": \"cloud-based services\", \"reason\": \"Non-breaking hyphen replaced with ASCII hyphen.\"},\n{\"original\": \"Internet\u2011of\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"Non-breaking hyphens replaced with ASCII hyphens.\"},\n{\"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\", \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge) but\", \"reason\": \"Em dashes replaced; parenthetical restructured.\"},\n{\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remains pervasive\", \"reason\": \"Em dashes replaced with parentheses.\"},\n{\"original\": \"supply\u2011chain attacks that infiltrate\", \"replacement\": \"supply-chain attacks that infiltrate\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"APT\u2011related incidents grew by 17 % year\u2011over\u2011year\", \"replacement\": \"APT-related incidents grew by 17 % year-over-year\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"Nation\u2011state actors\", \"replacement\": \"Nation-state actors\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"dark\u2011web marketplaces\", \"replacement\": \"dark-web marketplaces\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"creating \u201cattack surfaces\u201d that\", \"replacement\": \"creating \\\"attack surfaces\\\" that\", \"reason\": \"Curly quotes replaced with straight quotes.\"},\n{\"original\": \"deep\u2011fake technology and AI\u2011driven\", \"replacement\": \"deep-fake technology and AI-driven\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"defense\u2011in\u2011depth\", \"replacement\": \"defense-in-depth\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"next\u2011generation firewalls\", \"replacement\": \"next-generation firewalls\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"application\u2011aware\", \"replacement\": \"application-aware\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups\", \"replacement\": \"micro-segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups\", \"reason\": \"Non-breaking hyphen and em dash replaced; trailing appositive takes a comma.\"},\n{\"original\": \"machine\u2011learning models\", \"replacement\": \"machine-learning models\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"credential\u2011dumping\", \"replacement\": \"credential-dumping\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"(AES\u2011256, TLS 1.3)\", \"replacement\": \"(AES-256, TLS 1.3)\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Identity\u2011and\u2011access management\", \"replacement\": \"Identity-and-access management\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"zero\u2011trust architectures\", \"replacement\": \"zero-trust architectures\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"\u201ctrusted internal network\u201d paradigm\", \"replacement\": \"\\\"trusted internal network\\\" paradigm\", \"reason\": \"Curly quotes replaced.\"},\n{\"original\": \"patch management\u2014automated wherever possible\u2014closes\", \"replacement\": \"patch management (automated wherever possible) closes\", \"reason\": \"Em dashes replaced with parentheses.\"},\n{\"original\": \"fail-closed, rather than open\", \"replacement\": \"fail-closed, rather than open\", \"reason\": \"No change needed.\"},\n{\"original\": \"truncated process tree\u2026\", \"replacement\": \"truncated process tree...\", \"reason\": \"Ellipsis glyph replaced with three periods.\"},\n{\"original\": \"mean time to contain\u2014the finance team uses that figure\", \"replacement\": \"mean time to contain; the finance team uses that figure\", \"reason\": \"Em dash joins two independent clauses; semicolon used.\"},\n{\"original\": \"Board\u2011level oversight\", \"replacement\": \"Board-level oversight\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"third\u2011party audits\", \"replacement\": \"third-party audits\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"red\u2011team exercises\", \"replacement\": \"red-team exercises\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account\", \"replacement\": \"Insider threats (whether malicious, negligent, or coerced) account\", \"reason\": \"Em dashes replaced with parentheses.\"},\n{\"original\": \"click\u2011through rates\", \"replacement\": \"click-through rates\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"\u201cavailability heuristic,\u201d lead\", \"replacement\": \"\\\"availability heuristic,\\\" lead\", \"reason\": \"Curly quotes replaced.\"},\n{\"original\": \"security\u2011first culture\", \"replacement\": \"security-first culture\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"positive reinforcement (recognizing employees who flag suspicious activity) outperforms\", \"reason\": \"Em dashes replaced with parentheses.\"},\n{\"original\": \"role\u2011based access controls\", \"replacement\": \"role-based access controls\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\", \"replacement\": \"Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose\", \"reason\": \"Non-breaking hyphens and em dashes replaced.\"},\n{\"original\": \"The \u201cbug bounty\u201d model\", \"replacement\": \"The \\\"bug bounty\\\" model\", \"reason\": \"Curly quotes replaced.\"},\n{\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains\", \"replacement\": \"A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains\", \"reason\": \"Em dashes and non-breaking hyphen replaced.\"},\n{\"original\": \"post\u2011incident analysis\", \"replacement\": \"post-incident analysis\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"up\u2011to\u2011date IR plan\", \"replacement\": \"up-to-date IR plan\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"predefined playbooks\u2014for example, isolating\", \"replacement\": \"predefined playbooks, for example, isolating\", \"reason\": \"Em dash replaced with comma before trailing example.\"},\n{\"original\": \"backed\u2011up systems\", \"replacement\": \"backed-up systems\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Post\u2011incident lessons\", \"replacement\": \"Post-incident lessons\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"double\u2011edged sword\", \"replacement\": \"double-edged sword\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"AI\u2011driven analytics\", \"replacement\": \"AI-driven analytics\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"rule\u2011based systems\", \"replacement\": \"rule-based systems\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"threat\u2011intel synthesis\", \"replacement\": \"threat-intel synthesis\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"deep\u2011fake phishing\", \"replacement\": \"deep-fake phishing\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"longer\u2011term challenge\", \"replacement\": \"longer-term challenge\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"large\u2011scale quantum\", \"replacement\": \"large-scale quantum\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"public\u2011key algorithms\", \"replacement\": \"public-key algorithms\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"post\u2011quantum cryptography\", \"replacement\": \"post-quantum cryptography\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"lattice\u2011based, hash\u2011based, or code\u2011based\", \"replacement\": \"lattice-based, hash-based, or code-based\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"use\u2011cases\", \"replacement\": \"use-cases\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"software\u2011supply\u2011chain\", \"replacement\": \"software-supply-chain\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"United Nations\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Curly apostrophe replaced.\"},\n{\"original\": \"norm\u2011setting\", \"replacement\": \"norm-setting\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Asia\u2011Pacific Economic\", \"replacement\": \"Asia-Pacific Economic\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"incident\u2011sharing\", \"replacement\": \"incident-sharing\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Public\u2011private partnerships\", \"replacement\": \"Public-private partnerships\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"cyber\u2011attacks\", \"replacement\": \"cyber-attacks\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"hyper\u2011connectivity\", \"replacement\": \"hyper-connectivity\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.\", \"reason\": \"Em dash and comma splice fixed with a period and semicolon.\"},\n{\"original\": \"real\u2011time, AI\u2011assisted\", \"replacement\": \"real-time, AI-assisted\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"**Zero\u2011Trust Architecture** \u2013 Treat\", \"replacement\": \"**Zero-Trust Architecture**: Treat\", \"reason\": \"Non-breaking hyphen and en dash replaced.\"},\n{\"original\": \"least\u2011privilege policies, and micro\u2011segmentation\", \"replacement\": \"least-privilege policies, and micro-segmentation\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"**Secure\u2011by\u2011Design Development** \u2013 Embed\", \"replacement\": \"**Secure-by-Design Development**: Embed\", \"reason\": \"Non-breaking hyphens and en dash replaced.\"},\n{\"original\": \"software\u2011bill of materials\", \"replacement\": \"software-bill of materials\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage\", \"replacement\": \"**AI-Enhanced Threat Intelligence**: Leverage\", \"reason\": \"Non-breaking hyphen and en dash replaced.\"},\n{\"original\": \"**Post\u2011Quantum Preparedness** \u2013 Begin\", \"replacement\": \"**Post-Quantum Preparedness**: Begin\", \"reason\": \"Non-breaking hyphen and en dash replaced.\"},\n{\"original\": \"high\u2011value or long\u2011term\", \"replacement\": \"high-value or long-term\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize\", \"replacement\": \"**Resilience Engineering**: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize\", \"reason\": \"En dash and em dashes replaced.\"},\n{\"original\": \"threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands\", \"replacement\": \"threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands\", \"reason\": \"Em dashes and non-breaking hyphens replaced.\"},\n{\"original\": \"quantum\u2011resistant cryptography\", \"replacement\": \"quantum-resistant cryptography\", \"reason\": \"Non-breaking hyphen replaced.\"}\n]}",
+  "edits": [
+    {
+      "original": "twenty\u2011first century",
+      "replacement": "twenty-first century",
+      "reason": "Non-breaking hyphen is not a US-keyboard character."
+    },
+    {
+      "original": "cloud\u2011based services",
+      "replacement": "cloud-based services",
+      "reason": "Non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "Non-breaking hyphens replaced with ASCII hyphens."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge) but",
+      "reason": "Em dashes replaced; parenthetical restructured."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remains pervasive",
+      "reason": "Em dashes replaced with parentheses."
+    },
+    {
+      "original": "supply\u2011chain attacks that infiltrate",
+      "replacement": "supply-chain attacks that infiltrate",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "APT\u2011related incidents grew by 17 % year\u2011over\u2011year",
+      "replacement": "APT-related incidents grew by 17 % year-over-year",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "Nation\u2011state actors",
+      "replacement": "Nation-state actors",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "dark\u2011web marketplaces",
+      "replacement": "dark-web marketplaces",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that",
+      "replacement": "creating \"attack surfaces\" that",
+      "reason": "Curly quotes replaced with straight quotes."
+    },
+    {
+      "original": "deep\u2011fake technology and AI\u2011driven",
+      "replacement": "deep-fake technology and AI-driven",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "next\u2011generation firewalls",
+      "replacement": "next-generation firewalls",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "micro-segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups",
+      "reason": "Non-breaking hyphen and em dash replaced; trailing appositive takes a comma."
+    },
+    {
+      "original": "machine\u2011learning models",
+      "replacement": "machine-learning models",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "credential\u2011dumping",
+      "replacement": "credential-dumping",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "(AES\u2011256, TLS 1.3)",
+      "replacement": "(AES-256, TLS 1.3)",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management",
+      "replacement": "Identity-and-access management",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "zero\u2011trust architectures",
+      "replacement": "zero-trust architectures",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d paradigm",
+      "replacement": "\"trusted internal network\" paradigm",
+      "reason": "Curly quotes replaced."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes",
+      "replacement": "patch management (automated wherever possible) closes",
+      "reason": "Em dashes replaced with parentheses."
+    },
+    {
+      "original": "fail-closed, rather than open",
+      "replacement": "fail-closed, rather than open",
+      "reason": "No change needed."
+    },
+    {
+      "original": "truncated process tree\u2026",
+      "replacement": "truncated process tree...",
+      "reason": "Ellipsis glyph replaced with three periods."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure",
+      "replacement": "mean time to contain; the finance team uses that figure",
+      "reason": "Em dash joins two independent clauses; semicolon used."
+    },
+    {
+      "original": "Board\u2011level oversight",
+      "replacement": "Board-level oversight",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "third\u2011party audits",
+      "replacement": "third-party audits",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "red\u2011team exercises",
+      "replacement": "red-team exercises",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "Insider threats (whether malicious, negligent, or coerced) account",
+      "reason": "Em dashes replaced with parentheses."
+    },
+    {
+      "original": "click\u2011through rates",
+      "replacement": "click-through rates",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d lead",
+      "replacement": "\"availability heuristic,\" lead",
+      "reason": "Curly quotes replaced."
+    },
+    {
+      "original": "security\u2011first culture",
+      "replacement": "security-first culture",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "positive reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Em dashes replaced with parentheses."
+    },
+    {
+      "original": "role\u2011based access controls",
+      "replacement": "role-based access controls",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose",
+      "reason": "Non-breaking hyphens and em dashes replaced."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model",
+      "replacement": "The \"bug bounty\" model",
+      "reason": "Curly quotes replaced."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains",
+      "reason": "Em dashes and non-breaking hyphen replaced."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "up\u2011to\u2011date IR plan",
+      "replacement": "up-to-date IR plan",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "predefined playbooks\u2014for example, isolating",
+      "replacement": "predefined playbooks, for example, isolating",
+      "reason": "Em dash replaced with comma before trailing example."
+    },
+    {
+      "original": "backed\u2011up systems",
+      "replacement": "backed-up systems",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Post\u2011incident lessons",
+      "replacement": "Post-incident lessons",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "double\u2011edged sword",
+      "replacement": "double-edged sword",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "rule\u2011based systems",
+      "replacement": "rule-based systems",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "threat\u2011intel synthesis",
+      "replacement": "threat-intel synthesis",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "deep\u2011fake phishing",
+      "replacement": "deep-fake phishing",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "longer\u2011term challenge",
+      "replacement": "longer-term challenge",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "large\u2011scale quantum",
+      "replacement": "large-scale quantum",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "public\u2011key algorithms",
+      "replacement": "public-key algorithms",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "post\u2011quantum cryptography",
+      "replacement": "post-quantum cryptography",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "lattice\u2011based, hash\u2011based, or code\u2011based",
+      "replacement": "lattice-based, hash-based, or code-based",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Curly apostrophe replaced."
+    },
+    {
+      "original": "norm\u2011setting",
+      "replacement": "norm-setting",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Asia\u2011Pacific Economic",
+      "replacement": "Asia-Pacific Economic",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Public\u2011private partnerships",
+      "replacement": "Public-private partnerships",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.",
+      "reason": "Em dash and comma splice fixed with a period and semicolon."
+    },
+    {
+      "original": "real\u2011time, AI\u2011assisted",
+      "replacement": "real-time, AI-assisted",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013 Treat",
+      "replacement": "**Zero-Trust Architecture**: Treat",
+      "reason": "Non-breaking hyphen and en dash replaced."
+    },
+    {
+      "original": "least\u2011privilege policies, and micro\u2011segmentation",
+      "replacement": "least-privilege policies, and micro-segmentation",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013 Embed",
+      "replacement": "**Secure-by-Design Development**: Embed",
+      "reason": "Non-breaking hyphens and en dash replaced."
+    },
+    {
+      "original": "software\u2011bill of materials",
+      "replacement": "software-bill of materials",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "**AI-Enhanced Threat Intelligence**: Leverage",
+      "reason": "Non-breaking hyphen and en dash replaced."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013 Begin",
+      "replacement": "**Post-Quantum Preparedness**: Begin",
+      "reason": "Non-breaking hyphen and en dash replaced."
+    },
+    {
+      "original": "high\u2011value or long\u2011term",
+      "replacement": "high-value or long-term",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "**Resilience Engineering**: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize",
+      "reason": "En dash and em dashes replaced."
+    },
+    {
+      "original": "threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands",
+      "replacement": "threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands",
+      "reason": "Em dashes and non-breaking hyphens replaced."
+    },
+    {
+      "original": "quantum\u2011resistant cryptography",
+      "replacement": "quantum-resistant cryptography",
+      "reason": "Non-breaking hyphen replaced."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 6,
+    "output": 4824,
+    "cache_read": 53501,
+    "cache_write": 6832,
+    "reasoning": 0
+  },
+  "cost_usd": 0.08093009999999999,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_agent_status",
+      "arguments": {
+        "id": "none"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

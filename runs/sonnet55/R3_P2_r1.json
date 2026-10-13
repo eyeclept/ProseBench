@@ -1,0 +1,52 @@
+{
+  "run_id": "R3_P2_r1",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "97df56063d7db6ecd7171cf0abb7565523fd79786f873eb90bbbd22c1160a225",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:46:55.114804+00:00",
+  "duration_s": 5.668822395004099,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"'By accident' is the ordinary-knowledge antonym of 'on purpose', so the trailer adds nothing and is cut.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": null, \"reason\": \"'Non-spinning reserve' is a domain-specific term, so this trailer smuggles in a genuine distinction; flagged for the author to restate as its own sentence rather than cutting or rewriting it.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": null, \"reason\": \"The 'not a nameplate shortfall of wind' clause may carry a genuine, checkable distinction, but it leads the sentence and is already followed by a positive statement of cause, so I'm flagging it rather than deciding alone.\"}]}",
+  "edits": [
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'By accident' is the ordinary-knowledge antonym of 'on purpose', so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": null,
+      "reason": "'Non-spinning reserve' is a domain-specific term, so this trailer smuggles in a genuine distinction; flagged for the author to restate as its own sentence rather than cutting or rewriting it."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": null,
+      "reason": "The 'not a nameplate shortfall of wind' clause may carry a genuine, checkable distinction, but it leads the sentence and is already followed by a positive statement of cause, so I'm flagging it rather than deciding alone."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 363,
+    "cache_read": 23505,
+    "cache_write": 8289,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0391445,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,315 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:01:10.367252+00:00",
+  "duration_s": 83.54117616699659,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"**Power Systems: An Integral Backbone of Modern Civilization**\", \"replacement\": \"**Power Systems: The Backbone of Modern Civilization**\", \"reason\": \"\\\"Integral\\\" is a filler intensifier here; the title reads cleaner without it.\"}, {\"original\": \"humanity\u2019s ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap.\", \"replacement\": \"humanity's ability to generate, transmit, and use electrical energy has driven every major technological leap.\", \"reason\": \"Curly apostrophe must be ASCII, and \\\"has been the catalyst for\\\" is inflated-symbolism phrasing.\"}, {\"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network of generation facilities\", \"replacement\": \"The contemporary electric power system, called a *power system* for short, is a network of generation facilities\", \"reason\": \"Em dashes replaced with commas per the non-ASCII ban, \\\"simply\\\" is a banned intensifier, and \\\"elaborate\\\" adds no content.\"}, {\"original\": \"the architecture of modern power systems has evolved dramatically to accommodate larger scales\", \"replacement\": \"the architecture of modern power systems has changed to accommodate larger scales\", \"reason\": \"\\\"dramatically\\\" is a banned intensifier.\"}, {\"original\": \"examines the contemporary challenges they face, and explores emerging trends that promise to reshape the electrical grid for the next century.\", \"replacement\": \"examines the challenges they face, and looks at trends that will reshape the electrical grid over the next century.\", \"reason\": \"\\\"explores\\\" and \\\"promise to\\\" are AI-tell framing; \\\"emerging\\\" is redundant with the trend noun.\"}, {\"original\": \"deliver it safely to end\u2011users. Three core functions are universally recognized:\", \"replacement\": \"deliver it safely to end-users. Three core functions are standard:\", \"reason\": \"Non-breaking hyphen replaced with ASCII hyphen, and \\\"universally recognized\\\" is an unsupported absolute claim.\"}, {\"original\": \"each serving a specific purpose in minimizing losses while ensuring adequate reliability\", \"replacement\": \"each serving a purpose in minimizing losses while keeping reliability high enough\", \"reason\": \"\\\"adequate\\\" is vague hedging where the plain comparative states the requirement.\"}, {\"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms\", \"replacement\": \"A power system is physical infrastructure and also a socio-technical system with market mechanisms\", \"reason\": \"\\\"not merely X, but also Y\\\" is flagged structural phrasing, \\\"therefore\\\" and \\\"complex\\\" add nothing, and the non-breaking hyphen needs ASCII.\"}, {\"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\", \"replacement\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune cuts restoration time.\", \"reason\": \"\\\"significantly\\\" is a banned intensifier and the sentence repeats \\\"frequency restoration\\\".\"}, {\"original\": \"Robust control keeps voltage inside limits when plant parameters are uncertain.\", \"replacement\": \"Control keeps voltage inside limits when plant parameters are uncertain.\", \"reason\": \"\\\"Robust\\\" is a banned adjective and carries no information here.\"}, {\"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\", \"replacement\": \"Forecasts still miss cloud-driven ramps. Wind turbines\", \"reason\": \"The ellipsis glyph is banned non-ASCII punctuation; a period carries the same break.\"}, {\"original\": \"constitute a new portfolio of generation resources. Key distinctions from conventional plants include:\", \"replacement\": \"make up a wider set of generation resources. Differences from conventional plants include:\", \"reason\": \"\\\"Key\\\" is a banned filler adjective and \\\"new portfolio\\\" is inflated framing.\"}, {\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring extensive transmission networks\", \"reason\": \"\\\"robust\\\" is a banned adjective.\"}, {\"original\": \"Consequently, new control strategies (synthetic inertia, grid\u2011forming inverters) are required to maintain stability.\", \"replacement\": \"New control strategies (synthetic inertia, grid-forming inverters) are needed to keep the system stable.\", \"reason\": \"\\\"Consequently\\\" is a formulaic connector and the non-breaking hyphen needs ASCII.\"}, {\"original\": \"DERs can operate in grid\u2011connected mode, augmenting local supply, or in islanded mode, providing resilience during outages.\", \"replacement\": \"DERs can operate in grid-connected mode to add local supply, or in islanded mode to ride through outages.\", \"reason\": \"Non-breaking hyphen replaced with ASCII; \\\"augmenting\\\" and \\\"providing resilience\\\" are stilted nominalizations.\"}, {\"original\": \"Transmission serves to move bulk power from generators to regional load centers with minimum losses. High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.\", \"replacement\": \"Transmission moves bulk power from generators to regional load centers with minimum losses. Utilities use high voltages, usually 115 kV to 1,200 kV, because resistive losses (I^2R) fall as current decreases.\", \"reason\": \"Em dashes become commas, \\\"are employed\\\" becomes active voice, \\\"dramatically\\\" is a banned intensifier, and the superscript \u00b2 is outside a US keyboard.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\", \"replacement\": \"The 345 kV reconductor cuts line losses from 8 percent to 3 percent.\", \"reason\": \"\\\"significantly\\\" is a banned intensifier and the numbers already quantify the change.\"}, {\"original\": \"Modern transmission planning leverages *optimal power flow* (OPF) algorithms that consider constraints such as thermal limits\", \"replacement\": \"Modern transmission planning uses *optimal power flow* (OPF) algorithms that account for thermal limits\", \"reason\": \"\\\"leverages\\\" is a banned verb and \\\"consider constraints such as\\\" is padded.\"}, {\"original\": \"and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.\", \"replacement\": \"and unified power flow controllers (UPFC), give operators dynamic voltage and power-flow regulation and more capacity without building new lines.\", \"reason\": \"Em dash replaced with comma, non-breaking hyphen made ASCII, and \\\"enhancing\\\" is a banned verb form.\"}, {\"original\": \"Distribution networks are the \u201clast mile\u201d of the power system, delivering electricity at usable voltages\", \"replacement\": \"Distribution networks are the last mile of the power system, delivering electricity at usable voltages\", \"reason\": \"Curly quotes around a normal term are scare quotes plus non-ASCII characters.\"}, {\"original\": \"Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via step\u2011down transformers.\", \"replacement\": \"Reduce transmission-level voltages (for example 138 kV) to medium voltages (4 kV-35 kV) using step-down transformers.\", \"reason\": \"En dash in the range and non-breaking hyphens must be ASCII, and \\\"via\\\" reads better as \\\"using\\\".\"}, {\"original\": \"*mesh* or *looped* topologies are gaining favor for higher reliability.\", \"replacement\": \"*mesh* or *looped* topologies are spreading because they are more reliable.\", \"reason\": \"\\\"gaining favor\\\" is vague framing; the reason for adoption should be stated plainly.\"}, {\"original\": \"Protective relays and circuit breakers act as the grid\u2019s immune system, isolating faults within milliseconds\", \"replacement\": \"Protective relays and circuit breakers isolate faults within milliseconds\", \"reason\": \"Curly apostrophe fixed and the immune-system metaphor is a flagged elaborate comparison.\"}, {\"original\": \"paving the way for *wide\u2011area protection*\", \"replacement\": \"enabling *wide-area protection*\", \"reason\": \"\\\"paving the way for\\\" is a banned academic tell and the non-breaking hyphen needs ASCII.\"}, {\"original\": \"While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events\", \"replacement\": \"Electricity is expected to be always-on, yet extreme weather events\", \"reason\": \"Curly quotes are non-ASCII and this is scare quoting on a normal term.\"}, {\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\", \"replacement\": \"Frozen wellheads cut gas supply, and thermal units then tripped on auxiliary freeze.\", \"reason\": \"Em dash replaced with a comma and conjunction.\"}, {\"original\": \"The deregulated electricity market, while fostering competition, also introduces price volatility\", \"replacement\": \"The deregulated electricity market encourages competition but also introduces price volatility\", \"reason\": \"\\\"fostering\\\" is a banned verb and the \\\"while...also\\\" construction buries the point.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Planners design those upgrades deliberately.\", \"reason\": \"The original restates the obvious in a defensive tone; the direct version says the same thing.\"}, {\"original\": \"demonstrate the potential for coordinated digital assaults to trigger physical outages\", \"replacement\": \"show that coordinated digital assaults can trigger physical outages\", \"reason\": \"\\\"the potential for\\\" is weasel phrasing where a concrete capability claim is clearer.\"}, {\"original\": \"Smart grids combine pervasive sensing, two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network.\", \"replacement\": \"Smart grids combine dense sensing, two-way communication, and advanced analytics into a network that responds and optimizes itself.\", \"reason\": \"Non-breaking hyphens made ASCII and \\\"self-optimizing\\\" unpacked into plain language.\"}, {\"original\": \"granting operators unprecedented visibility of grid dynamics\", \"replacement\": \"giving operators visibility into grid dynamics they did not have before\", \"reason\": \"\\\"unprecedented\\\" is a banned superlative; the comparison should be stated explicitly.\"}, {\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance\", \"replacement\": \"Digital twins, detailed virtual replicas of physical grid assets, allow predictive maintenance\", \"reason\": \"Em dashes become commas, non-breaking hyphen made ASCII, and \\\"high-fidelity\\\" is marketing jargon.\"}, {\"original\": \"Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.\", \"replacement\": \"Long-duration storage matters most where VRE penetration is high.\", \"reason\": \"Non-breaking hyphen made ASCII and \\\"emerging as a cornerstone\\\" is inflated-symbolism phrasing.\"}, {\"original\": \"Storage enables *capacity firming* (smoothing renewable output), *spinning reserve* substitution, and *deferral* of costly transmission upgrades.\", \"replacement\": \"Storage firms renewable output, substitutes for spinning reserve, and defers costly transmission upgrades.\", \"reason\": \"Nominalized jargon turned into verbs, which removes the padding without losing meaning.\"}, {\"original\": \"a more holistic energy system emerges, smoothing demand peaks and unlocking new revenue streams for utilities.\", \"replacement\": \"the energy system works as a whole, smoothing demand peaks and opening new revenue streams for utilities.\", \"reason\": \"\\\"holistic\\\" is a banned adjective and \\\"unlocking\\\" is buzzword framing.\"}, {\"original\": \"exemplifies many of the concepts discussed.\", \"replacement\": \"puts many of these ideas to work.\", \"reason\": \"\\\"exemplifies...discussed\\\" is essay-signposting filler.\"}, {\"original\": \"The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.\", \"replacement\": \"The initiative shows that high VRE penetration holds up without lost reliability when strong transmission, advanced controls, and market integration exist together.\", \"reason\": \"\\\"robust\\\" is a banned adjective, \\\"co-exist\\\" has a non-ASCII hyphen, and the passive \\\"can be sustained\\\" is flattened.\"}, {\"original\": \"the power system will evolve from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.\", \"replacement\": \"the power system will move from a *centrally-controlled, one-way* network to a *decentralized, cyber-physical system* that ties electricity to heat, transport, and industry.\", \"reason\": \"\\\"ecosystem\\\" is banned in metaphorical use, \\\"seamlessly\\\" is a banned adjective, and the non-ASCII hyphens need replacing.\"}, {\"original\": \"Anticipated hallmarks include:\", \"replacement\": \"Expected features include:\", \"reason\": \"\\\"hallmarks\\\" is elevated vocabulary where a plain noun works.\"}, {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"Ice storms still take lines out of service for days; planners rewrite protection settings the following week and file new interconnection studies.\", \"reason\": \"Em dash replaced with a semicolon and the run-on clause repaired.\"}, {\"original\": \"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.\", \"replacement\": \"The challenges are large, but reliable power, lower emissions, and wider access to energy support durable economic growth.\", \"reason\": \"\\\"landscape\\\" is banned in metaphorical use, em dashes become commas, and \\\"promise to underpin...for generations to come\\\" is inflated closing rhetoric.\"}, {\"original\": \"Power systems lie at the heart of modern civilization, enabling everything from basic lighting to the sophisticated digital services that define the 21st century.\", \"replacement\": \"Power systems make modern civilization possible, from basic lighting to the digital services that define the 21st century.\", \"reason\": \"\\\"lie at the heart of\\\" is an inflated-symbolism phrase and \\\"sophisticated\\\" is a filler adjective.\"}, {\"original\": \"the composition of the grid is undergoing a profound transformation driven by renewable energy\", \"replacement\": \"what the grid is made of is changing fast, driven by renewable energy\", \"reason\": \"\\\"profound transformation\\\" is inflated framing where a plain statement is sharper.\"}, {\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\", \"replacement\": \"Meeting reliability, resilience, and market demands requires smart grids, energy storage, grid-forming inverters, and sound regulatory frameworks.\", \"reason\": \"\\\"Navigating\\\" is banned metaphorically, \\\"innovative\\\" and \\\"robust\\\" are banned adjectives, and em dashes become commas.\"}, {\"original\": \"As illustrated by successful regional interconnection projects, a coordinated approach that couples advanced engineering with forward\u2011looking policy can sustain the grid\u2019s reliability while embracing clean energy.\", \"replacement\": \"Regional interconnection projects show that pairing engineering with sensible policy keeps the grid reliable as it takes on clean energy.\", \"reason\": \"\\\"As illustrated by\\\" is a banned reference frame, \\\"forward-looking\\\" and the curly apostrophe need fixing, and \\\"embracing\\\" is personification.\"}, {\"original\": \"The next century\u2019s power system will be more flexible, intelligent, and interconnected than any predecessor, providing the platform upon which future societies will build their economies, climate\u2011friendly technologies, and improved quality of life.\", \"replacement\": \"The next century's power system will be more flexible, smarter, and more interconnected than any before it, and societies will build their economies and clean technology on it.\", \"reason\": \"Curly apostrophes and non-ASCII hyphen fixed, and \\\"providing the platform upon which\\\" is inflated closing symbolism.\"}]}",
+  "edits": [
+    {
+      "original": "**Power Systems: An Integral Backbone of Modern Civilization**",
+      "replacement": "**Power Systems: The Backbone of Modern Civilization**",
+      "reason": "\"Integral\" is a filler intensifier here; the title reads cleaner without it."
+    },
+    {
+      "original": "humanity\u2019s ability to generate, transmit, and use electrical energy has been the catalyst for every major technological leap.",
+      "replacement": "humanity's ability to generate, transmit, and use electrical energy has driven every major technological leap.",
+      "reason": "Curly apostrophe must be ASCII, and \"has been the catalyst for\" is inflated-symbolism phrasing."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network of generation facilities",
+      "replacement": "The contemporary electric power system, called a *power system* for short, is a network of generation facilities",
+      "reason": "Em dashes replaced with commas per the non-ASCII ban, \"simply\" is a banned intensifier, and \"elaborate\" adds no content."
+    },
+    {
+      "original": "the architecture of modern power systems has evolved dramatically to accommodate larger scales",
+      "replacement": "the architecture of modern power systems has changed to accommodate larger scales",
+      "reason": "\"dramatically\" is a banned intensifier."
+    },
+    {
+      "original": "examines the contemporary challenges they face, and explores emerging trends that promise to reshape the electrical grid for the next century.",
+      "replacement": "examines the challenges they face, and looks at trends that will reshape the electrical grid over the next century.",
+      "reason": "\"explores\" and \"promise to\" are AI-tell framing; \"emerging\" is redundant with the trend noun."
+    },
+    {
+      "original": "deliver it safely to end\u2011users. Three core functions are universally recognized:",
+      "replacement": "deliver it safely to end-users. Three core functions are standard:",
+      "reason": "Non-breaking hyphen replaced with ASCII hyphen, and \"universally recognized\" is an unsupported absolute claim."
+    },
+    {
+      "original": "each serving a specific purpose in minimizing losses while ensuring adequate reliability",
+      "replacement": "each serving a purpose in minimizing losses while keeping reliability high enough",
+      "reason": "\"adequate\" is vague hedging where the plain comparative states the requirement."
+    },
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms",
+      "replacement": "A power system is physical infrastructure and also a socio-technical system with market mechanisms",
+      "reason": "\"not merely X, but also Y\" is flagged structural phrasing, \"therefore\" and \"complex\" add nothing, and the non-breaking hyphen needs ASCII."
+    },
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune cuts restoration time.",
+      "reason": "\"significantly\" is a banned intensifier and the sentence repeats \"frequency restoration\"."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits when plant parameters are uncertain.",
+      "replacement": "Control keeps voltage inside limits when plant parameters are uncertain.",
+      "reason": "\"Robust\" is a banned adjective and carries no information here."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps. Wind turbines",
+      "reason": "The ellipsis glyph is banned non-ASCII punctuation; a period carries the same break."
+    },
+    {
+      "original": "constitute a new portfolio of generation resources. Key distinctions from conventional plants include:",
+      "replacement": "make up a wider set of generation resources. Differences from conventional plants include:",
+      "reason": "\"Key\" is a banned filler adjective and \"new portfolio\" is inflated framing."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring extensive transmission networks",
+      "reason": "\"robust\" is a banned adjective."
+    },
+    {
+      "original": "Consequently, new control strategies (synthetic inertia, grid\u2011forming inverters) are required to maintain stability.",
+      "replacement": "New control strategies (synthetic inertia, grid-forming inverters) are needed to keep the system stable.",
+      "reason": "\"Consequently\" is a formulaic connector and the non-breaking hyphen needs ASCII."
+    },
+    {
+      "original": "DERs can operate in grid\u2011connected mode, augmenting local supply, or in islanded mode, providing resilience during outages.",
+      "replacement": "DERs can operate in grid-connected mode to add local supply, or in islanded mode to ride through outages.",
+      "reason": "Non-breaking hyphen replaced with ASCII; \"augmenting\" and \"providing resilience\" are stilted nominalizations."
+    },
+    {
+      "original": "Transmission serves to move bulk power from generators to regional load centers with minimum losses. High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.",
+      "replacement": "Transmission moves bulk power from generators to regional load centers with minimum losses. Utilities use high voltages, usually 115 kV to 1,200 kV, because resistive losses (I^2R) fall as current decreases.",
+      "reason": "Em dashes become commas, \"are employed\" becomes active voice, \"dramatically\" is a banned intensifier, and the superscript \u00b2 is outside a US keyboard."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor cuts line losses from 8 percent to 3 percent.",
+      "reason": "\"significantly\" is a banned intensifier and the numbers already quantify the change."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow* (OPF) algorithms that consider constraints such as thermal limits",
+      "replacement": "Modern transmission planning uses *optimal power flow* (OPF) algorithms that account for thermal limits",
+      "reason": "\"leverages\" is a banned verb and \"consider constraints such as\" is padded."
+    },
+    {
+      "original": "and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.",
+      "replacement": "and unified power flow controllers (UPFC), give operators dynamic voltage and power-flow regulation and more capacity without building new lines.",
+      "reason": "Em dash replaced with comma, non-breaking hyphen made ASCII, and \"enhancing\" is a banned verb form."
+    },
+    {
+      "original": "Distribution networks are the \u201clast mile\u201d of the power system, delivering electricity at usable voltages",
+      "replacement": "Distribution networks are the last mile of the power system, delivering electricity at usable voltages",
+      "reason": "Curly quotes around a normal term are scare quotes plus non-ASCII characters."
+    },
+    {
+      "original": "Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via step\u2011down transformers.",
+      "replacement": "Reduce transmission-level voltages (for example 138 kV) to medium voltages (4 kV-35 kV) using step-down transformers.",
+      "reason": "En dash in the range and non-breaking hyphens must be ASCII, and \"via\" reads better as \"using\"."
+    },
+    {
+      "original": "*mesh* or *looped* topologies are gaining favor for higher reliability.",
+      "replacement": "*mesh* or *looped* topologies are spreading because they are more reliable.",
+      "reason": "\"gaining favor\" is vague framing; the reason for adoption should be stated plainly."
+    },
+    {
+      "original": "Protective relays and circuit breakers act as the grid\u2019s immune system, isolating faults within milliseconds",
+      "replacement": "Protective relays and circuit breakers isolate faults within milliseconds",
+      "reason": "Curly apostrophe fixed and the immune-system metaphor is a flagged elaborate comparison."
+    },
+    {
+      "original": "paving the way for *wide\u2011area protection*",
+      "replacement": "enabling *wide-area protection*",
+      "reason": "\"paving the way for\" is a banned academic tell and the non-breaking hyphen needs ASCII."
+    },
+    {
+      "original": "While electricity is expected to be \u201calways\u2011on,\u201d extreme weather events",
+      "replacement": "Electricity is expected to be always-on, yet extreme weather events",
+      "reason": "Curly quotes are non-ASCII and this is scare quoting on a normal term."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen wellheads cut gas supply, and thermal units then tripped on auxiliary freeze.",
+      "reason": "Em dash replaced with a comma and conjunction."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition, also introduces price volatility",
+      "replacement": "The deregulated electricity market encourages competition but also introduces price volatility",
+      "reason": "\"fostering\" is a banned verb and the \"while...also\" construction buries the point."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Planners design those upgrades deliberately.",
+      "reason": "The original restates the obvious in a defensive tone; the direct version says the same thing."
+    },
+    {
+      "original": "demonstrate the potential for coordinated digital assaults to trigger physical outages",
+      "replacement": "show that coordinated digital assaults can trigger physical outages",
+      "reason": "\"the potential for\" is weasel phrasing where a concrete capability claim is clearer."
+    },
+    {
+      "original": "Smart grids combine pervasive sensing, two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network.",
+      "replacement": "Smart grids combine dense sensing, two-way communication, and advanced analytics into a network that responds and optimizes itself.",
+      "reason": "Non-breaking hyphens made ASCII and \"self-optimizing\" unpacked into plain language."
+    },
+    {
+      "original": "granting operators unprecedented visibility of grid dynamics",
+      "replacement": "giving operators visibility into grid dynamics they did not have before",
+      "reason": "\"unprecedented\" is a banned superlative; the comparison should be stated explicitly."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance",
+      "replacement": "Digital twins, detailed virtual replicas of physical grid assets, allow predictive maintenance",
+      "reason": "Em dashes become commas, non-breaking hyphen made ASCII, and \"high-fidelity\" is marketing jargon."
+    },
+    {
+      "original": "Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.",
+      "replacement": "Long-duration storage matters most where VRE penetration is high.",
+      "reason": "Non-breaking hyphen made ASCII and \"emerging as a cornerstone\" is inflated-symbolism phrasing."
+    },
+    {
+      "original": "Storage enables *capacity firming* (smoothing renewable output), *spinning reserve* substitution, and *deferral* of costly transmission upgrades.",
+      "replacement": "Storage firms renewable output, substitutes for spinning reserve, and defers costly transmission upgrades.",
+      "reason": "Nominalized jargon turned into verbs, which removes the padding without losing meaning."
+    },
+    {
+      "original": "a more holistic energy system emerges, smoothing demand peaks and unlocking new revenue streams for utilities.",
+      "replacement": "the energy system works as a whole, smoothing demand peaks and opening new revenue streams for utilities.",
+      "reason": "\"holistic\" is a banned adjective and \"unlocking\" is buzzword framing."
+    },
+    {
+      "original": "exemplifies many of the concepts discussed.",
+      "replacement": "puts many of these ideas to work.",
+      "reason": "\"exemplifies...discussed\" is essay-signposting filler."
+    },
+    {
+      "original": "The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "replacement": "The initiative shows that high VRE penetration holds up without lost reliability when strong transmission, advanced controls, and market integration exist together.",
+      "reason": "\"robust\" is a banned adjective, \"co-exist\" has a non-ASCII hyphen, and the passive \"can be sustained\" is flattened."
+    },
+    {
+      "original": "the power system will evolve from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.",
+      "replacement": "the power system will move from a *centrally-controlled, one-way* network to a *decentralized, cyber-physical system* that ties electricity to heat, transport, and industry.",
+      "reason": "\"ecosystem\" is banned in metaphorical use, \"seamlessly\" is a banned adjective, and the non-ASCII hyphens need replacing."
+    },
+    {
+      "original": "Anticipated hallmarks include:",
+      "replacement": "Expected features include:",
+      "reason": "\"hallmarks\" is elevated vocabulary where a plain noun works."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still take lines out of service for days; planners rewrite protection settings the following week and file new interconnection studies.",
+      "reason": "Em dash replaced with a semicolon and the run-on clause repaired."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.",
+      "replacement": "The challenges are large, but reliable power, lower emissions, and wider access to energy support durable economic growth.",
+      "reason": "\"landscape\" is banned in metaphorical use, em dashes become commas, and \"promise to underpin...for generations to come\" is inflated closing rhetoric."
+    },
+    {
+      "original": "Power systems lie at the heart of modern civilization, enabling everything from basic lighting to the sophisticated digital services that define the 21st century.",
+      "replacement": "Power systems make modern civilization possible, from basic lighting to the digital services that define the 21st century.",
+      "reason": "\"lie at the heart of\" is an inflated-symbolism phrase and \"sophisticated\" is a filler adjective."
+    },
+    {
+      "original": "the composition of the grid is undergoing a profound transformation driven by renewable energy",
+      "replacement": "what the grid is made of is changing fast, driven by renewable energy",
+      "reason": "\"profound transformation\" is inflated framing where a plain statement is sharper."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Meeting reliability, resilience, and market demands requires smart grids, energy storage, grid-forming inverters, and sound regulatory frameworks.",
+      "reason": "\"Navigating\" is banned metaphorically, \"innovative\" and \"robust\" are banned adjectives, and em dashes become commas."
+    },
+    {
+      "original": "As illustrated by successful regional interconnection projects, a coordinated approach that couples advanced engineering with forward\u2011looking policy can sustain the grid\u2019s reliability while embracing clean energy.",
+      "replacement": "Regional interconnection projects show that pairing engineering with sensible policy keeps the grid reliable as it takes on clean energy.",
+      "reason": "\"As illustrated by\" is a banned reference frame, \"forward-looking\" and the curly apostrophe need fixing, and \"embracing\" is personification."
+    },
+    {
+      "original": "The next century\u2019s power system will be more flexible, intelligent, and interconnected than any predecessor, providing the platform upon which future societies will build their economies, climate\u2011friendly technologies, and improved quality of life.",
+      "replacement": "The next century's power system will be more flexible, smarter, and more interconnected than any before it, and societies will build their economies and clean technology on it.",
+      "reason": "Curly apostrophes and non-ASCII hyphen fixed, and \"providing the platform upon which\" is inflated closing symbolism."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 8145,
+    "output": 4027,
+    "cache_read": 109824,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.004871624,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://www.firecrawl.dev",
+        "formats": [
+          "markdown"
+        ],
+        "objective": "check tool availability while editing text",
+        "toolDetail": "compact"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_find_tools",
+      "arguments": {
+        "objective": "confirm whether any provider is available for a copy-editing task",
+        "level": "categories"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_find_tools",
+      "arguments": {
+        "objective": "check for any text-editing capability before finalizing edits",
+        "query": "copy editing grammar style checking of prose",
+        "limit": 5
+      }
+    },
+    {
+      "name": "mcp__firecrawl_feedback",
+      "arguments": {
+        "endpoint": "alexandria",
+        "rating": "good",
+        "objective": "Apply a banned-words copy-editing rule to an essay about power systems",
+        "requestedWebsite": {
+          "url": "https://www.firecrawl.dev",
+          "requestedFunctionality": "Find whether any data provider supports prose style or grammar editing"
+        },
+        "rationale": "The semantic query returned zero matching tools, which is the correct outcome: no provider in the catalogue handles copy editing. The abstained rerank and clear suggestion text made it obvious that I should proceed with local text analysis rather than search further.",
+        "capabilityFeedback": [
+          {
+            "name": "find-tools",
+            "provider": "firecrawl",
+            "issue": "other",
+            "why": "No gap; correctly returned an empty result for a task outside the catalogue's scope."
+          }
+        ]
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

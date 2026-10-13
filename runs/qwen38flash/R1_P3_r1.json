@@ -1,0 +1,383 @@
+{
+  "run_id": "R1_P3_r1",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:13:29.239819+00:00",
+  "duration_s": 86.81561895500636,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Botany: The Science of Plant Life and Its Central Role in a Sustainable Future\", \"replacement\": \"Botany: The Science of Plant Life and Its Role in a Sustainable Future\", \"reason\": \"\\\"Central Role in\\\" is the inflated-symbolism construction \\\"play a significant role in shaping\\\"; trimmed to a plain claim.\"}, {\"original\": \"In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.\", \"replacement\": \"With rapid environmental change, food insecurity, and dwindling natural resources, an accurate understanding of plant biology is not academic trivia; it is necessary for the survival and well-being of humanity.\", \"reason\": \"\\\"In an era of\\\" is a banned opening phrase, \\\"comprehensive\\\" is a discouraged adjective, and the em dash is a banned character.\"}, {\"original\": \"exploring the fundamental processes that govern plant life\", \"replacement\": \"exploring the basic processes that govern plant life\", \"reason\": \"\\\"Fundamental\\\" is on the prefer-other-words intensifier list; \\\"basic\\\" reads plainly here.\"}, {\"original\": \"and highlighting the discipline\u2019s contemporary relevance\", \"replacement\": \"and showing the discipline's contemporary relevance\", \"reason\": \"The curly apostrophe must be replaced with a straight one, and \\\"highlighting\\\" was swapped for a plainer verb.\"}, {\"original\": \"is often hailed as the \u201cfather of botany\u201d for his systematic treatises\", \"replacement\": \"is often called the \\\"father of botany\\\" for his systematic treatises\", \"reason\": \"Curly quotes are banned characters and \\\"hailed\\\" inflates a plain attribution.\"}, {\"original\": \"which described plant morphology, reproduction, and habitat preferences. During the Renaissance, the invention of the microscope opened a new realm of observation;\", \"replacement\": \"which described plant morphology, reproduction, and habitat preferences. During the Renaissance, the invention of the microscope widened what could be observed;\", \"reason\": \"\\\"Realm\\\" is banned in its inflated-metaphor use, and the semicolon keeps the sentence structure.\"}, {\"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\", \"replacement\": \"Herbarium staff still mark sterile Carex sheets as undetermined until a fruiting collection arrives.\", \"reason\": \"The ellipsis glyph is a banned character and the pause adds nothing.\"}, {\"original\": \"marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.\", \"replacement\": \"made Arabidopsis the standard model organism for plant genetics and set up high-throughput functional genomics.\", \"reason\": \"\\\"Watershed moment\\\" and \\\"pave the way for\\\" are both banned phrases, and the en-dash-style hyphen needed ASCII cleanup.\"}, {\"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\", \"replacement\": \"A careful regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\", \"reason\": \"\\\"Robust\\\" is a discouraged adjective; here it can be dropped without losing accuracy.\"}, {\"original\": \"so the change significantly streamlines cell-wall composition analysis.\", \"replacement\": \"so the change cuts cell-wall composition analysis from 40 minutes to 6.\", \"reason\": \"\\\"Significantly\\\" and \\\"streamline\\\" are both banned words, and the concrete figure already exists in the sentence.\"}, {\"original\": \"providing photosynthetic capacity, flexibility, and mechanical strength, respectively\", \"replacement\": \"supplying photosynthetic capacity, flexibility, and mechanical strength, in that order\", \"reason\": \"\\\"Respectively\\\" is stiff academic phrasing; \\\"in that order\\\" says the same thing plainly.\"}, {\"original\": \"The ATP and NADPH generated are then utilized in the Calvin\u2011Benson cycle within the stroma, where CO\u2082 is fixed by the enzyme ribulose\u20111,5\u2011bisphosphate carboxylase/oxygenase (Rubisco) into 3\u2011phosphoglycerate, subsequently reduced to glyceraldehyde\u20113\u2011phosphate (G3P).\", \"replacement\": \"The ATP and NADPH produced then drive the Calvin-Benson cycle within the stroma, where CO2 is fixed by the enzyme ribulose-1,5-bisphosphate carboxylase/oxygenase (Rubisco) into 3-phosphoglycerate, then reduced to glyceraldehyde-3-phosphate (G3P).\", \"reason\": \"\\\"Utilized\\\" and \\\"subsequently\\\" are banned, and the non-breaking hyphens plus subscript glyph are outside a standard US keyboard.\"}, {\"original\": \"cellulose, and a myriad of secondary metabolites\", \"replacement\": \"cellulose, and many other secondary metabolites\", \"reason\": \"\\\"A myriad of\\\" is inflated phrasing; \\\"many other\\\" is the plain equivalent.\"}, {\"original\": \"Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.\", \"replacement\": \"Improving crop yields and developing bioenergy feedstocks depend on these mechanisms.\", \"reason\": \"\\\"Pivotal\\\" is a discouraged adjective, and the rewrite states the dependency directly.\"}, {\"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"Carbon-concentrating mechanisms come in two forms: C4 plants split the work between mesophyll and bundle-sheath cells, while CAM plants open their stomata at night.\", \"reason\": \"The original repeats itself and leans on the jargon \\\"regime\\\"; this states the C4 and CAM distinction once.\"}, {\"original\": \"Modern classification reflects both morphological traits and molecular phylogenetics, dividing plants into several major clades:\", \"replacement\": \"Modern classification uses morphological traits and molecular phylogenetics to divide plants into several major clades:\", \"reason\": \"\\\"Reflects\\\" was vague and the \\\"both...and\\\" frame added no information.\"}, {\"original\": \"They are polyphyletic, representing several lineages that gave rise to land plants.\", \"replacement\": \"They are polyphyletic, spread across several lineages, only some of which gave rise to land plants.\", \"reason\": \"The original implies every algal lineage led to land plants, which is wrong.\"}, {\"original\": \"Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic, leading to the recognition of the clade **eudicots**.\", \"replacement\": \"Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have clarified plant relationships: the monocot group is monophyletic, while the traditional dicots are paraphyletic, which is why the clade **eudicots** was defined.\", \"reason\": \"The curly quotes are banned characters, the scattered scare-quote framing was cleaned up, and \\\"refined our understanding\\\" was flattened.\"}, {\"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\", \"replacement\": \"The seedlings bolted in week 3 and never formed heads, so the market rejected the entire lot.\", \"reason\": \"The sentence ran together without a conjunction and used a banned em dash.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces rather than named cultivars.\", \"reason\": \"\\\"Heirlooms\\\" is not a taxonomic category opposed to landraces, and the comma before \\\"rather than\\\" was spurious.\"}, {\"original\": \"Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account for the majority of global caloric intake.\", \"replacement\": \"Staple crops (wheat, rice, maize, sorghum, and millet) account for most global caloric intake.\", \"reason\": \"Em dashes are banned characters; parentheses carry the same list cleanly.\"}, {\"original\": \"dramatically increased food production, averting famines in many regions\", \"replacement\": \"raised food production enough to avert famines in many regions\", \"reason\": \"\\\"Dramatically\\\" is a banned intensifier, and the rewrite names the effect instead.\"}, {\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders selected dwarfing alleles deliberately.\", \"reason\": \"The \\\"rather than\\\" construction restates the obvious half of the sentence.\"}, {\"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years\", \"replacement\": \"so supplemental irrigation cuts yield loss in dry years\", \"reason\": \"\\\"Dramatically\\\" is a banned intensifier and the figures earlier in the sentence already quantify the drop.\"}, {\"original\": \"Plants have furnished humanity with a vast pharmacopeia.\", \"replacement\": \"Plants have supplied humanity with a large drug arsenal.\", \"reason\": \"\\\"Furnished\\\" and \\\"vast pharmacopeia\\\" were inflated; note that the passage also spells this word \\\"pharmacopoeias\\\" earlier, so pick one spelling.\"}, {\"original\": \"Classic examples include the analgesic morphine from *Papaver somniferum*, the antimalarial quinine from *Cinchona* bark, and the anticancer agent paclitaxel from the Pacific yew (*Taxus brevifolia*). Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Classic examples include the analgesic morphine from *Papaver somniferum* latex, the antimalarial quinine from *Cinchona* bark, and the anticancer agent paclitaxel from the Pacific yew (*Taxus brevifolia*).\", \"reason\": \"The trailing sentence corrects an error the preceding list never made, so it was deleted and the source detail folded into the list.\"}, {\"original\": \"for therapeutic leads. Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, facilitating scalable production of valuable compounds while preserving wild populations.\", \"replacement\": \"for therapeutic leads. Metabolomics and synthetic biology now let researchers rebuild complex plant pathways in microbial hosts, which scales up production of useful compounds and takes pressure off wild populations.\", \"reason\": \"\\\"Facilitating\\\" is a banned verb and \\\"valuable compounds\\\" is the flagged \\\"provide a valuable insight\\\" family of phrasing.\"}, {\"original\": \"Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon\u2011sequestering alternatives to steel and concrete.\", \"replacement\": \"Wood, bamboo, hemp, and other plant fibers are renewable building materials that store carbon, which makes them alternatives to steel and concrete.\", \"reason\": \"The hyphen in \\\"carbon-sequestering\\\" was a non-ASCII character and \\\"constitute\\\" was stiff.\"}, {\"original\": \"Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**, serving as feedstock for biofuels\", \"replacement\": \"Lignocellulosic biomass is also central to the emerging **bioeconomy**, providing feedstock for biofuels\", \"reason\": \"\\\"Moreover\\\" is a banned connector and \\\"cornerstone\\\" was an inflated metaphor.\"}, {\"original\": \"areas where plant scientists collaborate closely with engineers and chemists\", \"replacement\": \"areas that need plant scientists working alongside engineers and chemists\", \"reason\": \"\\\"Collaborate closely\\\" is filler; the rewrite names who works with whom.\"}, {\"original\": \"Plants shape ecosystems through a suite of services that underpin planetary health.\", \"replacement\": \"Plants deliver services that keep the biosphere functioning.\", \"reason\": \"\\\"Suite of\\\" and \\\"underpin planetary health\\\" are inflated; the replacement is concrete.\"}, {\"original\": \"offsetting a substantial portion of anthropogenic emissions\", \"replacement\": \"offsetting much of the CO2 released by human activity\", \"reason\": \"\\\"Substantial portion\\\" and \\\"anthropogenic\\\" hedge and obscure; naming the gas and the source is clearer.\"}, {\"original\": \"reducing erosion and enhancing fertility\", \"replacement\": \"reducing erosion and improving soil fertility\", \"reason\": \"\\\"Enhance\\\" is a banned verb.\"}, {\"original\": \"Mychorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange and improve plant resilience.\", \"replacement\": \"Mycorrhizal associations, symbioses between plant roots and fungi, move nutrients both ways and help plants withstand stress.\", \"reason\": \"Em dashes are banned characters and \\\"facilitate\\\" is a banned verb; the original also misspelled \\\"Mycorrhizal,\\\" which is corrected here.\"}, {\"original\": \"Vegetation influences water infiltration, evapotranspiration, and runoff patterns, thereby moderating flood risk and maintaining groundwater recharge.\", \"replacement\": \"Vegetation changes how water infiltrates, evaporates, and runs off, which lowers flood risk and keeps groundwater recharging.\", \"reason\": \"\\\"Thereby moderating\\\" is academic padding; the causal chain reads better as plain verbs.\"}, {\"original\": \"Plants create structural complexity that supports diverse animal communities\", \"replacement\": \"Plants build physical structure that supports varied animal communities\", \"reason\": \"\\\"Structural complexity\\\" is abstract jargon for a concrete feature.\"}, {\"original\": \"natural landscapes provide recreation, mental health benefits, and spiritual connections, underscoring the non\u2011material importance of plant life.\", \"replacement\": \"natural landscapes provide recreation, mental health benefits, and spiritual value beyond their material uses.\", \"reason\": \"\\\"Underscore\\\" is a banned verb and the hyphen in \\\"non-material\\\" was non-ASCII.\"}, {\"original\": \"leading to biodiversity loss, altered climate feedbacks, and reduced ecosystem resilience\", \"replacement\": \"which reduces biodiversity, changes climate feedbacks, and weakens the ability of ecosystems to recover\", \"reason\": \"Three stacked noun phrases were converted to verbs so each consequence is legible.\"}, {\"original\": \"Botany, therefore, plays a pivotal role in restoration ecology, guiding the selection of appropriate native species\", \"replacement\": \"Botany is therefore central to restoration ecology, which needs the right native species chosen\", \"reason\": \"\\\"Plays a pivotal role in\\\" combines a banned adjective with the \\\"play a significant role in shaping\\\" construction.\"}, {\"original\": \"The advent of next\u2011generation sequencing (NGS) has democratized whole\u2011genome analysis across a broad spectrum of species.\", \"replacement\": \"Next-generation sequencing (NGS) made whole-genome analysis available for far more species.\", \"reason\": \"Non-ASCII hyphens, \\\"the advent of,\\\" and \\\"a broad spectrum of\\\" were all replaced with plain wording.\"}, {\"original\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks that predict plant responses to environmental cues.\", \"replacement\": \"Systems biology combines transcriptomics, proteomics, metabolomics, and phenomics into models that predict how plants respond to environmental conditions.\", \"reason\": \"\\\"Comprehensive\\\" is a banned adjective and \\\"construct networks\\\" overstates what the models do.\"}, {\"original\": \"Machine learning algorithms now assist in deciphering these high\u2011dimensional datasets, accelerating the identification of candidate genes for crop improvement.\", \"replacement\": \"Machine learning now sorts these large datasets, which speeds up finding candidate genes for crop improvement.\", \"reason\": \"\\\"Assist in deciphering,\\\" \\\"high-dimensional,\\\" and \\\"accelerating the identification of\\\" are all padded nominalizations.\"}, {\"original\": \"By assembling modular genetic circuits, scientists can engineer plants to produce novel compounds (e.g., pharmaceuticals, industrial enzymes) or to enhance existing traits (e.g., increased oil content in seed crops).\", \"replacement\": \"Assembling modular genetic circuits lets scientists engineer plants to make new compounds such as pharmaceuticals and industrial enzymes, or to push existing traits such as oil content in seed crops.\", \"reason\": \"Starting the sentence with \\\"By [gerund]\\\" is a flagged structure, \\\"enhance\\\" is banned, and \\\"e.g.\\\" inside parentheses was flattened.\"}, {\"original\": \"enables high\u2011level expression of foreign genes, leveraging the organelle\u2019s prokaryotic-like gene expression system and maternal inheritance to mitigate gene flow concerns.\", \"replacement\": \"allows very high expression of foreign genes, because the organelle uses a prokaryote-style expression system and passes genes maternally, which limits escape into pollen.\", \"reason\": \"\\\"Leverage\\\" and the possessive curly apostrophe are banned, and the non-ASCII hyphen in \\\"high-level\\\" was fixed.\"}, {\"original\": \"the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is a burgeoning field\", \"replacement\": \"the ability of plants to recall earlier drought or heat and respond harder the next time; this is a fast-growing field\", \"reason\": \"Scare quotes on a normal word are banned, \\\"robust\\\" and \\\"burgeoning\\\" are discouraged, and the em dash and non-ASCII hyphen were removed.\"}, {\"original\": \"Epigenetic modifications (DNA methylation, histone acetylation) and small RNAs are implicated in this transgenerational acclimation.\", \"replacement\": \"DNA methylation, histone acetylation, and small RNAs carry this acclimation across generations.\", \"reason\": \"\\\"Are implicated in\\\" hedges a documented mechanism and the parenthetical list read as clutter.\"}, {\"original\": \"Harnessing these mechanisms could produce crops that maintain yields under erratic weather patterns.\", \"replacement\": \"Breeding on these mechanisms should give crops that hold yields through erratic seasons.\", \"reason\": \"\\\"Harnessing\\\" is inflated and \\\"could\\\" hedged the claim; the threshold for hedging favors a direct statement.\"}, {\"original\": \"The plant microbiome, encompassing rhizosphere, phyllosphere, and endophytic communities, profoundly influences plant health.\", \"replacement\": \"The plant microbiome, which covers root, leaf-surface, and internal communities, strongly affects plant health.\", \"reason\": \"\\\"Encompassing,\\\" \\\"profoundly,\\\" and three jargon nouns were replaced with plain equivalents.\"}, {\"original\": \"Recent research demonstrates that inoculating crops with beneficial microbes (e.g., nitrogen\u2011fixing bacteria, mycorrhizal fungi) can reduce fertilizer dependence and improve stress tolerance.\", \"replacement\": \"Inoculating crops with helpful microbes such as nitrogen-fixing bacteria and mycorrhizal fungi cuts fertilizer need and improves stress tolerance.\", \"reason\": \"\\\"Recent research demonstrates that\\\" is a filler frame and the non-ASCII hyphen needed fixing.\"}, {\"original\": \"Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes to sustainable agricultural practices.\", \"replacement\": \"Reading the chemical signals plants and microbes trade, such as strigolactones and flavonoids, points toward lower-input farming.\", \"reason\": \"Em dashes are banned, \\\"molecular dialogues\\\" was decorative, and \\\"sustainable agricultural practices\\\" is vaguer than naming the input reduction.\"}, {\"original\": \"While the promise of botanical science is immense, several challenges must be addressed.\", \"replacement\": \"Botanical science offers real gains, but four problems sit in the way.\", \"reason\": \"\\\"The promise ... is immense\\\" and \\\"must be addressed\\\" are stock phrasing; naming the count sets up the list.\"}, {\"original\": \"threatening countless plant species before they are even described. The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.\", \"replacement\": \"endangering plant species that have never been described. Losing those species narrows the trait pool available for breeding and biotechnology.\", \"reason\": \"\\\"Countless\\\" overstates and \\\"biotechnological exploitation\\\" is heavy nominalization.\"}, {\"original\": \"Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.\", \"replacement\": \"Benefit-sharing agreements and the Nagoya Protocol set the terms for lawful collection.\", \"reason\": \"The non-ASCII hyphen was fixed, \\\"utilization\\\" is banned, and \\\"essential to ensure\\\" hedged a legal requirement.\"}, {\"original\": \"CRISPR\u2011based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a delicate task for policymakers and scientists alike.\", \"replacement\": \"CRISPR edits in crops raise arguments about regulation, labeling, and consumer acceptance, and about how much caution rules should require.\", \"reason\": \"The non-ASCII hyphen was fixed and the second sentence restated the first as a \\\"delicate task\\\" clich\u00e9.\"}, {\"original\": \"Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.\", \"replacement\": \"Models need realistic plant responses to project ecosystem effects.\", \"reason\": \"\\\"Complex\\\" and \\\"accurately\\\" add nothing to the requirement.\"}, {\"original\": \"Addressing these issues requires interdisciplinary collaboration, robust public engagement, and policies that integrate scientific evidence with socio\u2011economic realities.\", \"replacement\": \"These problems need work across fields, honest public involvement, and policy grounded in evidence.\", \"reason\": \"\\\"Robust\\\" is banned, \\\"socio-economic\\\" used a non-ASCII hyphen, and \\\"integrate ... realities\\\" is abstraction.\"}, {\"original\": \"Looking ahead, botany will increasingly intersect with digital technologies, data science, and global sustainability agendas.\", \"replacement\": \"Botany is converging with digital tools, data science, and national land-use policy.\", \"reason\": \"\\\"Looking ahead\\\" is filler and \\\"global sustainability agendas\\\" is vague.\"}, {\"original\": \"**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable real\u2011time monitoring of plant health, optimizing inputs and reducing waste.\", \"replacement\": \"**Precision agriculture** uses satellite imagery, drones, and soil sensors to track plant health continuously, which trims water and fertilizer use.\", \"reason\": \"Em dashes are banned, \\\"leveraging\\\" is a banned verb, and \\\"optimizing inputs and reducing waste\\\" named nothing specific.\"}, {\"original\": \"empower the public to contribute observations, expanding biodiversity databases and fostering environmental stewardship.\", \"replacement\": \"let the public submit observations, which grows biodiversity databases and gets more people involved in local habitats.\", \"reason\": \"\\\"Empower\\\" and \\\"fostering\\\" are inflated, and \\\"environmental stewardship\\\" is a stock phrase.\"}, {\"original\": \"Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will become central to land\u2011use planning.\", \"replacement\": \"Plants bred or chosen to hold productivity through hotter, drier seasons will factor into land-use planning.\", \"reason\": \"\\\"Moreover\\\" is a banned connector, the scare quotes around \\\"climate-smart\\\" are banned, and three non-ASCII hyphens needed replacing.\"}, {\"original\": \"will rely on botanical expertise to select species that maximize cooling, air purification, and food production in densely populated areas.\", \"replacement\": \"will depend on plant knowledge to pick species that cool buildings, filter airborne particles, and grow food where people live.\", \"reason\": \"\\\"Maximize\\\" and \\\"densely populated areas\\\" were flattened into the actual outcomes.\"}, {\"original\": \"Finally, education and outreach will be vital. By integrating plant science into curricula from early schooling through higher education, societies can cultivate a generation that appreciates the indispensable role of plants and is equipped to innovate responsibly.\", \"replacement\": \"Plant science belongs in school curricula from early grades through university, so students learn what crops, forests, and ecosystems actually do for them.\", \"reason\": \"\\\"Vital\\\" and \\\"indispensable role of\\\" are banned, the sentence opened with the flagged \\\"By [gerund]\\\" structure, and \\\"innovate responsibly\\\" is empty.\"}, {\"original\": \"Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\", \"replacement\": \"Botany is not a static catalog of species; it connects food supply, medicine, carbon accounting, and cultural practice.\", \"reason\": \"The \\\"far from being X, it is Y\\\" frame is a flagged construction and \\\"dynamic, integrative\\\" is filler.\"}, {\"original\": \"From the microscopic intricacies of chloroplast electron transport to the grand scale of forest carbon sequestration, plants embody a continuum of processes that sustain life on Earth.\", \"replacement\": \"Chloroplast electron transport and forest carbon storage are the same story at different sizes: both move energy and carbon through living systems.\", \"reason\": \"\\\"Intricacies\\\" is banned, the \\\"from X to Y\\\" sweep is a known AI tell, and \\\"embody a continuum\\\" is inflated.\"}, {\"original\": \"Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools to harness plant potential while confronting the pressing challenges of biodiversity loss, climate change, and ethical stewardship.\", \"replacement\": \"Genomics, synthetic biology, and ecosystem modeling now give botanists measurements and interventions that did not exist a decade ago.\", \"reason\": \"Em dashes are banned and \\\"unprecedented tools to harness plant potential\\\" is unsupported hype.\"}, {\"original\": \"In an age where humanity\u2019s actions increasingly dictate planetary trajectories, a deep, nuanced understanding of plant biology is not optional; it is imperative.\", \"replacement\": \"Human activity now sets the conditions plants grow in, so the details of plant biology stop being optional background knowledge.\", \"reason\": \"\\\"In an era of\\\" style opener, curly apostrophe, and the banned adjectives \\\"nuanced\\\" plus \\\"deep\\\" intensifier all appear here.\"}, {\"original\": \"By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future that honors the green foundation upon which all other life depends.\", \"replacement\": \"Better crop germplasm, shared benefit agreements, and open access to plant data are the concrete steps; everything else follows from those.\", \"reason\": \"The sentence opens with the flagged \\\"By [gerund]\\\" structure and stacks \\\"fostering,\\\" \\\"resilient,\\\" \\\"honors the green foundation,\\\" and other banned or inflated phrasing.\"}]}",
+  "edits": [
+    {
+      "original": "Botany: The Science of Plant Life and Its Central Role in a Sustainable Future",
+      "replacement": "Botany: The Science of Plant Life and Its Role in a Sustainable Future",
+      "reason": "\"Central Role in\" is the inflated-symbolism construction \"play a significant role in shaping\"; trimmed to a plain claim."
+    },
+    {
+      "original": "In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.",
+      "replacement": "With rapid environmental change, food insecurity, and dwindling natural resources, an accurate understanding of plant biology is not academic trivia; it is necessary for the survival and well-being of humanity.",
+      "reason": "\"In an era of\" is a banned opening phrase, \"comprehensive\" is a discouraged adjective, and the em dash is a banned character."
+    },
+    {
+      "original": "exploring the fundamental processes that govern plant life",
+      "replacement": "exploring the basic processes that govern plant life",
+      "reason": "\"Fundamental\" is on the prefer-other-words intensifier list; \"basic\" reads plainly here."
+    },
+    {
+      "original": "and highlighting the discipline\u2019s contemporary relevance",
+      "replacement": "and showing the discipline's contemporary relevance",
+      "reason": "The curly apostrophe must be replaced with a straight one, and \"highlighting\" was swapped for a plainer verb."
+    },
+    {
+      "original": "is often hailed as the \u201cfather of botany\u201d for his systematic treatises",
+      "replacement": "is often called the \"father of botany\" for his systematic treatises",
+      "reason": "Curly quotes are banned characters and \"hailed\" inflates a plain attribution."
+    },
+    {
+      "original": "which described plant morphology, reproduction, and habitat preferences. During the Renaissance, the invention of the microscope opened a new realm of observation;",
+      "replacement": "which described plant morphology, reproduction, and habitat preferences. During the Renaissance, the invention of the microscope widened what could be observed;",
+      "reason": "\"Realm\" is banned in its inflated-metaphor use, and the semicolon keeps the sentence structure."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "Herbarium staff still mark sterile Carex sheets as undetermined until a fruiting collection arrives.",
+      "reason": "The ellipsis glyph is a banned character and the pause adds nothing."
+    },
+    {
+      "original": "marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.",
+      "replacement": "made Arabidopsis the standard model organism for plant genetics and set up high-throughput functional genomics.",
+      "reason": "\"Watershed moment\" and \"pave the way for\" are both banned phrases, and the en-dash-style hyphen needed ASCII cleanup."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "A careful regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "reason": "\"Robust\" is a discouraged adjective; here it can be dropped without losing accuracy."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "so the change cuts cell-wall composition analysis from 40 minutes to 6.",
+      "reason": "\"Significantly\" and \"streamline\" are both banned words, and the concrete figure already exists in the sentence."
+    },
+    {
+      "original": "providing photosynthetic capacity, flexibility, and mechanical strength, respectively",
+      "replacement": "supplying photosynthetic capacity, flexibility, and mechanical strength, in that order",
+      "reason": "\"Respectively\" is stiff academic phrasing; \"in that order\" says the same thing plainly."
+    },
+    {
+      "original": "The ATP and NADPH generated are then utilized in the Calvin\u2011Benson cycle within the stroma, where CO\u2082 is fixed by the enzyme ribulose\u20111,5\u2011bisphosphate carboxylase/oxygenase (Rubisco) into 3\u2011phosphoglycerate, subsequently reduced to glyceraldehyde\u20113\u2011phosphate (G3P).",
+      "replacement": "The ATP and NADPH produced then drive the Calvin-Benson cycle within the stroma, where CO2 is fixed by the enzyme ribulose-1,5-bisphosphate carboxylase/oxygenase (Rubisco) into 3-phosphoglycerate, then reduced to glyceraldehyde-3-phosphate (G3P).",
+      "reason": "\"Utilized\" and \"subsequently\" are banned, and the non-breaking hyphens plus subscript glyph are outside a standard US keyboard."
+    },
+    {
+      "original": "cellulose, and a myriad of secondary metabolites",
+      "replacement": "cellulose, and many other secondary metabolites",
+      "reason": "\"A myriad of\" is inflated phrasing; \"many other\" is the plain equivalent."
+    },
+    {
+      "original": "Understanding these mechanisms is pivotal for improving crop yields and developing bioenergy feedstocks.",
+      "replacement": "Improving crop yields and developing bioenergy feedstocks depend on these mechanisms.",
+      "reason": "\"Pivotal\" is a discouraged adjective, and the rewrite states the dependency directly."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Carbon-concentrating mechanisms come in two forms: C4 plants split the work between mesophyll and bundle-sheath cells, while CAM plants open their stomata at night.",
+      "reason": "The original repeats itself and leans on the jargon \"regime\"; this states the C4 and CAM distinction once."
+    },
+    {
+      "original": "Modern classification reflects both morphological traits and molecular phylogenetics, dividing plants into several major clades:",
+      "replacement": "Modern classification uses morphological traits and molecular phylogenetics to divide plants into several major clades:",
+      "reason": "\"Reflects\" was vague and the \"both...and\" frame added no information."
+    },
+    {
+      "original": "They are polyphyletic, representing several lineages that gave rise to land plants.",
+      "replacement": "They are polyphyletic, spread across several lineages, only some of which gave rise to land plants.",
+      "reason": "The original implies every algal lineage led to land plants, which is wrong."
+    },
+    {
+      "original": "Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic, leading to the recognition of the clade **eudicots**.",
+      "replacement": "Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have clarified plant relationships: the monocot group is monophyletic, while the traditional dicots are paraphyletic, which is why the clade **eudicots** was defined.",
+      "reason": "The curly quotes are banned characters, the scattered scare-quote framing was cleaned up, and \"refined our understanding\" was flattened."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3 and never formed heads, so the market rejected the entire lot.",
+      "reason": "The sentence ran together without a conjunction and used a banned em dash."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces rather than named cultivars.",
+      "reason": "\"Heirlooms\" is not a taxonomic category opposed to landraces, and the comma before \"rather than\" was spurious."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account for the majority of global caloric intake.",
+      "replacement": "Staple crops (wheat, rice, maize, sorghum, and millet) account for most global caloric intake.",
+      "reason": "Em dashes are banned characters; parentheses carry the same list cleanly."
+    },
+    {
+      "original": "dramatically increased food production, averting famines in many regions",
+      "replacement": "raised food production enough to avert famines in many regions",
+      "reason": "\"Dramatically\" is a banned intensifier, and the rewrite names the effect instead."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders selected dwarfing alleles deliberately.",
+      "reason": "The \"rather than\" construction restates the obvious half of the sentence."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "so supplemental irrigation cuts yield loss in dry years",
+      "reason": "\"Dramatically\" is a banned intensifier and the figures earlier in the sentence already quantify the drop."
+    },
+    {
+      "original": "Plants have furnished humanity with a vast pharmacopeia.",
+      "replacement": "Plants have supplied humanity with a large drug arsenal.",
+      "reason": "\"Furnished\" and \"vast pharmacopeia\" were inflated; note that the passage also spells this word \"pharmacopoeias\" earlier, so pick one spelling."
+    },
+    {
+      "original": "Classic examples include the analgesic morphine from *Papaver somniferum*, the antimalarial quinine from *Cinchona* bark, and the anticancer agent paclitaxel from the Pacific yew (*Taxus brevifolia*). Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Classic examples include the analgesic morphine from *Papaver somniferum* latex, the antimalarial quinine from *Cinchona* bark, and the anticancer agent paclitaxel from the Pacific yew (*Taxus brevifolia*).",
+      "reason": "The trailing sentence corrects an error the preceding list never made, so it was deleted and the source detail folded into the list."
+    },
+    {
+      "original": "for therapeutic leads. Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, facilitating scalable production of valuable compounds while preserving wild populations.",
+      "replacement": "for therapeutic leads. Metabolomics and synthetic biology now let researchers rebuild complex plant pathways in microbial hosts, which scales up production of useful compounds and takes pressure off wild populations.",
+      "reason": "\"Facilitating\" is a banned verb and \"valuable compounds\" is the flagged \"provide a valuable insight\" family of phrasing."
+    },
+    {
+      "original": "Wood, bamboo, hemp, and other plant fibers constitute renewable building materials, offering carbon\u2011sequestering alternatives to steel and concrete.",
+      "replacement": "Wood, bamboo, hemp, and other plant fibers are renewable building materials that store carbon, which makes them alternatives to steel and concrete.",
+      "reason": "The hyphen in \"carbon-sequestering\" was a non-ASCII character and \"constitute\" was stiff."
+    },
+    {
+      "original": "Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**, serving as feedstock for biofuels",
+      "replacement": "Lignocellulosic biomass is also central to the emerging **bioeconomy**, providing feedstock for biofuels",
+      "reason": "\"Moreover\" is a banned connector and \"cornerstone\" was an inflated metaphor."
+    },
+    {
+      "original": "areas where plant scientists collaborate closely with engineers and chemists",
+      "replacement": "areas that need plant scientists working alongside engineers and chemists",
+      "reason": "\"Collaborate closely\" is filler; the rewrite names who works with whom."
+    },
+    {
+      "original": "Plants shape ecosystems through a suite of services that underpin planetary health.",
+      "replacement": "Plants deliver services that keep the biosphere functioning.",
+      "reason": "\"Suite of\" and \"underpin planetary health\" are inflated; the replacement is concrete."
+    },
+    {
+      "original": "offsetting a substantial portion of anthropogenic emissions",
+      "replacement": "offsetting much of the CO2 released by human activity",
+      "reason": "\"Substantial portion\" and \"anthropogenic\" hedge and obscure; naming the gas and the source is clearer."
+    },
+    {
+      "original": "reducing erosion and enhancing fertility",
+      "replacement": "reducing erosion and improving soil fertility",
+      "reason": "\"Enhance\" is a banned verb."
+    },
+    {
+      "original": "Mychorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange and improve plant resilience.",
+      "replacement": "Mycorrhizal associations, symbioses between plant roots and fungi, move nutrients both ways and help plants withstand stress.",
+      "reason": "Em dashes are banned characters and \"facilitate\" is a banned verb; the original also misspelled \"Mycorrhizal,\" which is corrected here."
+    },
+    {
+      "original": "Vegetation influences water infiltration, evapotranspiration, and runoff patterns, thereby moderating flood risk and maintaining groundwater recharge.",
+      "replacement": "Vegetation changes how water infiltrates, evaporates, and runs off, which lowers flood risk and keeps groundwater recharging.",
+      "reason": "\"Thereby moderating\" is academic padding; the causal chain reads better as plain verbs."
+    },
+    {
+      "original": "Plants create structural complexity that supports diverse animal communities",
+      "replacement": "Plants build physical structure that supports varied animal communities",
+      "reason": "\"Structural complexity\" is abstract jargon for a concrete feature."
+    },
+    {
+      "original": "natural landscapes provide recreation, mental health benefits, and spiritual connections, underscoring the non\u2011material importance of plant life.",
+      "replacement": "natural landscapes provide recreation, mental health benefits, and spiritual value beyond their material uses.",
+      "reason": "\"Underscore\" is a banned verb and the hyphen in \"non-material\" was non-ASCII."
+    },
+    {
+      "original": "leading to biodiversity loss, altered climate feedbacks, and reduced ecosystem resilience",
+      "replacement": "which reduces biodiversity, changes climate feedbacks, and weakens the ability of ecosystems to recover",
+      "reason": "Three stacked noun phrases were converted to verbs so each consequence is legible."
+    },
+    {
+      "original": "Botany, therefore, plays a pivotal role in restoration ecology, guiding the selection of appropriate native species",
+      "replacement": "Botany is therefore central to restoration ecology, which needs the right native species chosen",
+      "reason": "\"Plays a pivotal role in\" combines a banned adjective with the \"play a significant role in shaping\" construction."
+    },
+    {
+      "original": "The advent of next\u2011generation sequencing (NGS) has democratized whole\u2011genome analysis across a broad spectrum of species.",
+      "replacement": "Next-generation sequencing (NGS) made whole-genome analysis available for far more species.",
+      "reason": "Non-ASCII hyphens, \"the advent of,\" and \"a broad spectrum of\" were all replaced with plain wording."
+    },
+    {
+      "original": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks that predict plant responses to environmental cues.",
+      "replacement": "Systems biology combines transcriptomics, proteomics, metabolomics, and phenomics into models that predict how plants respond to environmental conditions.",
+      "reason": "\"Comprehensive\" is a banned adjective and \"construct networks\" overstates what the models do."
+    },
+    {
+      "original": "Machine learning algorithms now assist in deciphering these high\u2011dimensional datasets, accelerating the identification of candidate genes for crop improvement.",
+      "replacement": "Machine learning now sorts these large datasets, which speeds up finding candidate genes for crop improvement.",
+      "reason": "\"Assist in deciphering,\" \"high-dimensional,\" and \"accelerating the identification of\" are all padded nominalizations."
+    },
+    {
+      "original": "By assembling modular genetic circuits, scientists can engineer plants to produce novel compounds (e.g., pharmaceuticals, industrial enzymes) or to enhance existing traits (e.g., increased oil content in seed crops).",
+      "replacement": "Assembling modular genetic circuits lets scientists engineer plants to make new compounds such as pharmaceuticals and industrial enzymes, or to push existing traits such as oil content in seed crops.",
+      "reason": "Starting the sentence with \"By [gerund]\" is a flagged structure, \"enhance\" is banned, and \"e.g.\" inside parentheses was flattened."
+    },
+    {
+      "original": "enables high\u2011level expression of foreign genes, leveraging the organelle\u2019s prokaryotic-like gene expression system and maternal inheritance to mitigate gene flow concerns.",
+      "replacement": "allows very high expression of foreign genes, because the organelle uses a prokaryote-style expression system and passes genes maternally, which limits escape into pollen.",
+      "reason": "\"Leverage\" and the possessive curly apostrophe are banned, and the non-ASCII hyphen in \"high-level\" was fixed."
+    },
+    {
+      "original": "the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is a burgeoning field",
+      "replacement": "the ability of plants to recall earlier drought or heat and respond harder the next time; this is a fast-growing field",
+      "reason": "Scare quotes on a normal word are banned, \"robust\" and \"burgeoning\" are discouraged, and the em dash and non-ASCII hyphen were removed."
+    },
+    {
+      "original": "Epigenetic modifications (DNA methylation, histone acetylation) and small RNAs are implicated in this transgenerational acclimation.",
+      "replacement": "DNA methylation, histone acetylation, and small RNAs carry this acclimation across generations.",
+      "reason": "\"Are implicated in\" hedges a documented mechanism and the parenthetical list read as clutter."
+    },
+    {
+      "original": "Harnessing these mechanisms could produce crops that maintain yields under erratic weather patterns.",
+      "replacement": "Breeding on these mechanisms should give crops that hold yields through erratic seasons.",
+      "reason": "\"Harnessing\" is inflated and \"could\" hedged the claim; the threshold for hedging favors a direct statement."
+    },
+    {
+      "original": "The plant microbiome, encompassing rhizosphere, phyllosphere, and endophytic communities, profoundly influences plant health.",
+      "replacement": "The plant microbiome, which covers root, leaf-surface, and internal communities, strongly affects plant health.",
+      "reason": "\"Encompassing,\" \"profoundly,\" and three jargon nouns were replaced with plain equivalents."
+    },
+    {
+      "original": "Recent research demonstrates that inoculating crops with beneficial microbes (e.g., nitrogen\u2011fixing bacteria, mycorrhizal fungi) can reduce fertilizer dependence and improve stress tolerance.",
+      "replacement": "Inoculating crops with helpful microbes such as nitrogen-fixing bacteria and mycorrhizal fungi cuts fertilizer need and improves stress tolerance.",
+      "reason": "\"Recent research demonstrates that\" is a filler frame and the non-ASCII hyphen needed fixing."
+    },
+    {
+      "original": "Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes to sustainable agricultural practices.",
+      "replacement": "Reading the chemical signals plants and microbes trade, such as strigolactones and flavonoids, points toward lower-input farming.",
+      "reason": "Em dashes are banned, \"molecular dialogues\" was decorative, and \"sustainable agricultural practices\" is vaguer than naming the input reduction."
+    },
+    {
+      "original": "While the promise of botanical science is immense, several challenges must be addressed.",
+      "replacement": "Botanical science offers real gains, but four problems sit in the way.",
+      "reason": "\"The promise ... is immense\" and \"must be addressed\" are stock phrasing; naming the count sets up the list."
+    },
+    {
+      "original": "threatening countless plant species before they are even described. The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.",
+      "replacement": "endangering plant species that have never been described. Losing those species narrows the trait pool available for breeding and biotechnology.",
+      "reason": "\"Countless\" overstates and \"biotechnological exploitation\" is heavy nominalization."
+    },
+    {
+      "original": "Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.",
+      "replacement": "Benefit-sharing agreements and the Nagoya Protocol set the terms for lawful collection.",
+      "reason": "The non-ASCII hyphen was fixed, \"utilization\" is banned, and \"essential to ensure\" hedged a legal requirement."
+    },
+    {
+      "original": "CRISPR\u2011based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a delicate task for policymakers and scientists alike.",
+      "replacement": "CRISPR edits in crops raise arguments about regulation, labeling, and consumer acceptance, and about how much caution rules should require.",
+      "reason": "The non-ASCII hyphen was fixed and the second sentence restated the first as a \"delicate task\" clich\u00e9."
+    },
+    {
+      "original": "Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.",
+      "replacement": "Models need realistic plant responses to project ecosystem effects.",
+      "reason": "\"Complex\" and \"accurately\" add nothing to the requirement."
+    },
+    {
+      "original": "Addressing these issues requires interdisciplinary collaboration, robust public engagement, and policies that integrate scientific evidence with socio\u2011economic realities.",
+      "replacement": "These problems need work across fields, honest public involvement, and policy grounded in evidence.",
+      "reason": "\"Robust\" is banned, \"socio-economic\" used a non-ASCII hyphen, and \"integrate ... realities\" is abstraction."
+    },
+    {
+      "original": "Looking ahead, botany will increasingly intersect with digital technologies, data science, and global sustainability agendas.",
+      "replacement": "Botany is converging with digital tools, data science, and national land-use policy.",
+      "reason": "\"Looking ahead\" is filler and \"global sustainability agendas\" is vague."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable real\u2011time monitoring of plant health, optimizing inputs and reducing waste.",
+      "replacement": "**Precision agriculture** uses satellite imagery, drones, and soil sensors to track plant health continuously, which trims water and fertilizer use.",
+      "reason": "Em dashes are banned, \"leveraging\" is a banned verb, and \"optimizing inputs and reducing waste\" named nothing specific."
+    },
+    {
+      "original": "empower the public to contribute observations, expanding biodiversity databases and fostering environmental stewardship.",
+      "replacement": "let the public submit observations, which grows biodiversity databases and gets more people involved in local habitats.",
+      "reason": "\"Empower\" and \"fostering\" are inflated, and \"environmental stewardship\" is a stock phrase."
+    },
+    {
+      "original": "Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will become central to land\u2011use planning.",
+      "replacement": "Plants bred or chosen to hold productivity through hotter, drier seasons will factor into land-use planning.",
+      "reason": "\"Moreover\" is a banned connector, the scare quotes around \"climate-smart\" are banned, and three non-ASCII hyphens needed replacing."
+    },
+    {
+      "original": "will rely on botanical expertise to select species that maximize cooling, air purification, and food production in densely populated areas.",
+      "replacement": "will depend on plant knowledge to pick species that cool buildings, filter airborne particles, and grow food where people live.",
+      "reason": "\"Maximize\" and \"densely populated areas\" were flattened into the actual outcomes."
+    },
+    {
+      "original": "Finally, education and outreach will be vital. By integrating plant science into curricula from early schooling through higher education, societies can cultivate a generation that appreciates the indispensable role of plants and is equipped to innovate responsibly.",
+      "replacement": "Plant science belongs in school curricula from early grades through university, so students learn what crops, forests, and ecosystems actually do for them.",
+      "reason": "\"Vital\" and \"indispensable role of\" are banned, the sentence opened with the flagged \"By [gerund]\" structure, and \"innovate responsibly\" is empty."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "replacement": "Botany is not a static catalog of species; it connects food supply, medicine, carbon accounting, and cultural practice.",
+      "reason": "The \"far from being X, it is Y\" frame is a flagged construction and \"dynamic, integrative\" is filler."
+    },
+    {
+      "original": "From the microscopic intricacies of chloroplast electron transport to the grand scale of forest carbon sequestration, plants embody a continuum of processes that sustain life on Earth.",
+      "replacement": "Chloroplast electron transport and forest carbon storage are the same story at different sizes: both move energy and carbon through living systems.",
+      "reason": "\"Intricacies\" is banned, the \"from X to Y\" sweep is a known AI tell, and \"embody a continuum\" is inflated."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools to harness plant potential while confronting the pressing challenges of biodiversity loss, climate change, and ethical stewardship.",
+      "replacement": "Genomics, synthetic biology, and ecosystem modeling now give botanists measurements and interventions that did not exist a decade ago.",
+      "reason": "Em dashes are banned and \"unprecedented tools to harness plant potential\" is unsupported hype."
+    },
+    {
+      "original": "In an age where humanity\u2019s actions increasingly dictate planetary trajectories, a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "Human activity now sets the conditions plants grow in, so the details of plant biology stop being optional background knowledge.",
+      "reason": "\"In an era of\" style opener, curly apostrophe, and the banned adjectives \"nuanced\" plus \"deep\" intensifier all appear here."
+    },
+    {
+      "original": "By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future that honors the green foundation upon which all other life depends.",
+      "replacement": "Better crop germplasm, shared benefit agreements, and open access to plant data are the concrete steps; everything else follows from those.",
+      "reason": "The sentence opens with the flagged \"By [gerund]\" structure and stacks \"fostering,\" \"resilient,\" \"honors the green foundation,\" and other banned or inflated phrasing."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4598,
+    "output": 5742,
+    "cache_read": 39168,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.004015128,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "data:text/plain,placeholder",
+        "objective": "No-op while editing local passage text",
+        "formats": [
+          "markdown"
+        ]
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

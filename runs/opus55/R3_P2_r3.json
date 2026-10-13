@@ -1,0 +1,57 @@
+{
+  "run_id": "R3_P2_r3",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "97df56063d7db6ecd7171cf0abb7565523fd79786f873eb90bbbd22c1160a225",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:49:28.752401+00:00",
+  "duration_s": 7.466275792976376,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve: capacity from generators already online and synchronized, able to respond immediately.\", \"reason\": \"Spinning vs. non-spinning reserve is a real domain distinction, so it gets stated as what the reserve is instead of being tacked on as a contrast.\"}, {\"original\": \" Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"\\\"By accident\\\" is the everyday antonym of \\\"on purpose,\\\" so the trailer adds nothing; the sentence itself is filler and is cut.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for most of the lost megawatts.\", \"reason\": \"The contrast with wind is a real distinction that the sentence already states as fact, so the \\\"not X\\\" opener is dropped and the positive claim stays.\"}, {\"original\": \"Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\", \"replacement\": null, \"reason\": \"Unsure: the \\\"not where demand peaks\\\" contrast may be the main point of the sentence rather than a tacked-on trailer, so I'm leaving it for the author to decide.\"}]}",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve: capacity from generators already online and synchronized, able to respond immediately.",
+      "reason": "Spinning vs. non-spinning reserve is a real domain distinction, so it gets stated as what the reserve is instead of being tacked on as a contrast."
+    },
+    {
+      "original": " Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "\"By accident\" is the everyday antonym of \"on purpose,\" so the trailer adds nothing; the sentence itself is filler and is cut."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for most of the lost megawatts.",
+      "reason": "The contrast with wind is a real distinction that the sentence already states as fact, so the \"not X\" opener is dropped and the positive claim stays."
+    },
+    {
+      "original": "Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": null,
+      "reason": "Unsure: the \"not where demand peaks\" contrast may be the main point of the sentence rather than a tacked-on trailer, so I'm leaving it for the author to decide."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 498,
+    "cache_read": 31793,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0163346,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

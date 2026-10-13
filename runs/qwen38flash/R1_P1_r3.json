@@ -1,0 +1,207 @@
+{
+  "run_id": "R1_P1_r3",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:26:32.985741+00:00",
+  "duration_s": 31.632750156975817,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.\", \"replacement\": \"The twenty\u2011first century has seen a large surge in digital connectivity.\", \"reason\": \"\\\"unprecedented\\\" is an inflated intensifier and \\\"has been defined by\\\" overstates the claim.\"},\n{\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings real benefits: speed, efficiency, and wider access to knowledge. It also gives malicious actors more to attack.\", \"reason\": \"\\\"extraordinary\\\" is a banned intensifier and the em dashes must be replaced with ASCII punctuation.\"},\n{\"original\": \"a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust\", \"replacement\": \"a single breach can expose personal identities, disrupt critical infrastructure, and weaken public trust\", \"reason\": \"\\\"compromise\\\" in this security sense is vague jargon; plainer verbs say what happens.\"},\n{\"original\": \"This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\", \"replacement\": \"This essay covers today's threats, the technical and organizational defenses built against them, the human errors that defeat strong safeguards, and the trends likely to shape cybersecurity in the next decade.\", \"reason\": \"\\\"threat landscape\\\" uses the banned metaphorical sense of landscape.\"},\n{\"original\": \"### The Expanding Threat Landscape  \", \"replacement\": \"### The Expanding Range of Threats  \", \"reason\": \"Headings cannot carry parenthetical clarifications, and \\\"threat landscape\\\" uses the banned metaphorical sense of landscape.\"},\n{\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": \"creating attack surfaces far broader than in the past\", \"reason\": \"The scare quotes on a normal term and the banned intensifier \\\"dramatically\\\" both need removing.\"},\n{\"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing\", \"replacement\": \"The rise of deep\u2011fake technology and AI\u2011driven social engineering also makes phishing more effective\", \"reason\": \"\\\"Moreover\\\" is a banned connector and \\\"amplifies the potency of\\\" is inflated phrasing.\"},\n{\"original\": \"leveraging machine\u2011learning models to flag ransomware encryption patterns\", \"replacement\": \"using machine\u2011learning models to flag ransomware encryption patterns\", \"reason\": \"\\\"leveraging\\\" is a preferred-against verb; \\\"using\\\" says the same thing plainly.\"},\n{\"original\": \"For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality\", \"replacement\": \"For data at rest and in transit, encryption (AES\u2011256, TLS 1.3) keeps it confidential\", \"reason\": \"\\\"robust\\\" is a filler adjective here since the algorithms named already specify the strength.\"},\n{\"original\": \"moving away from the outdated \u201ctrusted internal network\u201d paradigm\", \"replacement\": \"replacing the older assumption that the internal network can be trusted\", \"reason\": \"The scare quotes sit on a phrase used as a normal description rather than a quotation.\"},\n{\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed, not open.\", \"reason\": \"The second sentence repeats the first and adds a rhetorical flourish that carries no information.\"},\n{\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"After the playbook change, mean time to contain fell from 18 hours to 3 hours.\", \"reason\": \"The two sentences state the same result twice, and \\\"streamlines\\\" and \\\"significantly\\\" are on the banned list.\"},\n{\"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset\", \"replacement\": \"When organizations track security metrics alongside other business goals, they treat cybersecurity as an asset rather than a cost\", \"reason\": \"The sentence opens with the banned \\\"By [gerund]\\\" structure and \\\"transform...from a cost center into a strategic asset\\\" is inflated framing.\"},\n{\"original\": \"fatigue from constant security prompts can foster complacency\", \"replacement\": \"fatigue from constant security prompts makes people dismiss warnings\", \"reason\": \"\\\"foster\\\" is a preferred-against verb and the replacement names the behavior instead of abstracting it.\"},\n{\"original\": \"it demands a security\u2011first culture where safe behavior is reinforced through gamified learning\", \"replacement\": \"it needs habits of safe behavior reinforced through gamified learning\", \"reason\": \"\\\"security-first culture\\\" is an undefined slogan; the replacement states what is actually required.\"},\n{\"original\": \"Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials\", \"replacement\": \"Strict role\u2011based access controls also limit the damage stolen credentials can do\", \"reason\": \"\\\"Moreover\\\" is a banned connector and \\\"damage potential of compromised credentials\\\" is nominalized jargon.\"},\n{\"original\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Privilege limits are set deliberately, and employees who report suspicious activity get recognized for it.\", \"reason\": \"Both sentences restate points already made and close with the rhetorical tag \\\"full stop.\\\"\"},\n{\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape\", \"replacement\": \"Transparent legislation, multi-stakeholder talks, and shared international rules keep regulation from fragmenting across borders\", \"reason\": \"The em dashes need replacing and \\\"regulatory landscape\\\" is the banned metaphorical use.\"},\n{\"original\": \"ensuring that the next attack encounters a more hardened environment\", \"replacement\": \"so the next attack meets fewer of the same gaps\", \"reason\": \"\\\"a more hardened environment\\\" is vague; the replacement says what changes.\"},\n{\"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\", \"replacement\": \"Using these tools well decides whether defenders stay ahead of attackers.\", \"reason\": \"\\\"pivotal\\\" is a banned adjective and \\\"maintaining a technological edge\\\" is boilerplate.\"},\n{\"original\": \"Cyber threats disregard geopolitical borders, making international cooperation indispensable.\", \"replacement\": \"Cyber threats cross borders, so countries have to cooperate.\", \"reason\": \"\\\"disregard geopolitical borders\\\" personifies the threat and \\\"indispensable\\\" is an over-weight intensifier.\"},\n{\"original\": \"the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify\", \"replacement\": \"growing acceptance that cyber\u2011attacks destabilize economies has produced new joint task forces, and that work is expanding\", \"reason\": \"\\\"unprecedented\\\" is a banned intensifier and \\\"a trend likely to intensify\\\" hedges a claim with no evidence behind it.\"},\n{\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"\", \"reason\": \"This anecdote about one organization's log-retention gap does not belong in a section on worldwide future trends.\"},\n{\"original\": \"**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted\", \"replacement\": \"**Zero\u2011Trust Architecture**: Treat every access request as untrusted\", \"reason\": \"The en dash used as a separator must become an ASCII equivalent.\"},\n{\"original\": \"**Secure\u2011by\u2011Design Development** \u2013 Embed security testing\", \"replacement\": \"**Secure\u2011by\u2011Design Development**: Embed security testing\", \"reason\": \"The en dash used as a separator must become an ASCII equivalent.\"},\n{\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning\", \"replacement\": \"**AI\u2011Enhanced Threat Intelligence**: Use federated learning\", \"reason\": \"The en dash must become an ASCII equivalent and \\\"Leverage\\\" is a preferred-against verb.\"},\n{\"original\": \"**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems\", \"replacement\": \"**Post\u2011Quantum Preparedness**: Begin migrating critical systems\", \"reason\": \"The en dash used as a separator must become an ASCII equivalent.\"},\n{\"original\": \"**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\", \"replacement\": \"**Resilience Engineering**: Focus on fast recovery\", \"reason\": \"The en dash must become an ASCII equivalent and \\\"capabilities\\\" is filler after \\\"rapid recovery.\\\"\"},\n{\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\", \"replacement\": \"Combining better tooling with clear governance, regular training, and cross-border information sharing lets defenders find and stop attacks earlier instead of responding after the fact.\", \"reason\": \"The sentence uses the banned \\\"By [gerund]\\\" opener, \\\"intertwining\\\" and \\\"robust,\\\" and the abstract \\\"reactive posture\\\" framing.\"},\n{\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\", \"replacement\": \"Cybersecurity reaches past IT departments into economic stability, national defense, and personal privacy.\", \"reason\": \"The \\\"not merely X; it is Y\\\" construction is a flagged pattern and \\\"multidimensional discipline\\\" adds no content.\"},\n{\"original\": \"demands a holistic response that blends technical controls\", \"replacement\": \"requires a response that combines technical controls\", \"reason\": \"\\\"holistic\\\" is a banned word and the sentence already lists the parts being combined.\"},\n{\"original\": \"they also open fresh attack vectors that must be managed prudently\", \"replacement\": \"they also create new ways for attackers to get in, which need oversight\", \"reason\": \"\\\"managed prudently\\\" is vague advice that names no action or owner.\"},\n{\"original\": \"Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.\", \"replacement\": \"Digital societies stay secure when builders design systems with security in mind from the start, when everyone using those systems shares responsibility for basic hygiene, and when defenders update their methods as threats change.\", \"reason\": \"\\\"Ultimately\\\" is a banned transition and \\\"the very fabric of system design\\\" and \\\"adaptive posture\\\" are inflated metaphors.\"},\n{\"original\": \"we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age\", \"replacement\": \"defenders protect data and devices, and the confidence that lets businesses and governments keep using them\", \"reason\": \"The \\\"not only X but Y\\\" pattern is flagged and \\\"trust that fuels innovation and progress in the digital age\\\" is unverifiable uplift.\"}\n]}",
+  "edits": [
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.",
+      "replacement": "The twenty\u2011first century has seen a large surge in digital connectivity.",
+      "reason": "\"unprecedented\" is an inflated intensifier and \"has been defined by\" overstates the claim."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings real benefits: speed, efficiency, and wider access to knowledge. It also gives malicious actors more to attack.",
+      "reason": "\"extraordinary\" is a banned intensifier and the em dashes must be replaced with ASCII punctuation."
+    },
+    {
+      "original": "a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust",
+      "replacement": "a single breach can expose personal identities, disrupt critical infrastructure, and weaken public trust",
+      "reason": "\"compromise\" in this security sense is vague jargon; plainer verbs say what happens."
+    },
+    {
+      "original": "This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.",
+      "replacement": "This essay covers today's threats, the technical and organizational defenses built against them, the human errors that defeat strong safeguards, and the trends likely to shape cybersecurity in the next decade.",
+      "reason": "\"threat landscape\" uses the banned metaphorical sense of landscape."
+    },
+    {
+      "original": "### The Expanding Threat Landscape  ",
+      "replacement": "### The Expanding Range of Threats  ",
+      "reason": "Headings cannot carry parenthetical clarifications, and \"threat landscape\" uses the banned metaphorical sense of landscape."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "creating attack surfaces far broader than in the past",
+      "reason": "The scare quotes on a normal term and the banned intensifier \"dramatically\" both need removing."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing",
+      "replacement": "The rise of deep\u2011fake technology and AI\u2011driven social engineering also makes phishing more effective",
+      "reason": "\"Moreover\" is a banned connector and \"amplifies the potency of\" is inflated phrasing."
+    },
+    {
+      "original": "leveraging machine\u2011learning models to flag ransomware encryption patterns",
+      "replacement": "using machine\u2011learning models to flag ransomware encryption patterns",
+      "reason": "\"leveraging\" is a preferred-against verb; \"using\" says the same thing plainly."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption (AES\u2011256, TLS 1.3) ensures confidentiality",
+      "replacement": "For data at rest and in transit, encryption (AES\u2011256, TLS 1.3) keeps it confidential",
+      "reason": "\"robust\" is a filler adjective here since the algorithms named already specify the strength."
+    },
+    {
+      "original": "moving away from the outdated \u201ctrusted internal network\u201d paradigm",
+      "replacement": "replacing the older assumption that the internal network can be trusted",
+      "reason": "The scare quotes sit on a phrase used as a normal description rather than a quotation."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed, not open.",
+      "reason": "The second sentence repeats the first and adds a rhetorical flourish that carries no information."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "After the playbook change, mean time to contain fell from 18 hours to 3 hours.",
+      "reason": "The two sentences state the same result twice, and \"streamlines\" and \"significantly\" are on the banned list."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset",
+      "replacement": "When organizations track security metrics alongside other business goals, they treat cybersecurity as an asset rather than a cost",
+      "reason": "The sentence opens with the banned \"By [gerund]\" structure and \"transform...from a cost center into a strategic asset\" is inflated framing."
+    },
+    {
+      "original": "fatigue from constant security prompts can foster complacency",
+      "replacement": "fatigue from constant security prompts makes people dismiss warnings",
+      "reason": "\"foster\" is a preferred-against verb and the replacement names the behavior instead of abstracting it."
+    },
+    {
+      "original": "it demands a security\u2011first culture where safe behavior is reinforced through gamified learning",
+      "replacement": "it needs habits of safe behavior reinforced through gamified learning",
+      "reason": "\"security-first culture\" is an undefined slogan; the replacement states what is actually required."
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials",
+      "replacement": "Strict role\u2011based access controls also limit the damage stolen credentials can do",
+      "reason": "\"Moreover\" is a banned connector and \"damage potential of compromised credentials\" is nominalized jargon."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Privilege limits are set deliberately, and employees who report suspicious activity get recognized for it.",
+      "reason": "Both sentences restate points already made and close with the rhetorical tag \"full stop.\""
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential to prevent a fragmented regulatory landscape",
+      "replacement": "Transparent legislation, multi-stakeholder talks, and shared international rules keep regulation from fragmenting across borders",
+      "reason": "The em dashes need replacing and \"regulatory landscape\" is the banned metaphorical use."
+    },
+    {
+      "original": "ensuring that the next attack encounters a more hardened environment",
+      "replacement": "so the next attack meets fewer of the same gaps",
+      "reason": "\"a more hardened environment\" is vague; the replacement says what changes."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "Using these tools well decides whether defenders stay ahead of attackers.",
+      "reason": "\"pivotal\" is a banned adjective and \"maintaining a technological edge\" is boilerplate."
+    },
+    {
+      "original": "Cyber threats disregard geopolitical borders, making international cooperation indispensable.",
+      "replacement": "Cyber threats cross borders, so countries have to cooperate.",
+      "reason": "\"disregard geopolitical borders\" personifies the threat and \"indispensable\" is an over-weight intensifier."
+    },
+    {
+      "original": "the growing recognition that cyber\u2011attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify",
+      "replacement": "growing acceptance that cyber\u2011attacks destabilize economies has produced new joint task forces, and that work is expanding",
+      "reason": "\"unprecedented\" is a banned intensifier and \"a trend likely to intensify\" hedges a claim with no evidence behind it."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "",
+      "reason": "This anecdote about one organization's log-retention gap does not belong in a section on worldwide future trends."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted",
+      "replacement": "**Zero\u2011Trust Architecture**: Treat every access request as untrusted",
+      "reason": "The en dash used as a separator must become an ASCII equivalent."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013 Embed security testing",
+      "replacement": "**Secure\u2011by\u2011Design Development**: Embed security testing",
+      "reason": "The en dash used as a separator must become an ASCII equivalent."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning",
+      "replacement": "**AI\u2011Enhanced Threat Intelligence**: Use federated learning",
+      "reason": "The en dash must become an ASCII equivalent and \"Leverage\" is a preferred-against verb."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems",
+      "replacement": "**Post\u2011Quantum Preparedness**: Begin migrating critical systems",
+      "reason": "The en dash used as a separator must become an ASCII equivalent."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013 Focus on rapid recovery capabilities",
+      "replacement": "**Resilience Engineering**: Focus on fast recovery",
+      "reason": "The en dash must become an ASCII equivalent and \"capabilities\" is filler after \"rapid recovery.\""
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "Combining better tooling with clear governance, regular training, and cross-border information sharing lets defenders find and stop attacks earlier instead of responding after the fact.",
+      "reason": "The sentence uses the banned \"By [gerund]\" opener, \"intertwining\" and \"robust,\" and the abstract \"reactive posture\" framing."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "replacement": "Cybersecurity reaches past IT departments into economic stability, national defense, and personal privacy.",
+      "reason": "The \"not merely X; it is Y\" construction is a flagged pattern and \"multidimensional discipline\" adds no content."
+    },
+    {
+      "original": "demands a holistic response that blends technical controls",
+      "replacement": "requires a response that combines technical controls",
+      "reason": "\"holistic\" is a banned word and the sentence already lists the parts being combined."
+    },
+    {
+      "original": "they also open fresh attack vectors that must be managed prudently",
+      "replacement": "they also create new ways for attackers to get in, which need oversight",
+      "reason": "\"managed prudently\" is vague advice that names no action or owner."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges.",
+      "replacement": "Digital societies stay secure when builders design systems with security in mind from the start, when everyone using those systems shares responsibility for basic hygiene, and when defenders update their methods as threats change.",
+      "reason": "\"Ultimately\" is a banned transition and \"the very fabric of system design\" and \"adaptive posture\" are inflated metaphors."
+    },
+    {
+      "original": "we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age",
+      "replacement": "defenders protect data and devices, and the confidence that lets businesses and governments keep using them",
+      "reason": "The \"not only X but Y\" pattern is flagged and \"trust that fuels innovation and progress in the digital age\" is unverifiable uplift."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20569,
+    "output": 2440,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00423215,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

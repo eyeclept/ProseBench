@@ -1,0 +1,77 @@
+{
+  "run_id": "R2_P3_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:31:29.275755+00:00",
+  "duration_s": 20.033711395022692,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \" Botany, far from being a static catalog of flora, is a dynamic, integrative science\",\n      \"replacement\": \" Botany is a dynamic, integrative science\",\n      \"reason\": \"The negative clause 'far from being a static catalog of flora' is a windup; deleting it loses no checkable information since the positive claim remains intact.\"\n    },\n    {\n      \"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative.\",\n      \"replacement\": \"a deep, nuanced understanding of plant biology is imperative.\",\n      \"reason\": \"The negative half 'not optional' is filler that merely restates the positive claim 'it is imperative'; deleting it loses nothing checkable.\"\n    },\n    {\n      \"original\": \"Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic, leading to the recognition of the clade **eudicots**.\",\n      \"replacement\": \"Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic, leading to the recognition of the clade **eudicots**.\",\n      \"reason\": \"No clear padded negation or definition doubling detected; this sentence states its claims once without a redundant restatement.\"\n    },\n    {\n      \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night.\",\n      \"reason\": \"The appended 'close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one' restates the distinction through an analogy/synonyms without adding a new fact, which is definition doubling.\"\n    },\n    {\n      \"original\": \" Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"'full stop' restates the preceding claim with no new information, functioning as a padded emphasis/restatement.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is produced in Papaver somniferum latex.\",\n      \"reason\": \"The negative half 'is not synthesized by the Pacific yew' is a windup that adds nothing beyond the positive claim that morphine comes from Papaver somniferum.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": \"The construct was designed for chloroplast transformation.\",\n      \"reason\": \"The negative clause 'not nuclear transformation' restates the positive claim by its inverse without adding checkable information, per the delete-and-reread test.\"\n    },\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"'on purpose, rather than by accident' restates the idea that breeders select alleles, adding no new fact and serving as filler restatement.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": " Botany, far from being a static catalog of flora, is a dynamic, integrative science",
+      "replacement": " Botany is a dynamic, integrative science",
+      "reason": "The negative clause 'far from being a static catalog of flora' is a windup; deleting it loses no checkable information since the positive claim remains intact."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "a deep, nuanced understanding of plant biology is imperative.",
+      "reason": "The negative half 'not optional' is filler that merely restates the positive claim 'it is imperative'; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic, leading to the recognition of the clade **eudicots**.",
+      "replacement": "Molecular studies, particularly those using chloroplast and nuclear DNA sequences, have refined our understanding of plant relationships, revealing, for instance, that the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic, leading to the recognition of the clade **eudicots**.",
+      "reason": "No clear padded negation or definition doubling detected; this sentence states its claims once without a redundant restatement."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night.",
+      "reason": "The appended 'close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one' restates the distinction through an analogy/synonyms without adding a new fact, which is definition doubling."
+    },
+    {
+      "original": " Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "",
+      "reason": "'full stop' restates the preceding claim with no new information, functioning as a padded emphasis/restatement."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative half 'is not synthesized by the Pacific yew' is a windup that adds nothing beyond the positive claim that morphine comes from Papaver somniferum."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negative clause 'not nuclear transformation' restates the positive claim by its inverse without adding checkable information, per the delete-and-reread test."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "'on purpose, rather than by accident' restates the idea that breeders select alleles, adding no new fact and serving as filler restatement."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20753,
+    "output": 841,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

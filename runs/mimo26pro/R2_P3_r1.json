@@ -1,0 +1,77 @@
+{
+  "run_id": "R2_P3_r1",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:51:22.273335+00:00",
+  "duration_s": 17.478057361004176,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity\",\"replacement\":\"a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity\",\"reason\":\"The negative clause \\\"not merely academic\\\" is windup; the positive half alone states the claim.\"},{\"original\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\"replacement\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).\",\"reason\":\"The trailing restatement redefines the same distinction through an analogy, adding no new fact.\"},{\"original\":\"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\"replacement\":\"Morphine is produced in Papaver somniferum latex.\",\"reason\":\"The negative half is a windup that duplicates the correct source already named in the preceding sentence.\"},{\"original\":\"Botany, far from being a static catalog of flora, is a dynamic, integrative science\",\"replacement\":\"Botany is a dynamic, integrative science\",\"reason\":\"The \\\"far from being\\\" negative clause is filler; the positive half states the claim.\"},{\"original\":\"a deep, nuanced understanding of plant biology is not optional; it is imperative\",\"replacement\":\"a deep, nuanced understanding of plant biology is imperative\",\"reason\":\"The \\\"not optional\\\" negative half is windup before the assertion.\"},{\"original\":\"The construct was designed for chloroplast transformation, not nuclear transformation.\",\"replacement\":\"The construct was designed for chloroplast transformation.\",\"reason\":\"The \\\"not nuclear transformation\\\" contrast adds no checkable fact after the affirmative clause.\"},{\"original\":\"Breeders select dwarfing alleles on purpose, rather than by accident.\",\"replacement\":\"Breeders select dwarfing alleles on purpose.\",\"reason\":\"\\\"Rather than by accident\\\" is a padded negation restating \\\"on purpose.\\\"\"},{\"original\":\"Conservation collections still accession landraces, rather than heirlooms.\",\"replacement\":null,\"reason\":\"Likely padded negation, but \\\"landraces\\\" and \\\"heirlooms\\\" are distinct categories so the contrast may carry real information; flagged rather than changed.\"}]}",
+  "edits": [
+    {
+      "original": "a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity",
+      "replacement": "a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity",
+      "reason": "The negative clause \"not merely academic\" is windup; the positive half alone states the claim."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).",
+      "reason": "The trailing restatement redefines the same distinction through an analogy, adding no new fact."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative half is a windup that duplicates the correct source already named in the preceding sentence."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science",
+      "replacement": "Botany is a dynamic, integrative science",
+      "reason": "The \"far from being\" negative clause is filler; the positive half states the claim."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative",
+      "replacement": "a deep, nuanced understanding of plant biology is imperative",
+      "reason": "The \"not optional\" negative half is windup before the assertion."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The \"not nuclear transformation\" contrast adds no checkable fact after the affirmative clause."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\"Rather than by accident\" is a padded negation restating \"on purpose.\""
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Likely padded negation, but \"landraces\" and \"heirlooms\" are distinct categories so the contrast may carry real information; flagged rather than changed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4329,
+    "output": 528,
+    "cache_read": 16384,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0024014574,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

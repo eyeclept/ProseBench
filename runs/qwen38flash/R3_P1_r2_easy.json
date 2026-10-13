@@ -1,0 +1,47 @@
+{
+  "run_id": "R3_P1_r2_easy",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "505b3f7b549b233192a5083c1fb49de6c8316b4f72367cd7b9e26c8b2de0ce37",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:23:56.045366+00:00",
+  "duration_s": 15.400709587993333,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "Looking at the passage for trailing \"not X\" / \"rather than X\" clauses.\n\n**Candidate 1:** \"Access checks default to fail-closed, rather than open.\" \u2014 Is \"open\" the ordinary, general-knowledge antonym of \"fail-closed\"? No. \"Fail-closed\" is a security-engineering term; its contrast with \"fail-open\" is domain knowledge, not something virtually anyone knows. This is a genuine distinction smuggled into a bolted-on clause, so it earns its own sentence stated as fact.\n\n**Candidate 2:** \"Those privilege limits are imposed on purpose, rather than by accident.\" \u2014 \"on purpose / by accident\" is exactly the ordinary-knowledge antonym pair named in the rule's examples. Cut the trailer.\n\n{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed. When an authentication service is unreachable or a check cannot be completed, access is denied.\", \"reason\": \"'fail-open' is not the ordinary antonym of 'fail-closed'; this is a genuine behavioral distinction tacked onto the sentence, so it gets its own sentence stating what the system does.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"'by accident' is the ordinary, general-knowledge antonym of 'on purpose', so the trailer adds nothing and is cut.\"}]}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed. When an authentication service is unreachable or a check cannot be completed, access is denied.",
+      "reason": "'fail-open' is not the ordinary antonym of 'fail-closed'; this is a genuine behavioral distinction tacked onto the sentence, so it gets its own sentence stating what the system does."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "'by accident' is the ordinary, general-knowledge antonym of 'on purpose', so the trailer adds nothing and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3055,
+    "output": 314,
+    "cache_read": 16640,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00087207,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

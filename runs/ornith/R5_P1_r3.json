@@ -1,0 +1,57 @@
+{
+  "run_id": "R5_P1_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:43:40.341622+00:00",
+  "duration_s": 7.516567821992794,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\":[{\"original\":\"creating \\\"attack surfaces\\\" that are dramatically broader than in the past\",\"replacement\":\"creating \\\"attack surfaces\\\" that are broader than in the past\",\"reason\":\"The intensifier \\\"dramatically\\\" is a placeholder for evidence and should be removed to let the comparison stand on its own.\"},{\"original\":\"The playbook change significantly reduces mean time to contain.\",\"replacement\":\"The playbook change reduced mean time to contain from 18 hours to 3 hours.\",\"reason\":\"The intensifier \\\"significantly\\\" is replaced with the concrete figures already established in the passage as evidence.\"},{\"original\":\"Fail-closed is the only acceptable default for those checks, end of story.\",\"replacement\":\"Fail-closed is the only acceptable default for those checks.\",\"reason\":\"\\\"End of story\\\" is a finality interjection tacked onto a claim that already carries the exclusivity marker \\\"only,\\\" so it adds no evidence.\"},{\"original\":\"Positive reinforcement for reporters is now a standing practice, full stop.\",\"replacement\":\"Positive reinforcement for reporters is now a standing practice.\",\"reason\":\"\\\"Full stop\\\" is a finality interjection repeating the emphatic work already done by \\\"now,\\\" adding no evidence.\"}]}\n```",
+  "edits": [
+    {
+      "original": "creating \"attack surfaces\" that are dramatically broader than in the past",
+      "replacement": "creating \"attack surfaces\" that are broader than in the past",
+      "reason": "The intensifier \"dramatically\" is a placeholder for evidence and should be removed to let the comparison stand on its own."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change reduced mean time to contain from 18 hours to 3 hours.",
+      "reason": "The intensifier \"significantly\" is replaced with the concrete figures already established in the passage as evidence."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "\"End of story\" is a finality interjection tacked onto a claim that already carries the exclusivity marker \"only,\" so it adds no evidence."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "\"Full stop\" is a finality interjection repeating the emphatic work already done by \"now,\" adding no evidence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19354,
+    "output": 249,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

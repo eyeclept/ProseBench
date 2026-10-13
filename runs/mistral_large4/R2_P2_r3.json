@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:00:45.432052+00:00",
+  "duration_s": 31.677732583979378,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"replacement\": \"The architecture of a power system is therefore a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"reason\": \"The negative half 'not merely a physical infrastructure' is padded negation; deleting it leaves the positive claim intact with nothing lost.\"\n    },\n    {\n      \"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\",\n      \"replacement\": \"Inertia still matters for the first few cycles after a trip.\",\n      \"reason\": \"The phrase 'full stop' is a restatement/emphasis filler that adds no checkable information beyond the preceding clause.\"\n    },\n    {\n      \"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": \"Operators procured spinning reserve.\",\n      \"reason\": \"The negative contrast 'rather than non-spinning reserve' is padded negation; the positive half alone states the same claim.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned on purpose.\",\n      \"reason\": \"The negative contrast 'rather than by accident' is padded negation; deleting it loses nothing checkable.\"\n    },\n    {\n      \"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n      \"replacement\": \"Islanded operation is the only backup path for those hospitals.\",\n      \"reason\": \"The phrase 'end of story' is a restatement/emphasis filler that adds no checkable information.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is therefore a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "reason": "The negative half 'not merely a physical infrastructure' is padded negation; deleting it leaves the positive claim intact with nothing lost."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "The phrase 'full stop' is a restatement/emphasis filler that adds no checkable information beyond the preceding clause."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The negative contrast 'rather than non-spinning reserve' is padded negation; the positive half alone states the same claim."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "The negative contrast 'rather than by accident' is padded negation; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "The phrase 'end of story' is a restatement/emphasis filler that adds no checkable information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 442,
+    "output": 410,
+    "cache_read": 19948,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00255382,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

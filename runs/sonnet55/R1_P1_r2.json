@@ -1,0 +1,227 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:42:12.847896+00:00",
+  "duration_s": 18.638930502987932,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"The twenty\u2011first century has been defined by an unprecedented surge\", \"replacement\": null, \"reason\": \"Flagged for review; the passage is dense with banned items and this opener is generic filler, but a rewrite needs author input.\"}, {\"original\": \"speed, efficiency, and the democratization of knowledge\u2014but it also\", \"replacement\": \"speed, efficiency, and the democratization of knowledge, but it also\", \"reason\": \"Em dash is a NEVER character; replaced with a comma.\"}, {\"original\": \"The stakes are high: a single breach\", \"replacement\": null, \"reason\": \"Flagged for review: rhetorical colon opener is a discouraged structural pattern.\"}, {\"original\": \"the contemporary threat landscape,\", \"replacement\": \"the contemporary threats,\", \"reason\": \"Inflated-metaphor use of 'landscape'.\"}, {\"original\": \"### The Expanding Threat Landscape  \", \"replacement\": \"### The Expanding Threats  \", \"reason\": \"Inflated-metaphor use of 'landscape' in heading.\"}, {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remains pervasive\", \"reason\": \"Em dashes are a NEVER character; replaced with parentheses.\"}, {\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past. Moreover, the rise\", \"replacement\": \"creating attack surfaces that are much broader than in the past. The rise\", \"reason\": \"Curly quotes/scare quotes, 'dramatically', and 'Moreover' are banned or discouraged.\"}, {\"original\": \"### Technical Defenses: Layers of Protection  \", \"replacement\": \"### Technical Defenses  \", \"reason\": \"Parenthetical-style clarification in heading is banned; subtitle clause removed.\"}, {\"original\": \"limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023)\", \"replacement\": \"limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023)\", \"reason\": \"Em dash is a NEVER character.\"}, {\"original\": \"leveraging machine\u2011learning models\", \"replacement\": \"using machine\u2011learning models\", \"reason\": \"'Leveraging' is a discouraged verb.\"}, {\"original\": \"robust encryption (AES\u2011256, TLS 1.3) ensures\", \"replacement\": \"strong encryption (AES\u2011256, TLS 1.3) ensures\", \"reason\": \"'Robust' is a discouraged adjective.\"}, {\"original\": \"moving away from the outdated \u201ctrusted internal network\u201d paradigm\", \"replacement\": \"moving away from the outdated trusted-internal-network model\", \"reason\": \"Scare quotes on a normal term and curly quotes.\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree...\", \"reason\": \"Ellipsis glyph replaced with three periods.\"}, {\"original\": \"which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"which sped up containment. The playbook change cut mean time to contain.\", \"reason\": \"'Streamlines' and 'significantly' are discouraged words.\"}, {\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.\", \"reason\": \"Em dash is a NEVER character.\"}, {\"original\": \"**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**\", \"replacement\": \"**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**\", \"reason\": \"Title text is exempt; no change needed.\"}, {\"original\": \"Cybersecurity operates within a complex web of legal\", \"replacement\": null, \"reason\": \"Flagged: 'complex web' is inflated metaphor; author should reword.\"}, {\"original\": \"fostering a collaborative security ecosystem\", \"replacement\": \"building a collaborative security community\", \"reason\": \"'Fostering' and metaphorical 'ecosystem' are discouraged.\"}, {\"original\": \"prevent a fragmented regulatory landscape that could hinder\", \"replacement\": \"prevent fragmented regulation that could hinder\", \"reason\": \"Inflated-metaphor use of 'landscape'.\"}, {\"original\": \"ethical considerations arise around surveillance\", \"replacement\": \"ethical considerations arise around surveillance\", \"reason\": \"No change needed.\"}, {\"original\": \"Integrating these emerging tools wisely will be pivotal for\", \"replacement\": \"Integrating these emerging tools wisely will matter for\", \"reason\": \"'Pivotal' is a discouraged adjective.\"}, {\"original\": \"the 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered\", \"replacement\": \"the 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, the legal team then discovered\", \"reason\": \"Em dash is a NEVER character.\"}, {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.\", \"reason\": \"Em dash is a NEVER character.\"}, {\"original\": \"Cyber threats disregard geopolitical borders, making international cooperation indispensable.\", \"replacement\": \"Cyber threats disregard geopolitical borders, making international cooperation indispensable.\", \"reason\": \"No change needed.\"}, {\"original\": \"Public\u2011private partnerships further bolster collective defense\", \"replacement\": \"Public\u2011private partnerships further strengthen collective defense\", \"reason\": \"'Bolster' is a discouraged verb.\"}, {\"original\": \"facilitate norm\u2011setting\", \"replacement\": \"support norm\u2011setting\", \"reason\": \"'Facilitate' is a discouraged verb.\"}, {\"original\": \"the Network and Information Security (NIS) Directive obliges\", \"replacement\": \"the Network and Information Security (NIS) Directive obliges\", \"reason\": \"No change needed.\"}, {\"original\": \"Looking ahead, cybersecurity will be shaped by three converging forces: hyper\u2011connectivity\", \"replacement\": null, \"reason\": \"Flagged: colon-led list opener; acceptable but author may restructure.\"}, {\"original\": \"Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted\", \"replacement\": \"Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted\", \"reason\": \"No change needed.\"}, {\"original\": \"Leverage federated learning\", \"replacement\": \"Use federated learning\", \"reason\": \"'Leverage' is a discouraged verb.\"}, {\"original\": \"**AI\u2011Enhanced Threat Intelligence**\", \"replacement\": \"**AI\u2011Assisted Threat Intelligence**\", \"reason\": \"'Enhanced' derives from discouraged 'enhance'.\"}, {\"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform\", \"replacement\": \"With technological innovation, strong governance, continuous education, and global cooperation, the cybersecurity community can move\", \"reason\": \"Sentence opens with 'By [gerund]'; 'robust' and 'transform' discouraged.\"}, {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"The fast-changing threats, including ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demand a broad response\", \"reason\": \"Em dashes, 'landscape' metaphor, and 'holistic' are banned or discouraged.\"}, {\"original\": \"provide new avenues for defense\", \"replacement\": \"offer new defenses\", \"reason\": \"Inflated 'avenues' phrasing.\"}, {\"original\": \"Ultimately, the resilience of digital societies\", \"replacement\": \"The resilience of digital societies\", \"reason\": \"'Ultimately' is a discouraged intensifier.\"}, {\"original\": \"the very fabric of system design\", \"replacement\": \"system design\", \"reason\": \"Inflated metaphor.\"}, {\"original\": \"unprecedented collaboration, a trend likely to intensify\", \"replacement\": \"unprecedented collaboration, a trend likely to intensify\", \"reason\": \"No change needed.\"}, {\"original\": \"extraordinary benefits\", \"replacement\": \"large benefits\", \"reason\": \"Inflated intensifier.\"}]}",
+  "edits": [
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge",
+      "replacement": null,
+      "reason": "Flagged for review; the passage is dense with banned items and this opener is generic filler, but a rewrite needs author input."
+    },
+    {
+      "original": "speed, efficiency, and the democratization of knowledge\u2014but it also",
+      "replacement": "speed, efficiency, and the democratization of knowledge, but it also",
+      "reason": "Em dash is a NEVER character; replaced with a comma."
+    },
+    {
+      "original": "The stakes are high: a single breach",
+      "replacement": null,
+      "reason": "Flagged for review: rhetorical colon opener is a discouraged structural pattern."
+    },
+    {
+      "original": "the contemporary threat landscape,",
+      "replacement": "the contemporary threats,",
+      "reason": "Inflated-metaphor use of 'landscape'."
+    },
+    {
+      "original": "### The Expanding Threat Landscape  ",
+      "replacement": "### The Expanding Threats  ",
+      "reason": "Inflated-metaphor use of 'landscape' in heading."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remains pervasive",
+      "reason": "Em dashes are a NEVER character; replaced with parentheses."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past. Moreover, the rise",
+      "replacement": "creating attack surfaces that are much broader than in the past. The rise",
+      "reason": "Curly quotes/scare quotes, 'dramatically', and 'Moreover' are banned or discouraged."
+    },
+    {
+      "original": "### Technical Defenses: Layers of Protection  ",
+      "replacement": "### Technical Defenses  ",
+      "reason": "Parenthetical-style clarification in heading is banned; subtitle clause removed."
+    },
+    {
+      "original": "limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023)",
+      "replacement": "limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023)",
+      "reason": "Em dash is a NEVER character."
+    },
+    {
+      "original": "leveraging machine\u2011learning models",
+      "replacement": "using machine\u2011learning models",
+      "reason": "'Leveraging' is a discouraged verb."
+    },
+    {
+      "original": "robust encryption (AES\u2011256, TLS 1.3) ensures",
+      "replacement": "strong encryption (AES\u2011256, TLS 1.3) ensures",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "moving away from the outdated \u201ctrusted internal network\u201d paradigm",
+      "replacement": "moving away from the outdated trusted-internal-network model",
+      "reason": "Scare quotes on a normal term and curly quotes."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "Ellipsis glyph replaced with three periods."
+    },
+    {
+      "original": "which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "which sped up containment. The playbook change cut mean time to contain.",
+      "reason": "'Streamlines' and 'significantly' are discouraged words."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "Em dash is a NEVER character."
+    },
+    {
+      "original": "**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**",
+      "replacement": "**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**",
+      "reason": "Title text is exempt; no change needed."
+    },
+    {
+      "original": "Cybersecurity operates within a complex web of legal",
+      "replacement": null,
+      "reason": "Flagged: 'complex web' is inflated metaphor; author should reword."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "building a collaborative security community",
+      "reason": "'Fostering' and metaphorical 'ecosystem' are discouraged."
+    },
+    {
+      "original": "prevent a fragmented regulatory landscape that could hinder",
+      "replacement": "prevent fragmented regulation that could hinder",
+      "reason": "Inflated-metaphor use of 'landscape'."
+    },
+    {
+      "original": "ethical considerations arise around surveillance",
+      "replacement": "ethical considerations arise around surveillance",
+      "reason": "No change needed."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for",
+      "replacement": "Integrating these emerging tools wisely will matter for",
+      "reason": "'Pivotal' is a discouraged adjective."
+    },
+    {
+      "original": "the 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered",
+      "replacement": "the 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, the legal team then discovered",
+      "reason": "Em dash is a NEVER character."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.",
+      "reason": "Em dash is a NEVER character."
+    },
+    {
+      "original": "Cyber threats disregard geopolitical borders, making international cooperation indispensable.",
+      "replacement": "Cyber threats disregard geopolitical borders, making international cooperation indispensable.",
+      "reason": "No change needed."
+    },
+    {
+      "original": "Public\u2011private partnerships further bolster collective defense",
+      "replacement": "Public\u2011private partnerships further strengthen collective defense",
+      "reason": "'Bolster' is a discouraged verb."
+    },
+    {
+      "original": "facilitate norm\u2011setting",
+      "replacement": "support norm\u2011setting",
+      "reason": "'Facilitate' is a discouraged verb."
+    },
+    {
+      "original": "the Network and Information Security (NIS) Directive obliges",
+      "replacement": "the Network and Information Security (NIS) Directive obliges",
+      "reason": "No change needed."
+    },
+    {
+      "original": "Looking ahead, cybersecurity will be shaped by three converging forces: hyper\u2011connectivity",
+      "replacement": null,
+      "reason": "Flagged: colon-led list opener; acceptable but author may restructure."
+    },
+    {
+      "original": "Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted",
+      "replacement": "Autonomous vehicles, smart grids, and industrial robots will demand real\u2011time, AI\u2011assisted",
+      "reason": "No change needed."
+    },
+    {
+      "original": "Leverage federated learning",
+      "replacement": "Use federated learning",
+      "reason": "'Leverage' is a discouraged verb."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence**",
+      "replacement": "**AI\u2011Assisted Threat Intelligence**",
+      "reason": "'Enhanced' derives from discouraged 'enhance'."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform",
+      "replacement": "With technological innovation, strong governance, continuous education, and global cooperation, the cybersecurity community can move",
+      "reason": "Sentence opens with 'By [gerund]'; 'robust' and 'transform' discouraged."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "The fast-changing threats, including ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demand a broad response",
+      "reason": "Em dashes, 'landscape' metaphor, and 'holistic' are banned or discouraged."
+    },
+    {
+      "original": "provide new avenues for defense",
+      "replacement": "offer new defenses",
+      "reason": "Inflated 'avenues' phrasing."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies",
+      "replacement": "The resilience of digital societies",
+      "reason": "'Ultimately' is a discouraged intensifier."
+    },
+    {
+      "original": "the very fabric of system design",
+      "replacement": "system design",
+      "reason": "Inflated metaphor."
+    },
+    {
+      "original": "unprecedented collaboration, a trend likely to intensify",
+      "replacement": "unprecedented collaboration, a trend likely to intensify",
+      "reason": "No change needed."
+    },
+    {
+      "original": "extraordinary benefits",
+      "replacement": "large benefits",
+      "reason": "Inflated intensifier."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 3003,
+    "cache_read": 31370,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.033175,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

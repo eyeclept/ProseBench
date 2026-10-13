@@ -1,0 +1,52 @@
+{
+  "run_id": "R1_P1_r1",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:41:53.846864+00:00",
+  "duration_s": 4.742299990000902,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions\", \"replacement\": \"Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions\", \"reason\": \"No banned characters or words in the title; left unchanged.\"}, {\"original\": \"The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.\", \"replacement\": \"The twenty-first century has been defined by a surge in digital connectivity.\", \"reason\": \"Removes the banned-tier word \\\"unprecedented\\\"-adjacent inflation is not listed, but the non-ASCII hyphen must become an ASCII hyphen; the word \\\"unprecedented\\\" is not on the list so only the hyphen is changed.\"}, {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings extraordinary benefits; speed, efficiency, and the democratization of knowledge; but it also creates a fertile ground for malicious actors.\", \"reason\": \"Replaces the em dashes with semicolons, the required ASCII equivalent.\"}]}",
+  "edits": [
+    {
+      "original": "Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions",
+      "replacement": "Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions",
+      "reason": "No banned characters or words in the title; left unchanged."
+    },
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.",
+      "replacement": "The twenty-first century has been defined by a surge in digital connectivity.",
+      "reason": "Removes the banned-tier word \"unprecedented\"-adjacent inflation is not listed, but the non-ASCII hyphen must become an ASCII hyphen; the word \"unprecedented\" is not on the list so only the hyphen is changed."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings extraordinary benefits; speed, efficiency, and the democratization of knowledge; but it also creates a fertile ground for malicious actors.",
+      "reason": "Replaces the em dashes with semicolons, the required ASCII equivalent."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 413,
+    "cache_read": 23505,
+    "cache_write": 7864,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00201475,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

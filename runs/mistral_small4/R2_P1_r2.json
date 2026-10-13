@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P1_r2",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:15:04.086820+00:00",
+  "duration_s": 4.619002630002797,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\",\n      \"replacement\": \"\",\n      \"reason\": \"The sentence restates the preceding point without adding new information.\"\n    },\n    {\n      \"original\": \"The EDR timeline ends at a truncated process tree\u2026\",\n      \"replacement\": \"\",\n      \"reason\": \"The sentence is incomplete and does not contribute meaningful content.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"The sentence restates the preceding point without adding new information.\"\n    },\n    {\n      \"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"The sentence restates the preceding point without adding new information.\"\n    },\n    {\n      \"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"The 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, and the legal team later discovered the gap during a discovery request.\",\n      \"reason\": \"The original sentence is a run-on with redundant phrasing ('then discovered the gap').\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "",
+      "reason": "The sentence restates the preceding point without adding new information."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "",
+      "reason": "The sentence is incomplete and does not contribute meaningful content."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The sentence restates the preceding point without adding new information."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "The sentence restates the preceding point without adding new information."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, and the legal team later discovered the gap during a discovery request.",
+      "reason": "The original sentence is a run-on with redundant phrasing ('then discovered the gap')."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3370,
+    "output": 308,
+    "cache_read": 16560,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0009387,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

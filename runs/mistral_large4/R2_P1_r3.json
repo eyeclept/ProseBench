@@ -1,0 +1,62 @@
+{
+  "run_id": "R2_P1_r3",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:59:49.214606+00:00",
+  "duration_s": 8.244071794993943,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"The second sentence restates the first with no new information; deleting it loses nothing checkable.\"\n    },\n    {\n      \"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report. Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\",\n      \"replacement\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report. Mean time to contain fell from 18 hours to 3 hours after the playbook change.\",\n      \"reason\": \"The final sentence restates the same fact already stated in the previous sentence; deleting it loses nothing checkable.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"Both sentences are padded restatements of claims already made in the preceding sentences; deleting them loses nothing checkable.\"\n    },\n    {\n      \"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"\",\n      \"reason\": \"This sentence is a padded restatement with no checkable new claim tied to the surrounding argument; deleting it loses nothing checkable.\"\n    },\n    {\n      \"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\",\n      \"replacement\": \"Cybersecurity today is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\",\n      \"reason\": \"The negative half 'is not merely an IT concern' is windup; the positive half alone states the same claim with nothing lost.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The second sentence restates the first with no new information; deleting it loses nothing checkable."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report. Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report. Mean time to contain fell from 18 hours to 3 hours after the playbook change.",
+      "reason": "The final sentence restates the same fact already stated in the previous sentence; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "Both sentences are padded restatements of claims already made in the preceding sentences; deleting them loses nothing checkable."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "",
+      "reason": "This sentence is a padded restatement with no checkable new claim tied to the surrounding argument; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "replacement": "Cybersecurity today is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "reason": "The negative half 'is not merely an IT concern' is windup; the positive half alone states the same claim with nothing lost."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 849,
+    "output": 479,
+    "cache_read": 18412,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00286727,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

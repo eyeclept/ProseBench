@@ -1,0 +1,135 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:38:53.641867+00:00",
+  "duration_s": 32.4690568150254,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"*Word count: \u2248 1,620*\", \"replacement\": null, \"reason\": \"The almost-equal-to sign (U+2248) is not typeable on a standard US keyboard; flagging rather than guessing an approximation like '~='.\"},\n{\"original\": \"extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\", \"replacement\": \"extraordinary benefits: speed, efficiency, and the democratization of knowledge. However, it also creates\", \"reason\": \"The paired em dashes set off an appositive list and then join two independent clauses, so a colon plus a sentence break avoids a comma splice.\"},\n{\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware, such as viruses, worms, and trojans, remains pervasive\", \"reason\": \"Em-dash pair replaced with commas for the parenthetical list; the plural subject 'malware' does not take 'remain', but only the dash substitution is made here.\"},\n{\"original\": \"micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023)\", \"replacement\": \"micro\u2011segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023)\", \"reason\": \"The material after the em dash is a trailing noun phrase, not its own clause, so a comma is correct.\"},\n{\"original\": \"regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities\", \"replacement\": \"regular patch management, automated wherever possible, closes known vulnerabilities\", \"reason\": \"The em-dash pair encloses a non-clausal interrupter, which commas handle cleanly.\"},\n{\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree...\", \"reason\": \"The ellipsis glyph (U+2026) becomes three ASCII periods.\"},\n{\"original\": \"mean time to contain\u2014the finance team uses that figure in the quarterly risk report\", \"replacement\": \"mean time to contain; the finance team uses that figure in the quarterly risk report\", \"reason\": \"Both sides are independent clauses, so a semicolon prevents a comma splice.\"},\n{\"original\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption\", \"replacement\": \"Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption\", \"reason\": \"What follows the em dash is an illustrative fragment rather than a clause, so a comma is safe.\"},\n{\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.\", \"reason\": \"The em dash joins independent clauses, so a period is used; the remaining two clauses needed a conjunction to avoid a run-on.\"},\n{\"original\": \"**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted\", \"replacement\": \"**Zero\u2011Trust Architecture** - Treat every access request as untrusted\", \"reason\": \"En dash (U+2013) used as a separator becomes an ASCII hyphen.\"},\n{\"original\": \"**Secure\u2011by\u2011Design Development** \u2013 Embed security testing\", \"replacement\": \"**Secure\u2011by\u2011Design Development** - Embed security testing\", \"reason\": \"En dash used as a separator becomes an ASCII hyphen.\"},\n{\"original\": \"**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning\", \"replacement\": \"**AI\u2011Enhanced Threat Intelligence** - Leverage federated learning\", \"reason\": \"En dash used as a separator becomes an ASCII hyphen.\"},\n{\"original\": \"**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems\", \"replacement\": \"**Post\u2011Quantum Preparedness** - Begin migrating critical systems\", \"reason\": \"En dash used as a separator becomes an ASCII hyphen.\"},\n{\"original\": \"**Resilience Engineering** \u2013 Focus on rapid recovery capabilities\", \"replacement\": \"**Resilience Engineering** - Focus on rapid recovery capabilities\", \"reason\": \"En dash used as a separator becomes an ASCII hyphen.\"},\n{\"original\": \"rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption\", \"replacement\": \"rapid recovery capabilities, such as immutable backups, diversified cloud regions, and automated failover, to minimize operational disruption\", \"reason\": \"The em-dash pair encloses a noun-phrase list, so commas substitute without creating a run-on.\"},\n{\"original\": \"threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"threat landscape, characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demands a holistic response\", \"reason\": \"The em-dash pair sets off a participial phrase inside one clause, so commas are the correct ASCII substitute.\"}\n]}",
+  "edits": [
+    {
+      "original": "*Word count: \u2248 1,620*",
+      "replacement": null,
+      "reason": "The almost-equal-to sign (U+2248) is not typeable on a standard US keyboard; flagging rather than guessing an approximation like '~='."
+    },
+    {
+      "original": "extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "extraordinary benefits: speed, efficiency, and the democratization of knowledge. However, it also creates",
+      "reason": "The paired em dashes set off an appositive list and then join two independent clauses, so a colon plus a sentence break avoids a comma splice."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware, such as viruses, worms, and trojans, remains pervasive",
+      "reason": "Em-dash pair replaced with commas for the parenthetical list; the plural subject 'malware' does not take 'remain', but only the dash substitution is made here."
+    },
+    {
+      "original": "micro\u2011segmentation isolates workloads, limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023)",
+      "replacement": "micro\u2011segmentation isolates workloads, limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023)",
+      "reason": "The material after the em dash is a trailing noun phrase, not its own clause, so a comma is correct."
+    },
+    {
+      "original": "regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities",
+      "replacement": "regular patch management, automated wherever possible, closes known vulnerabilities",
+      "reason": "The em-dash pair encloses a non-clausal interrupter, which commas handle cleanly."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "The ellipsis glyph (U+2026) becomes three ASCII periods."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure in the quarterly risk report",
+      "replacement": "mean time to contain; the finance team uses that figure in the quarterly risk report",
+      "reason": "Both sides are independent clauses, so a semicolon prevents a comma splice."
+    },
+    {
+      "original": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption",
+      "replacement": "Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption",
+      "reason": "What follows the em dash is an illustrative fragment rather than a clause, so a comma is safe."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan, and the legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash joins independent clauses, so a period is used; the remaining two clauses needed a conjunction to avoid a run-on."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted",
+      "replacement": "**Zero\u2011Trust Architecture** - Treat every access request as untrusted",
+      "reason": "En dash (U+2013) used as a separator becomes an ASCII hyphen."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013 Embed security testing",
+      "replacement": "**Secure\u2011by\u2011Design Development** - Embed security testing",
+      "reason": "En dash used as a separator becomes an ASCII hyphen."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning",
+      "replacement": "**AI\u2011Enhanced Threat Intelligence** - Leverage federated learning",
+      "reason": "En dash used as a separator becomes an ASCII hyphen."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems",
+      "replacement": "**Post\u2011Quantum Preparedness** - Begin migrating critical systems",
+      "reason": "En dash used as a separator becomes an ASCII hyphen."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013 Focus on rapid recovery capabilities",
+      "replacement": "**Resilience Engineering** - Focus on rapid recovery capabilities",
+      "reason": "En dash used as a separator becomes an ASCII hyphen."
+    },
+    {
+      "original": "rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption",
+      "replacement": "rapid recovery capabilities, such as immutable backups, diversified cloud regions, and automated failover, to minimize operational disruption",
+      "reason": "The em-dash pair encloses a noun-phrase list, so commas substitute without creating a run-on."
+    },
+    {
+      "original": "threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "threat landscape, characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demands a holistic response",
+      "reason": "The em-dash pair sets off a participial phrase inside one clause, so commas are the correct ASCII substitute."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3611,
+    "output": 1422,
+    "cache_read": 58880,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00215207,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://www.fileformat.info/info/unicode/char/2011/index.htm",
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Confirm Unicode character identities used in copy-editing the passage"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_developer_search",
+      "arguments": {
+        "query": "detect smart quotes em dash ellipsis non-breaking space US keyboard ASCII validation rule",
+        "k": 5
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

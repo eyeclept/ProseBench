@@ -1,0 +1,422 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:43:39.319220+00:00",
+  "duration_s": 29.43207712000003,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophe is outside the standard US keyboard; replace with a straight apostrophe.\"}, {\"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\", \"replacement\": \"The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network\", \"reason\": \"Em dashes are banned; use commas.\"}, {\"original\": \"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged,\", \"replacement\": \"While the basic principle (converting a primary energy source into usable electrical power) remains unchanged,\", \"reason\": \"Em dashes are banned; use parentheses.\"}, {\"original\": \"the architecture of modern power systems has evolved dramatically to accommodate\", \"replacement\": \"the architecture of modern power systems has evolved to accommodate\", \"reason\": \"Intensifier 'dramatically' is discouraged.\"}, {\"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\", \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability\", \"reason\": \"Em dashes are banned; use parentheses.\"}, {\"original\": \"so the retune significantly shortens frequency restoration.\", \"replacement\": \"so the retune shortens frequency restoration.\", \"reason\": \"Intensifier 'significantly' is discouraged.\"}, {\"original\": \"Robust control keeps voltage\", \"replacement\": \"Well-tuned control keeps voltage\", \"reason\": \"'Robust' is a discouraged word.\"}, {\"original\": \"requiring robust transmission networks.\", \"replacement\": \"requiring strong transmission networks.\", \"reason\": \"'Robust' is a discouraged word.\"}, {\"original\": \"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\", \"replacement\": \"Forecasts still miss cloud-driven ramps. Wind turbines\", \"reason\": \"Ellipsis glyph is banned; replace with a period.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses\", \"replacement\": \"The 345 kV reconductor reduces line losses\", \"reason\": \"Intensifier 'significantly' is discouraged.\"}, {\"original\": \"static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators\", \"replacement\": \"static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC) provide operators\", \"reason\": \"Em dash is banned; closing dash removed.\"}, {\"original\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR\", \"replacement\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices, namely static VAR\", \"reason\": \"Em dash is banned; use a comma.\"}, {\"original\": \"providing dynamic voltage and power\u2011flow regulation, enhancing capacity\", \"replacement\": \"providing dynamic voltage and power-flow regulation, enhancing capacity\", \"reason\": \"No change needed.\"}, {\"original\": \"Modern transmission planning leverages *optimal power flow*\", \"replacement\": \"Modern transmission planning uses *optimal power flow*\", \"reason\": \"'Leverages' is a discouraged verb.\"}, {\"original\": \"delivering electricity at usable voltages (typically 120/240 V in residential settings) to homes\", \"replacement\": \"delivering electricity at usable voltages (typically 120/240 V in residential settings) to homes\", \"reason\": \"No change needed.\"}, {\"original\": \"the \u201clast mile\u201d of the power system\", \"replacement\": \"the \\\"last mile\\\" of the power system\", \"reason\": \"Curly quotes are banned; use straight quotes.\"}, {\"original\": \"\u2013 \u201cRadial\u201d designs are common\", \"replacement\": \"- \\\"Radial\\\" designs are common\", \"reason\": \"En dash and curly quotes are banned.\"}, {\"original\": \"**Generation** \u2013 Conversion\", \"replacement\": \"**Generation** - Conversion\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Transmission & Distribution (T&D)** \u2013 Transport\", \"replacement\": \"**Transmission & Distribution (T&D)** - Transport\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Control & Protection** \u2013 Continuous\", \"replacement\": \"**Control & Protection** - Continuous\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Intermittency** \u2013 Power\", \"replacement\": \"**Intermittency** - Power\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Geographic Dispersion** \u2013 Renewable\", \"replacement\": \"**Geographic Dispersion** - Renewable\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Inverter\u2011Based Interface** \u2013 Many\", \"replacement\": \"**Inverter-Based Interface** - Many\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Transmission Lines** \u2013 Overhead\", \"replacement\": \"**Transmission Lines** - Overhead\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Substations** \u2013 Nodes\", \"replacement\": \"**Substations** - Nodes\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Converters** \u2013 For\", \"replacement\": \"**Converters** - For\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Primary Substations** \u2013 Reduce\", \"replacement\": \"**Primary Substations** - Reduce\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"medium voltages (4 kV\u201335 kV)\", \"replacement\": \"medium voltages (4 kV to 35 kV)\", \"reason\": \"En dash is banned.\"}, {\"original\": \"**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs are common due to simplicity; however, *mesh*\", \"replacement\": \"**Radial or Mesh Feeders** - \\\"Radial\\\" designs are common due to simplicity; however, *mesh*\", \"reason\": \"En dash and curly quotes are banned.\"}, {\"original\": \"**Secondary Distribution Transformers** \u2013 Further\", \"replacement\": \"**Secondary Distribution Transformers** - Further\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Smart Devices** \u2013 Automated\", \"replacement\": \"**Smart Devices** - Automated\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Primary (Local) Control** \u2013 Governor\", \"replacement\": \"**Primary (Local) Control** - Governor\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Secondary (AGC) Control** \u2013 Automatic\", \"replacement\": \"**Secondary (AGC) Control** - Automatic\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Tertiary (Economic Dispatch)** \u2013 Centralized\", \"replacement\": \"**Tertiary (Economic Dispatch)** - Centralized\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Overcurrent Protection** \u2013 Detects\", \"replacement\": \"**Overcurrent Protection** - Detects\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Distance Protection** \u2013 Measures\", \"replacement\": \"**Distance Protection** - Measures\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Differential Protection** \u2013 Compares\", \"replacement\": \"**Differential Protection** - Compares\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"acts as the grid\u2019s immune system\", \"replacement\": \"acts as the grid's immune system\", \"reason\": \"Curly apostrophe is banned.\"}, {\"original\": \"Protective relays and circuit breakers act as the grid\u2019s immune system\", \"replacement\": \"Protective relays and circuit breakers act as the grid's immune system\", \"reason\": \"Curly apostrophe is banned.\"}, {\"original\": \"While electricity is expected to be \u201calways\u2011on,\u201d extreme\", \"replacement\": \"While electricity is expected to be \\\"always-on,\\\" extreme\", \"reason\": \"Curly quotes are banned; scare quotes avoided by using straight quotes on a quoted expectation.\"}, {\"original\": \"**Hardening Infrastructure** \u2013 Substation\", \"replacement\": \"**Hardening Infrastructure** - Substation\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Grid Flexibility** \u2013 Fast\", \"replacement\": \"**Grid Flexibility** - Fast\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Decentralized Backup** \u2013 Microgrids\", \"replacement\": \"**Decentralized Backup** - Microgrids\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity\", \"replacement\": \"**Supply-Demand Balancing** - The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity\", \"reason\": \"En dash and curly-quote scare quotes are banned.\"}, {\"original\": \"**Grid Stability** \u2013 Reduced\", \"replacement\": \"**Grid Stability** - Reduced\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"The deregulated electricity market, while fostering competition,\", \"replacement\": \"The deregulated electricity market, while encouraging competition,\", \"reason\": \"'Fostering' is a discouraged verb.\"}, {\"original\": \"**Advanced Metering Infrastructure (AMI)** \u2013 Provides\", \"replacement\": \"**Advanced Metering Infrastructure (AMI)** - Provides\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Distribution Management Systems (DMS)** \u2013 Automate\", \"replacement\": \"**Distribution Management Systems (DMS)** - Automate\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120 samples/second, granting operators unprecedented visibility\", \"replacement\": \"**Wide-Area Monitoring Systems (WAMS)** - Phasor Measurement Units (PMUs) deliver synchrophasor data at 30 to 120 samples/second, granting operators unprecedented visibility\", \"reason\": \"En dashes are banned.\"}, {\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive\", \"replacement\": \"Digital twins (high-fidelity virtual replicas of physical grid assets) allow predictive\", \"reason\": \"Em dashes are banned; use parentheses.\"}, {\"original\": \"**Lithium\u2011Ion Batteries** \u2013 Dominant\", \"replacement\": \"**Lithium-Ion Batteries** - Dominant\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer\", \"replacement\": \"**Flow Batteries** (Vanadium Redox, Zinc-Bromine) - Offer\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Thermal and Mechanical Storage** \u2013 Cryogenic\", \"replacement\": \"**Thermal and Mechanical Storage** - Cryogenic\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Full Renewable Transition** \u2013 100 %\", \"replacement\": \"**Full Renewable Transition** - 100 %\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting\", \"replacement\": \"**Carbon Capture, Utilization, and Storage (CCUS)** - Retrofitting\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Hydrogen Integration** \u2013 Using\", \"replacement\": \"**Hydrogen Integration** - Using\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Provides Synthetic Inertia** \u2013 Emulates\", \"replacement\": \"**Provides Synthetic Inertia** - Emulates\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).\", \"replacement\": \"**Enables Islanded Microgrids** - Transition between grid-connected and standalone operation, needed for critical facilities (hospitals, data centers).\", \"reason\": \"En dash banned; 'seamless' and 'crucial' are discouraged.\"}, {\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert\", \"replacement\": \"Power-to-X technologies convert\", \"reason\": \"Curly-quote scare quotes are banned.\"}, {\"original\": \"a more holistic energy system emerges\", \"replacement\": \"a more integrated energy system emerges\", \"reason\": \"'Holistic' is a discouraged adjective.\"}, {\"original\": \"The **European Union\u2019s \u201cElectricity Interconnection\u201d** project\", \"replacement\": \"The **European Union's \\\"Electricity Interconnection\\\"** project\", \"reason\": \"Curly quotes and apostrophe are banned.\"}, {\"original\": \"**HVDC Links** \u2013 Multi\u2011terminal\", \"replacement\": \"**HVDC Links** - Multi-terminal\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Coordinated Market Coupling** \u2013 Harmonized\", \"replacement\": \"**Coordinated Market Coupling** - Harmonized\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Real\u2011Time Grid Operations** \u2013 A continent\", \"replacement\": \"**Real-Time Grid Operations** - A continent\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"when robust transmission, advanced controls\", \"replacement\": \"when strong transmission, advanced controls\", \"reason\": \"'Robust' is a discouraged word.\"}, {\"original\": \"that seamlessly integrates electricity\", \"replacement\": \"that integrates electricity\", \"reason\": \"'Seamlessly' is a discouraged word.\"}, {\"original\": \"**Massive DER Penetration** \u2013 Millions\", \"replacement\": \"**Massive DER Penetration** - Millions\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive\", \"replacement\": \"**Artificial-Intelligence-Driven Operations** - Predictive\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Resilient Architecture** \u2013 Multi\", \"replacement\": \"**Resilient Architecture** - Multi\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"**Policy\u2011Driven Decarbonization** \u2013 Carbon\", \"replacement\": \"**Policy-Driven Decarbonization** - Carbon\", \"reason\": \"En dash is banned; use a hyphen.\"}, {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite\", \"replacement\": \"Ice storms still take lines out of service for days; planners rewrite\", \"reason\": \"Em dash is banned; use a semicolon.\"}, {\"original\": \"a more democratic energy landscape\u2014promise\", \"replacement\": \"a more democratic energy system, promise\", \"reason\": \"Em dash is banned; 'landscape' is used metaphorically.\"}, {\"original\": \"yet the benefits\u2014reliable power,\", \"replacement\": \"yet the benefits (reliable power,\", \"reason\": \"Em dash is banned; use parentheses.\"}, {\"original\": \"reduced emissions, and a more democratic energy system, promise\", \"replacement\": \"reduced emissions, and a more democratic energy system) promise\", \"reason\": \"Close the parenthetical replacing the em dash.\"}, {\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\", \"replacement\": \"Meeting reliability, resilience, and market demands requires new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.\", \"reason\": \"Em dashes banned; 'navigating', 'innovative', and 'robust' are discouraged.\"}, {\"original\": \"the grid\u2019s reliability while embracing\", \"replacement\": \"the grid's reliability while embracing\", \"reason\": \"Curly apostrophe is banned.\"}, {\"original\": \"the composition of the grid is undergoing a profound transformation\", \"replacement\": \"the composition of the grid is changing\", \"reason\": \"Inflated phrasing; plain wording preferred.\"}]}",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe is outside the standard US keyboard; replace with a straight apostrophe."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network",
+      "reason": "Em dashes are banned; use commas."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged,",
+      "replacement": "While the basic principle (converting a primary energy source into usable electrical power) remains unchanged,",
+      "reason": "Em dashes are banned; use parentheses."
+    },
+    {
+      "original": "the architecture of modern power systems has evolved dramatically to accommodate",
+      "replacement": "the architecture of modern power systems has evolved to accommodate",
+      "reason": "Intensifier 'dramatically' is discouraged."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short-term stability",
+      "reason": "Em dashes are banned; use parentheses."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune shortens frequency restoration.",
+      "reason": "Intensifier 'significantly' is discouraged."
+    },
+    {
+      "original": "Robust control keeps voltage",
+      "replacement": "Well-tuned control keeps voltage",
+      "reason": "'Robust' is a discouraged word."
+    },
+    {
+      "original": "requiring robust transmission networks.",
+      "replacement": "requiring strong transmission networks.",
+      "reason": "'Robust' is a discouraged word."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps. Wind turbines",
+      "reason": "Ellipsis glyph is banned; replace with a period."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "Intensifier 'significantly' is discouraged."
+    },
+    {
+      "original": "static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators",
+      "replacement": "static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC) provide operators",
+      "reason": "Em dash is banned; closing dash removed."
+    },
+    {
+      "original": "The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR",
+      "replacement": "The advent of *Flexible AC Transmission Systems* (FACTS) devices, namely static VAR",
+      "reason": "Em dash is banned; use a comma."
+    },
+    {
+      "original": "providing dynamic voltage and power\u2011flow regulation, enhancing capacity",
+      "replacement": "providing dynamic voltage and power-flow regulation, enhancing capacity",
+      "reason": "No change needed."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow*",
+      "replacement": "Modern transmission planning uses *optimal power flow*",
+      "reason": "'Leverages' is a discouraged verb."
+    },
+    {
+      "original": "delivering electricity at usable voltages (typically 120/240 V in residential settings) to homes",
+      "replacement": "delivering electricity at usable voltages (typically 120/240 V in residential settings) to homes",
+      "reason": "No change needed."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the \"last mile\" of the power system",
+      "reason": "Curly quotes are banned; use straight quotes."
+    },
+    {
+      "original": "\u2013 \u201cRadial\u201d designs are common",
+      "replacement": "- \"Radial\" designs are common",
+      "reason": "En dash and curly quotes are banned."
+    },
+    {
+      "original": "**Generation** \u2013 Conversion",
+      "replacement": "**Generation** - Conversion",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Transmission & Distribution (T&D)** \u2013 Transport",
+      "replacement": "**Transmission & Distribution (T&D)** - Transport",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous",
+      "replacement": "**Control & Protection** - Continuous",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Intermittency** \u2013 Power",
+      "replacement": "**Intermittency** - Power",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Geographic Dispersion** \u2013 Renewable",
+      "replacement": "**Geographic Dispersion** - Renewable",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Inverter\u2011Based Interface** \u2013 Many",
+      "replacement": "**Inverter-Based Interface** - Many",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Transmission Lines** \u2013 Overhead",
+      "replacement": "**Transmission Lines** - Overhead",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Substations** \u2013 Nodes",
+      "replacement": "**Substations** - Nodes",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Converters** \u2013 For",
+      "replacement": "**Converters** - For",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Primary Substations** \u2013 Reduce",
+      "replacement": "**Primary Substations** - Reduce",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "medium voltages (4 kV\u201335 kV)",
+      "replacement": "medium voltages (4 kV to 35 kV)",
+      "reason": "En dash is banned."
+    },
+    {
+      "original": "**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs are common due to simplicity; however, *mesh*",
+      "replacement": "**Radial or Mesh Feeders** - \"Radial\" designs are common due to simplicity; however, *mesh*",
+      "reason": "En dash and curly quotes are banned."
+    },
+    {
+      "original": "**Secondary Distribution Transformers** \u2013 Further",
+      "replacement": "**Secondary Distribution Transformers** - Further",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Smart Devices** \u2013 Automated",
+      "replacement": "**Smart Devices** - Automated",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Primary (Local) Control** \u2013 Governor",
+      "replacement": "**Primary (Local) Control** - Governor",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Secondary (AGC) Control** \u2013 Automatic",
+      "replacement": "**Secondary (AGC) Control** - Automatic",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Tertiary (Economic Dispatch)** \u2013 Centralized",
+      "replacement": "**Tertiary (Economic Dispatch)** - Centralized",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Overcurrent Protection** \u2013 Detects",
+      "replacement": "**Overcurrent Protection** - Detects",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Distance Protection** \u2013 Measures",
+      "replacement": "**Distance Protection** - Measures",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Differential Protection** \u2013 Compares",
+      "replacement": "**Differential Protection** - Compares",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "acts as the grid\u2019s immune system",
+      "replacement": "acts as the grid's immune system",
+      "reason": "Curly apostrophe is banned."
+    },
+    {
+      "original": "Protective relays and circuit breakers act as the grid\u2019s immune system",
+      "replacement": "Protective relays and circuit breakers act as the grid's immune system",
+      "reason": "Curly apostrophe is banned."
+    },
+    {
+      "original": "While electricity is expected to be \u201calways\u2011on,\u201d extreme",
+      "replacement": "While electricity is expected to be \"always-on,\" extreme",
+      "reason": "Curly quotes are banned; scare quotes avoided by using straight quotes on a quoted expectation."
+    },
+    {
+      "original": "**Hardening Infrastructure** \u2013 Substation",
+      "replacement": "**Hardening Infrastructure** - Substation",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Grid Flexibility** \u2013 Fast",
+      "replacement": "**Grid Flexibility** - Fast",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Decentralized Backup** \u2013 Microgrids",
+      "replacement": "**Decentralized Backup** - Microgrids",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity",
+      "replacement": "**Supply-Demand Balancing** - The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity",
+      "reason": "En dash and curly-quote scare quotes are banned."
+    },
+    {
+      "original": "**Grid Stability** \u2013 Reduced",
+      "replacement": "**Grid Stability** - Reduced",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition,",
+      "replacement": "The deregulated electricity market, while encouraging competition,",
+      "reason": "'Fostering' is a discouraged verb."
+    },
+    {
+      "original": "**Advanced Metering Infrastructure (AMI)** \u2013 Provides",
+      "replacement": "**Advanced Metering Infrastructure (AMI)** - Provides",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Distribution Management Systems (DMS)** \u2013 Automate",
+      "replacement": "**Distribution Management Systems (DMS)** - Automate",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120 samples/second, granting operators unprecedented visibility",
+      "replacement": "**Wide-Area Monitoring Systems (WAMS)** - Phasor Measurement Units (PMUs) deliver synchrophasor data at 30 to 120 samples/second, granting operators unprecedented visibility",
+      "reason": "En dashes are banned."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive",
+      "replacement": "Digital twins (high-fidelity virtual replicas of physical grid assets) allow predictive",
+      "reason": "Em dashes are banned; use parentheses."
+    },
+    {
+      "original": "**Lithium\u2011Ion Batteries** \u2013 Dominant",
+      "replacement": "**Lithium-Ion Batteries** - Dominant",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Flow Batteries** (Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer",
+      "replacement": "**Flow Batteries** (Vanadium Redox, Zinc-Bromine) - Offer",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Thermal and Mechanical Storage** \u2013 Cryogenic",
+      "replacement": "**Thermal and Mechanical Storage** - Cryogenic",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Full Renewable Transition** \u2013 100 %",
+      "replacement": "**Full Renewable Transition** - 100 %",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting",
+      "replacement": "**Carbon Capture, Utilization, and Storage (CCUS)** - Retrofitting",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Hydrogen Integration** \u2013 Using",
+      "replacement": "**Hydrogen Integration** - Using",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Provides Synthetic Inertia** \u2013 Emulates",
+      "replacement": "**Provides Synthetic Inertia** - Emulates",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities (hospitals, data centers).",
+      "replacement": "**Enables Islanded Microgrids** - Transition between grid-connected and standalone operation, needed for critical facilities (hospitals, data centers).",
+      "reason": "En dash banned; 'seamless' and 'crucial' are discouraged."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert",
+      "replacement": "Power-to-X technologies convert",
+      "reason": "Curly-quote scare quotes are banned."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "'Holistic' is a discouraged adjective."
+    },
+    {
+      "original": "The **European Union\u2019s \u201cElectricity Interconnection\u201d** project",
+      "replacement": "The **European Union's \"Electricity Interconnection\"** project",
+      "reason": "Curly quotes and apostrophe are banned."
+    },
+    {
+      "original": "**HVDC Links** \u2013 Multi\u2011terminal",
+      "replacement": "**HVDC Links** - Multi-terminal",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Coordinated Market Coupling** \u2013 Harmonized",
+      "replacement": "**Coordinated Market Coupling** - Harmonized",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Real\u2011Time Grid Operations** \u2013 A continent",
+      "replacement": "**Real-Time Grid Operations** - A continent",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "'Robust' is a discouraged word."
+    },
+    {
+      "original": "that seamlessly integrates electricity",
+      "replacement": "that integrates electricity",
+      "reason": "'Seamlessly' is a discouraged word."
+    },
+    {
+      "original": "**Massive DER Penetration** \u2013 Millions",
+      "replacement": "**Massive DER Penetration** - Millions",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive",
+      "replacement": "**Artificial-Intelligence-Driven Operations** - Predictive",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Resilient Architecture** \u2013 Multi",
+      "replacement": "**Resilient Architecture** - Multi",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Policy\u2011Driven Decarbonization** \u2013 Carbon",
+      "replacement": "**Policy-Driven Decarbonization** - Carbon",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite",
+      "replacement": "Ice storms still take lines out of service for days; planners rewrite",
+      "reason": "Em dash is banned; use a semicolon."
+    },
+    {
+      "original": "a more democratic energy landscape\u2014promise",
+      "replacement": "a more democratic energy system, promise",
+      "reason": "Em dash is banned; 'landscape' is used metaphorically."
+    },
+    {
+      "original": "yet the benefits\u2014reliable power,",
+      "replacement": "yet the benefits (reliable power,",
+      "reason": "Em dash is banned; use parentheses."
+    },
+    {
+      "original": "reduced emissions, and a more democratic energy system, promise",
+      "replacement": "reduced emissions, and a more democratic energy system) promise",
+      "reason": "Close the parenthetical replacing the em dash."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Meeting reliability, resilience, and market demands requires new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.",
+      "reason": "Em dashes banned; 'navigating', 'innovative', and 'robust' are discouraged."
+    },
+    {
+      "original": "the grid\u2019s reliability while embracing",
+      "replacement": "the grid's reliability while embracing",
+      "reason": "Curly apostrophe is banned."
+    },
+    {
+      "original": "the composition of the grid is undergoing a profound transformation",
+      "replacement": "the composition of the grid is changing",
+      "reason": "Inflated phrasing; plain wording preferred."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 5818,
+    "cache_read": 33205,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0615085,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

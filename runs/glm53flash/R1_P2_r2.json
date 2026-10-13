@@ -1,0 +1,217 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "minimal",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:26:23.686173+00:00",
+  "duration_s": 20.450335987989092,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophe replaced with ASCII straight apostrophe (NEVER tier).\"},\n{\"original\": \"system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\", \"replacement\": \"system, commonly referred to simply as a *power system*, is an elaborate network\", \"reason\": \"Em dashes replaced with commas (NEVER tier).\"},\n{\"original\": \"evolved dramatically to accommodate\", \"replacement\": \"evolved to accommodate\", \"reason\": \"Banned intensifier 'dramatically' removed.\"},\n{\"original\": \"deliver it safely to end\u2011users\", \"replacement\": \"deliver it safely to end-users\", \"reason\": \"Non-standard non-breaking hyphen replaced with ASCII hyphen.\"},\n{\"original\": \"using high\u2011voltage lines\", \"replacement\": \"using high-voltage lines\", \"reason\": \"Non-standard non-breaking hyphen replaced with ASCII hyphen.\"},\n{\"original\": \"the retune significantly shortens frequency restoration\", \"replacement\": \"the retune shortens frequency restoration\", \"reason\": \"Banned intensifier 'significantly' removed.\"},\n{\"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\", \"replacement\": \"Its intrinsic inertia, massive rotating masses that store kinetic energy, provides\", \"reason\": \"Em dashes replaced with commas (NEVER tier).\"},\n{\"original\": \"Robust control keeps voltage\", \"replacement\": \"Dependable control keeps voltage\", \"reason\": \"Banned adjective 'robust' replaced.\"},\n{\"original\": \"Forecasts still miss cloud-driven ramps\u2026\", \"replacement\": \"Forecasts still miss cloud-driven ramps...\", \"reason\": \"Ellipsis glyph replaced with three periods (NEVER tier).\"},\n{\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring strong transmission networks\", \"reason\": \"Banned adjective 'robust' replaced.\"},\n{\"original\": \"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed\", \"replacement\": \"High voltages, typically ranging from 115 kV to 1,200 kV, are employed\", \"reason\": \"Em dashes replaced with commas (NEVER tier).\"},\n{\"original\": \"The 345 kV reconductor significantly reduces line losses\", \"replacement\": \"The 345 kV reconductor reduces line losses\", \"reason\": \"Banned intensifier 'significantly' removed.\"},\n{\"original\": \"Modern transmission planning leverages\", \"replacement\": \"Modern transmission planning uses\", \"reason\": \"Banned verb 'leverages' replaced.\"},\n{\"original\": \"enhancing capacity without building new lines\", \"replacement\": \"adding capacity without building new lines\", \"reason\": \"Banned verb 'enhancing' replaced.\"},\n{\"original\": \"the \u201clast mile\u201d of the power system\", \"replacement\": \"the last mile of the power system\", \"reason\": \"Scare quotes on a normal word removed (NEVER tier) along with a non-breaking hyphen elsewhere untouched.\"},\n{\"original\": \"electricity is expected to be \u201calways\u2011on,\u201d\", \"replacement\": \"electricity is expected to be always-on,\", \"reason\": \"Scare quotes on a normal word (NEVER tier) and non-breaking hyphen replaced.\"},\n{\"original\": \"while fostering competition\", \"replacement\": \"while encouraging competition\", \"reason\": \"Banned verb 'fostering' replaced.\"},\n{\"original\": \"\u201cRadial\u201d designs are common\", \"replacement\": \"Radial designs are common\", \"reason\": \"Scare quotes on a normal word removed (NEVER tier).\"},\n{\"original\": \"the \u201cramping\u201d capacity\", \"replacement\": \"the ramping capacity\", \"reason\": \"Scare quotes on a normal word removed (NEVER tier).\"},\n{\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall sharply as current decreases\", \"reason\": \"Banned intensifier 'dramatically' replaced.\"},\n{\"original\": \"the grid\u2019s immune system\", \"replacement\": \"the grid's immune system\", \"reason\": \"Curly apostrophe replaced with ASCII straight apostrophe (NEVER tier).\"},\n{\"original\": \"paving the way for *wide\u2011area protection*\", \"replacement\": \"enabling *wide-area protection*\", \"reason\": \"Banned academic tell 'paving the way for' replaced and non-breaking hyphen fixed.\"},\n{\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped\", \"replacement\": \"Frozen wellheads cut gas supply; thermal units then tripped\", \"reason\": \"Em dash replaced with a semicolon (NEVER tier).\"},\n{\"original\": \"when robust transmission, advanced controls, and market integration co\u2011exist\", \"replacement\": \"when strong transmission, advanced controls, and market integration co-exist\", \"reason\": \"Banned adjective 'robust' replaced and non-breaking hyphen fixed.\"},\n{\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies\", \"replacement\": \"Power-to-X technologies\", \"reason\": \"Scare quotes on a coined term (NEVER tier) and non-breaking hyphens replaced.\"},\n{\"original\": \"a more holistic energy system emerges\", \"replacement\": \"a more unified energy system emerges\", \"reason\": \"Banned adjective 'holistic' in metaphorical use replaced.\"},\n{\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\", \"replacement\": \"Digital twins, high-fidelity virtual replicas of physical grid assets, allow\", \"reason\": \"Em dashes replaced with commas (NEVER tier) and non-breaking hyphens fixed.\"},\n{\"original\": \"Seamless transition between grid\u2011connected\", \"replacement\": \"Smooth transition between grid-connected\", \"reason\": \"Banned adjective 'seamless' replaced and non-breaking hyphen fixed.\"},\n{\"original\": \"crucial for critical facilities\", \"replacement\": \"essential for critical facilities\", \"reason\": \"Banned adjective 'crucial' replaced.\"},\n{\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": null, \"reason\": \"Flagging the 'end of story' flourish as a style risk for the author to review (not covered by this rule's lists).\"},\n{\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite\", \"replacement\": \"Ice storms still take lines out of service for days; planners rewrite\", \"reason\": \"Em dash replaced with a semicolon (NEVER tier).\"},\n{\"original\": \"a decentralized, cyber\u2011physical ecosystem that seamlessly integrates\", \"replacement\": \"a decentralized, cyber-physical network that integrates\", \"reason\": \"Metaphorical 'ecosystem' and banned adverb 'seamlessly' replaced, plus non-breaking hyphen fixed.\"},\n{\"original\": \"the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\", \"replacement\": \"the benefits of reliable power, reduced emissions, and a more democratic energy system promise\", \"reason\": \"Em dashes replaced (NEVER tier) and metaphorical 'landscape' replaced.\"},\n{\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\", \"replacement\": \"Meeting reliability, resilience, and market complexity demands new technologies\", \"reason\": \"Metaphorical 'Navigating' and banned adjective 'innovative' replaced.\"},\n{\"original\": \"market complexities demands new technologies\u2014smart grids\", \"replacement\": \"market complexity demands new technologies, smart grids\", \"reason\": \"Placeholder not applied; see prior entries.\"},\n{\"original\": \"technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014\", \"replacement\": \"technologies (smart grids, energy storage, grid-forming inverters)\", \"reason\": \"Em dashes replaced with parentheses (NEVER tier) and non-breaking hyphen fixed.\"}\n]}",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe replaced with ASCII straight apostrophe (NEVER tier)."
+    },
+    {
+      "original": "system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "system, commonly referred to simply as a *power system*, is an elaborate network",
+      "reason": "Em dashes replaced with commas (NEVER tier)."
+    },
+    {
+      "original": "evolved dramatically to accommodate",
+      "replacement": "evolved to accommodate",
+      "reason": "Banned intensifier 'dramatically' removed."
+    },
+    {
+      "original": "deliver it safely to end\u2011users",
+      "replacement": "deliver it safely to end-users",
+      "reason": "Non-standard non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "using high\u2011voltage lines",
+      "replacement": "using high-voltage lines",
+      "reason": "Non-standard non-breaking hyphen replaced with ASCII hyphen."
+    },
+    {
+      "original": "the retune significantly shortens frequency restoration",
+      "replacement": "the retune shortens frequency restoration",
+      "reason": "Banned intensifier 'significantly' removed."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides",
+      "replacement": "Its intrinsic inertia, massive rotating masses that store kinetic energy, provides",
+      "reason": "Em dashes replaced with commas (NEVER tier)."
+    },
+    {
+      "original": "Robust control keeps voltage",
+      "replacement": "Dependable control keeps voltage",
+      "reason": "Banned adjective 'robust' replaced."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Forecasts still miss cloud-driven ramps...",
+      "reason": "Ellipsis glyph replaced with three periods (NEVER tier)."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "Banned adjective 'robust' replaced."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed",
+      "replacement": "High voltages, typically ranging from 115 kV to 1,200 kV, are employed",
+      "reason": "Em dashes replaced with commas (NEVER tier)."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "Banned intensifier 'significantly' removed."
+    },
+    {
+      "original": "Modern transmission planning leverages",
+      "replacement": "Modern transmission planning uses",
+      "reason": "Banned verb 'leverages' replaced."
+    },
+    {
+      "original": "enhancing capacity without building new lines",
+      "replacement": "adding capacity without building new lines",
+      "reason": "Banned verb 'enhancing' replaced."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the last mile of the power system",
+      "reason": "Scare quotes on a normal word removed (NEVER tier) along with a non-breaking hyphen elsewhere untouched."
+    },
+    {
+      "original": "electricity is expected to be \u201calways\u2011on,\u201d",
+      "replacement": "electricity is expected to be always-on,",
+      "reason": "Scare quotes on a normal word (NEVER tier) and non-breaking hyphen replaced."
+    },
+    {
+      "original": "while fostering competition",
+      "replacement": "while encouraging competition",
+      "reason": "Banned verb 'fostering' replaced."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common",
+      "replacement": "Radial designs are common",
+      "reason": "Scare quotes on a normal word removed (NEVER tier)."
+    },
+    {
+      "original": "the \u201cramping\u201d capacity",
+      "replacement": "the ramping capacity",
+      "reason": "Scare quotes on a normal word removed (NEVER tier)."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall sharply as current decreases",
+      "reason": "Banned intensifier 'dramatically' replaced."
+    },
+    {
+      "original": "the grid\u2019s immune system",
+      "replacement": "the grid's immune system",
+      "reason": "Curly apostrophe replaced with ASCII straight apostrophe (NEVER tier)."
+    },
+    {
+      "original": "paving the way for *wide\u2011area protection*",
+      "replacement": "enabling *wide-area protection*",
+      "reason": "Banned academic tell 'paving the way for' replaced and non-breaking hyphen fixed."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped",
+      "replacement": "Frozen wellheads cut gas supply; thermal units then tripped",
+      "reason": "Em dash replaced with a semicolon (NEVER tier)."
+    },
+    {
+      "original": "when robust transmission, advanced controls, and market integration co\u2011exist",
+      "replacement": "when strong transmission, advanced controls, and market integration co-exist",
+      "reason": "Banned adjective 'robust' replaced and non-breaking hyphen fixed."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies",
+      "replacement": "Power-to-X technologies",
+      "reason": "Scare quotes on a coined term (NEVER tier) and non-breaking hyphens replaced."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more unified energy system emerges",
+      "reason": "Banned adjective 'holistic' in metaphorical use replaced."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins, high-fidelity virtual replicas of physical grid assets, allow",
+      "reason": "Em dashes replaced with commas (NEVER tier) and non-breaking hyphens fixed."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected",
+      "replacement": "Smooth transition between grid-connected",
+      "reason": "Banned adjective 'seamless' replaced and non-breaking hyphen fixed."
+    },
+    {
+      "original": "crucial for critical facilities",
+      "replacement": "essential for critical facilities",
+      "reason": "Banned adjective 'crucial' replaced."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": null,
+      "reason": "Flagging the 'end of story' flourish as a style risk for the author to review (not covered by this rule's lists)."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite",
+      "replacement": "Ice storms still take lines out of service for days; planners rewrite",
+      "reason": "Em dash replaced with a semicolon (NEVER tier)."
+    },
+    {
+      "original": "a decentralized, cyber\u2011physical ecosystem that seamlessly integrates",
+      "replacement": "a decentralized, cyber-physical network that integrates",
+      "reason": "Metaphorical 'ecosystem' and banned adverb 'seamlessly' replaced, plus non-breaking hyphen fixed."
+    },
+    {
+      "original": "the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "the benefits of reliable power, reduced emissions, and a more democratic energy system promise",
+      "reason": "Em dashes replaced (NEVER tier) and metaphorical 'landscape' replaced."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies",
+      "replacement": "Meeting reliability, resilience, and market complexity demands new technologies",
+      "reason": "Metaphorical 'Navigating' and banned adjective 'innovative' replaced."
+    },
+    {
+      "original": "market complexities demands new technologies\u2014smart grids",
+      "replacement": "market complexity demands new technologies, smart grids",
+      "reason": "Placeholder not applied; see prior entries."
+    },
+    {
+      "original": "technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014",
+      "replacement": "technologies (smart grids, energy storage, grid-forming inverters)",
+      "reason": "Em dashes replaced with parentheses (NEVER tier) and non-breaking hyphen fixed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20847,
+    "output": 4289,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 2732
+  },
+  "cost_usd": 0.00527155,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

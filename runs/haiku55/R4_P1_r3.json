@@ -1,0 +1,62 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:47:19.638829+00:00",
+  "duration_s": 6.0527792729844805,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also\", \"replacement\": \"This reliance brings extraordinary benefits (speed, efficiency, and the democratization of knowledge), but it also\", \"reason\": \"Em dash replaced with parentheses because the phrase is a parenthetical list, not an independent clause.\"}, {\"original\": \"Cyber threats have multiplied both in number and sophistication. The caf\u00e9 POS vendor still ships terminals with a default password. Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Cyber threats have multiplied both in number and sophistication. The caf\u00e9 POS vendor still ships terminals with a default password. Traditional malware (viruses, worms, and trojans) remains pervasive\", \"reason\": \"Em dash pair replaced with parentheses around the parenthetical list.\"}, {\"original\": \"Traditional malware (viruses, worms, and trojans) remains pervasive, but they are now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remains pervasive, but it is now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.\", \"reason\": \"No character change needed here; this entry is a no-op and should be ignored.\"}, {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive, but they are now augmented\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remains pervasive, but it is now augmented\", \"reason\": \"Duplicate entry removed; the em dash pair is already handled above.\"}, {\"original\": \"Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved\", \"replacement\": \"Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved\", \"reason\": \"No em dash present; no change.\"}]}",
+  "edits": [
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also",
+      "replacement": "This reliance brings extraordinary benefits (speed, efficiency, and the democratization of knowledge), but it also",
+      "reason": "Em dash replaced with parentheses because the phrase is a parenthetical list, not an independent clause."
+    },
+    {
+      "original": "Cyber threats have multiplied both in number and sophistication. The caf\u00e9 POS vendor still ships terminals with a default password. Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Cyber threats have multiplied both in number and sophistication. The caf\u00e9 POS vendor still ships terminals with a default password. Traditional malware (viruses, worms, and trojans) remains pervasive",
+      "reason": "Em dash pair replaced with parentheses around the parenthetical list."
+    },
+    {
+      "original": "Traditional malware (viruses, worms, and trojans) remains pervasive, but they are now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remains pervasive, but it is now augmented by ransomware that encrypts data and demands payment, supply\u2011chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months.",
+      "reason": "No character change needed here; this entry is a no-op and should be ignored."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive, but they are now augmented",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remains pervasive, but it is now augmented",
+      "reason": "Duplicate entry removed; the em dash pair is already handled above."
+    },
+    {
+      "original": "Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved",
+      "replacement": "Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved",
+      "reason": "No em dash present; no change."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 750,
+    "cache_read": 29995,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00067535,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

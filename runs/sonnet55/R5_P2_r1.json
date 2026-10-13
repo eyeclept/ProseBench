@@ -1,0 +1,67 @@
+{
+  "run_id": "R5_P2_r1",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:53:04.695108+00:00",
+  "duration_s": 9.656273921020329,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\", \"replacement\": \"Inertia still matters for the first few cycles after a trip.\", \"reason\": \"Removes the finality interjection 'full stop' that merely repeats emphasis.\"}, {\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune shortens frequency restoration by 8 minutes\", \"reason\": \"Replaces the intensifier 'significantly' with the number given in the preceding sentence (12 minutes to 4 minutes).\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\", \"replacement\": \"The 345 kV reconductor reduces line losses from 8 percent to 3 percent.\", \"reason\": \"Removes the intensifier 'significantly'; the numbers already carry the evidence.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"Islanded operation is the only backup path for those hospitals.\", \"reason\": \"Removes the finality interjection 'end of story' after the exclusivity marker 'only'.\"}, {\"original\": \"because resistive losses (I\u00b2R) fall dramatically as current decreases\", \"replacement\": \"because resistive losses (I\u00b2R) fall with the square of the current\", \"reason\": \"Replaces the intensifier 'dramatically' with the quantitative relationship it stood in for.\"}, {\"original\": \"the architecture of modern power systems has evolved dramatically to accommodate\", \"replacement\": \"the architecture of modern power systems has evolved to accommodate\", \"reason\": \"Removes the intensifier 'dramatically', which has no evidence attached.\"}]}",
+  "edits": [
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "Removes the finality interjection 'full stop' that merely repeats emphasis."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration by 8 minutes",
+      "reason": "Replaces the intensifier 'significantly' with the number given in the preceding sentence (12 minutes to 4 minutes)."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent.",
+      "reason": "Removes the intensifier 'significantly'; the numbers already carry the evidence."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "Removes the finality interjection 'end of story' after the exclusivity marker 'only'."
+    },
+    {
+      "original": "because resistive losses (I\u00b2R) fall dramatically as current decreases",
+      "replacement": "because resistive losses (I\u00b2R) fall with the square of the current",
+      "reason": "Replaces the intensifier 'dramatically' with the quantitative relationship it stood in for."
+    },
+    {
+      "original": "the architecture of modern power systems has evolved dramatically to accommodate",
+      "replacement": "the architecture of modern power systems has evolved to accommodate",
+      "reason": "Removes the intensifier 'dramatically', which has no evidence attached."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 572,
+    "cache_read": 23505,
+    "cache_write": 7927,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0397865,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

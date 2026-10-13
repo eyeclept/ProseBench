@@ -1,0 +1,52 @@
+{
+  "run_id": "R5_P1_r2",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:00:03.931157+00:00",
+  "duration_s": 13.083737523993477,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": null, \"reason\": \"\\\"Dramatically\\\" is an intensifier, and the passage gives no figure to replace it with, so it is flagged for the author to add one.\"}, {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"The playbook change cut mean time to contain from 18 hours to 3 hours.\", \"reason\": \"\\\"Significantly\\\" stands in for numbers the passage already gives, so they replace it.\"}, {\"original\": \"the only acceptable default for those checks, end of story.\", \"replacement\": \"the only acceptable default for those checks.\", \"reason\": \"\\\"Only\\\" already makes the claim exclusive, so the tacked-on \\\"end of story\\\" just repeats it.\"}]}",
+  "edits": [
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": null,
+      "reason": "\"Dramatically\" is an intensifier, and the passage gives no figure to replace it with, so it is flagged for the author to add one."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change cut mean time to contain from 18 hours to 3 hours.",
+      "reason": "\"Significantly\" stands in for numbers the passage already gives, so they replace it."
+    },
+    {
+      "original": "the only acceptable default for those checks, end of story.",
+      "replacement": "the only acceptable default for those checks.",
+      "reason": "\"Only\" already makes the claim exclusive, so the tacked-on \"end of story\" just repeats it."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 521,
+    "cache_read": 29596,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0163552,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,212 @@
+{
+  "run_id": "R4_P3_r1",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:09:59.682583+00:00",
+  "duration_s": 67.60129673799383,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"not merely academic\u2014it is essential\",\n      \"replacement\": \"not merely academic; it is essential\",\n      \"reason\": \"Em dash replaced with semicolon joining two independent clauses.\"\n    },\n    {\n      \"original\": \"Theophrastus (c.\u202f371\u2013287\u202fBC)\",\n      \"replacement\": \"Theophrastus (c. 371-287 BC)\",\n      \"reason\": \"En dash in date range replaced with hyphen.\"\n    },\n    {\n      \"original\": \"hailed as the \u201cfather of botany\u201d\",\n      \"replacement\": \"hailed as the \\\"father of botany\\\"\",\n      \"reason\": \"Curly double quotes replaced with straight double quotes.\"\n    },\n    {\n      \"original\": \"coining the term \u201ccell.\u201d\",\n      \"replacement\": \"coining the term \\\"cell.\\\"\",\n      \"reason\": \"Curly double quotes replaced with straight double quotes.\"\n    },\n    {\n      \"original\": \"undetermined\u2026 until\",\n      \"replacement\": \"undetermined... until\",\n      \"reason\": \"Ellipsis glyph replaced with three periods.\"\n    },\n    {\n      \"original\": \"plasmodesmata\u2014microscopic channels\",\n      \"replacement\": \"plasmodesmata: microscopic channels\",\n      \"reason\": \"Em dash replaced with colon introducing an appositive phrase.\"\n    },\n    {\n      \"original\": \"stomata\u2014pores that regulate\",\n      \"replacement\": \"stomata: pores that regulate\",\n      \"reason\": \"Em dash replaced with colon introducing an appositive phrase.\"\n    },\n    {\n      \"original\": \"ecological niches\u2014from desert succulents\",\n      \"replacement\": \"ecological niches, from desert succulents\",\n      \"reason\": \"Em dash replaced with comma introducing a trailing illustrative fragment.\"\n    },\n    {\n      \"original\": \"pigment molecules\u2014chiefly chlorophyll a\",\n      \"replacement\": \"pigment molecules, chiefly chlorophyll a\",\n      \"reason\": \"Em dash replaced with comma introducing an appositive phrase.\"\n    },\n    {\n      \"original\": \"adaptations\u2014C\u2084 and CAM photosynthetic pathways\",\n      \"replacement\": \"adaptations, C4 and CAM photosynthetic pathways\",\n      \"reason\": \"Em dash replaced with comma introducing an appositive list.\"\n    },\n    {\n      \"original\": \"1. **Algae** \u2013 Primarily aquatic\",\n      \"replacement\": \"1. **Algae** - Primarily aquatic\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"2. **Bryophytes** \u2013 Non\u2011vascular plants\",\n      \"replacement\": \"2. **Bryophytes** - Non-vascular plants\",\n      \"reason\": \"En dash used as a separator replaced with hyphen; non-breaking hyphen in compound word replaced with standard hyphen.\"\n    },\n    {\n      \"original\": \"3. **Pteridophytes** \u2013 Seedless vascular plants\",\n      \"replacement\": \"3. **Pteridophytes** - Seedless vascular plants\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"4. **Gymnosperms** \u2013 \u201cNaked seed\u201d plants\",\n      \"replacement\": \"4. **Gymnosperms** - \\\"Naked seed\\\" plants\",\n      \"reason\": \"En dash used as a separator replaced with hyphen; curly double quotes replaced with straight double quotes.\"\n    },\n    {\n      \"original\": \"5. **Angiosperms** \u2013 Flowering plants\",\n      \"replacement\": \"5. **Angiosperms** - Flowering plants\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic\",\n      \"replacement\": \"traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic\",\n      \"reason\": \"Curly double quotes replaced with straight double quotes.\"\n    },\n    {\n      \"original\": \"heads\u2014the market rejected\",\n      \"replacement\": \"heads; the market rejected\",\n      \"reason\": \"Em dash replaced with semicolon joining two independent clauses.\"\n    },\n    {\n      \"original\": \"Staple crops\u2014wheat, rice, maize\",\n      \"replacement\": \"Staple crops, wheat, rice, maize\",\n      \"reason\": \"Em dash replaced with comma introducing an appositive list.\"\n    },\n    {\n      \"original\": \"metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads\",\n      \"replacement\": \"metabolites, alkaloids, terpenoids, phenolics, for therapeutic leads\",\n      \"reason\": \"Em dashes replaced with commas setting off an appositive list.\"\n    },\n    {\n      \"original\": \"* **Carbon Sequestration** \u2013 Through photosynthesis\",\n      \"replacement\": \"* **Carbon Sequestration** - Through photosynthesis\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"* **Soil Formation and Stabilization** \u2013 Root systems\",\n      \"replacement\": \"* **Soil Formation and Stabilization** - Root systems\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations\u2014symbiotic relationships\",\n      \"replacement\": \"Mycorrhizal associations, symbiotic relationships\",\n      \"reason\": \"Em dash replaced with comma introducing an appositive phrase.\"\n    },\n    {\n      \"original\": \"* **Hydrological Regulation** \u2013 Vegetation influences\",\n      \"replacement\": \"* **Hydrological Regulation** - Vegetation influences\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"* **Habitat Provision** \u2013 Plants create\",\n      \"replacement\": \"* **Habitat Provision** - Plants create\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"* **Cultural and Aesthetic Values** \u2013 Gardens, parks\",\n      \"replacement\": \"* **Cultural and Aesthetic Values** - Gardens, parks\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"plant communities\u2014via deforestation\",\n      \"replacement\": \"plant communities, via deforestation\",\n      \"reason\": \"Em dash replaced with comma introducing a trailing prepositional phrase.\"\n    },\n    {\n      \"original\": \"**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure\",\n      \"replacement\": \"**stress memory**, the ability of plants to \\\"remember\\\" prior exposure\",\n      \"reason\": \"Em dash replaced with comma introducing an appositive phrase; curly double quotes replaced with straight double quotes.\"\n    },\n    {\n      \"original\": \"microbes\u2014through signaling molecules\",\n      \"replacement\": \"microbes, through signaling molecules\",\n      \"reason\": \"Em dash replaced with comma introducing a trailing prepositional phrase.\"\n    },\n    {\n      \"original\": \"* **Biodiversity Loss** \u2013 Habitat destruction\",\n      \"replacement\": \"* **Biodiversity Loss** - Habitat destruction\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"* **Intellectual Property and Biopiracy** \u2013 The commercialization\",\n      \"replacement\": \"* **Intellectual Property and Biopiracy** - The commercialization\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"* **Gene Editing Governance** \u2013 CRISPR\u2011based modifications\",\n      \"replacement\": \"* **Gene Editing Governance** - CRISPR-based modifications\",\n      \"reason\": \"En dash used as a separator replaced with hyphen; non-breaking hyphen in compound word replaced with standard hyphen.\"\n    },\n    {\n      \"original\": \"* **Climate Change Feedbacks** \u2013 As global temperatures\",\n      \"replacement\": \"* **Climate Change Feedbacks** - As global temperatures\",\n      \"reason\": \"En dash used as a separator replaced with hyphen.\"\n    },\n    {\n      \"original\": \"**Precision agriculture**\u2014leveraging satellite imagery\",\n      \"replacement\": \"**Precision agriculture**, leveraging satellite imagery\",\n      \"reason\": \"Em dash replaced with comma introducing a participial phrase.\"\n    },\n    {\n      \"original\": \"**\u201cclimate\u2011smart\u201d plants**\u2014species engineered\",\n      \"replacement\": \"**\\\"climate-smart\\\" plants**, species engineered\",\n      \"reason\": \"Curly double quotes replaced with straight double quotes; non-breaking hyphen replaced with standard hyphen; em dash replaced with comma introducing an appositive phrase.\"\n    },\n    {\n      \"original\": \"Contemporary research\u2014spanning genomics\",\n      \"replacement\": \"Contemporary research, spanning genomics\",\n      \"reason\": \"Em dash replaced with comma introducing a participial phrase.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Em dash replaced with semicolon joining two independent clauses."
+    },
+    {
+      "original": "Theophrastus (c.\u202f371\u2013287\u202fBC)",
+      "replacement": "Theophrastus (c. 371-287 BC)",
+      "reason": "En dash in date range replaced with hyphen."
+    },
+    {
+      "original": "hailed as the \u201cfather of botany\u201d",
+      "replacement": "hailed as the \"father of botany\"",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined... until",
+      "reason": "Ellipsis glyph replaced with three periods."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata: microscopic channels",
+      "reason": "Em dash replaced with colon introducing an appositive phrase."
+    },
+    {
+      "original": "stomata\u2014pores that regulate",
+      "replacement": "stomata: pores that regulate",
+      "reason": "Em dash replaced with colon introducing an appositive phrase."
+    },
+    {
+      "original": "ecological niches\u2014from desert succulents",
+      "replacement": "ecological niches, from desert succulents",
+      "reason": "Em dash replaced with comma introducing a trailing illustrative fragment."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a",
+      "replacement": "pigment molecules, chiefly chlorophyll a",
+      "reason": "Em dash replaced with comma introducing an appositive phrase."
+    },
+    {
+      "original": "adaptations\u2014C\u2084 and CAM photosynthetic pathways",
+      "replacement": "adaptations, C4 and CAM photosynthetic pathways",
+      "reason": "Em dash replaced with comma introducing an appositive list."
+    },
+    {
+      "original": "1. **Algae** \u2013 Primarily aquatic",
+      "replacement": "1. **Algae** - Primarily aquatic",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "2. **Bryophytes** \u2013 Non\u2011vascular plants",
+      "replacement": "2. **Bryophytes** - Non-vascular plants",
+      "reason": "En dash used as a separator replaced with hyphen; non-breaking hyphen in compound word replaced with standard hyphen."
+    },
+    {
+      "original": "3. **Pteridophytes** \u2013 Seedless vascular plants",
+      "replacement": "3. **Pteridophytes** - Seedless vascular plants",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "4. **Gymnosperms** \u2013 \u201cNaked seed\u201d plants",
+      "replacement": "4. **Gymnosperms** - \"Naked seed\" plants",
+      "reason": "En dash used as a separator replaced with hyphen; curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "5. **Angiosperms** \u2013 Flowering plants",
+      "replacement": "5. **Angiosperms** - Flowering plants",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic",
+      "replacement": "traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "heads\u2014the market rejected",
+      "replacement": "heads; the market rejected",
+      "reason": "Em dash replaced with semicolon joining two independent clauses."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize",
+      "replacement": "Staple crops, wheat, rice, maize",
+      "reason": "Em dash replaced with comma introducing an appositive list."
+    },
+    {
+      "original": "metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads",
+      "replacement": "metabolites, alkaloids, terpenoids, phenolics, for therapeutic leads",
+      "reason": "Em dashes replaced with commas setting off an appositive list."
+    },
+    {
+      "original": "* **Carbon Sequestration** \u2013 Through photosynthesis",
+      "replacement": "* **Carbon Sequestration** - Through photosynthesis",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "* **Soil Formation and Stabilization** \u2013 Root systems",
+      "replacement": "* **Soil Formation and Stabilization** - Root systems",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships",
+      "replacement": "Mycorrhizal associations, symbiotic relationships",
+      "reason": "Em dash replaced with comma introducing an appositive phrase."
+    },
+    {
+      "original": "* **Hydrological Regulation** \u2013 Vegetation influences",
+      "replacement": "* **Hydrological Regulation** - Vegetation influences",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "* **Habitat Provision** \u2013 Plants create",
+      "replacement": "* **Habitat Provision** - Plants create",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "* **Cultural and Aesthetic Values** \u2013 Gardens, parks",
+      "replacement": "* **Cultural and Aesthetic Values** - Gardens, parks",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "plant communities\u2014via deforestation",
+      "replacement": "plant communities, via deforestation",
+      "reason": "Em dash replaced with comma introducing a trailing prepositional phrase."
+    },
+    {
+      "original": "**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure",
+      "replacement": "**stress memory**, the ability of plants to \"remember\" prior exposure",
+      "reason": "Em dash replaced with comma introducing an appositive phrase; curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "microbes\u2014through signaling molecules",
+      "replacement": "microbes, through signaling molecules",
+      "reason": "Em dash replaced with comma introducing a trailing prepositional phrase."
+    },
+    {
+      "original": "* **Biodiversity Loss** \u2013 Habitat destruction",
+      "replacement": "* **Biodiversity Loss** - Habitat destruction",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "* **Intellectual Property and Biopiracy** \u2013 The commercialization",
+      "replacement": "* **Intellectual Property and Biopiracy** - The commercialization",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "* **Gene Editing Governance** \u2013 CRISPR\u2011based modifications",
+      "replacement": "* **Gene Editing Governance** - CRISPR-based modifications",
+      "reason": "En dash used as a separator replaced with hyphen; non-breaking hyphen in compound word replaced with standard hyphen."
+    },
+    {
+      "original": "* **Climate Change Feedbacks** \u2013 As global temperatures",
+      "replacement": "* **Climate Change Feedbacks** - As global temperatures",
+      "reason": "En dash used as a separator replaced with hyphen."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery",
+      "replacement": "**Precision agriculture**, leveraging satellite imagery",
+      "reason": "Em dash replaced with comma introducing a participial phrase."
+    },
+    {
+      "original": "**\u201cclimate\u2011smart\u201d plants**\u2014species engineered",
+      "replacement": "**\"climate-smart\" plants**, species engineered",
+      "reason": "Curly double quotes replaced with straight double quotes; non-breaking hyphen replaced with standard hyphen; em dash replaced with comma introducing an appositive phrase."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics",
+      "replacement": "Contemporary research, spanning genomics",
+      "reason": "Em dash replaced with comma introducing a participial phrase."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20413,
+    "output": 1977,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01801277,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

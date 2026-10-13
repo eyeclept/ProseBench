@@ -1,0 +1,72 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:30:19.356190+00:00",
+  "duration_s": 17.57555108598899,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"replacement\": \"The architecture of a power system is a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"reason\": \"The negative clause 'not merely a physical infrastructure, but also' restates the positive claim via the but-also construction, adding nothing checkable.\"\n    },\n    {\n      \"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\",\n      \"replacement\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens it.\",\n      \"reason\": \"'significantly shortens frequency restoration' restates 'fell from 12 minutes to 4 minutes' with no new fact, deleting the repetition.\"\n    },\n    {\n      \"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"The positive claim is already stated by the preceding sentence about intrinsic inertia providing short\u2011term stability; 'full stop' is emphatic filler that repeats it.\"\n    },\n    {\n      \"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": \"\",\n      \"reason\": \"Procuring spinning reserve states what was done; the rather-than contrast restates the same fact and adds nothing checkable.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"Saying upgrades are 'planned on purpose' restates that they are intentionally planned with no new information.\"\n    },\n    {\n      \"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n      \"replacement\": \"\",\n      \"reason\": \"'end of story' is emphatic filler that restates the preceding claim about enabling islanded microgrids for critical facilities.\"\n    },\n    {\n      \"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\",\n      \"replacement\": \"Ice storms still take lines out of service for days.\",\n      \"reason\": \"The dash introduces a run-on restatement about planners' reactions that repeats the point that storms force operational follow-ups without adding a checkable claim.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "reason": "The negative clause 'not merely a physical infrastructure, but also' restates the positive claim via the but-also construction, adding nothing checkable."
+    },
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens it.",
+      "reason": "'significantly shortens frequency restoration' restates 'fell from 12 minutes to 4 minutes' with no new fact, deleting the repetition."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "",
+      "reason": "The positive claim is already stated by the preceding sentence about intrinsic inertia providing short\u2011term stability; 'full stop' is emphatic filler that repeats it."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "",
+      "reason": "Procuring spinning reserve states what was done; the rather-than contrast restates the same fact and adds nothing checkable."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "Saying upgrades are 'planned on purpose' restates that they are intentionally planned with no new information."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "",
+      "reason": "'end of story' is emphatic filler that restates the preceding claim about enabling islanded microgrids for critical facilities."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still take lines out of service for days.",
+      "reason": "The dash introduces a run-on restatement about planners' reactions that repeats the point that storms force operational follow-ups without adding a checkable claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20840,
+    "output": 610,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

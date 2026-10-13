@@ -1,0 +1,57 @@
+{
+  "run_id": "R2_P1_r3",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:15:08.719874+00:00",
+  "duration_s": 55.265649402019335,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\", \"replacement\": \"The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.\", \"reason\": \"The second sentence restates the claim without adding new information.\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"\", \"reason\": \"The sentence is filler with no verifiable content.\"}, {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change.\", \"reason\": \"The second sentence restates the claim without adding new information.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"\", \"reason\": \"Both sentences are filler with no verifiable content.\"}]}",
+  "edits": [
+    {
+      "original": "The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.",
+      "replacement": "The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions.",
+      "reason": "The second sentence restates the claim without adding new information."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "",
+      "reason": "The sentence is filler with no verifiable content."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change.",
+      "reason": "The second sentence restates the claim without adding new information."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "Both sentences are filler with no verifiable content."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19930,
+    "output": 295,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0031665,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

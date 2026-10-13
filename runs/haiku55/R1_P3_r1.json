@@ -1,0 +1,237 @@
+{
+  "run_id": "R1_P3_r1",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:44:07.489488+00:00",
+  "duration_s": 15.17083396599628,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Botany, the scientific study of plants, is one of the oldest branches of biology. A caf\u00e9 in Uppsala\", \"replacement\": \"Botany, the scientific study of plants, is one of the oldest branches of biology. A cafe in Uppsala\", \"reason\": \"The accented e in caf\u00e9 is not required for correct spelling, so it is replaced with plain ASCII.\"}, {\"original\": \"not merely academic\u2014it is essential\", \"replacement\": \"not merely academic; it is essential\", \"reason\": \"The em dash is replaced with a semicolon per the ASCII-only rule.\"}, {\"original\": \"well\u2011being\", \"replacement\": \"well-being\", \"reason\": \"The non-breaking hyphen is replaced with a standard ASCII hyphen.\"}, {\"original\": \"the discipline\u2019s contemporary\", \"replacement\": \"the discipline's contemporary\", \"reason\": \"The curly apostrophe is replaced with a straight ASCII apostrophe.\"}, {\"original\": \"the \u201cfather of botany\u201d\", \"replacement\": \"the \\\"father of botany\\\"\", \"reason\": \"Curly quotes are replaced with straight ASCII double quotes.\"}, {\"original\": \"Hooke\u2019s 1665\", \"replacement\": \"Hooke's 1665\", \"reason\": \"The curly apostrophe is replaced with a straight ASCII apostrophe.\"}, {\"original\": \"coining the term \u201ccell.\u201d\", \"replacement\": \"coining the term \\\"cell.\\\"\", \"reason\": \"Curly quotes are replaced with straight ASCII double quotes.\"}, {\"original\": \"Linnaeus introduced the binomial nomenclature that remains the backbone of modern taxonomy, while Charles Darwin\u2019s\", \"replacement\": \"Linnaeus introduced the binomial nomenclature that remains the backbone of modern taxonomy, while Charles Darwin's\", \"reason\": \"The curly apostrophe is replaced with a straight ASCII apostrophe.\"}, {\"original\": \"high\u2011throughput\", \"replacement\": \"high-throughput\", \"reason\": \"The non-breaking hyphen is replaced with a standard ASCII hyphen.\"}, {\"original\": \"a model organism for plant genetics and paving the way for high\u2011throughput\", \"replacement\": \"a model organism for plant genetics and paving the way for high-throughput\", \"reason\": \"The non-breaking hyphen is replaced with a standard ASCII hyphen.\"}, {\"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\", \"replacement\": \"Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.\", \"reason\": \"The ellipsis glyph is replaced with three ASCII periods.\"}, {\"original\": \"plasmodesmata\u2014microscopic channels\", \"replacement\": \"plasmodesmata; microscopic channels\", \"reason\": \"The em dash is replaced with a semicolon.\"}, {\"original\": \"the sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing\", \"replacement\": \"the sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing\", \"reason\": \"\\\"Watershed moment\\\" is an inflated-symbolism phrase on the banned list, so it is replaced with a plainer term.\"}, {\"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies. A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\", \"replacement\": \"A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies. A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change cuts cell-wall composition analysis time by most of an hour.\", \"reason\": \"\\\"Robust\\\" and \\\"significantly streamlines\\\" are on the banned list and are replaced with plain wording that states the measured result.\"}, {\"original\": \"The 18th and 19th centuries witnessed\", \"replacement\": \"The 18th and 19th centuries saw\", \"reason\": \"\\\"Witnessed\\\" is a stock inflated verb that the plainer \\\"saw\\\" replaces without changing meaning.\"}, {\"original\": \"Plants are the primary producers that convert solar energy into chemical energy, forming the foundation of virtually every terrestrial ecosystem.\", \"replacement\": \"Plants are the primary producers that convert solar energy into chemical energy, forming the foundation of nearly every land ecosystem.\", \"reason\": \"\\\"Virtually\\\" is a filler intensifier and \\\"ecosystem\\\" is used here in a plain sense, so the sentence is restated with plainer words.\"}, {\"original\": \"the discipline has continually expanded\", \"replacement\": \"the discipline has steadily expanded\", \"reason\": \"\\\"Continually\\\" is replaced with \\\"steadily\\\" to avoid a stock intensifier.\"}, {\"original\": \"is essential for the survival and well-being of humanity\", \"replacement\": \"is needed for the survival and well-being of humanity\", \"reason\": \"\\\"Essential\\\" is a filler intensifier on the banned list and is replaced with a plainer word.\"}, {\"original\": \"a comprehensive understanding of plant biology\", \"replacement\": \"a full understanding of plant biology\", \"reason\": \"\\\"Comprehensive\\\" is on the banned adjectives list and is replaced with \\\"full\\\".\"}, {\"original\": \"the 1960s, driven by the development of high\u2011yielding, disease\u2011resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production\", \"replacement\": \"the 1960s, driven by the development of high-yielding, disease-resistant varieties and the widespread use of synthetic fertilizers, greatly increased food production\", \"reason\": \"\\\"Dramatically\\\" is a banned intensifier and is replaced with \\\"greatly\\\".\"}, {\"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years\", \"replacement\": \"so supplemental irrigation greatly reduces yield loss in dry years\", \"reason\": \"\\\"Dramatically\\\" is a banned intensifier and is replaced with \\\"greatly\\\".\"}, {\"original\": \"Plants shape ecosystems through a suite of services that underpin planetary health.\", \"replacement\": \"Plants shape ecosystems through a set of services that underpin planetary health.\", \"reason\": \"\\\"Suite\\\" is a stock phrasing that the plainer \\\"set\\\" replaces without changing meaning.\"}, {\"original\": \"Botany, therefore, plays a pivotal role in restoration ecology\", \"replacement\": \"Botany, therefore, plays a central role in restoration ecology\", \"reason\": \"\\\"Pivotal\\\" is on the banned adjectives list and is replaced with \\\"central\\\".\"}, {\"original\": \"Understanding these mechanisms is pivotal for improving crop yields\", \"replacement\": \"Understanding these mechanisms is central to improving crop yields\", \"reason\": \"\\\"Pivotal\\\" is on the banned adjectives list and is replaced with \\\"central\\\".\"}, {\"original\": \"Comparative genomics reveals the genetic basis of traits\", \"replacement\": \"Comparative genomics reveals the genetic basis of traits\", \"reason\": \"No banned word is present in this sentence, so it stays unchanged.\"}, {\"original\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks\", \"replacement\": \"Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct full networks\", \"reason\": \"\\\"Comprehensive\\\" is on the banned adjectives list and is replaced with \\\"full\\\".\"}, {\"original\": \"accelerating the identification of candidate genes\", \"replacement\": \"speeding up the identification of candidate genes\", \"reason\": \"\\\"Accelerating\\\" is a stock phrasing that the plainer \\\"speeding up\\\" replaces without changing meaning.\"}, {\"original\": \"Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes\", \"replacement\": \"Decoding the molecular dialogues between plants and microbes, through signaling molecules like strigolactones and flavonoids, offers routes\", \"reason\": \"The em dashes are replaced with commas to keep the ASCII-only rule.\"}, {\"original\": \"leverage the organelle\u2019s prokaryotic-like gene expression system\", \"replacement\": \"use the organelle's prokaryotic-like gene expression system\", \"reason\": \"\\\"Leverage\\\" is on the banned verbs list and is replaced with \\\"use\\\"; the curly apostrophe is also replaced with a straight one.\"}, {\"original\": \"leveraging satellite imagery, drones, and IoT sensors\", \"replacement\": \"using satellite imagery, drones, and IoT sensors\", \"reason\": \"\\\"Leveraging\\\" is on the banned verbs list and is replaced with \\\"using\\\".\"}, {\"original\": \"**Precision agriculture**\u2014leveraging\", \"replacement\": \"**Precision agriculture**, using\", \"reason\": \"The em dash is replaced with a comma and the banned verb \\\"leveraging\\\" is replaced with \\\"using\\\".\"}, {\"original\": \"**Citizen science platforms** (e.g., iNaturalist, PlantNet) empower the public to contribute observations, expanding biodiversity databases and fostering environmental stewardship.\", \"replacement\": \"**Citizen science platforms** (e.g., iNaturalist, PlantNet) empower the public to contribute observations, expanding biodiversity databases and encouraging environmental stewardship.\", \"reason\": \"\\\"Fostering\\\" is on the banned verbs list and is replaced with \\\"encouraging\\\".\"}, {\"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative.\", \"replacement\": \"a deep, careful understanding of plant biology is not optional; it is necessary.\", \"reason\": \"\\\"Nuanced\\\" and \\\"imperative\\\" are on the banned lists and are replaced with plainer words.\"}, {\"original\": \"Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins\", \"replacement\": \"Botany, far from being a static catalog of flora, is a dynamic, integrative science that supports\", \"reason\": \"\\\"Underpins\\\" is a stock phrasing that the plainer \\\"supports\\\" replaces without changing meaning.\"}, {\"original\": \"offers unprecedented tools to harness plant potential\", \"replacement\": \"offers new tools to harness plant potential\", \"reason\": \"\\\"Unprecedented\\\" is an inflated adjective that the plainer \\\"new\\\" replaces without changing meaning.\"}, {\"original\": \"The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.\", \"replacement\": \"The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.\", \"reason\": \"No banned word is present in this sentence, so it stays unchanged.\"}, {\"original\": \"CRISPR\u2011based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a delicate task\", \"replacement\": \"CRISPR-based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a careful task\", \"reason\": \"The non-breaking hyphen is replaced with an ASCII hyphen and \\\"delicate\\\" is replaced with the plainer \\\"careful\\\".\"}, {\"original\": \"Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.\", \"replacement\": \"Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.\", \"reason\": \"No banned word is present in this sentence, so it stays unchanged.\"}, {\"original\": \"Addressing these issues requires interdisciplinary collaboration, robust public engagement, and policies that integrate scientific evidence with socio\u2011economic realities.\", \"replacement\": \"Addressing these issues requires interdisciplinary collaboration, strong public engagement, and policies that integrate scientific evidence with socio-economic realities.\", \"reason\": \"\\\"Robust\\\" is on the banned adjectives list and is replaced with \\\"strong\\\"; the non-breaking hyphen is also replaced with an ASCII hyphen.\"}, {\"original\": \"While the promise of botanical science is immense, several challenges must be addressed.\", \"replacement\": \"While the promise of botanical science is immense, several challenges must be addressed.\", \"reason\": \"No banned word is present in this sentence, so it stays unchanged.\"}]}",
+  "edits": [
+    {
+      "original": "Botany, the scientific study of plants, is one of the oldest branches of biology. A caf\u00e9 in Uppsala",
+      "replacement": "Botany, the scientific study of plants, is one of the oldest branches of biology. A cafe in Uppsala",
+      "reason": "The accented e in caf\u00e9 is not required for correct spelling, so it is replaced with plain ASCII."
+    },
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "The em dash is replaced with a semicolon per the ASCII-only rule."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "The non-breaking hyphen is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "the discipline\u2019s contemporary",
+      "replacement": "the discipline's contemporary",
+      "reason": "The curly apostrophe is replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "the \u201cfather of botany\u201d",
+      "replacement": "the \"father of botany\"",
+      "reason": "Curly quotes are replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "Hooke\u2019s 1665",
+      "replacement": "Hooke's 1665",
+      "reason": "The curly apostrophe is replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly quotes are replaced with straight ASCII double quotes."
+    },
+    {
+      "original": "Linnaeus introduced the binomial nomenclature that remains the backbone of modern taxonomy, while Charles Darwin\u2019s",
+      "replacement": "Linnaeus introduced the binomial nomenclature that remains the backbone of modern taxonomy, while Charles Darwin's",
+      "reason": "The curly apostrophe is replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "The non-breaking hyphen is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "a model organism for plant genetics and paving the way for high\u2011throughput",
+      "replacement": "a model organism for plant genetics and paving the way for high-throughput",
+      "reason": "The non-breaking hyphen is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.",
+      "reason": "The ellipsis glyph is replaced with three ASCII periods."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata; microscopic channels",
+      "reason": "The em dash is replaced with a semicolon."
+    },
+    {
+      "original": "the sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing",
+      "replacement": "the sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing",
+      "reason": "\"Watershed moment\" is an inflated-symbolism phrase on the banned list, so it is replaced with a plainer term."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies. A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "A regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies. A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change cuts cell-wall composition analysis time by most of an hour.",
+      "reason": "\"Robust\" and \"significantly streamlines\" are on the banned list and are replaced with plain wording that states the measured result."
+    },
+    {
+      "original": "The 18th and 19th centuries witnessed",
+      "replacement": "The 18th and 19th centuries saw",
+      "reason": "\"Witnessed\" is a stock inflated verb that the plainer \"saw\" replaces without changing meaning."
+    },
+    {
+      "original": "Plants are the primary producers that convert solar energy into chemical energy, forming the foundation of virtually every terrestrial ecosystem.",
+      "replacement": "Plants are the primary producers that convert solar energy into chemical energy, forming the foundation of nearly every land ecosystem.",
+      "reason": "\"Virtually\" is a filler intensifier and \"ecosystem\" is used here in a plain sense, so the sentence is restated with plainer words."
+    },
+    {
+      "original": "the discipline has continually expanded",
+      "replacement": "the discipline has steadily expanded",
+      "reason": "\"Continually\" is replaced with \"steadily\" to avoid a stock intensifier."
+    },
+    {
+      "original": "is essential for the survival and well-being of humanity",
+      "replacement": "is needed for the survival and well-being of humanity",
+      "reason": "\"Essential\" is a filler intensifier on the banned list and is replaced with a plainer word."
+    },
+    {
+      "original": "a comprehensive understanding of plant biology",
+      "replacement": "a full understanding of plant biology",
+      "reason": "\"Comprehensive\" is on the banned adjectives list and is replaced with \"full\"."
+    },
+    {
+      "original": "the 1960s, driven by the development of high\u2011yielding, disease\u2011resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production",
+      "replacement": "the 1960s, driven by the development of high-yielding, disease-resistant varieties and the widespread use of synthetic fertilizers, greatly increased food production",
+      "reason": "\"Dramatically\" is a banned intensifier and is replaced with \"greatly\"."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "so supplemental irrigation greatly reduces yield loss in dry years",
+      "reason": "\"Dramatically\" is a banned intensifier and is replaced with \"greatly\"."
+    },
+    {
+      "original": "Plants shape ecosystems through a suite of services that underpin planetary health.",
+      "replacement": "Plants shape ecosystems through a set of services that underpin planetary health.",
+      "reason": "\"Suite\" is a stock phrasing that the plainer \"set\" replaces without changing meaning."
+    },
+    {
+      "original": "Botany, therefore, plays a pivotal role in restoration ecology",
+      "replacement": "Botany, therefore, plays a central role in restoration ecology",
+      "reason": "\"Pivotal\" is on the banned adjectives list and is replaced with \"central\"."
+    },
+    {
+      "original": "Understanding these mechanisms is pivotal for improving crop yields",
+      "replacement": "Understanding these mechanisms is central to improving crop yields",
+      "reason": "\"Pivotal\" is on the banned adjectives list and is replaced with \"central\"."
+    },
+    {
+      "original": "Comparative genomics reveals the genetic basis of traits",
+      "replacement": "Comparative genomics reveals the genetic basis of traits",
+      "reason": "No banned word is present in this sentence, so it stays unchanged."
+    },
+    {
+      "original": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct comprehensive networks",
+      "replacement": "Systems biology integrates transcriptomics, proteomics, metabolomics, and phenomics to construct full networks",
+      "reason": "\"Comprehensive\" is on the banned adjectives list and is replaced with \"full\"."
+    },
+    {
+      "original": "accelerating the identification of candidate genes",
+      "replacement": "speeding up the identification of candidate genes",
+      "reason": "\"Accelerating\" is a stock phrasing that the plainer \"speeding up\" replaces without changing meaning."
+    },
+    {
+      "original": "Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes",
+      "replacement": "Decoding the molecular dialogues between plants and microbes, through signaling molecules like strigolactones and flavonoids, offers routes",
+      "reason": "The em dashes are replaced with commas to keep the ASCII-only rule."
+    },
+    {
+      "original": "leverage the organelle\u2019s prokaryotic-like gene expression system",
+      "replacement": "use the organelle's prokaryotic-like gene expression system",
+      "reason": "\"Leverage\" is on the banned verbs list and is replaced with \"use\"; the curly apostrophe is also replaced with a straight one."
+    },
+    {
+      "original": "leveraging satellite imagery, drones, and IoT sensors",
+      "replacement": "using satellite imagery, drones, and IoT sensors",
+      "reason": "\"Leveraging\" is on the banned verbs list and is replaced with \"using\"."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging",
+      "replacement": "**Precision agriculture**, using",
+      "reason": "The em dash is replaced with a comma and the banned verb \"leveraging\" is replaced with \"using\"."
+    },
+    {
+      "original": "**Citizen science platforms** (e.g., iNaturalist, PlantNet) empower the public to contribute observations, expanding biodiversity databases and fostering environmental stewardship.",
+      "replacement": "**Citizen science platforms** (e.g., iNaturalist, PlantNet) empower the public to contribute observations, expanding biodiversity databases and encouraging environmental stewardship.",
+      "reason": "\"Fostering\" is on the banned verbs list and is replaced with \"encouraging\"."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "a deep, careful understanding of plant biology is not optional; it is necessary.",
+      "reason": "\"Nuanced\" and \"imperative\" are on the banned lists and are replaced with plainer words."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins",
+      "replacement": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that supports",
+      "reason": "\"Underpins\" is a stock phrasing that the plainer \"supports\" replaces without changing meaning."
+    },
+    {
+      "original": "offers unprecedented tools to harness plant potential",
+      "replacement": "offers new tools to harness plant potential",
+      "reason": "\"Unprecedented\" is an inflated adjective that the plainer \"new\" replaces without changing meaning."
+    },
+    {
+      "original": "The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.",
+      "replacement": "The loss of genetic resources limits the pool of traits available for breeding and biotechnological exploitation.",
+      "reason": "No banned word is present in this sentence, so it stays unchanged."
+    },
+    {
+      "original": "CRISPR\u2011based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a delicate task",
+      "replacement": "CRISPR-based modifications in crops spark debate over regulatory frameworks, labeling, and public acceptance. Balancing innovation with safety, transparency, and societal values is a careful task",
+      "reason": "The non-breaking hyphen is replaced with an ASCII hyphen and \"delicate\" is replaced with the plainer \"careful\"."
+    },
+    {
+      "original": "Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.",
+      "replacement": "Predictive models must incorporate complex plant responses to anticipate ecosystem-level impacts accurately.",
+      "reason": "No banned word is present in this sentence, so it stays unchanged."
+    },
+    {
+      "original": "Addressing these issues requires interdisciplinary collaboration, robust public engagement, and policies that integrate scientific evidence with socio\u2011economic realities.",
+      "replacement": "Addressing these issues requires interdisciplinary collaboration, strong public engagement, and policies that integrate scientific evidence with socio-economic realities.",
+      "reason": "\"Robust\" is on the banned adjectives list and is replaced with \"strong\"; the non-breaking hyphen is also replaced with an ASCII hyphen."
+    },
+    {
+      "original": "While the promise of botanical science is immense, several challenges must be addressed.",
+      "replacement": "While the promise of botanical science is immense, several challenges must be addressed.",
+      "reason": "No banned word is present in this sentence, so it stays unchanged."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 4224,
+    "cache_read": 23505,
+    "cache_write": 9714,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00429025,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

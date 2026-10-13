@@ -1,0 +1,57 @@
+{
+  "run_id": "R3_P1_r2",
+  "model_key": "haiku55",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "be7242a4ea21d9044ef6e43950de701d89e8f6f7f8bdaf6288c5e1becb678454",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:46:10.733312+00:00",
+  "duration_s": 3.8649546450178605,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"The 'rather than by accident' trailer uses the ordinary-knowledge antonym of 'on purpose', so it is cut.\"}, {\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"The 'rather than open' trailer restates the ordinary antonym of 'fail-closed' in a way that adds nothing, so it is cut.\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": null, \"reason\": \"This sentence is not a 'not X' or 'rather than X' trailer, so it falls outside Rule 3 and is flagged for the author rather than changed.\"}, {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": null, \"reason\": \"This clause is unrelated to the antonym-trailer pattern of Rule 3 and is flagged for the author rather than changed.\"}]}",
+  "edits": [
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "The 'rather than by accident' trailer uses the ordinary-knowledge antonym of 'on purpose', so it is cut."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The 'rather than open' trailer restates the ordinary antonym of 'fail-closed' in a way that adds nothing, so it is cut."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": null,
+      "reason": "This sentence is not a 'not X' or 'rather than X' trailer, so it falls outside Rule 3 and is flagged for the author rather than changed."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": null,
+      "reason": "This clause is unrelated to the antonym-trailer pattern of Rule 3 and is flagged for the author rather than changed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 413,
+    "cache_read": 29958,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00050648,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

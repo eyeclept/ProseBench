@@ -1,0 +1,362 @@
+{
+  "run_id": "R4_P1_r2",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T15:04:49.516374+00:00",
+  "duration_s": 48.64950544500607,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Word count: \u2248\u202f1,620\",\n      \"replacement\": \"Word count: ~1,620\",\n      \"reason\": \"The approximately-equal sign (\u2248) is not on a standard US keyboard; the tilde (~) is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"The twenty\u2011first century\",\n      \"replacement\": \"The twenty-first century\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"cloud\u2011based services\",\n      \"replacement\": \"cloud-based services\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"Internet\u2011of\u2011Things\",\n      \"replacement\": \"Internet-of-Things\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\",\n      \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge), but\",\n      \"reason\": \"Em dashes are not on a standard US keyboard; here they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"malware\u2014viruses, worms, and trojans\u2014remain\",\n      \"replacement\": \"malware (viruses, worms, and trojans) remains\",\n      \"reason\": \"Em dashes are not on a standard US keyboard; they set off an appositive fragment, so parentheses are the appropriate ASCII substitute, and the verb agrees with the singular subject 'malware'.\"\n    },\n    {\n      \"original\": \"supply\u2011chain attacks\",\n      \"replacement\": \"supply-chain attacks\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"APT\u2011related incidents grew by 17\u202f% year\u2011over\u2011year\",\n      \"replacement\": \"APT-related incidents grew by 17% year-over-year\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) and narrow no-break space before the percent sign are not on a standard US keyboard; replace with plain hyphens and a plain space.\"\n    },\n    {\n      \"original\": \"Nation\u2011state actors\",\n      \"replacement\": \"Nation-state actors\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"dark\u2011web marketplaces\",\n      \"replacement\": \"dark-web marketplaces\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"deep\u2011fake technology\",\n      \"replacement\": \"deep-fake technology\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"creating \u201cattack surfaces\u201d that\",\n      \"replacement\": \"creating \\\"attack surfaces\\\" that\",\n      \"reason\": \"Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes.\"\n    },\n    {\n      \"original\": \"defense\u2011in\u2011depth strategy\",\n      \"replacement\": \"defense-in-depth strategy\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"lateral movement\u2014a key tactic used by APT groups\",\n      \"replacement\": \"lateral movement, a key tactic used by APT groups\",\n      \"reason\": \"The em dash is not on a standard US keyboard; it introduces a trailing appositive fragment, so a comma is the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"machine\u2011learning models\",\n      \"replacement\": \"machine-learning models\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"credential\u2011dumping utilities\",\n      \"replacement\": \"credential-dumping utilities\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"AES\u2011256, TLS\u202f1.3\",\n      \"replacement\": \"AES-256, TLS 1.3\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) and narrow no-break space are not on a standard US keyboard; replace with a plain hyphen and a plain space.\"\n    },\n    {\n      \"original\": \"Identity\u2011and\u2011access management\",\n      \"replacement\": \"Identity-and-access management\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"zero\u2011trust architectures\",\n      \"replacement\": \"zero-trust architectures\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"\u201ctrusted internal network\u201d paradigm\",\n      \"replacement\": \"\\\"trusted internal network\\\" paradigm\",\n      \"reason\": \"Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes.\"\n    },\n    {\n      \"original\": \"patch management\u2014automated wherever possible\u2014closes\",\n      \"replacement\": \"patch management (automated wherever possible) closes\",\n      \"reason\": \"Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"The EDR timeline ends at a truncated process tree\u2026\",\n      \"replacement\": \"The EDR timeline ends at a truncated process tree...\",\n      \"reason\": \"The single ellipsis glyph (\u2026) is not on a standard US keyboard; replace with three separate period characters.\"\n    },\n    {\n      \"original\": \"mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\",\n      \"replacement\": \"mean time to contain. The finance team uses that figure in the quarterly risk report.\",\n      \"reason\": \"The em dash is not on a standard US keyboard; it joins two independent clauses, so a period is the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"Board\u2011level oversight\",\n      \"replacement\": \"Board-level oversight\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"within 24\u202fhours\",\n      \"replacement\": \"within 24 hours\",\n      \"reason\": \"The narrow no-break space before 'hours' is not on a standard US keyboard; replace with a plain space.\"\n    },\n    {\n      \"original\": \"red\u2011team exercises\",\n      \"replacement\": \"red-team exercises\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"security\u2011first culture\",\n      \"replacement\": \"security-first culture\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account\",\n      \"replacement\": \"Insider threats (whether malicious, negligent, or coerced) account\",\n      \"reason\": \"Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"34\u202f% of data breaches\",\n      \"replacement\": \"34% of data breaches\",\n      \"reason\": \"The narrow no-break space before the percent sign is not on a standard US keyboard; replace with a plain space.\"\n    },\n    {\n      \"original\": \"click\u2011through rates above 20\u202f%\",\n      \"replacement\": \"click-through rates above 20%\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) and narrow no-break space before the percent sign are not on a standard US keyboard; replace with a plain hyphen and a plain space.\"\n    },\n    {\n      \"original\": \"\u201cavailability heuristic,\u201d\",\n      \"replacement\": \"\\\"availability heuristic,\\\"\",\n      \"reason\": \"Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes.\"\n    },\n    {\n      \"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\",\n      \"replacement\": \"positive reinforcement (recognizing employees who flag suspicious activity) outperforms\",\n      \"reason\": \"Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"role\u2011based access controls\",\n      \"replacement\": \"role-based access controls\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\",\n      \"replacement\": \"Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) and em dashes are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"exceed 4\u202f% of global revenue\",\n      \"replacement\": \"exceed 4% of global revenue\",\n      \"reason\": \"The narrow no-break space before the percent sign is not on a standard US keyboard; replace with a plain space.\"\n    },\n    {\n      \"original\": \"\u201cbug bounty\u201d model\",\n      \"replacement\": \"\\\"bug bounty\\\" model\",\n      \"reason\": \"Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes.\"\n    },\n    {\n      \"original\": \"data\u2011retention laws\",\n      \"replacement\": \"data-retention laws\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains\",\n      \"replacement\": \"A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains\",\n      \"reason\": \"The em dashes and non-breaking hyphen (\u2011, U+2011) are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"post\u2011incident analysis\",\n      \"replacement\": \"post-incident analysis\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"up\u2011to\u2011date IR plan\",\n      \"replacement\": \"up-to-date IR plan\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\",\n      \"replacement\": \"playbooks. For example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\",\n      \"reason\": \"The em dash is not on a standard US keyboard; it joins two independent clauses, so a period is the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"double\u2011edged sword\",\n      \"replacement\": \"double-edged sword\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"AI\u2011driven analytics\",\n      \"replacement\": \"AI-driven analytics\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"threat\u2011intel synthesis\",\n      \"replacement\": \"threat-intel synthesis\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"longer\u2011term challenge\",\n      \"replacement\": \"longer-term challenge\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"post\u2011quantum cryptography\",\n      \"replacement\": \"post-quantum cryptography\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"lattice\u2011based, hash\u2011based, or code\u2011based alternatives\",\n      \"replacement\": \"lattice-based, hash-based, or code-based alternatives\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"use\u2011cases\",\n      \"replacement\": \"use-cases\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"software\u2011supply\u2011chain provenance\",\n      \"replacement\": \"software-supply-chain provenance\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"United Nations\u2019 Group\",\n      \"replacement\": \"United Nations' Group\",\n      \"reason\": \"The right single curly quote (\u2019) is not on a standard US keyboard; replace with a straight apostrophe.\"\n    },\n    {\n      \"original\": \"NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting\",\n      \"replacement\": \"NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm-setting\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"European Union\u2019s Cybersecurity Act\",\n      \"replacement\": \"European Union's Cybersecurity Act\",\n      \"reason\": \"The right single curly quote (\u2019) is not on a standard US keyboard; replace with a straight apostrophe.\"\n    },\n    {\n      \"original\": \"Public\u2011private partnerships\",\n      \"replacement\": \"Public-private partnerships\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"cyber\u2011attacks threaten\",\n      \"replacement\": \"cyber-attacks threaten\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"hyper\u2011connectivity\",\n      \"replacement\": \"hyper-connectivity\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan. The legal team then discovered the gap during a discovery request.\",\n      \"reason\": \"The em dash is not on a standard US keyboard; it joins independent clauses, and the following comma would create a comma splice, so splitting into separate sentences is the appropriate ASCII fix.\"\n    },\n    {\n      \"original\": \"real\u2011time, AI\u2011assisted security controls\",\n      \"replacement\": \"real-time, AI-assisted security controls\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"1. **Zero\u2011Trust Architecture** \u2013 Treat\",\n      \"replacement\": \"1. **Zero-Trust Architecture** - Treat\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace both with plain hyphens.\"\n    },\n    {\n      \"original\": \"2. **Secure\u2011by\u2011Design Development** \u2013 Embed\",\n      \"replacement\": \"2. **Secure-by-Design Development** - Embed\",\n      \"reason\": \"The non-breaking hyphens (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"software\u2011bill of materials\",\n      \"replacement\": \"software-bill of materials\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    },\n    {\n      \"original\": \"3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage\",\n      \"replacement\": \"3. **AI-Enhanced Threat Intelligence** - Leverage\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"4. **Post\u2011Quantum Preparedness** \u2013 Begin\",\n      \"replacement\": \"4. **Post-Quantum Preparedness** - Begin\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens.\"\n    },\n    {\n      \"original\": \"5. **Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize\",\n      \"replacement\": \"5. **Resilience Engineering** - Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize\",\n      \"reason\": \"The en dash (\u2013) and em dashes are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands\",\n      \"replacement\": \"threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands\",\n      \"reason\": \"The em dashes and non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute.\"\n    },\n    {\n      \"original\": \"quantum\u2011resistant cryptography\",\n      \"replacement\": \"quantum-resistant cryptography\",\n      \"reason\": \"The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Word count: \u2248\u202f1,620",
+      "replacement": "Word count: ~1,620",
+      "reason": "The approximately-equal sign (\u2248) is not on a standard US keyboard; the tilde (~) is the plain ASCII substitute."
+    },
+    {
+      "original": "The twenty\u2011first century",
+      "replacement": "The twenty-first century",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "cloud\u2011based services",
+      "replacement": "cloud-based services",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge), but",
+      "reason": "Em dashes are not on a standard US keyboard; here they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "malware (viruses, worms, and trojans) remains",
+      "reason": "Em dashes are not on a standard US keyboard; they set off an appositive fragment, so parentheses are the appropriate ASCII substitute, and the verb agrees with the singular subject 'malware'."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "APT\u2011related incidents grew by 17\u202f% year\u2011over\u2011year",
+      "replacement": "APT-related incidents grew by 17% year-over-year",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) and narrow no-break space before the percent sign are not on a standard US keyboard; replace with plain hyphens and a plain space."
+    },
+    {
+      "original": "Nation\u2011state actors",
+      "replacement": "Nation-state actors",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "dark\u2011web marketplaces",
+      "replacement": "dark-web marketplaces",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "deep\u2011fake technology",
+      "replacement": "deep-fake technology",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that",
+      "replacement": "creating \"attack surfaces\" that",
+      "reason": "Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes."
+    },
+    {
+      "original": "defense\u2011in\u2011depth strategy",
+      "replacement": "defense-in-depth strategy",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "lateral movement, a key tactic used by APT groups",
+      "reason": "The em dash is not on a standard US keyboard; it introduces a trailing appositive fragment, so a comma is the appropriate ASCII substitute."
+    },
+    {
+      "original": "machine\u2011learning models",
+      "replacement": "machine-learning models",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "credential\u2011dumping utilities",
+      "replacement": "credential-dumping utilities",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "AES\u2011256, TLS\u202f1.3",
+      "replacement": "AES-256, TLS 1.3",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) and narrow no-break space are not on a standard US keyboard; replace with a plain hyphen and a plain space."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management",
+      "replacement": "Identity-and-access management",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "zero\u2011trust architectures",
+      "replacement": "zero-trust architectures",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d paradigm",
+      "replacement": "\"trusted internal network\" paradigm",
+      "reason": "Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes",
+      "replacement": "patch management (automated wherever possible) closes",
+      "reason": "Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "The single ellipsis glyph (\u2026) is not on a standard US keyboard; replace with three separate period characters."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "mean time to contain. The finance team uses that figure in the quarterly risk report.",
+      "reason": "The em dash is not on a standard US keyboard; it joins two independent clauses, so a period is the appropriate ASCII substitute."
+    },
+    {
+      "original": "Board\u2011level oversight",
+      "replacement": "Board-level oversight",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "within 24\u202fhours",
+      "replacement": "within 24 hours",
+      "reason": "The narrow no-break space before 'hours' is not on a standard US keyboard; replace with a plain space."
+    },
+    {
+      "original": "red\u2011team exercises",
+      "replacement": "red-team exercises",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "security\u2011first culture",
+      "replacement": "security-first culture",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "Insider threats (whether malicious, negligent, or coerced) account",
+      "reason": "Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "34\u202f% of data breaches",
+      "replacement": "34% of data breaches",
+      "reason": "The narrow no-break space before the percent sign is not on a standard US keyboard; replace with a plain space."
+    },
+    {
+      "original": "click\u2011through rates above 20\u202f%",
+      "replacement": "click-through rates above 20%",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) and narrow no-break space before the percent sign are not on a standard US keyboard; replace with a plain hyphen and a plain space."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "positive reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Em dashes are not on a standard US keyboard; they set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "role\u2011based access controls",
+      "replacement": "role-based access controls",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) and em dashes are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "exceed 4\u202f% of global revenue",
+      "replacement": "exceed 4% of global revenue",
+      "reason": "The narrow no-break space before the percent sign is not on a standard US keyboard; replace with a plain space."
+    },
+    {
+      "original": "\u201cbug bounty\u201d model",
+      "replacement": "\"bug bounty\" model",
+      "reason": "Curly/smart double quotes are not on a standard US keyboard; replace with straight double quotes."
+    },
+    {
+      "original": "data\u2011retention laws",
+      "replacement": "data-retention laws",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains",
+      "reason": "The em dashes and non-breaking hyphen (\u2011, U+2011) are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "up\u2011to\u2011date IR plan",
+      "replacement": "up-to-date IR plan",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "playbooks. For example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "reason": "The em dash is not on a standard US keyboard; it joins two independent clauses, so a period is the appropriate ASCII substitute."
+    },
+    {
+      "original": "double\u2011edged sword",
+      "replacement": "double-edged sword",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "threat\u2011intel synthesis",
+      "replacement": "threat-intel synthesis",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "longer\u2011term challenge",
+      "replacement": "longer-term challenge",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "post\u2011quantum cryptography",
+      "replacement": "post-quantum cryptography",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "lattice\u2011based, hash\u2011based, or code\u2011based alternatives",
+      "replacement": "lattice-based, hash-based, or code-based alternatives",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "software\u2011supply\u2011chain provenance",
+      "replacement": "software-supply-chain provenance",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "The right single curly quote (\u2019) is not on a standard US keyboard; replace with a straight apostrophe."
+    },
+    {
+      "original": "NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting",
+      "replacement": "NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm-setting",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "European Union\u2019s Cybersecurity Act",
+      "replacement": "European Union's Cybersecurity Act",
+      "reason": "The right single curly quote (\u2019) is not on a standard US keyboard; replace with a straight apostrophe."
+    },
+    {
+      "original": "Public\u2011private partnerships",
+      "replacement": "Public-private partnerships",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "cyber\u2011attacks threaten",
+      "replacement": "cyber-attacks threaten",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan. The legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash is not on a standard US keyboard; it joins independent clauses, and the following comma would create a comma splice, so splitting into separate sentences is the appropriate ASCII fix."
+    },
+    {
+      "original": "real\u2011time, AI\u2011assisted security controls",
+      "replacement": "real-time, AI-assisted security controls",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "1. **Zero\u2011Trust Architecture** \u2013 Treat",
+      "replacement": "1. **Zero-Trust Architecture** - Treat",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace both with plain hyphens."
+    },
+    {
+      "original": "2. **Secure\u2011by\u2011Design Development** \u2013 Embed",
+      "replacement": "2. **Secure-by-Design Development** - Embed",
+      "reason": "The non-breaking hyphens (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "software\u2011bill of materials",
+      "replacement": "software-bill of materials",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    },
+    {
+      "original": "3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "3. **AI-Enhanced Threat Intelligence** - Leverage",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "4. **Post\u2011Quantum Preparedness** \u2013 Begin",
+      "replacement": "4. **Post-Quantum Preparedness** - Begin",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) and en dash (\u2013) are not on a standard US keyboard; replace with plain hyphens."
+    },
+    {
+      "original": "5. **Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "5. **Resilience Engineering** - Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize",
+      "reason": "The en dash (\u2013) and em dashes are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands",
+      "replacement": "threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands",
+      "reason": "The em dashes and non-breaking hyphens (\u2011, U+2011) are not on a standard US keyboard; the em dashes set off a parenthetical fragment, so parentheses are the appropriate ASCII substitute."
+    },
+    {
+      "original": "quantum\u2011resistant cryptography",
+      "replacement": "quantum-resistant cryptography",
+      "reason": "The non-breaking hyphen (\u2011, U+2011) is not on a standard US keyboard; replace with a plain hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3418,
+    "output": 4544,
+    "cache_read": 15852,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01293084,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

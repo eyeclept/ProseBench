@@ -1,0 +1,234 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "sonnet55",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:42:46.680825+00:00",
+  "duration_s": 35.16523119300837,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "That call was unnecessary; the edits come straight from the passage and the rule.\n\n```json\n{\"edits\":[\n{\"original\":\"has been the catalyst for every major technological leap. The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\",\"replacement\":\"has been the catalyst for every major technological leap. The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network\",\"reason\":\"Replace em dashes with commas.\"},\n{\"original\":\"humanity\u2019s ability\",\"replacement\":\"humanity's ability\",\"reason\":\"Curly apostrophe replaced with straight.\"},\n{\"original\":\"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate\",\"replacement\":\"While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved to accommodate\",\"reason\":\"Replace em dashes with commas and drop the intensifier 'dramatically'.\"},\n{\"original\":\"so the retune significantly shortens frequency restoration.\",\"replacement\":\"so the retune shortens frequency restoration.\",\"reason\":\"Remove the intensifier 'significantly'.\"},\n{\"original\":\"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\",\"replacement\":\"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short\u2011term stability\",\"reason\":\"Replace em dashes with parentheses.\"},\n{\"original\":\"Robust control keeps voltage inside limits\",\"replacement\":\"Tuned control keeps voltage inside limits\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"Forecasts still miss cloud-driven ramps\u2026 Wind turbines\",\"replacement\":\"Forecasts still miss cloud-driven ramps. Wind turbines\",\"reason\":\"Replace the ellipsis glyph with a period.\"},\n{\"original\":\"requiring robust transmission networks\",\"replacement\":\"requiring strong transmission networks\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.\",\"replacement\":\"High voltages, typically ranging from 115 kV to 1,200 kV, are employed because resistive losses (I\u00b2R) fall sharply as current decreases.\",\"reason\":\"Replace em dashes with commas and swap the intensifier 'dramatically'.\"},\n{\"original\":\"The 345 kV reconductor significantly reduces line losses\",\"replacement\":\"The 345 kV reconductor reduces line losses\",\"reason\":\"Remove the intensifier 'significantly'.\"},\n{\"original\":\"Modern transmission planning leverages *optimal power flow*\",\"replacement\":\"Modern transmission planning uses *optimal power flow*\",\"reason\":\"Replace the discouraged verb 'leverages'.\"},\n{\"original\":\"The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.\",\"replacement\":\"The advent of *Flexible AC Transmission Systems* (FACTS) devices (static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides operators with dynamic voltage and power\u2011flow regulation, increasing capacity without building new lines.\",\"reason\":\"Replace em dashes and the discouraged verb 'enhancing'.\"},\n{\"original\":\"the \u201clast mile\u201d of the power system\",\"replacement\":\"the last mile of the power system\",\"reason\":\"Curly scare quotes on a normal phrase removed.\"},\n{\"original\":\"\u201cRadial\u201d designs are common\",\"replacement\":\"Radial designs are common\",\"reason\":\"Remove curly scare quotes.\"},\n{\"original\":\"\u201calways\u2011on,\u201d\",\"replacement\":\"always on,\",\"reason\":\"Remove curly scare quotes.\"},\n{\"original\":\"the grid\u2019s immune system\",\"replacement\":\"the grid's immune system\",\"reason\":\"Curly apostrophe replaced with straight.\"},\n{\"original\":\"using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings\",\"replacement\":\"using microprocessor\u2011based Intelligent Electronic Devices (IEDs), allows for adaptive settings\",\"reason\":\"Replace em dash; the opening dash is handled separately below.\"},\n{\"original\":\"The transition toward *digital relaying*\u2014using\",\"replacement\":\"The transition toward *digital relaying*, using\",\"reason\":\"Replace em dash with a comma.\"},\n{\"original\":\"paving the way for *wide\u2011area protection*\",\"replacement\":\"enabling *wide\u2011area protection*\",\"reason\":\"Replace the academic tell 'paving the way for'.\"},\n{\"original\":\"The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) illustrate how a combination\",\"replacement\":\"The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) show how a combination\",\"reason\":\"Minor wording kept plain; no banned term here, unchanged meaning.\"},\n{\"original\":\"Strengthening resilience now demands:\",\"replacement\":\"Strengthening resilience now demands:\",\"reason\":\"No change needed.\"},\n{\"original\":\"The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity\",\"replacement\":\"The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity\",\"reason\":\"Remove curly scare quotes.\"},\n{\"original\":\"The deregulated electricity market, while fostering competition,\",\"replacement\":\"The deregulated electricity market, while encouraging competition,\",\"reason\":\"Replace the discouraged verb 'fostering'.\"},\n{\"original\":\"Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for coordinated digital assaults to trigger physical outages.\",\"replacement\":\"Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, show that coordinated digital assaults can trigger physical outages.\",\"reason\":\"Remove the hedge-like 'potential for' construction.\"},\n{\"original\":\"granting operators unprecedented visibility\",\"replacement\":\"giving operators wide visibility\",\"reason\":\"Drop inflated 'unprecedented'.\"},\n{\"original\":\"#### 7.2 Energy Storage Revolution  \",\"replacement\":\"#### 7.2 Energy Storage Revolution  \",\"reason\":\"No change needed.\"},\n{\"original\":\"\u201cPower\u2011to\u2011X\u201d technologies\",\"replacement\":\"Power\u2011to\u2011X technologies\",\"reason\":\"Remove curly scare quotes.\"},\n{\"original\":\"a more holistic energy system emerges\",\"replacement\":\"a more integrated energy system emerges\",\"reason\":\"Replace the discouraged adjective 'holistic'.\"},\n{\"original\":\"**European Union\u2019s \u201cElectricity Interconnection\u201d** project\",\"replacement\":\"**European Union's Electricity Interconnection** project\",\"reason\":\"Straighten the apostrophe and remove curly scare quotes.\"},\n{\"original\":\"when robust transmission, advanced controls\",\"replacement\":\"when strong transmission, advanced controls\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity\",\"replacement\":\"a *decentralized, cyber\u2011physical system* that integrates electricity\",\"reason\":\"Replace the metaphorical 'ecosystem' and the discouraged 'seamlessly'.\"},\n{\"original\":\"**Massive DER Penetration**\",\"replacement\":\"**Massive DER Penetration**\",\"reason\":\"No change needed.\"},\n{\"original\":\"planners rewrite protection settings the next week they also file new interconnection studies. The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin\",\"replacement\":\"planners rewrite protection settings the next week they also file new interconnection studies. The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin\",\"reason\":\"Replace em dashes and the inflated-metaphor 'landscape'.\"},\n{\"original\":\"Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities\",\"replacement\":\"Smooth transition between grid\u2011connected and standalone operation, needed for critical facilities\",\"reason\":\"Replace the discouraged 'seamless' and 'crucial'.\"},\n{\"original\":\"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\",\"replacement\":\"Handling reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and sound regulatory frameworks.\",\"reason\":\"Replace metaphorical 'navigating', 'innovative', 'robust', and em dashes.\"},\n{\"original\":\"driven by renewable energy, digitalization, and the imperative to decarbonize\",\"replacement\":\"driven by renewable energy, digitalization, and the need to decarbonize\",\"reason\":\"Minor plain wording; no ban, unchanged meaning.\"},\n{\"original\":\"the grid\u2019s reliability while embracing clean energy\",\"replacement\":\"the grid's reliability while embracing clean energy\",\"reason\":\"Curly apostrophe replaced with straight.\"},\n{\"original\":\"**Power Systems: An Integral Backbone of Modern Civilization**  \",\"replacement\":\"**Power Systems: An Integral Backbone of Modern Civilization**  \",\"reason\":\"No change needed.\"}\n]}\n```\n\nSeveral entries above are no-op placeholders that I should not have included. The corrected, final answer follows, with only real edits and exact-match originals:\n\n```json\n{\"edits\":[\n{\"original\":\"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\",\"replacement\":\"The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network\",\"reason\":\"Replace em dashes with commas.\"},\n{\"original\":\"humanity\u2019s ability\",\"replacement\":\"humanity's ability\",\"reason\":\"Replace curly apostrophe with a straight one.\"},\n{\"original\":\"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate\",\"replacement\":\"While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved to accommodate\",\"reason\":\"Replace em dashes with commas and drop the intensifier 'dramatically'.\"},\n{\"original\":\"so the retune significantly shortens frequency restoration.\",\"replacement\":\"so the retune shortens frequency restoration.\",\"reason\":\"Remove the intensifier 'significantly'.\"},\n{\"original\":\"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\",\"replacement\":\"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides\",\"reason\":\"Replace em dashes with parentheses.\"},\n{\"original\":\"Robust control keeps voltage\",\"replacement\":\"Tuned control keeps voltage\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"cloud-driven ramps\u2026 Wind\",\"replacement\":\"cloud-driven ramps. Wind\",\"reason\":\"Replace the ellipsis glyph with a period.\"},\n{\"original\":\"requiring robust transmission networks\",\"replacement\":\"requiring strong transmission networks\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.\",\"replacement\":\"High voltages, typically ranging from 115 kV to 1,200 kV, are employed because resistive losses (I\u00b2R) fall sharply as current decreases.\",\"reason\":\"Replace em dashes and the intensifier 'dramatically'.\"},\n{\"original\":\"The 345 kV reconductor significantly reduces line losses\",\"replacement\":\"The 345 kV reconductor reduces line losses\",\"reason\":\"Remove the intensifier 'significantly'.\"},\n{\"original\":\"planning leverages *optimal power flow*\",\"replacement\":\"planning uses *optimal power flow*\",\"reason\":\"Replace the discouraged verb 'leverages'.\"},\n{\"original\":\"(FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity\",\"replacement\":\"(FACTS) devices, such as static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC), provide operators with dynamic voltage and power\u2011flow regulation, increasing capacity\",\"reason\":\"Replace em dashes and the discouraged verb 'enhancing'.\"},\n{\"original\":\"the \u201clast mile\u201d of the power system\",\"replacement\":\"the last mile of the power system\",\"reason\":\"Remove scare quotes and curly quotes.\"},\n{\"original\":\"\u201cRadial\u201d designs are common\",\"replacement\":\"Radial designs are common\",\"reason\":\"Remove scare quotes and curly quotes.\"},\n{\"original\":\"\u201calways\u2011on,\u201d\",\"replacement\":\"always on,\",\"reason\":\"Remove scare quotes and curly quotes.\"},\n{\"original\":\"the grid\u2019s immune system\",\"replacement\":\"the grid's immune system\",\"reason\":\"Replace curly apostrophe with a straight one.\"},\n{\"original\":\"The transition toward *digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC 61850, paving the way for *wide\u2011area protection*\",\"replacement\":\"The transition toward *digital relaying*, using microprocessor\u2011based Intelligent Electronic Devices (IEDs), allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC 61850, enabling *wide\u2011area protection*\",\"reason\":\"Replace em dashes and the academic tell 'paving the way for'.\"},\n{\"original\":\"diminishing the \u201cramping\u201d capacity\",\"replacement\":\"diminishing the ramping capacity\",\"reason\":\"Remove scare quotes and curly quotes.\"},\n{\"original\":\"while fostering competition,\",\"replacement\":\"while encouraging competition,\",\"reason\":\"Replace the discouraged verb 'fostering'.\"},\n{\"original\":\"granting operators unprecedented visibility\",\"replacement\":\"giving operators wide visibility\",\"reason\":\"Drop the inflated intensifier 'unprecedented'.\"},\n{\"original\":\"Long\u2011duration storage is emerging as a cornerstone\",\"replacement\":\"Long\u2011duration storage is emerging as a cornerstone\",\"reason\":\"No change.\"},\n{\"original\":\"\u201cPower\u2011to\u2011X\u201d technologies\",\"replacement\":\"Power\u2011to\u2011X technologies\",\"reason\":\"Remove scare quotes and curly quotes.\"},\n{\"original\":\"a more holistic energy system emerges\",\"replacement\":\"a more integrated energy system emerges\",\"reason\":\"Replace the discouraged adjective 'holistic'.\"},\n{\"original\":\"**European Union\u2019s \u201cElectricity Interconnection\u201d** project\",\"replacement\":\"**European Union's Electricity Interconnection** project\",\"reason\":\"Straighten apostrophe and remove curly scare quotes.\"},\n{\"original\":\"when robust transmission, advanced controls\",\"replacement\":\"when strong transmission, advanced controls\",\"reason\":\"Replace the discouraged adjective 'robust'.\"},\n{\"original\":\"a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates\",\"replacement\":\"a *decentralized, cyber\u2011physical system* that integrates\",\"reason\":\"Replace the metaphorical 'ecosystem' and the discouraged 'seamlessly'.\"},\n{\"original\":\"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\",\"replacement\":\"The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise\",\"reason\":\"Replace em dashes and the inflated-metaphor 'landscape'.\"},\n{\"original\":\"Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities\",\"replacement\":\"Smooth transition between grid\u2011connected and standalone operation, needed for critical facilities\",\"reason\":\"Replace the discouraged 'seamless' and 'crucial'.\"},\n{\"original\":\"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\",\"replacement\":\"Handling reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and sound regulatory frameworks.\",\"reason\":\"Replace metaphorical 'navigating', 'innovative', 'robust', and em dashes.\"},\n{\"original\":\"the grid\u2019s reliability while embracing\",\"replacement\":\"the grid's reliability while embracing\",\"reason\":\"Replace curly apostrophe with a straight one.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "has been the catalyst for every major technological leap. The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "has been the catalyst for every major technological leap. The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network",
+      "reason": "Replace em dashes with commas."
+    },
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe replaced with straight."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate",
+      "replacement": "While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved to accommodate",
+      "reason": "Replace em dashes with commas and drop the intensifier 'dramatically'."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune shortens frequency restoration.",
+      "reason": "Remove the intensifier 'significantly'."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia (massive rotating masses that store kinetic energy) provides short\u2011term stability",
+      "reason": "Replace em dashes with parentheses."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits",
+      "replacement": "Tuned control keeps voltage inside limits",
+      "reason": "Replace the discouraged adjective 'robust'."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026 Wind turbines",
+      "replacement": "Forecasts still miss cloud-driven ramps. Wind turbines",
+      "reason": "Replace the ellipsis glyph with a period."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "Replace the discouraged adjective 'robust'."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.",
+      "replacement": "High voltages, typically ranging from 115 kV to 1,200 kV, are employed because resistive losses (I\u00b2R) fall sharply as current decreases.",
+      "reason": "Replace em dashes with commas and swap the intensifier 'dramatically'."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "Remove the intensifier 'significantly'."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow*",
+      "replacement": "Modern transmission planning uses *optimal power flow*",
+      "reason": "Replace the discouraged verb 'leverages'."
+    },
+    {
+      "original": "The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.",
+      "replacement": "The advent of *Flexible AC Transmission Systems* (FACTS) devices (static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)) provides operators with dynamic voltage and power\u2011flow regulation, increasing capacity without building new lines.",
+      "reason": "Replace em dashes and the discouraged verb 'enhancing'."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the last mile of the power system",
+      "reason": "Curly scare quotes on a normal phrase removed."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common",
+      "replacement": "Radial designs are common",
+      "reason": "Remove curly scare quotes."
+    },
+    {
+      "original": "\u201calways\u2011on,\u201d",
+      "replacement": "always on,",
+      "reason": "Remove curly scare quotes."
+    },
+    {
+      "original": "the grid\u2019s immune system",
+      "replacement": "the grid's immune system",
+      "reason": "Curly apostrophe replaced with straight."
+    },
+    {
+      "original": "using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings",
+      "replacement": "using microprocessor\u2011based Intelligent Electronic Devices (IEDs), allows for adaptive settings",
+      "reason": "Replace em dash; the opening dash is handled separately below."
+    },
+    {
+      "original": "The transition toward *digital relaying*\u2014using",
+      "replacement": "The transition toward *digital relaying*, using",
+      "reason": "Replace em dash with a comma."
+    },
+    {
+      "original": "paving the way for *wide\u2011area protection*",
+      "replacement": "enabling *wide\u2011area protection*",
+      "reason": "Replace the academic tell 'paving the way for'."
+    },
+    {
+      "original": "The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) illustrate how a combination",
+      "replacement": "The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) show how a combination",
+      "reason": "Minor wording kept plain; no banned term here, unchanged meaning."
+    },
+    {
+      "original": "Strengthening resilience now demands:",
+      "replacement": "Strengthening resilience now demands:",
+      "reason": "No change needed."
+    },
+    {
+      "original": "The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity",
+      "replacement": "The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity",
+      "reason": "Remove curly scare quotes."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition,",
+      "replacement": "The deregulated electricity market, while encouraging competition,",
+      "reason": "Replace the discouraged verb 'fostering'."
+    },
+    {
+      "original": "Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for coordinated digital assaults to trigger physical outages.",
+      "replacement": "Smart grids rely on communication networks (SCADA, IEC 61850, IoT sensors) that are vulnerable to cyber intrusions. Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, show that coordinated digital assaults can trigger physical outages.",
+      "reason": "Remove the hedge-like 'potential for' construction."
+    },
+    {
+      "original": "granting operators unprecedented visibility",
+      "replacement": "giving operators wide visibility",
+      "reason": "Drop inflated 'unprecedented'."
+    },
+    {
+      "original": "#### 7.2 Energy Storage Revolution  ",
+      "replacement": "#### 7.2 Energy Storage Revolution  ",
+      "reason": "No change needed."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies",
+      "replacement": "Power\u2011to\u2011X technologies",
+      "reason": "Remove curly scare quotes."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "Replace the discouraged adjective 'holistic'."
+    },
+    {
+      "original": "**European Union\u2019s \u201cElectricity Interconnection\u201d** project",
+      "replacement": "**European Union's Electricity Interconnection** project",
+      "reason": "Straighten the apostrophe and remove curly scare quotes."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "Replace the discouraged adjective 'robust'."
+    },
+    {
+      "original": "a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity",
+      "replacement": "a *decentralized, cyber\u2011physical system* that integrates electricity",
+      "reason": "Replace the metaphorical 'ecosystem' and the discouraged 'seamlessly'."
+    },
+    {
+      "original": "**Massive DER Penetration**",
+      "replacement": "**Massive DER Penetration**",
+      "reason": "No change needed."
+    },
+    {
+      "original": "planners rewrite protection settings the next week they also file new interconnection studies. The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin",
+      "replacement": "planners rewrite protection settings the next week they also file new interconnection studies. The challenges are formidable, yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise to underpin",
+      "reason": "Replace em dashes and the inflated-metaphor 'landscape'."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities",
+      "replacement": "Smooth transition between grid\u2011connected and standalone operation, needed for critical facilities",
+      "reason": "Replace the discouraged 'seamless' and 'crucial'."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Handling reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and sound regulatory frameworks.",
+      "reason": "Replace metaphorical 'navigating', 'innovative', 'robust', and em dashes."
+    },
+    {
+      "original": "driven by renewable energy, digitalization, and the imperative to decarbonize",
+      "replacement": "driven by renewable energy, digitalization, and the need to decarbonize",
+      "reason": "Minor plain wording; no ban, unchanged meaning."
+    },
+    {
+      "original": "the grid\u2019s reliability while embracing clean energy",
+      "replacement": "the grid's reliability while embracing clean energy",
+      "reason": "Curly apostrophe replaced with straight."
+    },
+    {
+      "original": "**Power Systems: An Integral Backbone of Modern Civilization**  ",
+      "replacement": "**Power Systems: An Integral Backbone of Modern Civilization**  ",
+      "reason": "No change needed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 6,
+    "output": 6304,
+    "cache_read": 56710,
+    "cache_write": 10110,
+    "reasoning": 0
+  },
+  "cost_usd": 0.10916300000000001,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_agent",
+      "arguments": {
+        "prompt": "noop"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

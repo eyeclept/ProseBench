@@ -1,0 +1,427 @@
+{
+  "run_id": "R1_P3_r1",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:50:48.457596+00:00",
+  "duration_s": 66.20765219299938,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"a comprehensive understanding of plant biology is not merely academic\u2014it is essential\",\n      \"replacement\": \"a comprehensive understanding of plant biology is not merely academic; it is essential\",\n      \"reason\": \"Em dash is banned; replace with semicolon per the ASCII-equivalent rule.\"\n    },\n    {\n      \"original\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.\",\n      \"replacement\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing a model organism for plant genetics and opening the door to high\u2011throughput functional genomics.\",\n      \"reason\": \"'watershed moment' and 'paving the way for' are both on the banned inflated-symbolism and academic-tells lists.\"\n    },\n    {\n      \"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\",\n      \"replacement\": \"Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.\",\n      \"reason\": \"Ellipsis glyph is banned; replace with three periods.\"\n    },\n    {\n      \"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"replacement\": \"A strong regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"reason\": \"'robust' is a banned intensifier; prefer a plain alternative.\"\n    },\n    {\n      \"original\": \"so the change significantly streamlines cell-wall composition analysis.\",\n      \"replacement\": \"so the change cuts cell-wall composition analysis time.\",\n      \"reason\": \"'significantly' and 'streamlines' are both banned words; the rule's own example shows the concrete-number alternative.\"\n    },\n    {\n      \"original\": \"Plant cells also possess plasmodesmata\u2014microscopic channels that enable symplastic transport\",\n      \"replacement\": \"Plant cells also possess plasmodesmata, microscopic channels that enable symplastic transport\",\n      \"reason\": \"Em dash is banned; replace with comma.\"\n    },\n    {\n      \"original\": \"pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb photons\",\n      \"replacement\": \"pigment molecules (chiefly chlorophyll a, chlorophyll b, and carotenoids) absorb photons\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses or commas.\"\n    },\n    {\n      \"original\": \"releasing O\u2082 as a by\u2011product.\",\n      \"replacement\": \"releasing O\u2082 as a by-product.\",\n      \"reason\": \"Non-ASCII hyphen (U+2011 non-breaking hyphen) is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The ATP and NADPH generated are then utilized in the Calvin\u2011Benson cycle\",\n      \"replacement\": \"The ATP and NADPH generated are then used in the Calvin-Benson cycle\",\n      \"reason\": \"'utilized' is a banned verb; also normalize the non-ASCII hyphen in 'Calvin\u2011Benson'.\"\n    },\n    {\n      \"original\": \"subsequently reduced to glyceraldehyde\u20113\u2011phosphate (G3P)\",\n      \"replacement\": \"then reduced to glyceraldehyde-3-phosphate (G3P)\",\n      \"reason\": \"'subsequently' is a banned academic tell; also normalize non-ASCII hyphens.\"\n    },\n    {\n      \"original\": \"adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize\",\n      \"replacement\": \"adaptations (C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition) to optimize\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"Understanding these mechanisms is pivotal for improving crop yields\",\n      \"replacement\": \"Understanding these mechanisms is central to improving crop yields\",\n      \"reason\": \"'pivotal' is a banned adjective.\"\n    },\n    {\n      \"original\": \"1. **Algae** \u2013 Primarily aquatic\",\n      \"replacement\": \"1. **Algae** - Primarily aquatic\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"2. **Bryophytes** \u2013 Non\u2011vascular plants\",\n      \"replacement\": \"2. **Bryophytes** - Non-vascular plants\",\n      \"reason\": \"En dash and non-ASCII hyphen are banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"3. **Pteridophytes** \u2013 Seedless vascular plants\",\n      \"replacement\": \"3. **Pteridophytes** - Seedless vascular plants\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"4. **Gymnosperms** \u2013 \u201cNaked seed\u201d plants\",\n      \"replacement\": \"4. **Gymnosperms** - \\\"Naked seed\\\" plants\",\n      \"reason\": \"En dash and curly/smart quotes are banned; replace with ASCII hyphen and straight quotes.\"\n    },\n    {\n      \"original\": \"5. **Angiosperms** \u2013 Flowering plants\",\n      \"replacement\": \"5. **Angiosperms** - Flowering plants\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The Green Revolution of the 1960s, driven by the development of high\u2011yielding, disease\u2011resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production\",\n      \"replacement\": \"The Green Revolution of the 1960s, driven by the development of high-yielding, disease-resistant varieties and the widespread use of synthetic fertilizers, sharply increased food production\",\n      \"reason\": \"'dramatically' is a banned intensifier; also normalize non-ASCII hyphens.\"\n    },\n    {\n      \"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years.\",\n      \"replacement\": \"so supplemental irrigation cuts yield loss in dry years.\",\n      \"reason\": \"'dramatically' is a banned intensifier; the concrete numbers already carry the point.\"\n    },\n    {\n      \"original\": \"Modern drug discovery continues to mine plant secondary metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads.\",\n      \"replacement\": \"Modern drug discovery continues to mine plant secondary metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads.\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, facilitating scalable production of valuable compounds while preserving wild populations.\",\n      \"replacement\": \"Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, allowing scalable production of valuable compounds while preserving wild populations.\",\n      \"reason\": \"'facilitating' is a banned verb.\"\n    },\n    {\n      \"original\": \"Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**\",\n      \"replacement\": \"Lignocellulosic biomass is also a cornerstone of the emerging **bioeconomy**\",\n      \"reason\": \"'Moreover' is a banned transition.\"\n    },\n    {\n      \"original\": \"* **Carbon Sequestration** \u2013 Through photosynthesis\",\n      \"replacement\": \"* **Carbon Sequestration** - Through photosynthesis\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"* **Soil Formation and Stabilization** \u2013 Root systems\",\n      \"replacement\": \"* **Soil Formation and Stabilization** - Root systems\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange and improve plant resilience.\",\n      \"replacement\": \"Mycorrhizal associations (symbiotic relationships between plant roots and fungi) support nutrient exchange and improve plant resilience.\",\n      \"reason\": \"Em dashes are banned and 'facilitate' is a banned verb.\"\n    },\n    {\n      \"original\": \"* **Hydrological Regulation** \u2013 Vegetation influences\",\n      \"replacement\": \"* **Hydrological Regulation** - Vegetation influences\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"* **Habitat Provision** \u2013 Plants create\",\n      \"replacement\": \"* **Habitat Provision** - Plants create\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"* **Cultural and Aesthetic Values** \u2013 Gardens, parks\",\n      \"replacement\": \"* **Cultural and Aesthetic Values** - Gardens, parks\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"underscoring the non\u2011material importance of plant life.\",\n      \"replacement\": \"showing the non-material importance of plant life.\",\n      \"reason\": \"'underscoring' is a banned verb; also normalize non-ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The degradation of plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines these services\",\n      \"replacement\": \"The degradation of plant communities (via deforestation, invasive species, or climate change) undermines these services\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"Botany, therefore, plays a pivotal role in restoration ecology\",\n      \"replacement\": \"Botany, therefore, plays a central role in restoration ecology\",\n      \"reason\": \"'pivotal' is a banned adjective.\"\n    },\n    {\n      \"original\": \"The advent of next\u2011generation sequencing (NGS) has democratized whole\u2011genome analysis\",\n      \"replacement\": \"The advent of next-generation sequencing (NGS) has democratized whole-genome analysis\",\n      \"reason\": \"Non-ASCII hyphens are outside a standard US keyboard; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"to construct comprehensive networks that predict plant responses\",\n      \"replacement\": \"to construct detailed networks that predict plant responses\",\n      \"reason\": \"'comprehensive' is a banned adjective.\"\n    },\n    {\n      \"original\": \"leveraging the organelle\u2019s prokaryotic-like gene expression system\",\n      \"replacement\": \"using the organelle's proklyotic-like gene expression system\",\n      \"reason\": \"'leveraging' is a banned verb and the curly apostrophe is banned; replace with straight quote.\"\n    },\n    {\n      \"original\": \"respond more robustly upon re\u2011encounter\u2014is a burgeoning field.\",\n      \"replacement\": \"respond more strongly upon re-encounter; it is a growing field.\",\n      \"reason\": \"'robustly' is a banned intensifier; also normalize non-ASCII hyphen and em dash.\"\n    },\n    {\n      \"original\": \"Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes to sustainable agricultural practices.\",\n      \"replacement\": \"Decoding the molecular dialogues between plants and microbes (through signaling molecules like strigolactones and flavonoids) offers routes to sustainable agricultural practices.\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"* **Biodiversity Loss** \u2013 Habitat destruction\",\n      \"replacement\": \"* **Biodiversity Loss** - Habitat destruction\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"* **Intellectual Property and Biopiracy** \u2013 The commercialization\",\n      \"replacement\": \"* **Intellectual Property and Biopiracy** - The commercialization\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.\",\n      \"replacement\": \"Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical use.\",\n      \"reason\": \"'utilization' is a banned form of 'utilize'; also normalize non-ASCII hyphen.\"\n    },\n    {\n      \"original\": \"* **Gene Editing Governance** \u2013 CRISPR\u2011based modifications\",\n      \"replacement\": \"* **Gene Editing Governance** - CRISPR-based modifications\",\n      \"reason\": \"En dash and non-ASCII hyphen are banned; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"* **Climate Change Feedbacks** \u2013 As global temperatures rise\",\n      \"replacement\": \"* **Climate Change Feedbacks** - As global temperatures rise\",\n      \"reason\": \"En dash is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Addressing these issues requires interdisciplinary collaboration, robust public engagement\",\n      \"replacement\": \"Addressing these issues requires interdisciplinary collaboration, strong public engagement\",\n      \"reason\": \"'robust' is a banned intensifier.\"\n    },\n    {\n      \"original\": \"**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable real\u2011time monitoring\",\n      \"replacement\": \"**Precision agriculture** (using satellite imagery, drones, and IoT sensors) will enable real-time monitoring\",\n      \"reason\": \"Em dashes are banned, 'leveraging' is a banned verb, and the non-ASCII hyphen must be normalized.\"\n    },\n    {\n      \"original\": \"expanding biodiversity databases and fostering environmental stewardship.\",\n      \"replacement\": \"expanding biodiversity databases and building environmental stewardship.\",\n      \"reason\": \"'fostering' is a banned verb.\"\n    },\n    {\n      \"original\": \"Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**\",\n      \"replacement\": \"The concept of **\\\"climate-smart\\\" plants**\",\n      \"reason\": \"'Moreover' is a banned transition; curly quotes and non-ASCII hyphen are banned.\"\n    },\n    {\n      \"original\": \"Finally, education and outreach will be vital.\",\n      \"replacement\": \"Education and outreach will also matter.\",\n      \"reason\": \"'Finally' as a filler opener and 'vital' as a banned intensifier; restructure plainly.\"\n    },\n    {\n      \"original\": \"From the microscopic intricacies of chloroplast electron transport to the grand scale of forest carbon sequestration\",\n      \"replacement\": \"From the microscopic details of chloroplast electron transport to the grand scale of forest carbon sequestration\",\n      \"reason\": \"'intricacies' is a banned adjective.\"\n    },\n    {\n      \"original\": \"Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools\",\n      \"replacement\": \"Contemporary research (spanning genomics, synthetic biology, and ecosystem modeling) offers unprecedented tools\",\n      \"reason\": \"Em dashes are banned; restructure with parentheses.\"\n    },\n    {\n      \"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative.\",\n      \"replacement\": \"a deep, detailed understanding of plant biology is not optional; it is imperative.\",\n      \"reason\": \"'nuanced' is a banned adjective.\"\n    },\n    {\n      \"original\": \"By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\",\n      \"replacement\": \"By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future\",\n      \"reason\": \"'fostering' is a banned verb.\"\n    },\n    {\n      \"original\": \"Theophrastus (c.\u202f371\u2013287\u202fBC)\",\n      \"replacement\": \"Theophrastus (c. 371-287 BC)\",\n      \"reason\": \"En dashes and narrow no-break spaces are non-ASCII; replace with ASCII hyphen and regular spaces.\"\n    },\n    {\n      \"original\": \"is often hailed as the \u201cfather of botany\u201d\",\n      \"replacement\": \"is often hailed as the \\\"father of botany\\\"\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight quotes.\"\n    },\n    {\n      \"original\": \"coining the term \u201ccell.\u201d\",\n      \"replacement\": \"coining the term \\\"cell.\\\"\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight quotes.\"\n    },\n    {\n      \"original\": \"the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic\",\n      \"replacement\": \"the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight quotes.\"\n    },\n    {\n      \"original\": \"the ability of plants to \u201cremember\u201d prior exposure\",\n      \"replacement\": \"the ability of plants to \\\"remember\\\" prior exposure\",\n      \"reason\": \"Curly/smart quotes are banned; replace with straight quotes.\"\n    },\n    {\n      \"original\": \"the **light\u2011dependent reactions**\",\n      \"replacement\": \"the **light-dependent reactions**\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011yielding, disease\u2011resistant\",\n      \"replacement\": \"high-yielding, disease-resistant\",\n      \"reason\": \"Non-ASCII hyphens are outside a standard US keyboard; replace with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"marker\u2011assisted breeding\",\n      \"replacement\": \"marker-assisted breeding\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"carbon\u2011sequestering alternatives\",\n      \"replacement\": \"carbon-sequestering alternatives\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"non\u2011vascular plants\",\n      \"replacement\": \"non-vascular plants\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Non\u2011vascular plants (mosses\",\n      \"replacement\": \"Non-vascular plants (mosses\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"well\u2011being of humanity\",\n      \"replacement\": \"well-being of humanity\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"non\u2011material importance\",\n      \"replacement\": \"non-material importance\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"benefit\u2011sharing agreements\",\n      \"replacement\": \"benefit-sharing agreements\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011throughput functional genomics\",\n      \"replacement\": \"high-throughput functional genomics\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"real\u2011time monitoring\",\n      \"replacement\": \"real-time monitoring\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"next\u2011generation sequencing\",\n      \"replacement\": \"next-generation sequencing\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"whole\u2011genome analysis\",\n      \"replacement\": \"whole-genome analysis\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011dimensional datasets\",\n      \"replacement\": \"high-dimensional datasets\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011level expression\",\n      \"replacement\": \"high-level expression\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Plant\u2013Microbe Interactions\",\n      \"replacement\": \"Plant-Microbe Interactions\",\n      \"reason\": \"En dash in heading is banned; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"Climate\u2011Resilient Agriculture\",\n      \"replacement\": \"Climate-Resilient Agriculture\",\n      \"reason\": \"Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"the discipline\u2019s contemporary relevance\",\n      \"replacement\": \"the discipline's contemporary relevance\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight quote.\"\n    },\n    {\n      \"original\": \"the organelle\u2019s prokaryotic-like gene expression system\",\n      \"replacement\": \"the organelle's prokaryotic-like gene expression system\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight quote.\"\n    },\n    {\n      \"original\": \"humanity\u2019s actions increasingly dictate planetary trajectories\",\n      \"replacement\": \"humanity's actions increasingly dictate planetary trajectories\",\n      \"reason\": \"Curly apostrophe is banned; replace with straight quote.\"\n    },\n    {\n      \"original\": \"120\u202fGt of CO\u2082 annually\",\n      \"replacement\": \"120 Gt of CO\u2082 annually\",\n      \"reason\": \"Narrow no-break space is non-ASCII; replace with a regular space.\"\n    },\n    {\n      \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n      \"replacement\": \"The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot.\",\n      \"reason\": \"Em dash is banned; also the run-on needs a separator.\"\n    },\n    {\n      \"original\": \"close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"close to the C4-versus-CAM split: spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"reason\": \"The comma splice needs a colon to separate the two clauses cleanly.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "a comprehensive understanding of plant biology is not merely academic\u2014it is essential",
+      "replacement": "a comprehensive understanding of plant biology is not merely academic; it is essential",
+      "reason": "Em dash is banned; replace with semicolon per the ASCII-equivalent rule."
+    },
+    {
+      "original": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.",
+      "replacement": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a turning point, establishing a model organism for plant genetics and opening the door to high\u2011throughput functional genomics.",
+      "reason": "'watershed moment' and 'paving the way for' are both on the banned inflated-symbolism and academic-tells lists."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "Herbarium staff still mark sterile Carex sheets as undetermined... until a fruiting collection arrives.",
+      "reason": "Ellipsis glyph is banned; replace with three periods."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "A strong regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "reason": "'robust' is a banned intensifier; prefer a plain alternative."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "so the change cuts cell-wall composition analysis time.",
+      "reason": "'significantly' and 'streamlines' are both banned words; the rule's own example shows the concrete-number alternative."
+    },
+    {
+      "original": "Plant cells also possess plasmodesmata\u2014microscopic channels that enable symplastic transport",
+      "replacement": "Plant cells also possess plasmodesmata, microscopic channels that enable symplastic transport",
+      "reason": "Em dash is banned; replace with comma."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb photons",
+      "replacement": "pigment molecules (chiefly chlorophyll a, chlorophyll b, and carotenoids) absorb photons",
+      "reason": "Em dashes are banned; restructure with parentheses or commas."
+    },
+    {
+      "original": "releasing O\u2082 as a by\u2011product.",
+      "replacement": "releasing O\u2082 as a by-product.",
+      "reason": "Non-ASCII hyphen (U+2011 non-breaking hyphen) is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "The ATP and NADPH generated are then utilized in the Calvin\u2011Benson cycle",
+      "replacement": "The ATP and NADPH generated are then used in the Calvin-Benson cycle",
+      "reason": "'utilized' is a banned verb; also normalize the non-ASCII hyphen in 'Calvin\u2011Benson'."
+    },
+    {
+      "original": "subsequently reduced to glyceraldehyde\u20113\u2011phosphate (G3P)",
+      "replacement": "then reduced to glyceraldehyde-3-phosphate (G3P)",
+      "reason": "'subsequently' is a banned academic tell; also normalize non-ASCII hyphens."
+    },
+    {
+      "original": "adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize",
+      "replacement": "adaptations (C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition) to optimize",
+      "reason": "Em dashes are banned; restructure with parentheses."
+    },
+    {
+      "original": "Understanding these mechanisms is pivotal for improving crop yields",
+      "replacement": "Understanding these mechanisms is central to improving crop yields",
+      "reason": "'pivotal' is a banned adjective."
+    },
+    {
+      "original": "1. **Algae** \u2013 Primarily aquatic",
+      "replacement": "1. **Algae** - Primarily aquatic",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "2. **Bryophytes** \u2013 Non\u2011vascular plants",
+      "replacement": "2. **Bryophytes** - Non-vascular plants",
+      "reason": "En dash and non-ASCII hyphen are banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "3. **Pteridophytes** \u2013 Seedless vascular plants",
+      "replacement": "3. **Pteridophytes** - Seedless vascular plants",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "4. **Gymnosperms** \u2013 \u201cNaked seed\u201d plants",
+      "replacement": "4. **Gymnosperms** - \"Naked seed\" plants",
+      "reason": "En dash and curly/smart quotes are banned; replace with ASCII hyphen and straight quotes."
+    },
+    {
+      "original": "5. **Angiosperms** \u2013 Flowering plants",
+      "replacement": "5. **Angiosperms** - Flowering plants",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "The Green Revolution of the 1960s, driven by the development of high\u2011yielding, disease\u2011resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production",
+      "replacement": "The Green Revolution of the 1960s, driven by the development of high-yielding, disease-resistant varieties and the widespread use of synthetic fertilizers, sharply increased food production",
+      "reason": "'dramatically' is a banned intensifier; also normalize non-ASCII hyphens."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "so supplemental irrigation cuts yield loss in dry years.",
+      "reason": "'dramatically' is a banned intensifier; the concrete numbers already carry the point."
+    },
+    {
+      "original": "Modern drug discovery continues to mine plant secondary metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads.",
+      "replacement": "Modern drug discovery continues to mine plant secondary metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads.",
+      "reason": "Em dashes are banned; restructure with parentheses."
+    },
+    {
+      "original": "Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, facilitating scalable production of valuable compounds while preserving wild populations.",
+      "replacement": "Advances in metabolomics and synthetic biology now enable the reconstruction of complex plant pathways in microbial hosts, allowing scalable production of valuable compounds while preserving wild populations.",
+      "reason": "'facilitating' is a banned verb."
+    },
+    {
+      "original": "Moreover, lignocellulosic biomass is a cornerstone of the emerging **bioeconomy**",
+      "replacement": "Lignocellulosic biomass is also a cornerstone of the emerging **bioeconomy**",
+      "reason": "'Moreover' is a banned transition."
+    },
+    {
+      "original": "* **Carbon Sequestration** \u2013 Through photosynthesis",
+      "replacement": "* **Carbon Sequestration** - Through photosynthesis",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "* **Soil Formation and Stabilization** \u2013 Root systems",
+      "replacement": "* **Soil Formation and Stabilization** - Root systems",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate nutrient exchange and improve plant resilience.",
+      "replacement": "Mycorrhizal associations (symbiotic relationships between plant roots and fungi) support nutrient exchange and improve plant resilience.",
+      "reason": "Em dashes are banned and 'facilitate' is a banned verb."
+    },
+    {
+      "original": "* **Hydrological Regulation** \u2013 Vegetation influences",
+      "replacement": "* **Hydrological Regulation** - Vegetation influences",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "* **Habitat Provision** \u2013 Plants create",
+      "replacement": "* **Habitat Provision** - Plants create",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "* **Cultural and Aesthetic Values** \u2013 Gardens, parks",
+      "replacement": "* **Cultural and Aesthetic Values** - Gardens, parks",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "underscoring the non\u2011material importance of plant life.",
+      "replacement": "showing the non-material importance of plant life.",
+      "reason": "'underscoring' is a banned verb; also normalize non-ASCII hyphen."
+    },
+    {
+      "original": "The degradation of plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines these services",
+      "replacement": "The degradation of plant communities (via deforestation, invasive species, or climate change) undermines these services",
+      "reason": "Em dashes are banned; restructure with parentheses."
+    },
+    {
+      "original": "Botany, therefore, plays a pivotal role in restoration ecology",
+      "replacement": "Botany, therefore, plays a central role in restoration ecology",
+      "reason": "'pivotal' is a banned adjective."
+    },
+    {
+      "original": "The advent of next\u2011generation sequencing (NGS) has democratized whole\u2011genome analysis",
+      "replacement": "The advent of next-generation sequencing (NGS) has democratized whole-genome analysis",
+      "reason": "Non-ASCII hyphens are outside a standard US keyboard; replace with ASCII hyphens."
+    },
+    {
+      "original": "to construct comprehensive networks that predict plant responses",
+      "replacement": "to construct detailed networks that predict plant responses",
+      "reason": "'comprehensive' is a banned adjective."
+    },
+    {
+      "original": "leveraging the organelle\u2019s prokaryotic-like gene expression system",
+      "replacement": "using the organelle's proklyotic-like gene expression system",
+      "reason": "'leveraging' is a banned verb and the curly apostrophe is banned; replace with straight quote."
+    },
+    {
+      "original": "respond more robustly upon re\u2011encounter\u2014is a burgeoning field.",
+      "replacement": "respond more strongly upon re-encounter; it is a growing field.",
+      "reason": "'robustly' is a banned intensifier; also normalize non-ASCII hyphen and em dash."
+    },
+    {
+      "original": "Decoding the molecular dialogues between plants and microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers routes to sustainable agricultural practices.",
+      "replacement": "Decoding the molecular dialogues between plants and microbes (through signaling molecules like strigolactones and flavonoids) offers routes to sustainable agricultural practices.",
+      "reason": "Em dashes are banned; restructure with parentheses."
+    },
+    {
+      "original": "* **Biodiversity Loss** \u2013 Habitat destruction",
+      "replacement": "* **Biodiversity Loss** - Habitat destruction",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "* **Intellectual Property and Biopiracy** \u2013 The commercialization",
+      "replacement": "* **Intellectual Property and Biopiracy** - The commercialization",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "Equitable benefit\u2011sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical utilization.",
+      "replacement": "Equitable benefit-sharing agreements and adherence to the Nagoya Protocol are essential to ensure ethical use.",
+      "reason": "'utilization' is a banned form of 'utilize'; also normalize non-ASCII hyphen."
+    },
+    {
+      "original": "* **Gene Editing Governance** \u2013 CRISPR\u2011based modifications",
+      "replacement": "* **Gene Editing Governance** - CRISPR-based modifications",
+      "reason": "En dash and non-ASCII hyphen are banned; replace with ASCII hyphens."
+    },
+    {
+      "original": "* **Climate Change Feedbacks** \u2013 As global temperatures rise",
+      "replacement": "* **Climate Change Feedbacks** - As global temperatures rise",
+      "reason": "En dash is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "Addressing these issues requires interdisciplinary collaboration, robust public engagement",
+      "replacement": "Addressing these issues requires interdisciplinary collaboration, strong public engagement",
+      "reason": "'robust' is a banned intensifier."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable real\u2011time monitoring",
+      "replacement": "**Precision agriculture** (using satellite imagery, drones, and IoT sensors) will enable real-time monitoring",
+      "reason": "Em dashes are banned, 'leveraging' is a banned verb, and the non-ASCII hyphen must be normalized."
+    },
+    {
+      "original": "expanding biodiversity databases and fostering environmental stewardship.",
+      "replacement": "expanding biodiversity databases and building environmental stewardship.",
+      "reason": "'fostering' is a banned verb."
+    },
+    {
+      "original": "Moreover, the concept of **\u201cclimate\u2011smart\u201d plants**",
+      "replacement": "The concept of **\"climate-smart\" plants**",
+      "reason": "'Moreover' is a banned transition; curly quotes and non-ASCII hyphen are banned."
+    },
+    {
+      "original": "Finally, education and outreach will be vital.",
+      "replacement": "Education and outreach will also matter.",
+      "reason": "'Finally' as a filler opener and 'vital' as a banned intensifier; restructure plainly."
+    },
+    {
+      "original": "From the microscopic intricacies of chloroplast electron transport to the grand scale of forest carbon sequestration",
+      "replacement": "From the microscopic details of chloroplast electron transport to the grand scale of forest carbon sequestration",
+      "reason": "'intricacies' is a banned adjective."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers unprecedented tools",
+      "replacement": "Contemporary research (spanning genomics, synthetic biology, and ecosystem modeling) offers unprecedented tools",
+      "reason": "Em dashes are banned; restructure with parentheses."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "a deep, detailed understanding of plant biology is not optional; it is imperative.",
+      "reason": "'nuanced' is a banned adjective."
+    },
+    {
+      "original": "By advancing botanical knowledge, fostering interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "replacement": "By advancing botanical knowledge, building interdisciplinary collaboration, and ensuring equitable access to plant-derived benefits, we can secure a resilient, prosperous future",
+      "reason": "'fostering' is a banned verb."
+    },
+    {
+      "original": "Theophrastus (c.\u202f371\u2013287\u202fBC)",
+      "replacement": "Theophrastus (c. 371-287 BC)",
+      "reason": "En dashes and narrow no-break spaces are non-ASCII; replace with ASCII hyphen and regular spaces."
+    },
+    {
+      "original": "is often hailed as the \u201cfather of botany\u201d",
+      "replacement": "is often hailed as the \"father of botany\"",
+      "reason": "Curly/smart quotes are banned; replace with straight quotes."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly/smart quotes are banned; replace with straight quotes."
+    },
+    {
+      "original": "the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are paraphyletic",
+      "replacement": "the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic",
+      "reason": "Curly/smart quotes are banned; replace with straight quotes."
+    },
+    {
+      "original": "the ability of plants to \u201cremember\u201d prior exposure",
+      "replacement": "the ability of plants to \"remember\" prior exposure",
+      "reason": "Curly/smart quotes are banned; replace with straight quotes."
+    },
+    {
+      "original": "the **light\u2011dependent reactions**",
+      "replacement": "the **light-dependent reactions**",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "high\u2011yielding, disease\u2011resistant",
+      "replacement": "high-yielding, disease-resistant",
+      "reason": "Non-ASCII hyphens are outside a standard US keyboard; replace with ASCII hyphens."
+    },
+    {
+      "original": "marker\u2011assisted breeding",
+      "replacement": "marker-assisted breeding",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "carbon\u2011sequestering alternatives",
+      "replacement": "carbon-sequestering alternatives",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "non\u2011vascular plants",
+      "replacement": "non-vascular plants",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "Non\u2011vascular plants (mosses",
+      "replacement": "Non-vascular plants (mosses",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "well\u2011being of humanity",
+      "replacement": "well-being of humanity",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "non\u2011material importance",
+      "replacement": "non-material importance",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "benefit\u2011sharing agreements",
+      "replacement": "benefit-sharing agreements",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "high\u2011throughput functional genomics",
+      "replacement": "high-throughput functional genomics",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "real\u2011time monitoring",
+      "replacement": "real-time monitoring",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "next\u2011generation sequencing",
+      "replacement": "next-generation sequencing",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "whole\u2011genome analysis",
+      "replacement": "whole-genome analysis",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "high\u2011dimensional datasets",
+      "replacement": "high-dimensional datasets",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "high\u2011level expression",
+      "replacement": "high-level expression",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "Plant\u2013Microbe Interactions",
+      "replacement": "Plant-Microbe Interactions",
+      "reason": "En dash in heading is banned; replace with ASCII hyphen."
+    },
+    {
+      "original": "Climate\u2011Resilient Agriculture",
+      "replacement": "Climate-Resilient Agriculture",
+      "reason": "Non-ASCII hyphen is outside a standard US keyboard; replace with ASCII hyphen."
+    },
+    {
+      "original": "the discipline\u2019s contemporary relevance",
+      "replacement": "the discipline's contemporary relevance",
+      "reason": "Curly apostrophe is banned; replace with straight quote."
+    },
+    {
+      "original": "the organelle\u2019s prokaryotic-like gene expression system",
+      "replacement": "the organelle's prokaryotic-like gene expression system",
+      "reason": "Curly apostrophe is banned; replace with straight quote."
+    },
+    {
+      "original": "humanity\u2019s actions increasingly dictate planetary trajectories",
+      "replacement": "humanity's actions increasingly dictate planetary trajectories",
+      "reason": "Curly apostrophe is banned; replace with straight quote."
+    },
+    {
+      "original": "120\u202fGt of CO\u2082 annually",
+      "replacement": "120 Gt of CO\u2082 annually",
+      "reason": "Narrow no-break space is non-ASCII; replace with a regular space."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3; they never formed heads, and the market rejected the entire lot.",
+      "reason": "Em dash is banned; also the run-on needs a separator."
+    },
+    {
+      "original": "close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "close to the C4-versus-CAM split: spatial packing is the C4 case, temporal packing is the CAM one.",
+      "reason": "The comma splice needs a colon to separate the two clauses cleanly."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21335,
+    "output": 5036,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.02503304,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

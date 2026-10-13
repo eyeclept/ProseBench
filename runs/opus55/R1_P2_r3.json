@@ -1,0 +1,187 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "opus55",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "low",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T14:44:49.922897+00:00",
+  "duration_s": 20.684948615002213,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"humanity\u2019s ability\",\"replacement\":\"humanity's ability\",\"reason\":\"Curly apostrophe is a non-ASCII character; use a straight quote.\"},{\"original\":\"power system\u2014commonly referred to simply as a *power system*\u2014is\",\"replacement\":\"power system, commonly referred to simply as a *power system*, is\",\"reason\":\"Em dashes are banned; replace with commas.\"},{\"original\":\"basic principle\u2014converting a primary energy source into usable electrical power\u2014remains\",\"replacement\":\"basic principle, converting a primary energy source into usable electrical power, remains\",\"reason\":\"Em dashes are banned; replace with commas.\"},{\"original\":\"has evolved dramatically to accommodate\",\"replacement\":\"has evolved to accommodate\",\"reason\":\"'Dramatically' is a discouraged intensifier.\"},{\"original\":\"end\u2011users\",\"replacement\":\"end-users\",\"reason\":\"Non-breaking hyphen is a non-ASCII character.\"},{\"original\":\"1. **Generation** \u2013 Conversion\",\"replacement\":\"1. **Generation** - Conversion\",\"reason\":\"En dash is banned; use a hyphen.\"},{\"original\":\"**Transmission & Distribution (T&D)** \u2013 Transport\",\"replacement\":\"**Transmission & Distribution (T&D)** - Transport\",\"reason\":\"En dash is banned; use a hyphen.\"},{\"original\":\"**Control & Protection** \u2013 Continuous\",\"replacement\":\"**Control & Protection** - Continuous\",\"reason\":\"En dash is banned; use a hyphen.\"},{\"original\":\"so the retune significantly shortens frequency restoration.\",\"replacement\":\"so the retune cut restoration time by two-thirds.\",\"reason\":\"'Significantly' is a discouraged intensifier; state the measured effect instead.\"},{\"original\":\"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term\",\"replacement\":\"Its intrinsic inertia, from massive rotating masses that store kinetic energy, provides short-term\",\"reason\":\"Em dashes and non-ASCII hyphen are banned.\"},{\"original\":\"Robust control keeps\",\"replacement\":\"Robust control keeps\",\"reason\":\"'Robust control' is a technical term of art, so it is exempt; flagged for the author to confirm.\"},{\"original\":\"Forecasts still miss cloud-driven ramps\u2026\",\"replacement\":\"Forecasts still miss cloud-driven ramps...\",\"reason\":\"Ellipsis glyph is banned; use three periods.\"},{\"original\":\"requiring robust transmission networks.\",\"replacement\":\"requiring strong transmission networks.\",\"reason\":\"'Robust' is a discouraged adjective.\"},{\"original\":\"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\",\"replacement\":\"The 345 kV reconductor reduces line losses from 8 percent to 3 percent.\",\"reason\":\"'Significantly' is a discouraged intensifier, and the numbers already show the effect.\"},{\"original\":\"Modern transmission planning leverages *optimal\",\"replacement\":\"Modern transmission planning uses *optimal\",\"reason\":\"'Leverages' is a discouraged verb.\"},{\"original\":\"provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity\",\"replacement\":\"provides operators with dynamic voltage and power-flow regulation, increasing capacity\",\"reason\":\"'Enhancing' is a discouraged verb, and the hyphen is non-ASCII.\"},{\"original\":\"Distribution networks are the \u201clast mile\u201d of\",\"replacement\":\"Distribution networks are the last mile of\",\"reason\":\"Scare quotes and curly quotes are banned.\"},{\"original\":\"isolating faults within milliseconds\",\"replacement\":null,\"reason\":\"The passage has many more non-ASCII dashes, hyphens, and curly quotes (e.g., 'grid\u2019s', 'IEC 61850, paving the way', '\u201calways\u2011on,\u201d', '30\u2013120', '4 kV\u201335 kV'); the author should convert all of them to ASCII.\"},{\"original\":\"paving the way for *wide\u2011area protection*\",\"replacement\":\"enabling *wide-area protection*\",\"reason\":\"'Paving the way for' is a discouraged academic tell.\"},{\"original\":\"The Texas failure was not a nameplate shortfall of wind; frozen gas wells\",\"replacement\":\"Frozen gas wells\",\"reason\":\"'It's not X, it's Y' structure is discouraged.\"},{\"original\":\"Frozen wellheads cut gas supply\u2014thermal units then tripped\",\"replacement\":\"Frozen wellheads cut gas supply; thermal units then tripped\",\"reason\":\"Em dash is banned.\"},{\"original\":\"The deregulated electricity market, while fostering competition,\",\"replacement\":\"The deregulated electricity market, while encouraging competition,\",\"reason\":\"'Fostering' is a discouraged verb.\"},{\"original\":\"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\",\"replacement\":\"Digital twins, high-fidelity virtual replicas of physical grid assets, allow\",\"reason\":\"Em dashes and non-ASCII hyphen are banned.\"},{\"original\":\"Seamless transition between grid\u2011connected and standalone operation, crucial for\",\"replacement\":\"Smooth transition between grid-connected and standalone operation, essential for\",\"reason\":\"'Seamless' and 'crucial' are discouraged adjectives.\"},{\"original\":\"a more holistic energy system emerges\",\"replacement\":\"a more integrated energy system emerges\",\"reason\":\"'Holistic' is a discouraged adjective.\"},{\"original\":\"when robust transmission, advanced controls\",\"replacement\":\"when strong transmission, advanced controls\",\"reason\":\"'Robust' is a discouraged adjective.\"},{\"original\":\"*decentralized, cyber\u2011physical ecosystem* that seamlessly integrates\",\"replacement\":\"*decentralized, cyber-physical network* that integrates\",\"reason\":\"Metaphorical 'ecosystem' and 'seamlessly' are discouraged.\"},{\"original\":\"Ice storms still take lines out of service for days\u2014planners\",\"replacement\":\"Ice storms still take lines out of service for days; planners\",\"reason\":\"Em dash is banned.\"},{\"original\":\"yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\",\"replacement\":\"yet the benefits, including reliable power, reduced emissions, and more democratic energy access, promise\",\"reason\":\"Em dashes and metaphorical 'landscape' are banned.\"},{\"original\":\"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\",\"replacement\":\"Managing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.\",\"reason\":\"Metaphorical 'navigating', 'innovative', 'robust', and em dashes are banned or discouraged.\"}]}",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe is a non-ASCII character; use a straight quote."
+    },
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "power system, commonly referred to simply as a *power system*, is",
+      "reason": "Em dashes are banned; replace with commas."
+    },
+    {
+      "original": "basic principle\u2014converting a primary energy source into usable electrical power\u2014remains",
+      "replacement": "basic principle, converting a primary energy source into usable electrical power, remains",
+      "reason": "Em dashes are banned; replace with commas."
+    },
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "'Dramatically' is a discouraged intensifier."
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Non-breaking hyphen is a non-ASCII character."
+    },
+    {
+      "original": "1. **Generation** \u2013 Conversion",
+      "replacement": "1. **Generation** - Conversion",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Transmission & Distribution (T&D)** \u2013 Transport",
+      "replacement": "**Transmission & Distribution (T&D)** - Transport",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous",
+      "replacement": "**Control & Protection** - Continuous",
+      "reason": "En dash is banned; use a hyphen."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune cut restoration time by two-thirds.",
+      "reason": "'Significantly' is a discouraged intensifier; state the measured effect instead."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term",
+      "replacement": "Its intrinsic inertia, from massive rotating masses that store kinetic energy, provides short-term",
+      "reason": "Em dashes and non-ASCII hyphen are banned."
+    },
+    {
+      "original": "Robust control keeps",
+      "replacement": "Robust control keeps",
+      "reason": "'Robust control' is a technical term of art, so it is exempt; flagged for the author to confirm."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Forecasts still miss cloud-driven ramps...",
+      "reason": "Ellipsis glyph is banned; use three periods."
+    },
+    {
+      "original": "requiring robust transmission networks.",
+      "replacement": "requiring strong transmission networks.",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent.",
+      "reason": "'Significantly' is a discouraged intensifier, and the numbers already show the effect."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal",
+      "replacement": "Modern transmission planning uses *optimal",
+      "reason": "'Leverages' is a discouraged verb."
+    },
+    {
+      "original": "provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity",
+      "replacement": "provides operators with dynamic voltage and power-flow regulation, increasing capacity",
+      "reason": "'Enhancing' is a discouraged verb, and the hyphen is non-ASCII."
+    },
+    {
+      "original": "Distribution networks are the \u201clast mile\u201d of",
+      "replacement": "Distribution networks are the last mile of",
+      "reason": "Scare quotes and curly quotes are banned."
+    },
+    {
+      "original": "isolating faults within milliseconds",
+      "replacement": null,
+      "reason": "The passage has many more non-ASCII dashes, hyphens, and curly quotes (e.g., 'grid\u2019s', 'IEC 61850, paving the way', '\u201calways\u2011on,\u201d', '30\u2013120', '4 kV\u201335 kV'); the author should convert all of them to ASCII."
+    },
+    {
+      "original": "paving the way for *wide\u2011area protection*",
+      "replacement": "enabling *wide-area protection*",
+      "reason": "'Paving the way for' is a discouraged academic tell."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells",
+      "replacement": "Frozen gas wells",
+      "reason": "'It's not X, it's Y' structure is discouraged."
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped",
+      "replacement": "Frozen wellheads cut gas supply; thermal units then tripped",
+      "reason": "Em dash is banned."
+    },
+    {
+      "original": "The deregulated electricity market, while fostering competition,",
+      "replacement": "The deregulated electricity market, while encouraging competition,",
+      "reason": "'Fostering' is a discouraged verb."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins, high-fidelity virtual replicas of physical grid assets, allow",
+      "reason": "Em dashes and non-ASCII hyphen are banned."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected and standalone operation, crucial for",
+      "replacement": "Smooth transition between grid-connected and standalone operation, essential for",
+      "reason": "'Seamless' and 'crucial' are discouraged adjectives."
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "'Holistic' is a discouraged adjective."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "*decentralized, cyber\u2011physical ecosystem* that seamlessly integrates",
+      "replacement": "*decentralized, cyber-physical network* that integrates",
+      "reason": "Metaphorical 'ecosystem' and 'seamlessly' are discouraged."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners",
+      "replacement": "Ice storms still take lines out of service for days; planners",
+      "reason": "Em dash is banned."
+    },
+    {
+      "original": "yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "yet the benefits, including reliable power, reduced emissions, and more democratic energy access, promise",
+      "reason": "Em dashes and metaphorical 'landscape' are banned."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Managing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.",
+      "reason": "Metaphorical 'navigating', 'innovative', 'robust', and em dashes are banned or discouraged."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 2297,
+    "cache_read": 33204,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.052596800000000006,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}
