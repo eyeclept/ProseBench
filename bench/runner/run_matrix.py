@@ -24,7 +24,10 @@ ROOT = Path(__file__).resolve().parents[2]
 # Endpoint-busy backoff (seconds). OpenRouter 429s hit Mistral Small 4.
 BUSY_WAITS = (120, 300)
 ENDPOINT_BUSY = re.compile(r'"errorStatus"\s*:\s*(?:429|503)\b')
-# The wrapper's run cap (omp --max-time). Raising the cap makes these stops eligible for a rerun.
+# Run cap in seconds, passed to the wrapper as omp --max-time and recorded per run as max_time_s.
+# Records written before the field existed ran at 600 s. Owner policy: 1200 s, then 2400 s for runs that hit 1200 s.
+MAX_TIME_S = 1200
+LEGACY_MAX_TIME_S = 600
 DEADLINE = re.compile(r"Deadline exceeded")
 
 
@@ -78,22 +81,24 @@ def _atomic_write(path: Path, data: str) -> None:
             tmp_path.unlink(missing_ok=True)
 
 
-def _invoke(root: Path, wrapper: str, model: str, thinking: str, user_prompt: str) -> tuple[subprocess.CompletedProcess[str], float]:
+def _invoke(root: Path, wrapper: str, model: str, thinking: str, user_prompt: str,
+            max_time: int) -> tuple[subprocess.CompletedProcess[str], float]:
     with tempfile.TemporaryDirectory(prefix=".prompt-", dir=root / "bench" / "runner") as directory:
         prompt_file = Path(directory) / "prompt.md"
         prompt_file.write_text(user_prompt, encoding="utf-8")
         started = time.monotonic()
-        proc = subprocess.run([wrapper, "--model", model, "--thinking", thinking, "--prompt-file", str(prompt_file)], cwd=root, capture_output=True, text=True, check=False)
+        proc = subprocess.run([wrapper, "--model", model, "--thinking", thinking, "--prompt-file", str(prompt_file),
+                               "--max-time", str(max_time)], cwd=root, capture_output=True, text=True, check=False)
         return proc, time.monotonic() - started
 
 
 # Failures caused by the network or a provider, not the model. Only these are rerun on resume; a model failure
-# (bad JSON, empty answer, 600 s deadline, omp loop guard) is a result and is never re-rolled.
+# (bad JSON, empty answer, run-cap deadline, omp loop guard) is a result and is never re-rolled at the same cap.
 INFRA_FAILURE = re.compile(r"ECONNRESET|ETIMEDOUT|ENOTFOUND|socket connection was closed|fetch failed|"
                            r"Provider returned error|\b(?:429|500|502|503|504)\b")
 
 
-def _complete(path: Path, rerun_deadline: bool = False) -> bool:
+def _complete(path: Path, rerun_deadline: bool = False, max_time: int = MAX_TIME_S) -> bool:
     if not path.exists():
         return False
     try:
@@ -102,16 +107,17 @@ def _complete(path: Path, rerun_deadline: bool = False) -> bool:
         logger.warning("Ignoring corrupt run record %s: %s", path, exc)
         return False
     error = record.get("error") or ""
-    if rerun_deadline and DEADLINE.search(error):
+    # A deadline stop reruns only under a higher cap than it ran with, so a cap is never re-rolled.
+    if rerun_deadline and DEADLINE.search(error) and record.get("max_time_s", LEGACY_MAX_TIME_S) < max_time:
         return False
     return record.get("exit_code") == 0 or not INFRA_FAILURE.search(error)
 
 
 def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str,
-            force: bool = False, rerun_deadline: bool = False) -> dict | None:
+            force: bool = False, rerun_deadline: bool = False, max_time: int = MAX_TIME_S) -> dict | None:
     run_id = f"R{rule}_{passage}_r{repeat}" + ("_easy" if framing == "easy" else "")
     destination = root / "runs" / key / f"{run_id}.json"
-    if not force and _complete(destination, rerun_deadline):
+    if not force and _complete(destination, rerun_deadline, max_time):
         logger.info("Skipping completed %s/%s", key, run_id)
         return None
     prompt = assemble(root, rule, passage, framing)
@@ -121,7 +127,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
     start = datetime.now(timezone.utc).isoformat()
     raw = []
     rate_limit_retries = 0
-    proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
+    proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user, max_time)
     duration = elapsed
     # Endpoint-busy errors are infrastructure, not model results: back off and resend, at most len(BUSY_WAITS)
     # times. 429 = OpenRouter provider rate limit; 503 = provider unavailable.
@@ -133,7 +139,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
         raw.append(proc.stdout)
         rate_limit_retries += 1
         time.sleep(wait)
-        proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
+        proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user, max_time)
         duration += elapsed
     raw.append(proc.stdout)
     final = parse_events(proc.stdout)
@@ -154,7 +160,8 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
         "system_prompt_sha256": prompt.system_prompt_sha256, "prompt_sha256": prompt.prompt_sha256,
         "rule_text_sha256": prompt.rule_text_sha256, "passage_sha256": prompt.passage_sha256,
         "omp_version": pin.get("PROSEBENCH_OMP_VERSION"), "image_digest": pin.get("PROSEBENCH_IMAGE_DIGEST"),
-        "started_at": start, "duration_s": duration, "exit_code": proc.returncode, "error": error,
+        "started_at": start, "duration_s": duration, "max_time_s": max_time, "exit_code": proc.returncode,
+        "error": error,
         "output_text": final.output_text, "edits": edits, "malformed_edits": malformed, "parse_error": parse_error,
         "usage": totals, "cost_usd": cost, "tool_calls": calls, "rate_limit_retries": rate_limit_retries,
     }
@@ -175,7 +182,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--rerun-deadline", action="store_true",
-                        help="also rerun runs stopped by the wrapper's run cap (after raising the cap)")
+                        help="also rerun runs stopped by a lower run cap than --max-time")
+    parser.add_argument("--max-time", type=int, default=MAX_TIME_S, help="run cap in seconds (omp --max-time)")
     parser.add_argument("--yes", action="store_true")
     args = parser.parse_args(argv)
     try:
@@ -218,7 +226,7 @@ def main(argv: list[str] | None = None) -> int:
         failures = 0
         for key, rule, passage, repeat, framing, run_id in plan:
             record = execute(ROOT, key, rule, passage, repeat, framing, roster, wrapper, args.force,
-                             args.rerun_deadline)
+                             args.rerun_deadline, args.max_time)
             if record is not None and (record["exit_code"] != 0 or record["error"] or record["parse_error"]):
                 logger.warning("Failed %s/%s: %s", key, run_id, record["error"] or record["parse_error"])
                 failures += 1

@@ -42,7 +42,7 @@ def run_one(model: str, level: str, prompt: Path, events: Path) -> dict:
     with events.open("w", encoding="utf-8") as stream:
         proc = subprocess.run(
             [str(CONTAINER / "omp-run.sh"), "--model", model, "--thinking", level,
-             "--prompt-file", str(prompt)],
+             "--prompt-file", str(prompt), "--max-time", "200"],
             cwd=ROOT, stdout=stream, stderr=subprocess.PIPE, text=True,
             timeout=240, check=False,
         )

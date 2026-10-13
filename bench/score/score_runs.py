@@ -20,7 +20,7 @@ INSTANCE_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "
                    "field_specific_promoted", "ambiguous_flagged")
 RUN_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "repeat", "framing",
               "thinking", "cost_usd", "usage_input", "usage_output",
-              "usage_cache_read", "usage_cache_write", "usage_reasoning", "duration_s",
+              "usage_cache_read", "usage_cache_write", "usage_reasoning", "duration_s", "max_time_s",
               "parse_error", "invalid_edit_count", "malformed_edit_count", "n_tool_calls", "firecrawl_called",
               "TP", "FN", "FP", "TN", "precision", "recall", "collateral_count",
               "other_rule_instance", "uncatalogued_text", "nonkeyboard_remaining",
@@ -116,6 +116,8 @@ def score_one(run: dict, all_rows: list[dict], passage: str,
     run_row = {key: run.get(key, "") for key in RUN_FIELDS[:7]}
     for key in ("thinking", "cost_usd", "duration_s"):
         run_row[key] = run.get(key, "")
+    # Run records written before max_time_s existed ran under the original 600 s cap.
+    run_row["max_time_s"] = run.get("max_time_s", 600)
     for key in ("input", "output", "cache_read", "cache_write", "reasoning"):
         run_row[f"usage_{key}"] = usage.get(key, 0)
     run_row.update(parse_error=failed, invalid_edit_count=sum(span.status == "invalid" for span in applied.edit_spans),
