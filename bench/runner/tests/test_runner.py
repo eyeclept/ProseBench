@@ -41,7 +41,8 @@ if mode == "empty" and model.endswith("ornith"):
 if mode.startswith("ratelimit"):
     calls = sum(1 for _ in open(os.environ["FAKE_TRACE"]))
     if mode == "ratelimit_always" or calls == 1:
-        print(json.dumps({"type": "message_end", "message": {"role": "assistant", "content": [], "stopReason": "error", "errorStatus": 429, "errorMessage": "429 Provider returned error"}}, separators=(",", ":")))
+        status = int(os.environ.get("FAKE_STATUS", "429"))
+        print(json.dumps({"type": "message_end", "message": {"role": "assistant", "content": [], "stopReason": "error", "errorStatus": status, "errorMessage": f"{status} Provider returned error"}}, separators=(",", ":")))
         sys.exit(1)
 text = os.environ.get("FAKE_TEXT", '{"edits": [{"original": "word", "replacement": "", "reason": "cut"}]}')
 print(json.dumps({"type": "tool_execution_start", "toolName": "web_search", "args": {"query": "query"}}))
@@ -160,25 +161,25 @@ def test_record_resume_force_and_atomic(sandbox, monkeypatch):
     assert not list(path.parent.glob(".R1_P1_r1.json.*"))
 
 
-def test_routing_and_retries(sandbox, monkeypatch):
+def test_column_only_fallback_and_single_attempt(sandbox, monkeypatch):
     root, roster, wrapper = sandbox
     roster["routing"]["t1_projection_limit_tokens"] = 4000
-    projected = run_matrix.execute(root, "ornith", 1, "P1", 1, "verbatim", roster, str(wrapper))
-    assert projected["routed"] and projected["route_reason"] == "projected_over_60000"
-    assert projected["model_key"] == "ornith" and projected["endpoint_model"] == "fake/qwen36"
-    assert [entry["model"] for entry in trace(root)] == ["fake/qwen36"]
+    with pytest.raises(ValueError, match="whole Ornith column"):
+        run_matrix.execute(root, "ornith", 1, "P1", 1, "verbatim", roster, str(wrapper))
+    assert not trace(root)
     roster["routing"]["t1_projection_limit_tokens"] = 60000
     monkeypatch.setenv("FAKE_MODE", "retry")
-    retried = run_matrix.execute(root, "ornith", 2, "P1", 1, "verbatim", roster, str(wrapper))
-    assert retried["route_reason"] == "t1_failure" and retried["error"] is None
-    assert [entry["model"] for entry in trace(root)][1:] == ["fake/ornith", "fake/ornith", "fake/qwen36"]
-    assert retried["cost_usd"] == 0.003
+    failed = run_matrix.execute(root, "ornith", 2, "P1", 1, "verbatim", roster, str(wrapper))
+    assert not failed["routed"] and failed["route_reason"] is None and failed["error"]
+    assert [entry["model"] for entry in trace(root)] == ["fake/ornith"]
     monkeypatch.setenv("FAKE_MODE", "empty")
     empty = run_matrix.execute(root, "ornith", 3, "P1", 1, "verbatim", roster, str(wrapper))
-    assert empty["route_reason"] == "t1_failure"
+    assert not empty["routed"] and empty["error"] == "empty final assistant text"
+    assert [entry["model"] for entry in trace(root)][-1] == "fake/ornith"
+    monkeypatch.setenv("FAKE_MODE", "success")
     column = run_matrix.execute(root, "ornith", 4, "P1", 1, "verbatim", roster, str(wrapper), column_fallback=True)
-    assert column["route_reason"] == "t1_column_fallback"
-    assert [entry["model"] for entry in trace(root)][-1] == "fake/qwen36"
+    assert column["routed"] and column["route_reason"] == "t1_column_fallback"
+    assert column["model_key"] == "ornith" and column["endpoint_model"] == "fake/qwen36"
 
 
 def test_unverified_refusal_and_plan_guard(sandbox, monkeypatch, capsys):
@@ -203,17 +204,23 @@ def test_unparseable_record(sandbox, monkeypatch):
     assert record["edits"] is None and record["parse_error"] == "no JSON object in final assistant text"
 
 
-@pytest.mark.parametrize("mode,succeeds,retries,calls", [("ratelimit_once", True, 1, 2), ("ratelimit_always", False, 2, 3)])
-def test_rate_limit_backoff(sandbox, monkeypatch, mode, succeeds, retries, calls):
+@pytest.mark.parametrize("key,status,mode,succeeds,retries,calls", [
+    ("qwen38flash", "429", "ratelimit_once", True, 1, 2),
+    ("qwen38flash", "429", "ratelimit_always", False, 2, 3),
+    ("ornith", "503", "ratelimit_once", True, 1, 2),
+])
+def test_endpoint_busy_backoff(sandbox, monkeypatch, key, status, mode, succeeds, retries, calls):
     root, roster, wrapper = sandbox
-    monkeypatch.setattr(run_matrix, "RATE_LIMIT_WAITS", (0, 0))
+    monkeypatch.setattr(run_matrix, "BUSY_WAITS", (0, 0))
     monkeypatch.setenv("FAKE_MODE", mode)
-    record = run_matrix.execute(root, "qwen38flash", 2, "P1", 1, "verbatim", roster, str(wrapper))
+    monkeypatch.setenv("FAKE_STATUS", status)
+    record = run_matrix.execute(root, key, 2, "P1", 1, "verbatim", roster, str(wrapper))
     assert record["rate_limit_retries"] == retries
     assert len(trace(root)) == calls
     assert (record["error"] is None) == succeeds
+    assert not record["routed"]
     if not succeeds:
-        assert "429 Provider returned error" in record["error"]
+        assert f"{status} Provider returned error" in record["error"]
 
 
 def test_nine_column_dry_run_counts(sandbox, capsys):
@@ -239,3 +246,16 @@ def test_cli_uses_wrapper_and_resumes(sandbox, capsys):
     assert len(trace(root)) == 1
     assert run_matrix.main(argv + ["--force"]) == 0
     assert len(trace(root)) == 2
+
+
+@pytest.mark.parametrize("error,rerun", [
+    ("omp exited 1: ECONNRESET: The socket connection was closed unexpectedly", True),
+    ("omp exited 1: 429 Provider returned error", True),
+    ("omp exited 1: 503 ft serve reported a fatal error: cache budget too small", True),
+    ("omp exited 1: Deadline exceeded", False),
+    ("omp exited 1: Thinking loop detected: the model repeated near-identical content", False),
+])
+def test_resume_reruns_only_infrastructure_failures(tmp_path, error, rerun):
+    path = tmp_path / "R1_P1_r1.json"
+    path.write_text(json.dumps({"exit_code": 1, "error": error}), encoding="utf-8")
+    assert run_matrix._complete(path) is (not rerun)

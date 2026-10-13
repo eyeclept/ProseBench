@@ -21,9 +21,9 @@ from bench.runner.prompt import assemble
 
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
-ZERO_USAGE = {"input": 0, "output": 0, "cache_read": 0, "cache_write": 0, "reasoning": 0}
-RATE_LIMIT_WAITS = (60, 180)  # seconds; OpenRouter "429 Provider returned error" hit Mistral Small 4 in both pilots
-RATE_LIMITED = re.compile(r'"errorStatus"\s*:\s*429\b')
+# Endpoint-busy backoff (seconds). GpuBroker's 503 asks for retry-after-ms=120000; OpenRouter 429s hit Mistral Small 4.
+BUSY_WAITS = (120, 300)
+ENDPOINT_BUSY = re.compile(r'"errorStatus"\s*:\s*(?:429|503)\b')
 
 
 def _last_error_message(stdout: str) -> str:
@@ -85,14 +85,21 @@ def _invoke(root: Path, wrapper: str, model: str, thinking: str, user_prompt: st
         return proc, time.monotonic() - started
 
 
+# Failures caused by the network or a provider, not the model. Only these are rerun on resume; a model failure
+# (bad JSON, empty answer, 600 s deadline, omp loop guard) is a result and is never re-rolled.
+INFRA_FAILURE = re.compile(r"ECONNRESET|ETIMEDOUT|ENOTFOUND|socket connection was closed|fetch failed|"
+                           r"Provider returned error|\b(?:429|500|502|503|504)\b")
+
+
 def _complete(path: Path) -> bool:
     if not path.exists():
         return False
     try:
-        return json.loads(path.read_text(encoding="utf-8")).get("exit_code") == 0
+        record = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, AttributeError) as exc:
         logger.warning("Ignoring corrupt run record %s: %s", path, exc)
         return False
+    return record.get("exit_code") == 0 or not INFRA_FAILURE.search(record.get("error") or "")
 
 
 def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing: str, roster: dict, wrapper: str, force: bool = False, column_fallback: bool = False) -> dict | None:
@@ -102,59 +109,41 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
         logger.info("Skipping completed %s/%s", key, run_id)
         return None
     prompt = assemble(root, rule, passage, framing)
-    models = roster["scored"]
     route = roster.get("routing", {})
-    fallback_key = "qwen36"
-    model = models[key]
     projection = (len(prompt.system) + len(prompt.user)) / 3.5 + route.get("harness_overhead_tokens", 0) + 4000
     if "harness_overhead_tokens" not in route:
         logger.warning("routing.harness_overhead_tokens missing; using zero")
-    routed = key == "ornith" and (column_fallback or projection > route["t1_projection_limit_tokens"])
-    route_reason = ("t1_column_fallback" if column_fallback else "projected_over_60000") if routed else None
-    if routed:
-        model = roster["fallback"][fallback_key]
+    # Qwen3.6 replaces the whole Ornith column or none of it; there is no per-run fallback.
+    if key == "ornith" and not column_fallback and projection > route["t1_projection_limit_tokens"]:
+        raise ValueError(f"ornith/{run_id} projects {projection:.0f} tokens, over the T1 limit. Qwen3.6 replaces "
+                         "the whole Ornith column or none of it: rerun every ornith run with --t1-column-fallback")
+    routed = key == "ornith" and column_fallback
+    route_reason = "t1_column_fallback" if routed else None
+    model = roster["fallback"]["qwen36"] if routed else roster["scored"][key]
     if model["thinking"] == "unverified":
-        raise ValueError(f"Refusing {key}: thinking level for {fallback_key if routed else key} is unverified")
+        raise ValueError(f"Refusing {key}: thinking level for {'qwen36' if routed else key} is unverified")
     start = datetime.now(timezone.utc).isoformat()
     raw = []
-    totals = ZERO_USAGE.copy()
-    calls = []
-    cost = 0.0
-    duration = 0.0
-    attempts = 1 if key != "ornith" or routed else 3
     rate_limit_retries = 0
-    final = None
-    proc = None
-    for attempt in range(attempts):
-        if attempt == 2:
-            model = roster["fallback"][fallback_key]
-            if model["thinking"] == "unverified":
-                raise ValueError("Refusing ornith fallback: thinking level for qwen36 is unverified")
-            routed = True
-            route_reason = "t1_failure"
-        proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
-        # Provider rate limits (HTTP 429) are not model failures: back off and resend, at most RATE_LIMIT_WAITS times.
-        for wait in RATE_LIMIT_WAITS:
-            if not RATE_LIMITED.search(proc.stdout):
-                break
-            logger.warning("Rate limited on %s/%s; waiting %ds", key, run_id, wait)
-            raw.append(proc.stdout)
-            duration += elapsed
-            rate_limit_retries += 1
-            time.sleep(wait)
-            proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
-        duration += elapsed
+    proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
+    duration = elapsed
+    # Endpoint-busy errors are infrastructure, not model results: back off and resend, at most len(BUSY_WAITS)
+    # times. 429 = OpenRouter provider rate limit; 503 = GpuBroker could not lease GPU memory for Ornith.
+    # Every model gets exactly one model attempt; a bad answer is never retried.
+    for wait in BUSY_WAITS:
+        if not ENDPOINT_BUSY.search(proc.stdout):
+            break
+        logger.warning("Endpoint busy on %s/%s; waiting %ds", key, run_id, wait)
         raw.append(proc.stdout)
-        final = parse_events(proc.stdout)
-        cost += final.cost_usd
-        calls.extend(final.tool_calls)
-        for name in totals:
-            totals[name] += final.usage[name]
-        if proc.returncode == 0 and not final.error and final.output_text:
-            break
-        if key != "ornith" or routed:
-            break
-        logger.warning("Ornith attempt %d failed for %s: %s", attempt + 1, run_id, final.error or proc.stderr.strip() or f"exit {proc.returncode} / empty response")
+        rate_limit_retries += 1
+        time.sleep(wait)
+        proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
+        duration += elapsed
+    raw.append(proc.stdout)
+    final = parse_events(proc.stdout)
+    cost = final.cost_usd
+    calls = list(final.tool_calls)
+    totals = dict(final.usage)
     assert proc is not None and final is not None
     error = final.error or (f"omp exited {proc.returncode}: {proc.stderr.strip() or _last_error_message(proc.stdout)}"
                             if proc.returncode else None)

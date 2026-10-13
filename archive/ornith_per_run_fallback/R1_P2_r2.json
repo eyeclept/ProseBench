@@ -1,0 +1,140 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "ornith",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "routed": true,
+  "route_reason": "t1_failure",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T13:02:39.221041+00:00",
+  "duration_s": 1248.7842947559839,
+  "exit_code": 1,
+  "error": "omp exited 1: Deadline exceeded",
+  "output_text": "I can't use tools right now (out of credits). Let me produce the final JSON directly from my careful analysis of the passage text.\n\nHere is my final edit list, organized and complete:\n\n```json\n{\n  \"edits\": [\n    {\n      \"original\": \"inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\",\n      \"replacement\": \"inertia, massive rotating masses storing kinetic energy, provides short-term stability\",\n      \"reason\": \"Two em dashes (U+2014) banned under NEVER tier replaced with commas; non-breaking hyphen in short\u2011term replaced with ASCII hyphen as part of the same restructuring.\"\n    },\n    {\n      \"original\": \"*digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC 61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.\",\n      \"replacement\": \"*digital relaying*, which uses microprocessor-based Intelligent Electronic Devices (IEDs), allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, enabling *wide-area protection* that can coordinate responses across regional or inter-regional grids.\",\n      \"reason\": \"Two em dashes (U+2014) replaced with commas in restructuring; non-breaking hyphens in microprocessor\u2011based, self\u2011testing, wide\u2011area, and inter\u2011regional replaced with ASCII hyphens; \\\"paving the way for\\\" is an inflated-symbolism phrase banned under Prefer other words tier.\"\n    },\n    {\n      \"original\": \"gas supply\u2014thermal units then tripped on auxiliary freeze.\",\n      \"replacement\": \"gas supply, and thermal units then tripped on auxiliary freeze.\",\n      \"reason\": \"Em dash (U+2014) banned under NEVER tier; replaced with comma and conjunction for restructuring.\"\n    },\n    {\n      \"original\": \"days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\",\n      \"replacement\": \"days; planners rewrite protection settings the following week and also file new interconnection studies.\",\n      \"reason\": \"Em dash (U+2014) banned under NEVER tier; also \\\"the next week\\\" is garbled filler phrasing replaced with \\\"the following week\\\".\"\n    },\n    {\n      \"original\": \"benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.\",\n      \"replacement\": \"benefits, reliable power, reduced emissions, and a more democratic energy future, promise to underpin sustainable economic growth for generations to come.\",\n      \"reason\": \"Two em dashes (U+2014) replaced with commas; \\\"landscape\\\" is a banned metaphorical noun under Only when necessary tier (used in inflated-metaphor context).\"\n    },\n    {\n      \"original\": \"technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks\",\n      \"replacement\": \"technologies, including smart grids, energy storage, grid-forming inverters, and strong regulatory frameworks\",\n      \"reason\": \"Two em dashes (U+2014) replaced with commas in restructuring; \\\"grid\u2011forming\\\" non-breaking hyphen replaced with ASCII hyphen; \\\"innovative\\\" replaced with \\\"new\\\" (banned adjective under Prefer other words tier); \\\"robust\\\" replaced with \\\"strong\\\" (banned adjective under Prefer other words tier).\"\n    },\n    {\n      \"original\": \"end\u2011users\",\n      \"replacement\": \"end-users\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban on non-standard-ASCII characters.\"\n    },\n    {\n      \"original\": \"socio\u2011technical\",\n      \"replacement\": \"socio-technical\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"high\u2011voltage\",\n      \"replacement\": \"high-voltage\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"High\u2011Voltage\",\n      \"replacement\": \"High-Voltage\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Inverter\u2011Based\",\n      \"replacement\": \"Inverter-Based\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"grid\u2011forming inverters) are required\",\n      \"replacement\": \"grid-forming inverters) are required\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"provide *grid\u2011forming* capabilities.\",\n      \"replacement\": \"provide *grid-forming* capabilities.\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"7.4 Grid\u2011Forming Inverters and Microgrid Evolution\",\n      \"replacement\": \"7.4 Grid-Forming Inverters and Microgrid Evolution\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"New *grid\u2011forming* inverters can establish\",\n      \"replacement\": \"New *grid-forming* inverters can establish\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"utility\u2011scale\",\n      \"replacement\": \"utility-scale\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"grid\u2011connected mode\",\n      \"replacement\": \"grid-connected mode\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"small\u2011scale generation\",\n      \"replacement\": \"small-scale generation\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"step\u2011down transformers\",\n      \"replacement\": \"step-down transformers\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"two\u2011way communication\",\n      \"replacement\": \"two-way communication\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"multi\u2011terminal VSC\u2011HVDC converters\",\n      \"replacement\": \"multi-terminal VSC-HVDC converters\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"cross\u2011border interconnection capacity\",\n      \"replacement\": \"cross-border interconnection capacity\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"centrally\u2011controlled\",\n      \"replacement\": \"centrally-controlled\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"cyber\u2011physical ecosystem\",\n      \"replacement\": \"cyber-physical energy system\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban; \\\"ecosystem\\\" is a banned metaphorical noun under Only when necessary tier (used in inflated-metaphor context, replaced with \\\"energy system\\\").\"\n    },\n    {\n      \"original\": \"Power\u2011to\u2011X\",\n      \"replacement\": \"Power-to-X\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"power\u2011to\u2011hydrogen\",\n      \"replacement\": \"power-to-hydrogen\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"power\u2011to\u2011synthetic methane\",\n      \"replacement\": \"power-to-synthetic methane\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"power\u2011to\u2011heat\",\n      \"replacement\": \"power-to-heat\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"Renewable\u2011Heavy\",\n      \"replacement\": \"Renewable-Heavy\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"forward\u2011looking policy\",\n      \"replacement\": \"forward-looking policy\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"climate\u2011friendly technologies\",\n      \"replacement\": \"climate-friendly technologies\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"co\u2011exist.\",\n      \"replacement\": \"co-exist.\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"self\u2011optimizing network\",\n      \"replacement\": \"self-optimizing network\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"continent\u2011wide WAMS\",\n      \"replacement\": \"continent-wide WAMS\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"multi\u2011layered defense\",\n      \"replacement\": \"multi-layered defense\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"steel\u2011reinforced aluminum\",\n      \"replacement\": \"steel-reinforced aluminum\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Voltage\u2011Sourced Converters\",\n      \"replacement\": \"Voltage-Sourced Converters\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"\\\"always\u2011on,\\\"\",\n      \"replacement\": \"\\\"always-on,\\\"\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Supply\u2011Demand Balancing\",\n      \"replacement\": \"Supply-Demand Balancing\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"fast\u2011acting storage\",\n      \"replacement\": \"fast-acting storage\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"demand\u2011response programs\",\n      \"replacement\": \"demand-response programs\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"long\u2011distance, low\u2011loss power\",\n      \"replacement\": \"long-distance, low-loss power\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"Long\u2011duration storage\",\n      \"replacement\": \"Long-duration storage\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Lithium\u2011Ion Batteries\",\n      \"replacement\": \"Lithium-Ion Batteries\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Zinc\u2011Bromine\",\n      \"replacement\": \"Zinc-Bromine\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"gravity\u2011based systems\",\n      \"replacement\": \"gravity-based systems\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"VSC\u2011HVDC converters\",\n      \"replacement\": \"VSC-HVDC converters\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"net\u2011zero electricity\",\n      \"replacement\": \"net-zero electricity\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"electric\u2011vehicle charging\",\n      \"replacement\": \"electric-vehicle charging\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Artificial\u2011Intelligence\u2011Driven Operations\",\n      \"replacement\": \"Artificial-Intelligence-Driven Operations\",\n      \"reason\": \"Non-breaking hyphens (U+2011) replaced with ASCII hyphens per NEVER ban.\"\n    },\n    {\n      \"original\": \"self\u2011healing networks\",\n      \"replacement\": \"self-healing networks\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"Policy\u2011Driven Decarbonization\",\n      \"replacement\": \"Policy-Driven Decarbonization\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"low\u2011carbon technologies\",\n      \"replacement\": \"low-carbon technologies\",\n      \"reason\": \"Non-breaking hyphen (U+2011) replaced with ASCII hyphen per NEVER ban.\"\n    },\n    {\n      \"original\": \"30\u2013120 samples/second\",\n      \"replacement\": \"30-120 samples/second\",\n      \"reason\": \"En dash (U+2013) replaced with ASCII hyphen per NEVER ban on non-standard-ASCII characters.\"\n    },\n    {\n      \"original\": \"Forecasts still miss cloud-driven ramps\u2026\",\n      \"replacement\": \"\",\n      \"reason\": \"Ellipsis glyph (U+2026) banned under NEVER tier; sentence removed as a non-sequitur with no technical content.\"\n    },\n    {\n      \"original\": \"evolved dramatically to accommodate\",\n      \"replacement\": \"evolved to accommodate\",\n      \"reason\": \"\\\"Dramatically\\\" is a banned intensifier under the Prefer other words tier; removed as it inflates meaning without adding precision.\"\n    },\n    {\n      \"original\": \"fall dramatically as current\",\n      \"replacement\": \"fall as current\",\n      \"reason\": \"\\\"Dramatically\\\" is a banned intensifier under the Prefer other words tier.\"\n    },\n    {\n      \"original\": \"Robust control keeps voltage\",\n      \"replacement\": \"Control keeps voltage\",\n      \"reason\": \"\\\"Robust\\\" is a banned adjective under the Prefer other words tier; removed as it adds no technical precision.\"\n    },\n    {\n      \"original\": \"requiring robust transmission networks\",\n      \"replacement\": \"requiring strong transmission networks\",\n      \"reason\": \"\\\"Robust\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"strong.\\\"\"\n    },\n    {\n      \"original\": \"robust transmission, advanced controls\",\n      \"replacement\": \"strong transmission, advanced controls\",\n      \"reason\": \"\\\"Robust\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"strong.\\\"\"\n    },\n    {\n      \"original\": \"robust regulatory frameworks\",\n      \"replacement\": \"strong regulatory frameworks\",\n      \"reason\": \"\\\"Robust\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"strong.\\\"\"\n    },\n    {\n      \"original\": \"Seamless transition between grid\u2011connected\",\n      \"replacement\": \"Smooth transition between grid-connected\",\n      \"reason\": \"\\\"Seamless\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"Smooth.\\\" Non-breaking hyphen in grid\u2011connected also replaced with ASCII hyphen.\"\n    },\n    {\n      \"original\": \"crucial for critical facilities\",\n      \"replacement\": \"important for critical facilities\",\n      \"reason\": \"\\\"Crucial\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"important.\\\"\"\n    },\n    {\n      \"original\": \"enhancing capacity without\",\n      \"replacement\": \"increasing capacity without\",\n      \"reason\": \"\\\"Enhancing\\\" is a banned verb under the Prefer other words tier; replaced with \\\"increasing.\\\"\"\n    },\n    {\n      \"original\": \"while fostering competition, also introduces\",\n      \"replacement\": \"which fosters competition and also introduces\",\n      \"reason\": \"\\\"Fostering\\\" (from banned verb \\\"foster\\\") is under Prefer other words tier; restructured for directness.\"\n    },\n    {\n      \"original\": \"Navigating reliability, resilience, and market complexities\",\n      \"replacement\": \"Managing reliability, resilience, and market complexities\",\n      \"reason\": \"\\\"Navigating\\\" (metaphorical use) is a banned verb under Prefer other words tier; replaced with \\\"Managing.\\\"\"\n    },\n    {\n      \"original\": \"more holistic energy system\",\n      \"replacement\": \"more integrated energy system\",\n      \"reason\": \"\\\"Holistic\\\" is a banned adjective under the Prefer other words tier; replaced with \\\"integrated.\\\"\"\n    },\n    {\n      \"original\": \"a more democratic energy landscape\u2014promise\",\n      \"replacement\": \"a more democratic energy future, promise\",",
+  "edits": null,
+  "malformed_edits": [],
+  "parse_error": "invalid output JSON: Expecting property name enclosed in double quotes: line 344 column 65 (char 16325)",
+  "usage": {
+    "input": 25657,
+    "output": 37770,
+    "cache_read": 156288,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.04943295,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_agent",
+      "arguments": {
+        "prompt": "Extract every instance of the non-breaking hyphen character (U+2011, \u2011) from the following passage. Also extract instances of em dashes (\u2014), en dashes (\u2013), curly/smart quotes, and ellipsis glyphs (\u2026). Return each instance with its exact surrounding text for unique matching.",
+        "urls": []
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "json"
+        ],
+        "jsonOptions": {
+          "prompt": "Return a list of every instance of non-breaking hyphen (U+2011), em dash (U+2014), en dash (U+2013), curly quotes (U+201C, U+201D, U+2018, U+2019), ellipsis (U+2026), and any other non-ASCII keyboard characters in the following text. For each instance, provide the surrounding context (10 characters before and after). Only report instances, do not report normal ASCII characters.",
+          "schema": {
+            "properties": {
+              "instances": {
+                "items": {
+                  "properties": {
+                    "char": {
+                      "type": "string"
+                    },
+                    "context": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "integer"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "url": "data:text/plain,"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "jsonOptions": {
+          "prompt": "Identify every instance of the following banned words and phrases from the reference/banned-words-phrases.md list in the following passage. For each instance, provide the exact surrounding text (15 characters before and after) so it can be uniquely matched in the passage. Categories to check: NEVER tier (non-ASCII characters: em dashes, en dashes, curly quotes, ellipsis; hallucinated markup; scare quotes; parenthetical clarifications in headings), Only when necessary (hedging: may, might, could, potentially, probably, generally, usually, arguably, likely; metaphorical nouns: ecosystem, landscape, navigate, tapestry, symphony, beacon, testament, realm), Prefer other words (verbs: delve, leverage, utilize, facilitate, foster, bolster, underscore, unveil, streamline, enhance, endeavour, ascertain, elucidate; adjectives: robust, comprehensive, pivotal, crucial, vital, transformative, cutting-edge, groundbreaking, innovative, seamless, intricate, nuanced, multifaceted, holistic, extremely, dramatically, exceptionally, significantly, incredibly, remarkably, truly, absolutely, literally, quite, really, very, surely, certainly, clearly, definitely, essentially, fundamentally, interestingly, naturally, obviously, undoubtedly, ultimately, basically, actually; weasel constructions: helps ensure, may be able to, can potentially; transitions: furthermore, moreover, notwithstanding, that being said, at its core, to put it simply, it's worth mentioning that, in the realm of, in the landscape of, in today's; opening/filler/concluding phrases; academic tells: shed light on, pave the way for, a plethora of, paramount, prior to, subsequent to, in light of, in terms of, the fact that; structural phrasing: Whether you're, It's not just X, it's Y, It's not X, it's Y, By [gerund]; inflated symbolism: provide a valuable insight, left an indelible mark, play a significant role in shaping, an unwavering commitment, open a new avenue, a stark reminder, gain a comprehensive understanding, serves as a testament, watershed moment, deeply rooted).",
+          "schema": {
+            "properties": {
+              "findings": {
+                "items": {
+                  "properties": {
+                    "banned_word": {
+                      "type": "string"
+                    },
+                    "context": {
+                      "type": "string"
+                    },
+                    "tier": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "url": "data:text/plain;base64,"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "data:text/plain;base64,RG9uJ3QgbmVlZCB0byBzY3JhcGUgYW55dGhpbmcuIEkgd2lsbCB3b3JrIGRpcmVjdGx5IGZyb20gdGhlIHBhc3NhZ2UgdGV4dCBpbiB0aGUgdXNlciBtZXNzYWdlLg==",
+        "objective": "No scraping needed, I have the passage text"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "data:text/plain;base64,",
+        "objective": "Search the passage for banned words"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "json"
+        ],
+        "jsonOptions": {
+          "prompt": "Check each of these exact strings in the passage and confirm they appear: 1) \"end\u2011users\" with non-breaking hyphen 2) \"socio\u2011technical\" 3) \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\" 4) \"Forecasts still miss cloud-driven ramps\u2026\" 5) \"paving the way for *wide\u2011area protection*\" 6) \"a decentralized, cyber\u2011physical ecosystem that seamlessly integrates\" 7) \"Seamless transition between grid\u2011connected\" 8) \"crucial for critical facilities\" 9) \"Robust control keeps voltage\" 10) \"innovative technologies\u2014smart grids\"",
+          "schema": {}
+        },
+        "objective": "Verify exact character strings in passage",
+        "url": "data:text/plain,"
+      }
+    }
+  ],
+  "rate_limit_retries": 0
+}

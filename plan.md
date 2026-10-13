@@ -143,9 +143,9 @@ The paired must-not-change instances cannot be cleared by pattern-matching on th
 
 **Ornith's endpoint may fail.** The self-hosted lease caps at 65,611 tokens of prompt plus generation. The longest essay is 2,289 words. A single call's worst case is one rule's text plus the passage plus a full rewrite. That is about 7,044 tokens, 11% of the budget. The ceiling should not bind during the scored matrix.
 
-The more likely failure is the lease itself. The box goes down, the context cap is cut, or the endpoint returns errors. The switch rule is fixed in advance. Any T1 failure, or any prompt projected above 60,000 tokens, routes to `qwen/qwen3.6-35b-a3b`. That model is the same size class at 262,144 tokens of context, four times Ornith's ceiling.
+The more likely failure is the lease itself. The box goes down, the context cap is cut, or the endpoint returns errors. The switch rule is fixed in advance. Qwen3.6 (`qwen/qwen3.6-35b-a3b`) replaces the whole T1 column or none of it. That model is the same size class at 262,144 tokens of context, four times Ornith's ceiling. A busy endpoint is not a switch trigger. When GpuBroker cannot lease GPU memory, it returns HTTP 503 with a 120-second retry hint, and the runner waits and resends. A prompt projected above 60,000 tokens stops the run, so the decision to switch stays a column-level call.
 
-I log the routing decision per run. The report states which T1 results came from which endpoint. Measured token counts from the pilot set the 60,000-token projection. Qwen3.8 Flash is not the T1 fallback. It is a larger, scored T2 column.
+I log the switch. The report states which endpoint produced the T1 results. Measured token counts from the pilot set the 60,000-token projection. Qwen3.8 Flash is not the T1 fallback. It is a larger, scored T2 column.
 
 Document-scale work outside the matrix can still overflow. A longer source essay can push past 65,611. So can a revision pass that resends the document with its prior edit. An audit prompt that carries two versions at once can do the same. A report-generation pass over accumulated results can too.
 
