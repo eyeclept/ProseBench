@@ -33,3 +33,7 @@ GLM-5.3-Flash accepted `off` here, but OpenRouter makes its reasoning mandatory:
 With omp `--thinking off`, GLM reasoned at its default (pilot Rule 1: 2,812 reasoning tokens; Rule 4: 5,532).
 `--thinking minimal` gives 38 reasoning tokens on a counting prompt. `bench/roster.yml` now sets GLM to `minimal`.
 The other five OpenRouter columns reported 0 reasoning tokens across both pilots at `off`.
+
+## Claude levels (2026-10-13, after owner login)
+
+Probed with `container/omp-run.sh` on two short reasoning prompts. Haiku 5.5 and Sonnet 5.5 honor `off` (no thinking; 11 and 10 output tokens vs 263 and 227 at `low`). Opus 5.5 accepts `off` but still returns a thinking block, and output at `off` exceeded `low` (511 vs 227 tokens), so `off` omits the effort setting and Anthropic applies its default. `bench/roster.yml` sets Haiku and Sonnet to `off`, Opus to `low`.

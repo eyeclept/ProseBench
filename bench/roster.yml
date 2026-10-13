@@ -7,9 +7,9 @@ scored:
   glm53flash:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "minimal"}  # reasoning is mandatory on OpenRouter; off/none return 400 or fall back to default reasoning
   mimo26pro:      {model: openrouter/xiaomi/mimo-v2.6-pro,     tier: T4, lab: Xiaomi,    thinking: "off"}
   mistral_large4: {model: openrouter/mistralai/mistral-large-4-0, tier: T4, lab: Mistral, thinking: "off"}
-  haiku55:        {model: anthropic/claude-haiku-5-5,          tier: T1-control, lab: Anthropic, thinking: "unverified"}
-  sonnet55:       {model: anthropic/claude-sonnet-5-5,         tier: T3-control, lab: Anthropic, thinking: "unverified"}
-  opus55:         {model: anthropic/claude-opus-5-5,           tier: T4-control, lab: Anthropic, thinking: "unverified"}
+  haiku55:        {model: anthropic/claude-haiku-5-5,          tier: T1-control, lab: Anthropic, thinking: "off"}
+  sonnet55:       {model: anthropic/claude-sonnet-5-5,         tier: T3-control, lab: Anthropic, thinking: "off"}
+  opus55:         {model: anthropic/claude-opus-5-5,           tier: T4-control, lab: Anthropic, thinking: "low"}  # off omits effort; Anthropic then uses its higher default (511 vs 227 output tokens on one puzzle)
 fallback:
   qwen36:         {model: openrouter/qwen/qwen3.6-35b-a3b,     replaces: ornith, thinking: "off"}
 routing:
