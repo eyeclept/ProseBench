@@ -5,6 +5,7 @@ import csv
 import json
 import logging
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from bench.score.apply_edits import apply_edits
 from bench.score.deterministic import assess, collateral, fabricated_numbers, numbers, outcome
@@ -135,21 +136,29 @@ def score_one(run: dict, all_rows: list[dict], passage: str,
     return instance_rows, run_row
 
 
+def _score_path(path: Path, key: dict, corpus_dir: Path, scores_dir: Path) -> tuple[list[dict], dict]:
+    run = json.loads(path.read_text(encoding="utf-8"))
+    if run["run_id"] != path.stem:
+        raise ValueError(f"Run ID does not match filename: {path}")
+    passage_id = run["passage"]
+    return score_one(run, key[passage_id], load_passage(corpus_dir, passage_id), scores_dir / "judge_cache")
+
+
 def score_runs(runs_dir: Path, answer_key: Path, corpus_dir: Path,
-               scores_dir: Path) -> tuple[list[dict], list[dict]]:
-    """Score all JSON run records and create the instance/run CSV files."""
+               scores_dir: Path, workers: int = 8) -> tuple[list[dict], list[dict]]:
+    """Score all JSON run records and create the instance/run CSV files.
+
+    Runs score in parallel threads: the Grok judge call per run is network-bound, and each run's
+    judge-cache files are keyed by its own model-qualified run_id, so threads never share a file.
+    """
     key = load_key(answer_key)
     instances = []
     run_rows = []
-    for path in sorted(runs_dir.glob("*/*.json")):
-        run = json.loads(path.read_text(encoding="utf-8"))
-        if run["run_id"] != path.stem:
-            raise ValueError(f"Run ID does not match filename: {path}")
-        passage_id = run["passage"]
-        rows, summary = score_one(run, key[passage_id], load_passage(corpus_dir, passage_id),
-                                  scores_dir / "judge_cache")
-        instances.extend(rows)
-        run_rows.append(summary)
+    paths = sorted(runs_dir.glob("*/*.json"))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for rows, summary in pool.map(lambda path: _score_path(path, key, corpus_dir, scores_dir), paths):
+            instances.extend(rows)
+            run_rows.append(summary)
     scores_dir.mkdir(parents=True, exist_ok=True)
     for name, rows, fields in (("instances.csv", instances, INSTANCE_FIELDS),
                                ("runs.csv", run_rows, RUN_FIELDS)):
@@ -166,8 +175,9 @@ def main() -> None:
     parser.add_argument("--answer-key", type=Path, default=Path("bench/corpus/out/answer_key.jsonl"))
     parser.add_argument("--corpus-dir", type=Path, default=Path("bench/corpus/out"))
     parser.add_argument("--scores-dir", type=Path, default=Path("scores"))
+    parser.add_argument("--workers", type=int, default=8, help="parallel runs (Grok judge calls)")
     args = parser.parse_args()
-    instances, runs = score_runs(args.runs_dir, args.answer_key, args.corpus_dir, args.scores_dir)
+    instances, runs = score_runs(args.runs_dir, args.answer_key, args.corpus_dir, args.scores_dir, args.workers)
     print(f"Scored {len(instances)} instances in {len(runs)} runs")
 
 
