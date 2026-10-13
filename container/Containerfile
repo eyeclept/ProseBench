@@ -1,0 +1,8 @@
+FROM registry.fedoraproject.org/fedora:43
+
+COPY --from=omp-bin omp /usr/local/bin/omp
+COPY agent/ /home/bench/.omp/agent/
+RUN chmod 0755 /usr/local/bin/omp && mkdir -p /workspace /home/bench/.cache /home/bench/.local/share
+ENV HOME=/home/bench
+WORKDIR /workspace
+ENTRYPOINT ["/usr/local/bin/omp"]
