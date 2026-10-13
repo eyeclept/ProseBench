@@ -1,0 +1,11 @@
+axis,model_key,model,total_params_b,active_params_b,ngram_embedding_params_b,boxes,quantization,decode_tokens_s,throughput_estimated,duty_cycle,hardware_usd_per_million_output,api_usd_per_million_output,usage_input,usage_output,usage_reasoning,study_hardware_usd
+analytic,ornith,Ornith 1.5 35B-A3B,35,3,,1,NVFP4,86.3,False,8h/day,1.779627028177402,,250,100,15,0.0001779627028177402
+analytic,ornith,Ornith 1.5 35B-A3B,35,3,,1,NVFP4,86.3,False,24h/day,0.6285701526910381,,250,100,15,6.285701526910381e-05
+analytic,qwen36,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,8h/day,1.6166506582285243,0.95,200,80,15,0.00012933205265828197
+analytic,qwen36,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,24h/day,0.5710063597603852,0.95,200,80,15,4.568050878083081e-05
+analytic,qwen38flash,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,8h/day,3.1536306474683737,0.47,,,,
+analytic,qwen38flash,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,24h/day,1.113872775713277,0.47,,,,
+analytic,mistral_small4,Mistral Small 4,119,6,,1,NVFP4,26.78,False,8h/day,5.734944456001112,0.6,,,,
+analytic,mistral_small4,Mistral Small 4,119,6,,1,NVFP4,26.78,False,24h/day,2.0256013509050255,0.6,,,,
+analytic,glm53flash,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,8h/day,15.687621300481082,0.9,,,,
+analytic,glm53flash,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,24h/day,5.540919732097711,0.9,,,,

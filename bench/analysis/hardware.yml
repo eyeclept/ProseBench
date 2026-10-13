@@ -1,0 +1,82 @@
+# Analytic inputs, not measurements from the scored matrix.
+# Source snapshot date requested for this study: 2026-10-12.
+hardware:
+  name: NVIDIA DGX Spark (GB10, Founders Edition)
+  unit_price_usd: {value: 4699, source_url: 'https://forums.developer.nvidia.com/t/2-23-2026-price-change-announcement/361713', accessed: '2026-10-12'}
+  unified_memory_gb: {value: 128, source_url: 'https://docs.nvidia.com/dgx/dgx-spark/hardware.html', accessed: '2026-10-12'}
+  memory_bandwidth_gb_s: {value: 273, source_url: 'https://docs.nvidia.com/dgx/dgx-spark/hardware.html', accessed: '2026-10-12'}
+  load_power_w: {value: 90, source_url: 'https://www.servethehome.com/nvidia-dgx-spark-review-the-gb10-machine-is-so-freaking-cool/4/', accessed: '2026-10-12', note: 'Upper end of observed 60-90 W for LLM inference, not 240 W adapter rating.'}
+  paired_memory_gb: {value: 256, estimated: true, formula: '2 * unified_memory_gb; aggregate capacity, not a shared single-node address space', source_url: 'https://docs.nvidia.com/dgx/dgx-spark/spark-clustering.html', accessed: '2026-10-12'}
+  paired_link: 'ConnectX-7, direct QSFP Ethernet cable; use tensor parallel inference across the pair, not NVLink.'
+  paired_link_source_url: 'https://docs.nvidia.com/dgx/dgx-spark/spark-clustering.html'
+  paired_link_accessed: '2026-10-12'
+assumptions:
+  electricity_usd_kwh: {value: 0.1831, source_url: 'https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a', accessed: '2026-10-12', note: 'July 2026 preliminary U.S. residential average, 18.31 cents/kWh; release September 24.'}
+  amortization_years: {value: 3, estimated: true, formula: 'Study assumption: straight-line capex recovery over 3 calendar years; no resale value.', accessed: '2026-10-12'}
+  days_per_year: {value: 365, estimated: true, formula: 'Study assumption: use 365 calendar days per year.', accessed: '2026-10-12'}
+  hours_per_day: {value: 24, estimated: true, formula: 'Unit conversion: 24 hours per calendar day.', accessed: '2026-10-12'}
+  seconds_per_hour: {value: 3600, estimated: true, formula: 'Unit conversion: 3600 seconds per hour.', accessed: '2026-10-12'}
+  tokens_per_million: {value: 1000000, estimated: true, formula: 'Unit conversion: 1000000 tokens per million tokens.', accessed: '2026-10-12'}
+  duty_cycles:
+    - {name: '8h/day', hours_per_day: {value: 8, estimated: true, formula: 'Study assumption: 8 productive decoding hours per day.', accessed: '2026-10-12'}}
+    - {name: '24h/day', hours_per_day: {value: 24, estimated: true, formula: 'Study assumption: 24 productive decoding hours per day.', accessed: '2026-10-12'}}
+models:
+  ornith:
+    name: Ornith 1.5 35B-A3B
+    total_params_b: {value: 35, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    active_params_b: {value: 3, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    boxes: {value: 1, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    quantization: {name: NVFP4, bits_per_weight: {value: 4, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12'}, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12'}
+    decode_tokens_s: {value: 86.3, source_url: 'https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark', accessed: '2026-10-12', note: 'Single stream, MTP enabled, end-to-end chat endpoint.'}
+    api_output_usd_per_million: null
+  qwen36:
+    name: Qwen3.6 35B-A3B
+    total_params_b: {value: 35, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    active_params_b: {value: 3, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    boxes: {value: 1, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    quantization: {name: NVFP4, bits_per_weight: {value: 4, source_url: 'https://huggingface.co/blog/exolabs/the-dgx-spark-handbook', accessed: '2026-10-12'}, source_url: 'https://huggingface.co/blog/exolabs/the-dgx-spark-handbook', accessed: '2026-10-12'}
+    decode_tokens_s: {value: 95, source_url: 'https://huggingface.co/blog/exolabs/the-dgx-spark-handbook', accessed: '2026-10-12', note: 'Single user, short prompt, 500-token answer; fallback, not a separate scored column.'}
+    api_output_usd_per_million: {value: 0.95, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+  qwen38flash:
+    name: Qwen3.8 Flash (Flash-Next)
+    total_params_b: {value: 125, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+    active_params_b: {value: 6, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+    ngram_embedding_params_b: {value: 51, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12', note: 'Separate from main-model total; not active weight bytes per output token.'}
+    boxes: {value: 1, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    quantization: {name: NVFP4 plus offloaded n-gram table, bits_per_weight: {value: 4, source_url: 'https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark', accessed: '2026-10-12'}, source_url: 'https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark', accessed: '2026-10-12'}
+    decode_tokens_s: {value: 48.7, source_url: 'https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark', accessed: '2026-10-12', note: 'Single stream, prose, speculative MTP on.'}
+    api_output_usd_per_million: {value: 0.47, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+  mistral_small4:
+    name: Mistral Small 4
+    total_params_b: {value: 119, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+    active_params_b: {value: 6, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12', note: '8B if embeddings and output layer included.'}
+    boxes: {value: 1, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    quantization: {name: NVFP4, bits_per_weight: {value: 4, source_url: 'https://forums.developer.nvidia.com/t/running-mistral-small-4-119b-moe-on-dgx-spark-with-sglang-full-setup-benchmarks/364763', accessed: '2026-10-12'}, source_url: 'https://forums.developer.nvidia.com/t/running-mistral-small-4-119b-moe-on-dgx-spark-with-sglang-full-setup-benchmarks/364763', accessed: '2026-10-12'}
+    decode_tokens_s: {value: 26.78, source_url: 'https://forums.developer.nvidia.com/t/running-mistral-small-4-119b-moe-on-dgx-spark-with-sglang-full-setup-benchmarks/364763', accessed: '2026-10-12', note: 'Single-user random-input/random-output serving test with speculative EAGLE; not a prose-only benchmark.'}
+    api_output_usd_per_million: {value: 0.60, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+  glm53flash:
+    name: GLM-5.3-Flash
+    total_params_b: {value: 320, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    active_params_b: {value: 18, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    boxes: {value: 2, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    quantization: {name: NVFP4, bits_per_weight: {value: 4, source_url: 'https://forums.developer.nvidia.com/t/glm-5-3-flash-running-on-2x-dgx-spark-sm-121-day-0-24-7-30-3-tok-s-with-mtp-5-two-silent-gb10-gotchas-worth-knowing/381433', accessed: '2026-10-12'}, source_url: 'https://forums.developer.nvidia.com/t/glm-5-3-flash-running-on-2x-dgx-spark-sm-121-day-0-24-7-30-3-tok-s-with-mtp-5-two-silent-gb10-gotchas-worth-knowing/381433', accessed: '2026-10-12'}
+    decode_tokens_s: {value: 19.58, source_url: 'https://forums.developer.nvidia.com/t/glm-5-3-flash-running-on-2x-dgx-spark-sm-121-day-0-24-7-30-3-tok-s-with-mtp-5-two-silent-gb10-gotchas-worth-knowing/381433', accessed: '2026-10-12', note: 'Two boxes, single-stream prose, MTP enabled; median of three runs.'}
+    api_output_usd_per_million: {value: 0.90, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+  mimo26pro:
+    name: MiMo-V2.6-Pro
+    total_params_b: {value: 1000, qualifier: 'greater_than', source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    active_params_b: null
+    boxes: null
+    deployment: cloud_only
+    quantization: null
+    decode_tokens_s: null
+    api_output_usd_per_million: {value: 0.87, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
+  mistral_large4:
+    name: Mistral Large 4
+    total_params_b: {value: 1050, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    active_params_b: {value: 52, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L69', accessed: '2026-10-12'}
+    boxes: null
+    deployment: cloud_only
+    quantization: null
+    decode_tokens_s: null
+    api_output_usd_per_million: {value: 2.09, source_url: 'https://github.com/eyeclept/ProseBench/blob/main/plan.md#L61-L74', accessed: '2026-10-12'}
