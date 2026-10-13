@@ -49,8 +49,8 @@ def extract(run: dict, row: dict, original: str) -> tuple[str, str]:
 
 
 def write_report(runs_dir: Path, answer_key: Path, corpus_dir: Path,
-                 markdown_path: Path, csv_path: Path, seed: int = 645) -> list[dict]:
-    """Write a worksheet and CSV twin without judging the sampled edits."""
+                 markdown_path: Path, csv_path: Path, seed: int = 645, all_records: bool = False) -> list[dict]:
+    """Write a worksheet and CSV twin without judging the edits (a 20% sample, or every record with all_records)."""
     key = load_key(answer_key)
     records = []
     for path in sorted(runs_dir.glob("*/*.json")):
@@ -58,7 +58,8 @@ def write_report(runs_dir: Path, answer_key: Path, corpus_dir: Path,
         for item in key[run["passage"]]:
             if item["rule"] == run["rule"]:
                 records.append((run, item))
-    sample = sample_records(records, seed)
+    sample = (sorted(records, key=lambda pair: (pair[0]["model_key"], pair[0]["run_id"], pair[1]["instance_id"]))
+              if all_records else sample_records(records, seed))
     passages = {}
     output = []
     for run, item in sample:
@@ -83,7 +84,9 @@ def write_report(runs_dir: Path, answer_key: Path, corpus_dir: Path,
         writer.writerows(output)
     with markdown_path.open("w", encoding="utf-8") as stream:
         stream.write("# Hand-scoring worksheet\n\n")
-        stream.write("Sample: 20 percent, stratified by rule, model, polarity, and kind. Seed: " + str(seed) + ".\n\n")
+        scope = ("All records (full matrix)." if all_records else
+                 "Sample: 20 percent, stratified by rule, model, polarity, and kind. Seed: " + str(seed) + ".")
+        stream.write(scope + "\n\n")
         stream.write("| " + " | ".join(FIELDS) + " |\n")
         stream.write("| " + " | ".join("---" for _ in FIELDS) + " |\n")
         for row in output:
@@ -100,10 +103,11 @@ def main() -> None:
     parser.add_argument("--markdown", type=Path, default=Path("scores/hand_review.md"))
     parser.add_argument("--csv", type=Path, default=Path("scores/hand_review.csv"))
     parser.add_argument("--seed", type=int, default=645)
+    parser.add_argument("--all", action="store_true", help="write every record instead of the 20% sample")
     args = parser.parse_args()
     sample = write_report(args.runs_dir, args.answer_key, args.corpus_dir,
-                          args.markdown, args.csv, args.seed)
-    print(f"Sampled {len(sample)} instances")
+                          args.markdown, args.csv, args.seed, args.all)
+    print(f"Wrote {len(sample)} instances")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,106 @@
+{
+  "run_id": "R4_P3_r3",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T16:57:05.759486+00:00",
+  "duration_s": 58.07301083399216,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"\u2014\", \"replacement\": \"-\", \"reason\": \"Replace em dash with hyphen\"},\n    {\"original\": \"\u201c\", \"replacement\": \"\\\"\", \"reason\": \"Replace curly opening double quote with straight double quote\"},\n    {\"original\": \"\u201d\", \"replacement\": \"\\\"\", \"reason\": \"Replace curly closing double quote with straight double quote\"},\n    {\"original\": \"\u2026\", \"replacement\": \"...\", \"reason\": \"Replace ellipsis glyph with three periods\"},\n    {\"original\": \"high\u2011yielding\", \"replacement\": \"high-yielding\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"marker\u2011assisted\", \"replacement\": \"marker-assisted\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"closed\u2011loop\", \"replacement\": \"closed-loop\", \"replacement\": \"Replace en dash with hyphen\"},\n    {\"original\": \"cell\u2011wall\", \"replacement\": \"cell-wall\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"next\u2011generation\", \"replacement\": \"next-generation\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"real\u2011time\", \"replacement\": \"real-time\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"climate\u2011smart\", \"replacement\": \"climate-smart\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"The policy -- which affected millions -- was later reversed.\", \"replacement\": \"The policy affected millions of devices. The company reversed it in December 2017.\", \"reason\": \"Replace em dash usage with two independent clauses separated by a period\"},\n    {\"original\": \"The device shipped in 2019, it failed within a year.\", \"replacement\": \"The device shipped in 2019; it failed within a year.\", \"reason\": \"Replace comma splice with semicolon\"},\n    {\"original\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.\", \"replacement\": \"The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment. It established a model organism for plant genetics and paved the way for high-throughput functional genomics.\", \"reason\": \"Split run-on sentence into two sentences\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "\u2014",
+      "replacement": "-",
+      "reason": "Replace em dash with hyphen"
+    },
+    {
+      "original": "\u201c",
+      "replacement": "\"",
+      "reason": "Replace curly opening double quote with straight double quote"
+    },
+    {
+      "original": "\u201d",
+      "replacement": "\"",
+      "reason": "Replace curly closing double quote with straight double quote"
+    },
+    {
+      "original": "\u2026",
+      "replacement": "...",
+      "reason": "Replace ellipsis glyph with three periods"
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "closed\u2011loop",
+      "replacement": "Replace en dash with hyphen"
+    },
+    {
+      "original": "cell\u2011wall",
+      "replacement": "cell-wall",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "climate\u2011smart",
+      "replacement": "climate-smart",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "The policy -- which affected millions -- was later reversed.",
+      "replacement": "The policy affected millions of devices. The company reversed it in December 2017.",
+      "reason": "Replace em dash usage with two independent clauses separated by a period"
+    },
+    {
+      "original": "The device shipped in 2019, it failed within a year.",
+      "replacement": "The device shipped in 2019; it failed within a year.",
+      "reason": "Replace comma splice with semicolon"
+    },
+    {
+      "original": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment, establishing a model organism for plant genetics and paving the way for high\u2011throughput functional genomics.",
+      "replacement": "The sequencing of the *Arabidopsis thaliana* genome in 2000 marked a watershed moment. It established a model organism for plant genetics and paved the way for high-throughput functional genomics.",
+      "reason": "Split run-on sentence into two sentences"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20996,
+    "output": 542,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0034746,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

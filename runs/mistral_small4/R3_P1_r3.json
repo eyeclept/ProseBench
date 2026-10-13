@@ -15,22 +15,43 @@
   "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
   "omp_version": "18.10.3",
   "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
-  "started_at": "2026-10-13T13:50:08.858532+00:00",
-  "duration_s": 69.57802076698863,
-  "exit_code": 1,
-  "error": "omp exited 1: 429 Provider returned error",
-  "output_text": "",
-  "edits": null,
+  "started_at": "2026-10-13T16:17:09.909592+00:00",
+  "duration_s": 53.22072494099848,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"The trailing clause is an ordinary-knowledge antonym ('open' vs. 'closed') that adds no meaningful distinction.\"\n    },\n    {\n      \"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\",\n      \"replacement\": \"\",\n      \"reason\": \"The sentence is redundant and informal; it does not require the trailing clause for clarity.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"Those privilege limits are imposed on purpose.\",\n      \"reason\": \"The trailing clause is an ordinary-knowledge antonym ('on purpose' vs. 'by accident') that adds no meaningful distinction.\"\n    },\n    {\n      \"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"The informal phrase 'full stop' is redundant and does not require the trailing clause for clarity.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The trailing clause is an ordinary-knowledge antonym ('open' vs. 'closed') that adds no meaningful distinction."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "",
+      "reason": "The sentence is redundant and informal; it does not require the trailing clause for clarity."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "The trailing clause is an ordinary-knowledge antonym ('on purpose' vs. 'by accident') that adds no meaningful distinction."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "The informal phrase 'full stop' is redundant and does not require the trailing clause for clarity."
+    }
+  ],
   "malformed_edits": [],
-  "parse_error": "no JSON object in final assistant text",
+  "parse_error": null,
   "usage": {
-    "input": 0,
-    "output": 0,
+    "input": 19908,
+    "output": 253,
     "cache_read": 0,
     "cache_write": 0,
     "reasoning": 0
   },
-  "cost_usd": 0.0,
+  "cost_usd": 0.003138,
   "tool_calls": [],
   "rate_limit_retries": 2
 }

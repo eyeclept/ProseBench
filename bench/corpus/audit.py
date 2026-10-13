@@ -9,7 +9,8 @@ re-plant removed drop out and a later audit of the same row wins.
 Outputs: out/audit_disagreements.md (readable) and out/audit_decisions.csv
 (owner fills `decision` with keep, accept, or drop; existing decisions are
 preserved across rebuilds). build_key applies the decisions.
-Spend is projected before each call and capped at BUDGET per invocation.
+Calls go through the owner's ChatGPT subscription (no per-call charge). The 2026-10-12/13 audits ran on
+OpenRouter before that switch; their saved JSON records OpenRouter cost.
 """
 
 import argparse
@@ -19,14 +20,10 @@ import logging
 from datetime import datetime, timezone
 
 from bench.corpus.common import ACTIONS, OUT, SOURCE, injected_text, parse_json, rules_text
-from bench.llm_clients import openrouter_chat
+from bench.llm_clients import chatgpt_chat
 
 logger = logging.getLogger(__name__)
-MODEL = "openai/gpt-6.1-sol"
-INPUT_RATE = 2.0 / 1_000_000
-OUTPUT_RATE = 10.0 / 1_000_000
-BUDGET = 0.50
-MAX_TOKENS = 12000
+MODEL = "gpt-6.1-sol"
 KEY_FIELDS = ("instance_id", "rule", "kind", "subtype", "polarity", "expected_action", "target_text", "fact_text")
 DECISIONS = OUT / "audit_decisions.csv"
 DECISION_FIELDS = ("passage", "rule", "label", "target_text", "key_subtype", "key_polarity", "key_action",
@@ -75,10 +72,9 @@ def _load_key() -> list[dict]:
     return [json.loads(line) for line in (OUT / "answer_key.jsonl").read_text(encoding="utf-8").splitlines()]
 
 
-def run_audit(ids: set[str] | None) -> float:
+def run_audit(ids: set[str] | None) -> None:
     rows = _load_key()
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    spend = 0.0
     for passage in SOURCE:
         subset = [row for row in rows if row["passage"] == passage and (ids is None or row["instance_id"] in ids)]
         if not subset:
@@ -86,27 +82,15 @@ def run_audit(ids: set[str] | None) -> float:
         text = injected_text(passage)
         compact = [{k: row[k] for k in KEY_FIELDS} for row in subset]
         prompt = _prompt(text, compact, targeted=ids is not None)
-        projected = spend + len(prompt) / 3 * INPUT_RATE + MAX_TOKENS * OUTPUT_RATE
-        if projected > BUDGET:
-            raise ValueError(f"Audit projected spend ${projected:.4f} exceeds ${BUDGET:.2f} cap before {passage}")
         name = "audit.json" if ids is None else f"audit_{stamp}.json"
-        reply = openrouter_chat(MODEL, [{"role": "user", "content": prompt}], max_tokens=MAX_TOKENS,
-                                response_format=FORMAT, reasoning_effort="low",
-                                log_path=OUT / passage / name.replace(".json", "_raw.json"))
-        usage = reply["usage"]
-        cost = usage.get("cost")
-        if cost is None:
-            cost = (usage.get("prompt_tokens") or 0) * INPUT_RATE + (usage.get("completion_tokens") or 0) * OUTPUT_RATE
-        spend += float(cost)
+        reply = chatgpt_chat([{"role": "user", "content": prompt}], model=MODEL, response_format=FORMAT,
+                             reasoning_effort="low", log_path=OUT / passage / name.replace(".json", "_raw.json"))
         result = parse_json(reply["content"])
-        result.update(model=reply["model"], usage=usage, cost_usd=cost, audited_rows=compact, created=stamp)
+        result.update(model=reply["model"], usage=reply["usage"], route="chatgpt-subscription",
+                      audited_rows=compact, created=stamp)
         (OUT / passage / name).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"{passage}: {len(result['verdicts'])}/{len(subset)} verdicts; {len(result['missed'])} missed; "
-              f"${float(cost):.4f} -> {name}", flush=True)
-        if spend > BUDGET:
-            raise ValueError(f"Audit spend ${spend:.4f} exceeded ${BUDGET:.2f} cap after {passage}; stopped")
-    print(f"OpenRouter spend this run: ${spend:.4f}", flush=True)
-    return spend
+        print(f"{passage}: {len(result['verdicts'])}/{len(subset)} verdicts; {len(result['missed'])} missed "
+              f"-> {name}", flush=True)
 
 
 def _audit_files(passage: str) -> list[dict]:

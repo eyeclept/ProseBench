@@ -15,22 +15,53 @@
   "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
   "omp_version": "18.10.3",
   "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
-  "started_at": "2026-10-13T15:06:05.268853+00:00",
-  "duration_s": 67.06531879102113,
-  "exit_code": 1,
-  "error": "omp exited 1: 429 Provider returned error",
-  "output_text": "",
-  "edits": null,
+  "started_at": "2026-10-13T16:49:04.541324+00:00",
+  "duration_s": 61.19807278297958,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"\u2014\", \"replacement\": \"--\", \"reason\": \"Replace em dash with double hyphen for standard US keyboard compatibility\"}, {\"original\": \"\u2026\", \"replacement\": \"...\", \"reason\": \"Replace ellipsis glyph with three separate periods for standard US keyboard compatibility\"}, {\"original\": \"\u201c\", \"replacement\": \"\\\"\", \"reason\": \"Replace curly opening double quote with straight double quote for standard US keyboard compatibility\"}, {\"original\": \"\u201d\", \"replacement\": \"\\\"\", \"reason\": \"Replace curly closing double quote with straight double quote for standard US keyboard compatibility\"}, {\"original\": \"\u2018\", \"replacement\": \"'\", \"reason\": \"Replace curly opening single quote with straight apostrophe for standard US keyboard compatibility\"}, {\"original\": \"\u2019\", \"replacement\": \"'\", \"reason\": \"Replace curly closing single quote with straight apostrophe for standard US keyboard compatibility\"}]}",
+  "edits": [
+    {
+      "original": "\u2014",
+      "replacement": "--",
+      "reason": "Replace em dash with double hyphen for standard US keyboard compatibility"
+    },
+    {
+      "original": "\u2026",
+      "replacement": "...",
+      "reason": "Replace ellipsis glyph with three separate periods for standard US keyboard compatibility"
+    },
+    {
+      "original": "\u201c",
+      "replacement": "\"",
+      "reason": "Replace curly opening double quote with straight double quote for standard US keyboard compatibility"
+    },
+    {
+      "original": "\u201d",
+      "replacement": "\"",
+      "reason": "Replace curly closing double quote with straight double quote for standard US keyboard compatibility"
+    },
+    {
+      "original": "\u2018",
+      "replacement": "'",
+      "reason": "Replace curly opening single quote with straight apostrophe for standard US keyboard compatibility"
+    },
+    {
+      "original": "\u2019",
+      "replacement": "'",
+      "reason": "Replace curly closing single quote with straight apostrophe for standard US keyboard compatibility"
+    }
+  ],
   "malformed_edits": [],
-  "parse_error": "no JSON object in final assistant text",
+  "parse_error": null,
   "usage": {
-    "input": 0,
-    "output": 0,
+    "input": 21107,
+    "output": 188,
     "cache_read": 0,
     "cache_write": 0,
     "reasoning": 0
   },
-  "cost_usd": 0.0,
+  "cost_usd": 0.00327885,
   "tool_calls": [],
   "rate_limit_retries": 2
 }

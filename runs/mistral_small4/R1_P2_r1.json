@@ -15,22 +15,253 @@
   "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
   "omp_version": "18.10.3",
   "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
-  "started_at": "2026-10-13T12:58:23.507147+00:00",
-  "duration_s": 65.99287846405059,
-  "exit_code": 1,
-  "error": "omp exited 1: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()",
-  "output_text": "",
-  "edits": null,
+  "started_at": "2026-10-13T16:06:09.588103+00:00",
+  "duration_s": 71.87274543999229,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"This essay surveys the fundamental components of power systems, outlines their operation, examines the contemporary challenges they face, and explores emerging trends that promise to reshape the electrical grid for the next century.\", \"replacement\": \"This essay reviews the key parts of power systems, explains how they work, looks at today\u2019s challenges, and tracks trends that are reworking the grid for the coming decades.\", \"reason\": \"Replaced vague, inflated phrasing with concise, direct language.\"},\n    {\"original\": \"Forecasts still miss cloud-driven ramps\u2026\", \"replacement\": \"Forecasts still miss cloud-driven ramps.\", \"reason\": \"Removed ellipsis glyph with ASCII equivalent.\"},\n    {\"original\": \"Robust control keeps voltage inside limits when plant parameters are uncertain.\", \"replacement\": \"Tight control keeps voltage within bounds even when plant settings vary.\", \"reason\": \"Replaced vague adjective and passive phrasing with precise, active language.\"},\n    {\"original\": \"The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia).\", \"replacement\": \"The synchronous generator runs at a fixed speed tied to the grid frequency (60\u202fHz in North America, 50\u202fHz in most of Europe and Asia).\", \"reason\": \"Simplified and tightened phrasing.\"},\n    {\"original\": \"Key distinctions from conventional plants include:\", \"replacement\": \"Renewables differ from conventional plants in:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Their proliferation compels utilities to redesign distribution networks that can bidirectionally accommodate power flows.\", \"replacement\": \"As DERs spread, utilities must rebuild distribution grids that handle two-way power flows.\", \"reason\": \"Replaced inflated phrasing with direct language.\"},\n    {\"original\": \"Modern transmission planning leverages *optimal power flow* (OPF) algorithms that consider constraints such as thermal limits, stability margins, and economic dispatch.\", \"replacement\": \"Today\u2019s transmission planning uses *optimal power flow* (OPF) algorithms to weigh thermal limits, stability margins, and dispatch costs.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.\", \"replacement\": \"New *Flexible AC Transmission Systems* (FACTS) gear\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014lets operators tweak voltage and power flow on the fly, boosting capacity without new lines.\", \"reason\": \"Replaced inflated phrasing with concise, direct language.\"},\n    {\"original\": \"The integration of DERs has turned many traditionally passive distribution feeders into *active* networks, requiring new control schemes (Volt/VAR optimization, distribution management systems) to maintain voltage quality and power balance.\", \"replacement\": \"DERs are turning once-passive feeders into *active* grids, so utilities need fresh control methods (Volt/VAR optimization, distribution management systems) to keep voltage and power balanced.\", \"reason\": \"Simplified and tightened phrasing.\"},\n    {\"original\": \"Modern control increasingly incorporates *model predictive control* (MPC) and *distributed optimization* (e.g., consensus algorithms) to accommodate the high dimensionality of a grid populated by numerous DERs.\", \"replacement\": \"Newer control mixes *model predictive control* (MPC) and *distributed optimization* (e.g., consensus algorithms) to handle the grid\u2019s growing complexity from many DERs.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"The transition toward *digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.\", \"replacement\": \"Moving to *digital relaying*\u2014microprocessor-based Intelligent Electronic Devices (IEDs)\u2014lets relays adapt settings, self-test, and plug into IEC\u202f61850, enabling *wide-area protection* that can coordinate responses across regions.\", \"reason\": \"Replaced vague phrasing with concise, direct language.\"},\n    {\"original\": \"The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) illustrate how a combination of inadequate winterization, market design flaws, and insufficient grid coordination can precipitate catastrophic failures.\", \"replacement\": \"The 2021 Texas winter storm and 2022 India blackouts show how weak winterization, flawed markets, and poor grid coordination can trigger huge outages.\", \"reason\": \"Simplified and tightened phrasing.\"},\n    {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"Texas\u2019s outages came from frozen gas wells and unheated thermal gear, not a lack of wind capacity.\", \"reason\": \"Replaced vague phrasing with direct language.\"},\n    {\"original\": \"Strengthening resilience now demands:\", \"replacement\": \"To build resilience, grids need:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"High penetrations of wind and solar pose two intertwined issues:\", \"replacement\": \"Wind and solar at high levels create two linked problems:\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity traditionally supplied by flexible thermal generators.\", \"replacement\": \"On sunny, windy days the net load curve flattens, cutting the ramping headroom once provided by flexible thermal plants.\", \"reason\": \"Replaced vague phrasing with concise language.\"},\n    {\"original\": \"Solutions involve a portfolio of *flexibility resources*: pumped hydro, compressed\u2011air energy storage, battery\u2011energy\u2011storage systems (BESS), and advanced inverter functionalities that provide *grid\u2011forming* capabilities.\", \"replacement\": \"Fixes include a mix of flexibility tools: pumped hydro, compressed-air storage, battery systems (BESS), and advanced inverters that can *form* the grid.\", \"reason\": \"Replaced inflated phrasing with direct language.\"},\n    {\"original\": \"Accurate price signals are essential for incentivizing investment in needed infrastructure (e.g., transmission upgrades).\", \"replacement\": \"Clear price signals are key to spurring the upgrades we need, like new transmission lines.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Planners schedule upgrades deliberately, not by chance.\", \"reason\": \"Replaced vague phrasing with direct language.\"},\n    {\"original\": \"Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for coordinated digital assaults to trigger physical outages.\", \"replacement\": \"The 2015 Ukrainian grid breach shows how digital attacks can cause real blackouts.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"Smart grids combine pervasive sensing, two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network.\", \"replacement\": \"Smart grids blend pervasive sensing, two-way communication, and advanced analytics into a responsive, self-tuning network.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Key enablers are:\", \"replacement\": \"Key tools include:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance, scenario testing, and accelerated planning.\", \"replacement\": \"Digital twins\u2014high-fidelity virtual copies of grid gear\u2014enable predictive maintenance, scenario testing, and faster planning.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.\", \"replacement\": \"Long-duration storage is becoming a linchpin for grids with lots of wind and solar.\", \"reason\": \"Replaced inflated phrasing with direct language.\"},\n    {\"original\": \"Technologies include:\", \"replacement\": \"Options range from:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Storage enables *capacity firming* (smoothing renewable output), *spinning reserve* substitution, and *deferral* of costly transmission upgrades.\", \"replacement\": \"Storage can smooth renewable swings, replace spinning reserves, and postpone costly transmission builds.\", \"reason\": \"Replaced inflated phrasing with concise language.\"},\n    {\"original\": \"The electric sector is a primary target for decarbonization policies worldwide.\", \"replacement\": \"The power sector is a prime target for global decarbonization policies.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"Strategies include:\", \"replacement\": \"Options include:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Traditional inverters operate in *grid\u2011following* mode, requiring a stiff voltage source.\", \"replacement\": \"Old-style inverters run in *grid-following* mode, needing a strong voltage source.\", \"reason\": \"Replaced vague phrasing with direct language.\"},\n    {\"original\": \"New *grid\u2011forming* inverters can establish a voltage reference, effectively acting as virtual synchronous generators.\", \"replacement\": \"New *grid-forming* inverters can set a voltage reference, acting like virtual synchronous generators.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"This capability:\", \"replacement\": \"It can:\", \"reason\": \"Replaced vague phrasing with direct language.\"},\n    {\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).\", \"replacement\": \"\u201cPower-to-X\u201d tech turns surplus electricity into other fuels: hydrogen (power-to-hydrogen), synthetic methane (power-to-synthetic methane), or heat (power-to-heat).\", \"reason\": \"Replaced em dash with colon for clarity.\"},\n    {\"original\": \"By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges, smoothing demand peaks and unlocking new revenue streams for utilities.\", \"replacement\": \"Linking electricity with transport, industry, and heat creates a more integrated system that flattens demand peaks and opens new revenue for utilities.\", \"reason\": \"Replaced vague phrasing with concise language.\"},\n    {\"original\": \"The **European Union\u2019s \u201cElectricity Interconnection\u201d** project exemplifies many of the concepts discussed.\", \"replacement\": \"The EU\u2019s *Electricity Interconnection* project shows many of these ideas in action.\", \"reason\": \"Replaced scare quotes with italics.\"},\n    {\"original\": \"Key features include:\", \"replacement\": \"Its hallmarks are:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.\", \"replacement\": \"The project proves that grids can run mostly on wind and solar without losing reliability if they pair strong transmission, smart controls, and well-integrated markets.\", \"reason\": \"Replaced vague phrasing with direct language.\"},\n    {\"original\": \"Looking ahead, the power system will evolve from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.\", \"replacement\": \"The grid will shift from a top-down, one-way system to a decentralized, cyber-physical network that blends electricity with heat, transport, and industry.\", \"reason\": \"Replaced inflated phrasing with concise language.\"},\n    {\"original\": \"Anticipated hallmarks include:\", \"replacement\": \"We can expect:\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Achieving this vision requires interdisciplinary collaboration among engineers, economists, policymakers, and data scientists.\", \"replacement\": \"Pulling this off takes teamwork among engineers, economists, policymakers, and data scientists.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"Ice storms still knock lines out for days; planners tweak protection settings and file new interconnection studies the next week.\", \"reason\": \"Fixed em dash usage and tightened phrasing.\"},\n    {\"original\": \"The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.\", \"replacement\": \"The hurdles are high, but the payoff\u2014reliable power, lower emissions, and a fairer energy system\u2014can fuel sustainable growth for decades.\", \"reason\": \"Replaced inflated phrasing with direct language.\"},\n    {\"original\": \"Power systems lie at the heart of modern civilization, enabling everything from basic lighting to the sophisticated digital services that define the 21st century.\", \"replacement\": \"Power systems sit at the core of modern life, powering everything from basic lighting to today\u2019s digital services.\", \"reason\": \"Replaced vague phrasing with concise language.\"},\n    {\"original\": \"While the fundamental tasks of generation, transmission, distribution, and protection remain, the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize.\", \"replacement\": \"Though the core tasks\u2014generation, transmission, distribution, and protection\u2014stay the same, the grid\u2019s makeup is changing fast thanks to renewables, digital tools, and the push to cut carbon.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\", \"replacement\": \"Meeting reliability, resilience, and market challenges takes smart grids, energy storage, grid-forming inverters, and strong rules.\", \"reason\": \"Replaced vague verb with a more precise alternative.\"},\n    {\"original\": \"As illustrated by successful regional interconnection projects, a coordinated approach that couples advanced engineering with forward\u2011looking policy can sustain the grid\u2019s reliability while embracing clean energy.\", \"replacement\": \"Regional interconnection projects show that pairing smart engineering with forward-looking policy can keep the grid reliable while adding clean energy.\", \"reason\": \"Simplified phrasing.\"},\n    {\"original\": \"The next century\u2019s power system will be more flexible, intelligent, and interconnected than any predecessor, providing the platform upon which future societies will build their economies, climate\u2011friendly technologies, and improved quality of life.\", \"replacement\": \"The grid of the next century will be more flexible, smarter, and more connected than ever, giving future societies the base to grow their economies, deploy cleaner tech, and raise living standards.\", \"reason\": \"Replaced inflated phrasing with direct language.\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "This essay surveys the fundamental components of power systems, outlines their operation, examines the contemporary challenges they face, and explores emerging trends that promise to reshape the electrical grid for the next century.",
+      "replacement": "This essay reviews the key parts of power systems, explains how they work, looks at today\u2019s challenges, and tracks trends that are reworking the grid for the coming decades.",
+      "reason": "Replaced vague, inflated phrasing with concise, direct language."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Forecasts still miss cloud-driven ramps.",
+      "reason": "Removed ellipsis glyph with ASCII equivalent."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits when plant parameters are uncertain.",
+      "replacement": "Tight control keeps voltage within bounds even when plant settings vary.",
+      "reason": "Replaced vague adjective and passive phrasing with precise, active language."
+    },
+    {
+      "original": "The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60\u202fHz in North America, 50\u202fHz in most of Europe and Asia).",
+      "replacement": "The synchronous generator runs at a fixed speed tied to the grid frequency (60\u202fHz in North America, 50\u202fHz in most of Europe and Asia).",
+      "reason": "Simplified and tightened phrasing."
+    },
+    {
+      "original": "Key distinctions from conventional plants include:",
+      "replacement": "Renewables differ from conventional plants in:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Their proliferation compels utilities to redesign distribution networks that can bidirectionally accommodate power flows.",
+      "replacement": "As DERs spread, utilities must rebuild distribution grids that handle two-way power flows.",
+      "reason": "Replaced inflated phrasing with direct language."
+    },
+    {
+      "original": "Modern transmission planning leverages *optimal power flow* (OPF) algorithms that consider constraints such as thermal limits, stability margins, and economic dispatch.",
+      "replacement": "Today\u2019s transmission planning uses *optimal power flow* (OPF) algorithms to weigh thermal limits, stability margins, and dispatch costs.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "The advent of *Flexible AC Transmission Systems* (FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines.",
+      "replacement": "New *Flexible AC Transmission Systems* (FACTS) gear\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014lets operators tweak voltage and power flow on the fly, boosting capacity without new lines.",
+      "reason": "Replaced inflated phrasing with concise, direct language."
+    },
+    {
+      "original": "The integration of DERs has turned many traditionally passive distribution feeders into *active* networks, requiring new control schemes (Volt/VAR optimization, distribution management systems) to maintain voltage quality and power balance.",
+      "replacement": "DERs are turning once-passive feeders into *active* grids, so utilities need fresh control methods (Volt/VAR optimization, distribution management systems) to keep voltage and power balanced.",
+      "reason": "Simplified and tightened phrasing."
+    },
+    {
+      "original": "Modern control increasingly incorporates *model predictive control* (MPC) and *distributed optimization* (e.g., consensus algorithms) to accommodate the high dimensionality of a grid populated by numerous DERs.",
+      "replacement": "Newer control mixes *model predictive control* (MPC) and *distributed optimization* (e.g., consensus algorithms) to handle the grid\u2019s growing complexity from many DERs.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "The transition toward *digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.",
+      "replacement": "Moving to *digital relaying*\u2014microprocessor-based Intelligent Electronic Devices (IEDs)\u2014lets relays adapt settings, self-test, and plug into IEC\u202f61850, enabling *wide-area protection* that can coordinate responses across regions.",
+      "reason": "Replaced vague phrasing with concise, direct language."
+    },
+    {
+      "original": "The 2021 Texas winter storm and large\u2011scale blackouts in India (2022) illustrate how a combination of inadequate winterization, market design flaws, and insufficient grid coordination can precipitate catastrophic failures.",
+      "replacement": "The 2021 Texas winter storm and 2022 India blackouts show how weak winterization, flawed markets, and poor grid coordination can trigger huge outages.",
+      "reason": "Simplified and tightened phrasing."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Texas\u2019s outages came from frozen gas wells and unheated thermal gear, not a lack of wind capacity.",
+      "reason": "Replaced vague phrasing with direct language."
+    },
+    {
+      "original": "Strengthening resilience now demands:",
+      "replacement": "To build resilience, grids need:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "High penetrations of wind and solar pose two intertwined issues:",
+      "replacement": "Wind and solar at high levels create two linked problems:",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity traditionally supplied by flexible thermal generators.",
+      "replacement": "On sunny, windy days the net load curve flattens, cutting the ramping headroom once provided by flexible thermal plants.",
+      "reason": "Replaced vague phrasing with concise language."
+    },
+    {
+      "original": "Solutions involve a portfolio of *flexibility resources*: pumped hydro, compressed\u2011air energy storage, battery\u2011energy\u2011storage systems (BESS), and advanced inverter functionalities that provide *grid\u2011forming* capabilities.",
+      "replacement": "Fixes include a mix of flexibility tools: pumped hydro, compressed-air storage, battery systems (BESS), and advanced inverters that can *form* the grid.",
+      "reason": "Replaced inflated phrasing with direct language."
+    },
+    {
+      "original": "Accurate price signals are essential for incentivizing investment in needed infrastructure (e.g., transmission upgrades).",
+      "replacement": "Clear price signals are key to spurring the upgrades we need, like new transmission lines.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Planners schedule upgrades deliberately, not by chance.",
+      "reason": "Replaced vague phrasing with direct language."
+    },
+    {
+      "original": "Cyber\u2011physical attacks, such as the 2015 Ukrainian power grid breach, demonstrate the potential for coordinated digital assaults to trigger physical outages.",
+      "replacement": "The 2015 Ukrainian grid breach shows how digital attacks can cause real blackouts.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "Smart grids combine pervasive sensing, two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network.",
+      "replacement": "Smart grids blend pervasive sensing, two-way communication, and advanced analytics into a responsive, self-tuning network.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Key enablers are:",
+      "replacement": "Key tools include:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow predictive maintenance, scenario testing, and accelerated planning.",
+      "replacement": "Digital twins\u2014high-fidelity virtual copies of grid gear\u2014enable predictive maintenance, scenario testing, and faster planning.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Long\u2011duration storage is emerging as a cornerstone for high VRE penetration.",
+      "replacement": "Long-duration storage is becoming a linchpin for grids with lots of wind and solar.",
+      "reason": "Replaced inflated phrasing with direct language."
+    },
+    {
+      "original": "Technologies include:",
+      "replacement": "Options range from:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Storage enables *capacity firming* (smoothing renewable output), *spinning reserve* substitution, and *deferral* of costly transmission upgrades.",
+      "replacement": "Storage can smooth renewable swings, replace spinning reserves, and postpone costly transmission builds.",
+      "reason": "Replaced inflated phrasing with concise language."
+    },
+    {
+      "original": "The electric sector is a primary target for decarbonization policies worldwide.",
+      "replacement": "The power sector is a prime target for global decarbonization policies.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "Strategies include:",
+      "replacement": "Options include:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Traditional inverters operate in *grid\u2011following* mode, requiring a stiff voltage source.",
+      "replacement": "Old-style inverters run in *grid-following* mode, needing a strong voltage source.",
+      "reason": "Replaced vague phrasing with direct language."
+    },
+    {
+      "original": "New *grid\u2011forming* inverters can establish a voltage reference, effectively acting as virtual synchronous generators.",
+      "replacement": "New *grid-forming* inverters can set a voltage reference, acting like virtual synchronous generators.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "This capability:",
+      "replacement": "It can:",
+      "reason": "Replaced vague phrasing with direct language."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).",
+      "replacement": "\u201cPower-to-X\u201d tech turns surplus electricity into other fuels: hydrogen (power-to-hydrogen), synthetic methane (power-to-synthetic methane), or heat (power-to-heat).",
+      "reason": "Replaced em dash with colon for clarity."
+    },
+    {
+      "original": "By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges, smoothing demand peaks and unlocking new revenue streams for utilities.",
+      "replacement": "Linking electricity with transport, industry, and heat creates a more integrated system that flattens demand peaks and opens new revenue for utilities.",
+      "reason": "Replaced vague phrasing with concise language."
+    },
+    {
+      "original": "The **European Union\u2019s \u201cElectricity Interconnection\u201d** project exemplifies many of the concepts discussed.",
+      "replacement": "The EU\u2019s *Electricity Interconnection* project shows many of these ideas in action.",
+      "reason": "Replaced scare quotes with italics."
+    },
+    {
+      "original": "Key features include:",
+      "replacement": "Its hallmarks are:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "replacement": "The project proves that grids can run mostly on wind and solar without losing reliability if they pair strong transmission, smart controls, and well-integrated markets.",
+      "reason": "Replaced vague phrasing with direct language."
+    },
+    {
+      "original": "Looking ahead, the power system will evolve from a *centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity with heat, transport, and industry.",
+      "replacement": "The grid will shift from a top-down, one-way system to a decentralized, cyber-physical network that blends electricity with heat, transport, and industry.",
+      "reason": "Replaced inflated phrasing with concise language."
+    },
+    {
+      "original": "Anticipated hallmarks include:",
+      "replacement": "We can expect:",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Achieving this vision requires interdisciplinary collaboration among engineers, economists, policymakers, and data scientists.",
+      "replacement": "Pulling this off takes teamwork among engineers, economists, policymakers, and data scientists.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still knock lines out for days; planners tweak protection settings and file new interconnection studies the next week.",
+      "reason": "Fixed em dash usage and tightened phrasing."
+    },
+    {
+      "original": "The challenges are formidable, yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin sustainable economic growth for generations to come.",
+      "replacement": "The hurdles are high, but the payoff\u2014reliable power, lower emissions, and a fairer energy system\u2014can fuel sustainable growth for decades.",
+      "reason": "Replaced inflated phrasing with direct language."
+    },
+    {
+      "original": "Power systems lie at the heart of modern civilization, enabling everything from basic lighting to the sophisticated digital services that define the 21st century.",
+      "replacement": "Power systems sit at the core of modern life, powering everything from basic lighting to today\u2019s digital services.",
+      "reason": "Replaced vague phrasing with concise language."
+    },
+    {
+      "original": "While the fundamental tasks of generation, transmission, distribution, and protection remain, the composition of the grid is undergoing a profound transformation driven by renewable energy, digitalization, and the imperative to decarbonize.",
+      "replacement": "Though the core tasks\u2014generation, transmission, distribution, and protection\u2014stay the same, the grid\u2019s makeup is changing fast thanks to renewables, digital tools, and the push to cut carbon.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Meeting reliability, resilience, and market challenges takes smart grids, energy storage, grid-forming inverters, and strong rules.",
+      "reason": "Replaced vague verb with a more precise alternative."
+    },
+    {
+      "original": "As illustrated by successful regional interconnection projects, a coordinated approach that couples advanced engineering with forward\u2011looking policy can sustain the grid\u2019s reliability while embracing clean energy.",
+      "replacement": "Regional interconnection projects show that pairing smart engineering with forward-looking policy can keep the grid reliable while adding clean energy.",
+      "reason": "Simplified phrasing."
+    },
+    {
+      "original": "The next century\u2019s power system will be more flexible, intelligent, and interconnected than any predecessor, providing the platform upon which future societies will build their economies, climate\u2011friendly technologies, and improved quality of life.",
+      "replacement": "The grid of the next century will be more flexible, smarter, and more connected than ever, giving future societies the base to grow their economies, deploy cleaner tech, and raise living standards.",
+      "reason": "Replaced inflated phrasing with direct language."
+    }
+  ],
   "malformed_edits": [],
-  "parse_error": "no JSON object in final assistant text",
+  "parse_error": null,
   "usage": {
-    "input": 0,
-    "output": 0,
+    "input": 22018,
+    "output": 3394,
     "cache_read": 0,
     "cache_write": 0,
     "reasoning": 0
   },
-  "cost_usd": 0.0,
+  "cost_usd": 0.0053391,
   "tool_calls": [],
   "rate_limit_retries": 2
 }
