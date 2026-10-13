@@ -68,7 +68,8 @@ def judge_run(run_id: str, original: str, revised: str,
                 logger.exception("Invalid Grok judge response for %s after a resend", run_id)
                 raise
             logger.warning("Invalid Grok judge response for %s; resending once", run_id)
-    by_id = {entry["instance_id"]: entry for entry in entries}
+    # Store the model the endpoint reports, so a silent fallback near a usage limit is detectable later.
+    by_id = {entry["instance_id"]: dict(entry, model=response.get("model", "")) for entry in entries}
     for item, path in pending:
         entry = by_id[item["instance_id"]]
         path.write_text(json.dumps(entry, ensure_ascii=True) + "\n", encoding="utf-8")

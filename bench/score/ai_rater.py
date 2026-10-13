@@ -56,7 +56,8 @@ def _rate_batch(rater: str, label: str, rows: list[dict], answer: dict, rules: d
     user = json.dumps({"rule_text": rules[int(rows[0]["rule"])], "items": items}, ensure_ascii=False)
     reply = spec["call"]([{"role": "system", "content": prompt}, {"role": "user", "content": user}],
                          model=spec["model"], reasoning_effort=EFFORT, response_format=FORMAT)
-    verdicts = {v["instance_id"]: v for v in json.loads(reply["content"])["verdicts"]}
+    # Store the model the endpoint reports, so a silent fallback near a usage limit is detectable later.
+    verdicts = {v["instance_id"]: dict(v, model=reply["model"]) for v in json.loads(reply["content"])["verdicts"]}
     expected = {row["instance_id"] for row in rows}
     if set(verdicts) != expected:
         raise ValueError(f"{label}: rater ids mismatched: {sorted(set(verdicts) ^ expected)[:10]}")
