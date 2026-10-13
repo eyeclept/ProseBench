@@ -26,7 +26,7 @@ These functions are interconnected through a hierarchy of voltage levels (e.g., 
 
 #### 2.1 Conventional Generators  
 
-Historically, electrical generation has been dominated by large synchronous generators driven by steam turbines (coal, natural gas, nuclear) or hydro turbines. Hydro plants in Québec still use those same synchronous machines for frequency control. Inertia still matters for the first few cycles after a trip, full stop. Operators procured spinning reserve, rather than non-spinning reserve. The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60 Hz in North America, 50 Hz in most of Europe and Asia). Its intrinsic inertia—massive rotating masses that store kinetic energy—provides short‑term stability, smoothing sudden load changes and momentarily buffering power imbalances. Robust control keeps voltage inside limits when plant parameters are uncertain.
+Historically, electrical generation has been dominated by large synchronous generators driven by steam turbines (coal, natural gas, nuclear) or hydro turbines. Hydro plants in Québec still use those same synchronous machines for frequency control. Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration. Inertia still matters for the first few cycles after a trip, full stop. Operators procured spinning reserve, rather than non-spinning reserve. The synchronous generator operates at a fixed speed set by the frequency of the power system (e.g., 60 Hz in North America, 50 Hz in most of Europe and Asia). Its intrinsic inertia—massive rotating masses that store kinetic energy—provides short‑term stability, smoothing sudden load changes and momentarily buffering power imbalances. Robust control keeps voltage inside limits when plant parameters are uncertain.
 
 #### 2.2 Renewable and Distributed Generation  
 
@@ -48,7 +48,7 @@ Transmission serves to move bulk power from generators to regional load centers 
 
 - **Transmission Lines** – Overhead conductors (steel‑reinforced aluminum, ACSR) or underground/high‑temperature superconducting cables in dense urban corridors.
 - **Substations** – Nodes where transformers step voltage up or down, circuit breakers isolate faults, and protective relays monitor system health.
-- **Converters** – For High‑Voltage Direct Current (HVDC) links, line‑commutated converters (LCC) or Voltage‑Sourced Converters (VSC) enable long‑distance, low‑loss power transfers and interconnection of asynchronous grids.
+- **Converters** – For High‑Voltage Direct Current (HVDC) links, line‑commutated converters (LCC) or Voltage‑Sourced Converters (VSC) enable long‑distance, low‑loss power transfers and interconnection of asynchronous grids. The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.
 
 Modern transmission planning leverages *optimal power flow* (OPF) algorithms that consider constraints such as thermal limits, stability margins, and economic dispatch. The advent of *Flexible AC Transmission Systems* (FACTS) devices—static VAR compensators (SVC), thyristor‑controlled series capacitors (TCSC), and unified power flow controllers (UPFC)—provides operators with dynamic voltage and power‑flow regulation, enhancing capacity without building new lines.
 
@@ -136,7 +136,7 @@ Smart grids combine pervasive sensing, two‑way communication, and advanced ana
 
 - **Advanced Metering Infrastructure (AMI)** – Provides granular consumption data enabling dynamic pricing and load shaping.
 - **Distribution Management Systems (DMS)** – Automate reconfiguration, outage management, and voltage regulation at the feeder level.
-- **Wide‑Area Monitoring Systems (WAMS)** – Phasor Measurement Units (PMUs) deliver synchrophasor data at 30–120 samples/second, granting operators unprecedented visibility of grid dynamics. This sampling rate is comprehensive relative to legacy SCADA scans.
+- **Wide‑Area Monitoring Systems (WAMS)** – Phasor Measurement Units (PMUs) deliver synchrophasor data at 30–120 samples/second, granting operators unprecedented visibility of grid dynamics.
 
 Digital twins—high‑fidelity virtual replicas of physical grid assets—allow predictive maintenance, scenario testing, and accelerated planning.
 
@@ -173,7 +173,7 @@ Traditional inverters operate in *grid‑following* mode, requiring a stiff volt
 
 ### 8. Case Study: A Smart, Renewable‑Heavy Grid in Practice  
 
-The **European Union’s “Electricity Interconnection”** project exemplifies many of the concepts discussed. By 2030 the EU aims for at least **15 % cross‑border interconnection capacity** relative to national peak demand, linking offshore wind farms in the North Sea with demand centers in Germany, the Netherlands, and the United Kingdom. Several member states remain significantly below the 15% interconnection target. Key features include:
+The **European Union’s “Electricity Interconnection”** project exemplifies many of the concepts discussed. By 2030 the EU aims for at least **15 % cross‑border interconnection capacity** relative to national peak demand, linking offshore wind farms in the North Sea with demand centers in Germany, the Netherlands, and the United Kingdom. Key features include:
 
 - **HVDC Links** – Multi‑terminal VSC‑HVDC converters enable power flow control across asynchronous networks.
 - **Coordinated Market Coupling** – Harmonized market rules allow cross‑border trading, mitigating price spikes caused by local VRE variability.

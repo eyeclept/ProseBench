@@ -1,0 +1,69 @@
+{
+  "verdicts": [
+    {
+      "instance_id": "P3-R1-030",
+      "verdict": "confirm",
+      "reason": "The target is present and uses discouraged wording. The assay's reduction from 40 minutes to 6 minutes directly measures the analysis-time improvement inflated by 'significantly streamlines.'",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    },
+    {
+      "instance_id": "P3-R5-011",
+      "verdict": "confirm",
+      "reason": "The target is present and contains the intensifier 'dramatically.' The reduction in yield loss from 41 percent to 8 percent directly measures the quantity being inflated.",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    }
+  ],
+  "missed": [],
+  "model": "openai/gpt-6.1-sol",
+  "usage": {
+    "prompt_tokens": 6997,
+    "completion_tokens": 160,
+    "total_tokens": 7157,
+    "cost": 0.019091,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6994,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019091,
+      "upstream_inference_prompt_cost": 0.017491,
+      "upstream_inference_completions_cost": 0.0016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "cost_usd": 0.019091,
+  "audited_rows": [
+    {
+      "instance_id": "P3-R1-030",
+      "rule": 1,
+      "kind": "planted",
+      "subtype": "fact_available",
+      "polarity": "change",
+      "expected_action": "replace_with_fact",
+      "target_text": "significantly streamlines cell-wall composition analysis",
+      "fact_text": "ran in 40 minutes before the protocol change and in 6 minutes after it"
+    },
+    {
+      "instance_id": "P3-R5-011",
+      "rule": 5,
+      "kind": "planted",
+      "subtype": "number_available",
+      "polarity": "change",
+      "expected_action": "replace_with_fact",
+      "target_text": "dramatically reduces yield loss in dry years",
+      "fact_text": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation"
+    }
+  ],
+  "created": "20261013T055716Z"
+}

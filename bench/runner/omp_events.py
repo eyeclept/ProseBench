@@ -80,8 +80,13 @@ def parse_events(raw: str) -> Events:
     return Events(_assistant_text(assistants[-1]) if assistants else "", usage, cost_usd, tool_calls, "; ".join(errors) or None)
 
 
-def parse_edits(text: str) -> tuple[list[dict] | None, str | None]:
-    """Find the first JSON object, ignoring surrounding prose and Markdown fences."""
+def parse_edits(text: str) -> tuple[list[dict] | None, str | None, list]:
+    """Find the first JSON object, ignoring surrounding prose and Markdown fences.
+
+    Returns (edits, parse_error, malformed). `original` (str) and `replacement` (str or null) are required per
+    edit; `reason` is metadata and may be missing. Edits lacking a required field go to `malformed` and are not
+    applied; the run still scores its well-formed edits. parse_error is set only when no usable edits list exists.
+    """
     cleaned = re.sub(r"(?m)^\s*```(?:json)?\s*$", "", text, flags=re.IGNORECASE)
     decoder = json.JSONDecoder()
     for index, char in enumerate(cleaned):
@@ -91,14 +96,20 @@ def parse_edits(text: str) -> tuple[list[dict] | None, str | None]:
             value, _ = decoder.raw_decode(cleaned, index)
         except json.JSONDecodeError as exc:
             logger.warning("Invalid output JSON object: %s", exc)
-            return None, f"invalid output JSON: {exc}"
+            return None, f"invalid output JSON: {exc}", []
         if not isinstance(value, dict):
-            return None, "output JSON is not an object"
+            return None, "output JSON is not an object", []
         edits = value.get("edits")
         if not isinstance(edits, list):
-            return None, "output JSON must contain an edits list"
-        for index, edit in enumerate(edits):
-            if not isinstance(edit, dict) or not isinstance(edit.get("original"), str) or not isinstance(edit.get("reason"), str) or not (isinstance(edit.get("replacement"), str) or edit.get("replacement") is None and "replacement" in edit):
-                return None, f"edit {index} must have original, replacement, and reason"
-        return edits, None
-    return None, "no JSON object in final assistant text"
+            return None, "output JSON must contain an edits list", []
+        good, malformed = [], []
+        for edit in edits:
+            if (isinstance(edit, dict) and isinstance(edit.get("original"), str) and "replacement" in edit
+                    and (edit["replacement"] is None or isinstance(edit["replacement"], str))):
+                good.append(edit)
+            else:
+                malformed.append(edit)
+        if malformed:
+            logger.warning("%d malformed edits not applied", len(malformed))
+        return good, None, malformed
+    return None, "no JSON object in final assistant text", []

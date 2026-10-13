@@ -22,7 +22,7 @@ The 18th and 19th centuries witnessed a surge in plant exploration and classific
 
 #### 1. Cellular Foundations  
 
-All plants are composed of cells bounded by a rigid cell wall, primarily made of cellulose, hemicellulose, and pectin. This wall confers structural support, determines cell shape, and mediates interactions with the environment. Within the plasma membrane lies a suite of organelles: chloroplasts (sites of photosynthesis), mitochondria (energy production), vacuoles (storage and turgor maintenance), and a nucleus housing the genome. Plant cells also possess plasmodesmata—microscopic channels that enable symplastic transport of nutrients, signaling molecules, and RNA between adjacent cells, establishing a coordinated multicellular organism. A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.  
+All plants are composed of cells bounded by a rigid cell wall, primarily made of cellulose, hemicellulose, and pectin. This wall confers structural support, determines cell shape, and mediates interactions with the environment. Within the plasma membrane lies a suite of organelles: chloroplasts (sites of photosynthesis), mitochondria (energy production), vacuoles (storage and turgor maintenance), and a nucleus housing the genome. Plant cells also possess plasmodesmata—microscopic channels that enable symplastic transport of nutrients, signaling molecules, and RNA between adjacent cells, establishing a coordinated multicellular organism. A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies. A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.  
 
 #### 2. Tissues and Organs  
 
@@ -46,7 +46,7 @@ Photosynthetic efficiency is constrained by several factors: light intensity, te
 
 ### Plant Diversity and Classification  
 
-The plant kingdom (Plantae) encompasses an estimated 390,000 extant species, ranging from microscopic algae to massive sequoias. That species total is significantly higher than pre-molecular estimates. That estimate already covers a plethora of vascular and non-vascular species. Modern classification reflects both morphological traits and molecular phylogenetics, dividing plants into several major clades:  
+The plant kingdom (Plantae) encompasses an estimated 390,000 extant species, ranging from microscopic algae to massive sequoias. Modern classification reflects both morphological traits and molecular phylogenetics, dividing plants into several major clades:  
 
 1. **Algae** – Primarily aquatic, photosynthetic organisms that lack true tissues. They are polyphyletic, representing several lineages that gave rise to land plants.  
 
@@ -66,7 +66,7 @@ Molecular studies, particularly those using chloroplast and nuclear DNA sequence
 
 #### 1. Food Production  
 
-Plants are the primary source of human calories and nutrients. Staple crops—wheat, rice, maize, sorghum, and millet—account for the majority of global caloric intake. The Green Revolution of the 1960s, driven by the development of high‑yielding, disease‑resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production, averting famines in many regions. Breeders select dwarfing alleles on purpose, rather than by accident. However, reliance on a narrow genetic base has heightened vulnerability to pests, diseases, and climate extremes. Contemporary botany seeks to broaden the genetic diversity of crops through **genomic selection**, **marker‑assisted breeding**, and **gene editing** (e.g., CRISPR/Cas9) to improve stress tolerance, nutrient use efficiency, and nutritional quality.  
+Plants are the primary source of human calories and nutrients. Staple crops—wheat, rice, maize, sorghum, and millet—account for the majority of global caloric intake. The Green Revolution of the 1960s, driven by the development of high‑yielding, disease‑resistant varieties and the widespread use of synthetic fertilizers, dramatically increased food production, averting famines in many regions. Breeders select dwarfing alleles on purpose, rather than by accident. However, reliance on a narrow genetic base has heightened vulnerability to pests, diseases, and climate extremes. Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years. Contemporary botany seeks to broaden the genetic diversity of crops through **genomic selection**, **marker‑assisted breeding**, and **gene editing** (e.g., CRISPR/Cas9) to improve stress tolerance, nutrient use efficiency, and nutritional quality.  
 
 #### 2. Medicine and Pharmacology  
 

@@ -90,15 +90,18 @@ def test_prompt_fill_and_hashes(sandbox):
     assert "<escalation>" not in assemble(root, 2, "P1").user
 
 
-@pytest.mark.parametrize("text,expected", [
-    ('```json\n{"edits": []}\n```', []),
-    ('Here are edits:\n{"edits":[{"original":"word","replacement":null,"reason":"unclear"}]}\nDone.', [{"original": "word", "replacement": None, "reason": "unclear"}]),
-    ('{"edits": [oops]}', None),
-    ('not JSON', None),
+@pytest.mark.parametrize("text,expected,n_malformed", [
+    ('```json\n{"edits": []}\n```', [], 0),
+    ('Here are edits:\n{"edits":[{"original":"word","replacement":null,"reason":"unclear"}]}\nDone.', [{"original": "word", "replacement": None, "reason": "unclear"}], 0),
+    # reason is metadata: a well-formed edit without it is still applied (it may be destructive; scoring shows that)
+    ('{"edits":[{"original":"a","replacement":"b"},{"original":"c","reason":"no replacement key"}]}', [{"original": "a", "replacement": "b"}], 1),
+    ('{"edits": [oops]}', None, 0),
+    ('not JSON', None, 0),
 ])
-def test_edit_parsing(text, expected):
-    edits, error = parse_edits(text)
+def test_edit_parsing(text, expected, n_malformed):
+    edits, error, malformed = parse_edits(text)
     assert edits == expected
+    assert len(malformed) == n_malformed
     assert (error is None) == (expected is not None)
 
 

@@ -11,17 +11,6 @@
     "new_text": " A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies."
   },
   {
-    "subtype": "fact_available",
-    "polarity": "change",
-    "expected_action": "replace_with_fact",
-    "target_text": "a plethora of",
-    "fact_text": "390,000 extant species",
-    "notes": "Academic-tell 'plethora' stands in for the species count already given in the essay; replace the phrase with that figure.",
-    "anchor_text": "ranging from microscopic algae to massive sequoias.",
-    "op": "insert_after",
-    "new_text": " That estimate already covers a plethora of vascular and non-vascular species."
-  },
-  {
     "subtype": "loadbearing",
     "polarity": "keep",
     "expected_action": "keep",
@@ -132,14 +121,25 @@
     "new_text": " Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop."
   },
   {
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly streamlines cell-wall composition analysis",
+    "fact_text": "ran in 40 minutes before the protocol change and in 6 minutes after it",
+    "notes": "R1 fact_available plant: banned streamline/significantly is backed by both sides of the assay-time comparison (40 to 6 minutes) stated outside target_text, so the fix is to replace the phrase with that measured cut.",
+    "anchor_text": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+    "op": "insert_after",
+    "new_text": " A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis."
+  },
+  {
     "subtype": "number_available",
     "polarity": "change",
     "expected_action": "replace_with_fact",
-    "target_text": "That species total is significantly higher than pre-molecular estimates.",
-    "fact_text": "390,000 extant species",
-    "notes": "Intensifier significantly stands in for the 390,000 species count already in the prior sentence; replace the intensifier with that figure.",
-    "anchor_text": "The plant kingdom (Plantae) encompasses an estimated 390,000 extant species, ranging from microscopic algae to massive sequoias.",
+    "target_text": "dramatically reduces yield loss in dry years",
+    "fact_text": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation",
+    "notes": "Intensifier is backed by a two-sided measure of the same quantity (yield loss 41 percent vs 8 percent) outside the target; replace the intensifier with that numeric fact.",
+    "anchor_text": "However, reliance on a narrow genetic base has heightened vulnerability to pests, diseases, and climate extremes.",
     "op": "insert_after",
-    "new_text": " That species total is significantly higher than pre-molecular estimates."
+    "new_text": " Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years."
   }
 ]

@@ -131,7 +131,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
     error = final.error or (f"omp exited {proc.returncode}: {proc.stderr.strip()}" if proc.returncode else None)
     if not final.output_text:
         error = error or "empty final assistant text"
-    edits, parse_error = parse_edits(final.output_text)
+    edits, parse_error, malformed = parse_edits(final.output_text)
     pin = _pin(root)
     record = {
         "run_id": run_id, "model_key": key, "endpoint_model": model["model"], "routed": routed,
@@ -141,7 +141,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
         "rule_text_sha256": prompt.rule_text_sha256, "passage_sha256": prompt.passage_sha256,
         "omp_version": pin.get("PROSEBENCH_OMP_VERSION"), "image_digest": pin.get("PROSEBENCH_IMAGE_DIGEST"),
         "started_at": start, "duration_s": duration, "exit_code": proc.returncode, "error": error,
-        "output_text": final.output_text, "edits": edits, "parse_error": parse_error,
+        "output_text": final.output_text, "edits": edits, "malformed_edits": malformed, "parse_error": parse_error,
         "usage": totals, "cost_usd": cost, "tool_calls": calls,
     }
     _atomic_write(destination.with_suffix(".jsonl"), "".join(raw))

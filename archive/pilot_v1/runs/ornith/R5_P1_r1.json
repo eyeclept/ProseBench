@@ -1,0 +1,60 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "ornith",
+  "endpoint_model": "freetoken/ornith-1.5-35b-a3b",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "5233e1c27685fdde42a175101b128c4ceccb88dc2f410bfb8f66c99d4134ca91",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:24:00.150171+00:00",
+  "duration_s": 18.674410830019042,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"creating \\\"attack surfaces\\\" that are dramatically broader than in the past\", \"replacement\": \"creating \\\"attack surfaces\\\" that are broader than in the past\", \"reason\": \"Removes the intensifier \\\"dramatically,\\\" which pads the claim without adding evidence.\"}, {\"original\": \"Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.\", \"replacement\": \"Those click-through rates above 20% show phishing remains more effective than most annual awareness programs assume.\", \"reason\": \"Removes the intensifier \\\"significantly,\\\" which stands in for the evidence the sentence should itself provide.\"}, {\"original\": \"Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs.\", \"replacement\": \"Essential providers now face a tighter incident-reporting clock than most internal SLAs.\", \"reason\": \"Removes the intensifier \\\"significantly,\\\" which signals a comparison without specifying the magnitude.\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Fail-closed is the only acceptable default for those checks.\", \"reason\": \"Removes the finality interjection \\\"end of story,\\\" which redundantly re-emphasizes the exclusivity marker \\\"only.\\\"\"}, {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\", \"reason\": \"Removes the finality interjection \\\"full stop,\\\" which redundantly re-emphasizes the claim already made.\"}]}\n```",
+  "edits": [
+    {
+      "original": "creating \"attack surfaces\" that are dramatically broader than in the past",
+      "replacement": "creating \"attack surfaces\" that are broader than in the past",
+      "reason": "Removes the intensifier \"dramatically,\" which pads the claim without adding evidence."
+    },
+    {
+      "original": "Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.",
+      "replacement": "Those click-through rates above 20% show phishing remains more effective than most annual awareness programs assume.",
+      "reason": "Removes the intensifier \"significantly,\" which stands in for the evidence the sentence should itself provide."
+    },
+    {
+      "original": "Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs.",
+      "replacement": "Essential providers now face a tighter incident-reporting clock than most internal SLAs.",
+      "reason": "Removes the intensifier \"significantly,\" which signals a comparison without specifying the magnitude."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "Removes the finality interjection \"end of story,\" which redundantly re-emphasizes the exclusivity marker \"only.\""
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "Removes the finality interjection \"full stop,\" which redundantly re-emphasizes the claim already made."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 19373,
+    "output": 338,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0,
+  "tool_calls": []
+}

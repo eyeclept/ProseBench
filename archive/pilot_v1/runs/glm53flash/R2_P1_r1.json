@@ -1,0 +1,60 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "ec230c4b424f801320061e33f69f929a0254257af4ee71152b975380d078ed44",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:21:19.700891+00:00",
+  "duration_s": 13.698444072011625,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Technical tools cannot succeed in isolation; they require\", \"replacement\": \"Technical tools require\", \"reason\": \"Deleting the negative clause leaves the same claim that tools need policies and governance, so it is windup.\"}, {\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"The 'rather than open' clause is redundant with fail-closed, and the second sentence merely restates the same point as emphasis.\"}, {\"original\": \"Addressing this requires more than periodic training; it demands\", \"replacement\": \"Addressing this demands\", \"reason\": \"The positive half alone states the claim that a security-first culture is needed, so the 'more than periodic training' half is windup.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"The 'rather than by accident' negative clause adds nothing and passes the delete-and-reread test.\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"The negative half is a windup; the positive half alone states the full claim.\"}]}",
+  "edits": [
+    {
+      "original": "Technical tools cannot succeed in isolation; they require",
+      "replacement": "Technical tools require",
+      "reason": "Deleting the negative clause leaves the same claim that tools need policies and governance, so it is windup."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The 'rather than open' clause is redundant with fail-closed, and the second sentence merely restates the same point as emphasis."
+    },
+    {
+      "original": "Addressing this requires more than periodic training; it demands",
+      "replacement": "Addressing this demands",
+      "reason": "The positive half alone states the claim that a security-first culture is needed, so the 'more than periodic training' half is windup."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "The 'rather than by accident' negative clause adds nothing and passes the delete-and-reread test."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "The negative half is a windup; the positive half alone states the full claim."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 18873,
+    "output": 1016,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 715
+  },
+  "cost_usd": 0.00137191,
+  "tool_calls": []
+}

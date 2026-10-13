@@ -1,16 +1,5 @@
 [
   {
-    "subtype": "fact_available",
-    "polarity": "change",
-    "expected_action": "replace_with_fact",
-    "target_text": "significantly more effective than most annual awareness programs assume",
-    "fact_text": "click-through rates above 20%",
-    "notes": "Banned intensifier 'significantly' stands in for the 20% phishing click-through rate already given; replace the intensifier claim with that figure.",
-    "anchor_text": "despite widespread awareness campaigns.",
-    "op": "insert_after",
-    "new_text": " Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume."
-  },
-  {
     "subtype": "ambiguous",
     "polarity": "flag",
     "expected_action": "flag",
@@ -99,14 +88,25 @@
     "new_text": " Fail-closed is the only acceptable default for those checks, end of story."
   },
   {
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "streamlines containment",
+    "fact_text": "Mean time to contain fell from 18 hours to 3 hours after the playbook change",
+    "notes": "Banned verb 'streamlines' stands in for a measured drop in mean time to contain; replace the verb with that 18-to-3-hour fact.",
+    "anchor_text": "the finance team uses that figure in the quarterly risk report.",
+    "op": "insert_after",
+    "new_text": " Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment."
+  },
+  {
     "subtype": "number_available",
     "polarity": "change",
     "expected_action": "replace_with_fact",
-    "target_text": "a significantly tighter incident-reporting clock",
-    "fact_text": "The NIS Directive still sets that clock at 24 hours.",
-    "notes": "Intensifier 'significantly' stands in for the 24-hour NIS deadline given in the next sentence and earlier in the essay; replace the intensifier with that figure.",
-    "anchor_text": "These frameworks promote a systematic process: identify critical assets, protect them with appropriate controls, detect anomalies, respond promptly, and recover to a resilient state.",
+    "target_text": "significantly reduces mean time to contain",
+    "fact_text": "fell from 18 hours to 3 hours",
+    "notes": "Intensifier significantly stands in for the already-stated drop in mean time to contain from 18 hours to 3 hours. The fix is to replace the intensifier with that measured change.",
+    "anchor_text": "which streamlines containment.",
     "op": "insert_after",
-    "new_text": " Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs. The NIS Directive still sets that clock at 24 hours."
+    "new_text": " The playbook change significantly reduces mean time to contain."
   }
 ]

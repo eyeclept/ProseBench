@@ -60,9 +60,14 @@ def _prompt(passage: str, rule: int, missing: list[str], natives: list[dict], te
         "- target_text: the exact substring of new_text that carries the instance. It must occur exactly once "
         "in the resulting essay. new_text must not repeat any native target string.\n"
         "- One instance per op and no other unlabelled violation of rules 1-5 in new_text.\n"
-        "- fact_available (R1) and number_available (R5): the supporting number must appear in the essay outside "
-        "target_text. You may state it in a separate sentence inside new_text; put that number-bearing substring "
-        "in fact_text. no_fact (R1) and no_number (R5): no number anywhere supports the claim; fact_text null.\n"
+        "- fact_available (R1) and number_available (R5): the essay must state, outside target_text, a number "
+        "that DIRECTLY measures the exact quantity the banned word or intensifier inflates, so swapping the word "
+        "for that number keeps the sentence true. Example: fact sentence 'Build time fell from 40 minutes to 6 "
+        "minutes after the change.' with target 'significantly streamlines the build'; the correct fix is 'cuts "
+        "build time from 40 to 6 minutes'. A number about a different quantity, a goal or threshold, or only one "
+        "side of a comparison does NOT qualify. You may state the number in a separate sentence inside new_text; "
+        "put that number-bearing substring in fact_text. no_fact (R1) and no_number (R5): no number anywhere "
+        "supports the claim; fact_text null.\n"
         "- Rule 4: use the real Unicode characters (U+2014 em dash, U+2013 en dash, U+201C/U+201D curly quotes, "
         "U+2026 ellipsis) and, for diacritic, a correctly spelled word or name with a real diacritic such as "
         "caf\u00e9 (U+00E9).\n"
@@ -149,12 +154,43 @@ def inject(passage: str) -> list[dict]:
     return state["planted"]
 
 
+def reset_subtypes(passage: str, subtypes: set[str]) -> int:
+    """Reverse the planted ops for `subtypes` in the checkpoint so inject() plants them again.
+
+    Each reversed op must leave the remaining ops reproducing the text exactly from the source essay;
+    otherwise this raises and the checkpoint is left untouched.
+    """
+    directory = OUT / passage
+    state_path = directory / "inject_state.json"
+    state = json.loads(state_path.read_text(encoding="utf-8"))
+    text = state["text"]
+    drop = [op for op in state["declared"] if op["subtype"] in subtypes]
+    for op in reversed(drop):
+        if text.count(op["new_text"]) != 1:
+            raise ValueError(f"{passage}: cannot reverse {op['subtype']}; new_text not unique")
+        restore = "" if op["op"] == "insert_after" else op["anchor_text"]
+        text = text.replace(op["new_text"], restore, 1)
+    keep = [op for op in state["declared"] if op["subtype"] not in subtypes]
+    if apply_ops(source_text(passage), keep) != text:
+        raise ValueError(f"{passage}: remaining ops do not reproduce the reversed text")
+    rules = {rule for rule, mapping in REQUIRED.items() if subtypes & set(mapping)}
+    state.update(text=text, declared=keep,
+                 planted=[row for row in state["planted"] if row["subtype"] not in subtypes],
+                 done_rules=[rule for rule in state["done_rules"] if rule not in rules])
+    state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    logger.info("%s: reversed %d ops for %s", passage, len(drop), sorted(subtypes))
+    return len(drop)
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("passages", nargs="*", choices=list(SOURCE), default=list(SOURCE))
+    parser.add_argument("--replant", default="", help="comma-separated planted subtypes to reverse and plant again")
     args = parser.parse_args()
     for passage in args.passages:
+        if args.replant:
+            reset_subtypes(passage, set(args.replant.split(",")))
         inject(passage)
 
 

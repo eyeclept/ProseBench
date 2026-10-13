@@ -1,17 +1,6 @@
 [
   {
     "passage": "P1",
-    "rule": 1,
-    "kind": "planted",
-    "subtype": "fact_available",
-    "polarity": "change",
-    "expected_action": "replace_with_fact",
-    "target_text": "significantly more effective than most annual awareness programs assume",
-    "fact_text": "click-through rates above 20%",
-    "notes": "Banned intensifier 'significantly' stands in for the 20% phishing click-through rate already given; replace the intensifier claim with that figure."
-  },
-  {
-    "passage": "P1",
     "rule": 3,
     "kind": "planted",
     "subtype": "ambiguous",
@@ -100,13 +89,24 @@
   },
   {
     "passage": "P1",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "streamlines containment",
+    "fact_text": "Mean time to contain fell from 18 hours to 3 hours after the playbook change",
+    "notes": "Banned verb 'streamlines' stands in for a measured drop in mean time to contain; replace the verb with that 18-to-3-hour fact."
+  },
+  {
+    "passage": "P1",
     "rule": 5,
     "kind": "planted",
     "subtype": "number_available",
     "polarity": "change",
     "expected_action": "replace_with_fact",
-    "target_text": "a significantly tighter incident-reporting clock",
-    "fact_text": "The NIS Directive still sets that clock at 24 hours.",
-    "notes": "Intensifier 'significantly' stands in for the 24-hour NIS deadline given in the next sentence and earlier in the essay; replace the intensifier with that figure."
+    "target_text": "significantly reduces mean time to contain",
+    "fact_text": "fell from 18 hours to 3 hours",
+    "notes": "Intensifier significantly stands in for the already-stated drop in mean time to contain from 18 hours to 3 hours. The fix is to replace the intensifier with that measured change."
   }
 ]

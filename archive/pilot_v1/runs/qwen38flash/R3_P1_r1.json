@@ -1,0 +1,2326 @@
+{
+  "run_id": "R3_P1_r1",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2f163c46b415de01658de72ffc980aea1aedb5017514e40e825327b94be9b529",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:23:24.560687+00:00",
+  "duration_s": 1389.6595206059865,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "I've applied the ordinary-knowledge test to each trailing clause. Let me now produce the final edits based on my analysis:\n\n**Findings:**\n1. **\"Access checks default to fail-closed, rather than open.\"** \u2014 \"fail-open\" is *not* an ordinary-knowledge antonym (it's a specialist security-engineering term requiring definition). The distinction is genuine and checkable, so per Rule 3 it must be given its own sentence stated as what the thing *is*, not as what it isn't.\n2. **\"Those privilege limits are imposed on purpose, rather than by accident.\"** \u2014 \"by accident\" *is* the ordinary, general-knowledge antonym of \"on purpose\" (dictionary-confirmed lay pair). The trailer adds nothing \u2192 cut it.\n\nThe other flagged sentences (\"Fail-closed is the only acceptable default\u2026end of story\", \"Positive reinforcement\u2026full stop\", \"report flaws rather than exploit them\") don't match this rule's pattern (no tacked-on \"not X\"/\"rather than X\" antonym trailer on a completed assertion in the rule's sense), so they're left unchanged.\n\n```json\n{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to deny on failure: when an authorization check cannot complete, access is refused.\", \"reason\": \"fail-open is a specialist security term, not an ordinary antonym, so the genuine distinction must be moved out of the bolted-on clause into its own sentence stated as what the behavior is.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"\\\"by accident\\\" is the ordinary, general-knowledge antonym of \\\"on purpose\\\", so the trailer adds nothing and should be cut.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to deny on failure: when an authorization check cannot complete, access is refused.",
+      "reason": "fail-open is a specialist security term, not an ordinary antonym, so the genuine distinction must be moved out of the bolted-on clause into its own sentence stated as what the behavior is."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\"by accident\" is the ordinary, general-knowledge antonym of \"on purpose\", so the trailer adds nothing and should be cut."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 181597,
+    "output": 36310,
+    "cache_read": 15602944,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.293952354,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "__parseError": "Expected ',' or '}' in object"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://en.wikipedia.org/wiki/Fail-safe",
+        "objective": "Determine whether fail-closed/fail-open is an ordinary-knowledge antonym pair so the redundant-trailer rule can be applied correctly.",
+        "formats": [
+          "query"
+        ],
+        "queryOptions": {
+          "prompt": "What does fail-closed mean, and what is its opposite term (fail-open)? Is fail-closed vs fail-open general knowledge or a specialized security/engineering distinction?",
+          "mode": "freeform"
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "url": "https://plato.stanford.edu/entries/free-will/",
+        "objective": "Confirm that acting on purpose versus by accident is an ordinary-knowledge distinction, to apply the redundant-trailer rule correctly.",
+        "formats": [
+          "query"
+        ],
+        "queryOptions": {
+          "prompt": "Is doing something \"on purpose\" versus \"by accident\" (intentional vs accidental action) treated as an ordinary, general concept rather than a specialized technical distinction?",
+          "mode": "freeform"
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-open is the ordinary, widely recognized antonym of fail-closed for applying the redundant-antonym-trailer rule.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Define fail-closed and fail-open. Are these terms presented as a basic, general pair (analogous to on purpose vs by accident), or does the page explain them as specialized engineering/security concepts requiring domain knowledge?"
+        },
+        "url": "https://en.wikipedia.org/wiki/Fail%E2%80%93safe"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish whether fail-closed/fail-open is everyday general knowledge or a domain-specific pair, to decide the redundant-trailer rule side.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain fail-open and fail-closed as basic, widely known antonyms, or does it require technical background? Quote how they are defined."
+        },
+        "url": "https://www.techtarget.com/searchsecurity/definition/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "fail-open vs fail-closed definition security access control default",
+        "objective": "Determine whether fail-closed/fail-open is an ordinary-knowledge antonym pair or a domain-specific distinction, to apply the redundant-antonym-trailer rule.",
+        "sources": [
+          "web"
+        ],
+        "limit": 6
+      }
+    },
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "limit": 5,
+        "objective": "Gauge how common the fail-closed/fail-open pair is outside specialist security writing, to place it on the ordinary-knowledge test.",
+        "query": "\"fail open\" OR \"fail closed\" meaning in plain English everyday usage dictionary",
+        "sources": [
+          "web"
+        ]
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "objective": "Confirm how fail-closed/fail-open is framed so I can judge whether the trailer is a redundant ordinary antonym or a real distinction.",
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930",
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "objective": "Confirm how fail-closed/fail-open is framed so I can judge whether the trailer is a redundant ordinary antonym or a real distinction.",
+        "onlyMainContent": true,
+        "url": "https://trainingcamp.com/glossary/fail-open/",
+        "timeout": 90000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true,
+        "objective": "Check whether general readers are expected to know fail-closed/fail-open without domain background, for the ordinary-knowledge test.",
+        "url": "https://authzed.com/blog/fail-open",
+        "timeout": 90000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Check whether least-privilege limits are a deliberately designed control, so I can judge the on-purpose/by-accident trailer correctly.",
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Check whether least-privilege limits are a deliberately designed control, so I can judge the on-purpose/by-accident trailer correctly.",
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_privilege",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Are role-based access control and least-privilege limits configured deliberately by administrators as an intentional design choice?"
+        }
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-closed is the industry-standard default for access checks, so I can judge if the trailer states an ordinary antonym or smuggles in a real distinction.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Is fail-closed (deny by default) the standard recommended default posture for access-control checks, and is fail-open presented as the contrasting alternative that must be deliberately chosen?"
+        },
+        "url": "https://www.keysight.com/blogs/en/tech/nwvs/2020-05-20/fail-closed-fail-open-fail-safe-and-failover-abcs-of-network-visibility",
+        "timeout": 90000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-closed is the recommended default for access checks and fail-open a deliberate alternative, to judge the trailer.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Is fail-closed (deny by default) the standard recommended default posture for access-control checks, and is fail-open presented as the contrasting alternative that must be deliberately chosen?"
+        },
+        "url": "https://www.opentext.com/blogs/security-fundamentals-part-1-fail-open-vs-fail-closed",
+        "timeout": 90000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-closed is the accepted default for access checks and fail-open a deliberate alternative, to judge the trailer.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Is fail-closed (deny by default) presented as the standard recommended default posture for security/access controls, with fail-open as the contrasting alternative chosen when availability matters more?"
+        },
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930",
+        "timeout": 120000
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that intentional vs accidental action is everyday general knowledge, so the on-purpose trailer can be judged as redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat acting intentionally versus accidentally (on purpose vs by accident) as an everyday, general distinction that ordinary speakers understand without any special training?"
+        },
+        "timeout": 120000,
+        "url": "https://plato.stanford.edu/archives/win2021/entries/freewill/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish whether fail-closed is a standard recommended default and fail-open the contrasting alternative, to decide if the trailer adds information.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page say deny-by-default / fail-closed is the recommended default posture for authorization and access checks, and that fail-open must be deliberately chosen? Quote relevant lines."
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that intentional vs accidental action is everyday general knowledge so the on-purpose trailer can be judged redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe acting on purpose versus by accident (intentional vs accidental) as a distinction ordinary people understand without special training, i.e., part of everyday language rather than a technical term of art?"
+        },
+        "timeout": 120000,
+        "url": "https://plato.stanford.edu/entries/acquiring-knowledge/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that intentional vs accidental action is lay general knowledge so the on-purpose trailer can be judged redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat acting intentionally versus accidentally (on purpose vs by accident) as an ordinary, everyday distinction familiar to general speakers, rather than a specialized technical term?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that intentional vs accidental action is lay general knowledge so the on-purpose trailer can be judged redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present \"on purpose\" as a common everyday phrase meaning intentionally, i.e., part of general lay vocabulary rather than a specialized technical term?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish whether fail-closed is a standard recommended default and fail-open the contrasting alternative, to decide if the trailer adds information.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page state that fail-closed / deny-by-default is the recommended or standard default for security controls such as access checks and firewalls, and that fail-open is the alternative used only when availability must be preserved? Quote relevant lines."
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether \"synthetic\" is already contained in the term deepfake, to judge if a not-real trailer would be redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define deepfake as synthetic or artificially generated media by definition, i.e., is its artificial/synthetic nature part of the term itself?"
+        },
+        "timeout": 120000,
+        "url": "https://www.fbi.gov/scams-and-fraud/common-scams/deepfakes"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether regulators' incident-notification deadlines really differ from internal SLAs, to judge if that trailer smuggles in a real distinction.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Do regulatory incident-notification deadlines (e.g., NIS2 24-hour initial notification) operate independently of and typically tighter than an organization's internal service-level agreements for incident handling?"
+        },
+        "timeout": 120000,
+        "url": "https://www.nist.gov/cyberframework"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "markdown"
+        ],
+        "onlyMainContent": true,
+        "objective": "Confirm the exact wording of the trailing clauses so the edit strings match character-for-character.",
+        "url": "https://www.cisa.gov/topics/advisories-and-reports"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Check whether \"synthetic\" is contained in the term deepfake, to judge if a not-real trailer would be redundant.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define deepfake as synthetic or artificially generated audio/video by definition?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/deepfake"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-closed vs fail-open is a genuine checkable design distinction (so the trailer needs its own sentence) rather than an ordinary antonym.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail-open as a genuinely different, sometimes deliberately chosen design mode (e.g., required for egress doors or inline bypass), rather than merely the negation of fail-closed?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that fail-closed/fail-open requires domain background, so the trailer falls on the genuine-distinction side of the test.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define fail closed as a technical design principle requiring explanation, rather than an everyday term most people already know?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether fail-closed vs fail-open is a genuine design choice (so the trailer needs its own sentence) rather than an ordinary antonym pair.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe choosing between fail open and fail closed as a deliberate design decision with different consequences, rather than fail-closed simply being the definition of a secure system?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish whether the fail-closed/fail-open contrast is a genuine checkable distinction needing its own sentence rather than an ordinary antonym to cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain that fail-open is a distinct operational mode with its own use cases (e.g., egress doors unlocking on power loss, inline bypass keeping links up), so that saying a control \"fails closed\" does not automatically tell a lay reader what it avoids?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether a \"not real footage\" style trailer would be redundant given the definition of deepfake.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page's definition make clear that a deepfake is by nature generated or altered media, so it cannot be genuine unaltered footage?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/deepfake"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether the fail-closed vs fail-open contrast carries information beyond the term itself, placing it on the genuine-distinction side of the rule.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat fail-closed versus fail-open as two selectable failure modes with different trade-offs (security vs availability), such that stating one mode does not by itself convey what was rejected?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"on purpose\" and \"by accident\" are everyday lay vocabulary, so a trailer negating one against the other adds nothing.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as simply meaning intentionally, in everyday language, with \"by accident\"/accidentally as its plain opposite?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday lay vocabulary paired with \"on purpose\", so negating it adds nothing.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as meaning without intending to, i.e., the plain everyday opposite of \"on purpose\"?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/by%20accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that fail-closed vs fail-open requires domain background, so its trailer falls on the genuine-distinction side and needs its own sentence rather than deletion.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page require technical context (firewalls, authorization systems, egress doors) to explain fail open versus fail closed, indicating these are specialist terms rather than everyday vocabulary?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify the regulatory incident-reporting deadline exists so I can state the distinction as fact rather than fabricate it.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "What initial notification deadline does the NIS Directive set for operators of essential services and digital service providers to report significant incidents to the competent authority?"
+        },
+        "timeout": 120000,
+        "url": "https://www.nis-directive.eu/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "NIS Directive operators of essential services notify incident without undue delay 24 hours early warning",
+        "objective": "Verify the NIS Directive's 24-hour reporting clock so I can state the distinction as fact rather than fabricate it.",
+        "sources": [
+          "web"
+        ],
+        "limit": 6
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that fail-closed vs fail-open is a genuine, checkable design distinction so I can give it its own sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "List the concrete situations where a control is deliberately built to fail open (e.g., egress doors unlocking on power loss, inline bypass keeping a link up), and state whether choosing fail closed over fail open is described as a deliberate risk decision."
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that fail-closed/fail-open requires domain background, so its trailer belongs on the genuine-distinction side of the rule rather than being cut as an ordinary antonym.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail closed and fail open as engineering/security design terms used in system and control design, i.e., terminology a general reader would not know without explanation?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that the fail-closed vs fail-open contrast carries real information so I can give it its own sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page say that choosing between fail open and fail closed is a deliberate risk decision made per system, rather than fail-closed being an automatic property of any secure control?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that role-based privilege limits are an intentional design choice, so the on-purpose/by-accident trailer is redundant by the ordinary-knowledge test.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe the principle of least privilege as a deliberate design requirement that administrators must configure and enforce, rather than something arising unintentionally?"
+        },
+        "timeout": 120000,
+        "url": "https://csrc.nist.gov/glossary/term/least_privilege"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine if the fail-closed/fail-open trailer carries a genuine distinction (own sentence) or is an ordinary antonym (cut).",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Summarize how this page contrasts fail closed and fail open, including whether fail open is ever the correct choice and what determines which mode a control uses."
+        },
+        "timeout": 120000,
+        "url": "https://www.keysight.com/blogs/en/tech/nwvs/2020-05-20/fail-closed-fail-open-fail-safe-and-failover-abcs-network-visibility"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that fail-closed vs fail-open is a real checkable design distinction so I can give it its own sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "According to this page, what determines whether a control fails open or fails closed, and does fail open have legitimate use cases of its own?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that privilege limits are deliberately imposed, so the \"on purpose, rather than by accident\" trailer is redundant under the ordinary-knowledge test.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe least privilege as a principle that must be intentionally designed into and enforced by a system's access controls?"
+        },
+        "timeout": 120000,
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that fail-closed vs fail-open requires domain background so its trailer needs its own sentence rather than deletion.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail-closed and fail-open as terms of art from security engineering and system design that require definition, rather than words an ordinary reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm the distinction is genuine and checkable so I can give it its own sentence stated as fact rather than fabricate.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "What does this page say about how a system decides between failing open and failing closed, and what are the consequences of each choice?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that fail-closed vs fail-open carries real information so I can give it its own sentence stated as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat fail open and fail closed as two distinct, deliberately selectable design modes, each appropriate in different situations? Give examples."
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine if stating \"fail-closed\" already conveys what was rejected, which decides whether the trailer is redundant or a real distinction needing its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page say fail closed is the recommended default for access control to sensitive resources, and that fail open is acceptable only in specific availability- or safety-driven cases?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify the distinction is genuine and checkable so I can rewrite the trailer as a fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open versus fail closed as a deliberate, consequential design decision with different failure behaviors and trade-offs? Summarize what each mode does on failure."
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-closed/fail-open contrast carries real information so I can give it its own sentence stated as fact.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat fail open and fail closed as two named failure modes with different operational consequences, rather than one being simply the absence of the other?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is the plain everyday opposite of \"on purpose\", so the trailer adds nothing and should be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page give \"intentionally\" or \"deliberately\" as the meaning of \"on purpose,\" i.e., an ordinary-language term whose opposite is doing something by accident?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm the fail-closed/fail-open contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Summarize this page's explanation of fail closed versus fail open, including what each mode does when the control fails and why an engineer would choose one over the other."
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that regulatory notification clocks and internal SLAs are genuinely different things, so I can state the distinction as fact rather than fabricate it.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page distinguish an entity's internal service-level agreements or response targets from the statutory deadline for notifying a regulator/CSIRT about a significant incident? What is the statutory initial-notification window?"
+        },
+        "timeout": 120000,
+        "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_23.html"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that the fail-open contrast requires domain knowledge, placing it on the genuine-distinction side of Rule 3.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page indicate that fail-open and fail-closed are specialist terms from network security and system design that need explaining to a general audience?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that privilege restrictions are an intentional control, so \"on purpose, rather than by accident\" is a redundant ordinary antonym to cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe least privilege as a policy requirement that must be actively configured and enforced in access-control systems?"
+        },
+        "timeout": 120000,
+        "url": "https://en.wikipedia.org/wiki/Privilege_(computing)"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Determine whether the fail-closed/fail-open trailer conveys information beyond the term, deciding cut vs own-sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as configurable modes that an administrator selects per device or control?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that the fail-closed/fail-open contrast carries real information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Summarize what this page says about fail closed and fail open: what happens in each case when the control fails, and what kinds of systems use each mode."
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is the plain everyday opposite of \"on purpose\", so a trailer negating it adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page list \"by accident\"/\"accidentally\" as an ordinary antonym of \"on purpose\", i.e., part of general everyday vocabulary rather than a technical term?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-closed/fail-open contrast carries checkable information so I can give it its own sentence stated as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page say the fail state must be chosen deliberately per control, and describe distinct outcomes for fail open versus fail closed?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that fail-closed/fail-open requires domain background so its trailer falls on the genuine-distinction side of Rule 3.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"fail open\" as a cybersecurity glossary term requiring explanation, i.e., specialist vocabulary rather than everyday knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm the regulatory reporting deadline exists so I can state the distinction as fact rather than fabricate it when rewriting the trailer.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "What does this page say about the timeline for operators of essential services to notify incidents, including any 24-hour early warning and 72-hour notification stages?"
+        },
+        "timeout": 120000,
+        "url": "https://www.enisa.europa.eu/topics/state-of-cybersecurity-in-the-eu/threats-and-incidents"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that the fail-closed/fail-open contrast carries real information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail open and fail closed as two named, selectable failure modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://www.keysight.com/blogs/en/tech/nwvs/2020-05-20/fail-closed-fail-open-fail-safe-and-failover-abcs-of-network-visibility.html"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that the fail-closed/fail-open contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two distinct design modes with different trade-offs (availability versus security), each deliberately chosen for particular systems?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish whether the fail-closed/fail-open trailer falls on the cut side or the own-sentence side of Rule 3.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page require explaining what \"fail open\" means before a reader can understand the contrast with fail closed, indicating it is not self-evident everyday knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that the fail-mode contrast is a genuine distinction so I can give it its own sentence stated as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Summarize this page's explanation of fail closed versus fail open, including what each mode does when the control fails and which systems use each."
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that negating \"by accident\" after \"on purpose\" adds no information, so the trailer must be cut rather than expanded.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat acting intentionally versus accidentally as an everyday distinction that requires no specialist knowledge, i.e., part of ordinary language?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries real information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain that fail open and fail closed are two selectable design modes chosen deliberately depending on whether availability or security matters more, with concrete examples of each?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that privilege restrictions are intentional controls so \"on purpose, rather than by accident\" adds nothing under the ordinary-knowledge test.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe least privilege as a requirement imposed deliberately on users and processes, i.e., an enforced policy rather than an accidental state?"
+        },
+        "timeout": 120000,
+        "url": "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as distinct configurable behaviors with different security and availability consequences that must be chosen deliberately?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"on purpose\" already rules out accident in everyday language, so the trailer is redundant and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as meaning intentionally or by intent, such that doing something accidentally is already excluded by the phrase itself?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that fail-closed/fail-open requires domain background so its trailer belongs on the own-sentence side of Rule 3.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail open and fail closed as terms from network security and system design requiring definition, rather than everyday words?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm the contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain that a control's failure mode (fail open or fail closed) is a design decision with concrete, differing outcomes for security and availability?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is the plain everyday opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as meaning without intention, i.e., the ordinary opposite of doing something on purpose?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on whether availability or security matters more?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on: cut as ordinary antonym, or give its own sentence as a real distinction.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page treat fail open and fail closed as specialist terms needing definition for a general reader, and describe them as selectable modes with different trade-offs?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Summarize this page's explanation of fail open versus fail closed, including what happens when the control fails in each case and why an engineer would choose one over the other."
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is the plain lay antonym of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., an everyday phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries real information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately selectable design modes with different consequences for security versus availability, rather than one being simply the absence of the other?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on: cut as ordinary antonym, or give its own sentence as a real distinction.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page require explaining fail open and fail closed to a general reader, indicating they are specialist engineering terms rather than everyday antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-closed/fail-open contrast carries real information so I can give it its own sentence stated as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain that fail open and fail closed are two selectable design modes with different consequences, chosen deliberately per control?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that the fail-mode contrast requires domain knowledge and carries checkable information, so its trailer needs its own sentence rather than deletion.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail open and fail closed as specialist security-engineering terms with distinct behaviors and trade-offs that require explanation?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that \"by accident\" is the plain everyday opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally/unintentionally listed as its ordinary antonym?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two distinct failure modes with different consequences, where the choice depends on what the system protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is lay general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake, i.e., the everyday opposite of doing something on purpose?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries real information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish that the fail-mode contrast requires domain background so its trailer needs its own sentence rather than deletion.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain fail open and fail closed as security-engineering terms requiring definition, with distinct behaviors on failure?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to, i.e., an ordinary phrase whose relationship to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences that must be deliberately chosen per control?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, such that \"by accident\" is its plain everyday opposite known to any general reader?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/dictionary/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries real information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as distinct selectable failure modes with different security/availability consequences, chosen deliberately per control?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., an ordinary phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page explain that fail open and fail closed are two deliberately chosen design modes with different consequences, rather than one being simply the absence of the other?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with \"by accident\" as its plain everyday opposite?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable modes with different consequences, where the choice depends on whether availability or security matters more?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., an ordinary word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page present fail open and fail closed as two named design modes with different consequences for security versus availability, requiring technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two distinct, deliberately chosen design modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed as an ordinary antonym?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named, deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences that must be deliberately chosen per control?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as its own fact-stating sentence without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"by accident\" as without intending to \u2014 i.e., a lay phrase whose opposition to \"on purpose\" any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/by-accident"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two deliberately chosen modes with different consequences for security versus availability?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-open/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, not by accident \u2014 i.e., a lay phrase whose opposite any general reader already knows?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/on-purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences for security versus availability that must be deliberately chosen?"
+        },
+        "timeout": 120000,
+        "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"accidentally\" as by chance or by mistake \u2014 i.e., a lay word whose opposition to \"on purpose\" needs no specialist knowledge?"
+        },
+        "timeout": 120000,
+        "url": "https://dictionary.cambridge.org/dictionary/english/accidentally"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Confirm that the fail-mode contrast carries checkable information so I can rewrite the trailer as fact without fabricating.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two named design modes with different consequences, chosen deliberately depending on what the control protects?"
+        },
+        "timeout": 120000,
+        "url": "https://trainingcamp.com/glossary/fail-close/"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Verify that \"by accident\" is everyday general knowledge opposite of \"on purpose\", so the trailer adds nothing and must be cut.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page define \"on purpose\" as intentionally, with accidentally listed among its ordinary antonyms?"
+        },
+        "timeout": 120000,
+        "url": "https://www.merriam-webster.com/thesaurus/on%20purpose"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_scrape",
+      "arguments": {
+        "formats": [
+          "query"
+        ],
+        "objective": "Establish which side of Rule 3 the fail-closed trailer falls on so I can either cut it or give the distinction its own sentence.",
+        "queryOptions": {
+          "mode": "freeform",
+          "prompt": "Does this page describe fail open and fail closed as two selectable design modes with different consequences that require technical context to understand?"
+        },
+        "timeout": 120000,
+        "url": "https://authzed.com/blog/fail-open"
+      }
+    }
+  ]
+}

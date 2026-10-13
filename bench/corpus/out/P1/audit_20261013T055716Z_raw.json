@@ -1,0 +1,199 @@
+{
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request": {
+    "model": "openai/gpt-6.1-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are auditing an answer key for a prose-editing benchmark. Check EVERY key row against the essay and the frozen rules. Return one verdict per row: confirm, or dispute with the corrected subtype, polarity, or expected_action (null for any field you do not dispute). Dispute a replace_with_fact row whose fact_text does not directly measure the quantity the flagged word inflates, and any row that is not a real instance. List no missed items; this is a targeted check of the rows given. Do not revise the essay or the key.\n\nFrozen rules:\n# rule1.md\n## Rule 1: Banned words and phrases\n\nThe specific banned and discouraged words, tiered by strictness (NEVER, only when necessary, prefer other words), live in `references/banned-words-phrases.md`, editable independently of this file. Check every draft against it directly; do not rely on memory of a past pass.\n\n- WRONG: \"This approach will significantly streamline your workflow and foster innovation.\"\n- RIGHT: \"This approach cuts the build step from 40 minutes to 6.\"\n\n\n# rule2.md\n## Rule 2: Padded negation and restatement (delete-and-reread test)\n\nA sentence built as \"X is not/isn't A ... it is/has B\" often uses the negative half as a windup, not information. Don't hunt for the exact phrase \"it's not X, it's Y\", that misses every syntactic variant. Instead, apply the test directly: delete the negative clause or sentence and reread what remains. If the positive half alone states the same claim with nothing lost, the negative half was filler. This holds whether the two halves share one sentence or split across two, and regardless of wording (\"isn't just,\" \"not really,\" \"isn't a fluke,\" \"not as an abstract concern but\").\n\n- WRONG: \"Staleness isn't just a database internals problem. It has a security surface.\"\n- RIGHT: \"Staleness has a security surface.\"\n- WRONG: \"210 bugs across 36 operators isn't a fluke in one team's code. It's a property of how reconciliation logic tends to get written.\"\n- RIGHT: \"210 bugs across 36 independently maintained operators is a property of how reconciliation logic tends to get written.\"\n\nThe same test catches definition doubling: introduce a distinction, then restate it a second time through an analogy or synonym before moving on, adding no new fact the second time.\n\n- WRONG: \"They split the attacker into a global-information regime, where it sees everything, and a local-information regime, where it only sees what it controls, close to the whitebox-versus-blackbox split, global information is the whitebox case, local is the more realistic blackbox one.\"\n- RIGHT: \"They split the attacker into a global-information regime, seeing everything (whitebox), and a local-information regime, seeing only what it controls (blackbox).\"\n\nThe general form: read each sentence and ask what it would lose if the first half were deleted. If the answer is \"nothing checkable,\" the first half is windup regardless of what specific words it uses.\n\n\n# rule3.md\n## Rule 3: Redundant antonym trailer (ordinary-knowledge test)\n\nA trailing \"not X\" or \"rather than X\" clause tacked onto a sentence is a problem either way, just for different reasons. Apply the ordinary-knowledge test first: is X the ordinary, general-knowledge antonym of the term just used, something virtually anyone would already know without domain background (on purpose/by accident, true/false, alive/dead, permanent/temporary)? If yes, the trailer adds nothing: cut it. If no, the trailer is smuggling a genuine, checkable distinction into a bolted-on clause instead of giving it the sentence it needs. Taping it on reads poorly regardless of whether the distinction is real; a real distinction earns its own sentence, stated as what the thing is or does, not as what it isn't (see Rule 12, Accuracy and fabrication).\n\n- WRONG (ordinary-knowledge antonym, tacked on): \"A tradeoff every one of these systems makes on purpose, rather than by accident.\"\n- RIGHT (cut it): \"A tradeoff every one of these systems makes on purpose.\"\n- WRONG (genuine distinction, still tacked on): \"A vision paper, not a built system.\"\n- RIGHT (own sentence, stated as fact): \"This is a vision paper. The authors propose a design and an evaluation plan; they report no implementation or benchmark results.\"\n- WRONG (genuine distinction, still tacked on): \"Built into the database's own cluster, not bolted on as a separate service.\"\n- RIGHT (own sentence, stated as fact): \"The feature ships as a module inside the database's existing cluster nodes, deployed with the database itself.\"\n\nIf a case looks like it might fit but you're not sure which side of the test it falls on, don't decide alone: flag it to the user and work through it together. Report the sentence and your uncertainty rather than silently cutting or rewriting it.\n\n\n# rule4.md\n## Rule 4: Only standard US-keyboard characters\n\nEvery character in ordinary prose must be one a standard US keyboard can type directly. This bans em dashes, en dashes, curly/smart quotes, and ellipsis glyphs: none of them sit on a US keyboard, and each has a plain ASCII substitute. A foreign word or proper name that is only correctly spelled with a diacritic or non-Latin letter (café, naïve, Motörhead, Zoë) keeps its real spelling, that's not this violation, it's spelling the word right. Reaching for a typographic character in place of its ASCII equivalent in ordinary prose always is.\n\nThe em dash is the most common offender, and the one where the fix takes judgment. Use a semicolon, a period, a comma, or restructure. Choosing among\nthose is not mechanical: an em dash usually joins two independent clauses, and dropping in a\ncomma without checking clause structure produces a run-on -- specifically a comma splice,\ntwo independent clauses joined by only a comma. Two independent clauses take a semicolon or\na period; a trailing fragment (not its own clause) takes a comma; a sentence that would run\non either way gets split into two sentences instead.\n\n- WRONG: \"The policy -- which affected millions -- was later reversed.\"\n- RIGHT: \"The policy affected millions of devices. The company reversed it in December 2017.\"\n- WRONG (comma splice -- two independent clauses joined by a bare comma): \"The device\n  shipped in 2019, it failed within a year.\"\n- RIGHT: \"The device shipped in 2019; it failed within a year.\"\n\nThe rest are a plain character swap, no judgment call needed: an en dash used as a hyphen or a range separator becomes a hyphen (\"1990-2000\", not an en dash); a curly/smart quotation mark (the left/right single and double marks a word processor or AI tool inserts automatically) becomes a straight apostrophe (') or straight double quote (\"); a single ellipsis glyph becomes three separate period characters (\"...\").\n\n\n# rule5.md\n## Rule 5: No intensifiers\n\n\"Significantly\", \"dramatically\", \"extremely\" and their kin are placeholders for evidence. Replace the word with the number it was standing in for.\n\n- WRONG: \"The pricing was significantly higher than the cost of the part.\"\n- RIGHT: \"They charged $1,200 for a repair that needed a $5 chip.\"\n\nThe same padding shows up as a finality interjection (\"full stop,\" \"period,\" \"end of story,\" \"make no mistake,\" \"plain and simple\") tacked onto a claim that already carries its own exclusivity marker (\"only,\" \"never,\" \"always,\" \"exactly,\" \"must\"). The marker already did the emphatic work; the interjection repeats it without adding evidence.\n\n- WRONG: \"This is the only supported configuration, full stop.\"\n- RIGHT: \"This is the only supported configuration.\"\n\n\n# banned-words-phrases.md\n# Banned Words and Phrases\n\nThe single file to edit to change what's banned; `SKILL.md` and `ai-writing-detection.md` both point here instead of listing words themselves. Many of these are words in ordinary use well before \"AI slop\" became a category, so tune freely rather than treating the list as fixed.\n\nThree tiers, by strictness:\n\n- **NEVER**: zero tolerance, no context excuses it.\n- **Only when necessary**: allowed when the plain alternative would be less accurate or the context genuinely calls for it; default to avoiding.\n- **Prefer other words**: default to the alternative; the left-hand word isn't a hard violation if it's genuinely the most precise term, but that should be rare.\n\n## NEVER\n\n- Characters outside a standard US keyboard: em dashes, en dashes, curly/smart quotes, ellipsis glyphs. Replace with the ASCII equivalent (semicolon, period, comma, or restructure for an em dash; a hyphen for an en dash; a straight `'`/`\"` for a curly quote; three periods for an ellipsis). Exempt: a foreign word or proper name that is only correctly spelled with a diacritic or non-Latin letter (café, naïve) keeps it. Em dashes remain the single most reliable AI-writing tell.\n- Hallucinated markup artifacts: `oaicite`, `contentReference`, `grok_card`, `attributableIndex`, `turn0search0`. Presence of any of these means the text was pasted from an AI tool without editing.\n- Scare quotes on normal (non-quoted) words.\n- Parenthetical clarifications in headings.\n\n## Only when necessary\n\n- **Hedging markers:** may, might, could, potentially, probably, generally, usually, arguably, likely, \"I think\", \"I believe\", \"it seems\", \"it appears\", \"unclear\", \"remains to be seen\", \"further research is needed\". Fine when discussing genuinely pending legislation, ongoing litigation, or disputed facts. A blanket default of hedging on established facts is the violation. Threshold: more than 3 hedges in one paragraph, or more than 8 per 1,000 words in a declarative section (background, history, timeline), is a red flag.\n- **Metaphorical-vs-literal nouns:** ecosystem, landscape, navigate, tapestry, symphony, beacon, testament, realm. Fine in literal use (\"Arizona landscape\", \"lighthouse beacon\", \"last will and testament\"). Banned only in the inflated-metaphor use (\"the regulatory landscape\", \"a beacon of hope\", \"a testament to innovation\").\n- Text inside direct quotes, titles, verbatim source values, or code/config examples is exempt from every list on this page. These bans apply to your own prose, not material you're citing or reproducing.\n\n## Prefer other words\n\nNo suggested replacements below; pick a natural alternative in context rather than mechanically swapping in a provided synonym.\n\n**Verbs:** delve (into), leverage, utilize/utilise, facilitate, foster, bolster, underscore, unveil, navigate (metaphorical use), streamline, enhance, endeavour, ascertain, elucidate.\n\n**Adjectives and intensifiers:** robust, comprehensive, pivotal, crucial, vital, transformative, cutting-edge, groundbreaking, innovative, seamless, intricate, nuanced, multifaceted, holistic, extremely, dramatically, exceptionally, significantly, incredibly, remarkably, truly, absolutely, literally, quite, really, very, surely, certainly, clearly, definitely, essentially, fundamentally, interestingly, naturally, obviously, undoubtedly, ultimately, basically, actually.\n\n**Weasel constructions:** helps ensure, may be able to, can potentially.\n\n**Transitions and connectors:** furthermore, moreover, notwithstanding, that being said, at its core, to put it simply, it's worth mentioning that, in the realm of, in the landscape of, in today's [anything].\n\n**Opening, filler, and concluding phrases:** \"in today's fast-paced world\", \"in today's digital age\", \"in an era of\", \"in the ever-evolving landscape of\", \"it's important to note that\", \"let's delve into\", \"imagine a world where\", \"with that in mind\", \"this begs the question\", \"in conclusion\", \"to sum up\", \"in the final analysis\", \"all things considered\", \"at the end of the day\", \"by [doing X], you can [achieve Y]\", \"look no further\", \"our team of experts\".\n\n**Academic tells:** shed light on, pave the way for, a plethora of, paramount, prior to, subsequent to, in light of, in terms of, the fact that.\n\n**Structural phrasing** (restructure rather than reach for these): \"Whether you're a [X], [Y], or [Z]...\"; \"It's not just [X], it's also [Y]\"; \"It's not X, it's Y\" / \"It's not about X, it's about Y\" (more than two per 500 words is a high-confidence AI tell); starting a sentence with \"By [gerund]...\"; \"Think of [X] as [elaborate metaphor]\"; rhetorical colon abuse (\"Here's the thing:\", \"The bottom line:\").\n\n**Inflated-symbolism phrases** (2025-2026 corpus-frequency AI tells; hundreds of times more common in AI text than in human baselines): \"provide a valuable insight\", \"left an indelible mark\", \"play a significant role in shaping\", \"an unwavering commitment\", \"open a new avenue\", \"a stark reminder\", \"gain a comprehensive understanding\", \"serves as a testament\", \"watershed moment\", \"deeply rooted\".\n\n\nAnswer key rows:\n[{\"instance_id\": \"P1-R1-025\", \"rule\": 1, \"kind\": \"planted\", \"subtype\": \"fact_available\", \"polarity\": \"change\", \"expected_action\": \"replace_with_fact\", \"target_text\": \"streamlines containment\", \"fact_text\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change\"}, {\"instance_id\": \"P1-R5-011\", \"rule\": 5, \"kind\": \"planted\", \"subtype\": \"number_available\", \"polarity\": \"change\", \"expected_action\": \"replace_with_fact\", \"target_text\": \"significantly reduces mean time to contain\", \"fact_text\": \"fell from 18 hours to 3 hours\"}]\n\nComplete essay:\n**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**  \n\n*Word count: ≈ 1,620*\n\n---\n\n### Introduction  \n\nThe twenty‑first century has been defined by an unprecedented surge in digital connectivity. From cloud‑based services that power global commerce to the Internet‑of‑Things (IoT) devices that monitor our homes and cities, virtually every facet of modern life now depends on information systems. This reliance brings extraordinary benefits—speed, efficiency, and the democratization of knowledge—but it also creates a fertile ground for malicious actors. Cybersecurity, the practice of protecting computers, networks, and data from unauthorized access and damage, has evolved from a niche concern of IT specialists into a cornerstone of national security, corporate governance, and individual privacy. The stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay examines the contemporary threat landscape, the technical and organizational defenses that have emerged, the human element that often undermines even the strongest safeguards, and the future trends that will shape cybersecurity over the coming decade.\n\n---\n\n### The Expanding Threat Landscape  \n\nCyber threats have multiplied both in number and sophistication. The café POS vendor still ships terminals with a default password. Traditional malware—viruses, worms, and trojans—remain pervasive, but they are now augmented by ransomware that encrypts data and demands payment, supply‑chain attacks that infiltrate trusted vendors, and advanced persistent threats (APTs) that linger undetected for months. According to the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28 % of all confirmed breaches, while APT‑related incidents grew by 17 % year‑over‑year (Verizon, 2024). Nation‑state actors exploit zero‑day vulnerabilities to conduct espionage, while cybercriminals monetize stolen credentials through dark‑web marketplaces. The proliferation of IoT introduces additional vectors: insecure firmware, default passwords, and inadequate patch management affect everything from smart thermostats to industrial control systems, creating “attack surfaces” that are dramatically broader than in the past. Moreover, the rise of deep‑fake technology and AI‑driven social engineering campaigns amplifies the potency of phishing, blurring the line between technical and psychological attack methods.\n\n---\n\n### Technical Defenses: Layers of Protection  \n\nEffective cybersecurity rests on a defense‑in‑depth strategy that combines multiple technical controls. At the perimeter, next‑generation firewalls (NGFWs) integrate intrusion detection and prevention systems (IDPS) with application‑aware filtering, allowing administrators to block malicious traffic before it reaches internal assets. Within the network, micro‑segmentation isolates workloads, limiting lateral movement—a key tactic used by APT groups (Miller & Zhou, 2023). Endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine‑learning models to flag ransomware encryption patterns or credential‑dumping utilities. For data at rest and in transit, robust encryption (AES‑256, TLS 1.3) ensures confidentiality even if attackers bypass other controls. Identity‑and‑access management (IAM) solutions, especially those employing zero‑trust architectures, verify every user and device before granting access, moving away from the outdated “trusted internal network” paradigm. Finally, regular patch management—automated wherever possible—closes known vulnerabilities, a simple yet often neglected step that accounts for a large proportion of exploit success (Microsoft, 2022). Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree…\n\n---\n\n### Organizational Strategies and Governance  \n\nTechnical tools cannot succeed in isolation; they require clear policies, governance frameworks, and an organizational culture that prioritizes security. Many enterprises adopt internationally recognized standards such as ISO/IEC 27001 or the NIST Cybersecurity Framework (CSF) to structure risk assessment, incident response, and continuous improvement. These frameworks promote a systematic process: identify critical assets, protect them with appropriate controls, detect anomalies, respond promptly, and recover to a resilient state. The KPI dashboard now includes mean time to contain—the finance team uses that figure in the quarterly risk report. Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain. Board‑level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours. Effective governance also includes regular third‑party audits, penetration testing, and red‑team exercises that simulate realistic attacks. By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset that safeguards reputation and competitive advantage.\n\n---\n\n### The Human Factor: Insider Threats and Security Culture  \n\nDespite layered defenses, the weakest link in most security chains remains the human element. Insider threats—whether malicious, negligent, or coerced—account for an estimated 34 % of data breaches (Verizon, 2024). Phishing emails still achieve click‑through rates above 20 % in many industries, despite widespread awareness campaigns. Cognitive biases, such as the “availability heuristic,” lead employees to underestimate the likelihood of sophisticated attacks, while fatigue from constant security prompts can foster complacency. Addressing this requires more than periodic training; it demands a security‑first culture where safe behavior is reinforced through gamified learning, real‑time phishing simulations, and clear, accessible reporting channels. Psychological research suggests that positive reinforcement—recognizing employees who flag suspicious activity—outperforms punitive measures in sustaining vigilance (Anderson & Lee, 2022). Moreover, strict role‑based access controls reduce the damage potential of compromised credentials, limiting insiders to the minimum privileges required for their duties. Those privilege limits are imposed on purpose, rather than by accident. Positive reinforcement for reporters is now a standing practice, full stop.\n\n---\n\n### Legal, Ethical, and Regulatory Dimensions  \n\nCybersecurity operates within a complex web of legal and ethical obligations. Data‑protection regulations—GDPR in Europe, CCPA in California, and emerging frameworks in Asia‑Pacific—impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4 % of global revenue. Beyond compliance, ethical considerations arise around surveillance, algorithmic bias in threat‑detection AI, and the responsible disclosure of vulnerabilities. The “bug bounty” model, championed by companies like Google and Microsoft, incentivizes ethical hackers to report flaws rather than exploit them, fostering a collaborative security ecosystem. Conversely, governments grapple with the tension between national security imperatives and individual privacy, as illustrated by debates over encryption backdoors and mandatory data‑retention laws. A balanced approach—transparent legislation, multi‑stakeholder dialogue, and adherence to international norms—remains essential to prevent a fragmented regulatory landscape that could hinder cross‑border threat intelligence sharing.\n\n---\n\n### Incident Response and Resilience  \n\nWhen prevention fails, rapid detection and coordinated response become critical. Effective incident response (IR) follows a structured lifecycle: preparation, identification, containment, eradication, recovery, and post‑incident analysis. Central to preparation is an up‑to‑date IR plan, rehearsed through tabletop exercises and live drills that involve IT, legal, communications, and senior management. Automated security orchestration, automation, and response (SOAR) platforms accelerate containment by executing predefined playbooks—for example, isolating a compromised endpoint within seconds of detecting ransomware encryption. In the recovery phase, organizations must verify data integrity, restore backed‑up systems, and communicate transparently with stakeholders to preserve trust. Post‑incident lessons learned feed into continuous improvement, ensuring that the next attack encounters a more hardened environment. Building resilience also involves business continuity planning, diversified supply chains, and cyber‑insurance policies that mitigate financial fallout.\n\n---\n\n### Emerging Technologies: AI, Quantum Computing, and Blockchain  \n\nArtificial intelligence (AI) is a double‑edged sword in cybersecurity. On the defensive side, AI‑driven analytics can sift through massive log volumes, identifying subtle anomalies that evade rule‑based systems. Generative models now assist in automating threat‑intel synthesis and vulnerability prioritization. However, adversaries exploit the same technology to craft convincing deep‑fake phishing messages, automate credential‑stuffing attacks, and discover novel exploit chains. Quantum computing presents a longer‑term challenge: once large‑scale quantum processors become operational, they could break widely used public‑key algorithms (RSA, ECC). The cryptographic community is responding with post‑quantum cryptography (PQC) standards currently being finalized by NIST, which aim to replace vulnerable schemes with lattice‑based, hash‑based, or code‑based alternatives. Meanwhile, blockchain technologies offer promising use‑cases for immutable audit trails, decentralized identity management, and secure software‑supply‑chain provenance, though scalability and regulatory acceptance remain hurdles. Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\n\n---\n\n### The Role of International Collaboration  \n\nCyber threats disregard geopolitical borders, making international cooperation indispensable. Multilateral platforms such as the United Nations’ Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm‑setting, information exchange, and joint exercises. Regional arrangements like the European Union’s Cybersecurity Act and the Asia‑Pacific Economic Cooperation (APEC) Cybersecurity Strategy promote harmonized standards and rapid incident‑sharing mechanisms, such as Computer Emergency Response Teams (CERTs). Public‑private partnerships further bolster collective defense; the Cyber Threat Alliance and the Forum of Incident Response and Security Teams (FIRST) aggregate threat intelligence from diverse sectors, enabling rapid dissemination of Indicators of Compromise (IoCs). While geopolitical tensions sometimes impede data sharing, the growing recognition that cyber‑attacks threaten global stability has spurred unprecedented collaboration, a trend likely to intensify as states grapple with attribution challenges and the need for coordinated deterrence.\n\n---\n\n### Future Outlook and Recommendations  \n\nLooking ahead, cybersecurity will be shaped by three converging forces: hyper‑connectivity, autonomous systems, and an increasingly skilled adversary pool. The expansion of 5G and edge computing will generate billions of new endpoints, each a potential foothold for attackers. The 5G rollout added thousands of new radios—the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request. Autonomous vehicles, smart grids, and industrial robots will demand real‑time, AI‑assisted security controls that can react without human intervention. To meet these demands, organizations should adopt the following strategic recommendations:  \n\n1. **Zero‑Trust Architecture** – Treat every access request as untrusted, enforcing continuous verification, least‑privilege policies, and micro‑segmentation.  \n2. **Secure‑by‑Design Development** – Embed security testing (static and dynamic analysis, software‑bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.  \n3. **AI‑Enhanced Threat Intelligence** – Leverage federated learning and privacy‑preserving AI to share insights across enterprises without exposing proprietary data.  \n4. **Post‑Quantum Preparedness** – Begin migrating critical systems to PQC algorithms, prioritizing those that handle high‑value or long‑term sensitive data.  \n5. **Resilience Engineering** – Focus on rapid recovery capabilities—immutable backups, diversified cloud regions, and automated failover—to minimize operational disruption.  \n\nBy intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\n\n---\n\n### Conclusion  \n\nCybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms. The rapidly evolving threat landscape—characterized by ransomware, APTs, supply‑chain compromises, and AI‑augmented attacks—demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks. While emerging technologies such as AI, quantum‑resistant cryptography, and blockchain provide new avenues for defense, they also open fresh attack vectors that must be managed prudently. Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design, cultivate a culture that treats cyber hygiene as a shared responsibility, and maintain an adaptive posture that anticipates future challenges. In doing so, we safeguard not only data and devices but the trust that fuels innovation and progress in the digital age."
+      }
+    ],
+    "max_tokens": 12000,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "audit",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "verdicts",
+            "missed"
+          ],
+          "properties": {
+            "verdicts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "instance_id",
+                  "verdict",
+                  "reason",
+                  "correct_subtype",
+                  "correct_polarity",
+                  "correct_expected_action"
+                ],
+                "properties": {
+                  "instance_id": {
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "type": "string",
+                    "enum": [
+                      "confirm",
+                      "dispute"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string"
+                  },
+                  "correct_subtype": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "correct_polarity": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "correct_expected_action": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            },
+            "missed": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "rule",
+                  "subtype",
+                  "polarity",
+                  "expected_action",
+                  "target_text",
+                  "reason"
+                ],
+                "properties": {
+                  "rule": {
+                    "type": "integer"
+                  },
+                  "subtype": {
+                    "type": "string"
+                  },
+                  "polarity": {
+                    "type": "string",
+                    "enum": [
+                      "change",
+                      "keep",
+                      "flag"
+                    ]
+                  },
+                  "expected_action": {
+                    "type": "string",
+                    "enum": [
+                      "ascii_equivalent",
+                      "cut",
+                      "flag",
+                      "keep",
+                      "promote_to_sentence",
+                      "punct_comma",
+                      "punct_hyphen",
+                      "punct_semicolon_or_period",
+                      "punct_split",
+                      "punct_straight_quote",
+                      "punct_three_periods",
+                      "replace_with_fact"
+                    ]
+                  },
+                  "target_text": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "reasoning": {
+      "effort": "low"
+    }
+  },
+  "request_headers": {
+    "Content-Type": "application/json"
+  },
+  "response": {
+    "id": "gen-1791871036-0IdFduFQfzwnnujQ1moZ",
+    "object": "chat.completion",
+    "created": 1791871036,
+    "model": "openai/gpt-6.1-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"verdicts\": [\n    {\n      \"instance_id\": \"P1-R1-025\",\n      \"verdict\": \"confirm\",\n      \"reason\": \"The essay uses 'streamlines containment' in its own prose. 'Streamline' is discouraged under Rule 1, and the supplied fact directly measures containment speed: mean time to contain fell from 18 hours to 3 hours.\",\n      \"correct_subtype\": null,\n      \"correct_polarity\": null,\n      \"correct_expected_action\": null\n    },\n    {\n      \"instance_id\": \"P1-R5-011\",\n      \"verdict\": \"confirm\",\n      \"reason\": \"'Significantly' intensifies the claimed reduction in mean time to contain. The supplied change from 18 hours to 3 hours directly quantifies that reduction, supporting replacement with the fact under Rule 5.\",\n      \"correct_subtype\": null,\n      \"correct_polarity\": null,\n      \"correct_expected_action\": null\n    }\n  ],\n  \"missed\": []\n}",
+          "refusal": null,
+          "reasoning": "**Deciding on containment measures**\n\nI need to decide how to streamline the containment measures while confirming they're effective. It sounds like the user might be feeling trapped in this situation, so I should ensure my approach to containment is clear and directly measurable. The goal is to provide a concise output that addresses these needs. Keeping everything focused will be important to help the user navigate through this!",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "**Deciding on containment measures**\n\nI need to decide how to streamline the containment measures while confirming they're effective. It sounds like the user might be feeling trapped in this situation, so I should ensure my approach to containment is clear and directly measurable. The goal is to provide a concise output that addresses these needs. Keeping everything focused will be important to help the user navigate through this!",
+              "format": "openai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqzcg_uftnSqeZZxzL6kwIqmxt1LuV6sfpy_jw5MpYX5t24KqnJUGHyznqrVT1LS5mA_BDFYpi3MrqBuxDOqfNRcgQjHsEfj5H1Hrb288xgnO3W-fzR4B0a49qH5OSsIuPULmKwUM0E2XjceRYoP3ddjhDT5taPoXKMpgg3T5iOvLPHosVmk3wPk43MwGWJBL9JoKvQnPSGuBmJxQOnvLSsoapsv1kZ965k5X9zpJyh42VOZa1Cpvl8s1XMbK5PtNaYgNpSCK0ZlmZ7JPJJCYt3I1ZvjGgZhGGvpZEBzb8xKSuSL7IleIMaSTz0NFDalZq5f_bbRSEyB5xO6XSVl5g9w1n_YRAv15zlrZvkGeRHqQpGMjidcZ6kQJhPxW7qT1yK8CPBnG5pAIlDDmGFdfjRkDLEktqo7JqU9YNktMWlfWPp75cVNRhLg3kKbYpwqLfSz3QbBRE3tDIt3AhltsXCj_ZAFKkX_I33zk2hJfWX6wB84gMibh_QkUui97HJl_JcCN2Iyvli9jWTreYjkAJSQzAtORrHKO_vq56URBpsaJ7M6FHyvXKGob8RdmPI_dyyj7wA35KknPf8T_TML1I0_C0G4M6R4DTL_9E8RRNeKH0NTypKxcfoRli2Gf3-6OMrHDaPWS8MD15h-BUO5DKIjNu7V3W9EVuauMTFVEGn9u0r6nowqnhwKxmocC-LRX1hMlg5sXQVsLpeUDU6m_kkwVSoPyx8aSGX6c9aItQZzqJBesJymk-oMi1Z07A5AwqW3TfetTBVFoDoj8F9rzklpWegILBezUQnuN5QBhOrKwz9loRagsai3H_MCCqTR2kuRiPN_zf8Il_7b0ocPdB-45g5SzaHBnmSbxrn4pBR8yMrR14wE4oQAOBv58sbIRNtx_aVhOH3aL4Fe-bZaaIpMSjcj0a_PqGqNLZiIVKinulo_-z1V98cT2wskBiKnJ8CcNRM-OELvRm9gv_vMAS6kXOfMkMpo1qx5-jW7ju8MOb_XsId1BNR0aQBDcwvn529Mfb4ELXvupaM-4zJZ3-dqHV4PfhL-fRDPL8mk4-CMXJo_qZ64vjrFXL7BNECjSlH8QTeGhRuL0pvhInpDbLMd8QJxIDWXvg9kOxS7PkJlmYu00JAGp8qYZsZ11XJ6xz7d_9AZvaY2zzhXH9fq1g2iWvRWn_2BGIUSv2qoCyoTpj5Bxen6WSo8IdcbioQPWXzLS3laNIQnloyb7m6ig5NhNc7tU9z5fRrtTpbcJ_Q2sxUX9xG9AOYqGGdTtam2mVaTsXBW8h4Ks8K3CwTHpZ1LAHxb0RCMAXz5_KYTgRipPSoMTmKfmgdU9CPnEc-ir7GwcqHGNlfi7J3oDQ1VyyCBG9cZCEkeiUZQ671n3RKVPjXUzHrRG6N0i8web1EF4LrPY0p3aJbPBQe--C4z5kJHYW9gHjooXDAkNzqlkkby1BxTCwMLobVKyF-xYoEbYihqx6Csnp5Jm7rWHsYIKlQvghrFT7zDlKuRZn4bTDdo3lHsM8VR4OF66bQkb-7arRPfVAIXMIWDzHOyG7iYRxGcwHOMX8Jjts7uSO2imtyotMzpmqoTlRBUAPswRKfbk0tm3Rf5jQdtlOD1t8ClcAI1u4uRNyod9ipfHenGAZo7Ng233W4luO1xH9ZKEb_B0fLYaZ5XCo8XhPg3y-8nh3W0oNS2gMfYap4_Z_NbF5XzfSaH_jqjmH82StRFW1vnb69Uig81yo5m3PTt77VLqjMrVgqzF_AALigSfB7bDVKLjo1Wsu3IZXO8LI4WRccDkCW1TWlorX0YMAuZRHrm-MMqf5hwdkuX4pYTFvhUWTVQkmonJ1TIa6zknMzym1p-jbxrG3shQP1VSG4bLkHCgk4EKWNIjgdD-va2ZHAvAx-jybhZGeBbgFCkm2QvOrvyH8PDHpF6bxLhhaT8LcXEuC6r9UT17n_ZCmXH4YhEM78PhJoIauHrO3tYmgGdPCcKv3D8pm.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+              "format": "openai-responses-v1",
+              "id": "rs_040e6a5cae547813016acdc83d8cbc87d1a08bd18cbff7e419",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5863,
+      "completion_tokens": 251,
+      "total_tokens": 6114,
+      "cost": 0.017166,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5860,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.017166,
+        "upstream_inference_prompt_cost": 0.014656,
+        "upstream_inference_completions_cost": 0.00251
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 26,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

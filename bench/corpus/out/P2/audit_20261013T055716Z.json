@@ -1,0 +1,69 @@
+{
+  "verdicts": [
+    {
+      "instance_id": "P2-R1-019",
+      "verdict": "confirm",
+      "reason": "The target occurs in the essay, and the reduction from 8 percent to 3 percent directly quantifies the line losses described as significantly reduced.",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    },
+    {
+      "instance_id": "P2-R5-014",
+      "verdict": "confirm",
+      "reason": "The target occurs in the essay, and the fall from 12 minutes to 4 minutes directly measures the frequency-restoration duration described as significantly shortened.",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    }
+  ],
+  "missed": [],
+  "model": "openai/gpt-6.1-sol",
+  "usage": {
+    "prompt_tokens": 6985,
+    "completion_tokens": 149,
+    "total_tokens": 7134,
+    "cost": 0.018951,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6982,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018951,
+      "upstream_inference_prompt_cost": 0.017461,
+      "upstream_inference_completions_cost": 0.00149
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "cost_usd": 0.018951,
+  "audited_rows": [
+    {
+      "instance_id": "P2-R1-019",
+      "rule": 1,
+      "kind": "planted",
+      "subtype": "fact_available",
+      "polarity": "change",
+      "expected_action": "replace_with_fact",
+      "target_text": "significantly reduces line losses",
+      "fact_text": "from 8 percent to 3 percent"
+    },
+    {
+      "instance_id": "P2-R5-014",
+      "rule": 5,
+      "kind": "planted",
+      "subtype": "number_available",
+      "polarity": "change",
+      "expected_action": "replace_with_fact",
+      "target_text": "significantly shortens frequency restoration",
+      "fact_text": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes"
+    }
+  ],
+  "created": "20261013T055716Z"
+}

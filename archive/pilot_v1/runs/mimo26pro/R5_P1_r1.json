@@ -1,0 +1,75 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "5233e1c27685fdde42a175101b128c4ceccb88dc2f410bfb8f66c99d4134ca91",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:22:49.723603+00:00",
+  "duration_s": 20.762642364017665,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\",\"replacement\":\"creating attack surfaces that now span 30,458 incidents and 10,626 confirmed breaches in a single year's dataset\",\"reason\":\"Replaces the intensifier \u201cdramatically\u201d with the concrete scale the Verizon report documents.\"},{\"original\":\"Fail-closed is the only acceptable default for those checks, end of story.\",\"replacement\":\"Fail-closed is the only acceptable default for those checks.\",\"reason\":\"Removes the finality interjection \u201cend of story,\u201d which merely repeats the exclusivity already carried by \u201conly.\u201d\"},{\"original\":\"Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs.\",\"replacement\":\"Essential providers now face an incident-reporting clock of 24 hours, tighter than most internal SLAs.\",\"reason\":\"Replaces \u201csignificantly tighter\u201d with the actual 24-hour figure cited in the next sentence.\"},{\"original\":\"phishing remains significantly more effective than most annual awareness programs assume\",\"replacement\":\"phishing retains click-through rates above 20% despite annual awareness programs\",\"reason\":\"Replaces \u201csignificantly more effective\u201d with the concrete click-through figure the passage itself supplies.\"},{\"original\":\"Positive reinforcement for reporters is now a standing practice, full stop.\",\"replacement\":\"Positive reinforcement for reporters is now a standing practice.\",\"reason\":\"Removes the finality interjection \u201cfull stop\u201d tacked onto a claim that already asserts itself.\"}]}",
+  "edits": [
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "creating attack surfaces that now span 30,458 incidents and 10,626 confirmed breaches in a single year's dataset",
+      "reason": "Replaces the intensifier \u201cdramatically\u201d with the concrete scale the Verizon report documents."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "Removes the finality interjection \u201cend of story,\u201d which merely repeats the exclusivity already carried by \u201conly.\u201d"
+    },
+    {
+      "original": "Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs.",
+      "replacement": "Essential providers now face an incident-reporting clock of 24 hours, tighter than most internal SLAs.",
+      "reason": "Replaces \u201csignificantly tighter\u201d with the actual 24-hour figure cited in the next sentence."
+    },
+    {
+      "original": "phishing remains significantly more effective than most annual awareness programs assume",
+      "replacement": "phishing retains click-through rates above 20% despite annual awareness programs",
+      "reason": "Replaces \u201csignificantly more effective\u201d with the concrete click-through figure the passage itself supplies."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "Removes the finality interjection \u201cfull stop\u201d tacked onto a claim that already asserts itself."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 10499,
+    "output": 489,
+    "cache_read": 35456,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0051201366,
+  "tool_calls": [
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "2024 Verizon Data Breach Investigations Report total number of security incidents and confirmed breaches analyzed",
+        "objective": "Find exact Verizon DBIR 2024 incident and breach counts to replace intensifiers with evidence"
+      }
+    },
+    {
+      "name": "mcp__firecrawl_search",
+      "arguments": {
+        "query": "Verizon DBIR 2024 ransomware percentage of breaches 2024 advanced persistent threat incidents growth",
+        "objective": "Verify ransomware breach share and APT incident change in Verizon DBIR 2024"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r1",
+  "model_key": "mimo26pro",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2f163c46b415de01658de72ffc980aea1aedb5017514e40e825327b94be9b529",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:21:45.612985+00:00",
+  "duration_s": 10.064779456006363,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": null, \"reason\": \"The trailer pairs \\\"on purpose\\\" with its ordinary-knowledge antonym \\\"by accident,\\\" but the clause as a whole looks like an AI-injected artifact, so I'm flagging rather than silently cutting.\"}, {\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": null, \"reason\": \"\\\"Fail-closed vs. open\\\" is a genuine technical distinction, but the sentence is corrupted with a tacked-on trailer plus a redundant restatement, so I'm flagging it for the author rather than rewriting under this rule alone.\"}]}",
+  "edits": [
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": null,
+      "reason": "The trailer pairs \"on purpose\" with its ordinary-knowledge antonym \"by accident,\" but the clause as a whole looks like an AI-injected artifact, so I'm flagging rather than silently cutting."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": null,
+      "reason": "\"Fail-closed vs. open\" is a genuine technical distinction, but the sentence is corrupted with a tacked-on trailer plus a redundant restatement, so I'm flagging it for the author rather than rewriting under this rule alone."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 3278,
+    "output": 164,
+    "cache_read": 16256,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0016271316,
+  "tool_calls": []
+}

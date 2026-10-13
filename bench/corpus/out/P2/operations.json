@@ -11,17 +11,6 @@
     "new_text": " Robust control keeps voltage inside limits when plant parameters are uncertain."
   },
   {
-    "subtype": "fact_available",
-    "polarity": "change",
-    "expected_action": "replace_with_fact",
-    "target_text": "This sampling rate is comprehensive relative to legacy SCADA scans.",
-    "fact_text": "30–120 samples/second",
-    "notes": "Replace the vague banned adjective with the PMU rate already stated in the essay.",
-    "anchor_text": "granting operators unprecedented visibility of grid dynamics.",
-    "op": "insert_after",
-    "new_text": " This sampling rate is comprehensive relative to legacy SCADA scans."
-  },
-  {
     "subtype": "loadbearing",
     "polarity": "keep",
     "expected_action": "keep",
@@ -121,14 +110,25 @@
     "new_text": " Islanded operation is the only backup path for those hospitals, end of story."
   },
   {
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly reduces line losses",
+    "fact_text": "from 8 percent to 3 percent",
+    "notes": "Banned intensifier 'significantly' stands in for the measured drop in corridor line losses from 8 percent to 3 percent; swapping in that measured change keeps the sentence true.",
+    "anchor_text": "interconnection of asynchronous grids.",
+    "op": "insert_after",
+    "new_text": " The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent."
+  },
+  {
     "subtype": "number_available",
     "polarity": "change",
     "expected_action": "replace_with_fact",
-    "target_text": "significantly below",
-    "fact_text": "15%",
-    "notes": "Intensifier stands in for the 15% interconnection figure already given; replace with that fact.",
-    "anchor_text": "linking offshore wind farms in the North Sea with demand centers in Germany, the Netherlands, and the United Kingdom.",
+    "target_text": "significantly shortens frequency restoration",
+    "fact_text": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes",
+    "notes": "Intensifier pads a duration already measured as frequency restoration falling from 12 minutes to 4 minutes; replace the padded claim with that measured change.",
+    "anchor_text": "Hydro plants in Québec still use those same synchronous machines for frequency control.",
     "op": "insert_after",
-    "new_text": " Several member states remain significantly below the 15% interconnection target."
+    "new_text": " Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration."
   }
 ]

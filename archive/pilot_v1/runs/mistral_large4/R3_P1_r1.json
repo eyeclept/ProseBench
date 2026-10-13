@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r1",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2f163c46b415de01658de72ffc980aea1aedb5017514e40e825327b94be9b529",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:22:55.059741+00:00",
+  "duration_s": 6.6216895949910395,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"The trailer 'rather than open' uses the ordinary-knowledge antonym of fail-closed (closed/open), which virtually anyone in the field already knows; it adds nothing and should be cut per Rule 3.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"Those privilege limits are imposed on purpose.\",\n      \"reason\": \"The trailer 'rather than by accident' uses the ordinary-knowledge antonym of on purpose (on purpose/by accident), which virtually anyone would already know; it adds nothing and should be cut per Rule 3.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The trailer 'rather than open' uses the ordinary-knowledge antonym of fail-closed (closed/open), which virtually anyone in the field already knows; it adds nothing and should be cut per Rule 3."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "The trailer 'rather than by accident' uses the ordinary-knowledge antonym of on purpose (on purpose/by accident), which virtually anyone would already know; it adds nothing and should be cut per Rule 3."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 19256,
+    "output": 184,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01347864,
+  "tool_calls": []
+}

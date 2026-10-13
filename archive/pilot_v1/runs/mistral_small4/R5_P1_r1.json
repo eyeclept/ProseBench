@@ -1,0 +1,50 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "mistral_small4",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "5233e1c27685fdde42a175101b128c4ceccb88dc2f410bfb8f66c99d4134ca91",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:22:51.095900+00:00",
+  "duration_s": 10.707673867000267,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Fail-closed is the only acceptable default for those checks.\", \"reason\": \"Removed the redundant interjection 'end of story' that does not add evidence.\"},\n    {\"original\": \"Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.\", \"replacement\": \"Those click-through rates above 20% show phishing remains more effective than most annual awareness programs assume.\", \"reason\": \"Removed the intensifier 'significantly' and replaced it with evidence-based phrasing.\"},\n    {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\", \"reason\": \"Removed the redundant interjection 'full stop' that does not add evidence.\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "Removed the redundant interjection 'end of story' that does not add evidence."
+    },
+    {
+      "original": "Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.",
+      "replacement": "Those click-through rates above 20% show phishing remains more effective than most annual awareness programs assume.",
+      "reason": "Removed the intensifier 'significantly' and replaced it with evidence-based phrasing."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "Removed the redundant interjection 'full stop' that does not add evidence."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 3140,
+    "output": 205,
+    "cache_read": 16560,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0008424,
+  "tool_calls": []
+}

@@ -12,17 +12,6 @@
   },
   {
     "passage": "P2",
-    "rule": 1,
-    "kind": "planted",
-    "subtype": "fact_available",
-    "polarity": "change",
-    "expected_action": "replace_with_fact",
-    "target_text": "This sampling rate is comprehensive relative to legacy SCADA scans.",
-    "fact_text": "30–120 samples/second",
-    "notes": "Replace the vague banned adjective with the PMU rate already stated in the essay."
-  },
-  {
-    "passage": "P2",
     "rule": 2,
     "kind": "planted",
     "subtype": "loadbearing",
@@ -122,13 +111,24 @@
   },
   {
     "passage": "P2",
+    "rule": 1,
+    "kind": "planted",
+    "subtype": "fact_available",
+    "polarity": "change",
+    "expected_action": "replace_with_fact",
+    "target_text": "significantly reduces line losses",
+    "fact_text": "from 8 percent to 3 percent",
+    "notes": "Banned intensifier 'significantly' stands in for the measured drop in corridor line losses from 8 percent to 3 percent; swapping in that measured change keeps the sentence true."
+  },
+  {
+    "passage": "P2",
     "rule": 5,
     "kind": "planted",
     "subtype": "number_available",
     "polarity": "change",
     "expected_action": "replace_with_fact",
-    "target_text": "significantly below",
-    "fact_text": "15%",
-    "notes": "Intensifier stands in for the 15% interconnection figure already given; replace with that fact."
+    "target_text": "significantly shortens frequency restoration",
+    "fact_text": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes",
+    "notes": "Intensifier pads a duration already measured as frequency restoration falling from 12 minutes to 4 minutes; replace the padded claim with that measured change."
   }
 ]

@@ -50,8 +50,10 @@ args=(run --rm --interactive --network host --workdir /workspace
 if [[ -n "${OPENROUTER_API_KEY:-}" ]]; then
   args+=(--env OPENROUTER_API_KEY)
 fi
+# --max-time bounds Firecrawl tool loops (pilot: 155 calls, 1390s on one Rule 3 run); normal runs finish under 130s.
 podman "${args[@]}" "$PROSEBENCH_IMAGE_DIGEST" \
   --model "$model" --thinking "$thinking" \
   --system-prompt-template /workspace/bench/prompts/system.md \
   --no-tools --no-extensions --no-skills --no-rules --no-title \
+  --max-time 600 \
   --no-session --mode json -p < "$prompt"

@@ -20,7 +20,7 @@ INSTANCE_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "
 RUN_FIELDS = ("run_id", "model_key", "endpoint_model", "rule", "passage", "repeat", "framing",
               "routed", "route_reason", "thinking", "cost_usd", "usage_input", "usage_output",
               "usage_cache_read", "usage_cache_write", "usage_reasoning", "duration_s",
-              "parse_error", "invalid_edit_count", "n_tool_calls", "firecrawl_called",
+              "parse_error", "invalid_edit_count", "malformed_edit_count", "n_tool_calls", "firecrawl_called",
               "TP", "FN", "FP", "TN", "precision", "recall", "collateral_count",
               "other_rule_instance", "uncatalogued_text", "nonkeyboard_remaining",
               "fabricated_numbers", "ordinary_cut", "field_specific_promoted", "ambiguous_flagged")
@@ -118,6 +118,7 @@ def score_one(run: dict, all_rows: list[dict], passage: str,
     for key in ("input", "output", "cache_read", "cache_write", "reasoning"):
         run_row[f"usage_{key}"] = usage.get(key, 0)
     run_row.update(parse_error=failed, invalid_edit_count=sum(span.status == "invalid" for span in applied.edit_spans),
+                   malformed_edit_count=len(run.get("malformed_edits") or []),
                    n_tool_calls=len(tool_calls), firecrawl_called=any("firecrawl" in str(call.get("name", "")).lower()
                                                                 for call in tool_calls))
     for key in ("TP", "FN", "FP", "TN"):

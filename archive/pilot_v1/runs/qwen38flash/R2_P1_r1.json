@@ -1,0 +1,65 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "ec230c4b424f801320061e33f69f929a0254257af4ee71152b975380d078ed44",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:23:06.911771+00:00",
+  "duration_s": 17.573659234010847,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "Looking at the passage for instances of padded negation/restatement where a negative clause is windup filler, or definition doubling.\n\n**Instance 1:** \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\"\nDelete the first half's padding: \"rather than open\" adds nothing; and the second sentence restates the first with no new fact. Combined fix per rule \u2192 keep one positive statement.\n\n**Instance 2:** \"Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs. The NIS Directive still sets that clock at 24 hours.\" \u2014 then later \"the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.\" This is restatement/doubling, but it's across paragraphs and the second carries attribution detail. Actually the rule targets negative-clause windup and definition doubling via analogy/synonym. The NIS mention here repeats the same fact twice in the same paragraph. Flag as doubling: delete the redundant sentence.\n\n**Instance 3:** \"Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.\" Restates prior sentence with no new fact. Delete.\n\n**Instance 4:** \"Those privilege limits are imposed on purpose, rather than by accident.\" Negative-half windup; deleting leaves nothing checkable added \u2014 actually the whole sentence is windup (\"imposed on purpose rather than by accident\" adds nothing to the prior sentence). Delete.\n\n**Instance 5:** \"Positive reinforcement for reporters is now a standing practice, full stop.\" Doubles the earlier sentence about positive reinforcement outperforming punitive measures. Delete.\n\n**Instance 6 (Conclusion):** \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline...\" Classic \"not merely X; it is Y.\" Positive half alone states the claim. \u2192 \"Cybersecurity today is a multidimensional discipline...\"\n\n**Instance 7:** \"The caf\u00e9 POS vendor still ships terminals with a default password.\" Not a negation pattern; leave.\n\n**Instance 8:** \"The EDR timeline ends at a truncated process tree\u2026\" fragment, not this rule. Leave.\n\n{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"The \\\"rather than open\\\" clause and the follow-up sentence restate the same claim with nothing lost when deleted.\"}, {\"original\": \"Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs. The NIS Directive still sets that clock at 24 hours. \", \"replacement\": \"\", \"reason\": \"Definition doubling: the 24-hour NIS requirement is stated again verbatim two sentences later, so the earlier restatement adds no new fact.\"}, {\"original\": \" Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.\", \"replacement\": \"\", \"reason\": \"Restates the preceding sentence's statistic without adding any checkable new fact.\"}, {\"original\": \" Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"Negative-half windup: deleting the clause loses nothing, since the prior sentence already states the limits exist.\"}, {\"original\": \" Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"\", \"reason\": \"Doubles the previous sentence's point about positive reinforcement, adding no new information.\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"\\\"Not merely X; it is Y\\\" construction where the positive half alone carries the claim.\"}]}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The \"rather than open\" clause and the follow-up sentence restate the same claim with nothing lost when deleted."
+    },
+    {
+      "original": "Essential providers now face a significantly tighter incident-reporting clock than most internal SLAs. The NIS Directive still sets that clock at 24 hours. ",
+      "replacement": "",
+      "reason": "Definition doubling: the 24-hour NIS requirement is stated again verbatim two sentences later, so the earlier restatement adds no new fact."
+    },
+    {
+      "original": " Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.",
+      "replacement": "",
+      "reason": "Restates the preceding sentence's statistic without adding any checkable new fact."
+    },
+    {
+      "original": " Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "Negative-half windup: deleting the clause loses nothing, since the prior sentence already states the limits exist."
+    },
+    {
+      "original": " Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "Doubles the previous sentence's point about positive reinforcement, adding no new information."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "\"Not merely X; it is Y\" construction where the positive half alone carries the claim."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 3295,
+    "output": 824,
+    "cache_read": 16384,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.001143674,
+  "tool_calls": []
+}

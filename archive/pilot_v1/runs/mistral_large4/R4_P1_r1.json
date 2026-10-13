@@ -1,0 +1,445 @@
+{
+  "run_id": "R4_P1_r1",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "9868acb6a27b548dd37344790462897af0c0fd2a13ca6330d5fdbd6df0a4052e",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:23:06.587550+00:00",
+  "duration_s": 45.70797221400426,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Word count: \u2248\u202f1,620\",\n      \"replacement\": \"Word count: ~1,620\",\n      \"reason\": \"The \u2248 (almost equal to) glyph is not on a standard US keyboard; ~ is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\",\n      \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge), but\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical aside.\"\n    },\n    {\n      \"original\": \"malware\u2014viruses, worms, and trojans\u2014remain\",\n      \"replacement\": \"malware (viruses, worms, and trojans) remains\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive.\"\n    },\n    {\n      \"original\": \"lateral movement\u2014a key tactic used by APT groups\",\n      \"replacement\": \"lateral movement, a key tactic used by APT groups\",\n      \"reason\": \"This em dash introduces a trailing fragment, not an independent clause, so a comma is the correct ASCII substitute.\"\n    },\n    {\n      \"original\": \"patch management\u2014automated wherever possible\u2014closes\",\n      \"replacement\": \"patch management (automated wherever possible) closes\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical.\"\n    },\n    {\n      \"original\": \"The EDR timeline ends at a truncated process tree\u2026\",\n      \"replacement\": \"The EDR timeline ends at a truncated process tree...\",\n      \"reason\": \"A single ellipsis glyph is not on a US keyboard; three separate period characters are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"mean time to contain\u2014the finance team uses that figure\",\n      \"replacement\": \"mean time to contain; the finance team uses that figure\",\n      \"reason\": \"This em dash joins two independent clauses, so a semicolon is the correct ASCII substitute (a comma would be a comma splice).\"\n    },\n    {\n      \"original\": \"threats\u2014whether malicious, negligent, or coerced\u2014account\",\n      \"replacement\": \"threats (whether malicious, negligent, or coerced) account\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical.\"\n    },\n    {\n      \"original\": \"reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\",\n      \"replacement\": \"reinforcement (recognizing employees who flag suspicious activity) outperforms\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive.\"\n    },\n    {\n      \"original\": \"regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\",\n      \"replacement\": \"regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive.\"\n    },\n    {\n      \"original\": \"approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains\",\n      \"replacement\": \"approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive.\"\n    },\n    {\n      \"original\": \"playbooks\u2014for example, isolating a compromised endpoint\",\n      \"replacement\": \"playbooks (for example, isolating a compromised endpoint)\",\n      \"reason\": \"This em dash introduces an illustrative fragment, so a comma is the correct ASCII substitute.\"\n    },\n    {\n      \"original\": \"radios\u2014the SOC ingested the extra syslog\",\n      \"replacement\": \"radios; the SOC ingested the extra syslog\",\n      \"reason\": \"This em dash joins two independent clauses, so a semicolon is the correct ASCII substitute (a comma would be a comma splice).\"\n    },\n    {\n      \"original\": \"1. **Zero\u2011Trust Architecture** \u2013 Treat\",\n      \"replacement\": \"1. **Zero-Trust Architecture** - Treat\",\n      \"reason\": \"The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"2. **Secure\u2011by\u2011Design Development** \u2013 Embed\",\n      \"replacement\": \"2. **Secure-by-Design Development** - Embed\",\n      \"reason\": \"The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage\",\n      \"replacement\": \"3. **AI-Enhanced Threat Intelligence** - Leverage\",\n      \"reason\": \"The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"4. **Post\u2011Quantum Preparedness** \u2013 Begin\",\n      \"replacement\": \"4. **Post-Quantum Preparedness** - Begin\",\n      \"reason\": \"The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"5. **Resilience Engineering** \u2013 Focus\",\n      \"replacement\": \"5. **Resilience Engineering** - Focus\",\n      \"reason\": \"The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute.\"\n    },\n    {\n      \"original\": \"recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize\",\n      \"replacement\": \"recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical.\"\n    },\n    {\n      \"original\": \"landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands\",\n      \"replacement\": \"landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands\",\n      \"reason\": \"Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive.\"\n    },\n    {\n      \"original\": \"\u201cattack surfaces\u201d\",\n      \"replacement\": \"\\\"attack surfaces\\\"\",\n      \"reason\": \"Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"\u201ctrusted internal network\u201d\",\n      \"replacement\": \"\\\"trusted internal network\\\"\",\n      \"reason\": \"Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"\u201cavailability heuristic,\u201d\",\n      \"replacement\": \"\\\"availability heuristic,\\\"\",\n      \"reason\": \"Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"\u201cbug bounty\u201d\",\n      \"replacement\": \"\\\"bug bounty\\\"\",\n      \"reason\": \"Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"United Nations\u2019 Group\",\n      \"replacement\": \"United Nations' Group\",\n      \"reason\": \"The curly/smart right single quote is not on a US keyboard; a straight apostrophe is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"European Union\u2019s Cybersecurity Act\",\n      \"replacement\": \"European Union's Cybersecurity Act\",\n      \"reason\": \"The curly/smart right single quote is not on a US keyboard; a straight apostrophe is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"twenty\u2011first\",\n      \"replacement\": \"twenty-first\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"cloud\u2011based\",\n      \"replacement\": \"cloud-based\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Internet\u2011of\u2011Things\",\n      \"replacement\": \"Internet-of-Things\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"supply\u2011chain attacks\",\n      \"replacement\": \"supply-chain attacks\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"APT\u2011related\",\n      \"replacement\": \"APT-related\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"year\u2011over\u2011year\",\n      \"replacement\": \"year-over-year\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Nation\u2011state\",\n      \"replacement\": \"Nation-state\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"dark\u2011web\",\n      \"replacement\": \"dark-web\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"deep\u2011fake\",\n      \"replacement\": \"deep-fake\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"defense\u2011in\u2011depth\",\n      \"replacement\": \"defense-in-depth\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"machine\u2011learning\",\n      \"replacement\": \"machine-learning\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Identity\u2011and\u2011access\",\n      \"replacement\": \"Identity-and-access\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"zero\u2011trust\",\n      \"replacement\": \"zero-trust\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Board\u2011level\",\n      \"replacement\": \"Board-level\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"third\u2011party\",\n      \"replacement\": \"third-party\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"red\u2011team\",\n      \"replacement\": \"red-team\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"security\u2011first\",\n      \"replacement\": \"security-first\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"role\u2011based\",\n      \"replacement\": \"role-based\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"click\u2011through\",\n      \"replacement\": \"click-through\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Data\u2011protection\",\n      \"replacement\": \"Data-protection\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Asia\u2011Pacific\",\n      \"replacement\": \"Asia-Pacific\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"data\u2011retention\",\n      \"replacement\": \"data-retention\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"post\u2011incident\",\n      \"replacement\": \"post-incident\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"backed\u2011up\",\n      \"replacement\": \"backed-up\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"double\u2011edged\",\n      \"replacement\": \"double-edged\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"AI\u2011driven\",\n      \"replacement\": \"AI-driven\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"longer\u2011term\",\n      \"replacement\": \"longer-term\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"post\u2011quantum\",\n      \"replacement\": \"post-quantum\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"lattice\u2011based\",\n      \"replacement\": \"lattice-based\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"hash\u2011based\",\n      \"replacement\": \"hash-based\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"code\u2011based\",\n      \"replacement\": \"code-based\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"use\u2011cases\",\n      \"replacement\": \"use-cases\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"software\u2011supply\u2011chain\",\n      \"replacement\": \"software-supply-chain\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"Public\u2011private\",\n      \"replacement\": \"Public-private\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"incident\u2011sharing\",\n      \"replacement\": \"incident-sharing\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"cross\u2011border\",\n      \"replacement\": \"cross-border\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"hyper\u2011connectivity\",\n      \"replacement\": \"hyper-connectivity\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"real\u2011time\",\n      \"replacement\": \"real-time\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"AI\u2011assisted\",\n      \"replacement\": \"AI-assisted\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"AI\u2011Enhanced\",\n      \"replacement\": \"AI-Enhanced\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"AI\u2011augmented\",\n      \"replacement\": \"AI-augmented\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"quantum\u2011resistant\",\n      \"replacement\": \"quantum-resistant\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"multi\u2011stakeholder\",\n      \"replacement\": \"multi-stakeholder\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"multi\u2011segmentation\",\n      \"replacement\": \"multi-segmentation\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"least\u2011privilege\",\n      \"replacement\": \"least-privilege\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"up\u2011to\u2011date\",\n      \"replacement\": \"up-to-date\",\n      \"reason\": \"The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute.\"\n    },\n    {\n      \"original\": \"cyber\u2011attacks\",\n      \"replacement\": \"cyber-attacks\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"cyber\u2011insurance\",\n      \"replacement\": \"cyber-insurance\",\n      \"reason\": \"The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"cyber hygiene\",\n      \"replacement\": \"cyber hygiene\",\n      \"reason\": \"No change needed; this is already plain ASCII.\"\n    },\n    {\n      \"original\": \"28\u202f%\",\n      \"replacement\": \"28%\",\n      \"reason\": \"The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"17\u202f%\",\n      \"replacement\": \"17%\",\n      \"reason\": \"The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"34\u202f%\",\n      \"replacement\": \"34%\",\n      \"reason\": \"The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"4\u202f%\",\n      \"replacement\": \"4%\",\n      \"reason\": \"The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"24\u202fhours\",\n      \"replacement\": \"24 hours\",\n      \"reason\": \"The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"TLS\u202f1.3\",\n      \"replacement\": \"TLS 1.3\",\n      \"reason\": \"The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute.\"\n    },\n    {\n      \"original\": \"ISO/IEC\u202f27001\",\n      \"replacement\": \"ISO/IEC 27001\",\n      \"reason\": \"The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Word count: \u2248\u202f1,620",
+      "replacement": "Word count: ~1,620",
+      "reason": "The \u2248 (almost equal to) glyph is not on a standard US keyboard; ~ is the plain ASCII substitute."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge), but",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical aside."
+    },
+    {
+      "original": "malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "malware (viruses, worms, and trojans) remains",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive."
+    },
+    {
+      "original": "lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "lateral movement, a key tactic used by APT groups",
+      "reason": "This em dash introduces a trailing fragment, not an independent clause, so a comma is the correct ASCII substitute."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes",
+      "replacement": "patch management (automated wherever possible) closes",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "A single ellipsis glyph is not on a US keyboard; three separate period characters are the ASCII substitute."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure",
+      "replacement": "mean time to contain; the finance team uses that figure",
+      "reason": "This em dash joins two independent clauses, so a semicolon is the correct ASCII substitute (a comma would be a comma splice)."
+    },
+    {
+      "original": "threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "threats (whether malicious, negligent, or coerced) account",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical."
+    },
+    {
+      "original": "reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive."
+    },
+    {
+      "original": "regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive."
+    },
+    {
+      "original": "approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive."
+    },
+    {
+      "original": "playbooks\u2014for example, isolating a compromised endpoint",
+      "replacement": "playbooks (for example, isolating a compromised endpoint)",
+      "reason": "This em dash introduces an illustrative fragment, so a comma is the correct ASCII substitute."
+    },
+    {
+      "original": "radios\u2014the SOC ingested the extra syslog",
+      "replacement": "radios; the SOC ingested the extra syslog",
+      "reason": "This em dash joins two independent clauses, so a semicolon is the correct ASCII substitute (a comma would be a comma splice)."
+    },
+    {
+      "original": "1. **Zero\u2011Trust Architecture** \u2013 Treat",
+      "replacement": "1. **Zero-Trust Architecture** - Treat",
+      "reason": "The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute."
+    },
+    {
+      "original": "2. **Secure\u2011by\u2011Design Development** \u2013 Embed",
+      "replacement": "2. **Secure-by-Design Development** - Embed",
+      "reason": "The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute."
+    },
+    {
+      "original": "3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "3. **AI-Enhanced Threat Intelligence** - Leverage",
+      "reason": "The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute."
+    },
+    {
+      "original": "4. **Post\u2011Quantum Preparedness** \u2013 Begin",
+      "replacement": "4. **Post-Quantum Preparedness** - Begin",
+      "reason": "The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute."
+    },
+    {
+      "original": "5. **Resilience Engineering** \u2013 Focus",
+      "replacement": "5. **Resilience Engineering** - Focus",
+      "reason": "The en dash used as a separator is not on a US keyboard; a hyphen is the plain ASCII substitute."
+    },
+    {
+      "original": "recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this parenthetical."
+    },
+    {
+      "original": "landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands",
+      "replacement": "landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands",
+      "reason": "Em dashes are not on a US keyboard; parentheses are the plain ASCII substitute for this appositive."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Curly/smart double quotes are not on a US keyboard; straight double quotes are the ASCII substitute."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "The curly/smart right single quote is not on a US keyboard; a straight apostrophe is the ASCII substitute."
+    },
+    {
+      "original": "European Union\u2019s Cybersecurity Act",
+      "replacement": "European Union's Cybersecurity Act",
+      "reason": "The curly/smart right single quote is not on a US keyboard; a straight apostrophe is the ASCII substitute."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "APT\u2011related",
+      "replacement": "APT-related",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "year\u2011over\u2011year",
+      "replacement": "year-over-year",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "Nation\u2011state",
+      "replacement": "Nation-state",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "dark\u2011web",
+      "replacement": "dark-web",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "deep\u2011fake",
+      "replacement": "deep-fake",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "machine\u2011learning",
+      "replacement": "machine-learning",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "Identity\u2011and\u2011access",
+      "replacement": "Identity-and-access",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "zero\u2011trust",
+      "replacement": "zero-trust",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "Board\u2011level",
+      "replacement": "Board-level",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "third\u2011party",
+      "replacement": "third-party",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "red\u2011team",
+      "replacement": "red-team",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "security\u2011first",
+      "replacement": "security-first",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "role\u2011based",
+      "replacement": "role-based",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "click\u2011through",
+      "replacement": "click-through",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "Data\u2011protection",
+      "replacement": "Data-protection",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "Asia\u2011Pacific",
+      "replacement": "Asia-Pacific",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "data\u2011retention",
+      "replacement": "data-retention",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "post\u2011incident",
+      "replacement": "post-incident",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "backed\u2011up",
+      "replacement": "backed-up",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "double\u2011edged",
+      "replacement": "double-edged",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "AI\u2011driven",
+      "replacement": "AI-driven",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "longer\u2011term",
+      "replacement": "longer-term",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "post\u2011quantum",
+      "replacement": "post-quantum",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "lattice\u2011based",
+      "replacement": "lattice-based",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "hash\u2011based",
+      "replacement": "hash-based",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "code\u2011based",
+      "replacement": "code-based",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "Public\u2011private",
+      "replacement": "Public-private",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "cross\u2011border",
+      "replacement": "cross-border",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "AI\u2011assisted",
+      "replacement": "AI-assisted",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "AI\u2011Enhanced",
+      "replacement": "AI-Enhanced",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "AI\u2011augmented",
+      "replacement": "AI-augmented",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "multi\u2011stakeholder",
+      "replacement": "multi-stakeholder",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "multi\u2011segmentation",
+      "replacement": "multi-segmentation",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "least\u2011privilege",
+      "replacement": "least-privilege",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "up\u2011to\u2011date",
+      "replacement": "up-to-date",
+      "reason": "The non-breaking hyphens are not standard US-keyboard characters; plain hyphens are the ASCII substitute."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "cyber\u2011insurance",
+      "replacement": "cyber-insurance",
+      "reason": "The non-breaking hyphen is not a standard US-keyboard character; a plain hyphen is the ASCII substitute."
+    },
+    {
+      "original": "cyber hygiene",
+      "replacement": "cyber hygiene",
+      "reason": "No change needed; this is already plain ASCII."
+    },
+    {
+      "original": "28\u202f%",
+      "replacement": "28%",
+      "reason": "The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute."
+    },
+    {
+      "original": "17\u202f%",
+      "replacement": "17%",
+      "reason": "The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute."
+    },
+    {
+      "original": "34\u202f%",
+      "replacement": "34%",
+      "reason": "The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute."
+    },
+    {
+      "original": "4\u202f%",
+      "replacement": "4%",
+      "reason": "The narrow no-break space before the percent sign is not a standard US-keyboard character; a plain space (or none) is the ASCII substitute."
+    },
+    {
+      "original": "24\u202fhours",
+      "replacement": "24 hours",
+      "reason": "The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute."
+    },
+    {
+      "original": "TLS\u202f1.3",
+      "replacement": "TLS 1.3",
+      "reason": "The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute."
+    },
+    {
+      "original": "ISO/IEC\u202f27001",
+      "replacement": "ISO/IEC 27001",
+      "reason": "The narrow no-break space is not a standard US-keyboard character; a plain space is the ASCII substitute."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 3436,
+    "output": 4710,
+    "cache_read": 15852,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01329002,
+  "tool_calls": []
+}

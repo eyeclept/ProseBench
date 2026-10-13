@@ -1,0 +1,70 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "mistral_large4",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "ec230c4b424f801320061e33f69f929a0254257af4ee71152b975380d078ed44",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "a59c8a3ce508fb9280bfa26c5176d4959071f462de51f1e160f3fa51a9f42d0e",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:22:43.194548+00:00",
+  "duration_s": 11.850581114005763,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"The second sentence restates the first with no new information; deleting the restatement loses nothing checkable.\"\n    },\n    {\n      \"original\": \"The NIS Directive still sets that clock at 24 hours.\",\n      \"replacement\": \"\",\n      \"reason\": \"This sentence duplicates the 24-hour reporting requirement already stated in the following sentence about the NIS Directive, adding no new fact.\"\n    },\n    {\n      \"original\": \"Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.\",\n      \"replacement\": \"\",\n      \"reason\": \"This restates the claim of the preceding sentence (phishing achieves click-through rates above 20% despite awareness campaigns) without adding new information.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is padded negation restating that role-based access controls are deliberate, adding no new checkable fact beyond the preceding sentence.\"\n    },\n    {\n      \"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"This restates the preceding sentence's claim about positive reinforcement for employees who flag suspicious activity, adding no new information.\"\n    },\n    {\n      \"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is an inserted anecdote that restates operational neglect already implied by the surrounding text about billions of new endpoints, adding no new checkable claim to the essay's argument.\"\n    },\n    {\n      \"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\",\n      \"replacement\": \"Cybersecurity today is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.\",\n      \"reason\": \"Classic padded negation: deleting 'not merely an IT concern' leaves the positive claim intact with nothing lost.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The second sentence restates the first with no new information; deleting the restatement loses nothing checkable."
+    },
+    {
+      "original": "The NIS Directive still sets that clock at 24 hours.",
+      "replacement": "",
+      "reason": "This sentence duplicates the 24-hour reporting requirement already stated in the following sentence about the NIS Directive, adding no new fact."
+    },
+    {
+      "original": "Those click-through rates above 20% show phishing remains significantly more effective than most annual awareness programs assume.",
+      "replacement": "",
+      "reason": "This restates the claim of the preceding sentence (phishing achieves click-through rates above 20% despite awareness campaigns) without adding new information."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "This is padded negation restating that role-based access controls are deliberate, adding no new checkable fact beyond the preceding sentence."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "This restates the preceding sentence's claim about positive reinforcement for employees who flag suspicious activity, adding no new information."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "",
+      "reason": "This is an inserted anecdote that restates operational neglect already implied by the surrounding text about billions of new endpoints, adding no new checkable claim to the essay's argument."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "replacement": "Cybersecurity today is a multidimensional discipline that underpins economic vitality, national sovereignty, and individual freedoms.",
+      "reason": "Classic padded negation: deleting 'not merely an IT concern' leaves the positive claim intact with nothing lost."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 19279,
+    "output": 520,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.01419652,
+  "tool_calls": []
+}
