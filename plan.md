@@ -42,17 +42,17 @@ A call scoped to one rule can still touch a different rule's catalogued instance
 
 **Corpus.** Three source essays in unrelated fields: cybersecurity, power systems, and botany. I generated each from the bare prompt "generate me a 1600 word essay about X" against `openai/gpt-oss-120b` through OpenRouter. No system prompt. No conversation history. The three run 1,715, 2,289, and 2,267 words. Those files already sit in `Essays/gpt-oss-120b/`.
 
-Claude Sonnet 5.5 then makes two passes over each. I do not score either writing step. Neither model's participation contaminates a measured column.
+Grok 4.6 then makes two passes over each, through my existing xAI OAuth subscription. Grok is not a scored column, so neither writing step contaminates a measured one.
 
 The generator is a pinned OpenRouter identifier. I record the model behind each essay. It cannot change between essays. That choice also sets how much native Rule 4 material the corpus carries. `gpt-oss-120b` produced 422 non-keyboard characters across its three essays. They span 12 codepoints: non-breaking hyphens, dashes, curly quotes, scientific subscripts. The rejected candidate, `meta-llama/llama-4-maverick`, produced zero across 4,843 words on the same three prompts.
 
-The first Sonnet pass is an inventory. Generated prose already violates these five rules on its own. An unlabeled violation in the base text would count as scope creep when a model correctly fixes it. So Sonnet catalogues every native instance of rules 1 through 5 already present. It records rule number, sentence, and classification before I add anything.
+The first Grok pass is an inventory. Generated prose already violates these five rules on its own. An unlabeled violation in the base text would count as scope creep when a model correctly fixes it. So Grok catalogues every native instance of rules 1 through 5 already present. It records rule number, sentence, and classification before I add anything.
 
 The second pass injects the paired constructs the inventory does not already supply. The must-not-change halves come first. Generated prose has no reason to contain them.
 
-The combined catalogue is the answer key. It exists before any scored model sees the text. I tag each entry native or planted. Grok 4.6 audits each finished essay against the key. It confirms catalogued violations are present and flags anything the key missed. I hand-check every disagreement before the essay enters the scored corpus.
+The combined catalogue is the answer key. It exists before any scored model sees the text. I tag each entry native or planted. GPT-6.1 Sol (`openai/gpt-6.1-sol`) audits each finished essay against the key. It confirms catalogued violations are present and flags anything the key missed. I hand-check every disagreement before the essay enters the scored corpus.
 
-Grok is the only model outside the measured roster used for this. That keeps the audit independent of every scored column. I exclude Claude Opus 5.5 from the audit even though it is the strongest available reader. A scored control that certifies the answer key cannot be graded against it cleanly. A pilot run through Ornith precedes the audit to supply concrete failure examples.
+Both corpus models sit outside the measured roster. The auditor also comes from a different lab than the injector, so it does not grade its own work. I exclude Claude Opus 5.5 from the audit even though it is the strongest available reader. A scored control that certifies the answer key cannot be graded against it cleanly. A pilot run through Ornith precedes the audit to supply concrete failure examples.
 
 **Roster.** Six open-weight columns and three Claude 5.5 controls. Open columns sit on four hardware rungs. Two of those rungs carry a Chinese model and a European model side by side. Most current open-weight releases at these sizes come from Chinese labs. Mistral Small 4 and Mistral Large 4 are the European counterparts at the single-GB10 rung and the 1T cloud rung.
 
@@ -83,13 +83,13 @@ Mistral Large 4 is the European 1T example next to MiMo. Mistral Small 4 plays t
 
 Mistral published Large 4 as an API preview on 6 October 2026. Weights are due 27 October 2026 (Mistral AI, 2026b). The final report is due week 15. Scoring starts on the API now. The hardware-cost axis for Large 4 stays analytic until the weights land.
 
-**Design.** Three passages times three repeat runs per cell separates item variance from sampling variance. Version 1 conflated the two. The matrix is 5 rules times 3 passages times 3 repeats, or 45 runs per model. Nine scored columns give 405 runs.
+**Design.** Three passages times three repeat runs per cell separates item variance from sampling variance. Version 1 conflated the two. The base matrix is 5 rules times 3 passages times 3 repeats, or 45 runs per model. Rule 3's second prompt framing adds 9 more, for 54 runs per model. Nine scored columns give 486 runs.
 
-At a 4,000-input / 3,100-output token budget, OpenRouter list prices project about $6.30. About $5.35 of that falls on the Claude controls. An existing subscription covers those calls. The budget excludes reasoning traces. I record those traces in a separate cost column after the pilot.
+At a 4,000-input / 3,100-output token budget, OpenRouter list prices project about $7.55. About $6.40 of that falls on the Claude controls. My existing Claude subscription covers those calls. The budget excludes reasoning traces and harness overhead. The pilot measures both, and I re-project the cost from those numbers.
 
 **Scoring.** The scoring rubric is a hybrid. Rule 4 uses deterministic checks. A codepoint scan finds non-keyboard characters. A protected-diacritic check keeps real names intact. A clause parse checks each em-dash replacement. A comma-splice check catches a bad swap.
 
-Rules 2, 3, and 5 need a judge for the interpretive half. I validate that judge against a stratified subset I score by hand. I report agreement as Cohen's kappa.
+Rules 2, 3, and 5 need a judge for the interpretive half. Grok 4.6 serves as judge, off the scored roster. I validate it against a stratified 20% subset I score by hand. I report agreement as Cohen's kappa.
 
 An LLM compiles a before/after diff per item to speed the hand-scoring pass. It only extracts and formats the change. It never scores or comments on correctness. I spot-check its diffs against raw output to confirm nothing gets elided.
 
@@ -127,15 +127,15 @@ Status on 12 October 2026. I submitted the week-4 plan. The three `gpt-oss-120b`
 
 ## Resources
 
-Models reach the container through three paths. OpenRouter serves the commercial open-weight columns, including the T1 fallback. The Anthropic API serves the three Claude 5.5 controls. A local GpuBroker-leased endpoint serves Ornith.
+Models reach the container through three paths. OpenRouter serves the commercial open-weight columns, including the T1 fallback. My Claude subscription, logged in through OAuth inside the container, serves the three Claude 5.5 controls. A local GpuBroker-leased endpoint serves Ornith. The corpus passes and the judge reach Grok 4.6 through my xAI OAuth subscription, outside the container.
 
 Scoring, analysis, and plotting use Python 3.14 with pandas, scipy, and statsmodels for Wilson intervals and paired significance tests. The project repository holds the corpus, the container definition, the runner, the rubrics, and every raw run log.
 
 ## Anticipated Problems
 
-**Planted violations may be easier than naturally occurring ones.** This defeated the v1 suite through three revision rounds. Tagging every answer-key entry native or planted converts the worry into a measurement. I compare per-rule recall on violations the generator produced unprompted against recall on the ones Sonnet injected. A large gap quantifies how much the planted set flatters the models. The report carries both numbers.
+**Planted violations may be easier than naturally occurring ones.** This defeated the v1 suite through three revision rounds. Tagging every answer-key entry native or planted converts the worry into a measurement. I compare per-rule recall on violations the generator produced unprompted against recall on the ones Grok injected. A large gap quantifies how much the planted set flatters the models. The report carries both numbers.
 
-Three further mitigations apply. The answer key fixes ground truth before any scored model runs. The audit then compares the essay against a record made in advance. Grok 4.6 audits every essay from outside the scored roster. I hand-check each disagreement.
+Three further mitigations apply. The answer key fixes ground truth before any scored model runs. The audit then compares the essay against a record made in advance. GPT-6.1 Sol audits every essay from outside the scored roster. I hand-check each disagreement.
 
 The paired must-not-change instances cannot be cleared by pattern-matching on the planted form alone. An easy violation still costs a model points if it over-applies.
 
@@ -185,6 +185,8 @@ Mistral AI. (2026a). *Introducing Mistral Small 4*. https://mistral.ai/news/mist
 
 Mistral AI. (2026b). *Mistral Large 4*. https://docs.mistral.ai/models/mistral-large-4
 
+OpenAI. (2026). *GPT-6.1 Sol*. OpenRouter. https://openrouter.ai/openai/gpt-6.1-sol
+
 OpenRouter. (2026). *Models API* [Data set]. https://openrouter.ai/api/v1/models
 
 Qwen Team. (2026a). *Qwen3.8-Flash-Next* [Model card]. Hugging Face. https://huggingface.co/Qwen/Qwen3.8-Flash-Next
@@ -194,6 +196,8 @@ Qwen Team. (2026b). *Qwen3.6 35B A3B*. OpenRouter. https://openrouter.ai/qwen/qw
 Qwen Team. (2026c). *Qwen3.8 Flash*. OpenRouter. https://openrouter.ai/qwen/qwen3.8-flash
 
 Wilson, E. B. (1927). Probable inference, the law of succession, and statistical inference. *Journal of the American Statistical Association, 22*(158), 209-212. https://doi.org/10.1080/01621459.1927.10502953
+
+xAI. (2026). *Grok 4.6*. OpenRouter. https://openrouter.ai/x-ai/grok-4.6
 
 Xiaomi. (2026). *MiMo-V2.6-Pro*. OpenRouter. https://openrouter.ai/xiaomi/mimo-v2.6-pro
 
