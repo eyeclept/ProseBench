@@ -45,23 +45,29 @@ def judge_run(run_id: str, original: str, revised: str,
     logger.info("Judging %d items for %s", len(pending), run_id)
     request = {"before": original, "after": revised,
                "items": [item for item, _ in pending]}
-    response = grok_chat([{"role": "system", "content": prompt},
-                          {"role": "user", "content": json.dumps(request, ensure_ascii=True)}],
-                         model=JUDGE_MODEL, reasoning_effort=JUDGE_EFFORT,
-                         response_format={"type": "json_object"})
-    try:
-        payload = json.loads(response["content"])
-        entries = payload["verdicts"]
-        expected = {item["instance_id"] for item, _ in pending}
-        actual = [entry["instance_id"] for entry in entries]
-        if len(actual) != len(expected) or set(actual) != expected:
-            raise ValueError("Judge returned missing, duplicate, or extra instance IDs")
-        if any(entry.get("verdict") not in ("correct", "incorrect") or
-               not isinstance(entry.get("reason"), str) for entry in entries):
-            raise ValueError("Judge returned invalid verdict or reason")
-    except (ValueError, KeyError, TypeError):
-        logger.exception("Invalid Grok judge response")
-        raise
+    expected = {item["instance_id"] for item, _ in pending}
+    # The judge is measurement infrastructure, not a tested model: an empty or malformed reply gets one
+    # resend before the run fails.
+    for attempt in (1, 2):
+        response = grok_chat([{"role": "system", "content": prompt},
+                              {"role": "user", "content": json.dumps(request, ensure_ascii=True)}],
+                             model=JUDGE_MODEL, reasoning_effort=JUDGE_EFFORT,
+                             response_format={"type": "json_object"})
+        try:
+            payload = json.loads(response["content"])
+            entries = payload["verdicts"]
+            actual = [entry["instance_id"] for entry in entries]
+            if len(actual) != len(expected) or set(actual) != expected:
+                raise ValueError("Judge returned missing, duplicate, or extra instance IDs")
+            if any(entry.get("verdict") not in ("correct", "incorrect") or
+                   not isinstance(entry.get("reason"), str) for entry in entries):
+                raise ValueError("Judge returned invalid verdict or reason")
+            break
+        except (ValueError, KeyError, TypeError):
+            if attempt == 2:
+                logger.exception("Invalid Grok judge response for %s after a resend", run_id)
+                raise
+            logger.warning("Invalid Grok judge response for %s; resending once", run_id)
     by_id = {entry["instance_id"]: entry for entry in entries}
     for item, path in pending:
         entry = by_id[item["instance_id"]]
