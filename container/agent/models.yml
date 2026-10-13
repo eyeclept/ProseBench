@@ -9,7 +9,8 @@ providers:
         reasoning: true
         input: [text]
         contextWindow: 65611
-        maxTokens: 8192
+        # 65611 ceiling minus a ~20K-token prompt; 8192 truncated pilot Rule 1 output (stopReason length).
+        maxTokens: 32768
         thinking:
           mode: effort
           efforts: [minimal, low, medium, high]

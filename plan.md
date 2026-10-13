@@ -99,9 +99,9 @@ Rule 3 runs under two prompt framings. One states the standard's escalation inst
 
 Rules 1 through 5 are self-contained. Every fact a call needs to satisfy the rubric sits in the passage already. A compliant model has no reason to call search. I log and flag any call that does. A search result that changes between the three repeats of the same cell would confound sampling variance with network variance.
 
-Measured on the development workstation, the harness injects 27,792 tokens of context for a six-token prompt. Every isolation flag it exposes removes only 17% of that.
+Measured on the development workstation, the default harness injects 27,792 tokens of context for a six-token prompt. The container's pinned configuration, with only Firecrawl attached, cuts that to 16,382 tokens per call. Each run also stops after 600 seconds, so a search loop cannot run unbounded.
 
-I set thinking to the minimum each model permits, verified per model. Opus 5.5 and Sonnet 5.5 cannot disable reasoning on the Chat Completions path. Haiku 5.5 can. Mistral Small 4 accepts `reasoning_effort=none`. GLM-5.3-Flash defaults to `max`. I will set it to `low`.
+I set thinking to the minimum each model permits, verified per model. Opus 5.5 and Sonnet 5.5 cannot disable reasoning on the Chat Completions path. Haiku 5.5 can. Mistral Small 4 accepts `reasoning_effort=none`. OpenRouter makes GLM-5.3-Flash reasoning mandatory, so I set it to `minimal`, its lowest level.
 
 **Cost model.** The cost model has two axes. Per-token API cost comes from the harness's own usage accounting. That accounting reports list-price cost even on subscription-routed calls. I model hardware cost from published specifications: unit price and memory ceiling per box, quantized weight size per model, and published throughput. The hardware axis is analytic. The report will label it as such.
 

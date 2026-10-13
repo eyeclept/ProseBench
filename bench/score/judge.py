@@ -7,19 +7,28 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 PROMPT = Path(__file__).with_name("judge_prompt.md")
+JUDGE_MODEL = "grok-4.6"
+JUDGE_EFFORT = "medium"
+
+
+def _sha(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
 def judge_run(run_id: str, original: str, revised: str,
               items: list[dict], cache_dir: Path) -> dict[str, dict]:
-    """Request one structured response per run for all missing cache entries."""
+    """Request one structured response per run for all missing cache entries.
+
+    Callers pass a model-qualified run_id (run stems repeat across models). The cache key also covers the
+    judge model and effort, so changing either re-judges instead of mixing settings.
+    """
     prompt = PROMPT.read_text(encoding="utf-8")
-    prompt_sha = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+    context = [_sha(prompt), JUDGE_MODEL, JUDGE_EFFORT]
     cache_dir.mkdir(parents=True, exist_ok=True)
     verdicts = {}
     pending = []
     for item in items:
-        key = hashlib.sha256(json.dumps([run_id, item["instance_id"], prompt_sha],
-                                        separators=(",", ":")).encode("utf-8")).hexdigest()
+        key = _sha(json.dumps([run_id, item["instance_id"], *context], separators=(",", ":")))
         path = cache_dir / f"{key}.json"
         if path.exists():
             value = json.loads(path.read_text(encoding="utf-8"))
@@ -33,11 +42,13 @@ def judge_run(run_id: str, original: str, revised: str,
     # Lazy import keeps deterministic scoring and unit tests independent of credentials.
     from bench.llm_clients import grok_chat
 
+    logger.info("Judging %d items for %s", len(pending), run_id)
     request = {"before": original, "after": revised,
                "items": [item for item, _ in pending]}
     response = grok_chat([{"role": "system", "content": prompt},
                           {"role": "user", "content": json.dumps(request, ensure_ascii=True)}],
-                         model="grok-4.6", response_format={"type": "json_object"})
+                         model=JUDGE_MODEL, reasoning_effort=JUDGE_EFFORT,
+                         response_format={"type": "json_object"})
     try:
         payload = json.loads(response["content"])
         entries = payload["verdicts"]

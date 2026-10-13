@@ -1,0 +1,56 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T06:11:35.628882+00:00",
+  "duration_s": 10.190488530002767,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"which streamlines containment. The playbook change reduces mean time to contain by 15 hours.\", \"reason\": \"\\\"Significantly\\\" is replaced with the actual magnitude already given in the passage (18 hours down to 3 hours, a 15-hour reduction).\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": null, \"reason\": \"Passage fragment is unrelated to the rule; retained for author review without change.\"}, {\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"reason\": \"\\\"Dramatically\\\" is an intensifier standing in for a number, but the passage supplies no figure, so it is flagged for the author to supply the evidence.\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Fail-closed is the only acceptable default for those checks.\", \"reason\": \"The finality interjection \\\"end of story\\\" repeats the exclusivity already carried by \\\"only\\\".\"}]}",
+  "edits": [
+    {
+      "original": "which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "which streamlines containment. The playbook change reduces mean time to contain by 15 hours.",
+      "reason": "\"Significantly\" is replaced with the actual magnitude already given in the passage (18 hours down to 3 hours, a 15-hour reduction)."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": null,
+      "reason": "Passage fragment is unrelated to the rule; retained for author review without change."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "reason": "\"Dramatically\" is an intensifier standing in for a number, but the passage supplies no figure, so it is flagged for the author to supply the evidence."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "The finality interjection \"end of story\" repeats the exclusivity already carried by \"only\"."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18613,
+    "output": 661,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 402
+  },
+  "cost_usd": 0.00133596,
+  "tool_calls": []
+}

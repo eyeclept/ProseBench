@@ -24,3 +24,12 @@ HTTP 429 `Provider returned error`; no retry followed. The other table rows come
 from the corrected stdin call. The `off` level is confirmed by the first HTTP 200.
 The local Ornith endpoint returned `reasoning_content: null` with
 `chat_template_kwargs.enable_thinking=false` in a direct endpoint request.
+
+## Correction (2026-10-13)
+
+The smoke prompt cannot show whether a level is honored, only whether the endpoint accepts it.
+GLM-5.3-Flash accepted `off` here, but OpenRouter makes its reasoning mandatory:
+`reasoning.enabled=false` and `reasoning.effort=none` return HTTP 400 "Reasoning is mandatory for this endpoint and cannot be disabled".
+With omp `--thinking off`, GLM reasoned at its default (pilot Rule 1: 2,812 reasoning tokens; Rule 4: 5,532).
+`--thinking minimal` gives 38 reasoning tokens on a counting prompt. `bench/roster.yml` now sets GLM to `minimal`.
+The other five OpenRouter columns reported 0 reasoning tokens across both pilots at `off`.

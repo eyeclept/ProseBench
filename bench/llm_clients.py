@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 GROK_URL = "https://cli-chat-proxy.grok.com/v1/chat/completions"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 CREDENTIAL_DB = Path.home() / ".omp/agent/agent.db"
+TRANSIENT_RETRY_S = 30
 
 
 class LlmError(RuntimeError):
@@ -51,17 +52,24 @@ def _grok_access() -> str:
 def _chat(url: str, headers: dict, body: dict, log_path: Path | None) -> dict:
     encoded = json.dumps(body, ensure_ascii=False).encode("utf-8")
     safe_headers = {key: value for key, value in headers.items() if key.lower() != "authorization"}
-    req = request.Request(url, data=encoded, headers=headers, method="POST")
-    try:
-        with request.urlopen(req, timeout=600) as response:
-            status = response.status
-            raw_bytes = response.read()
-    except error.HTTPError as exc:
-        logger.warning("LLM HTTP failure: %s %s", url, exc.code)
-        raise LlmError(f"LLM HTTP {exc.code} at {url}") from exc
-    except (error.URLError, TimeoutError) as exc:
-        logger.exception("LLM transport failure at %s", url)
-        raise LlmError(f"LLM transport failure at {url}: {exc}") from exc
+    for attempt in (1, 2):
+        req = request.Request(url, data=encoded, headers=headers, method="POST")
+        try:
+            with request.urlopen(req, timeout=600) as response:
+                status = response.status
+                raw_bytes = response.read()
+            break
+        except error.HTTPError as exc:
+            # One delayed retry for transient upstream failures (the Grok proxy returned sporadic HTTP 500s).
+            if attempt == 1 and (exc.code >= 500 or exc.code == 429):
+                logger.warning("LLM HTTP %s at %s; retrying once in %ss", exc.code, url, TRANSIENT_RETRY_S)
+                time.sleep(TRANSIENT_RETRY_S)
+                continue
+            logger.warning("LLM HTTP failure: %s %s", url, exc.code)
+            raise LlmError(f"LLM HTTP {exc.code} at {url}") from exc
+        except (error.URLError, TimeoutError) as exc:
+            logger.exception("LLM transport failure at %s", url)
+            raise LlmError(f"LLM transport failure at {url}: {exc}") from exc
     if status >= 400:
         raise LlmError(f"LLM HTTP {status} at {url}")
     try:

@@ -1,0 +1,166 @@
+{
+  "run_id": "R1_P1_r1",
+  "model_key": "qwen38flash",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T05:59:19.956321+00:00",
+  "duration_s": 37.283656629995676,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**\",\n      \"replacement\": \"**Cybersecurity Now: Challenges, Strategies, and Future Directions**\",\n      \"reason\": \"\\\"In today's digital age\\\" is a banned opening phrase.\"\n    },\n    {\n      \"original\": \"The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.\",\n      \"replacement\": \"Digital connectivity has grown enormously since 2000.\",\n      \"reason\": \"\\\"Unprecedented\\\" is an inflated intensifier and \\\"has been defined by\\\" is vague filler; state the fact plainly.\"\n    },\n    {\n      \"original\": \"This essay examines the contemporary threat landscape,\",\n      \"replacement\": \"This essay examines current threats,\",\n      \"reason\": \"\\\"Landscape\\\" here is the banned inflated-metaphor use of the word.\"\n    },\n    {\n      \"original\": \"### The Expanding Threat Landscape ###\",\n      \"replacement\": \"### The Expanding Range of Threats ###\",\n      \"reason\": \"\\\"Landscape\\\" is used as an inflated metaphor rather than literally.\"\n    },\n    {\n      \"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past.\",\n      \"replacement\": \"creating attack surfaces much broader than in the past.\",\n      \"reason\": \"Curly quotes on a normal term are scare quotes (NEVER), and \\\"dramatically\\\" is a banned intensifier.\"\n    },\n    {\n      \"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing,\",\n      \"replacement\": \"The rise of deep-fake technology and AI-driven social engineering campaigns also strengthens phishing,\",\n      \"reason\": \"\\\"Moreover\\\" is a banned transition and \\\"amplifies the potency of\\\" is inflated phrasing.\"\n    },\n    {\n      \"original\": \"leveraging machine\u2011learning models to flag ransomware encryption patterns\",\n      \"replacement\": \"using machine-learning models to flag ransomware encryption patterns\",\n      \"reason\": \"\\\"Leveraging\\\" is a preferred-to-avoid verb; \\\"using\\\" is the plain alternative.\"\n    },\n    {\n      \"original\": \"For data at rest and in transit, robust encryption (AES\u2011256, TLS\u202f1.3) ensures confidentiality\",\n      \"replacement\": \"For data at rest and in transit, strong encryption (AES-256, TLS 1.3) keeps it confidential\",\n      \"reason\": \"\\\"Robust\\\" is a banned adjective and \\\"ensures confidentiality\\\" overstates what encryption does.\"\n    },\n    {\n      \"original\": \"which streamlines containment\",\n      \"replacement\": \"which speeds up containment\",\n      \"reason\": \"\\\"Streamline\\\" is a preferred-to-avoid verb; pick a natural alternative.\"\n    },\n    {\n      \"original\": \"The playbook change significantly reduces mean time to contain.\",\n      \"replacement\": \"The playbook change reduces mean time to contain.\",\n      \"reason\": \"\\\"Significantly\\\" is a banned intensifier.\"\n    },\n    {\n      \"original\": \"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset\",\n      \"replacement\": \"Embedding security metrics into KPIs and tying them to business objectives lets organizations treat cybersecurity as a strategic asset rather than a cost center\",\n      \"reason\": \"Starting a sentence with \\\"By [gerund]\\\" is flagged structural phrasing and should be restructured.\"\n    },\n    {\n      \"original\": \"while fatigue from constant security prompts can foster complacency.\",\n      \"replacement\": \"while fatigue from constant security prompts breeds complacency.\",\n      \"reason\": \"\\\"Foster\\\" is a preferred-to-avoid verb.\"\n    },\n    {\n      \"original\": \"Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials,\",\n      \"replacement\": \"Strict role-based access controls also reduce the damage compromised credentials can do,\",\n      \"reason\": \"\\\"Moreover\\\" is a banned transition and \\\"damage potential\\\" is awkward nominalization.\"\n    },\n    {\n      \"original\": \"fostering a collaborative security ecosystem.\",\n      \"replacement\": \"encouraging collaboration on security.\",\n      \"reason\": \"\\\"Fostering\\\" is a preferred-to-avoid verb and \\\"ecosystem\\\" is used as an inflated metaphor.\"\n    },\n    {\n      \"original\": \"remains essential to prevent a fragmented regulatory landscape\",\n      \"replacement\": \"remains essential to prevent fragmented regulation\",\n      \"reason\": \"\\\"Landscape\\\" is the banned inflated-metaphor use.\"\n    },\n    {\n      \"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\",\n      \"replacement\": \"Integrating these tools carefully helps defenders keep pace with increasingly sophisticated adversaries.\",\n      \"reason\": \"\\\"Pivotal\\\" is a banned adjective and \\\"maintaining a technological edge\\\" is inflated phrasing.\"\n    },\n    {\n      \"original\": \"Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.\",\n      \"replacement\": \"Multilateral platforms such as the United Nations' Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) set norms, share information, and run joint exercises.\",\n      \"reason\": \"\\\"Facilitate\\\" is a preferred-to-avoid verb; use direct verbs instead.\"\n    },\n    {\n      \"original\": \"Public\u2011private partnerships further bolster collective defense;\",\n      \"replacement\": \"Public-private partnerships strengthen collective defense;\",\n      \"reason\": \"\\\"Bolster\\\" is a preferred-to-avoid verb and \\\"further\\\" is unnecessary padding.\"\n    },\n    {\n      \"original\": \"a trend likely to intensify as states grapple with attribution challenges\",\n      \"replacement\": \"a trend expected to grow as states deal with attribution challenges\",\n      \"reason\": \"\\\"Likely\\\" hedges a straightforward projection and \\\"grapple with\\\" is clich\u00e9d.\"\n    },\n    {\n      \"original\": \"3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.\",\n      \"replacement\": \"3. **AI-Assisted Threat Intelligence** \u2013 Use federated learning and privacy-preserving AI to share findings across enterprises without exposing proprietary data.\",\n      \"reason\": \"\\\"Leverage\\\" is a preferred-to-avoid verb and \\\"insights\\\" is vague where \\\"findings\\\" is concrete.\"\n    },\n    {\n      \"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\",\n      \"replacement\": \"Combining better tools with clear governance, continuous training, and global cooperation lets the cybersecurity community anticipate and stop threats before they cause harm, rather than only reacting to them.\",\n      \"reason\": \"The sentence starts with \\\"By [gerund]\\\" and uses \\\"robust,\\\" both flagged; restructuring fixes both.\"\n    },\n    {\n      \"original\": \"it is a multidimensional discipline that underpins economic vitality,\",\n      \"replacement\": \"it is a discipline spanning technology, law, and human behavior that supports economic activity,\",\n      \"reason\": \"\\\"Multidimensional\\\" is a banned adjective and \\\"underpins economic vitality\\\" is inflated phrasing.\"\n    },\n    {\n      \"original\": \"demands a holistic response that blends technical controls,\",\n      \"replacement\": \"demands a response that combines technical controls,\",\n      \"reason\": \"\\\"Holistic\\\" is a banned adjective and \\\"blends\\\" is vaguer than \\\"combines\\\".\"\n    },\n    {\n      \"original\": \"they also open fresh attack vectors\",\n      \"replacement\": \"they also create new attack vectors\",\n      \"reason\": \"\\\"Open avenues/vectors\\\" echoes the banned inflated-symbolism construction; \\\"create\\\" is plainer.\"\n    },\n    {\n      \"original\": \"Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design,\",\n      \"replacement\": \"The resilience of digital societies depends on building security into system design from the start,\",\n      \"reason\": \"\\\"Ultimately\\\" is a banned concluding tell and \\\"the very fabric of\\\" is inflated metaphor.\"\n    },\n    {\n      \"original\": \"the trust that fuels innovation and progress in the digital age.\",\n      \"replacement\": \"the trust that makes online commerce and public services work.\",\n      \"reason\": \"\\\"In the digital age\\\" is a banned phrase and \\\"fuels innovation and progress\\\" is vague boosterism.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "**Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions**",
+      "replacement": "**Cybersecurity Now: Challenges, Strategies, and Future Directions**",
+      "reason": "\"In today's digital age\" is a banned opening phrase."
+    },
+    {
+      "original": "The twenty\u2011first century has been defined by an unprecedented surge in digital connectivity.",
+      "replacement": "Digital connectivity has grown enormously since 2000.",
+      "reason": "\"Unprecedented\" is an inflated intensifier and \"has been defined by\" is vague filler; state the fact plainly."
+    },
+    {
+      "original": "This essay examines the contemporary threat landscape,",
+      "replacement": "This essay examines current threats,",
+      "reason": "\"Landscape\" here is the banned inflated-metaphor use of the word."
+    },
+    {
+      "original": "### The Expanding Threat Landscape ###",
+      "replacement": "### The Expanding Range of Threats ###",
+      "reason": "\"Landscape\" is used as an inflated metaphor rather than literally."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past.",
+      "replacement": "creating attack surfaces much broader than in the past.",
+      "reason": "Curly quotes on a normal term are scare quotes (NEVER), and \"dramatically\" is a banned intensifier."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies the potency of phishing,",
+      "replacement": "The rise of deep-fake technology and AI-driven social engineering campaigns also strengthens phishing,",
+      "reason": "\"Moreover\" is a banned transition and \"amplifies the potency of\" is inflated phrasing."
+    },
+    {
+      "original": "leveraging machine\u2011learning models to flag ransomware encryption patterns",
+      "replacement": "using machine-learning models to flag ransomware encryption patterns",
+      "reason": "\"Leveraging\" is a preferred-to-avoid verb; \"using\" is the plain alternative."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption (AES\u2011256, TLS\u202f1.3) ensures confidentiality",
+      "replacement": "For data at rest and in transit, strong encryption (AES-256, TLS 1.3) keeps it confidential",
+      "reason": "\"Robust\" is a banned adjective and \"ensures confidentiality\" overstates what encryption does."
+    },
+    {
+      "original": "which streamlines containment",
+      "replacement": "which speeds up containment",
+      "reason": "\"Streamline\" is a preferred-to-avoid verb; pick a natural alternative."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change reduces mean time to contain.",
+      "reason": "\"Significantly\" is a banned intensifier."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity from a cost center into a strategic asset",
+      "replacement": "Embedding security metrics into KPIs and tying them to business objectives lets organizations treat cybersecurity as a strategic asset rather than a cost center",
+      "reason": "Starting a sentence with \"By [gerund]\" is flagged structural phrasing and should be restructured."
+    },
+    {
+      "original": "while fatigue from constant security prompts can foster complacency.",
+      "replacement": "while fatigue from constant security prompts breeds complacency.",
+      "reason": "\"Foster\" is a preferred-to-avoid verb."
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce the damage potential of compromised credentials,",
+      "replacement": "Strict role-based access controls also reduce the damage compromised credentials can do,",
+      "reason": "\"Moreover\" is a banned transition and \"damage potential\" is awkward nominalization."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem.",
+      "replacement": "encouraging collaboration on security.",
+      "reason": "\"Fostering\" is a preferred-to-avoid verb and \"ecosystem\" is used as an inflated metaphor."
+    },
+    {
+      "original": "remains essential to prevent a fragmented regulatory landscape",
+      "replacement": "remains essential to prevent fragmented regulation",
+      "reason": "\"Landscape\" is the banned inflated-metaphor use."
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "Integrating these tools carefully helps defenders keep pace with increasingly sophisticated adversaries.",
+      "reason": "\"Pivotal\" is a banned adjective and \"maintaining a technological edge\" is inflated phrasing."
+    },
+    {
+      "original": "Multilateral platforms such as the United Nations\u2019 Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) facilitate norm\u2011setting, information exchange, and joint exercises.",
+      "replacement": "Multilateral platforms such as the United Nations' Group of Governmental Experts (UNGGE) and the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) set norms, share information, and run joint exercises.",
+      "reason": "\"Facilitate\" is a preferred-to-avoid verb; use direct verbs instead."
+    },
+    {
+      "original": "Public\u2011private partnerships further bolster collective defense;",
+      "replacement": "Public-private partnerships strengthen collective defense;",
+      "reason": "\"Bolster\" is a preferred-to-avoid verb and \"further\" is unnecessary padding."
+    },
+    {
+      "original": "a trend likely to intensify as states grapple with attribution challenges",
+      "replacement": "a trend expected to grow as states deal with attribution challenges",
+      "reason": "\"Likely\" hedges a straightforward projection and \"grapple with\" is clich\u00e9d."
+    },
+    {
+      "original": "3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.",
+      "replacement": "3. **AI-Assisted Threat Intelligence** \u2013 Use federated learning and privacy-preserving AI to share findings across enterprises without exposing proprietary data.",
+      "reason": "\"Leverage\" is a preferred-to-avoid verb and \"insights\" is vague where \"findings\" is concrete."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "Combining better tools with clear governance, continuous training, and global cooperation lets the cybersecurity community anticipate and stop threats before they cause harm, rather than only reacting to them.",
+      "reason": "The sentence starts with \"By [gerund]\" and uses \"robust,\" both flagged; restructuring fixes both."
+    },
+    {
+      "original": "it is a multidimensional discipline that underpins economic vitality,",
+      "replacement": "it is a discipline spanning technology, law, and human behavior that supports economic activity,",
+      "reason": "\"Multidimensional\" is a banned adjective and \"underpins economic vitality\" is inflated phrasing."
+    },
+    {
+      "original": "demands a holistic response that blends technical controls,",
+      "replacement": "demands a response that combines technical controls,",
+      "reason": "\"Holistic\" is a banned adjective and \"blends\" is vaguer than \"combines\"."
+    },
+    {
+      "original": "they also open fresh attack vectors",
+      "replacement": "they also create new attack vectors",
+      "reason": "\"Open avenues/vectors\" echoes the banned inflated-symbolism construction; \"create\" is plainer."
+    },
+    {
+      "original": "Ultimately, the resilience of digital societies will hinge on our ability to embed security into the very fabric of system design,",
+      "replacement": "The resilience of digital societies depends on building security into system design from the start,",
+      "reason": "\"Ultimately\" is a banned concluding tell and \"the very fabric of\" is inflated metaphor."
+    },
+    {
+      "original": "the trust that fuels innovation and progress in the digital age.",
+      "replacement": "the trust that makes online commerce and public services work.",
+      "reason": "\"In the digital age\" is a banned phrase and \"fuels innovation and progress\" is vague boosterism."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4185,
+    "output": 1954,
+    "cache_read": 16384,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.001808274,
+  "tool_calls": []
+}

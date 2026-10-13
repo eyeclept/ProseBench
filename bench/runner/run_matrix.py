@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import logging
 import os
 import subprocess
@@ -21,6 +22,22 @@ from bench.runner.prompt import assemble
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
 ZERO_USAGE = {"input": 0, "output": 0, "cache_read": 0, "cache_write": 0, "reasoning": 0}
+RATE_LIMIT_WAITS = (60, 180)  # seconds; OpenRouter "429 Provider returned error" hit Mistral Small 4 in both pilots
+RATE_LIMITED = re.compile(r'"errorStatus"\s*:\s*429\b')
+
+
+def _last_error_message(stdout: str) -> str:
+    """Last omp errorMessage in the event stream, for runs whose stderr is empty (provider errors, deadlines)."""
+    for line in reversed(stdout.splitlines()):
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            logger.warning("Skipping non-JSON event line while extracting error message")
+            continue
+        message = event.get("message") if isinstance(event, dict) else None
+        if isinstance(message, dict) and message.get("errorMessage"):
+            return str(message["errorMessage"])
+    return ""
 
 
 def _selection(spec: str, allowed: tuple[str, ...], name: str) -> list[str]:
@@ -105,6 +122,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
     cost = 0.0
     duration = 0.0
     attempts = 1 if key != "ornith" or routed else 3
+    rate_limit_retries = 0
     final = None
     proc = None
     for attempt in range(attempts):
@@ -115,6 +133,16 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
             routed = True
             route_reason = "t1_failure"
         proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
+        # Provider rate limits (HTTP 429) are not model failures: back off and resend, at most RATE_LIMIT_WAITS times.
+        for wait in RATE_LIMIT_WAITS:
+            if not RATE_LIMITED.search(proc.stdout):
+                break
+            logger.warning("Rate limited on %s/%s; waiting %ds", key, run_id, wait)
+            raw.append(proc.stdout)
+            duration += elapsed
+            rate_limit_retries += 1
+            time.sleep(wait)
+            proc, elapsed = _invoke(root, wrapper, model["model"], model["thinking"], prompt.user)
         duration += elapsed
         raw.append(proc.stdout)
         final = parse_events(proc.stdout)
@@ -128,7 +156,8 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
             break
         logger.warning("Ornith attempt %d failed for %s: %s", attempt + 1, run_id, final.error or proc.stderr.strip() or f"exit {proc.returncode} / empty response")
     assert proc is not None and final is not None
-    error = final.error or (f"omp exited {proc.returncode}: {proc.stderr.strip()}" if proc.returncode else None)
+    error = final.error or (f"omp exited {proc.returncode}: {proc.stderr.strip() or _last_error_message(proc.stdout)}"
+                            if proc.returncode else None)
     if not final.output_text:
         error = error or "empty final assistant text"
     edits, parse_error, malformed = parse_edits(final.output_text)
@@ -142,7 +171,7 @@ def execute(root: Path, key: str, rule: int, passage: str, repeat: int, framing:
         "omp_version": pin.get("PROSEBENCH_OMP_VERSION"), "image_digest": pin.get("PROSEBENCH_IMAGE_DIGEST"),
         "started_at": start, "duration_s": duration, "exit_code": proc.returncode, "error": error,
         "output_text": final.output_text, "edits": edits, "malformed_edits": malformed, "parse_error": parse_error,
-        "usage": totals, "cost_usd": cost, "tool_calls": calls,
+        "usage": totals, "cost_usd": cost, "tool_calls": calls, "rate_limit_retries": rate_limit_retries,
     }
     _atomic_write(destination.with_suffix(".jsonl"), "".join(raw))
     _atomic_write(destination, json.dumps(record, ensure_ascii=True, indent=2) + "\n")

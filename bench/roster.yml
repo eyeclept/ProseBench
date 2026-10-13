@@ -4,7 +4,7 @@ scored:
   ornith:         {model: freetoken/ornith-1.5-35b-a3b,        tier: T1, lab: local,     thinking: "off"}
   qwen38flash:    {model: openrouter/qwen/qwen3.8-flash,       tier: T2, lab: Alibaba,   thinking: "off"}
   mistral_small4: {model: openrouter/mistralai/mistral-small-2603, tier: T2, lab: Mistral, thinking: "off"}
-  glm53flash:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "off"}
+  glm53flash:     {model: openrouter/z-ai/glm-5.3-flash,       tier: T3, lab: Z.ai,      thinking: "minimal"}  # reasoning is mandatory on OpenRouter; off/none return 400 or fall back to default reasoning
   mimo26pro:      {model: openrouter/xiaomi/mimo-v2.6-pro,     tier: T4, lab: Xiaomi,    thinking: "off"}
   mistral_large4: {model: openrouter/mistralai/mistral-large-4-0, tier: T4, lab: Mistral, thinking: "off"}
   haiku55:        {model: anthropic/claude-haiku-5-5,          tier: T1-control, lab: Anthropic, thinking: "unverified"}

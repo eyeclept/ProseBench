@@ -1,0 +1,66 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "glm53flash",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "routed": false,
+  "route_reason": null,
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "minimal",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T06:24:19.501313+00:00",
+  "duration_s": 6.9150659879960585,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n  {\"original\": \"Addressing this requires more than periodic training; it demands a security\u2011first culture\", \"replacement\": \"Addressing this demands a security\u2011first culture\", \"reason\": \"The negative half ('more than periodic training') is windup; the positive half alone states the same claim.\"},\n  {\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"'Rather than open' is a padded negation and the following sentence merely restates the default, so both fail the delete-and-reread test.\"},\n  {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change.\", \"reason\": \"The second sentence restates the same fact with no new information, and 'which streamlines containment' doubles the claim already made.\"},\n  {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"The sentence adds nothing beyond the preceding description of minimum-privilege limits; 'rather than by accident' is a padded negation.\"},\n  {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"\", \"reason\": \"This restates the prior sentence about positive reinforcement outperforming punitive measures without adding a new fact.\"},\n  {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"The 'not merely an IT concern' clause is windup; deleting it loses nothing, as the positive half states the full claim.\"}\n]}",
+  "edits": [
+    {
+      "original": "Addressing this requires more than periodic training; it demands a security\u2011first culture",
+      "replacement": "Addressing this demands a security\u2011first culture",
+      "reason": "The negative half ('more than periodic training') is windup; the positive half alone states the same claim."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "'Rather than open' is a padded negation and the following sentence merely restates the default, so both fail the delete-and-reread test."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change.",
+      "reason": "The second sentence restates the same fact with no new information, and 'which streamlines containment' doubles the claim already made."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The sentence adds nothing beyond the preceding description of minimum-privilege limits; 'rather than by accident' is a padded negation."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "This restates the prior sentence about positive reinforcement outperforming punitive measures without adding a new fact."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "The 'not merely an IT concern' clause is windup; deleting it loses nothing, as the positive half states the full claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18821,
+    "output": 945,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 650
+  },
+  "cost_usd": 0.00329565,
+  "tool_calls": []
+}

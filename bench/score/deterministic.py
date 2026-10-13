@@ -8,11 +8,13 @@ from bench.score.rule4 import check_instance
 logger = logging.getLogger(__name__)
 
 _NUMBER = re.compile(r"(?<![\w.])\d+(?:[.,]\d+)*%?(?!\w)")
+# Source essays write "28 %" with U+202F or U+00A0; a correct Rule 4 fix yields "28%". Join them before matching.
+_SPACE_BEFORE_PERCENT = re.compile(r"(\d)[ \u00a0\u2009\u202f]+%")
 
 
 def numbers(text: str) -> set[str]:
     """Return literal numeric tokens, including decimals and percentages."""
-    return set(_NUMBER.findall(text))
+    return set(_NUMBER.findall(_SPACE_BEFORE_PERCENT.sub(r"\1%", text)))
 
 
 def fabricated_numbers(passage: str, applied: object) -> list[str]:

@@ -38,6 +38,11 @@ if mode == "retry" and model.endswith("ornith"):
 if mode == "empty" and model.endswith("ornith"):
     print(json.dumps({"type": "agent_end", "messages": []}))
     sys.exit(0)
+if mode.startswith("ratelimit"):
+    calls = sum(1 for _ in open(os.environ["FAKE_TRACE"]))
+    if mode == "ratelimit_always" or calls == 1:
+        print(json.dumps({"type": "message_end", "message": {"role": "assistant", "content": [], "stopReason": "error", "errorStatus": 429, "errorMessage": "429 Provider returned error"}}, separators=(",", ":")))
+        sys.exit(1)
 text = os.environ.get("FAKE_TEXT", '{"edits": [{"original": "word", "replacement": "", "reason": "cut"}]}')
 print(json.dumps({"type": "tool_execution_start", "toolName": "web_search", "args": {"query": "query"}}))
 print(json.dumps({"type": "agent_end", "messages": [{"role": "user", "content": [{"type": "text", "text": prompt}]}, {"role": "assistant", "content": [{"type": "thinking", "thinking": "reasoning"}, {"type": "text", "text": text}], "usage": {"input": 12, "output": 23, "cacheRead": 4, "cacheWrite": 5, "reasoningTokens": 7, "cost": {"total": 0.003}}}]}))
@@ -196,6 +201,19 @@ def test_unparseable_record(sandbox, monkeypatch):
     monkeypatch.setenv("FAKE_TEXT", "not JSON")
     record = run_matrix.execute(root, "qwen38flash", 5, "P1", 1, "verbatim", roster, str(wrapper))
     assert record["edits"] is None and record["parse_error"] == "no JSON object in final assistant text"
+
+
+@pytest.mark.parametrize("mode,succeeds,retries,calls", [("ratelimit_once", True, 1, 2), ("ratelimit_always", False, 2, 3)])
+def test_rate_limit_backoff(sandbox, monkeypatch, mode, succeeds, retries, calls):
+    root, roster, wrapper = sandbox
+    monkeypatch.setattr(run_matrix, "RATE_LIMIT_WAITS", (0, 0))
+    monkeypatch.setenv("FAKE_MODE", mode)
+    record = run_matrix.execute(root, "qwen38flash", 2, "P1", 1, "verbatim", roster, str(wrapper))
+    assert record["rate_limit_retries"] == retries
+    assert len(trace(root)) == calls
+    assert (record["error"] is None) == succeeds
+    if not succeeds:
+        assert "429 Provider returned error" in record["error"]
 
 
 def test_nine_column_dry_run_counts(sandbox, capsys):

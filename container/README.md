@@ -47,6 +47,8 @@ Pass any existing prompt file to `--prompt-file`. The runner sends its bytes on 
 
 The runner uses `--no-session --mode json --no-title --no-tools --no-extensions --no-skills --no-rules` and `--system-prompt-template /workspace/bench/prompts/system.md`. `--no-tools` removes built-in coding tools but leaves Firecrawl MCP callable. `OMP_MCP_REQUIRE_READY=1` stops the run if Firecrawl cannot load before the prompt. `retry.enabled: false` prevents omp from retrying a failed endpoint call. The template omits the stock coding-agent prompt and generated skill and rule sections. The smoke script tries `off`, `minimal`, and `low` if an endpoint rejects an effort level. It records model-reported cost and all prompt tokens, including cached tokens.
 
+Each run also gets `--max-time 600`. In pilot v1, one Rule 3 run made 155 Firecrawl calls over 1,390 s and cost $0.294; normal runs finish in under 130 s. A capped run ends with `stopReason: aborted`, `errorMessage: "Deadline exceeded"`, and exit code 1, so the runner records it as a failed run. omp reports zero usage for the aborted call, so the partial provider charge does not appear in `cost_usd`.
+
 The `freetoken` model uses the `openai-completions` API, `auth: none`, a 65611-token context window, and `compat.thinkingFormat: qwen-chat-template`. At `off`, omp sends `chat_template_kwargs.enable_thinking=false`. A direct endpoint request returned `reasoning_content: null` and `content: "ok"`. Use this command to repeat that check:
 
 ```sh

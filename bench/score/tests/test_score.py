@@ -237,3 +237,12 @@ def test_score_runs_csv_and_hand_worksheet(fixture_data, tmp_path, monkeypatch):
     assert sample_records([(run(3, []), row) for row in key if row["rule"] == 3], 645) == sample_records(
         [(run(3, []), row) for row in key if row["rule"] == 3], 645)
     assert (scores / "review.md").exists() and (scores / "review.csv").exists()
+
+
+def test_percent_spacing_is_not_fabrication():
+    # Essays write "28<U+202F>%"; the Rule 4 fix "28%" restates the same number, not a new one.
+    passage = "Ransomware caused 28\u202f% of breaches."
+    applied = apply_edits(passage, [{"original": "28\u202f%", "replacement": "28%"},
+                                    {"original": "breaches", "replacement": "breaches since 2000"}])
+    from bench.score.deterministic import fabricated_numbers
+    assert fabricated_numbers(passage, applied) == ["2000"]
