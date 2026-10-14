@@ -1,4 +1,4 @@
-"""Authenticated Grok (xAI OAuth) and ChatGPT-subscription (codex OAuth) chat clients.
+"""Authenticated Grok (xAI OAuth), ChatGPT-subscription (codex OAuth), and Jev (OpenRouter Decisions) clients.
 
 OAuth tokens come read-only from omp's credential store; nothing here writes it or prints a token.
 """
@@ -6,6 +6,7 @@ OAuth tokens come read-only from omp's credential store; nothing here writes it 
 import http.client
 import json
 import logging
+import os
 from pathlib import Path
 import sqlite3
 import subprocess
@@ -19,6 +20,7 @@ GROK_URL = "https://cli-chat-proxy.grok.com/v1/chat/completions"
 CREDENTIAL_DB = Path.home() / ".omp/agent/agent.db"
 TRANSIENT_RETRY_S = 30
 CHATGPT_URL = "https://chatgpt.com/backend-api/codex/responses"
+JEV_URL = "https://openrouter.ai/api/alpha/decisions"
 
 
 class LlmError(RuntimeError):
@@ -207,3 +209,40 @@ def chatgpt_chat(messages: list[dict], *, model: str = "gpt-6.1-sol", reasoning_
                                        ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     usage = dict(final.get("usage") or {}, cost=0.0)
     return {"content": text, "usage": usage, "model": final.get("model") or model, "raw": final}
+
+
+def jev_decide(state: dict, questions: dict, *, model: str = "typesafe/jev-1.13") -> dict:
+    """Ask TypeSafe Jev typed questions through the OpenRouter Decisions API (billed per input token).
+
+    Returns {"answers": dict, "model": str, "usage": dict}. HTTP 429/5xx and transport failures are resent
+    once after TRANSIENT_RETRY_S; a 200 body without answers raises LlmError.
+    """
+    token = os.environ.get("OPENROUTER_API_KEY")
+    if not token:
+        raise LlmError("OPENROUTER_API_KEY is not set")
+    encoded = json.dumps({"model": model, "state": state, "questions": questions}, ensure_ascii=False).encode()
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    for attempt in (1, 2):
+        try:
+            with request.urlopen(request.Request(JEV_URL, data=encoded, headers=headers, method="POST"),
+                                 timeout=120) as response:
+                body = json.loads(response.read().decode("utf-8"))
+            break
+        except error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", "replace")[:300]
+            if attempt == 1 and (exc.code >= 500 or exc.code == 429):
+                logger.warning("Jev HTTP %s; retrying once in %ss: %s", exc.code, TRANSIENT_RETRY_S, detail)
+                time.sleep(TRANSIENT_RETRY_S)
+                continue
+            logger.warning("Jev HTTP failure %s: %s", exc.code, detail)
+            raise LlmError(f"Jev HTTP {exc.code}: {detail}") from exc
+        except (error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as exc:
+            if attempt == 1:
+                logger.warning("Jev transport failure; retrying once in %ss: %r", TRANSIENT_RETRY_S, exc)
+                time.sleep(TRANSIENT_RETRY_S)
+                continue
+            logger.exception("Jev transport failure")
+            raise LlmError(f"Jev transport failure: {exc!r}") from exc
+    if "error" in body or "answers" not in body:
+        raise LlmError(f"Jev returned no answers: {json.dumps(body)[:300]}")
+    return {"answers": body["answers"], "model": body.get("model", model), "usage": body.get("usage") or {}}

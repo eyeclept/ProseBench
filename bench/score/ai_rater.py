@@ -1,9 +1,12 @@
-"""Rate scored instances with an AI rater: GPT-6.1 Sol (owner's ChatGPT subscription) or Grok 4.6 (owner's xAI OAuth).
+"""Rate scored instances with a blind AI rater: GPT-6.1 Sol, Grok 4.6, or TypeSafe Jev 1.13.
 
-Both raters get the same rubric (rater_prompt.md), the same reasoning effort, and the same items: rule text,
-answer-key entry, and the before/after span. They are blind to the scorer's labels, the Grok judge's reasons,
-and each other. Items go out in batches per (model, run), cached per rater. bench.analysis.rater_agreement
-compares the two raters with each other and with the scorer. That is AI-AI agreement, not human validation.
+GPT runs on the owner's ChatGPT subscription, Grok on the owner's xAI OAuth, Jev on the OpenRouter Decisions
+API. All three get the same rubric (rater_prompt.md) and the same items: rule text, answer-key entry, and the
+before/after span. They are blind to the scorer's labels, the Grok judge's reasons, and each other. GPT and Grok
+rate a batch per (model, run) call at the same reasoning effort; Jev has no text output, so it answers one
+yes/no question per item and its verdict is P(correct) >= 0.5. Results are cached per rater and batch.
+bench.analysis.rater_agreement compares the raters with each other and with the scorer. That is AI-AI
+agreement, not human validation.
 """
 
 import argparse
@@ -14,7 +17,7 @@ import logging
 from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from bench.llm_clients import LlmError, LlmQuotaError, chatgpt_chat, grok_chat
+from bench.llm_clients import LlmError, LlmQuotaError, chatgpt_chat, grok_chat, jev_decide
 
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
@@ -24,7 +27,16 @@ BATCH = 40
 RATERS = {
     "gpt": {"model": "gpt-6.1-sol", "route": "chatgpt-subscription", "call": chatgpt_chat},
     "grok": {"model": "grok-4.6", "route": "xai-oauth", "call": grok_chat},
+    # Jev answers typed questions, not chat: one noul question per item, verdict = P(correct) >= 0.5.
+    "jev": {"model": "typesafe/jev-1.13", "route": "openrouter-decisions", "call": None},
 }
+JEV_QUESTION = {"handled_correctly": {
+    "type": "noul",
+    "instructions": "Using the rubric and the answer-key entry, did the model handle this one instance correctly? "
+                    "Compare the before and after text against expected_action.",
+    "criteria": {"true": "The after text applies expected_action to this instance as the rubric defines it.",
+                 "false": "The instance is untouched when a change was expected, gets the wrong action, "
+                          "loses protected content, or invents a fact."}}}
 ITEM_FIELDS = ("instance_id", "rule", "subtype", "polarity", "expected_action", "target_text", "fact_text",
                "before", "after", "diff")
 FORMAT = {"type": "json_schema", "json_schema": {"name": "rater", "strict": True, "schema": {
@@ -48,11 +60,23 @@ def _rate_batch(rater: str, label: str, rows: list[dict], answer: dict, rules: d
     items = [{field: (answer[row["instance_id"]].get(field) if field in ("expected_action", "target_text",
                                                                          "fact_text") else row[field])
               for field in ITEM_FIELDS} for row in rows]
-    digest = hashlib.sha256(json.dumps([prompt, spec["model"], spec["route"], EFFORT, items],
+    question = JEV_QUESTION if rater == "jev" else EFFORT
+    digest = hashlib.sha256(json.dumps([prompt, spec["model"], spec["route"], question, items],
                                        sort_keys=True).encode()).hexdigest()
     path = cache / f"{label}__{digest[:16]}.json"
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
+    if rater == "jev":
+        verdicts = {}
+        for item in items:
+            reply = jev_decide({"rubric": prompt, "rule_text": rules[int(item["rule"])], "item": item}, JEV_QUESTION,
+                               model=spec["model"])
+            p = float(reply["answers"]["handled_correctly"]["noul"])
+            verdicts[item["instance_id"]] = {"instance_id": item["instance_id"],
+                                             "verdict": "correct" if p >= 0.5 else "incorrect",
+                                             "reason": f"p_correct={p:.3f}", "p_correct": p, "model": reply["model"]}
+        path.write_text(json.dumps(verdicts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return verdicts
     user = json.dumps({"rule_text": rules[int(rows[0]["rule"])], "items": items}, ensure_ascii=False)
     reply = spec["call"]([{"role": "system", "content": prompt}, {"role": "user", "content": user}],
                          model=spec["model"], reasoning_effort=EFFORT, response_format=FORMAT)
