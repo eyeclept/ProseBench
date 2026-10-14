@@ -30,6 +30,8 @@ PAIRS = (("grok", "gpt"), ("grok", "jev"), ("gpt", "jev"),
 CONVERT = {"correct": {"keep": "TN", "change": "TP", "flag": "TP"},
            "incorrect": {"keep": "FP", "change": "FN", "flag": "FN"}}
 CONFIDENT = 0.4  # Jev counts as confident when |P(correct) - 0.5| >= this, i.e. P <= 0.1 or P >= 0.9.
+GATE = 0.7  # plan.md reliability gate: a rule is usable when scorer vs reference kappa >= GATE.
+RANGE_LABELERS = ("scorer", "grok", "gpt")  # labelers spanned by the recall range for a gate-failing rule
 ORDER = ["qwen36", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro", "mistral_large4",
          "haiku55", "sonnet55", "opus55", "qwen36_high", "qwen38flash_high", "mistral_small4_high",
          "glm53flash_high", "mimo26pro_high", "mistral_large4_high", "haiku55_high", "sonnet55_high",
@@ -116,6 +118,25 @@ def recall_table(joined: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def range_table(joined: pd.DataFrame, rule: str) -> pd.DataFrame:
+    """Recall on one rule under the scorer, Grok, and GPT labels, reported as a range (owner decision for rules
+    that fail the reliability gate: no single number)."""
+    rows = []
+    group_rule = joined[joined.rule == rule]
+    for model in ORDER:
+        group = group_rule[group_rule.model_key == model]
+        if group.empty:
+            continue
+        recalls = {}
+        for name in RANGE_LABELERS:
+            tp, fn = (group[name] == "TP").sum(), (group[name] == "FN").sum()
+            recalls[name] = round(tp / (tp + fn), 3) if tp + fn else None
+        values = [value for value in recalls.values() if value is not None]
+        rows.append({"model": model, **{f"recall_{name}": value for name, value in recalls.items()},
+                     "recall_low": min(values) if values else None, "recall_high": max(values) if values else None})
+    return pd.DataFrame(rows)
+
+
 def main() -> None:
     logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
@@ -123,14 +144,24 @@ def main() -> None:
     parser.add_argument("--out", type=Path, default=Path("analysis_out/rater_agreement.md"))
     args = parser.parse_args()
     joined = load(args.scores)
+    agree = agreement_table(joined)
+    gate_rows = agree[(agree.pair == "scorer vs reference") & (agree.rule != "all")]
+    failing = [(str(row.rule), row.kappa) for row in gate_rows.itertuples() if row.kappa < GATE]
+    sections = "".join(
+        f"\n\n## Rule {rule}: FAILS the reliability gate (scorer vs reference kappa {kappa:.3f} < {GATE})\n\n"
+        "Recall is reported as a range across labelers, not a single number.\n\n"
+        + range_table(joined, rule).to_markdown(index=False)
+        for rule, kappa in failing)
     text = (f"# Rater agreement\n\nRows rated by all three raters: {len(joined)}\n\n"
             "Reference = Grok and GPT verdict where they agree. On a split, Jev decides only when confident "
             "(P <= 0.1 or P >= 0.9); other splits are unresolved and excluded from scorer-vs-reference rows. "
+            f"A rule passes the reliability gate when scorer vs reference kappa >= {GATE}. "
             "All labels are automated; there is no human validation.\n\n## Pairwise agreement\n\n"
-            + agreement_table(joined).to_markdown(index=False)
+            + agree.to_markdown(index=False)
             + "\n\n## Tie-breaks (reference labels decided by Jev)\n\n" + tie_break_table(joined).to_markdown(index=False)
             + "\n\n## Jev agreement with the Grok+GPT consensus, by Jev confidence\n\n"
             + confidence_table(joined).to_markdown(index=False)
+            + sections
             + "\n\n## Recall by labeler\n\n" + recall_table(joined).to_markdown(index=False) + "\n")
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(text, encoding="utf-8")

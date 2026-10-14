@@ -2,7 +2,7 @@
 
 Rows rated by all three raters: 22680
 
-Reference = Grok and GPT verdict where they agree. On a split, Jev decides only when confident (P <= 0.1 or P >= 0.9); other splits are unresolved and excluded from scorer-vs-reference rows. All labels are automated; there is no human validation.
+Reference = Grok and GPT verdict where they agree. On a split, Jev decides only when confident (P <= 0.1 or P >= 0.9); other splits are unresolved and excluded from scorer-vs-reference rows. A rule passes the reliability gate when scorer vs reference kappa >= 0.7. All labels are automated; there is no human validation.
 
 ## Pairwise agreement
 
@@ -68,6 +68,31 @@ Reference = Grok and GPT verdict where they agree. On a split, Jev decides only 
 |:-----------------------------|------:|--------:|---------------------------:|
 | confident (P<=0.1 or P>=0.9) | 15452 |   0.705 |                      0.987 |
 | uncertain                    |  6461 |   0.295 |                      0.766 |
+
+## Rule 1: FAILS the reliability gate (scorer vs reference kappa 0.664 < 0.7)
+
+Recall is reported as a range across labelers, not a single number.
+
+| model               |   recall_scorer |   recall_grok |   recall_gpt |   recall_low |   recall_high |
+|:--------------------|----------------:|--------------:|-------------:|-------------:|--------------:|
+| qwen36              |           0.082 |         0.126 |        0.082 |        0.082 |         0.126 |
+| qwen38flash         |           0.277 |         0.516 |        0.321 |        0.277 |         0.516 |
+| mistral_small4      |           0.113 |         0.252 |        0.17  |        0.113 |         0.252 |
+| glm53flash          |           0.245 |         0.22  |        0.132 |        0.132 |         0.245 |
+| mimo26pro           |           0.239 |         0.182 |        0.138 |        0.138 |         0.239 |
+| mistral_large4      |           0.327 |         0.321 |        0.126 |        0.126 |         0.327 |
+| haiku55             |           0.138 |         0.107 |        0.101 |        0.101 |         0.138 |
+| sonnet55            |           0.264 |         0.314 |        0.195 |        0.195 |         0.314 |
+| opus55              |           0.421 |         0.428 |        0.352 |        0.352 |         0.428 |
+| qwen36_high         |           0.019 |         0.057 |        0.019 |        0.019 |         0.057 |
+| qwen38flash_high    |           0.176 |         0.321 |        0.17  |        0.17  |         0.321 |
+| mistral_small4_high |           0.126 |         0.063 |        0.057 |        0.057 |         0.126 |
+| glm53flash_high     |           0.277 |         0.277 |        0.176 |        0.176 |         0.277 |
+| mimo26pro_high      |           0.302 |         0.39  |        0.277 |        0.277 |         0.39  |
+| mistral_large4_high |           0.296 |         0.314 |        0.226 |        0.226 |         0.314 |
+| haiku55_high        |           0.352 |         0.421 |        0.189 |        0.189 |         0.421 |
+| sonnet55_high       |           0.491 |         0.491 |        0.252 |        0.252 |         0.491 |
+| opus55_high         |           0.421 |         0.56  |        0.333 |        0.333 |         0.56  |
 
 ## Recall by labeler
 
