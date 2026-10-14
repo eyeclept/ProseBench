@@ -193,6 +193,20 @@ def test_judge_both_ways_flag_and_rule3_binaries(fixture_data, tmp_path, monkeyp
     assert len(bad_calls) == 3
 
 
+def test_judge_cache_misses_when_key_row_changes_under_same_id(fixture_data, tmp_path, monkeypatch):
+    # An audit decision can rewrite a key row while keeping its instance_id; the cached verdict judged the
+    # old row and must not be reused.
+    passage, key = fixture_data
+    calls = mock_grok(monkeypatch, verdict="correct")
+    edits = [("not a built system", "the authors describe a proposal. No implementation exists")]
+    score_one(run(3, edits), key, passage, tmp_path)
+    assert len(calls) == 1
+    changed = [dict(row, fact_text="edited by audit") if row["subtype"] == "field_specific" else row for row in key]
+    bad_calls = mock_grok(monkeypatch, verdict="incorrect")
+    rescored, _ = score_one(run(3, edits), changed, passage, tmp_path)
+    assert len(bad_calls) == 1 and labels(rescored)["field_specific"] == "FN"
+
+
 def test_replacement_numbers_cut_rewrites_and_parse_failure(fixture_data, tmp_path, monkeypatch):
     passage, key = fixture_data
     calls = mock_grok(monkeypatch)

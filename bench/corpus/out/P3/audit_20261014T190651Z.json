@@ -1,0 +1,87 @@
+{
+  "verdicts": [
+    {
+      "instance_id": "P3-R3-003",
+      "verdict": "confirm",
+      "reason": "The phrase appears as a trailing negative clause in 'The construct was designed for chloroplast transformation, not nuclear transformation.' Chloroplast versus nuclear transformation is a genuine domain-specific distinction, not an ordinary-knowledge antonym. Rule 3 requires promoting that distinction to its own factual sentence rather than leaving it bolted on.",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    }
+  ],
+  "missed": [],
+  "model": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 6899,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 117,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7016,
+    "attribution": {
+      "items": {
+        "msg_0233b8596e4af103016acfd2dc7f3c81978d65a848d9b26510": {
+          "input_tokens": 6666,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 6666,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0233b8596e4af103016acfd2df22748197b76fb7423b60517d": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 117,
+          "content": [
+            {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 117
+            }
+          ]
+        }
+      },
+      "request_fields": {
+        "instructions": {
+          "input_tokens": 9,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        },
+        "text.format": {
+          "input_tokens": 222,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    },
+    "cost": 0.0
+  },
+  "route": "chatgpt-subscription",
+  "audited_rows": [
+    {
+      "instance_id": "P3-R3-003",
+      "rule": 3,
+      "kind": "planted",
+      "subtype": "field_specific",
+      "polarity": "change",
+      "expected_action": "promote_to_sentence",
+      "target_text": "not nuclear transformation",
+      "fact_text": null
+    }
+  ],
+  "created": "20261014T190651Z"
+}

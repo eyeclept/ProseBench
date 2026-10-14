@@ -1,0 +1,87 @@
+{
+  "verdicts": [
+    {
+      "instance_id": "P2-R3-001",
+      "verdict": "confirm",
+      "reason": "The essay contains the targeted contrast as a bolted-on negative clause. Resource abundance and peak demand locations are not ordinary-knowledge antonyms; their geographic mismatch is a genuine, checkable power-system distinction. Rule 3 therefore calls for promoting that distinction to its own positively stated sentence.",
+      "correct_subtype": null,
+      "correct_polarity": null,
+      "correct_expected_action": null
+    }
+  ],
+  "missed": [],
+  "model": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 6911,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 112,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7023,
+    "attribution": {
+      "items": {
+        "msg_03011642092d7826016acfd2d649c48196a3e15f3e56c97629": {
+          "input_tokens": 6678,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 6678,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_03011642092d7826016acfd2d88c048196b931d5ea7885b183": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 112,
+          "content": [
+            {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 112
+            }
+          ]
+        }
+      },
+      "request_fields": {
+        "instructions": {
+          "input_tokens": 9,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        },
+        "text.format": {
+          "input_tokens": 222,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    },
+    "cost": 0.0
+  },
+  "route": "chatgpt-subscription",
+  "audited_rows": [
+    {
+      "instance_id": "P2-R3-001",
+      "rule": 3,
+      "kind": "native",
+      "subtype": "field_specific",
+      "polarity": "change",
+      "expected_action": "promote_to_sentence",
+      "target_text": "Renewable units are often sited where resources are abundant, not where demand peaks",
+      "fact_text": null
+    }
+  ],
+  "created": "20261014T190651Z"
+}

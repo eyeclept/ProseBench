@@ -1,6 +1,6 @@
 # Answer-key audit disagreements
 
-Auditor: openai/gpt-6.1-sol. Fill the `decision` column of `audit_decisions.csv` with keep, accept, or drop.
+Auditor: gpt-6.1-sol. Fill the `decision` column of `audit_decisions.csv` with keep, accept, or drop.
 `accept` applies the auditor's correction (or adds a MISSED row); `drop` removes the key row; `keep` or blank leaves the key unchanged. `suggested` is the orchestrator's triage, not a decision.
 
 ## P1 R1 DISPUTE (suggested: review)
@@ -43,46 +43,6 @@ Auditor: no_fact / change / cut
 
 Reason: The planted Rule 5 row misses significantly under the Rule 1 list as well. [target occurs 0 times in essay]
 
-## P1 R1 MISSED (suggested: review)
-
-Target: `“attack surfaces”`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: These are quotation marks around an ordinary technical term, not a sourced quotation. The key covers typography and dramatically but misses the unnecessary quoting.
-
-## P1 R1 MISSED (suggested: review)
-
-Target: `“availability heuristic,”`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: The name of the cognitive bias is unnecessarily quoted; this is separate from the curly-character violation.
-
-## P1 R1 MISSED (suggested: review)
-
-Target: `“bug bounty”`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: The normal technical term is unnecessarily quoted; the key only covers its curly characters.
-
-## P1 R1 MISSED (suggested: review)
-
-Target: `“trusted internal network”`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: The prose quotes a normal descriptive label without attributing a quotation.
-
 ## P1 R2 DISPUTE (suggested: review)
 
 Target: `Beyond compliance,`
@@ -113,11 +73,21 @@ Auditor: not_an_instance / keep / keep
 
 Reason: The cost-center-to-asset claim is not a second definition or synonymous restatement of the preceding KPI actions.
 
+## P1 R3 DISPUTE (suggested: review)
+
+Target: `incentivizes ethical hackers to report flaws rather than exploit them`
+
+Key: field_specific / change / promote_to_sentence
+
+Auditor: not_instance / keep / keep
+
+Reason: The contrast between reporting and exploiting flaws is integral to what the bug bounty incentivizes, not a bolted-on antonym trailer. Reporting and exploitation are distinct actions, not ordinary-knowledge antonyms. This is not a Rule 3 instance.
+
 ## P1 R4 DISPUTE (suggested: accept)
 
 Target: ` Union’s Cybe`
 
-Key: other / change / ascii_equivalent
+Key: curly_quote / change / punct_straight_quote
 
 Auditor: curly_quote /  / punct_straight_quote
 
@@ -172,16 +142,6 @@ Key: endash_range / change / punct_hyphen
 Auditor: endash_separator /  / 
 
 Reason: The en dash is a separator, not a range.
-
-## P1 R5 DISPUTE (suggested: review)
-
-Target: `Ultimately, the resilience of digital societies will hinge`
-
-Key: no_number / change / cut
-
-Auditor: not_an_instance / keep / keep
-
-Reason: Ultimately is a concluding transition here, not a degree intensifier or exclusive-marker finality interjection. Rule 1 already covers it.
 
 ## P1 R5 MISSED (suggested: review)
 
@@ -243,56 +203,6 @@ Auditor: no_fact / change / cut
 
 Reason: Significantly also violates the banned-word list; the key records only rule 5. [target occurs 0 times in essay]
 
-## P2 R1 MISSED (suggested: review)
-
-Target: `the “last mile” of the power system`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: These are the author's decorative quotes around a familiar expression, not a source quotation.
-
-## P2 R1 MISSED (suggested: review)
-
-Target: `the “ramping” capacity`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: Quotation marks unnecessarily surround the technical modifier.
-
-## P2 R1 MISSED (suggested: review)
-
-Target: `“Power‑to‑X” technologies`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: The quotation marks decorate a technical term rather than reproduce source material.
-
-## P2 R1 MISSED (suggested: review)
-
-Target: `“Radial” designs`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: Quotation marks unnecessarily surround an ordinary technical adjective.
-
-## P2 R1 MISSED (suggested: review)
-
-Target: `“always‑on,”`
-
-Key:  /  / 
-
-Auditor: scare_quotes / change / cut
-
-Reason: The quoted expression is the author's own prose, not a reproduced quotation.
-
 ## P2 R2 DISPUTE (suggested: review)
 
 Target: `While the basic principle—converting a primary energy source into usable electrical power—remains unchanged, `
@@ -347,7 +257,7 @@ Reason: Spinning and non-spinning reserve are established technical categories, 
 
 Target: `- **Advanced Metering Infrastructure (AMI)** – Provides granular consumption data`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -357,7 +267,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Decentralized Backup** – Microgrids that can island during disturbances`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -367,7 +277,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Differential Protection** – Compares currents at two ends`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -377,7 +287,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Distance Protection** – Measures impedance to locate fault location`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -387,7 +297,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Distribution Management Systems (DMS)** – Automate reconfiguration, outage management`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -397,7 +307,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Geographic Dispersion** – Renewable units are often sited`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -407,7 +317,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Hardening Infrastructure** – Substation flood protection`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -417,7 +327,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Hydrogen Integration** – Using excess renewable electricity for electrolysis`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -427,7 +337,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Intermittency** – Power output varies with weather`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -437,7 +347,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Massive DER Penetration** – Millions of rooftop PV installations`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -447,7 +357,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Overcurrent Protection** – Detects excessive line currents`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -457,7 +367,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Primary (Local) Control** – Governor action on turbines`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -467,7 +377,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Provides Synthetic Inertia** – Emulates the kinetic response of rotating masses`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -477,7 +387,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Substations** – Nodes where transformers step voltage`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -487,7 +397,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Tertiary (Economic Dispatch)** – Centralized optimization ensures generation`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -497,7 +407,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `- **Transmission Lines** – Overhead conductors`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -507,7 +417,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `1. **Generation** – Conversion of primary energy`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -517,7 +427,7 @@ Reason: The offending character is specifically an en dash used as a separator.
 
 Target: `2. **Grid Stability** – Reduced rotating inertia and limited natural reactive power support`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -527,7 +437,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `2. **Transmission & Distribution (T&D)** – Transport of electric power`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -537,7 +447,7 @@ Reason: The offending character is specifically an en dash separator.
 
 Target: `200 kV—are em`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -547,7 +457,7 @@ Reason: The em dash closes the same parenthetical voltage-range fragment.
 
 Target: `3. **Control & Protection** – Continuous monitoring`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -557,7 +467,7 @@ Reason: The offending character is specifically an en dash separator.
 
 Target: `4. **Smart Devices** – Automated switches, reclosers`
 
-Key: other_nonkeyboard / change / ascii_equivalent
+Key: endash_range / change / punct_hyphen
 
 Auditor: endash_separator /  / punct_hyphen
 
@@ -567,7 +477,7 @@ Reason: The offending character is an en dash separator.
 
 Target: `dscape—promis`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -577,7 +487,7 @@ Reason: The em dash closes the appositive benefits list.
 
 Target: `ectric‑vehicl`
 
-Key: other / change / ascii_equivalent
+Key: other_nonkeyboard / change / ascii_equivalent
 
 Auditor: other_nonkeyboard /  / 
 
@@ -587,7 +497,7 @@ Reason: This real substring contains a nonbreaking hyphen.
 
 Target: `entury’s powe`
 
-Key: other / change / ascii_equivalent
+Key: curly_quote / change / punct_straight_quote
 
 Auditor: curly_quote /  / punct_straight_quote
 
@@ -597,7 +507,7 @@ Reason: The offending character is a curly apostrophe.
 
 Target: `ltages—typica`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -607,7 +517,7 @@ Reason: The em dash opens a parenthetical voltage-range fragment.
 
 Target: `nefits—reliab`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -617,71 +527,11 @@ Reason: The em dash opens an appositive benefits list.
 
 Target: `tility‑scale `
 
-Key: other / change / ascii_equivalent
+Key: other_nonkeyboard / change / ascii_equivalent
 
 Auditor: other_nonkeyboard /  / 
 
 Reason: This real substring contains a nonbreaking hyphen, not an unspecified character type.
-
-## P2 R5 DISPUTE (suggested: review)
-
-Target: `and increasingly, sophisticated`
-
-Key: no_number / change / cut
-
-Auditor: not_intensifier / keep / keep
-
-Reason: Increasingly describes a temporal trend in ICT incorporation, not an intensity placeholder.
-
-## P2 R5 DISPUTE (suggested: review)
-
-Target: `catastrophic failures`
-
-Key: no_number / change / cut
-
-Auditor: not_intensifier / keep / keep
-
-Reason: Catastrophic distinguishes severe system failures from ordinary equipment failures; it is not merely an intensifier.
-
-## P2 R5 DISPUTE (suggested: review)
-
-Target: `increasingly threaten reliability`
-
-Key: no_number / change / cut
-
-Auditor: not_intensifier / keep / keep
-
-Reason: Increasingly states a temporal trend in threats, rather than intensifying the verb.
-
-## P2 R5 MISSED (suggested: review)
-
-Target: `massive rotating masses`
-
-Key:  /  / 
-
-Auditor: no_number / change / cut
-
-Reason: Massive adds unquantified size emphasis to the explanation of inertia.
-
-## P2 R5 MISSED (suggested: review)
-
-Target: `seamlessly integrates electricity`
-
-Key:  /  / 
-
-Auditor: no_number / change / cut
-
-Reason: Seamlessly asserts an unmeasured degree of integration without evidence.
-
-## P3 R1 MISSED (suggested: review)
-
-Target: `**“climate‑smart” plants**`
-
-Key:  /  / 
-
-Auditor: other / change / cut
-
-Reason: Climate-smart is placed in non-source scare quotes rather than presented as a direct quotation.
 
 ## P3 R1 MISSED (suggested: review)
 
@@ -717,7 +567,7 @@ Reason: A second, unkeyed use of the discouraged verb leverage.
 
 Target: ` crops—wheat,`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -727,7 +577,7 @@ Reason: This opens an appositive list of staple crops.
 
 Target: `change—underm`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -737,7 +587,7 @@ Reason: This closes the same parenthetical fragment before the main verb.
 
 Target: `crobes—throug`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -747,7 +597,7 @@ Reason: This opens a parenthetical through-phrase.
 
 Target: `deling—offers`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -757,7 +607,7 @@ Reason: This closes the participial parenthesis before offers.
 
 Target: `ecules—chiefl`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -767,7 +617,7 @@ Reason: This opens an appositive fragment; an em dash requires a contextual punc
 
 Target: `enoids—absorb`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -777,7 +627,7 @@ Reason: This closes the pigment appositive; paired commas preserve the clause.
 
 Target: `millet—accoun`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -787,7 +637,7 @@ Reason: This closes the staple-crop appositive list.
 
 Target: `nities—via de`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -797,7 +647,7 @@ Reason: This opens a parenthetical prepositional fragment.
 
 Target: `nolics—for th`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -807,7 +657,7 @@ Reason: This closes the metabolite appositive list.
 
 Target: `olites—alkalo`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -817,7 +667,7 @@ Reason: This opens an appositive list of metabolites.
 
 Target: `onoids—offers`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -827,7 +677,7 @@ Reason: This closes the parenthetical through-phrase before the main verb.
 
 Target: `search—spanni`
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
@@ -837,21 +687,11 @@ Reason: This opens a participial parenthesis modifying research.
 
 Target: `thways—areas `
 
-Key: other / change / ascii_equivalent
+Key: emdash_fragment / change / punct_comma
 
 Auditor: emdash_fragment /  / punct_comma
 
 Reason: The dash introduces an explanatory noun fragment, not another independent clause.
-
-## P3 R4 MISSED (suggested: review)
-
-Target: `land‑use planning`
-
-Key:  /  / 
-
-Auditor: other_nonkeyboard / change / ascii_equivalent
-
-Reason: Contains an unkeyed nonbreaking hyphen.
 
 ## P3 R5 MISSED (suggested: review)
 
@@ -862,14 +702,4 @@ Key:  /  /
 Auditor: no_number / change / cut
 
 Reason: Deep intensifies the claimed understanding without specifying evidence; the key covers nuanced under rule 1 but misses this rule-5 padding.
-
-## P3 R5 MISSED (suggested: review)
-
-Target: `offers unprecedented tools`
-
-Key:  /  / 
-
-Auditor: no_number / change / cut
-
-Reason: Unprecedented supplies unsupported superlative emphasis without a comparison establishing the claim.
 

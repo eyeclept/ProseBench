@@ -39,9 +39,11 @@ def _corrected(row: dict, subtype: str, polarity: str, action: str) -> dict:
     return row
 
 
-def apply_decisions(rows: list[dict]) -> list[dict]:
+def apply_decisions(rows: list[dict]) -> tuple[list[dict], set[tuple]]:
+    """Apply corrections and MISSED additions in place; return the rows plus the (passage, rule, target_text)
+    keys to drop. The caller drops them after ID assignment, so a drop never renumbers other instance_ids."""
     if not DECISIONS.exists():
-        return rows
+        return rows, set()
     with DECISIONS.open(encoding="utf-8", newline="") as stream:
         decisions = [d for d in csv.DictReader(stream) if d["decision"].strip().lower() in ("accept", "drop")]
     index = {(r["passage"], r["rule"], r["target_text"]): r for r in rows}
@@ -69,9 +71,8 @@ def apply_decisions(rows: list[dict]) -> list[dict]:
                    "fact_text": None, "notes": "added from audit: " + d["auditor_reason"]}
             rows.append(_corrected(row, d["auditor_subtype"], d["auditor_polarity"], d["auditor_action"]))
             index[stable] = row
-    kept = [r for r in rows if (r["passage"], r["rule"], r["target_text"]) not in dropped]
     print(f"Applied {len(decisions)} owner decisions ({len(dropped)} drops)")
-    return kept
+    return rows, dropped
 
 
 def build() -> list[dict]:
@@ -92,7 +93,7 @@ def build() -> list[dict]:
             row.setdefault("fact_text", None)
             row.setdefault("notes", "")
             items.append(row)
-    items = apply_decisions(items)
+    items, dropped = apply_decisions(items)
     rows = []
     serial = collections.Counter()
     for row in items:
@@ -105,13 +106,15 @@ def build() -> list[dict]:
         validate_instance(row, text, keyed=True)
         rows.append(row)
     # Owner decision (2026-10-14): "flag" is defined only for Rule 3's ambiguous polarity. Rows whose action is
-    # flag but whose polarity is not contradict themselves (16 Rule 1 "other" rows); drop them. The drop runs
-    # after ID assignment so every remaining instance_id is unchanged: the judge cache keys on instance_id.
+    # flag but whose polarity is not contradict themselves (16 Rule 1 "other" rows); drop them. Both this drop
+    # and the audit drops run after ID assignment, so every remaining instance_id is unchanged and MISSED
+    # additions (appended last) take new serials.
     inconsistent = [row for row in rows if (row["expected_action"] == "flag") != (row["polarity"] == "flag")]
     for row in inconsistent:
         logger.warning("Dropping inconsistent key row %s (polarity=%s, action=%s): %r", row["instance_id"],
                        row["polarity"], row["expected_action"], row["target_text"][:60])
-    rows = [row for row in rows if row not in inconsistent]
+    rows = [row for row in rows if row not in inconsistent
+            and (row["passage"], row["rule"], row["target_text"]) not in dropped]
     for passage in SOURCE:
         missing = uncovered(source_text(passage), [
             row for row in rows if row["passage"] == passage and row["kind"] == "native"

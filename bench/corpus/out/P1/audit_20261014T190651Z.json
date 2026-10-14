@@ -1,0 +1,93 @@
+{
+  "verdicts": [
+    {
+      "instance_id": "P1-R3-001",
+      "verdict": "dispute",
+      "reason": "The contrast between reporting and exploiting flaws is integral to what the bug bounty incentivizes, not a bolted-on antonym trailer. Reporting and exploitation are distinct actions, not ordinary-knowledge antonyms. This is not a Rule 3 instance.",
+      "correct_subtype": "not_instance",
+      "correct_polarity": "keep",
+      "correct_expected_action": "keep"
+    }
+  ],
+  "missed": [],
+  "model": "gpt-6.1-sol",
+  "usage": {
+    "input_tokens": 5786,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 205,
+    "output_tokens_details": {
+      "reasoning_tokens": 69
+    },
+    "total_tokens": 5991,
+    "attribution": {
+      "items": {
+        "msg_06a93a3a487fd623016acfd2cc67c48197982d97f2c2707019": {
+          "input_tokens": 5553,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 5553,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_06a93a3a487fd623016acfd2d1eea48197bdeec995a292342f": {
+          "input_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 136,
+          "content": [
+            {
+              "input_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 136
+            }
+          ]
+        },
+        "rs_06a93a3a487fd623016acfd2d17e58819784e961ed17d5df40": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 69
+        }
+      },
+      "request_fields": {
+        "instructions": {
+          "input_tokens": 9,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        },
+        "text.format": {
+          "input_tokens": 222,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    },
+    "cost": 0.0
+  },
+  "route": "chatgpt-subscription",
+  "audited_rows": [
+    {
+      "instance_id": "P1-R3-001",
+      "rule": 3,
+      "kind": "native",
+      "subtype": "field_specific",
+      "polarity": "change",
+      "expected_action": "promote_to_sentence",
+      "target_text": "incentivizes ethical hackers to report flaws rather than exploit them",
+      "fact_text": null
+    }
+  ],
+  "created": "20261014T190651Z"
+}

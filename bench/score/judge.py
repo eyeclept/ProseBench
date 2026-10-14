@@ -15,6 +15,12 @@ def _sha(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def cache_key(run_id: str, item: dict, context: list[str]) -> str:
+    """Key on the full item the judge sees, not just its instance_id: an answer-key edit that keeps the ID but
+    changes the target, polarity, or action must miss the cache instead of reusing a stale verdict."""
+    return _sha(json.dumps([run_id, item, *context], sort_keys=True, ensure_ascii=True, separators=(",", ":")))
+
+
 def judge_run(run_id: str, original: str, revised: str,
               items: list[dict], cache_dir: Path) -> dict[str, dict]:
     """Request one structured response per run for all missing cache entries.
@@ -28,7 +34,7 @@ def judge_run(run_id: str, original: str, revised: str,
     verdicts = {}
     pending = []
     for item in items:
-        key = _sha(json.dumps([run_id, item["instance_id"], *context], separators=(",", ":")))
+        key = cache_key(run_id, item, context)
         path = cache_dir / f"{key}.json"
         if path.exists():
             value = json.loads(path.read_text(encoding="utf-8"))
