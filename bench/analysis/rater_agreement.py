@@ -3,10 +3,10 @@
 Inputs: scores/instances.csv (scorer labels) and scores/ai_ratings_<rater>.csv (correct/incorrect per instance,
 from bench.score.ai_rater). Rater verdicts map to TP/FN/FP/TN by polarity, as in kappa.py.
 
-Reference label: the Grok and GPT verdict where they agree; where they split, the 2-of-3 majority with Jev's
-vote. Jev is the only rater with no role in building the corpus, so scorer vs Jev is the most independent pair.
-Jev was weakest on Rule 1 in the pilot (kappa 0.37 vs GPT); the tie-break table shows how many Rule 1 reference
-labels rest on its vote.
+Reference label: the Grok and GPT verdict where they agree. Where they split, Jev decides only when confident
+(P(correct) <= 0.1 or >= 0.9); otherwise the item is unresolved and left out of scorer-vs-reference rows. On the
+full matrix Jev's confident verdicts matched the Grok+GPT consensus 94-100% on every rule, while its uncertain
+verdicts matched 53% on Rule 1 and 37% on Rule 3, so an uncertain vote is not evidence.
 
 Output: Cohen's kappa (bootstrap 95% CI) and percent agreement for each pair, overall and per rule; tie-break
 counts; Jev agreement with the Grok+GPT consensus by Jev confidence; per-model recall under each labeler.
@@ -57,7 +57,8 @@ def load(scores: Path) -> pd.DataFrame:
         joined = joined.merge(_rater_labels(scores / f"ai_ratings_{name}.csv", name), on=KEY, how="inner",
                               validate="one_to_one")
     joined["tie_break"] = joined.grok.ne(joined.gpt)
-    joined["reference"] = joined.grok.where(~joined.tie_break, joined.jev)
+    jev_confident = (joined.jev_p - 0.5).abs() >= CONFIDENT
+    joined["reference"] = joined.grok.where(~joined.tie_break, joined.jev.where(jev_confident, ""))
     return joined
 
 
@@ -65,6 +66,8 @@ def agreement_table(joined: pd.DataFrame) -> pd.DataFrame:
     rows = []
     for a, b in PAIRS:
         for rule, group in [("all", joined), *joined.groupby("rule", sort=True)]:
+            if "reference" in (a, b):
+                group = group[group.reference.ne("")]
             low, high = kappa_ci(group[a], group[b])
             rows.append({"pair": f"{a} vs {b}", "rule": rule, "n": len(group),
                          "agreement": round(float((group[a] == group[b]).mean()), 3),
@@ -78,10 +81,12 @@ def tie_break_table(joined: pd.DataFrame) -> pd.DataFrame:
     rows = []
     for rule, group in [("all", joined), *joined.groupby("rule", sort=True)]:
         split = group[group.tie_break]
+        decided = split[split.reference.ne("")]
         rows.append({"rule": rule, "n": len(group), "grok_gpt_split": len(split),
                      "split_share": round(len(split) / len(group), 4),
-                     "jev_sides_grok": int((split.jev == split.grok).sum()),
-                     "jev_sides_gpt": int((split.jev == split.gpt).sum())})
+                     "jev_decided": len(decided), "unresolved": len(split) - len(decided),
+                     "jev_sides_grok": int((decided.jev == decided.grok).sum()),
+                     "jev_sides_gpt": int((decided.jev == decided.gpt).sum())})
     return pd.DataFrame(rows)
 
 
@@ -119,8 +124,9 @@ def main() -> None:
     args = parser.parse_args()
     joined = load(args.scores)
     text = (f"# Rater agreement\n\nRows rated by all three raters: {len(joined)}\n\n"
-            "Reference = Grok and GPT verdict where they agree; Jev breaks ties. All labels are automated; "
-            "there is no human validation.\n\n## Pairwise agreement\n\n"
+            "Reference = Grok and GPT verdict where they agree. On a split, Jev decides only when confident "
+            "(P <= 0.1 or P >= 0.9); other splits are unresolved and excluded from scorer-vs-reference rows. "
+            "All labels are automated; there is no human validation.\n\n## Pairwise agreement\n\n"
             + agreement_table(joined).to_markdown(index=False)
             + "\n\n## Tie-breaks (reference labels decided by Jev)\n\n" + tie_break_table(joined).to_markdown(index=False)
             + "\n\n## Jev agreement with the Grok+GPT consensus, by Jev confidence\n\n"
