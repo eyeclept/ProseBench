@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "incorrect",
+    "reason": "Ellipsis glyph was left unchanged; it must be replaced with three periods.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "incorrect",
+    "reason": "Em dash joining two independent clauses was left unchanged; it must become a semicolon or a period.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Em dash was replaced with a period, but the remaining clause pair is still a comma splice; the run-on needed a full split into separate sentences.",
+    "model": "grok-4.6-build"
+  }
+}

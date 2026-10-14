@@ -1,0 +1,17 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; expected promote_to_sentence, not an untouched span."
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case was cut instead of left unchanged and flagged."
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "incorrect",
+    "reason": "Ordinary antonym trailer should be cut while keeping the purpose claim; the whole sentence was deleted, losing a necessary fact."
+  }
+}

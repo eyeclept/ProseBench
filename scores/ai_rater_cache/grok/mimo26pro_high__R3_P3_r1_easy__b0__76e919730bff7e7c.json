@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required flag (leave unchanged and flag). The model rewrote it and added an invented landrace definition instead of flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer 'rather than by accident' was cut; the necessary claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction needed an affirmative sentence without invented facts. The nuclear-vs-chloroplast contrast was dropped and replaced with an unstated insertion-into-the-chloroplast-genome claim.",
+    "model": "grok-4.6-build"
+  }
+}

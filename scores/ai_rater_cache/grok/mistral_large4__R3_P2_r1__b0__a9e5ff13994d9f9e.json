@@ -1,0 +1,17 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; expected promote_to_sentence, so an untouched span is wrong."
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case was cut (trailer removed) instead of left unchanged and flagged."
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer 'rather than by accident' was cut; the rest of the sentence remains."
+  }
+}

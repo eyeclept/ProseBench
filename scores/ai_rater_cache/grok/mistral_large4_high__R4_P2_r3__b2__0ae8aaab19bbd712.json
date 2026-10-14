@@ -1,0 +1,230 @@
+{
+  "P2-R4-081": {
+    "instance_id": "P2-R4-081",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; span left unchanged, so non-keyboard hyphen/dash remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-082": {
+    "instance_id": "P2-R4-082",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; en dash after the heading was not replaced.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-083": {
+    "instance_id": "P2-R4-083",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Grid‑Forming still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-084": {
+    "instance_id": "P2-R4-084",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; grid‑following and grid‑forming hyphens were not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-085": {
+    "instance_id": "P2-R4-085",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; non-keyboard dash after the heading is still present.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-086": {
+    "instance_id": "P2-R4-086",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; dash and grid‑connected hyphen were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-087": {
+    "instance_id": "P2-R4-087",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Power‑to‑X still uses non-keyboard hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-088": {
+    "instance_id": "P2-R4-088",
+    "verdict": "incorrect",
+    "reason": "punct_straight_quote required; curly quotes around Power-to-X were not straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-089": {
+    "instance_id": "P2-R4-089",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; curly quotes and non-keyboard hyphens remain in the sentence.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-090": {
+    "instance_id": "P2-R4-090",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Renewable‑Heavy hyphen was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-091": {
+    "instance_id": "P2-R4-091",
+    "verdict": "incorrect",
+    "reason": "punct_straight_quote required; curly apostrophe and quotes were left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-092": {
+    "instance_id": "P2-R4-092",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; narrow space in 15 % and cross‑border hyphen remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-093": {
+    "instance_id": "P2-R4-093",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; heading dash and compound hyphens were not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-094": {
+    "instance_id": "P2-R4-094",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; non-keyboard dash and cross‑border hyphen remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-095": {
+    "instance_id": "P2-R4-095",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Real‑Time, continent‑wide, and heading dash were not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-096": {
+    "instance_id": "P2-R4-096",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; co‑exist still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-097": {
+    "instance_id": "P2-R4-097",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; centrally‑controlled and cyber‑physical hyphens remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-098": {
+    "instance_id": "P2-R4-098",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; heading dash was not converted to ASCII.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-099": {
+    "instance_id": "P2-R4-099",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; multiple non-keyboard hyphens in the bullet were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-100": {
+    "instance_id": "P2-R4-100",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Multi‑layered hyphen and heading dash remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-101": {
+    "instance_id": "P2-R4-101",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; Policy‑Driven, low‑carbon, net‑zero, and the heading dash remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-102": {
+    "instance_id": "P2-R4-102",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; climate‑friendly hyphen was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-103": {
+    "instance_id": "P2-R4-103",
+    "verdict": "incorrect",
+    "reason": "punct_straight_quote required; curly apostrophe in grid’s was not straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-104": {
+    "instance_id": "P2-R4-104",
+    "verdict": "incorrect",
+    "reason": "punct_comma required for em dashes around a fragment; both em dashes were left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-105": {
+    "instance_id": "P2-R4-105",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; grid‑forming hyphen and em dash remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-106": {
+    "instance_id": "P2-R4-106",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; forward‑looking hyphen (and curly apostrophe) remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-107": {
+    "instance_id": "P2-R4-107",
+    "verdict": "incorrect",
+    "reason": "punct_straight_quote required; curly apostrophe in grid’s was not straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-108": {
+    "instance_id": "P2-R4-108",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; utility‑scale still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-109": {
+    "instance_id": "P2-R4-109",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; em dash in voltages—typically was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-110": {
+    "instance_id": "P2-R4-110",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; narrow space in 1,200 kV and following em dash remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-111": {
+    "instance_id": "P2-R4-111",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; electric‑vehicle hyphen was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-112": {
+    "instance_id": "P2-R4-112",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; em dash in benefits—reliable remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-113": {
+    "instance_id": "P2-R4-113",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; em dash in landscape—promise remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-114": {
+    "instance_id": "P2-R4-114",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required; curly apostrophe in century’s was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-115": {
+    "instance_id": "P2-R4-115",
+    "verdict": "correct",
+    "reason": "keep: Québec diacritic is protected and was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-116": {
+    "instance_id": "P2-R4-116",
+    "verdict": "incorrect",
+    "reason": "punct_three_periods required; ellipsis glyph … was not replaced with ...",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-117": {
+    "instance_id": "P2-R4-117",
+    "verdict": "incorrect",
+    "reason": "punct_semicolon_or_period required for two independent clauses; em dash was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-118": {
+    "instance_id": "P2-R4-118",
+    "verdict": "incorrect",
+    "reason": "punct_split required for the em-dash run-on; sentence was not split.",
+    "model": "grok-4.6-build"
+  }
+}

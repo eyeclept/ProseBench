@@ -1,0 +1,44 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "incorrect",
+    "reason": "The non-ASCII hyphen in benefit‑sharing remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "correct",
+    "reason": "The non-ASCII hyphen in socio‑economic was replaced with an ASCII hyphen.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "incorrect",
+    "reason": "The em dash was replaced with a semicolon that incorrectly separates the subject from a participial fragment, rather than using appropriate ASCII punctuation.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "The targeted em dash after modeling remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "The protected spelling café survives unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "incorrect",
+    "reason": "The ellipsis glyph was replaced with one period instead of three periods.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "The sentence was not split into separate sentences; the semicolon leaves the run-on 'The seedlings bolted in week 3 they never formed heads' unresolved.",
+    "model": "gpt-6.1-sol"
+  }
+}

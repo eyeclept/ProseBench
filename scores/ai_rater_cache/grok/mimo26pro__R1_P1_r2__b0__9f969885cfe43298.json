@@ -1,0 +1,140 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "incorrect",
+    "reason": "Keep instance: protected technical phrase “the contemporary threat landscape” was rewritten to “the current set of threats.”",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "incorrect",
+    "reason": "Keep instance: heading “The Expanding Threat Landscape” was changed to “The Expanding Threat Set.”",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Did not cut the flagged span; only dropped “dramatically,” left scare quotes and the empty “broader than in the past” claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "incorrect",
+    "reason": "Only deleted “Moreover”; empty claim “amplifies the potency of phishing” remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "incorrect",
+    "reason": "Banned “leveraging” was swapped for “using” while the rest of the empty/flagged phrasing was kept; that is a synonym rewrite, not a cut of the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "“robust encryption” became “strong encryption,” the exact synonym swap the rubric marks wrong.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "incorrect",
+    "reason": "“foster complacency” became “breed complacency”; banned verb swapped, empty claim kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "correct",
+    "reason": "Banned opener “Moreover” was cut and the factual RBAC clause was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "“fostering a collaborative security ecosystem” was rewritten as “building a collaborative security community,” same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "Metaphorical “ecosystem” was swapped for “community” instead of cutting the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "incorrect",
+    "reason": "“regulatory landscape” became “regulatory framework”; banned metaphor swapped, empty claim kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "incorrect",
+    "reason": "“will be pivotal for” became “will matter for,” still an empty importance claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "incorrect",
+    "reason": "Change required: “facilitate …” was left in place (only a quote glyph elsewhere changed).",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "“bolster” was swapped for “strengthen,” leaving the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "Change required: heading “AI‑Enhanced Threat Intelligence” was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "incorrect",
+    "reason": "“Leverage” was replaced with “Use” rather than cutting the flagged phrase; synonym swap is not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "“robust governance” became “strong governance,” the rubric’s example of an incorrect swap.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "incorrect",
+    "reason": "Change required: “not merely an IT concern; it is a multidimensional discipline” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “The rapidly evolving threat landscape” was rewritten to “The rapidly changing threat set.”",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "incorrect",
+    "reason": "“a holistic response” became “a coordinated response,” another evaluative stand-in for the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "incorrect",
+    "reason": "Only “Ultimately” was dropped; the rest of the no-fact span still stands.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "incorrect",
+    "reason": "Change required: “the very fabric of system design” was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the MTTC numbers; model synonym-swapped “streamlines” to “speeds up” instead.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "incorrect",
+    "reason": "keep required for technical term 'the contemporary threat landscape'; model deleted 'landscape' and weakened the phrase.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "incorrect",
+    "reason": "keep required for heading 'The Expanding Threat Landscape'; model rewrote it to 'The Expanding Range of Threats'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "correct",
+    "reason": "cut applied: scare quotes and banned intensifier 'dramatically' are gone; remaining 'attack surfaces' wording is a legitimate rewrite.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "correct",
+    "reason": "banned transition 'Moreover' was deleted; the rest of the clause is a valid rewrite that removes the violation.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "correct",
+    "reason": "banned verb 'leveraging' was replaced with 'using', so the violation is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "correct",
+    "reason": "banned adjective 'robust' was rewritten to 'strong'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-007": {
+    "instance_id": "P1-R1-007",
+    "verdict": "incorrect",
+    "reason": "flag required (leave unchanged and flag); model rewrote the 'By [gerund]' sentence instead.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "correct",
+    "reason": "banned verb 'foster' was rewritten to 'breed', removing the violation.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "correct",
+    "reason": "banned transition 'Moreover' was deleted from the span.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "correct",
+    "reason": "banned 'fostering' and metaphorical 'ecosystem' were rewritten to 'building a collaborative security community'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "correct",
+    "reason": "metaphorical 'ecosystem' was replaced with 'community', so the violation is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "correct",
+    "reason": "metaphorical 'regulatory landscape' was rewritten to 'fragmented regulation'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "correct",
+    "reason": "banned adjective 'pivotal' was rewritten to 'key'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "correct",
+    "reason": "banned verb 'facilitate' was rewritten to 'support'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "correct",
+    "reason": "banned verb 'bolster' was rewritten to 'strengthen'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "correct",
+    "reason": "banned 'Enhanced' was rewritten to 'Assisted' in the heading.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "correct",
+    "reason": "banned verb 'Leverage' was rewritten to 'Use'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-018": {
+    "instance_id": "P1-R1-018",
+    "verdict": "incorrect",
+    "reason": "flag required (leave unchanged and flag); model rewrote the sentence instead.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "correct",
+    "reason": "banned 'robust governance' was rewritten to 'strong governance'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "incorrect",
+    "reason": "cut required for the 'not X; it is Y' construction; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "incorrect",
+    "reason": "keep required for 'The rapidly evolving threat landscape'; model changed it to 'threat environment'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "correct",
+    "reason": "banned 'holistic' was rewritten to 'coordinated'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "correct",
+    "reason": "banned opener 'Ultimately' was deleted from the span.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "correct",
+    "reason": "banned intensifier 'very' was removed from 'the very fabric of system design'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required using the supplied MTTC figure in place of 'streamlines'; model only swapped in the synonym 'speeds'.",
+    "model": "grok-4.6-build"
+  }
+}

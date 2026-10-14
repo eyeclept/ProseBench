@@ -1,0 +1,140 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "incorrect",
+    "reason": "Protected keep span 'the contemporary threat landscape' was rewritten to 'today's threats' instead of being preserved.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "incorrect",
+    "reason": "Protected heading 'The Expanding Threat Landscape' was changed to 'The Expanding Range of Threats'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Cut target was not removed; 'dramatically' was swapped for intensifier 'far' and the empty broader-than-in-the-past claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "correct",
+    "reason": "Moreover and the empty 'amplifies the potency' claim were cut; deep-fake, AI social engineering, and phishing facts remain.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'leveraging' was replaced with plain 'using' while keeping the machine-learning and detection facts.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "Change/cut target 'robust encryption' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "correct",
+    "reason": "Banned 'foster complacency' was rewritten to a concrete claim about dismissing warnings; the fatigue fact remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "correct",
+    "reason": "Banned opener 'Moreover' was removed and the RBAC/credentials content was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "Cut target 'fostering a collaborative security ecosystem' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "Cut target 'a collaborative security ecosystem' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "correct",
+    "reason": "Metaphor 'fragmented regulatory landscape' was cut and rewritten without the banned landscape usage.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "correct",
+    "reason": "Empty 'will be pivotal for maintaining a technological edge' was dropped in a rewrite that keeps the tools/defenders idea.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "incorrect",
+    "reason": "Cut target containing banned 'facilitate' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "Cut target containing banned 'bolster' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "Cut target 'AI‑Enhanced Threat Intelligence' still appears in the after text.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "correct",
+    "reason": "Banned 'Leverage' was replaced with 'Use' while federated learning and privacy-preserving AI facts remain.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "Banned 'robust' was swapped for evaluative 'clear' rather than cutting the empty intensifier on governance.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "correct",
+    "reason": "The 'not merely X; it is Y' construction was restructured and the empty multidimensional-discipline claim is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "correct",
+    "reason": "Protected keep span 'The rapidly evolving threat landscape' survives in the after text.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "correct",
+    "reason": "Banned 'holistic' was removed; the sentence now says a response that combines the listed controls.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "correct",
+    "reason": "Banned 'Ultimately' opener and empty hinge-on-our-ability claim were rewritten away.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "correct",
+    "reason": "Inflated 'very fabric of system design' was replaced with designing systems with security from the start.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "correct",
+    "reason": "Vague 'streamlines containment' was removed and the supplied 18-hour-to-3-hour fact is used accurately without a new number.",
+    "model": "grok-4.6-build"
+  }
+}

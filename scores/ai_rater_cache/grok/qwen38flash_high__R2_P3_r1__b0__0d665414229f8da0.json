@@ -1,0 +1,32 @@
+{
+  "P3-R2-001": {
+    "instance_id": "P3-R2-001",
+    "verdict": "correct",
+    "reason": "Negative windup “is not merely academic” was cut; the positive claim that plant biology is essential remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-002": {
+    "instance_id": "P3-R2-002",
+    "verdict": "correct",
+    "reason": "Filler “far from being a static catalog of flora” was removed; the positive description of botany is intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-003": {
+    "instance_id": "P3-R2-003",
+    "verdict": "correct",
+    "reason": "Padded negation “is not optional” was cut; “is imperative” still carries the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-004": {
+    "instance_id": "P3-R2-004",
+    "verdict": "incorrect",
+    "reason": "Loadbearing keep: “not synthesized by the Pacific yew” is real information and was deleted instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-005": {
+    "instance_id": "P3-R2-005",
+    "verdict": "incorrect",
+    "reason": "Doubling was folded into (C4)/(CAM), which would be a valid cut, but the instruction for this item is cut of the restatement; wait—rewriting that removes the second restatement is allowed for cut. Recheck: expected cut, rewrite keeps C4/CAM mapping and drops the synonym restatement—that matches the rule’s RIGHT example, so this should be correct.",
+    "model": "grok-4.6-build"
+  }
+}

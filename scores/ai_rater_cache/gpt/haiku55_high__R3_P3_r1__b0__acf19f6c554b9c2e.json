@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The ambiguous distinction required leaving the sentence unchanged and flagging it. Instead, the model rewrote it and added a definition.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-knowledge trailer was cut while preserving the statement that breeders select the alleles on purpose.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Although the model added a separate sentence, it invented an actual modification and an unchanged nuclear genome. The original states only what the construct was designed for.",
+    "model": "gpt-6.1-sol"
+  }
+}

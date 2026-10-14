@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer was left unchanged with no author flag (empty diff, same span); flag requires leaving the text and flagging it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut; the remaining sentence is intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction was not promoted to its own affirmative sentence; it remains a negative clause joined by a semicolon.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Cut required for 'comprehensive'; the edit swapped it for 'thorough', a synonym that keeps the same empty intensifying claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "correct",
+    "reason": "The 'it's not merely X—it is Y' construction is gone; the sentence is rewritten without that structural phrasing and without losing a supplied fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "'Paving the way for' was swapped for 'advanced', which keeps the same empty progress claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "correct",
+    "reason": "'Pivotal' and its empty evaluative frame are removed; the sentence is rewritten as a direct claim rather than a synonym swap.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'dramatically increased food production' was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of the 'Moreover... cornerstone of the emerging' span was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'Pivotal' was swapped for 'key', a synonym that keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'comprehensive' in this span was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Scare quotes on 'remember' (and curly quotes) had to be cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'robustly' was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'robust public engagement' was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'will be vital' was required, but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "'Nuanced' was swapped for 'thorough', a synonym/intensifier that keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "correct",
+    "reason": "The 'it's not X; it is Y' construction is removed; the rewrite drops that structural phrasing without inventing a new fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was changed to 'linear regression' instead of being kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "correct",
+    "reason": "'Significantly streamlines' is replaced using the supplied 40-minute and 6-minute timings accurately (new time is one-sixth).",
+    "model": "grok-4.6-build"
+  }
+}

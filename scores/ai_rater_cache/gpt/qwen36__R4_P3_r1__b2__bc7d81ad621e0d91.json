@@ -1,0 +1,44 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "correct",
+    "reason": "The non-ASCII hyphen in benefit-sharing was replaced with an ASCII hyphen.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "The non-ASCII hyphen in socio-economic remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "incorrect",
+    "reason": "The em dash after research remains unchanged rather than being replaced with ASCII punctuation.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "The em dash after modeling remains unchanged rather than being replaced with ASCII punctuation.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "The protected spelling café was preserved unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "incorrect",
+    "reason": "The ellipsis glyph remains unchanged instead of becoming three periods.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "correct",
+    "reason": "The run-on was split into separate sentences, and the remaining independent clauses were correctly joined with a semicolon.",
+    "model": "gpt-6.1-sol"
+  }
+}

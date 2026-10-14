@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "correct",
+    "reason": "Ambiguous trailer left unchanged with no rewrite or cut, matching expected flag (replacement null).",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer 'rather than by accident' was cut; the necessary claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Promotion added an invented fact (transgene integrated into the chloroplast genome) not present in the passage.",
+    "model": "grok-4.6-build"
+  }
+}

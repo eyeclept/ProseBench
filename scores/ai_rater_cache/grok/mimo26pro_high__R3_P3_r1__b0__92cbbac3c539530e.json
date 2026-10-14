@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required a flag with the span left unchanged; the model rewrote it instead of flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut and the rest of the sentence was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was promoted, but the new sentence invents chloroplast/nuclear-genome details not supplied in fact_text or the original span.",
+    "model": "grok-4.6-build"
+  }
+}

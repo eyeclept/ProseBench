@@ -1,0 +1,17 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "incorrect",
+    "reason": "Expected promote_to_sentence for the field-specific trailer, but the span was left unchanged."
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Expected flag (leave the span and mark it for the author); the model rewrote it instead of flagging."
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer “rather than by accident” was cut, leaving the planned-on-purpose claim."
+  }
+}

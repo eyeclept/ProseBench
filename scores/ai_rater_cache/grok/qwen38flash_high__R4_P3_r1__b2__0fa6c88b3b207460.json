@@ -1,0 +1,44 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "correct",
+    "reason": "Non-keyboard hyphen in benefit-sharing was replaced with a plain ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "correct",
+    "reason": "Non-keyboard hyphen in socio-economic was replaced with a plain ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "correct",
+    "reason": "Em dash after research was replaced with an ASCII comma around the parenthetical fragment.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "correct",
+    "reason": "Em dash after modeling was replaced with an ASCII comma around the parenthetical fragment.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "Protected diacritic in café was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph was replaced with three periods.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "punct_split required separate sentences; the model used a semicolon and left the earlier run-on intact.",
+    "model": "grok-4.6-build"
+  }
+}

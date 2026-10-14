@@ -1,0 +1,37 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required converting the non-keyboard hyphen in benefit-sharing; the span was left unchanged."
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required converting the non-keyboard hyphen in socio-economic; the span was left unchanged."
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "correct",
+    "reason": "The em dash after research was replaced with a comma, removing the non-keyboard character with a valid ASCII substitute."
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "correct",
+    "reason": "The em dash before offers was replaced with a comma, removing the non-keyboard character with a valid ASCII substitute."
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "The diacritic in café is protected and was kept; added surrounding text does not remove it."
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "correct",
+    "reason": "The ellipsis glyph after undetermined was replaced with three periods."
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "correct",
+    "reason": "The em-dash run-on was split into two sentences at the dash, as required by punct_split."
+  }
+}

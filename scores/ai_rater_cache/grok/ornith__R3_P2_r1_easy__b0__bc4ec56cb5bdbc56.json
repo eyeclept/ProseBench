@@ -1,0 +1,17 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; promote_to_sentence requires its own affirmative sentence, and an untouched change-type span is incorrect."
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case required flagging the unchanged span; the model cut the rather-than clause instead of leaving it and flagging."
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer rather than by accident is gone; rewriting on purpose to deliberately is allowed for cut and no necessary fact was lost."
+  }
+}

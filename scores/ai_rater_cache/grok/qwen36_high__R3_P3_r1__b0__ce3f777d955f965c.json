@@ -1,0 +1,17 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "correct",
+    "reason": "Span left unchanged with empty/null replacement, which is the required flag action for this ambiguous trailer."
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "incorrect",
+    "reason": "The ordinary-knowledge trailer was removed, but 'on purpose' was also cut, losing a necessary fact the rule's cut example keeps."
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction was left as a tacked-on 'not X' clause instead of being promoted to its own affirmative sentence."
+  }
+}

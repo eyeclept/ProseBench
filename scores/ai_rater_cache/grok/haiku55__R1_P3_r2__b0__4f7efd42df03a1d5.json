@@ -1,0 +1,98 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of “a comprehensive understanding of plant biology”; the after text still contains that phrase unchanged except for unrelated punctuation.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the “not merely academic—it is essential…” claim; the model only turned the em dash into a semicolon and left the empty contrast in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of “paving the way for high‑throughput functional genomics”; that phrase remains, with only a hyphen fix.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "Swapped banned “pivotal” for “important,” which keeps the same empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Swapped “dramatically” for “greatly,” which is still an intensifier carrying the same empty claim rather than a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Replaced “Moreover” with “Also” but left “cornerstone of the emerging”; the flagged span was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "Swapped “pivotal” for “important,” leaving the empty “plays an … role” claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Swapped “comprehensive” for “detailed,” another evaluative adjective that keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the scare-quoted “remember” construction; the model only straightened the quotes and kept the scare quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Swapped “robustly” for “strongly,” which keeps the intensifying empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of “robust public engagement” was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Swapped “vital” for “essential,” which keeps the same empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Dropped only “nuanced” and kept “a deep understanding of plant biology,” so the flagged empty phrase was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "Kept the “is not optional; it is …” contrast and only swapped “imperative” for “necessary,” so the structure was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term “robust regression” was deleted rather than kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Did not replace the vague wording with the supplied 40-minute/6-minute fact; invented “most of an hour” instead.",
+    "model": "grok-4.6-build"
+  }
+}

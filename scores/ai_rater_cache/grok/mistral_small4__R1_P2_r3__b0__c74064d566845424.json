@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "Cut 'dramatically' and dropped the empty 'evolved dramatically' claim while keeping the listed facts (scale, reliability, renewables, digital controls).",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Change required a cut of 'robust', but the span is untouched and the banned adjective remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "incorrect",
+    "reason": "Banned 'leverages' is gone, but the rewrite invents 'juggle' and drops 'algorithms'/'economic dispatch' rather than only removing the empty verb.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Change required a cut of 'dramatically', but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'enhancing' is gone; the necessary fact that FACTS add capacity without new lines is kept in 'freeing up capacity without new wires'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Change required a cut of 'paving the way for', but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "'Fostering' was swapped for the synonym 'boost', which keeps the same empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Change required a cut of 'Seamless', but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Change required a cut of 'crucial', but the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "incorrect",
+    "reason": "The banned 'By [gerund]...' opening survives as 'By linking...'; it needed to be restructured, not synonym-swapped.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "Banned 'holistic' and its empty claim are gone; remaining facts about demand peaks and revenue are kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "'Robust' was swapped to 'strong', which the rubric treats as leaving the same empty intensifier in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Metaphorical 'ecosystem' is gone and rewritten as a concrete description without an invented fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Metaphorical 'energy landscape' is cut; 'fairer energy system' keeps the benefit without the banned noun.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Metaphorical 'Navigating' is gone; reliability, resilience, and markets are restated in plain terms.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Empty 'innovative technologies' is dropped; the listed technologies remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "'Robust regulatory frameworks' became 'strong rules', the exact synonym swap the rubric marks incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'Robust control' was rewritten to 'Tight controls' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required dropping 'significantly' in favor of the given 8% to 3% figures; the intensifier was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

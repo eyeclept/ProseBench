@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The sentence was left unchanged, but no author flag reporting the uncertainty was supplied.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-antonym trailer was cut, preserving the statement that breeders select the alleles on purpose.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "The added sentence invents details about expression and the organelle's transcription and translation machinery that were not supplied in the passage. Promotion must preserve the distinction without adding unsupported facts.",
+    "model": "gpt-6.1-sol"
+  }
+}

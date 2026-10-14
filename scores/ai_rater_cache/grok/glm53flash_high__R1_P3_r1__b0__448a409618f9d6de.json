@@ -1,0 +1,98 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the empty 'comprehensive understanding' claim; the edit only swapped 'comprehensive' for the synonym 'thorough', which leaves the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The 'it's not X, it's Y' construction remains ('is not merely academic; it is essential...'); only the em dash was restyled, so the violation was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "correct",
+    "reason": "The banned 'paving the way for' phrase is gone and rewritten as 'enabling high-throughput functional genomics', which drops the empty academic tell while keeping the fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'Pivotal' was swapped for 'essential', which the rubric explicitly treats as an incorrect synonym swap that keeps the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "'Dramatically' was replaced with another intensifier, 'sharply', instead of cutting the empty intensifier and leaving 'increased food production'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "'Moreover' was not cut; it was swapped for a similar filler connector ('Beyond that') and the rest of the target span remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'Pivotal' was swapped for 'central', a synonym that keeps the same empty evaluative claim rather than cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "'Comprehensive' was swapped for 'detailed', leaving the same empty intensifying claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "correct",
+    "reason": "Scare quotes (and curly quotes) around 'remember' were removed, which cuts the NEVER violation while keeping the word.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "The banned intensifier 'robustly' is still present; the target span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "'Robust' was swapped for 'broad', a synonym that keeps the empty evaluative claim (same class of error as 'robust' to 'strong').",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "'Vital' was swapped for 'essential', which keeps the same empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Only 'nuanced' was dropped; the rest of the flagged empty phrase ('a deep ... understanding of plant biology') remains, so the target was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The 'it's not X, it's Y' line ('is not optional; it is imperative') is unchanged and was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' is kept unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 40-minute/6-minute timings; the banned 'significantly streamlines' was instead rewritten as another vague claim ('much faster').",
+    "model": "grok-4.6-build"
+  }
+}

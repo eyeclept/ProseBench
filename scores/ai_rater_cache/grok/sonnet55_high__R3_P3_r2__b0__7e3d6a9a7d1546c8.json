@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "correct",
+    "reason": "Ambiguous trailer left unchanged with no rewrite or cut, matching the required flag (replacement null).",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer “rather than by accident” was cut; “on purpose” remains and no needed fact is lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction was left as a tacked-on “not X” clause instead of being promoted to its own affirmative sentence.",
+    "model": "grok-4.6-build"
+  }
+}

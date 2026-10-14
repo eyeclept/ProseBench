@@ -1,0 +1,32 @@
+{
+  "P3-R2-001": {
+    "instance_id": "P3-R2-001",
+    "verdict": "correct",
+    "reason": "Cut the padded negation “not merely academic—it is” and kept the positive claim, matching expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-002": {
+    "instance_id": "P3-R2-002",
+    "verdict": "correct",
+    "reason": "Removed the windup “far from being a static catalog of flora” and left the positive statement intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-003": {
+    "instance_id": "P3-R2-003",
+    "verdict": "correct",
+    "reason": "Deleted “not optional; it is” so only the load-bearing “is imperative” remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-004": {
+    "instance_id": "P3-R2-004",
+    "verdict": "incorrect",
+    "reason": "Loadbearing keep: the model cut “not synthesized by the Pacific yew,” losing the contrast the key requires.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R2-005": {
+    "instance_id": "P3-R2-005",
+    "verdict": "correct",
+    "reason": "Collapsed the C4/CAM restatement into parenthetical labels and dropped the doubled explanation, as required.",
+    "model": "grok-4.6-build"
+  }
+}

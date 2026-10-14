@@ -1,0 +1,44 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required replacing the non-ASCII hyphen in benefit-sharing; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required replacing the non-ASCII hyphen in socio-economic; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required replacing the em dash after research; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent required replacing the em dash after modeling; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "Protected diacritic in café was kept unchanged as required.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "incorrect",
+    "reason": "Ellipsis glyph should have become three periods; it was replaced with a semicolon instead.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "Em-dash run-on should have been split into separate sentences; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

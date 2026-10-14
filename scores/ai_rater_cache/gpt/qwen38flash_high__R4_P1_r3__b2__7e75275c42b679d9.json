@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "The ellipsis glyph was replaced with three separate periods.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "The em dash between two independent clauses was replaced with a semicolon.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "The edit splits at the em dash but leaves a comma splice between \"The SOC ingested\" and \"the legal team then discovered\"; the run-on is not fully resolved.",
+    "model": "gpt-6.1-sol"
+  }
+}

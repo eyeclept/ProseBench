@@ -104,6 +104,14 @@ def build() -> list[dict]:
         row["context_sentence"] = context_sentence(text, row["char_start"], row["char_end"])
         validate_instance(row, text, keyed=True)
         rows.append(row)
+    # Owner decision (2026-10-14): "flag" is defined only for Rule 3's ambiguous polarity. Rows whose action is
+    # flag but whose polarity is not contradict themselves (16 Rule 1 "other" rows); drop them. The drop runs
+    # after ID assignment so every remaining instance_id is unchanged: the judge cache keys on instance_id.
+    inconsistent = [row for row in rows if (row["expected_action"] == "flag") != (row["polarity"] == "flag")]
+    for row in inconsistent:
+        logger.warning("Dropping inconsistent key row %s (polarity=%s, action=%s): %r", row["instance_id"],
+                       row["polarity"], row["expected_action"], row["target_text"][:60])
+    rows = [row for row in rows if row not in inconsistent]
     for passage in SOURCE:
         missing = uncovered(source_text(passage), [
             row for row in rows if row["passage"] == passage and row["kind"] == "native"

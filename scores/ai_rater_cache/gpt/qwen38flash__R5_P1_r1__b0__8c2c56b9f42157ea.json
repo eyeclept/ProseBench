@@ -1,0 +1,68 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "The unsupported intensifier phrase remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "'Extraordinary benefits' remains unchanged instead of losing the intensifier.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "correct",
+    "reason": "The unsupported claim about dramatically broader attack surfaces is cut, while the concrete vulnerability examples survive.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "The vague magnitude claim 'a large proportion of exploit success' remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "'Massive log volumes' remains unchanged instead of losing the unsupported intensifier.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "'Unprecedented collaboration' remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-007": {
+    "instance_id": "P1-R5-007",
+    "verdict": "incorrect",
+    "reason": "The targeted wording remains unchanged despite the required cut.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "The emphatic phrase 'the very fabric of system design' remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "The protected 'full stop' interjection is deleted, contrary to the keep action.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "'End of story' is removed while the claim that fail-closed is the only acceptable default survives.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "correct",
+    "reason": "'Significantly' is replaced with the supplied reduction from 18 hours to 3 hours, used accurately.",
+    "model": "gpt-6.1-sol"
+  }
+}

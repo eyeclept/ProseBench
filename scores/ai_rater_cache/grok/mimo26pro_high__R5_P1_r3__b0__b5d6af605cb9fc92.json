@@ -1,0 +1,68 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier span, but the text was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “extraordinary benefits”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "correct",
+    "reason": "The intensifier “dramatically” was removed, so the violation is gone without losing a necessary fact.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “a large proportion of exploit success”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive log volumes”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “spurred unprecedented collaboration”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-007": {
+    "instance_id": "P1-R5-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the “Ultimately…will hinge” padding; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “the very fabric of system design”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "correct",
+    "reason": "Protected emphatic “full stop” without an exclusivity marker was kept intact.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Finality interjection “end of story” was cut after the exclusivity marker “only,” as required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Required replace_with_fact using “fell from 18 hours to 3 hours”; the model only dropped “significantly” and did not use the supplied number.",
+    "model": "grok-4.6-build"
+  }
+}

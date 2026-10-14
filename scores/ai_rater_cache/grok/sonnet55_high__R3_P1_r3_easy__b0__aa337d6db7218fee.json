@@ -1,0 +1,20 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left tacked on unchanged; it needed its own affirmative sentence, not an untouched span.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case was cut instead of left unchanged and flagged for the author.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer was correctly removed; the remaining sentence still states the intended fact.",
+    "model": "grok-4.6-build"
+  }
+}

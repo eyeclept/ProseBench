@@ -1,0 +1,44 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "incorrect",
+    "reason": "Change-type ascii_equivalent was required for the non-ASCII hyphen in benefit-sharing, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "Change-type ascii_equivalent was required for the non-ASCII hyphen in socio-economic, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "incorrect",
+    "reason": "Change-type ascii_equivalent was required for the em dash after research, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "Change-type ascii_equivalent was required for the em dash before offers, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "Protected diacritic café was kept unchanged, matching keep.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "incorrect",
+    "reason": "Ellipsis glyph should have become three periods, but undetermined… was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "Run-on em dash should have been split into separate sentences, but the sentence was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

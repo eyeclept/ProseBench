@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph replaced with three ASCII periods as required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash between independent clauses correctly replaced with a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Run-on needed to be split into separate sentences; a semicolon left the existing comma splice intact.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "The ellipsis glyph was replaced with three period characters.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "The em dash joining two independent clauses was replaced with a period.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Although the em dash became a period, the second sentence still contains a comma splice between the SOC and legal-team clauses; the run-on was not fully split.",
+    "model": "gpt-6.1-sol"
+  }
+}

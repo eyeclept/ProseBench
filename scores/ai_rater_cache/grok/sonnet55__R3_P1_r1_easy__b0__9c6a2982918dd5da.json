@@ -1,0 +1,17 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; promote_to_sentence required its own affirmative sentence, and an untouched span is wrong for a change action."
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer was left as-is with no flag (no null-replacement edit); flag required leaving it unchanged and marking it for the author."
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer 'rather than by accident' was cut; the remaining 'on purpose' clause is intact."
+  }
+}

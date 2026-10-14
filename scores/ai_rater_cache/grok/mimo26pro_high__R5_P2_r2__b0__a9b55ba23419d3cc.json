@@ -1,0 +1,86 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive data centers”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "Intensifier “dramatically” was removed; “has evolved” remains without a lost necessary fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “universally recognized”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-004": {
+    "instance_id": "P2-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “and increasingly, sophisticated”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "correct",
+    "reason": "Intensifier “rapidly” was removed from “have been rising rapidly.”",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "“fall dramatically” was rewritten to drop the intensifier using the I²R already in the sentence; no needed fact was lost.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-007": {
+    "instance_id": "P2-R5-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “increasingly threaten reliability”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-008": {
+    "instance_id": "P2-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “catastrophic failures”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “unprecedented visibility”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “Massive DER Penetration”; the heading was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “a profound transformation”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “full stop” has no exclusivity marker and should have been kept; it was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Finality interjection “end of story” was cut while the exclusive “only backup path” claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 12-to-4-minute restoration numbers; the model only deleted “significantly.”",
+    "model": "grok-4.6-build"
+  }
+}

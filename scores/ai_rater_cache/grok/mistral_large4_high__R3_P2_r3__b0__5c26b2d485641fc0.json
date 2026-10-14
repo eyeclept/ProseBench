@@ -1,0 +1,20 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "incorrect",
+    "reason": "Expected promote_to_sentence for the field-specific trailer; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Expected flag with the text left unchanged; the model rewrote the sentence instead of flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer “rather than by accident” was cut; the rest of the sentence remains.",
+    "model": "grok-4.6-build"
+  }
+}

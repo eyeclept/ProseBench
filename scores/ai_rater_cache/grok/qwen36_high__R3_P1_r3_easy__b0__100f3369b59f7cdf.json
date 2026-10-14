@@ -1,0 +1,17 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; promote_to_sentence required an affirmative sentence of its own, and leaving the tacked-on 'rather than exploit them' clause is wrong."
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case required an unchanged span flagged for the author; the model instead rewrote and cut 'rather than open'."
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer 'rather than by accident' was cut; the remaining 'on purpose' clause is intact."
+  }
+}

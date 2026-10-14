@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "Removed the banned intensifier 'dramatically' while keeping the evolution and accommodation facts.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for 'strong', which the rubric treats as the same empty evaluative claim, not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "incorrect",
+    "reason": "Replaced banned 'leverages' with 'uses' rather than cutting the empty claim; the planning/OPF content is kept but the expected action was cut of the flagged phrasing, and this is a synonym-style swap of the banned verb.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "correct",
+    "reason": "Deleted 'dramatically' from the loss claim; the I²R/current fact remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "incorrect",
+    "reason": "Replaced 'enhancing' with 'adding', a near-synonym that keeps the same capacity claim instead of cutting the empty evaluative verb.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Replaced academic tell 'paving the way for' with 'enabling', which preserves the same empty causal claim rather than cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "Swapped 'fostering' for 'encouraging', a synonym that keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Banned 'Seamless' is still in the span; the target phrase was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Replaced 'crucial' with 'required', another evaluative necessity word that keeps the empty claim (akin to pivotal→essential).",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "correct",
+    "reason": "Restructured away from the banned 'By [gerund]...' opening while keeping the coupling facts.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "incorrect",
+    "reason": "Replaced 'holistic' with 'integrated' and kept 'a more … energy system', so the empty adjective claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for 'strong' instead of cutting the empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'ecosystem' with plain 'system' and dropped 'seamlessly'; the decentralized cyber-physical meaning remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'landscape' with 'system'; the democratic-energy point is kept without the banned metaphor.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'Navigating' with 'Addressing', removing the banned metaphor without losing the reliability/resilience/market content.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Dropped banned 'innovative' for plain 'new' and kept the listed technologies.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for 'strong' on the regulatory-frameworks claim, which the rubric marks incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "correct",
+    "reason": "Protected technical term 'Robust control' is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using 'from 8 percent to 3 percent' in place of the vague wording; the numbers were already present and the model only deleted 'significantly' rather than performing that replacement.",
+    "model": "grok-4.6-build"
+  }
+}

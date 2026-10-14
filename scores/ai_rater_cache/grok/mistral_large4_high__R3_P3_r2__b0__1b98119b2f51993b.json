@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required an unflagged leave-plus-flag; the model instead rewrote the sentence and deleted “rather than heirlooms.”",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut and the rest of the sentence was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction needed its own affirmative sentence; the model cut “not nuclear transformation” and tacked on a new clause instead of promoting the contrast.",
+    "model": "grok-4.6-build"
+  }
+}

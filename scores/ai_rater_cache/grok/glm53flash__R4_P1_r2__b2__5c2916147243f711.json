@@ -1,0 +1,17 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph after 'tree' was replaced with three ASCII periods, matching punct_three_periods."
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash joining two independent clauses was replaced with a semicolon, matching punct_semicolon_or_period."
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Expected punct_split into separate sentences; the model used a semicolon and inserted 'and' instead of splitting the run-on."
+  }
+}

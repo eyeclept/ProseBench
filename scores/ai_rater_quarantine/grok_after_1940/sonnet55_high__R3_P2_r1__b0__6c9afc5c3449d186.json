@@ -1,0 +1,17 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer was left unchanged; promote_to_sentence requires its own affirmative sentence, not an untouched tacked-on clause."
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer was left unchanged with no flag; expected_action is flag (unchanged text plus a flag), not silent leave-as-is."
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer “rather than by accident” was cut; remaining “on purpose” sentence is intact."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph replaced with three ASCII periods as required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash between independent clauses replaced with a period.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Em dash was turned into a period, but the remaining comma splice was left unsplit; punct_split requires breaking the full run-on into separate sentences.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required an unchanged span plus a flag; the model rewrote the sentence and did not flag it."
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ordinary-knowledge trailer should be cut while keeping 'on purpose'; the model also deleted that necessary fact."
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction needed its own affirmative sentence; the span was left unchanged."
+  }
+}

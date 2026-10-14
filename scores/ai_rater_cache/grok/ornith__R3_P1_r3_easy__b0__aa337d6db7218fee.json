@@ -1,0 +1,17 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Expected promote_to_sentence for the field-specific trailer; the span was left unchanged and not given its own affirmative sentence."
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Expected flag for the ambiguous trailer; the model cut “rather than open” instead of leaving the text and flagging it."
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer was cut; “on purpose” remains and no needed fact was lost."
+  }
+}

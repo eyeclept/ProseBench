@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The ambiguous distinction required leaving the text unchanged and flagging it for the author; the model rewrote it instead.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-knowledge antonym trailer was removed while preserving the substantive statement.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "The distinction was split into a separate sentence, but it remains a negative statement rather than the required clear affirmative statement.",
+    "model": "gpt-6.1-sol"
+  }
+}

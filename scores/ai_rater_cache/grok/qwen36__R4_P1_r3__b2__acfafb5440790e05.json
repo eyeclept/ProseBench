@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "incorrect",
+    "reason": "Expected the ellipsis glyph to become three periods; the model deleted it and also inserted unrelated sentences.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash joining two independent clauses was correctly replaced with a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Change-type run-on em dash was left untouched instead of being split into separate sentences.",
+    "model": "grok-4.6-build"
+  }
+}

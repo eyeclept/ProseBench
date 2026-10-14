@@ -1,0 +1,68 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; the unsupported intensifier 'unprecedented' remains.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; 'extraordinary' was not cut.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "correct",
+    "reason": "The unsupported intensifier 'dramatically' was removed while the comparison was preserved.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; the vague magnitude 'a large proportion' remains.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; 'massive' was not cut.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; 'unprecedented' still intensifies the collaboration claim.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-007": {
+    "instance_id": "P1-R5-007",
+    "verdict": "incorrect",
+    "reason": "The targeted wording is unchanged despite the required cut.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "The span is unchanged; 'very' remains in the targeted phrase.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "The protected 'full stop' was deleted even though the answer key requires keeping it.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "The redundant 'end of story' was cut while the exclusive claim was retained.",
+    "model": "gpt-6.1-sol"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Deleting 'significantly' is insufficient: the required fact that mean time to contain fell from 18 hours to 3 hours was not inserted.",
+    "model": "gpt-6.1-sol"
+  }
+}

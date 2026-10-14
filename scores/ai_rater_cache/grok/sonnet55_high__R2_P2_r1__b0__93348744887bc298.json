@@ -1,0 +1,44 @@
+{
+  "P2-R2-001": {
+    "instance_id": "P2-R2-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the windup clause, but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-002": {
+    "instance_id": "P2-R2-002",
+    "verdict": "correct",
+    "reason": "The padded negation “not merely a physical infrastructure, but also” was removed and the positive claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-003": {
+    "instance_id": "P2-R2-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the windup “While electricity is expected to be “always‑on,”” but the text was untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-004": {
+    "instance_id": "P2-R2-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “while fostering competition,” but the clause was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-005": {
+    "instance_id": "P2-R2-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the doubling “effectively acting as virtual synchronous generators”; the phrase was not removed.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-006": {
+    "instance_id": "P2-R2-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the opening windup clause, but the sentence was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R2-007": {
+    "instance_id": "P2-R2-007",
+    "verdict": "incorrect",
+    "reason": "Loadbearing negation was supposed to be kept; the model deleted “The Texas failure was not a nameplate shortfall of wind.”",
+    "model": "grok-4.6-build"
+  }
+}

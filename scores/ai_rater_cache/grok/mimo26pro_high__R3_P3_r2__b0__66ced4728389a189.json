@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case required flagging the unchanged trailer; the model rewrote the sentence and cut “rather than heirlooms” instead of leaving it and flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut; the rest of the sentence is intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction was cut rather than promoted to its own affirmative sentence; a relative clause about chloroplast integration was added instead of stating the chloroplast-vs-nuclear contrast.",
+    "model": "grok-4.6-build"
+  }
+}

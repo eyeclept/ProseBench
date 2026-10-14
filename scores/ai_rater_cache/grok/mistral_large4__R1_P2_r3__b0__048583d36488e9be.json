@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'has evolved dramatically'; the after text still contains that phrase unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for 'strong', which the rubric treats as leaving the same empty claim in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "correct",
+    "reason": "Banned verb 'leverages' was rewritten to 'uses' while keeping the OPF-algorithm fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'fall dramatically as current decreases'; 'dramatically' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'enhancing' was rewritten to the concrete 'adding' and the necessary 'without building new lines' fact was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "'paving the way for' was swapped for the equally empty metaphor 'opening the door to' instead of cutting the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "'fostering' was swapped for 'encouraging', keeping the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "'Seamless' was swapped for 'Smooth', another empty intensifier rather than a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "'crucial' was swapped for 'important', which keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "incorrect",
+    "reason": "The 'By [gerund]...' opening was left intact instead of being restructured or cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "Banned 'holistic' was rewritten to precise 'integrated' in the coupling context, dropping the empty adjective.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "'robust' was swapped for 'strong', which the rubric marks as an incorrect synonym swap.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Metaphorical 'ecosystem' was replaced with 'system', removing the banned inflated noun.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Metaphorical 'energy landscape' was rewritten to 'energy system', cutting the banned metaphor.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Metaphorical 'Navigating...' opening was rewritten to 'Meeting...', removing the banned navigate-metaphor.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Banned 'innovative' was dropped in favor of 'new' while the listed technologies remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "'robust regulatory frameworks' became 'strong regulatory frameworks', the rubric's explicit incorrect swap.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'Robust control' was weakened by deleting 'Robust'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "incorrect",
+    "reason": "Change-type replace_with_fact left 'significantly reduces line losses' untouched instead of using the given percentages in place of the vague word.",
+    "model": "grok-4.6-build"
+  }
+}

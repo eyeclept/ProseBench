@@ -1,0 +1,17 @@
+{
+  "P1-R3-001": {
+    "instance_id": "P1-R3-001",
+    "verdict": "incorrect",
+    "reason": "Field-specific trailer required promote_to_sentence; the span was left unchanged with the tacked-on rather-than clause."
+  },
+  "P1-R3-002": {
+    "instance_id": "P1-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous case required flag with no edit; the model rewrote the sentence instead of leaving it unchanged and flagging."
+  },
+  "P1-R3-003": {
+    "instance_id": "P1-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer was cut; the remaining clause still states the intended fact."
+  }
+}

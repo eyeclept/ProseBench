@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "The banned intensifier phrase 'has evolved dramatically' and its empty claim were removed; remaining facts about scale, reliability, renewables, and digital tools were kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'requiring robust transmission networks'; the span is unchanged and 'robust' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of banned 'leverages'; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'fall dramatically'; the intensifier is still present.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of banned 'enhancing'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'paving the way for'; the academic tell remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'while fostering competition'; banned 'fostering' is still there.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'Seamless transition...'; banned 'Seamless' is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'crucial for critical facilities...'; banned 'crucial' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected a cut/restructure of the 'By [gerund]...' opening; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'a more holistic energy system emerges'; banned 'holistic' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'when robust transmission...'; banned 'robust' is still present.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'ecosystem'; the phrase is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'energy landscape'; the phrase remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'Navigating...'; the opening is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'demands innovative technologies'; banned 'innovative' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'robust regulatory frameworks'; banned 'robust' is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "correct",
+    "reason": "Protected technical term 'Robust control' was left intact, matching keep.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact so 'significantly' is dropped in favor of the given loss figures; the intensifier is still in the sentence.",
+    "model": "grok-4.6-build"
+  }
+}

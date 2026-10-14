@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The ambiguous distinction required leaving the sentence unchanged and flagging it for the author. Instead, the model removed the trailer and added a definition.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-knowledge antonym trailer was cut without losing necessary content.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Although the rewrite adds a separate affirmative sentence, it asserts that the transgenes are inserted into the chloroplast genome. The original states only the construct's intended design, not that insertion occurs.",
+    "model": "gpt-6.1-sol"
+  }
+}

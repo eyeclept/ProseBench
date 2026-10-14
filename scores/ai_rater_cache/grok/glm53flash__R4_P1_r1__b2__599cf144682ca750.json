@@ -1,0 +1,17 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph was replaced with three periods, matching punct_three_periods."
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash between independent clauses was replaced with a semicolon, matching punct_semicolon_or_period."
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Expected punct_split into separate sentences; the model joined the clauses with semicolons and left one sentence."
+  }
+}

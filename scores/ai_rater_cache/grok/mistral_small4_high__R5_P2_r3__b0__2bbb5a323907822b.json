@@ -1,0 +1,86 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'massive data centers' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'has evolved dramatically' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'universally recognized' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-004": {
+    "instance_id": "P2-R5-004",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'and increasingly, sophisticated' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'have been rising rapidly' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'fall dramatically' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-007": {
+    "instance_id": "P2-R5-007",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'increasingly threaten reliability' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-008": {
+    "instance_id": "P2-R5-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'catastrophic failures' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'unprecedented visibility' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'Massive DER Penetration' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Change-type cut of 'a profound transformation' was required; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "Keep instance: 'full stop' has no exclusivity marker and must survive; the model deleted it.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Finality interjection 'end of story' was cut while the exclusive claim 'only backup path for those hospitals' was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required using the supplied 12-to-4-minute fact; the model invented 'by 8 minutes' instead.",
+    "model": "grok-4.6-build"
+  }
+}

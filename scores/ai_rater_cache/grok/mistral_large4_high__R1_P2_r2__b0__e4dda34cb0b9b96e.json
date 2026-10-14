@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "Banned intensifier 'dramatically' was rewritten to 'markedly'; the violation is gone and no necessary fact was lost.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "correct",
+    "reason": "Banned adjective 'robust' was replaced with 'strong', so the violation is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "correct",
+    "reason": "Banned verb 'leverages' was replaced with 'uses'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Change action required cutting 'dramatically', but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Banned verb 'enhancing' was rewritten as 'increasing', removing the violation.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Change action required cutting 'paving the way for', but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "correct",
+    "reason": "Banned verb 'fostering' was replaced with 'promoting'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "correct",
+    "reason": "Banned adjective 'Seamless' was rewritten as 'Smooth'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "correct",
+    "reason": "Banned adjective 'crucial' was rewritten as 'essential'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "correct",
+    "reason": "Sentence no longer starts with 'By [gerund]...'; it was restructured to 'Coupling...'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "Banned adjective 'holistic' was rewritten as 'integrated'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "correct",
+    "reason": "Banned adjective 'robust' was replaced with 'strong'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Metaphorical 'ecosystem' was rewritten as 'system', removing the banned use.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Metaphorical 'landscape' was rewritten as 'system'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Metaphorical 'Navigating' was rewritten as 'Addressing'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Banned adjective 'innovative' was rewritten as 'advanced'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "correct",
+    "reason": "Banned adjective 'robust' was replaced with 'strong'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'Robust control' was changed to 'Tight control' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required removing vague 'significantly' in favor of the given numbers; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

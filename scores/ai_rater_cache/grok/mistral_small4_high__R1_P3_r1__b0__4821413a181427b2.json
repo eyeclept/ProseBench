@@ -1,0 +1,182 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "correct",
+    "reason": "Banned 'comprehensive understanding' was rewritten to 'knowledge of plant biology'; the violation is gone and no necessary fact is lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'it's not X, it's Y' construction, but the span is still present unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-003": {
+    "instance_id": "P3-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected a flag with the text left unchanged; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-004": {
+    "instance_id": "P3-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected a flag with the text left unchanged; 'marked a watershed moment' is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'paving the way for...'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-006": {
+    "instance_id": "P3-R1-006",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'pivotal' phrasing; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "correct",
+    "reason": "'dramatically increased' was rewritten to 'boosted', removing the banned intensifier without losing the fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-009": {
+    "instance_id": "P3-R1-009",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'Moreover' opening; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-011": {
+    "instance_id": "P3-R1-011",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-012": {
+    "instance_id": "P3-R1-012",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-013": {
+    "instance_id": "P3-R1-013",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "correct",
+    "reason": "'plays a pivotal role' was rewritten to 'is central to', removing the banned phrasing.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'comprehensive networks'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-016": {
+    "instance_id": "P3-R1-016",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the 'By assembling...' sentence start is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-017": {
+    "instance_id": "P3-R1-017",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the scare-quoted 'remember' phrasing; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'respond more robustly'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'robust public engagement'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-021": {
+    "instance_id": "P3-R1-021",
+    "verdict": "incorrect",
+    "reason": "Expected flag-only; the model edited 'leveraging' to 'using' instead of leaving the text and flagging it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-022": {
+    "instance_id": "P3-R1-022",
+    "verdict": "incorrect",
+    "reason": "Expected flag-only; the model edited 'fostering' to 'supporting' instead of leaving the text and flagging it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-023": {
+    "instance_id": "P3-R1-023",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the 'By integrating...' span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'will be vital'; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'a deep, nuanced understanding of plant biology'; that phrasing remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'not optional; it is...' construction; swapping 'imperative' for 'essential' leaves the banned contrast intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-027": {
+    "instance_id": "P3-R1-027",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; the span is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-028": {
+    "instance_id": "P3-R1-028",
+    "verdict": "incorrect",
+    "reason": "Expected a flag; 'fostering interdisciplinary collaboration' is unchanged but not flagged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "correct",
+    "reason": "Vague 'significantly streamlines' was replaced using the supplied 40-minute/6-minute fact accurately.",
+    "model": "grok-4.6-build"
+  }
+}

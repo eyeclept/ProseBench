@@ -1,0 +1,17 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "The ellipsis glyph in the target span was replaced with three periods, which is the required punct_three_periods fix."
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "The em dash joining two independent clauses was replaced with a semicolon, matching punct_semicolon_or_period."
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "punct_split required splitting the em-dash run-on into separate sentences; the em dash was left in place and only a later comma was changed to a semicolon."
+  }
+}

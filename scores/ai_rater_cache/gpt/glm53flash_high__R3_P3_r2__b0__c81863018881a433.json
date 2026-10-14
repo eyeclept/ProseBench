@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The ambiguous distinction required leaving the sentence unchanged and flagging it for the author. The model instead rewrote it and added definitions.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-antonym trailer was cut, preserving the statement that breeders select dwarfing alleles on purpose.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Although the distinction received its own sentence, the model added unsupported claims about transgene integration and maternal inheritance. Promotion required an affirmative sentence without invented facts.",
+    "model": "gpt-6.1-sol"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "Cut the banned intensifier 'dramatically' and kept the rest of the factual clause.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for the synonym 'strong', which the rubric treats as leaving the empty intensifier in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "correct",
+    "reason": "Replaced banned verb 'leverages' with plain 'uses' while keeping the OPF-algorithm fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Span was left untouched; 'dramatically' is still present.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Dropped banned verb 'enhancing' for concrete 'raising' and kept the capacity-without-new-lines fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Academic tell 'paving the way for' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "Swapped 'fostering' for synonym 'encouraging' instead of cutting the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Replaced banned 'Seamless' with synonym 'Smooth' rather than cutting the empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Replaced 'crucial' with synonym 'important' instead of removing the empty evaluative.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "correct",
+    "reason": "Restructured away from the banned 'By [gerund]...' opener while keeping the coupling content.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "Removed banned 'holistic' and empty 'emerges' and restated the coupling as an integrated system.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for 'strong', the exact synonym swap the rubric forbids.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'ecosystem' with 'system', dropping the banned metaphor.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'energy landscape' with 'energy system'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'Navigating' with 'Managing' and kept the listed content.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Dropped banned 'innovative' for plain 'new' and kept the technology list.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "Swapped 'robust' for evaluative synonym 'sound' instead of cutting the empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "correct",
+    "reason": "Protected technical term 'Robust control' was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "correct",
+    "reason": "Removed 'significantly' and kept the supplied 8-percent-to-3-percent fact used accurately.",
+    "model": "grok-4.6-build"
+  }
+}

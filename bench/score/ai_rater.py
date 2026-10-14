@@ -48,6 +48,16 @@ FORMAT = {"type": "json_schema", "json_schema": {"name": "rater", "strict": True
                        "reason": {"type": "string"}}}}}}}}
 
 
+# Per-rule rubric clarifications decided by the owner. Each joins that rule's text and its cache key only, so
+# batches for other rules keep their cached verdicts.
+RULE_ADDENDA = {
+    1: ("Rubric clarification for Rule 1 (owner decision): a cut must remove the flagged word or phrase and its "
+        "empty claim. Swapping it for a synonym or another evaluative or intensifying word that keeps the same "
+        "empty claim (for example 'pivotal' to 'essential', 'robust' to 'strong') leaves the violation in place "
+        "and is incorrect. A rewrite that drops the empty claim while keeping every necessary fact is correct."),
+}
+
+
 def _rules() -> dict[int, str]:
     rules = {n: (ROOT / "bench/rules" / f"rule{n}.md").read_text(encoding="utf-8") for n in range(1, 6)}
     rules[1] += "\n\n" + (ROOT / "bench/rules/banned-words-phrases.md").read_text(encoding="utf-8")
@@ -60,16 +70,19 @@ def _rate_batch(rater: str, label: str, rows: list[dict], answer: dict, rules: d
     items = [{field: (answer[row["instance_id"]].get(field) if field in ("expected_action", "target_text",
                                                                          "fact_text") else row[field])
               for field in ITEM_FIELDS} for row in rows]
+    rule = int(rows[0]["rule"])
+    addendum = RULE_ADDENDA.get(rule)
+    rule_text = rules[rule] + ("\n\n" + addendum if addendum else "")
     question = JEV_QUESTION if rater == "jev" else EFFORT
-    digest = hashlib.sha256(json.dumps([prompt, spec["model"], spec["route"], question, items],
-                                       sort_keys=True).encode()).hexdigest()
+    key = [prompt, spec["model"], spec["route"], question, items] + ([addendum] if addendum else [])
+    digest = hashlib.sha256(json.dumps(key, sort_keys=True).encode()).hexdigest()
     path = cache / f"{label}__{digest[:16]}.json"
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
     if rater == "jev":
         verdicts = {}
         for item in items:
-            reply = jev_decide({"rubric": prompt, "rule_text": rules[int(item["rule"])], "item": item}, JEV_QUESTION,
+            reply = jev_decide({"rubric": prompt, "rule_text": rule_text, "item": item}, JEV_QUESTION,
                                model=spec["model"])
             p = float(reply["answers"]["handled_correctly"]["noul"])
             verdicts[item["instance_id"]] = {"instance_id": item["instance_id"],
@@ -77,7 +90,7 @@ def _rate_batch(rater: str, label: str, rows: list[dict], answer: dict, rules: d
                                              "reason": f"p_correct={p:.3f}", "p_correct": p, "model": reply["model"]}
         path.write_text(json.dumps(verdicts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return verdicts
-    user = json.dumps({"rule_text": rules[int(rows[0]["rule"])], "items": items}, ensure_ascii=False)
+    user = json.dumps({"rule_text": rule_text, "items": items}, ensure_ascii=False)
     reply = spec["call"]([{"role": "system", "content": prompt}, {"role": "user", "content": user}],
                          model=spec["model"], reasoning_effort=EFFORT, response_format=FORMAT)
     # Store the model the endpoint reports, so a silent fallback near a usage limit is detectable later.

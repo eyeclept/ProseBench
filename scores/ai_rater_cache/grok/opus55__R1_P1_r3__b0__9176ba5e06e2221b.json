@@ -1,0 +1,140 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "incorrect",
+    "reason": "Keep instance: the protected technical term \"threat landscape\" was rewritten to \"threats organizations face today\" instead of being preserved.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "incorrect",
+    "reason": "Keep instance: heading \"The Expanding Threat Landscape\" was changed to \"The Expanding Range of Threats,\" deleting the protected term.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Cut required of the empty intensifier claim; \"dramatically\" was swapped for \"much,\" which keeps the same empty \"broader than in the past\" claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "incorrect",
+    "reason": "\"Moreover\" was removed, but the rest of the flagged span (\"amplifies the potency of phishing\") was kept rather than cut as required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "incorrect",
+    "reason": "Banned \"leveraging\" was swapped for \"using\" while the rest of the flagged phrase was kept; a cut must drop the empty claim, not just synonymize the verb.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "Change/cut required: \"robust encryption\" was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "incorrect",
+    "reason": "\"foster\" was swapped for synonym \"breed\" and the rest of the phrase was kept; that is not a cut of the flagged claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "incorrect",
+    "reason": "Only \"Moreover\" was dropped; the rest of the target (\"strict role-based access controls reduce the damage potential of compromised credentials\") remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "\"fostering a collaborative security ecosystem\" was rewritten to \"building a collaborative security community,\" a synonym-style swap that keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "\"a collaborative security ecosystem\" became \"a collaborative security community,\" which keeps the same empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "correct",
+    "reason": "Metaphorical \"regulatory landscape\" was cut and rewritten as \"fragmented regulation,\" so the banned phrase is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "incorrect",
+    "reason": "\"will be pivotal for maintaining a technological edge\" was recast as \"will decide who keeps a technological edge,\" which still carries the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "incorrect",
+    "reason": "\"facilitate\" was swapped for \"support\" while the rest of the flagged phrase was kept; that is a synonym substitution, not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "\"bolster\" was swapped for synonym \"strengthen,\" leaving the same empty \"collective defense\" claim in place.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "\"AI-Enhanced\" was swapped for \"AI-Assisted\" rather than cutting the empty \"enhanced\" claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "incorrect",
+    "reason": "\"Leverage\" was replaced with \"Use\" and the rest of the span kept; a cut of the flagged phrase was required, not a verb swap.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "Exact forbidden synonym swap: \"robust governance\" became \"strong governance,\" so the empty intensifier claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "correct",
+    "reason": "The banned \"it's not X, it's Y\" construction was removed and rewritten as a single affirmative sentence without that tell.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "incorrect",
+    "reason": "Keep instance: protected \"threat landscape\" was deleted and replaced with \"fast-changing threats.\"",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "correct",
+    "reason": "Banned \"holistic\" was dropped; the sentence now has a plain \"response\" and keeps the surrounding facts.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "incorrect",
+    "reason": "Only \"Ultimately\" was removed; the rest of the target (\"the resilience of digital societies will hinge on our ability\") was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "incorrect",
+    "reason": "Change/cut required: inflated \"the very fabric of system design\" was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the supplied MTTC numbers in place of \"streamlines containment\"; the model only deleted the vague phrase instead of replacing it with that fact.",
+    "model": "grok-4.6-build"
+  }
+}

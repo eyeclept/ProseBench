@@ -1,0 +1,20 @@
+{
+  "P2-R3-001": {
+    "instance_id": "P2-R3-001",
+    "verdict": "correct",
+    "reason": "Field-specific trailer was split into its own affirmative sentence stating siting relative to demand, without dropping the distinction or cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R3-002": {
+    "instance_id": "P2-R3-002",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required an unchanged flagged span; the model rewrote it and added reserve definitions and timing instead of flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R3-003": {
+    "instance_id": "P2-R3-003",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut; “on purpose” remains.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the no-number intensifier phrase, but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “extraordinary benefits”; the text was not edited.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “dramatically broader than in the past”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “a large proportion of exploit success”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive log volumes”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “spurred unprecedented collaboration”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-007": {
+    "instance_id": "P1-R5-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier lead-in “Ultimately, the resilience of digital societies will hinge”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “the very fabric of system design”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "correct",
+    "reason": "Keep instance: the finality interjection has no exclusivity marker, and the sentence was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Cut the redundant “end of story” after the exclusivity marker “only” and kept the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Should have replaced “significantly reduces mean time to contain” with the supplied fact “fell from 18 hours to 3 hours”; only dropped “significantly.”",
+    "model": "grok-4.6-build"
+  }
+}

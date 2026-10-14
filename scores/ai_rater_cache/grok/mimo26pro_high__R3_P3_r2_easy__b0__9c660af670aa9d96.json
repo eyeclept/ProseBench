@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required flag with the span left unchanged; the model rewrote it and added an outside definition of landraces.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut and the rest of the sentence was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "correct",
+    "reason": "Field-specific “not nuclear transformation” was dropped as a trailer and restated as its own affirmative sentence about chloroplast-genome integration, without merely cutting the distinction.",
+    "model": "grok-4.6-build"
+  }
+}

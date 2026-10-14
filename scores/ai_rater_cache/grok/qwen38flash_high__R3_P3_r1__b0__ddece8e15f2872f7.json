@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "correct",
+    "reason": "Span left unchanged with empty diff (replacement null), which is the required flag handling for this ambiguous trailer.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge trailer “rather than by accident” was cut; “on purpose” remains and no needed fact was lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Promotion added an invented claim that the transgene integrates into the plastid genome, which is not in the passage and was not supplied as fact_text.",
+    "model": "grok-4.6-build"
+  }
+}

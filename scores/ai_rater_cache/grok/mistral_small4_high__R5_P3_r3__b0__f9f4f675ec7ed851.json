@@ -1,0 +1,68 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "correct",
+    "reason": "Cut the intensifier 'astonishing' and left the rest of the clause, so the violation is gone with no necessary fact lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'dramatically increased food production' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'a vast pharmacopeia' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'a substantial portion of anthropogenic emissions' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'respond more robustly' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'profoundly influences plant health' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "correct",
+    "reason": "Rewrote the clause so 'immense' is gone; cutting via rewrite is allowed when no necessary fact is lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required; 'threatening countless plant species' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep was required for the emphatic interjection without an exclusivity marker; 'make no mistake' was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "correct",
+    "reason": "Removed the redundant finality interjection 'full stop' after the exclusivity marker 'only'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact was required; the model only dropped 'dramatically' instead of using the supplied yield-loss numbers in that span.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "P1-R2-001": {
+    "instance_id": "P1-R2-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for the doubling clause, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-002": {
+    "instance_id": "P1-R2-002",
+    "verdict": "incorrect",
+    "reason": "The padded-negation windup was supposed to be cut; the sentence is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-003": {
+    "instance_id": "P1-R2-003",
+    "verdict": "incorrect",
+    "reason": "The restatement/doubling target was not cut; before and after are identical.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-004": {
+    "instance_id": "P1-R2-004",
+    "verdict": "correct",
+    "reason": "The windup “requires more than periodic training” was deleted and the positive claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-005": {
+    "instance_id": "P1-R2-005",
+    "verdict": "incorrect",
+    "reason": "“Beyond compliance,” was a windup that should have been cut; it was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-006": {
+    "instance_id": "P1-R2-006",
+    "verdict": "incorrect",
+    "reason": "The double-edged-sword setup sentence was supposed to be cut and was not.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-007": {
+    "instance_id": "P1-R2-007",
+    "verdict": "correct",
+    "reason": "The “not merely an IT concern” windup was removed; the positive claim stands alone.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R2-008": {
+    "instance_id": "P1-R2-008",
+    "verdict": "correct",
+    "reason": "Load-bearing contrast was correctly left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

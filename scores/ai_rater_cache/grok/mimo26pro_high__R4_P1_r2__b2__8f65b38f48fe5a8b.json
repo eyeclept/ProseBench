@@ -1,0 +1,20 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph was replaced with three periods, matching punct_three_periods.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash joining two independent clauses was replaced with a semicolon, matching punct_semicolon_or_period.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "correct",
+    "reason": "Em-dash run-on was split into separate sentences; the leftover comma splice was correctly turned into a semicolon rather than left as a splice.",
+    "model": "grok-4.6-build"
+  }
+}

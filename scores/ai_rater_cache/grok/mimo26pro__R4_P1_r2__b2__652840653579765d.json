@@ -1,0 +1,17 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph replaced with three periods; no other required change."
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash joining two independent clauses replaced with a period, which is an allowed punct_semicolon_or_period fix."
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Em dash was split, but the remaining independent clauses are still a comma splice (punct_split requires splitting the whole run-on into separate sentences), and extra leading text was introduced."
+  }
+}

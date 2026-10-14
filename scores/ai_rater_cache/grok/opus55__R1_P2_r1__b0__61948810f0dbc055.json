@@ -1,0 +1,116 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "correct",
+    "reason": "Cut the banned intensifier 'dramatically' while keeping the factual claim that architecture has evolved for the listed reasons.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'robust' for synonym 'strong', which the rubric treats as leaving the empty claim in place.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "correct",
+    "reason": "Replaced banned verb 'leverages' with plain 'uses' and kept the OPF-algorithm fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Change-type cut required, but 'fall dramatically' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Replaced banned 'enhancing' with plain 'raising' and kept the capacity-without-new-lines fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Change-type cut required, but 'paving the way for' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "Swapped 'fostering' for synonym 'encouraging' instead of cutting the empty 'while fostering competition' claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'Seamless' for synonym 'Smooth', keeping the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'crucial' for synonym 'essential', the same empty-claim swap the rubric forbids.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "correct",
+    "reason": "Restructured so the sentence no longer starts with banned 'By [gerund]...' and kept the coupling fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "Dropped banned 'holistic' and empty 'emerges'; rewrote as a more integrated energy system while keeping the coupling fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'robust' for synonym 'strong' instead of cutting the empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'ecosystem' with 'system' and dropped 'seamlessly', keeping the decentralized cyber-physical meaning.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'landscape' with 'system' and kept the democratic-energy claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Replaced metaphorical 'Navigating' with 'Managing' and kept reliability, resilience, and market complexities.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Dropped banned 'innovative' for plain 'new' and kept the listed technologies.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'robust' for evaluative synonym 'sound', leaving the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "correct",
+    "reason": "Protected technical term 'Robust control' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "correct",
+    "reason": "Removed 'significantly' and kept the supplied fact that losses fall from 8 percent to 3 percent.",
+    "model": "grok-4.6-build"
+  }
+}

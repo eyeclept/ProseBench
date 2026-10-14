@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The expected action was to leave the sentence unchanged and flag the uncertainty. The model instead rewrote it and added unsupported definitions.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-antonym trailer was cut, preserving the statement that breeders select the alleles on purpose.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Although the model added a separate sentence, it invented targeting-sequence and genome-integration facts not supplied by the passage. Being designed for chloroplast transformation does not establish those details.",
+    "model": "gpt-6.1-sol"
+  }
+}

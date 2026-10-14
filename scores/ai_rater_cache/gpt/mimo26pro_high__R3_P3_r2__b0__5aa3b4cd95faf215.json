@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "The ambiguous distinction required leaving the sentence unchanged and flagging it. The model instead rewrote it and added a definition.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "The redundant ordinary-antonym trailer was cut, preserving the statement that breeders select the alleles on purpose.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "The field-specific distinction required its own affirmative sentence. The model instead used a subordinate clause and introduced an integration detail not supplied in the passage.",
+    "model": "gpt-6.1-sol"
+  }
+}

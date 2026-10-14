@@ -1,0 +1,17 @@
+{
+  "P1-R4-081": {
+    "instance_id": "P1-R4-081",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph replaced with three ASCII periods; rest of the span unchanged."
+  },
+  "P1-R4-082": {
+    "instance_id": "P1-R4-082",
+    "verdict": "correct",
+    "reason": "Em dash between two independent clauses replaced with a semicolon, matching punct_semicolon_or_period."
+  },
+  "P1-R4-083": {
+    "instance_id": "P1-R4-083",
+    "verdict": "incorrect",
+    "reason": "Em dash was turned into a period, but the remaining comma splice (SOC ingested... / the legal team then discovered) was left unsplit, so the run-on was not fully broken into sentences."
+  }
+}

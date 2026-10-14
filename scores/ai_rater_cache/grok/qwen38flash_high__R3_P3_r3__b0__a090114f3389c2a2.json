@@ -1,0 +1,20 @@
+{
+  "P3-R3-001": {
+    "instance_id": "P3-R3-001",
+    "verdict": "incorrect",
+    "reason": "Ambiguous trailer required flag-and-leave-unchanged; the model rewrote the sentence and added definitions instead of flagging.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-002": {
+    "instance_id": "P3-R3-002",
+    "verdict": "correct",
+    "reason": "Ordinary-knowledge antonym trailer “rather than by accident” was cut; the remaining sentence keeps the necessary fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R3-003": {
+    "instance_id": "P3-R3-003",
+    "verdict": "incorrect",
+    "reason": "Field-specific distinction was not given its own affirmative sentence; “not nuclear transformation” was dropped and extra facts not in the passage were invented.",
+    "model": "grok-4.6-build"
+  }
+}
