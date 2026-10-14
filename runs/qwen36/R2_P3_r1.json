@@ -1,0 +1,95 @@
+{
+  "run_id": "R2_P3_r1",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:46:18.508649+00:00",
+  "duration_s": 58.898522113013314,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n  {\n    \"original\": \"In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.\",\n    \"replacement\": \"A comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity in an era marked by rapid environmental change, food insecurity, and dwindling natural resources.\",\n    \"reason\": \"The clause 'not merely academic' is padded negation that adds no information; deleting it and reattaching the filler clause to the remaining assertion preserves the entire claim.\"\n  },\n  {\n    \"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\",\n    \"replacement\": \"\",\n    \"reason\": \"This sentence contains no information the following sentence depends on and its deletion does not alter any subsequent claim.\"\n  },\n  {\n    \"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n    \"replacement\": \"\",\n    \"reason\": \"This sentence is topically unrelated to both its predecessors and successors, and deleting it loses no claim from surrounding sentences.\"\n  },\n  {\n    \"original\": \"A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\",\n    \"replacement\": \"The protocol change significantly streamlines cell-wall composition analysis, reducing the assay time from 40 minutes to 6 minutes.\",\n    \"reason\": \"The negative half 'ran in 40 minutes before the protocol change and in 6 minutes after it' is padded negation; deleting the temporal comparison and restating the result preserves the claim without loss.\"\n  },\n  {\n    \"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n    \"replacement\": \"\",\n    \"reason\": \"'full stop' is padded negation filler with no informational content; deleting it does not alter any claim.\"\n  },\n  {\n    \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n    \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime (C4, where mesophyll and bundle-sheath cells share the work) and a temporal regime (CAM, where stomata open at night).\",\n    \"reason\": \"This is definition doubling: the distinction is introduced, then restated through an analogy and re-explained with additional synonym-laden clauses ('close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one') that add no new fact.\"\n  },\n  {\n    \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n    \"replacement\": \"\",\n    \"reason\": \"This sentence is topically unrelated to both preceding sentences on phylogenetic insights and succeeding sentences on conservation collections, and its deletion loses nothing from surrounding context.\"\n  },\n  {\n    \"original\": \"Conservation collections still accession landraces, rather than heirlooms.\",\n    \"replacement\": \"\",\n    \"reason\": \"The negation 'rather than heirlooms' is a windup that adds no checkable information; the positive half alone is what the surrounding passage depends on.\"\n  },\n  {\n    \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n    \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n    \"reason\": \"'rather than by accident' is padded negation that restates the obvious without adding new fact; deleting it loses nothing checkable.\"\n  },\n  {\n    \"original\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\",\n    \"replacement\": \"Supplemental irrigation dramatically reduces yield loss in dry years, bringing it from 41 percent in rainfed plots to 8 percent with irrigation.\",\n    \"reason\": \"The first clause uses padded negation by framing the data as a 'fell from X to Y' comparison when the remaining assertion already fully states the claim; restructuring preserves all information without the windup.\"\n  },\n  {\n    \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n    \"replacement\": \"Morphine is produced in Papaver somniferum latex.\",\n    \"reason\": \"Deleting the negative clause 'Morphine is not synthesized by the Pacific yew' reveals it adds no checkable information to the positive half about where morphine actually comes from.\"\n  },\n  {\n    \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n    \"replacement\": \"The construct was designed for chloroplast transformation.\",\n    \"reason\": \"The negative half 'not nuclear transformation' is a windup that states nothing beyond the positive assertion; deleting it loses nothing checkable.\"\n  }\n]}\n```",
+  "edits": [
+    {
+      "original": "In an era marked by rapid environmental change, food insecurity, and dwindling natural resources, a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.",
+      "replacement": "A comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity in an era marked by rapid environmental change, food insecurity, and dwindling natural resources.",
+      "reason": "The clause 'not merely academic' is padded negation that adds no information; deleting it and reattaching the filler clause to the remaining assertion preserves the entire claim."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "",
+      "reason": "This sentence contains no information the following sentence depends on and its deletion does not alter any subsequent claim."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "",
+      "reason": "This sentence is topically unrelated to both its predecessors and successors, and deleting it loses no claim from surrounding sentences."
+    },
+    {
+      "original": "A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "The protocol change significantly streamlines cell-wall composition analysis, reducing the assay time from 40 minutes to 6 minutes.",
+      "reason": "The negative half 'ran in 40 minutes before the protocol change and in 6 minutes after it' is padded negation; deleting the temporal comparison and restating the result preserves the claim without loss."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "",
+      "reason": "'full stop' is padded negation filler with no informational content; deleting it does not alter any claim."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime (C4, where mesophyll and bundle-sheath cells share the work) and a temporal regime (CAM, where stomata open at night).",
+      "reason": "This is definition doubling: the distinction is introduced, then restated through an analogy and re-explained with additional synonym-laden clauses ('close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one') that add no new fact."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "",
+      "reason": "This sentence is topically unrelated to both preceding sentences on phylogenetic insights and succeeding sentences on conservation collections, and its deletion loses nothing from surrounding context."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "",
+      "reason": "The negation 'rather than heirlooms' is a windup that adds no checkable information; the positive half alone is what the surrounding passage depends on."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'rather than by accident' is padded negation that restates the obvious without adding new fact; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "Supplemental irrigation dramatically reduces yield loss in dry years, bringing it from 41 percent in rainfed plots to 8 percent with irrigation.",
+      "reason": "The first clause uses padded negation by framing the data as a 'fell from X to Y' comparison when the remaining assertion already fully states the claim; restructuring preserves all information without the windup."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "Deleting the negative clause 'Morphine is not synthesized by the Pacific yew' reveals it adds no checkable information to the positive half about where morphine actually comes from."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negative half 'not nuclear transformation' is a windup that states nothing beyond the positive assertion; deleting it loses nothing checkable."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20920,
+    "output": 1181,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.004319,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

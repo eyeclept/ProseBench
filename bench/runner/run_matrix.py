@@ -95,6 +95,7 @@ def _invoke(root: Path, wrapper: str, model: str, thinking: str, user_prompt: st
 # Failures caused by the network or a provider, not the model. Only these are rerun on resume; a model failure
 # (bad JSON, empty answer, run-cap deadline, omp loop guard) is a result and is never re-rolled at the same cap.
 INFRA_FAILURE = re.compile(r"ECONNRESET|ETIMEDOUT|ENOTFOUND|socket connection was closed|fetch failed|"
+                           r"Network connection lost|"
                            r"Provider returned error|\b(?:429|500|502|503|504)\b")
 
 

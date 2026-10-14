@@ -1,0 +1,55 @@
+{
+  "run_id": "R3_P2_r1_easy",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "c6f2900692c92a1e3cd08759baf3505a86e21a9b43e4d9471a6431f4e8408fd3",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:50:34.568229+00:00",
+  "duration_s": 11.779454267991241,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": \"Operators procured spinning reserve.\",\n      \"reason\": \"The phrase 'rather than non-spinning reserve' is a trailing 'not X' clause; 'spinning reserve' vs 'non-spinning reserve' is a technical term not covered by the ordinary-knowledge test (it requires domain expertise in power system operations), so the distinction earns its own sentence.\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"replacement\": \"The Texas failure was caused by frozen gas wells and unheated thermal auxiliaries, which accounted for the lost megawatts.\",\n      \"reason\": \"The phrase 'was not a nameplate shortfall of wind' is a trailing 'not X' clause; 'nameplate shortfall' vs. 'frozen gas wells' is a technical, domain-specific distinction, not an ordinary-knowledge antonym, so it should be stated as a positive fact.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned on purpose.\",\n      \"reason\": \"The phrase 'rather than by accident' is a trailing 'not X' clause. 'On purpose' vs. 'by accident' is an ordinary-knowledge antonym, so the trailer adds nothing and should be cut.\"\n    },\n    {\n      \"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n      \"replacement\": \"Islanded operation is the only backup path for those hospitals.\",\n      \"reason\": \"The phrase 'end of story' is a trailing 'not X' clause that is emphatic but not informative; it adds nothing and should be cut.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The phrase 'rather than non-spinning reserve' is a trailing 'not X' clause; 'spinning reserve' vs 'non-spinning reserve' is a technical term not covered by the ordinary-knowledge test (it requires domain expertise in power system operations), so the distinction earns its own sentence."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "The Texas failure was caused by frozen gas wells and unheated thermal auxiliaries, which accounted for the lost megawatts.",
+      "reason": "The phrase 'was not a nameplate shortfall of wind' is a trailing 'not X' clause; 'nameplate shortfall' vs. 'frozen gas wells' is a technical, domain-specific distinction, not an ordinary-knowledge antonym, so it should be stated as a positive fact."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "The phrase 'rather than by accident' is a trailing 'not X' clause. 'On purpose' vs. 'by accident' is an ordinary-knowledge antonym, so the trailer adds nothing and should be cut."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "The phrase 'end of story' is a trailing 'not X' clause that is emphatic but not informative; it adds nothing and should be cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18260,
+    "output": 436,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0012182,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

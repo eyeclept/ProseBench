@@ -1,0 +1,251 @@
+{
+  "run_id": "R4_P1_r2",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:54:07.075995+00:00",
+  "duration_s": 24.888001751998672,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Word count: \u2248 1,620\",\n      \"replacement\": \"Word count: approximately 1,620\",\n      \"reason\": \"The approximately-equal sign (\u2248) is a non-ASCII typographic character and should be replaced with standard ASCII text.\"\n    },\n    {\n      \"original\": \"twenty\u2011first\",\n      \"replacement\": \"twenty-first\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"cloud\u2011based\",\n      \"replacement\": \"cloud-based\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"Internet\u2011of\u2011Things\",\n      \"replacement\": \"Internet-of-Things\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"original\": \"benefits\u2014speed\",\n      \"replacement\": \"benefits; speed\",\n      \"reason\": \"The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon.\"\n    },\n    {\n      \"original\": \"stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay\",\n      \"replacement\": \"stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay\",\n      \"reason\": \"No change needed; the colon is a standard ASCII character.\"\n    },\n    {\n      \"original\": \"caf\u00e9 POS\",\n      \"replacement\": \"caf\u00e9 POS\",\n      \"reason\": \"The \u00e9 in caf\u00e9 is a correctly spelled foreign word with a diacritic, which is allowed under Rule 4.\"\n    },\n    {\n      \"original\": \"supply\u2011chain\",\n      \"replacement\": \"supply-chain\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"28 %\",\n      \"replacement\": \"28%\",\n      \"reason\": \"The non-breaking space ( ) between the number and the percent sign is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"17 %\",\n      \"replacement\": \"17%\",\n      \"reason\": \"The non-breaking space ( ) between the number and the percent sign is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"dark\u2011web\",\n      \"replacement\": \"dark-web\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"defense\u2011in\u2011depth\",\n      \"replacement\": \"defense-in-depth\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"original\": \"application\u2011aware\",\n      \"replacement\": \"application-aware\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"micro\u2011segmentation\",\n      \"replacement\": \"micro-segmentation\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"credential\u2011dumping\",\n      \"replacement\": \"credential-dumping\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"TLS 1.3\",\n      \"replacement\": \"TLS 1.3\",\n      \"reason\": \"The non-breaking space ( ) between TLS and 1.3 is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"Identity\u2011and\u2011access\",\n      \"replacement\": \"Identity-and-access\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"original\": \"24  hours\",\n      \"replacement\": \"24 hours\",\n      \"reason\": \"The non-breaking space ( ) between 24 and hours is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"third\u2011party\",\n      \"replacement\": \"third-party\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"key performance indicators (KPIs)\",\n      \"replacement\": \"key performance indicators (KPIs)\",\n      \"reason\": \"No change needed; parentheses are standard ASCII characters.\"\n    },\n    {\n      \"original\": \"34 %\",\n      \"replacement\": \"34%\",\n      \"reason\": \"The non-breaking space ( ) between 34 and the percent sign is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"click\u2011through\",\n      \"replacement\": \"click-through\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"security\u2011first\",\n      \"replacement\": \"security-first\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"4 %\",\n      \"replacement\": \"4%\",\n      \"reason\": \"The non-breaking space ( ) between 4 and the percent sign is a non-ASCII character and should be replaced with a regular space.\"\n    },\n    {\n      \"original\": \"data\u2011protection\",\n      \"replacement\": \"data-protection\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"data\u2011retention\",\n      \"replacement\": \"data-retention\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"up\u2011to\u2011date\",\n      \"replacement\": \"up-to-date\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"original\": \"cyber\u2011insurance\",\n      \"replacement\": \"cyber-insurance\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"AI\u2011driven\",\n      \"replacement\": \"AI-driven\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"threat\u2011intel\",\n      \"replacement\": \"threat-intel\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"credential\u2011stuffing\",\n      \"replacement\": \"credential-stuffing\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"software\u2011supply\u2011chain\",\n      \"replacement\": \"software-supply-chain\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"incident\": \"incident\",\n      \"replacement\": \"incident\",\n      \"reason\": \"No change needed.\"\n    },\n    {\n      \"original\": \"incident\u2011sharing\",\n      \"replacement\": \"incident-sharing\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"cyber\u2011attacks\",\n      \"replacement\": \"cyber-attacks\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"hyper\u2011connectivity\",\n      \"replacement\": \"hyper-connectivity\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"replacement\": \"5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n      \"reason\": \"The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon.\"\n    },\n    {\n      \"original\": \"Zero\u2011Trust\",\n      \"replacement\": \"Zero-Trust\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"Secure\u2011by\u2011Design\",\n      \"replacement\": \"Secure-by-Design\",\n      \"reason\": \"The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-).\"\n    },\n    {\n      \"original\": \"AI\u2011Enhanced\",\n      \"replacement\": \"AI-Enhanced\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"Post\u2011Quantum\",\n      \"replacement\": \"Post-Quantum\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    },\n    {\n      \"original\": \"resilience\u2014immutable\",\n      \"replacement\": \"resilience; immutable\",\n      \"reason\": \"The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon.\"\n    },\n    {\n      \"original\": \"quantum\u2011resistant\",\n      \"replacement\": \"quantum-resistant\",\n      \"reason\": \"The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-).\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Word count: \u2248 1,620",
+      "replacement": "Word count: approximately 1,620",
+      "reason": "The approximately-equal sign (\u2248) is a non-ASCII typographic character and should be replaced with standard ASCII text."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "benefits\u2014speed",
+      "replacement": "benefits; speed",
+      "reason": "The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon."
+    },
+    {
+      "original": "stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay",
+      "replacement": "stakes are high: a single breach can compromise personal identities, sabotage critical infrastructure, and erode public trust in institutions. This essay",
+      "reason": "No change needed; the colon is a standard ASCII character."
+    },
+    {
+      "original": "caf\u00e9 POS",
+      "replacement": "caf\u00e9 POS",
+      "reason": "The \u00e9 in caf\u00e9 is a correctly spelled foreign word with a diacritic, which is allowed under Rule 4."
+    },
+    {
+      "original": "supply\u2011chain",
+      "replacement": "supply-chain",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "28 %",
+      "replacement": "28%",
+      "reason": "The non-breaking space ( ) between the number and the percent sign is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "17 %",
+      "replacement": "17%",
+      "reason": "The non-breaking space ( ) between the number and the percent sign is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "dark\u2011web",
+      "replacement": "dark-web",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "micro\u2011segmentation",
+      "replacement": "micro-segmentation",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "credential\u2011dumping",
+      "replacement": "credential-dumping",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "TLS 1.3",
+      "replacement": "TLS 1.3",
+      "reason": "The non-breaking space ( ) between TLS and 1.3 is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "Identity\u2011and\u2011access",
+      "replacement": "Identity-and-access",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "24  hours",
+      "replacement": "24 hours",
+      "reason": "The non-breaking space ( ) between 24 and hours is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "third\u2011party",
+      "replacement": "third-party",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "key performance indicators (KPIs)",
+      "replacement": "key performance indicators (KPIs)",
+      "reason": "No change needed; parentheses are standard ASCII characters."
+    },
+    {
+      "original": "34 %",
+      "replacement": "34%",
+      "reason": "The non-breaking space ( ) between 34 and the percent sign is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "click\u2011through",
+      "replacement": "click-through",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "security\u2011first",
+      "replacement": "security-first",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "4 %",
+      "replacement": "4%",
+      "reason": "The non-breaking space ( ) between 4 and the percent sign is a non-ASCII character and should be replaced with a regular space."
+    },
+    {
+      "original": "data\u2011protection",
+      "replacement": "data-protection",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "data\u2011retention",
+      "replacement": "data-retention",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "up\u2011to\u2011date",
+      "replacement": "up-to-date",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "cyber\u2011insurance",
+      "replacement": "cyber-insurance",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "AI\u2011driven",
+      "replacement": "AI-driven",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "threat\u2011intel",
+      "replacement": "threat-intel",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "credential\u2011stuffing",
+      "replacement": "credential-stuffing",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "5G rollout added thousands of new radios; the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon."
+    },
+    {
+      "original": "Zero\u2011Trust",
+      "replacement": "Zero-Trust",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "Secure\u2011by\u2011Design",
+      "replacement": "Secure-by-Design",
+      "reason": "The non-breaking hyphens (\u2011) are not standard US keyboard characters and must be replaced with regular hyphens (-)."
+    },
+    {
+      "original": "AI\u2011Enhanced",
+      "replacement": "AI-Enhanced",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "Post\u2011Quantum",
+      "replacement": "Post-Quantum",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    },
+    {
+      "original": "resilience\u2014immutable",
+      "replacement": "resilience; immutable",
+      "reason": "The em dash (\u2014) is a non-ASCII typographic character; it joins two independent clauses and should be replaced with a semicolon."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "The non-breaking hyphen (\u2011) is not a standard US keyboard character and must be replaced with a regular hyphen (-)."
+    }
+  ],
+  "malformed_edits": [
+    {
+      "incident": "incident",
+      "replacement": "incident",
+      "reason": "No change needed."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 16997,
+    "output": 2629,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00269015,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,95 @@
+{
+  "run_id": "R2_P3_r3",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:48:22.440961+00:00",
+  "duration_s": 70.77804642598494,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"From the earliest herbalists who catalogued medicinal herbs to modern molecular biologists decoding the genomes of towering redwoods, the discipline has continually expanded its scope and depth.\",\n      \"replacement\": \"\",\n      \"reason\": \"This sentence is a padded negation windup: deleting it does not change the argument that botany is expanding, which is already stated in the next sentence.\"\n    },\n    {\n      \"original\": \"A caf\u00e9 in Uppsala still displays a 1753 herbarium sheet of Coffea arabica beside the Linnaean labels. Field crews still collect vouchers, make no mistake.\",\n      \"replacement\": \"Field crews still collect vouchers.\",\n      \"reason\": \"The first sentence is a padded negation windup: it sets up an observation of continuity that is restated in the second sentence ('Field crews still collect vouchers'), adding no new fact the second time.\"\n    },\n    {\n      \"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is a padded negation windup: deleting it loses nothing checkable, as it describes a routine herbarium workflow unrelated to the subsequent point about Arabidopsis genome sequencing.\"\n    },\n    {\n      \"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"replacement\": \"\",\n      \"reason\": \"This sentence is a padded negation windup in the cellular foundations section: it adds a specific statistical method detail that is not built on by subsequent sentences and functions as a windup rather than a core claim about cell structure or function.\"\n    },\n    {\n      \"original\": \"A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is a padded negation windup: the sentence restates a procedural detail with no connection to the surrounding text about cell-wall structure and function, losing nothing if deleted.\"\n    },\n    {\n      \"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is a padded negation windup: the previous sentence already states that CO\u2082 is fixed by Rubisco; this assertion adds no new factual content and functions as emphatic filler.\"\n    },\n    {\n      \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime (C4, where mesophyll and bundle-sheath cells share the work) and a temporal regime (CAM, where stomata open at night).\",\n      \"reason\": \"This is definition doubling: the sentence introduces a distinction then restates it through an analogy ('close to the C4-versus-CAM split') before moving on, adding no new fact the second time.\"\n    },\n    {\n      \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot. Conservation collections still accession landraces, rather than heirlooms.\",\n      \"replacement\": \"Conservation collections accession landraces and heirlooms.\",\n      \"reason\": \"The first sentence is a padded negation windup unrelated to conservation; the second is a padded negation itself\u2014'rather than heirlooms' restates the selection criteria without adding new fact, so both are consolidated.\"\n    },\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles.\",\n      \"reason\": \"This is a padded negation windup: selecting dwarfing alleles inherently implies purpose, so the 'rather than by accident' clause adds no new factual content.\"\n    },\n    {\n      \"original\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is a padded negation windup: the first clause states the data, and the second restates the conclusion that irrigation reduces yield loss, adding nothing the second time.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is produced in Papaver somniferum latex.\",\n      \"reason\": \"This matches Rule 2's pattern 'X is not A; it is B'\u2014the negative half is a windup since the passage already established paclitaxel as the Pacific yew's product.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": \"The construct was designed for chloroplast transformation.\",\n      \"reason\": \"This matches Rule 2's 'not X, but Y' pattern\u2014the negative half is a windup since the passage already stated the construct was for chloroplast transformation.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "From the earliest herbalists who catalogued medicinal herbs to modern molecular biologists decoding the genomes of towering redwoods, the discipline has continually expanded its scope and depth.",
+      "replacement": "",
+      "reason": "This sentence is a padded negation windup: deleting it does not change the argument that botany is expanding, which is already stated in the next sentence."
+    },
+    {
+      "original": "A caf\u00e9 in Uppsala still displays a 1753 herbarium sheet of Coffea arabica beside the Linnaean labels. Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "The first sentence is a padded negation windup: it sets up an observation of continuity that is restated in the second sentence ('Field crews still collect vouchers'), adding no new fact the second time."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "",
+      "reason": "This is a padded negation windup: deleting it loses nothing checkable, as it describes a routine herbarium workflow unrelated to the subsequent point about Arabidopsis genome sequencing."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "",
+      "reason": "This sentence is a padded negation windup in the cellular foundations section: it adds a specific statistical method detail that is not built on by subsequent sentences and functions as a windup rather than a core claim about cell structure or function."
+    },
+    {
+      "original": "A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "",
+      "reason": "This is a padded negation windup: the sentence restates a procedural detail with no connection to the surrounding text about cell-wall structure and function, losing nothing if deleted."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "",
+      "reason": "This is a padded negation windup: the previous sentence already states that CO\u2082 is fixed by Rubisco; this assertion adds no new factual content and functions as emphatic filler."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime (C4, where mesophyll and bundle-sheath cells share the work) and a temporal regime (CAM, where stomata open at night).",
+      "reason": "This is definition doubling: the sentence introduces a distinction then restates it through an analogy ('close to the C4-versus-CAM split') before moving on, adding no new fact the second time."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot. Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections accession landraces and heirlooms.",
+      "reason": "The first sentence is a padded negation windup unrelated to conservation; the second is a padded negation itself\u2014'rather than heirlooms' restates the selection criteria without adding new fact, so both are consolidated."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles.",
+      "reason": "This is a padded negation windup: selecting dwarfing alleles inherently implies purpose, so the 'rather than by accident' clause adds no new factual content."
+    },
+    {
+      "original": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "",
+      "reason": "This is a padded negation windup: the first clause states the data, and the second restates the conclusion that irrigation reduces yield loss, adding nothing the second time."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "This matches Rule 2's pattern 'X is not A; it is B'\u2014the negative half is a windup since the passage already established paclitaxel as the Pacific yew's product."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "This matches Rule 2's 'not X, but Y' pattern\u2014the negative half is a windup since the passage already stated the construct was for chloroplast transformation."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20920,
+    "output": 1210,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.004348,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

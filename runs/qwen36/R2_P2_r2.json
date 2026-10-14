@@ -1,0 +1,80 @@
+{
+  "run_id": "R2_P2_r2",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:45:07.964761+00:00",
+  "duration_s": 12.685273939016042,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\", \"replacement\": \"\", \"reason\": \"Deleting the negative clause leaves the positive claim about inertia, but the positive half itself is a windup that restates the same fact with different words, so the whole sentence is redundant.\"}, {\"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration. Inertia still matters for the first few cycles after a trip, full stop.\", \"replacement\": \"Inertia still matters for the first few cycles after a trip, full stop.\", \"reason\": \"The negative clause is a windup that restates the same fact with different words, so deleting it leaves the positive claim intact.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"\", \"reason\": \"This is a padded negation that restates the procurement decision; deleting the negative clause leaves the positive fact without loss.\"}, {\"original\": \"Forecasts still miss cloud-driven ramps\u2026\", \"replacement\": \"\", \"reason\": \"This is a windup negative clause that restates the intermittency issue; deleting it leaves the positive fact about intermittency intact.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\", \"replacement\": \"\", \"reason\": \"This is a padded negation that restates the loss reduction; deleting the negative clause leaves the positive fact without loss.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\", \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"reason\": \"The negative clause is a windup that restates the same fact; deleting it leaves the positive claim about the cause of the lost megawatts intact.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"This is a padded negation that restates the planning decision; deleting the negative clause leaves the positive fact without loss.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"\", \"reason\": \"This is a padded negation that restates the backup path; deleting the negative clause leaves the positive fact without loss.\"}, {\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"Ice storms still take lines out of service for days.\", \"reason\": \"The negative clause is a windup that restates the same action; deleting it leaves the positive claim without loss.\"}]}",
+  "edits": [
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "",
+      "reason": "Deleting the negative clause leaves the positive claim about inertia, but the positive half itself is a windup that restates the same fact with different words, so the whole sentence is redundant."
+    },
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration. Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "reason": "The negative clause is a windup that restates the same fact with different words, so deleting it leaves the positive claim intact."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "",
+      "reason": "This is a padded negation that restates the procurement decision; deleting the negative clause leaves the positive fact without loss."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "",
+      "reason": "This is a windup negative clause that restates the intermittency issue; deleting it leaves the positive fact about intermittency intact."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "",
+      "reason": "This is a padded negation that restates the loss reduction; deleting the negative clause leaves the positive fact without loss."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative clause is a windup that restates the same fact; deleting it leaves the positive claim about the cause of the lost megawatts intact."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "This is a padded negation that restates the planning decision; deleting the negative clause leaves the positive fact without loss."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "",
+      "reason": "This is a padded negation that restates the backup path; deleting the negative clause leaves the positive fact without loss."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still take lines out of service for days.",
+      "reason": "The negative clause is a windup that restates the same action; deleting it leaves the positive claim without loss."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18225,
+    "output": 631,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00135295,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,75 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:42:16.545255+00:00",
+  "duration_s": 9.554710323980544,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"The caf\u00e9 POS vendor still ships terminals with a default password.\",\n\"replacement\": \"\",\n\"reason\": \"Isolated factual sentence unrelated to the paragraph's argument about threat multiplication; deletion leaves the core claim intact.\"\n},\n{\n\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.\",\n\"replacement\": \"Access checks default to fail-closed.\",\n\"reason\": \"Definition doubling: the second sentence restates the first as a synonym for emphasis, adding no new fact.\"\n},\n{\n\"original\": \"The EDR timeline ends at a truncated process tree\u2026\",\n\"replacement\": \"\",\n\"reason\": \"Orphaned sentence fragment unrelated to the paragraph's argument about patch management; deletion causes no loss.\"\n},\n{\n\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\",\n\"replacement\": \"\",\n\"reason\": \"Internal detail that restates no new fact beyond what follows; the subsequent sentences already explain the metric and its impact.\"\n},\n{\n\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\",\n\"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.\",\n\"reason\": \"Definition doubling: the second sentence restates the first through a synonym ('significantly reduces') without adding new fact.\"\n},\n{\n\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n\"replacement\": \"\",\n\"reason\": \"Windup negation: deleting this sentence leaves the factual claim about role-based access controls and minimum privileges unchanged.\"\n},\n{\n\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n\"replacement\": \"\",\n\"reason\": \"Windup negation: deleting this sentence adds nothing lost to the preceding point about positive reinforcement outperforming punitive measures.\"\n},\n{\n\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n\"replacement\": \"The 5G rollout added thousands of new radios.\",\n\"reason\": \"The parenthetical after the em dash is an anecdotal aside that restates the expansion point; deletion leaves the core claim about 5G endpoints intact.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "The caf\u00e9 POS vendor still ships terminals with a default password.",
+      "replacement": "",
+      "reason": "Isolated factual sentence unrelated to the paragraph's argument about threat multiplication; deletion leaves the core claim intact."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "Definition doubling: the second sentence restates the first as a synonym for emphasis, adding no new fact."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "",
+      "reason": "Orphaned sentence fragment unrelated to the paragraph's argument about patch management; deletion causes no loss."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "",
+      "reason": "Internal detail that restates no new fact beyond what follows; the subsequent sentences already explain the metric and its impact."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.",
+      "reason": "Definition doubling: the second sentence restates the first through a synonym ('significantly reduces') without adding new fact."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "Windup negation: deleting this sentence leaves the factual claim about role-based access controls and minimum privileges unchanged."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "",
+      "reason": "Windup negation: deleting this sentence adds nothing lost to the preceding point about positive reinforcement outperforming punitive measures."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios.",
+      "reason": "The parenthetical after the em dash is an anecdotal aside that restates the expansion point; deletion leaves the core claim about 5G endpoints intact."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19822,
+    "output": 561,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0024871,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

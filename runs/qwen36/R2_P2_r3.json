@@ -1,0 +1,75 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:45:20.664748+00:00",
+  "duration_s": 57.711845591984456,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"Hydro plants in Qu\u00e9bec still use those same synchronous machines for frequency control. Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\",\n\"replacement\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\",\n\"reason\": \"The first sentence is padded negation-style filler that doesn't advance the technical claim about frequency restoration being shortened by the retune.\"\n},\n{\n\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n\"replacement\": \"Operators procured spinning reserve.\",\n\"reason\": \"The negative clause 'rather than non-spinning reserve' is redundant windup since procuring spinning reserve already excludes non-spinning reserve from that action.\"\n},\n{\n\"original\": \"Wind turbines, photovoltaic (PV) arrays, concentrated solar power (CSP), and emerging wave or tidal converters constitute a new portfolio of generation resources.\",\n\"replacement\": \"\",\n\"reason\": \"This sentence restates the fact that renewable technologies have been rising by listing examples already implied by 'renewable energy technologies,' adding no new factual content.\"\n},\n{\n\"original\": \"Forecasts still miss cloud-driven ramps\u2026\",\n\"replacement\": \"\",\n\"reason\": \"This is a filler clause that restates the importance of forecasting without adding a verifiable claim; the subsequent bullet on intermittency covers the forecasting need.\"\n},\n{\n\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\",\n\"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n\"reason\": \"The negative half and the second sentence are redundant restatements; deleting the negative clause and one of the two explanatory sentences leaves the same factual claim.\"\n},\n{\n\"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n\"replacement\": \"\",\n\"reason\": \"The phrase 'on purpose, rather than by accident' is padded negation that adds no information; planning inherently implies purposeful action.\"\n},\n{\n\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\",\n\"replacement\": \"Islanded operation is the only backup path for those hospitals.\",\n\"reason\": \"The phrase 'end of story' is rhetorical filler that adds no factual content beyond what is already stated.\"\n},\n{\n\"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\",\n\"replacement\": \"Ice storms still take lines out of service for days, and planners rewrite protection settings and file new interconnection studies the following week.\",\n\"reason\": \"The original sentence is a definition doubling: the first clause states ice storms cause outages, then restates the consequence as two unrelated actions ('rewrite settings' and 'file studies') that should be combined into a single coherent claim.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "Hydro plants in Qu\u00e9bec still use those same synchronous machines for frequency control. Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "reason": "The first sentence is padded negation-style filler that doesn't advance the technical claim about frequency restoration being shortened by the retune."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The negative clause 'rather than non-spinning reserve' is redundant windup since procuring spinning reserve already excludes non-spinning reserve from that action."
+    },
+    {
+      "original": "Wind turbines, photovoltaic (PV) arrays, concentrated solar power (CSP), and emerging wave or tidal converters constitute a new portfolio of generation resources.",
+      "replacement": "",
+      "reason": "This sentence restates the fact that renewable technologies have been rising by listing examples already implied by 'renewable energy technologies,' adding no new factual content."
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "",
+      "reason": "This is a filler clause that restates the importance of forecasting without adding a verifiable claim; the subsequent bullet on intermittency covers the forecasting need."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts. Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative half and the second sentence are redundant restatements; deleting the negative clause and one of the two explanatory sentences leaves the same factual claim."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The phrase 'on purpose, rather than by accident' is padded negation that adds no information; planning inherently implies purposeful action."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "The phrase 'end of story' is rhetorical filler that adds no factual content beyond what is already stated."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "Ice storms still take lines out of service for days, and planners rewrite protection settings and file new interconnection studies the following week.",
+      "reason": "The original sentence is a definition doubling: the first clause states ice storms cause outages, then restates the consequence as two unrelated actions ('rewrite settings' and 'file studies') that should be combined into a single coherent claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21007,
+    "output": 701,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00385205,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,271 @@
+{
+  "run_id": "R4_P1_r1",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:42:36.737173+00:00",
+  "duration_s": 35.20493767701555,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"this reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\",\n\"replacement\": \"this reliance brings extraordinary benefits; it delivers speed, efficiency, and the democratization of knowledge\u2014but it also creates\",\n\"reason\": \"Replaced em dash with semicolon to join independent clauses, keeping the second em dash as an aside that was not part of the rule's scope.\"\n},\n{\n\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\",\n\"replacement\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\",\n\"reason\": \"Em dashes used for parenthetical appositives are acceptable stylistic use; no change needed as per rule guidance on independent clause joins.\"\n},\n{\n\"original\": \"the democratization of knowledge\u2014but it also creates\",\n\"replacement\": \"the democratization of knowledge\u2014but it also creates\",\n\"reason\": \"Second em dash in pair is a closing delimiter; no change needed as per rule guidance on parenthetical pairs.\"\n},\n{\n\"original\": \"limiting lateral movement\u2014a key tactic used by APT groups\",\n\"replacement\": \"limiting lateral movement; a key tactic used by APT groups\",\n\"reason\": \"Replaced em dash with semicolon to avoid typographic character; the phrase is not a complete independent clause so a semicolon works well.\"\n},\n{\n\"original\": \"credential\u2011dumping utilities. For data at rest\",\n\"replacement\": \"credential-dumping utilities. For data at rest\",\n\"reason\": \"Replaced non-breaking hyphen (en dash variant) with standard ASCII hyphen per rule on non-standard characters.\"\n},\n{\n\"original\": \"TLS 1.3) ensures\",\n\"replacement\": \"TLS 1.3) ensures\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"Identity\u2011and\u2011access management (IAM) solutions\",\n\"replacement\": \"Identity-and-access management (IAM) solutions\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule on non-standard characters.\"\n},\n{\n\"original\": \"fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree\u2026\",\n\"replacement\": \"fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree...\",\n\"reason\": \"Replaced ellipsis glyph (\u2026) with three standard period characters per rule.\"\n},\n{\n\"original\": \"mean time to contain\u2014the finance team uses that figure\",\n\"replacement\": \"mean time to contain; the finance team uses that figure\",\n\"reason\": \"Replaced em dash with semicolon to join two independent clauses per rule, avoiding comma splice.\"\n},\n{\n\"original\": \"24  hours\",\n\"replacement\": \"24 hours\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"the human element. Insider threats\u2014whether malicious, negligent, or coerced\u2014account\",\n\"replacement\": \"the human element. Insider threats\u2014whether malicious, negligent, or coerced\u2014account\",\n\"reason\": \"Em dashes used parenthetically; no change needed.\"\n},\n{\n\"original\": \"34  %\",\n\"replacement\": \"34%\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\",\n\"replacement\": \"positive reinforcement; recognizing employees who flag suspicious activity outperforms\",\n\"reason\": \"Replaced em dashes with restructuring to avoid typographic characters; the phrase is not independent clauses so semicolon was not ideal\u2014changed to integrate smoothly.\"\n},\n{\n\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe\",\n\"replacement\": \"Data-protection regulations; GDPR in Europe\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"obligations. Data-protection regulations; GDPR in Europe\",\n\"replacement\": \"obligations. Data-protection regulations\u2014GDPR in Europe\",\n\"reason\": \"The em dash here is used for an appositive-like enumeration, not joining independent clauses, but the non-breaking hyphen in 'Data-protection' has been fixed. Keeping the em dash here as it functions parenthetically, not as a clause joiner.\"\n},\n{\n\"original\": \"exploit the same technology to craft convincing deep\u2011fake phishing messages\",\n\"replacement\": \"exploit the same technology to craft convincing deep-fake phishing messages\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"post\u2011quantum cryptography (PQC) standards\",\n\"replacement\": \"post-quantum cryptography (PQC) standards\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"software\u2011supply\u2011chain provenance\",\n\"replacement\": \"software-supply-chain provenance\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule.\"\n},\n{\n\"original\": \"information\u2011sharing mechanisms\",\n\"replacement\": \"information-sharing mechanisms\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"Public\u2011private partnerships\",\n\"replacement\": \"Public-private partnerships\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"cyber\u2011attacks threaten\",\n\"replacement\": \"cyber-attacks threaten\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"hyper\u2011connectivity, autonomous\",\n\"replacement\": \"hyper-connectivity, autonomous\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"zero\u2011day vulnerabilities\",\n\"replacement\": \"zero-day vulnerabilities\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"supply\u2011chain attacks\",\n\"replacement\": \"supply-chain attacks\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"year\u2011over\u2011year\",\n\"replacement\": \"year-over-year\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule.\"\n},\n{\n\"original\": \"dark\u2011web marketplaces\",\n\"replacement\": \"dark-web marketplaces\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"deep\u2011fake technology\",\n\"replacement\": \"deep-fake technology\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"defense\u2011in\u2011depth strategy\",\n\"replacement\": \"defense-in-depth strategy\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule.\"\n},\n{\n\"original\": \"next\u2011generation firewalls\",\n\"replacement\": \"next-generation firewalls\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"application\u2011aware filtering\",\n\"replacement\": \"application-aware filtering\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"micro\u2011segmentation isolates\",\n\"replacement\": \"micro-segmentation isolates\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"credential\u2011stuffing attacks\",\n\"replacement\": \"credential-stuffing attacks\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"data\u2011protection regulations\u2014GDPR\",\n\"replacement\": \"data-protection regulations; GDPR\",\n\"reason\": \"Replaced em dash with semicolon to avoid typographic character; the enumeration functions like a parenthetical list after a colon would but semicolon handles it gracefully.\"\n},\n{\n\"original\": \"up\u2011to\u2011date IR plan\",\n\"replacement\": \"up-to-date IR plan\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule.\"\n},\n{\n\"original\": \"business continuity planning, diversified supply chains, and cyber\u2011insurance policies\",\n\"replacement\": \"business continuity planning, diversified supply chains, and cyber-insurance policies\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"AI\u2011driven analytics\",\n\"replacement\": \"AI-driven analytics\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"threat\u2011intel synthesis\",\n\"replacement\": \"threat-intel synthesis\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"quantum\u2011resistant cryptography\",\n\"replacement\": \"quantum-resistant cryptography\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"twenty\u2011first century\",\n\"replacement\": \"twenty-first century\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"extra\": \"Internet\u2011of\u2011Things\",\n\"replacement\": \"Internet-of-Things\",\n\"reason\": \"Replaced non-breaking hyphens with standard ASCII hyphens per rule.\"\n},\n{\n\"original\": \"the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28  %\",\n\"replacement\": \"the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28%\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"17  %\",\n\"replacement\": \"17%\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"4  %\",\n\"replacement\": \"4%\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"20  %\",\n\"replacement\": \"20%\",\n\"reason\": \"Replaced non-breaking space with standard ASCII space per rule on non-standard characters.\"\n},\n{\n\"original\": \"security\u2011first culture\",\n\"replacement\": \"security-first culture\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"threat\u2011detection AI\",\n\"replacement\": \"threat-detection AI\",\n\"reason\": \"Replaced non-breaking hyphen with standard ASCII hyphen per rule.\"\n},\n{\n\"original\": \"the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\",\n\"replacement\": \"the SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.\",\n\"reason\": \"Replaced comma with semicolon to fix a comma splice\u2014two independent clauses joined by only a comma per rule guidance.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "this reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "this reliance brings extraordinary benefits; it delivers speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "reason": "Replaced em dash with semicolon to join independent clauses, keeping the second em dash as an aside that was not part of the rule's scope."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "reason": "Em dashes used for parenthetical appositives are acceptable stylistic use; no change needed as per rule guidance on independent clause joins."
+    },
+    {
+      "original": "the democratization of knowledge\u2014but it also creates",
+      "replacement": "the democratization of knowledge\u2014but it also creates",
+      "reason": "Second em dash in pair is a closing delimiter; no change needed as per rule guidance on parenthetical pairs."
+    },
+    {
+      "original": "limiting lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "limiting lateral movement; a key tactic used by APT groups",
+      "reason": "Replaced em dash with semicolon to avoid typographic character; the phrase is not a complete independent clause so a semicolon works well."
+    },
+    {
+      "original": "credential\u2011dumping utilities. For data at rest",
+      "replacement": "credential-dumping utilities. For data at rest",
+      "reason": "Replaced non-breaking hyphen (en dash variant) with standard ASCII hyphen per rule on non-standard characters."
+    },
+    {
+      "original": "TLS 1.3) ensures",
+      "replacement": "TLS 1.3) ensures",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management (IAM) solutions",
+      "replacement": "Identity-and-access management (IAM) solutions",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule on non-standard characters."
+    },
+    {
+      "original": "fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree...",
+      "reason": "Replaced ellipsis glyph (\u2026) with three standard period characters per rule."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure",
+      "replacement": "mean time to contain; the finance team uses that figure",
+      "reason": "Replaced em dash with semicolon to join two independent clauses per rule, avoiding comma splice."
+    },
+    {
+      "original": "24  hours",
+      "replacement": "24 hours",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "the human element. Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "the human element. Insider threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "reason": "Em dashes used parenthetically; no change needed."
+    },
+    {
+      "original": "34  %",
+      "replacement": "34%",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "positive reinforcement; recognizing employees who flag suspicious activity outperforms",
+      "reason": "Replaced em dashes with restructuring to avoid typographic characters; the phrase is not independent clauses so semicolon was not ideal\u2014changed to integrate smoothly."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe",
+      "replacement": "Data-protection regulations; GDPR in Europe",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "obligations. Data-protection regulations; GDPR in Europe",
+      "replacement": "obligations. Data-protection regulations\u2014GDPR in Europe",
+      "reason": "The em dash here is used for an appositive-like enumeration, not joining independent clauses, but the non-breaking hyphen in 'Data-protection' has been fixed. Keeping the em dash here as it functions parenthetically, not as a clause joiner."
+    },
+    {
+      "original": "exploit the same technology to craft convincing deep\u2011fake phishing messages",
+      "replacement": "exploit the same technology to craft convincing deep-fake phishing messages",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "post\u2011quantum cryptography (PQC) standards",
+      "replacement": "post-quantum cryptography (PQC) standards",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "software\u2011supply\u2011chain provenance",
+      "replacement": "software-supply-chain provenance",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule."
+    },
+    {
+      "original": "information\u2011sharing mechanisms",
+      "replacement": "information-sharing mechanisms",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "Public\u2011private partnerships",
+      "replacement": "Public-private partnerships",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "cyber\u2011attacks threaten",
+      "replacement": "cyber-attacks threaten",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "hyper\u2011connectivity, autonomous",
+      "replacement": "hyper-connectivity, autonomous",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "zero\u2011day vulnerabilities",
+      "replacement": "zero-day vulnerabilities",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "year\u2011over\u2011year",
+      "replacement": "year-over-year",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule."
+    },
+    {
+      "original": "dark\u2011web marketplaces",
+      "replacement": "dark-web marketplaces",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "deep\u2011fake technology",
+      "replacement": "deep-fake technology",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "defense\u2011in\u2011depth strategy",
+      "replacement": "defense-in-depth strategy",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule."
+    },
+    {
+      "original": "next\u2011generation firewalls",
+      "replacement": "next-generation firewalls",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "application\u2011aware filtering",
+      "replacement": "application-aware filtering",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "micro\u2011segmentation isolates",
+      "replacement": "micro-segmentation isolates",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "credential\u2011stuffing attacks",
+      "replacement": "credential-stuffing attacks",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "data\u2011protection regulations\u2014GDPR",
+      "replacement": "data-protection regulations; GDPR",
+      "reason": "Replaced em dash with semicolon to avoid typographic character; the enumeration functions like a parenthetical list after a colon would but semicolon handles it gracefully."
+    },
+    {
+      "original": "up\u2011to\u2011date IR plan",
+      "replacement": "up-to-date IR plan",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule."
+    },
+    {
+      "original": "business continuity planning, diversified supply chains, and cyber\u2011insurance policies",
+      "replacement": "business continuity planning, diversified supply chains, and cyber-insurance policies",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "threat\u2011intel synthesis",
+      "replacement": "threat-intel synthesis",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "quantum\u2011resistant cryptography",
+      "replacement": "quantum-resistant cryptography",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "twenty\u2011first century",
+      "replacement": "twenty-first century",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28  %",
+      "replacement": "the 2024 Verizon Data Breach Investigations Report, ransomware accounted for 28%",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "17  %",
+      "replacement": "17%",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "4  %",
+      "replacement": "4%",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "20  %",
+      "replacement": "20%",
+      "reason": "Replaced non-breaking space with standard ASCII space per rule on non-standard characters."
+    },
+    {
+      "original": "security\u2011first culture",
+      "replacement": "security-first culture",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "threat\u2011detection AI",
+      "replacement": "threat-detection AI",
+      "reason": "Replaced non-breaking hyphen with standard ASCII hyphen per rule."
+    },
+    {
+      "original": "the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "the SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.",
+      "reason": "Replaced comma with semicolon to fix a comma splice\u2014two independent clauses joined by only a comma per rule guidance."
+    }
+  ],
+  "malformed_edits": [
+    {
+      "extra": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "Replaced non-breaking hyphens with standard ASCII hyphens per rule."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 3991,
+    "output": 2600,
+    "cache_read": 15840,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0035311,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

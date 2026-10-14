@@ -1,0 +1,215 @@
+{
+  "run_id": "R4_P3_r3",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:00:48.493813+00:00",
+  "duration_s": 98.4182860669971,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"not merely academic\u2014it is essential\",\n\"replacement\": \"not merely academic; it is essential\",\n\"reason\": \"Replace em dash with semicolon since it joins two independent clauses.\"\n},\n{\n\"original\": \"well\u2011being\",\n\"replacement\": \"well-being\",\n\"reason\": \"Replace non-standard hyphen (Unicode U+2011 non-breaking hyphen) with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"c. 371\u2013287\",\n\"replacement\": \"c. 371-287\",\n\"reason\": \"Replace en dash used as a date range with a standard ASCII hyphen.\"\n},\n{\n\"original\": \"undetermined\u2026 until\",\n\"replacement\": \"undetermined. Until\",\n\"reason\": \"Replace ellipsis glyph with a period to end the sentence, then capitalize the following word.\"\n},\n{\n\"original\": \"high\u2011throughput\",\n\"replacement\": \"high-throughput\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"plasmodesmata\u2014microscopic channels\",\n\"replacement\": \"plasmodesmata: microscopic channels\",\n\"reason\": \"Replace em dash with colon to introduce an appositive explanation.\"\n},\n{\n\"original\": \"down-weights\",\n\"replacement\": \"downweights\",\n\"reason\": \"Replace hyphen with the standard spelling of the verb 'downweights'.\"\n},\n{\n\"original\": \"cell-wall\",\n\"replacement\": \"cell wall\",\n\"reason\": \"Replace hyphen with space in the compound noun 'cell wall'.\"\n},\n{\n\"original\": \"stomata\u2014pores that\",\n\"replacement\": \"stomata: pores that\",\n\"reason\": \"Replace em dash with colon to introduce an appositive explanation.\"\n},\n{\n\"original\": \"light\u2011dependent\",\n\"replacement\": \"light-dependent\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"Calvin\u2011Benson\",\n\"replacement\": \"Calvin-Benson\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"chlorophyll a, chlorophyll b, and carotenoids\u2014absorb\",\n\"replacement\": \"chlorophyll a, chlorophyll b, and carotenoids, absorb\",\n\"reason\": \"Replace em dash with comma; the subject and verb should not be separated by a dash here.\"\n},\n{\n\"original\": \"by\u2011product.\",\n\"replacement\": \"by-product.\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"Calvin\u2011Benson\",\n\"replacement\": \"Calvin-Benson\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"3\u2011phosphoglycerate\",\n\"replacement\": \"3-phosphoglycerate\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"glyceraldehyde\u20113\u2011phosphate\",\n\"replacement\": \"glyceraldehyde-3-phosphate\",\n\"reason\": \"Replace non-standard hyphens with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"full stop.  \",\n\"replacement\": \"full stop. \",\n\"reason\": \"Clean up extra whitespace after period (whitespace normalization, not part of the rule per se, but the period is correct).\"\n},\n{\n\"original\": \"C\u2084 and CAM\",\n\"replacement\": \"C4 and CAM\",\n\"reason\": \"Replace Unicode subscript 4 with standard ASCII 4.\"\n},\n{\n\"original\": \"C4-versus-CAM\",\n\"replacement\": \"C4-versus-CAM\",\n\"reason\": \"Replace en dashes with ASCII hyphens in the compound term.\"\n},\n{\n\"original\": \"spatial packing is the C4 case, temporal packing is the CAM one.\",\n\"replacement\": \"spatial packing is the C4 case; temporal packing is the CAM one.\",\n\"reason\": \"Replace comma with semicolon to avoid a comma splice between two independent clauses.\"\n},\n{\n\"original\": \"week 3 they never formed heads\u2014the market rejected the entire lot.\",\n\"replacement\": \"week 3; they never formed heads, and the market rejected the entire lot.\",\n\"reason\": \"Replace missing punctuation and em dash with semicolon and conjunction to fix run-on sentence structure.\"\n},\n{\n\"original\": \"high\u2011yielding\",\n\"replacement\": \"high-yielding\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"marker\u2011assisted\",\n\"replacement\": \"marker-assisted\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"carbon\u2011sequestering\",\n\"replacement\": \"carbon-sequestering\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"120 Gt\",\n\"replacement\": \"120 Gt\",\n\"reason\": \"Replace non-standard narrow/no-break space with regular ASCII space.\"\n},\n{\n\"original\": \"non\u2011material\",\n\"replacement\": \"non-material\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"next\u2011generation\",\n\"replacement\": \"next-generation\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"re\u2011encounter\",\n\"replacement\": \"re-encounter\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"nitrogen\u2011fixing\",\n\"replacement\": \"nitrogen-fixing\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"climate\u2011Resilient\",\n\"replacement\": \"climate-Resilient\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"benefit\u2011sharing\",\n\"replacement\": \"benefit-sharing\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"CRISPR\u2011based\",\n\"replacement\": \"CRISPR-based\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"real\u2011time\",\n\"replacement\": \"real-time\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"\u201cclimate\u2011smart\u201d\",\n\"replacement\": \"\\\"climate-smart\\\"\",\n\"reason\": \"Replace curly/smart quotes with straight ASCII quotes and replace non-standard hyphen with ASCII hyphen-minus.\"\n},\n{\n\"original\": \"land\u2011use\",\n\"replacement\": \"land-use\",\n\"reason\": \"Replace non-standard hyphen with standard ASCII hyphen-minus.\"\n},\n{\n\"original\": \"bioeconomy\",\n\"replacement\": \"bioeconomy\",\n\"reason\": \"This word is already correct; no change needed.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Replace em dash with semicolon since it joins two independent clauses."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Replace non-standard hyphen (Unicode U+2011 non-breaking hyphen) with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "c. 371\u2013287",
+      "replacement": "c. 371-287",
+      "reason": "Replace en dash used as a date range with a standard ASCII hyphen."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined. Until",
+      "reason": "Replace ellipsis glyph with a period to end the sentence, then capitalize the following word."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata: microscopic channels",
+      "reason": "Replace em dash with colon to introduce an appositive explanation."
+    },
+    {
+      "original": "down-weights",
+      "replacement": "downweights",
+      "reason": "Replace hyphen with the standard spelling of the verb 'downweights'."
+    },
+    {
+      "original": "cell-wall",
+      "replacement": "cell wall",
+      "reason": "Replace hyphen with space in the compound noun 'cell wall'."
+    },
+    {
+      "original": "stomata\u2014pores that",
+      "replacement": "stomata: pores that",
+      "reason": "Replace em dash with colon to introduce an appositive explanation."
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "chlorophyll a, chlorophyll b, and carotenoids\u2014absorb",
+      "replacement": "chlorophyll a, chlorophyll b, and carotenoids, absorb",
+      "reason": "Replace em dash with comma; the subject and verb should not be separated by a dash here."
+    },
+    {
+      "original": "by\u2011product.",
+      "replacement": "by-product.",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Replace non-standard hyphens with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "full stop.  ",
+      "replacement": "full stop. ",
+      "reason": "Clean up extra whitespace after period (whitespace normalization, not part of the rule per se, but the period is correct)."
+    },
+    {
+      "original": "C\u2084 and CAM",
+      "replacement": "C4 and CAM",
+      "reason": "Replace Unicode subscript 4 with standard ASCII 4."
+    },
+    {
+      "original": "C4-versus-CAM",
+      "replacement": "C4-versus-CAM",
+      "reason": "Replace en dashes with ASCII hyphens in the compound term."
+    },
+    {
+      "original": "spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "spatial packing is the C4 case; temporal packing is the CAM one.",
+      "reason": "Replace comma with semicolon to avoid a comma splice between two independent clauses."
+    },
+    {
+      "original": "week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "week 3; they never formed heads, and the market rejected the entire lot.",
+      "reason": "Replace missing punctuation and em dash with semicolon and conjunction to fix run-on sentence structure."
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "120 Gt",
+      "replacement": "120 Gt",
+      "reason": "Replace non-standard narrow/no-break space with regular ASCII space."
+    },
+    {
+      "original": "non\u2011material",
+      "replacement": "non-material",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "re\u2011encounter",
+      "replacement": "re-encounter",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "nitrogen\u2011fixing",
+      "replacement": "nitrogen-fixing",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "climate\u2011Resilient",
+      "replacement": "climate-Resilient",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "benefit\u2011sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "CRISPR\u2011based",
+      "replacement": "CRISPR-based",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "\u201cclimate\u2011smart\u201d",
+      "replacement": "\"climate-smart\"",
+      "reason": "Replace curly/smart quotes with straight ASCII quotes and replace non-standard hyphen with ASCII hyphen-minus."
+    },
+    {
+      "original": "land\u2011use",
+      "replacement": "land-use",
+      "reason": "Replace non-standard hyphen with standard ASCII hyphen-minus."
+    },
+    {
+      "original": "bioeconomy",
+      "replacement": "bioeconomy",
+      "reason": "This word is already correct; no change needed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20929,
+    "output": 1643,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00478235,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,100 @@
+{
+  "run_id": "R2_P3_r2",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:47:17.422047+00:00",
+  "duration_s": 65.00467020197539,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"From the earliest herbalists who catalogued medicinal herbs to modern molecular biologists decoding the genomes of towering redwoods, the discipline has continually expanded its scope and depth.\", \"replacement\": \"\", \"reason\": \"This sentence is a windup clause whose informational content is redundant with the subsequent list of botany's applications; deleting it leaves the paragraph's claim intact.\"}, {\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"\", \"reason\": \"The parenthetical \\\"make no mistake\\\" is a windup phrase that adds no verifiable information; deleting it leaves the factual claim intact.\"}, {\"original\": \"Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.\", \"replacement\": \"\", \"reason\": \"This sentence is a specific anecdote that does not advance the essay's general survey narrative and is not information the subsequent sentence relies on; deleting it loses nothing in the historical overview.\"}, {\"original\": \"A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\", \"replacement\": \"\", \"reason\": \"This sentence is a factually specific research method detail that appears unrelated to the surrounding text about cellular foundations; it is an informational insertion that adds no value to the immediate argument and should be flagged.\"}, {\"original\": \"A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\", \"replacement\": \"\", \"reason\": \"This sentence is a specific methodological observation unrelated to the general description of plant cell components; it is filler that adds no value to the passage's general survey aim.\"}, {\"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\", \"replacement\": \"\", \"reason\": \"The parenthetical \\\"full stop\\\" is a padded negation/affirmation windup that adds no new information; deleting it leaves the factual claim intact.\"}, {\"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (the C4 case), and a temporal regime, where stomata open at night (the CAM one).\", \"reason\": \"The second half restates the first half through an analogy/synonym without adding new information, which is the definition-doubling pattern that Rule 2 explicitly targets.\"}, {\"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\", \"replacement\": null, \"reason\": \"This sentence is a specific unrelated observation that appears as filler in an otherwise general survey of plant diversity; it adds no value to the passage and should be flagged for the author.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"\", \"reason\": \"The sentence restates a distinction already implied and adds no verifiable information to the general survey; deleting it loses nothing checkable.\"}, {\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"\", \"reason\": \"The phrase \\\"on purpose, rather than by accident\\\" is a padded negation/affirmation windup that adds no new information; deleting it leaves the factual claim intact.\"}, {\"original\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\", \"replacement\": \"\", \"reason\": \"The second half is a restatement of the first half through inference that adds no new factual information; per Rule 2's definition-doubling test, the first half alone states the claim with nothing lost.\"}, {\"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Morphine is produced in Papaver somniferum latex.\", \"reason\": \"Applying the delete-and-reread test: deleting the negative half leaves the positive claim intact with nothing lost, making the negative clause a windup.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation.\", \"reason\": \"Applying the delete-and-reread test: deleting the negative half leaves the positive claim intact with nothing lost, making the negative clause a windup.\"}]}\n```",
+  "edits": [
+    {
+      "original": "From the earliest herbalists who catalogued medicinal herbs to modern molecular biologists decoding the genomes of towering redwoods, the discipline has continually expanded its scope and depth.",
+      "replacement": "",
+      "reason": "This sentence is a windup clause whose informational content is redundant with the subsequent list of botany's applications; deleting it leaves the paragraph's claim intact."
+    },
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "",
+      "reason": "The parenthetical \"make no mistake\" is a windup phrase that adds no verifiable information; deleting it leaves the factual claim intact."
+    },
+    {
+      "original": "Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives.",
+      "replacement": "",
+      "reason": "This sentence is a specific anecdote that does not advance the essay's general survey narrative and is not information the subsequent sentence relies on; deleting it loses nothing in the historical overview."
+    },
+    {
+      "original": "A robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "",
+      "reason": "This sentence is a factually specific research method detail that appears unrelated to the surrounding text about cellular foundations; it is an informational insertion that adds no value to the immediate argument and should be flagged."
+    },
+    {
+      "original": "A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "",
+      "reason": "This sentence is a specific methodological observation unrelated to the general description of plant cell components; it is filler that adds no value to the passage's general survey aim."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "",
+      "reason": "The parenthetical \"full stop\" is a padded negation/affirmation windup that adds no new information; deleting it leaves the factual claim intact."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (the C4 case), and a temporal regime, where stomata open at night (the CAM one).",
+      "reason": "The second half restates the first half through an analogy/synonym without adding new information, which is the definition-doubling pattern that Rule 2 explicitly targets."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": null,
+      "reason": "This sentence is a specific unrelated observation that appears as filler in an otherwise general survey of plant diversity; it adds no value to the passage and should be flagged for the author."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "",
+      "reason": "The sentence restates a distinction already implied and adds no verifiable information to the general survey; deleting it loses nothing checkable."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "The phrase \"on purpose, rather than by accident\" is a padded negation/affirmation windup that adds no new information; deleting it leaves the factual claim intact."
+    },
+    {
+      "original": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "",
+      "reason": "The second half is a restatement of the first half through inference that adds no new factual information; per Rule 2's definition-doubling test, the first half alone states the claim with nothing lost."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "Applying the delete-and-reread test: deleting the negative half leaves the positive claim intact with nothing lost, making the negative clause a windup."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "Applying the delete-and-reread test: deleting the negative half leaves the positive claim intact with nothing lost, making the negative clause a windup."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20920,
+    "output": 1010,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.004148,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

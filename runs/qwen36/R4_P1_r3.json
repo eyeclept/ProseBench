@@ -1,0 +1,71 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:23:31.809996+00:00",
+  "duration_s": 7.148416881999992,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\",\n\"replacement\": \"This reliance brings extraordinary benefits, speed, efficiency, and the democratization of knowledge; but it also creates\",\n\"reason\": \"Replaced paired em dashes with a comma and a semicolon to join the two independent clauses without typographic characters.\"\n},\n{\n\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\",\n\"replacement\": \"Traditional malware, viruses, worms, and trojans, remain pervasive\",\n\"reason\": \"Replaced paired em dashes with commas to enclose the appositive phrase, avoiding non-ASCII typographic characters.\"\n},\n{\n\"original\": \"endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.\",\n\"replacement\": \"endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.\",\n\"reason\": \"Replaced non-breaking hyphens in machine-learning and credential-dumping with standard ASCII hyphens.\"\n},\n{\n\"original\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree\u2026\",\n\"replacement\": \"Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree.\",\n\"reason\": \"Replaced the ellipsis glyph with a period, as the ellipsis character is not available on a standard US keyboard.\"\n},\n{\n\"original\": \"identity-and-access management (IAM) solutions\",\n\"replacement\": \"identity-and-access management (IAM) solutions\",\n\"reason\": \"Replaced non-breaking hyphens in identity-and-access with standard ASCII hyphens.\"\n},\n{\n\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\",\n\"replacement\": \"The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.\",\n\"reason\": \"Replaced em dash with a semicolon to properly join two independent clauses without a typographic character.\"\n},\n{\n\"original\": \"Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.\",\n\"replacement\": \"Board-level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.\",\n\"reason\": \"Replaced non-breaking hyphen in Board-level with a standard ASCII hyphen.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "This reliance brings extraordinary benefits, speed, efficiency, and the democratization of knowledge; but it also creates",
+      "reason": "Replaced paired em dashes with a comma and a semicolon to join the two independent clauses without typographic characters."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware, viruses, worms, and trojans, remain pervasive",
+      "reason": "Replaced paired em dashes with commas to enclose the appositive phrase, avoiding non-ASCII typographic characters."
+    },
+    {
+      "original": "endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine\u2011learning models to flag ransomware encryption patterns or credential\u2011dumping utilities.",
+      "replacement": "endpoint protection platforms (EPP) and endpoint detection and response (EDR) tools monitor devices for anomalous behavior, leveraging machine-learning models to flag ransomware encryption patterns or credential-dumping utilities.",
+      "reason": "Replaced non-breaking hyphens in machine-learning and credential-dumping with standard ASCII hyphens."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "Access checks default to fail-closed, rather than open. Fail-closed is the only acceptable default for those checks, end of story. The EDR timeline ends at a truncated process tree.",
+      "reason": "Replaced the ellipsis glyph with a period, as the ellipsis character is not available on a standard US keyboard."
+    },
+    {
+      "original": "identity-and-access management (IAM) solutions",
+      "replacement": "identity-and-access management (IAM) solutions",
+      "reason": "Replaced non-breaking hyphens in identity-and-access with standard ASCII hyphens."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "Replaced em dash with a semicolon to properly join two independent clauses without a typographic character."
+    },
+    {
+      "original": "Board\u2011level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.",
+      "replacement": "Board-level oversight has become a regulatory expectation; in the European Union, the Network and Information Security (NIS) Directive obliges public and essential service providers to report incidents within 24 hours.",
+      "reason": "Replaced non-breaking hyphen in Board-level with a standard ASCII hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19831,
+    "output": 667,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0025834,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

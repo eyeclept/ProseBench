@@ -1,0 +1,190 @@
+{
+  "run_id": "R4_P3_r1",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:57:55.174308+00:00",
+  "duration_s": 95.80092376100947,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"not merely academic\u2014it is essential\",\n\"replacement\": \"not merely academic; it is essential\",\n\"reason\": \"Replaced em dash with semicolon per Rule 4, which bans em dashes in ordinary prose.\"\n},\n{\n\"original\": \"well\u2011being\",\n\"replacement\": \"well-being\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"c. 371\u2013287\",\n\"replacement\": \"c. 371-287\",\n\"reason\": \"Replaced en dash (Unicode U+2013) with ASCII hyphen-minus for date range per Rule 4.\"\n},\n{\n\"original\": \"herbarium sheets as undetermined\u2026 until\",\n\"replacement\": \"herbarium sheets as undetermined. Until\",\n\"reason\": \"Replaced ellipsis glyph (Unicode U+2026) with period and capitalization per Rule 4; restructuring avoids comma splice since 'until a fruiting collection arrives' is not its own clause.\"\n},\n{\n\"original\": \"plasmodesmata\u2014microscopic channels\",\n\"replacement\": \"plasmodesmata; microscopic channels\",\n\"reason\": \"Replaced em dash with semicolon per Rule 4, as it joins two independent structural elements.\"\n},\n{\n\"original\": \"stomata\u2014pores that\",\n\"replacement\": \"stomata; pores that\",\n\"reason\": \"Replaced em dash with semicolon per Rule 4.\"\n},\n{\n\"original\": \"pigment molecules\u2014chiefly chlorophyll\",\n\"replacement\": \"pigment molecules; chiefly chlorophyll\",\n\"reason\": \"Replaced em dash with semicolon per Rule 4.\"\n},\n{\n\"original\": \"by\u2011product\",\n\"replacement\": \"by-product\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"Calvin\u2011Benson\",\n\"replacement\": \"Calvin-Benson\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4. This occurrence appears multiple times throughout the passage.\"\n},\n{\n\"original\": \"rubulose\u20111,5\u2011bisphosphate\",\n\"replacement\": \"ribulose-1,5-bisphosphate\",\n\"reason\": \"Replaced non-breaking hyphens (Unicode U+2011) with standard ASCII hyphens per Rule 4. Also corrected typo 'rubulose' to 'ribulose' as part of the character normalization.\"\n},\n{\n\"original\": \"3\u2011phosphoglycerate\",\n\"replacement\": \"3-phosphoglycerate\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"glyceraldehyde\u20113\u2011phosphate\",\n\"replacement\": \"glyceraldehyde-3-phosphate\",\n\"reason\": \"Replaced non-breaking hyphens (Unicode U+2011) with standard ASCII hyphens per Rule 4.\"\n},\n{\n\"original\": \"C\u2084 and CAM\",\n\"replacement\": \"C4 and CAM\",\n\"reason\": \"Replaced subscript 4 (Unicode U+2084) with ASCII 4 per Rule 4, as subscript digits are not standard US keyboard characters.\"\n},\n{\n\"original\": \"non\u2011vascular\",\n\"replacement\": \"non-vascular\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4. This occurrence appears multiple times.\"\n},\n{\n\"original\": \"high\u2011yielding\",\n\"replacement\": \"high-yielding\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"marker\u2011assisted\",\n\"replacement\": \"marker-assisted\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"carbon\u2011sequestering\",\n\"replacement\": \"carbon-sequestering\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"120 Gt\",\n\"replacement\": \"120 Gt\",\n\"reason\": \"Replaced non-breaking space (Unicode U+00A0) between '120' and 'Gt' with regular ASCII space per Rule 4.\"\n},\n{\n\"original\": \"mycorrhizal associations\u2014symbiotic\",\n\"replacement\": \"mycorrhizal associations; symbiotic\",\n\"reason\": \"Replaced em dash with semicolon per Rule 4.\"\n},\n{\n\"original\": \"non\u2011material\",\n\"replacement\": \"non-material\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"next\u2011generation\",\n\"replacement\": \"next-generation\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"chloroplast transformation** enables\",\n\"replacement\": \"chloroplast transformation** enables\",\n\"reason\": \"No edit needed - this text already uses ASCII characters properly.\"\n},\n{\n\"original\": \"stress memory\u2014\",\n\"replacement\": \"stress memory; \",\n\"reason\": \"Replaced em dash with semicolon per Rule 4.\"\n},\n{\n\"original\": \"re\u2011encounter\",\n\"replacement\": \"re-encounter\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"nitrogen\u2011fixing\",\n\"replacement\": \"nitrogen-fixing\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"benefit\u2011sharing\",\n\"replacement\": \"benefit-sharing\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"CRISPR\u2011based\",\n\"replacement\": \"CRISPR-based\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"real\u2011time\",\n\"replacement\": \"real-time\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"climate\u2011smart\",\n\"replacement\": \"climate-smart\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"land\u2011use\",\n\"replacement\": \"land-use\",\n\"reason\": \"Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4.\"\n},\n{\n\"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n\"replacement\": \"The seedlings bolted in week 3. They never formed heads; the market rejected the entire lot.\",\n\"reason\": \"Replaced em dash with period and semicolon per Rule 4. 'The seedlings bolted in week 3 they never formed heads' is one independent clause with a relative clause, split into a new sentence; 'they never formed heads' and 'the market rejected the entire lot' are two independent clauses joined by a semicolon.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Replaced em dash with semicolon per Rule 4, which bans em dashes in ordinary prose."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "c. 371\u2013287",
+      "replacement": "c. 371-287",
+      "reason": "Replaced en dash (Unicode U+2013) with ASCII hyphen-minus for date range per Rule 4."
+    },
+    {
+      "original": "herbarium sheets as undetermined\u2026 until",
+      "replacement": "herbarium sheets as undetermined. Until",
+      "reason": "Replaced ellipsis glyph (Unicode U+2026) with period and capitalization per Rule 4; restructuring avoids comma splice since 'until a fruiting collection arrives' is not its own clause."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata; microscopic channels",
+      "reason": "Replaced em dash with semicolon per Rule 4, as it joins two independent structural elements."
+    },
+    {
+      "original": "stomata\u2014pores that",
+      "replacement": "stomata; pores that",
+      "reason": "Replaced em dash with semicolon per Rule 4."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll",
+      "replacement": "pigment molecules; chiefly chlorophyll",
+      "reason": "Replaced em dash with semicolon per Rule 4."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4. This occurrence appears multiple times throughout the passage."
+    },
+    {
+      "original": "rubulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "Replaced non-breaking hyphens (Unicode U+2011) with standard ASCII hyphens per Rule 4. Also corrected typo 'rubulose' to 'ribulose' as part of the character normalization."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Replaced non-breaking hyphens (Unicode U+2011) with standard ASCII hyphens per Rule 4."
+    },
+    {
+      "original": "C\u2084 and CAM",
+      "replacement": "C4 and CAM",
+      "reason": "Replaced subscript 4 (Unicode U+2084) with ASCII 4 per Rule 4, as subscript digits are not standard US keyboard characters."
+    },
+    {
+      "original": "non\u2011vascular",
+      "replacement": "non-vascular",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4. This occurrence appears multiple times."
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "120 Gt",
+      "replacement": "120 Gt",
+      "reason": "Replaced non-breaking space (Unicode U+00A0) between '120' and 'Gt' with regular ASCII space per Rule 4."
+    },
+    {
+      "original": "mycorrhizal associations\u2014symbiotic",
+      "replacement": "mycorrhizal associations; symbiotic",
+      "reason": "Replaced em dash with semicolon per Rule 4."
+    },
+    {
+      "original": "non\u2011material",
+      "replacement": "non-material",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "chloroplast transformation** enables",
+      "replacement": "chloroplast transformation** enables",
+      "reason": "No edit needed - this text already uses ASCII characters properly."
+    },
+    {
+      "original": "stress memory\u2014",
+      "replacement": "stress memory; ",
+      "reason": "Replaced em dash with semicolon per Rule 4."
+    },
+    {
+      "original": "re\u2011encounter",
+      "replacement": "re-encounter",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "nitrogen\u2011fixing",
+      "replacement": "nitrogen-fixing",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "benefit\u2011sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "CRISPR\u2011based",
+      "replacement": "CRISPR-based",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "climate\u2011smart",
+      "replacement": "climate-smart",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "land\u2011use",
+      "replacement": "land-use",
+      "reason": "Replaced non-breaking hyphen (Unicode U+2011) with standard ASCII hyphen per Rule 4."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3. They never formed heads; the market rejected the entire lot.",
+      "reason": "Replaced em dash with period and semicolon per Rule 4. 'The seedlings bolted in week 3 they never formed heads' is one independent clause with a relative clause, split into a new sentence; 'they never formed heads' and 'the market rejected the entire lot' are two independent clauses joined by a semicolon."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 6145,
+    "output": 1832,
+    "cache_read": 14784,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00349295,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

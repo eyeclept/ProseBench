@@ -1,0 +1,60 @@
+{
+  "run_id": "R5_P3_r1",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:04:18.256524+00:00",
+  "duration_s": 20.64608064101776,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"make no mistake\", \"replacement\": \"\", \"reason\": \"This is a finality interjection ('make no mistake') tacked onto a claim that already carries its own exclusivity marker, adding emphasis without evidence.\"}, {\"original\": \"significantly streamlines\", \"replacement\": \"speeds up\", \"reason\": \"'Significantly' is an intensifier used as a placeholder for evidence; the passage already provides the specific numbers (40 minutes vs. 6 minutes) that demonstrate the speedup.\"}, {\"original\": \"full stop\", \"replacement\": \"\", \"reason\": \"This is a finality interjection ('full stop') tacked onto a claim that already carries its own exclusivity marker ('only'), adding emphasis without evidence.\"}, {\"original\": \"dramatically increased\", \"replacement\": \"increased\", \"reason\": \"'Dramatically' is an intensifier used as a placeholder for evidence; the passage describes what was done (high-yielding varieties, synthetic fertilizers) without providing specific metrics to quantify the increase.\"}, {\"original\": \"dramatically reduces\", \"replacement\": \"reduces\", \"reason\": \"'Dramatically' is an intensifier used as a placeholder for evidence; while the passage provides specific yield loss figures (41% to 8%), the word 'dramatically' adds emphatic padding beyond the numbers already present.\"}]}\n```",
+  "edits": [
+    {
+      "original": "make no mistake",
+      "replacement": "",
+      "reason": "This is a finality interjection ('make no mistake') tacked onto a claim that already carries its own exclusivity marker, adding emphasis without evidence."
+    },
+    {
+      "original": "significantly streamlines",
+      "replacement": "speeds up",
+      "reason": "'Significantly' is an intensifier used as a placeholder for evidence; the passage already provides the specific numbers (40 minutes vs. 6 minutes) that demonstrate the speedup."
+    },
+    {
+      "original": "full stop",
+      "replacement": "",
+      "reason": "This is a finality interjection ('full stop') tacked onto a claim that already carries its own exclusivity marker ('only'), adding emphasis without evidence."
+    },
+    {
+      "original": "dramatically increased",
+      "replacement": "increased",
+      "reason": "'Dramatically' is an intensifier used as a placeholder for evidence; the passage describes what was done (high-yielding varieties, synthetic fertilizers) without providing specific metrics to quantify the increase."
+    },
+    {
+      "original": "dramatically reduces",
+      "replacement": "reduces",
+      "reason": "'Dramatically' is an intensifier used as a placeholder for evidence; while the passage provides specific yield loss figures (41% to 8%), the word 'dramatically' adds emphatic padding beyond the numbers already present."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20671,
+    "output": 297,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00339765,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

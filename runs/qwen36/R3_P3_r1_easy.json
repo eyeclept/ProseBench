@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:51:36.518201+00:00",
+  "duration_s": 7.438840468996204,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\",\n      \"reason\": \"'full stop' is a redundant antonym trailer meaning 'and nothing else,' but 'only' already exhaustively asserts uniqueness, making the trailer add nothing.\"\n    },\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n      \"reason\": \"'on purpose, rather than by accident' is a redundant antonym trailer; 'on purpose' alone already conveys the intended meaning without the unnecessary contrast.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "'full stop' is a redundant antonym trailer meaning 'and nothing else,' but 'only' already exhaustively asserts uniqueness, making the trailer add nothing."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'on purpose, rather than by accident' is a redundant antonym trailer; 'on purpose' alone already conveys the intended meaning without the unnecessary contrast."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20955,
+    "output": 184,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00332725,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

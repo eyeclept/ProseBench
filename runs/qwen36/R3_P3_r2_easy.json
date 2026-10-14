@@ -1,0 +1,85 @@
+{
+  "run_id": "R3_P3_r2_easy",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:51:57.210351+00:00",
+  "duration_s": 17.144111225992674,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"Robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"replacement\": \"Robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.\",\n      \"reason\": \"This sentence ends with a trailing 'in allometric studies' but does not match the pattern 'not X' or 'rather than X'. It is a prepositional phrase, not a redundant antonym trailer, so Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\",\n      \"replacement\": \"A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.\",\n      \"reason\": \"This sentence does not end with a trailing 'not X' or 'rather than X' clause. It is a complete statement with a causal clause, so Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\",\n      \"reason\": \"This sentence ends with 'full stop', which is not a 'not X' or 'rather than X' construction. Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"reason\": \"This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n      \"replacement\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n      \"reason\": \"This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"Conservation collections still accession landraces, rather than heirlooms.\",\n      \"replacement\": null,\n      \"reason\": \"This sentence ends with 'rather than heirlooms'. The question is whether 'heirlooms' is the ordinary, general-knowledge antonym of 'landraces'. This is a technical distinction in plant breeding and conservation; ordinary people would not know the difference between landraces and heirlooms without domain background. Since this is a genuine distinction smuggled into a bolted-on clause, it should be given its own sentence, but I am uncertain whether 'heirlooms' qualifies as the ordinary antonym of 'landraces' without domain expertise, so I flag it for the author.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"reason\": \"This sentence does not end with a trailing 'not X' or 'rather than X' clause. It contains a 'not' but the sentence structure is a complete statement, not a tacked-on trailer. Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n      \"reason\": \"This sentence ends with 'rather than by accident'. 'By accident' is the ordinary, general-knowledge antonym of 'on purpose'\u2014something virtually anyone would know without domain background. The trailer adds nothing and is cut.\"\n    },\n    {\n      \"original\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\",\n      \"replacement\": \"Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.\",\n      \"reason\": \"This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": null,\n      \"reason\": \"This sentence ends with 'not nuclear transformation'. The question is whether 'nuclear transformation' is the ordinary, general-knowledge antonym of 'chloroplast transformation'. This is a technical distinction in molecular biology; ordinary people would not know the difference between chloroplast and nuclear transformation without domain background. Since this is a genuine distinction smuggled into a bolted-on clause, it should be given its own sentence, but I am uncertain whether 'nuclear transformation' qualifies as the ordinary antonym of 'chloroplast transformation' without domain expertise, so I flag it for the author.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "Robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "replacement": "Robust regression of leaf mass on area down-weights herbivore-damaged outliers in allometric studies.",
+      "reason": "This sentence ends with a trailing 'in allometric studies' but does not match the pattern 'not X' or 'rather than X'. It is a prepositional phrase, not a redundant antonym trailer, so Rule 3 does not apply."
+    },
+    {
+      "original": "A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "A standard pectin assay ran in 40 minutes before the protocol change and in 6 minutes after it, so the change significantly streamlines cell-wall composition analysis.",
+      "reason": "This sentence does not end with a trailing 'not X' or 'rather than X' clause. It is a complete statement with a causal clause, so Rule 3 does not apply."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "reason": "This sentence ends with 'full stop', which is not a 'not X' or 'rather than X' construction. Rule 3 does not apply."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "reason": "This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "reason": "This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "This sentence ends with 'rather than heirlooms'. The question is whether 'heirlooms' is the ordinary, general-knowledge antonym of 'landraces'. This is a technical distinction in plant breeding and conservation; ordinary people would not know the difference between landraces and heirlooms without domain background. Since this is a genuine distinction smuggled into a bolted-on clause, it should be given its own sentence, but I am uncertain whether 'heirlooms' qualifies as the ordinary antonym of 'landraces' without domain expertise, so I flag it for the author."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "reason": "This sentence does not end with a trailing 'not X' or 'rather than X' clause. It contains a 'not' but the sentence structure is a complete statement, not a tacked-on trailer. Rule 3 does not apply."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "This sentence ends with 'rather than by accident'. 'By accident' is the ordinary, general-knowledge antonym of 'on purpose'\u2014something virtually anyone would know without domain background. The trailer adds nothing and is cut."
+    },
+    {
+      "original": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "Yield loss fell from 41 percent in rainfed plots to 8 percent with irrigation, so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "reason": "This sentence does not end with a trailing 'not X' or 'rather than X' clause. Rule 3 does not apply."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": null,
+      "reason": "This sentence ends with 'not nuclear transformation'. The question is whether 'nuclear transformation' is the ordinary, general-knowledge antonym of 'chloroplast transformation'. This is a technical distinction in molecular biology; ordinary people would not know the difference between chloroplast and nuclear transformation without domain background. Since this is a genuine distinction smuggled into a bolted-on clause, it should be given its own sentence, but I am uncertain whether 'nuclear transformation' qualifies as the ordinary antonym of 'chloroplast transformation' without domain expertise, so I flag it for the author."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18173,
+    "output": 1273,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00179975,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

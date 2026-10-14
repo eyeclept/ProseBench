@@ -1,0 +1,170 @@
+{
+  "run_id": "R4_P3_r2",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:59:30.992754+00:00",
+  "duration_s": 77.48481060299673,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n\"edits\": [\n{\n\"original\": \"not merely academic\u2014it is essential\",\n\"replacement\": \"not merely academic; it is essential\",\n\"reason\": \"Replace em dash with semicolon since both clauses are independent.\"\n},\n{\n\"original\": \"well\u2011being\",\n\"replacement\": \"well-being\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"c. 371\u2013287\",\n\"replacement\": \"c. 371-287\",\n\"reason\": \"Replace en dash in date range with standard hyphen.\"\n},\n{\n\"original\": \"high\u2011throughput\",\n\"replacement\": \"high-throughput\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"plasmodesmata\u2014microscopic\",\n\"replacement\": \"plasmodesmata: microscopic\",\n\"reason\": \"Replace em dash with colon since the phrase after is an appositive fragment, not an independent clause.\"\n},\n{\n\"original\": \"stomata\u2014pores\",\n\"replacement\": \"stomata: pores\",\n\"reason\": \"Replace em dash with colon since the phrase after is an appositive fragment, not an independent clause.\"\n},\n{\n\"original\": \"light\u2011dependent\",\n\"replacement\": \"light-dependent\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"Calvin\u2011Benson\",\n\"replacement\": \"Calvin-Benson\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"by\u2011product\",\n\"replacement\": \"by-product\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"Calvin\u2011Benson\",\n\"replacement\": \"Calvin-Benson\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"3\u2011phosphoglycerate\",\n\"replacement\": \"3-phosphoglycerate\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"glyceraldehyde\u20113\u2011phosphate\",\n\"replacement\": \"glyceraldehyde-3-phosphate\",\n\"reason\": \"Replace non-standard en dashes with standard ASCII hyphens.\"\n},\n{\n\"original\": \"open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n\"replacement\": \"open at night. Close to the C4-versus-CAM split: spatial packing is the C4 case, temporal packing is the CAM one.\",\n\"reason\": \"Replace em dash with period/colon since 'Close to the C4-versus-CAM split' is not a complete clause but a fragment.\"\n},\n{\n\"original\": \"Non\u2011vascular\",\n\"replacement\": \"Non-vascular\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"high\u2011yielding\",\n\"replacement\": \"high-yielding\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"marker\u2011assisted\",\n\"replacement\": \"marker-assisted\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"carbon\u2011sequestering\",\n\"replacement\": \"carbon-sequestering\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"stress memory\",\n\"replacement\": \"stress memory\",\n\"reason\": \"No change needed, no violation found.\"\n},\n{\n\"original\": \"the entire lot. Conservation\",\n\"replacement\": \"the entire lot; the market rejected it, so they never formed heads, and the market rejected the entire lot. Conservation\",\n\"reason\": \"The original 'The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot' has a run-on clause 'they never formed heads' which is independent but improperly joined; need semicolon. Also replace em dash with semicolon.\"\n},\n{\n\"original\": \"next\u2011generation\",\n\"replacement\": \"next-generation\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"nigh\u2011and\u2011nigher\",\n\"replacement\": \"night-and-nigher\",\n\"reason\": \"No such text exists; checking for actual issues.\"\n},\n{\n\"original\": \"nitrogen\u2011fixing\",\n\"replacement\": \"nitrogen-fixing\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"biodiversity\u2011loss\",\n\"replacement\": \"biodiversity-loss\",\n\"reason\": \"Replace non-standard en dash with standard ASCII hyphen.\"\n},\n{\n\"original\": \"bio\u2011economy\",\n\"replacement\": \"bioeconomy\",\n\"reason\": \"No such text exists; 'bioeconomy' appears without hyphen.\"\n},\n{\n\"original\": \"precision agriculture\u2014leveraging\",\n\"replacement\": \"precision agriculture, leveraging\",\n\"reason\": \"Replace em dash with comma since 'leveraging satellite imagery...' is a participial phrase, not an independent clause.\"\n},\n{\n\"original\": \"not optional; it is imperative.\",\n\"replacement\": \"not optional. It is imperative.\",\n\"reason\": \"Replace semicolon with period since both are independent clauses; two sentences is a cleaner fix.\"\n},\n{\n\"original\": \"120 Gt\",\n\"replacement\": \"120 Gt\",\n\"reason\": \"No em/en dash issue here.\"\n}\n]\n}",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Replace em dash with semicolon since both clauses are independent."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "c. 371\u2013287",
+      "replacement": "c. 371-287",
+      "reason": "Replace en dash in date range with standard hyphen."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic",
+      "replacement": "plasmodesmata: microscopic",
+      "reason": "Replace em dash with colon since the phrase after is an appositive fragment, not an independent clause."
+    },
+    {
+      "original": "stomata\u2014pores",
+      "replacement": "stomata: pores",
+      "reason": "Replace em dash with colon since the phrase after is an appositive fragment, not an independent clause."
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Replace non-standard en dashes with standard ASCII hyphens."
+    },
+    {
+      "original": "open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "open at night. Close to the C4-versus-CAM split: spatial packing is the C4 case, temporal packing is the CAM one.",
+      "reason": "Replace em dash with period/colon since 'Close to the C4-versus-CAM split' is not a complete clause but a fragment."
+    },
+    {
+      "original": "Non\u2011vascular",
+      "replacement": "Non-vascular",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "stress memory",
+      "replacement": "stress memory",
+      "reason": "No change needed, no violation found."
+    },
+    {
+      "original": "the entire lot. Conservation",
+      "replacement": "the entire lot; the market rejected it, so they never formed heads, and the market rejected the entire lot. Conservation",
+      "reason": "The original 'The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot' has a run-on clause 'they never formed heads' which is independent but improperly joined; need semicolon. Also replace em dash with semicolon."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "nigh\u2011and\u2011nigher",
+      "replacement": "night-and-nigher",
+      "reason": "No such text exists; checking for actual issues."
+    },
+    {
+      "original": "nitrogen\u2011fixing",
+      "replacement": "nitrogen-fixing",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "biodiversity\u2011loss",
+      "replacement": "biodiversity-loss",
+      "reason": "Replace non-standard en dash with standard ASCII hyphen."
+    },
+    {
+      "original": "bio\u2011economy",
+      "replacement": "bioeconomy",
+      "reason": "No such text exists; 'bioeconomy' appears without hyphen."
+    },
+    {
+      "original": "precision agriculture\u2014leveraging",
+      "replacement": "precision agriculture, leveraging",
+      "reason": "Replace em dash with comma since 'leveraging satellite imagery...' is a participial phrase, not an independent clause."
+    },
+    {
+      "original": "not optional; it is imperative.",
+      "replacement": "not optional. It is imperative.",
+      "reason": "Replace semicolon with period since both are independent clauses; two sentences is a cleaner fix."
+    },
+    {
+      "original": "120 Gt",
+      "replacement": "120 Gt",
+      "reason": "No em/en dash issue here."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20929,
+    "output": 1292,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00443135,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

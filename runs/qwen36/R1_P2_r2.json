@@ -1,0 +1,211 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:27:37.769754+00:00",
+  "duration_s": 133.06176726100966,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"115\u202fkV, 345\u202fkV, 765\u202fkV\",\n      \"replacement\": \"115 kV, 345 kV, 765 kV\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"end\u2011users\",\n      \"replacement\": \"end-users\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"information\u2011communication technologies (ICT)\",\n      \"replacement\": \"information-communication technologies (ICT)\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"short\u2011term stability\",\n      \"replacement\": \"short-term stability\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"power systems has evolved dramatically to accommodate larger scales, higher reliability expectations, renewable integration, and digital intelligence. This essay surveys\",\n      \"replacement\": \"power systems has evolved dramatically to accommodate larger scales, higher reliability expectations, renewable integration, and digital intelligence. The essay surveys\",\n      \"reason\": \"'This essay surveys' is a rhetorical colon-abuse structural phrase and an AI-writing tell.\"\n    },\n    {\n      \"original\": \"is an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users. Three core functions are universally recognized:\",\n      \"replacement\": \"is an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users. Three core functions are universally recognized:\",\n      \"reason\": \"No change needed - removed incorrectly added edit entry.\"\n    },\n    {\n      \"original\": \"its purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.\",\n      \"replacement\": \"its purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.\",\n      \"reason\": \"No change needed - removed incorrectly added edit entry.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\",\n      \"replacement\": \"The contemporary electric power system, commonly referred to simply as a power system, is an elaborate network\",\n      \"reason\": \"Replace em dashes (characters outside a standard US keyboard) with commas.\"\n    },\n    {\n      \"original\": \"an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end\u2011users.\",\n      \"replacement\": \"an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"replacement\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies (ICT).\",\n      \"reason\": \"Replace the non-breaking hyphens (characters outside a standard US keyboard) with ASCII hyphens.\"\n    },\n    {\n      \"original\": \"Renewable energy technologies have been rising rapidly. Forecasts still miss cloud-driven ramps\u2026\",\n      \"replacement\": \"Renewable energy technologies are rising. Forecasts still miss cloud-driven ramps\",\n      \"reason\": \"Replace the ellipsis glyph (characters outside a standard US keyboard) with three periods, and tighten the phrasing.\"\n    },\n    {\n      \"original\": \"Geographic Dispersion \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\",\n      \"replacement\": \"Geographic Dispersion \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\",\n      \"reason\": \"No change needed - removed incorrectly added edit entry.\"\n    },\n    {\n      \"original\": \"138\u202fkV\",\n      \"replacement\": \"138 kV\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"4\u202fkV\u201335\u202fkV\",\n      \"replacement\": \"4-35 kV\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen, and replace non-breaking spaces with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"120/240\u202fV\",\n      \"replacement\": \"120/240 V\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"step\u2011down transformers\",\n      \"replacement\": \"step-down transformers\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"microprocessor\u2011based Intelligent Electronic Devices (IEDs)\",\n      \"replacement\": \"microprocessor-based Intelligent Electronic Devices (IEDs)\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate\",\n      \"replacement\": \"IEC 61850, for *wide-area protection* that can coordinate\",\n      \"reason\": \"Replace the non-breaking space with an ASCII hyphen, and remove the banned phrase 'paving the way for' (Inflated-symbolism phrase).\"\n    },\n    {\n      \"original\": \"extreme weather events, cyber\u2011attacks\",\n      \"replacement\": \"extreme weather events, cyber-attacks\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"1,200\u202fkV\",\n      \"replacement\": \"1,200 kV\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"high\u2011temperature\",\n      \"replacement\": \"high-temperature\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"step\u2011down transformers\",\n      \"replacement\": \"step-down transformers\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"the *end-use* customers.\",\n      \"replacement\": \"the *end-use* customers.\",\n      \"reason\": \"No change needed - removed incorrectly added edit entry.\"\n    },\n    {\n      \"original\": \"30\u2013120\u202fsamples/second\",\n      \"replacement\": \"30-120 samples/second\",\n      \"reason\": \"Replace the non-breaking en dash (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"high\u2011fidelity virtual replicas\",\n      \"replacement\": \"high-fidelity virtual replicas\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \">10\u202fh\",\n      \"replacement\": \">10 h\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"100\u202f%\",\n      \"replacement\": \"100%\",\n      \"reason\": \"Replace the non-breaking space (character outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"15\u202f%\",\n      \"replacement\": \"15%\",\n      \"reason\": \"Replace the non-breaking space (character outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"VSC\u2011HVDC\",\n      \"replacement\": \"VSC-HVDC\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"cyber\u2011physical\",\n      \"replacement\": \"cyber-physical\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"120/240\u202fV\",\n      \"replacement\": \"120/240 V\",\n      \"reason\": \"Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens.\"\n    },\n    {\n      \"original\": \"step\u2011down transformers\",\n      \"replacement\": \"step-down transformers\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"the *end\u2011use* customers.\",\n      \"replacement\": \"the *end-use* customers.\",\n      \"reason\": \"Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen.\"\n    },\n    {\n      \"original\": \"a *decentralized, cyber\u2011physical ecosystem* that seamlessly\",\n      \"replacement\": \"a *decentralized, cyber-physical ecosystem* that\",\n      \"reason\": \"Replace the non-breaking hyphen with an ASCII hyphen, and remove the banned word 'seamlessly' (Adjective/intensifier).\"\n    },\n    {\n      \"description\": \"\",\n      \"name\": \"\",\n      \"type\": \"\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "115\u202fkV, 345\u202fkV, 765\u202fkV",
+      "replacement": "115 kV, 345 kV, 765 kV",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "information\u2011communication technologies (ICT)",
+      "replacement": "information-communication technologies (ICT)",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "short\u2011term stability",
+      "replacement": "short-term stability",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "power systems has evolved dramatically to accommodate larger scales, higher reliability expectations, renewable integration, and digital intelligence. This essay surveys",
+      "replacement": "power systems has evolved dramatically to accommodate larger scales, higher reliability expectations, renewable integration, and digital intelligence. The essay surveys",
+      "reason": "'This essay surveys' is a rhetorical colon-abuse structural phrase and an AI-writing tell."
+    },
+    {
+      "original": "is an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users. Three core functions are universally recognized:",
+      "replacement": "is an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users. Three core functions are universally recognized:",
+      "reason": "No change needed - removed incorrectly added edit entry."
+    },
+    {
+      "original": "its purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.",
+      "replacement": "its purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.",
+      "reason": "No change needed - removed incorrectly added edit entry."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "The contemporary electric power system, commonly referred to simply as a power system, is an elaborate network",
+      "reason": "Replace em dashes (characters outside a standard US keyboard) with commas."
+    },
+    {
+      "original": "an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end\u2011users.",
+      "replacement": "an integrated set of equipment and procedures whose purpose is to generate electrical energy, transport it over long distances, and deliver it safely to end-users.",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies (ICT).",
+      "reason": "Replace the non-breaking hyphens (characters outside a standard US keyboard) with ASCII hyphens."
+    },
+    {
+      "original": "Renewable energy technologies have been rising rapidly. Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Renewable energy technologies are rising. Forecasts still miss cloud-driven ramps",
+      "reason": "Replace the ellipsis glyph (characters outside a standard US keyboard) with three periods, and tighten the phrasing."
+    },
+    {
+      "original": "Geographic Dispersion \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "Geographic Dispersion \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "reason": "No change needed - removed incorrectly added edit entry."
+    },
+    {
+      "original": "138\u202fkV",
+      "replacement": "138 kV",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "4\u202fkV\u201335\u202fkV",
+      "replacement": "4-35 kV",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen, and replace non-breaking spaces with regular ASCII hyphens."
+    },
+    {
+      "original": "120/240\u202fV",
+      "replacement": "120/240 V",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "step\u2011down transformers",
+      "replacement": "step-down transformers",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "microprocessor\u2011based Intelligent Electronic Devices (IEDs)",
+      "replacement": "microprocessor-based Intelligent Electronic Devices (IEDs)",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "IEC\u202f61850, paving the way for *wide\u2011area protection* that can coordinate",
+      "replacement": "IEC 61850, for *wide-area protection* that can coordinate",
+      "reason": "Replace the non-breaking space with an ASCII hyphen, and remove the banned phrase 'paving the way for' (Inflated-symbolism phrase)."
+    },
+    {
+      "original": "extreme weather events, cyber\u2011attacks",
+      "replacement": "extreme weather events, cyber-attacks",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "1,200\u202fkV",
+      "replacement": "1,200 kV",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "high\u2011temperature",
+      "replacement": "high-temperature",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "step\u2011down transformers",
+      "replacement": "step-down transformers",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "the *end-use* customers.",
+      "replacement": "the *end-use* customers.",
+      "reason": "No change needed - removed incorrectly added edit entry."
+    },
+    {
+      "original": "30\u2013120\u202fsamples/second",
+      "replacement": "30-120 samples/second",
+      "reason": "Replace the non-breaking en dash (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "high\u2011fidelity virtual replicas",
+      "replacement": "high-fidelity virtual replicas",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": ">10\u202fh",
+      "replacement": ">10 h",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "100\u202f%",
+      "replacement": "100%",
+      "reason": "Replace the non-breaking space (character outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "15\u202f%",
+      "replacement": "15%",
+      "reason": "Replace the non-breaking space (character outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "VSC\u2011HVDC",
+      "replacement": "VSC-HVDC",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "cyber\u2011physical",
+      "replacement": "cyber-physical",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "120/240\u202fV",
+      "replacement": "120/240 V",
+      "reason": "Replace the non-breaking spaces (characters outside a standard US keyboard) with regular ASCII hyphens."
+    },
+    {
+      "original": "step\u2011down transformers",
+      "replacement": "step-down transformers",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "the *end\u2011use* customers.",
+      "replacement": "the *end-use* customers.",
+      "reason": "Replace the non-breaking hyphen (characters outside a standard US keyboard) with an ASCII hyphen."
+    },
+    {
+      "original": "a *decentralized, cyber\u2011physical ecosystem* that seamlessly",
+      "replacement": "a *decentralized, cyber-physical ecosystem* that",
+      "reason": "Replace the non-breaking hyphen with an ASCII hyphen, and remove the banned word 'seamlessly' (Adjective/intensifier)."
+    }
+  ],
+  "malformed_edits": [
+    {
+      "description": "",
+      "name": "",
+      "type": ""
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 21916,
+    "output": 2392,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0056794,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

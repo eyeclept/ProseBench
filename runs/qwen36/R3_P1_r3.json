@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r3",
+  "model_key": "qwen36",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "off",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "be7242a4ea21d9044ef6e43950de701d89e8f6f7f8bdaf6288c5e1becb678454",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:49:58.475411+00:00",
+  "duration_s": 12.869166588992812,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"\u2018open\u2019 is the ordinary-knowledge antonym of \u2018fail-closed\u2019 in the context of access control, so the trailer adds nothing and should be cut.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"Those privilege limits are imposed on purpose.\",\n      \"reason\": \"\u2018on purpose\u2019 and \u2018by accident\u2019 are ordinary-knowledge antonyms, so the trailer is redundant and should be cut.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "\u2018open\u2019 is the ordinary-knowledge antonym of \u2018fail-closed\u2019 in the context of access control, so the trailer adds nothing and should be cut."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\u2018on purpose\u2019 and \u2018by accident\u2019 are ordinary-knowledge antonyms, so the trailer is redundant and should be cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 14912,
+    "output": 162,
+    "cache_read": 2048,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0009102,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}
