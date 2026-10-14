@@ -1,8 +1,9 @@
-"""Authenticated Grok (xAI OAuth), ChatGPT-subscription (codex OAuth), and OpenRouter chat clients.
+"""Authenticated Grok (xAI OAuth) and ChatGPT-subscription (codex OAuth) chat clients.
 
 OAuth tokens come read-only from omp's credential store; nothing here writes it or prints a token.
 """
 
+import http.client
 import json
 import logging
 from pathlib import Path
@@ -168,9 +169,14 @@ def chatgpt_chat(messages: list[dict], *, model: str = "gpt-6.1-sol", reasoning_
                 continue
             logger.warning("ChatGPT HTTP failure %s: %s", exc.code, detail)
             raise LlmError(f"ChatGPT HTTP {exc.code}: {detail}") from exc
-        except (error.URLError, TimeoutError) as exc:
+        except (error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as exc:
+            # Truncated streams (IncompleteRead) and dropped connections are transient: resend once.
+            if attempt == 1:
+                logger.warning("ChatGPT transport failure; retrying once in %ss: %r", TRANSIENT_RETRY_S, exc)
+                time.sleep(TRANSIENT_RETRY_S)
+                continue
             logger.exception("ChatGPT transport failure")
-            raise LlmError(f"ChatGPT transport failure: {exc}") from exc
+            raise LlmError(f"ChatGPT transport failure: {exc!r}") from exc
     final = None
     items_done = []
     for line in stream.splitlines():
