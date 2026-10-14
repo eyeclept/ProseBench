@@ -1,0 +1,60 @@
+{
+  "run_id": "R5_P2_r2",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:58:26.680141+00:00",
+  "duration_s": 16.95580372400582,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"has evolved dramatically to accommodate\", \"replacement\": null, \"reason\": \"'Dramatically' is an intensifier with no figure behind it, so the author should supply a measure of the change or drop the word.\"}, {\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune cuts frequency restoration time by two-thirds\", \"reason\": \"Replaces the intensifier 'significantly' with the reduction from 12 to 4 minutes stated earlier in the sentence.\"}, {\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall with the square of current\", \"reason\": \"Replaces the intensifier 'dramatically' with the quadratic relationship that the I\u00b2R term already shows.\"}, {\"original\": \"significantly reduces line losses from 8 percent to 3 percent\", \"replacement\": \"reduces line losses from 8 percent to 3 percent\", \"reason\": \"The figures already carry the claim, so the intensifier 'significantly' is padding.\"}, {\"original\": \"the only backup path for those hospitals, end of story.\", \"replacement\": \"the only backup path for those hospitals.\", \"reason\": \"'Only' already makes the claim exclusive, so the interjection 'end of story' just repeats it.\"}]}\n```",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": null,
+      "reason": "'Dramatically' is an intensifier with no figure behind it, so the author should supply a measure of the change or drop the word."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune cuts frequency restoration time by two-thirds",
+      "reason": "Replaces the intensifier 'significantly' with the reduction from 12 to 4 minutes stated earlier in the sentence."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall with the square of current",
+      "reason": "Replaces the intensifier 'dramatically' with the quadratic relationship that the I\u00b2R term already shows."
+    },
+    {
+      "original": "significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "reduces line losses from 8 percent to 3 percent",
+      "reason": "The figures already carry the claim, so the intensifier 'significantly' is padding."
+    },
+    {
+      "original": "the only backup path for those hospitals, end of story.",
+      "replacement": "the only backup path for those hospitals.",
+      "reason": "'Only' already makes the claim exclusive, so the interjection 'end of story' just repeats it."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1443,
+    "cache_read": 31380,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.035152,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

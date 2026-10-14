@@ -1,0 +1,250 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:19:26.468718+00:00",
+  "duration_s": 171.11563077999745,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\"original\": \"twenty\u2011first\", \"replacement\": \"twenty-first\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"cloud\u2011based\", \"replacement\": \"cloud-based\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"Internet\u2011of\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"supply\u2011chain\", \"replacement\": \"supply-chain\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"zero\u2011day\", \"replacement\": \"zero-day\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"deep\u2011fake\", \"replacement\": \"deep-fake\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"AI\u2011driven\", \"replacement\": \"AI-driven\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"defense\u2011in\u2011depth\", \"replacement\": \"defense-in-depth\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"next\u2011generation\", \"replacement\": \"next-generation\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"application\u2011aware\", \"replacement\": \"application-aware\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"micro\u2011segmentation\", \"replacement\": \"micro-segmentation\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"identity\u2011and\u2011access\", \"replacement\": \"identity-and-access\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"insider\u2011\", \"replacement\": \"insider-\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"data\u2011protection\", \"replacement\": \"data-protection\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"Asia\u2011Pacific\", \"replacement\": \"Asia-Pacific\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"post\u2011quantum\", \"replacement\": \"post-quantum\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"code\u2011based\", \"replacement\": \"code-based\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"real\u2011time\", \"replacement\": \"real-time\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"AI\u2011augmented\", \"replacement\": \"AI-augmented\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"quantum\u2011resistant\", \"replacement\": \"quantum-resistant\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"software\u2011supply\u2011chain\", \"replacement\": \"software-supply-chain\", \"reason\": \"Replaced en dash with ASCII hyphen per NEVER tier.\"},\n    {\"original\": \"benefits\u2014speed\", \"replacement\": \"benefits, speed\", \"reason\": \"Replaced em dash with comma per NEVER tier.\"},\n    {\"original\": \"\u201cattack surfaces\u201d\", \"replacement\": \"attack surfaces\", \"reason\": \"Removed scare quotes per NEVER tier.\"},\n    {\"original\": \"\u201cavailability heuristic,\u201d\", \"replacement\": \"availability heuristic\", \"reason\": \"Removed scare quotes per NEVER tier.\"},\n    {\"original\": \"\u201cbug bounty\u201d\", \"replacement\": \"bug bounty\", \"reason\": \"Removed scare quotes per NEVER tier.\"},\n    {\"original\": \"\u2026The EDR timeline\", \"replacement\": \"The EDR timeline\", \"reason\": \"Removed ellipsis glyph per NEVER tier.\"},\n    {\"original\": \"process tree\u2026\", \"replacement\": \"process tree...\", \"reason\": \"Replaced ellipsis glyph with three periods per NEVER tier.\"},\n    {\"original\": \"foster complacency\", \"replacement\": \"invite complacency\", \"reason\": \"Replaced prefer-avoid verb 'foster'.\"},\n    {\"original\": \"fostering a collaborative security ecosystem\", \"replacement\": \"encouraging a collaborative security ecosystem\", \"reason\": \"Replaced prefer-avoid verb 'fostering'.\"},\n    {\"original\": \"leveraging machine\u2011learning models\", \"replacement\": \"using machine-learning models\", \"reason\": \"Replaced prefer-avoid verb 'leveraging'.\"},\n    {\"original\": \"Leverage federated learning\", \"replacement\": \"Use federated learning\", \"reason\": \"Replaced prefer-avoid verb 'Leverage'.\"},\n    {\"original\": \"streamlines containment\", \"replacement\": \"simplifies containment\", \"reason\": \"Replaced prefer-avoid verb 'streamlines'.\"},\n    {\"original\": \"bolster collective defense\", \"replacement\": \"strengthen collective defense\", \"reason\": \"Replaced prefer-avoid verb 'bolster'.\"},\n    {\"original\": \"facilitate norm\u2011setting\", \"replacement\": \"enable norm-setting\", \"reason\": \"Replaced prefer-avoid verb 'facilitate'.\"},\n    {\"original\": \"robust encryption\", \"replacement\": \"strong encryption\", \"reason\": \"Replaced prefer-avoid adjective 'robust'.\"},\n    {\"original\": \"pivotal for maintaining\", \"replacement\": \"key for maintaining\", \"reason\": \"Replaced prefer-avoid adjective 'pivotal'.\"},\n    {\"original\": \"holistic response\", \"replacement\": \"comprehensive response\", \"reason\": \"Replaced prefer-avoid adjective 'holistic'.\"},\n    {\"original\": \"dramatically broader\", \"replacement\": \"much broader\", \"reason\": \"Replaced prefer-avoid adverb 'dramatically'.\"},\n    {\"original\": \"significantly reduces\", \"replacement\": \"cuts\", \"reason\": \"Replaced prefer-avoid adverb 'significantly'.\"},\n    {\"original\": \"very fabric\", \"replacement\": \"fabric\", \"reason\": \"Replaced prefer-avoid intensifier 'very'.\"},\n    {\"original\": \"Ultimately, the resilience\", \"replacement\": \"In the end, the resilience\", \"reason\": \"Replaced prefer-avoid transition 'Ultimately'.\"},\n    {\"original\": \"Moreover, strict role\u2011based\", \"replacement\": \"Also, strict role-based\", \"reason\": \"Replaced prefer-avoid transition 'Moreover'.\"},\n    {\"original\": \"threat landscape\", \"replacement\": \"threat environment\", \"reason\": \"Replaced prefer-avoid metaphorical noun 'landscape'.\"}\n  ]\n}",
+  "edits": [
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "supply\u2011chain",
+      "replacement": "supply-chain",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "zero\u2011day",
+      "replacement": "zero-day",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "deep\u2011fake",
+      "replacement": "deep-fake",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "AI\u2011driven",
+      "replacement": "AI-driven",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "micro\u2011segmentation",
+      "replacement": "micro-segmentation",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "identity\u2011and\u2011access",
+      "replacement": "identity-and-access",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "insider\u2011",
+      "replacement": "insider-",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "data\u2011protection",
+      "replacement": "data-protection",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "Asia\u2011Pacific",
+      "replacement": "Asia-Pacific",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "post\u2011quantum",
+      "replacement": "post-quantum",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "code\u2011based",
+      "replacement": "code-based",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "AI\u2011augmented",
+      "replacement": "AI-augmented",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "Replaced en dash with ASCII hyphen per NEVER tier."
+    },
+    {
+      "original": "benefits\u2014speed",
+      "replacement": "benefits, speed",
+      "reason": "Replaced em dash with comma per NEVER tier."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "attack surfaces",
+      "reason": "Removed scare quotes per NEVER tier."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "availability heuristic",
+      "reason": "Removed scare quotes per NEVER tier."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "bug bounty",
+      "reason": "Removed scare quotes per NEVER tier."
+    },
+    {
+      "original": "\u2026The EDR timeline",
+      "replacement": "The EDR timeline",
+      "reason": "Removed ellipsis glyph per NEVER tier."
+    },
+    {
+      "original": "process tree\u2026",
+      "replacement": "process tree...",
+      "reason": "Replaced ellipsis glyph with three periods per NEVER tier."
+    },
+    {
+      "original": "foster complacency",
+      "replacement": "invite complacency",
+      "reason": "Replaced prefer-avoid verb 'foster'."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "encouraging a collaborative security ecosystem",
+      "reason": "Replaced prefer-avoid verb 'fostering'."
+    },
+    {
+      "original": "leveraging machine\u2011learning models",
+      "replacement": "using machine-learning models",
+      "reason": "Replaced prefer-avoid verb 'leveraging'."
+    },
+    {
+      "original": "Leverage federated learning",
+      "replacement": "Use federated learning",
+      "reason": "Replaced prefer-avoid verb 'Leverage'."
+    },
+    {
+      "original": "streamlines containment",
+      "replacement": "simplifies containment",
+      "reason": "Replaced prefer-avoid verb 'streamlines'."
+    },
+    {
+      "original": "bolster collective defense",
+      "replacement": "strengthen collective defense",
+      "reason": "Replaced prefer-avoid verb 'bolster'."
+    },
+    {
+      "original": "facilitate norm\u2011setting",
+      "replacement": "enable norm-setting",
+      "reason": "Replaced prefer-avoid verb 'facilitate'."
+    },
+    {
+      "original": "robust encryption",
+      "replacement": "strong encryption",
+      "reason": "Replaced prefer-avoid adjective 'robust'."
+    },
+    {
+      "original": "pivotal for maintaining",
+      "replacement": "key for maintaining",
+      "reason": "Replaced prefer-avoid adjective 'pivotal'."
+    },
+    {
+      "original": "holistic response",
+      "replacement": "comprehensive response",
+      "reason": "Replaced prefer-avoid adjective 'holistic'."
+    },
+    {
+      "original": "dramatically broader",
+      "replacement": "much broader",
+      "reason": "Replaced prefer-avoid adverb 'dramatically'."
+    },
+    {
+      "original": "significantly reduces",
+      "replacement": "cuts",
+      "reason": "Replaced prefer-avoid adverb 'significantly'."
+    },
+    {
+      "original": "very fabric",
+      "replacement": "fabric",
+      "reason": "Replaced prefer-avoid intensifier 'very'."
+    },
+    {
+      "original": "Ultimately, the resilience",
+      "replacement": "In the end, the resilience",
+      "reason": "Replaced prefer-avoid transition 'Ultimately'."
+    },
+    {
+      "original": "Moreover, strict role\u2011based",
+      "replacement": "Also, strict role-based",
+      "reason": "Replaced prefer-avoid transition 'Moreover'."
+    },
+    {
+      "original": "threat landscape",
+      "replacement": "threat environment",
+      "reason": "Replaced prefer-avoid metaphorical noun 'landscape'."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 17895,
+    "output": 19929,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 18392
+  },
+  "cost_usd": 0.01484505,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

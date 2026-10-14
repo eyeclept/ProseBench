@@ -1,0 +1,471 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:36:57.701796+00:00",
+  "duration_s": 157.72865758099988,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"power system\u2014commonly referred to simply as a *power system*\u2014is\", \"replacement\": \"power system, commonly referred to simply as a *power system*, is\", \"reason\": \"Em dashes are NEVER-tier characters and must be replaced with an ASCII equivalent such as commas.\"},\n{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophes are NEVER-tier characters; replaced with a straight ASCII apostrophe.\"},\n{\"original\": \"basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged\", \"replacement\": \"basic principle, converting a primary energy source into usable electrical power, remains unchanged\", \"reason\": \"Em dashes are NEVER-tier characters and were restructured with commas.\"},\n{\"original\": \"has evolved dramatically to accommodate\", \"replacement\": \"has evolved to accommodate\", \"reason\": \"The intensifier \\\"dramatically\\\" is on the prefer-other-words list.\"},\n{\"original\": \"**Generation** \u2013 Conversion of primary energy\", \"replacement\": \"**Generation** - Conversion of primary energy\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Transmission & Distribution (T&D)** \u2013 Transport of electric power\", \"replacement\": \"**Transmission & Distribution (T&D)** - Transport of electric power\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Control & Protection** \u2013 Continuous monitoring\", \"replacement\": \"**Control & Protection** - Continuous monitoring\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\", \"replacement\": \"intrinsic inertia, massive rotating masses that store kinetic energy, provides\", \"reason\": \"Em dashes are NEVER-tier characters and were restructured with commas.\"},\n{\"original\": \"Robust control keeps\", \"replacement\": \"Strong control keeps\", \"reason\": \"\\\"Robust\\\" is on the prefer-other-words list.\"},\n{\"original\": \"retune significantly shortens frequency restoration\", \"replacement\": \"retune shortens frequency restoration\", \"reason\": \"The intensifier \\\"significantly\\\" is on the prefer-other-words list and the numbers already quantify the change.\"},\n{\"original\": \"ramps\u2026\", \"replacement\": \"ramps...\", \"reason\": \"The ellipsis glyph is a NEVER-tier character; replaced with three periods.\"},\n{\"original\": \"**Intermittency** \u2013 Power output varies\", \"replacement\": \"**Intermittency** - Power output varies\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Geographic Dispersion** \u2013 Renewable units\", \"replacement\": \"**Geographic Dispersion** - Renewable units\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring strong transmission networks\", \"reason\": \"\\\"Robust\\\" is on the prefer-other-words list.\"},\n{\"original\": \"Interface** \u2013 Many renewable devices\", \"replacement\": \"Interface** - Many renewable devices\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"voltages\u2014typically ranging\", \"replacement\": \"voltages, typically ranging\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"\u2014are employed\", \"replacement\": \", are employed\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall sharply as current decreases\", \"reason\": \"The intensifier \\\"dramatically\\\" is on the prefer-other-words list.\"},\n{\"original\": \"**Transmission Lines** \u2013 Overhead conductors\", \"replacement\": \"**Transmission Lines** - Overhead conductors\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Substations** \u2013 Nodes where transformers\", \"replacement\": \"**Substations** - Nodes where transformers\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Converters** \u2013 For\", \"replacement\": \"**Converters** - For\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"significantly reduces line losses\", \"replacement\": \"cuts line losses\", \"reason\": \"The intensifier \\\"significantly\\\" is on the prefer-other-words list and the percentages already state the effect.\"},\n{\"original\": \"planning leverages\", \"replacement\": \"planning uses\", \"reason\": \"\\\"Leverage\\\" is on the prefer-other-words verb list.\"},\n{\"original\": \"devices\u2014static VAR compensators\", \"replacement\": \"devices, static VAR compensators\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"(UPFC)\u2014provides operators\", \"replacement\": \"(UPFC), provides operators\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"enhancing capacity without building new lines\", \"replacement\": \"adding capacity without building new lines\", \"reason\": \"\\\"Enhance\\\" is on the prefer-other-words verb list.\"},\n{\"original\": \"\u201clast mile\u201d\", \"replacement\": \"\\\"last mile\\\"\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"**Primary Substations** \u2013 Reduce\", \"replacement\": \"**Primary Substations** - Reduce\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Feeders** \u2013 \u201cRadial\u201d designs\", \"replacement\": \"Feeders** - \\\"Radial\\\" designs\", \"reason\": \"En dashes and curly quotes are NEVER-tier characters and were replaced with a hyphen and straight quotes.\"},\n{\"original\": \"V\u201335\", \"replacement\": \"V-35\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Secondary Distribution Transformers** \u2013 Further step down\", \"replacement\": \"**Secondary Distribution Transformers** - Further step down\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Smart Devices** \u2013 Automated switches\", \"replacement\": \"**Smart Devices** - Automated switches\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Primary (Local) Control** \u2013 Governor action\", \"replacement\": \"**Primary (Local) Control** - Governor action\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Secondary (AGC) Control** \u2013 Automatic Generation Control\", \"replacement\": \"**Secondary (AGC) Control** - Automatic Generation Control\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Tertiary (Economic Dispatch)** \u2013 Centralized optimization\", \"replacement\": \"**Tertiary (Economic Dispatch)** - Centralized optimization\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"grid\u2019s immune system\", \"replacement\": \"grid's immune system\", \"reason\": \"Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes.\"},\n{\"original\": \"**Overcurrent Protection** \u2013 Detects excessive\", \"replacement\": \"**Overcurrent Protection** - Detects excessive\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Distance Protection** \u2013 Measures impedance\", \"replacement\": \"**Distance Protection** - Measures impedance\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Differential Protection** \u2013 Compares currents\", \"replacement\": \"**Differential Protection** - Compares currents\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"*digital relaying*\u2014using\", \"replacement\": \"*digital relaying*, using\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"(IEDs)\u2014allows\", \"replacement\": \"(IEDs), allows\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"paving the way for\", \"replacement\": \"enabling\", \"reason\": \"\\\"Pave the way for\\\" is a banned academic tell.\"},\n{\"original\": \"be \u201calways\", \"replacement\": \"be \\\"always\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"on,\u201d extreme\", \"replacement\": \"on,\\\" extreme\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"gas supply\u2014thermal units\", \"replacement\": \"gas supply; thermal units\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a semicolon.\"},\n{\"original\": \"**Hardening Infrastructure** \u2013 Substation flood protection\", \"replacement\": \"**Hardening Infrastructure** - Substation flood protection\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Grid Flexibility** \u2013 Fast\", \"replacement\": \"**Grid Flexibility** - Fast\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Decentralized Backup** \u2013 Microgrids\", \"replacement\": \"**Decentralized Backup** - Microgrids\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Balancing** \u2013 The net load curve\", \"replacement\": \"Balancing** - The net load curve\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"diminishing the \u201cramping\u201d capacity\", \"replacement\": \"diminishing the \\\"ramping\\\" capacity\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"**Grid Stability** \u2013 Reduced rotating inertia\", \"replacement\": \"**Grid Stability** - Reduced rotating inertia\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"while fostering competition\", \"replacement\": \"while promoting competition\", \"reason\": \"\\\"Foster\\\" is on the prefer-other-words verb list.\"},\n{\"original\": \"**Advanced Metering Infrastructure (AMI)** \u2013 Provides granular\", \"replacement\": \"**Advanced Metering Infrastructure (AMI)** - Provides granular\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Distribution Management Systems (DMS)** \u2013 Automate reconfiguration\", \"replacement\": \"**Distribution Management Systems (DMS)** - Automate reconfiguration\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Systems (WAMS)** \u2013 Phasor Measurement Units\", \"replacement\": \"Systems (WAMS)** - Phasor Measurement Units\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"30\u2013120\", \"replacement\": \"30-120\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Digital twins\u2014\", \"replacement\": \"Digital twins,\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"grid assets\u2014allow predictive maintenance\", \"replacement\": \"grid assets, allow predictive maintenance\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a comma.\"},\n{\"original\": \"Batteries** \u2013 Dominant\", \"replacement\": \"Batteries** - Dominant\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \") \u2013 Offer scalable\", \"replacement\": \") - Offer scalable\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Thermal and Mechanical Storage** \u2013 Cryogenic air\", \"replacement\": \"**Thermal and Mechanical Storage** - Cryogenic air\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Full Renewable Transition** \u2013 100\", \"replacement\": \"**Full Renewable Transition** - 100\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Storage (CCUS)** \u2013 Retrofitting\", \"replacement\": \"Storage (CCUS)** - Retrofitting\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Hydrogen Integration** \u2013 Using excess\", \"replacement\": \"**Hydrogen Integration** - Using excess\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Provides Synthetic Inertia** \u2013 Emulates\", \"replacement\": \"**Provides Synthetic Inertia** - Emulates\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Microgrids** \u2013 Seamless transition\", \"replacement\": \"Microgrids** - Smooth transition\", \"reason\": \"En dashes are NEVER-tier characters and \\\"seamless\\\" is on the prefer-other-words list.\"},\n{\"original\": \"crucial for critical facilities\", \"replacement\": \"essential for critical facilities\", \"reason\": \"\\\"Crucial\\\" is on the prefer-other-words list.\"},\n{\"original\": \"\u201cPower\", \"replacement\": \"\\\"Power\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"X\u201d technologies\", \"replacement\": \"X\\\" technologies\", \"reason\": \"Curly quotes are NEVER-tier characters and were replaced with straight quotes.\"},\n{\"original\": \"By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges,\", \"replacement\": \"Coupling the electricity sector with transport, industry, and heating yields a more integrated energy system,\", \"reason\": \"Sentence-initial \\\"By [gerund]\\\" is banned structural phrasing and \\\"holistic\\\" is on the prefer-other-words list.\"},\n{\"original\": \"Union\u2019s \u201cElectricity Interconnection\u201d\", \"replacement\": \"Union's \\\"Electricity Interconnection\\\"\", \"reason\": \"Curly apostrophes and curly quotes are NEVER-tier characters and were replaced with straight equivalents.\"},\n{\"original\": \"Links** \u2013 Multi\", \"replacement\": \"Links** - Multi\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Coordinated Market Coupling** \u2013 Harmonized\", \"replacement\": \"**Coordinated Market Coupling** - Harmonized\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Operations** \u2013 A continent\", \"replacement\": \"Operations** - A continent\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"when robust transmission, advanced controls\", \"replacement\": \"when strong transmission, advanced controls\", \"reason\": \"\\\"Robust\\\" is on the prefer-other-words list.\"},\n{\"original\": \"ecosystem* that seamlessly integrates electricity\", \"replacement\": \"system* that integrates electricity\", \"reason\": \"Metaphorical \\\"ecosystem\\\" and the intensifier \\\"seamlessly\\\" are discouraged words.\"},\n{\"original\": \"**Massive DER Penetration** \u2013 Millions\", \"replacement\": \"**Massive DER Penetration** - Millions\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Operations** \u2013 Predictive dispatch\", \"replacement\": \"Operations** - Predictive dispatch\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"**Resilient Architecture** \u2013 Multi\", \"replacement\": \"**Resilient Architecture** - Multi\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"Decarbonization** \u2013 Carbon pricing\", \"replacement\": \"Decarbonization** - Carbon pricing\", \"reason\": \"En dashes are NEVER-tier characters and must be replaced with a hyphen.\"},\n{\"original\": \"for days\u2014planners rewrite\", \"replacement\": \"for days; planners rewrite\", \"reason\": \"Em dashes are NEVER-tier characters and were replaced with a semicolon.\"},\n{\"original\": \"the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin\", \"replacement\": \"the benefits of reliable power, reduced emissions, and a more democratic energy mix promise to underpin\", \"reason\": \"Em dashes are NEVER-tier characters and metaphorical \\\"landscape\\\" is a discouraged noun.\"},\n{\"original\": \"Navigating reliability, resilience, and market complexities demands\", \"replacement\": \"Managing reliability, resilience, and market complexities demands\", \"reason\": \"Metaphorical \\\"navigate\\\" is on the prefer-other-words list.\"},\n{\"original\": \"demands innovative technologies\u2014smart grids\", \"replacement\": \"demands new technologies, smart grids\", \"reason\": \"Em dashes are NEVER-tier characters and \\\"innovative\\\" is on the prefer-other-words list.\"},\n{\"original\": \"inverters\u2014and robust regulatory frameworks\", \"replacement\": \"inverters, and sound regulatory frameworks\", \"reason\": \"Em dashes are NEVER-tier characters and \\\"robust\\\" is on the prefer-other-words list.\"},\n{\"original\": \"grid\u2019s reliability\", \"replacement\": \"grid's reliability\", \"reason\": \"Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes.\"},\n{\"original\": \"century\u2019s power system\", \"replacement\": \"century's power system\", \"reason\": \"Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes.\"}\n]}",
+  "edits": [
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "power system, commonly referred to simply as a *power system*, is",
+      "reason": "Em dashes are NEVER-tier characters and must be replaced with an ASCII equivalent such as commas."
+    },
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophes are NEVER-tier characters; replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged",
+      "replacement": "basic principle, converting a primary energy source into usable electrical power, remains unchanged",
+      "reason": "Em dashes are NEVER-tier characters and were restructured with commas."
+    },
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "The intensifier \"dramatically\" is on the prefer-other-words list."
+    },
+    {
+      "original": "**Generation** \u2013 Conversion of primary energy",
+      "replacement": "**Generation** - Conversion of primary energy",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Transmission & Distribution (T&D)** \u2013 Transport of electric power",
+      "replacement": "**Transmission & Distribution (T&D)** - Transport of electric power",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous monitoring",
+      "replacement": "**Control & Protection** - Continuous monitoring",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides",
+      "replacement": "intrinsic inertia, massive rotating masses that store kinetic energy, provides",
+      "reason": "Em dashes are NEVER-tier characters and were restructured with commas."
+    },
+    {
+      "original": "Robust control keeps",
+      "replacement": "Strong control keeps",
+      "reason": "\"Robust\" is on the prefer-other-words list."
+    },
+    {
+      "original": "retune significantly shortens frequency restoration",
+      "replacement": "retune shortens frequency restoration",
+      "reason": "The intensifier \"significantly\" is on the prefer-other-words list and the numbers already quantify the change."
+    },
+    {
+      "original": "ramps\u2026",
+      "replacement": "ramps...",
+      "reason": "The ellipsis glyph is a NEVER-tier character; replaced with three periods."
+    },
+    {
+      "original": "**Intermittency** \u2013 Power output varies",
+      "replacement": "**Intermittency** - Power output varies",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Geographic Dispersion** \u2013 Renewable units",
+      "replacement": "**Geographic Dispersion** - Renewable units",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "\"Robust\" is on the prefer-other-words list."
+    },
+    {
+      "original": "Interface** \u2013 Many renewable devices",
+      "replacement": "Interface** - Many renewable devices",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "voltages\u2014typically ranging",
+      "replacement": "voltages, typically ranging",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "\u2014are employed",
+      "replacement": ", are employed",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall sharply as current decreases",
+      "reason": "The intensifier \"dramatically\" is on the prefer-other-words list."
+    },
+    {
+      "original": "**Transmission Lines** \u2013 Overhead conductors",
+      "replacement": "**Transmission Lines** - Overhead conductors",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Substations** \u2013 Nodes where transformers",
+      "replacement": "**Substations** - Nodes where transformers",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Converters** \u2013 For",
+      "replacement": "**Converters** - For",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "significantly reduces line losses",
+      "replacement": "cuts line losses",
+      "reason": "The intensifier \"significantly\" is on the prefer-other-words list and the percentages already state the effect."
+    },
+    {
+      "original": "planning leverages",
+      "replacement": "planning uses",
+      "reason": "\"Leverage\" is on the prefer-other-words verb list."
+    },
+    {
+      "original": "devices\u2014static VAR compensators",
+      "replacement": "devices, static VAR compensators",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "(UPFC)\u2014provides operators",
+      "replacement": "(UPFC), provides operators",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "enhancing capacity without building new lines",
+      "replacement": "adding capacity without building new lines",
+      "reason": "\"Enhance\" is on the prefer-other-words verb list."
+    },
+    {
+      "original": "\u201clast mile\u201d",
+      "replacement": "\"last mile\"",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "**Primary Substations** \u2013 Reduce",
+      "replacement": "**Primary Substations** - Reduce",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Feeders** \u2013 \u201cRadial\u201d designs",
+      "replacement": "Feeders** - \"Radial\" designs",
+      "reason": "En dashes and curly quotes are NEVER-tier characters and were replaced with a hyphen and straight quotes."
+    },
+    {
+      "original": "V\u201335",
+      "replacement": "V-35",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Secondary Distribution Transformers** \u2013 Further step down",
+      "replacement": "**Secondary Distribution Transformers** - Further step down",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Smart Devices** \u2013 Automated switches",
+      "replacement": "**Smart Devices** - Automated switches",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Primary (Local) Control** \u2013 Governor action",
+      "replacement": "**Primary (Local) Control** - Governor action",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Secondary (AGC) Control** \u2013 Automatic Generation Control",
+      "replacement": "**Secondary (AGC) Control** - Automatic Generation Control",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Tertiary (Economic Dispatch)** \u2013 Centralized optimization",
+      "replacement": "**Tertiary (Economic Dispatch)** - Centralized optimization",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "grid\u2019s immune system",
+      "replacement": "grid's immune system",
+      "reason": "Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes."
+    },
+    {
+      "original": "**Overcurrent Protection** \u2013 Detects excessive",
+      "replacement": "**Overcurrent Protection** - Detects excessive",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Distance Protection** \u2013 Measures impedance",
+      "replacement": "**Distance Protection** - Measures impedance",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Differential Protection** \u2013 Compares currents",
+      "replacement": "**Differential Protection** - Compares currents",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "*digital relaying*\u2014using",
+      "replacement": "*digital relaying*, using",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "(IEDs)\u2014allows",
+      "replacement": "(IEDs), allows",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "paving the way for",
+      "replacement": "enabling",
+      "reason": "\"Pave the way for\" is a banned academic tell."
+    },
+    {
+      "original": "be \u201calways",
+      "replacement": "be \"always",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "on,\u201d extreme",
+      "replacement": "on,\" extreme",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "gas supply\u2014thermal units",
+      "replacement": "gas supply; thermal units",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a semicolon."
+    },
+    {
+      "original": "**Hardening Infrastructure** \u2013 Substation flood protection",
+      "replacement": "**Hardening Infrastructure** - Substation flood protection",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Grid Flexibility** \u2013 Fast",
+      "replacement": "**Grid Flexibility** - Fast",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Decentralized Backup** \u2013 Microgrids",
+      "replacement": "**Decentralized Backup** - Microgrids",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Balancing** \u2013 The net load curve",
+      "replacement": "Balancing** - The net load curve",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "diminishing the \u201cramping\u201d capacity",
+      "replacement": "diminishing the \"ramping\" capacity",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "**Grid Stability** \u2013 Reduced rotating inertia",
+      "replacement": "**Grid Stability** - Reduced rotating inertia",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "while fostering competition",
+      "replacement": "while promoting competition",
+      "reason": "\"Foster\" is on the prefer-other-words verb list."
+    },
+    {
+      "original": "**Advanced Metering Infrastructure (AMI)** \u2013 Provides granular",
+      "replacement": "**Advanced Metering Infrastructure (AMI)** - Provides granular",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Distribution Management Systems (DMS)** \u2013 Automate reconfiguration",
+      "replacement": "**Distribution Management Systems (DMS)** - Automate reconfiguration",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Systems (WAMS)** \u2013 Phasor Measurement Units",
+      "replacement": "Systems (WAMS)** - Phasor Measurement Units",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "30\u2013120",
+      "replacement": "30-120",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Digital twins\u2014",
+      "replacement": "Digital twins,",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "grid assets\u2014allow predictive maintenance",
+      "replacement": "grid assets, allow predictive maintenance",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a comma."
+    },
+    {
+      "original": "Batteries** \u2013 Dominant",
+      "replacement": "Batteries** - Dominant",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": ") \u2013 Offer scalable",
+      "replacement": ") - Offer scalable",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Thermal and Mechanical Storage** \u2013 Cryogenic air",
+      "replacement": "**Thermal and Mechanical Storage** - Cryogenic air",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Full Renewable Transition** \u2013 100",
+      "replacement": "**Full Renewable Transition** - 100",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Storage (CCUS)** \u2013 Retrofitting",
+      "replacement": "Storage (CCUS)** - Retrofitting",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Hydrogen Integration** \u2013 Using excess",
+      "replacement": "**Hydrogen Integration** - Using excess",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Provides Synthetic Inertia** \u2013 Emulates",
+      "replacement": "**Provides Synthetic Inertia** - Emulates",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Microgrids** \u2013 Seamless transition",
+      "replacement": "Microgrids** - Smooth transition",
+      "reason": "En dashes are NEVER-tier characters and \"seamless\" is on the prefer-other-words list."
+    },
+    {
+      "original": "crucial for critical facilities",
+      "replacement": "essential for critical facilities",
+      "reason": "\"Crucial\" is on the prefer-other-words list."
+    },
+    {
+      "original": "\u201cPower",
+      "replacement": "\"Power",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "X\u201d technologies",
+      "replacement": "X\" technologies",
+      "reason": "Curly quotes are NEVER-tier characters and were replaced with straight quotes."
+    },
+    {
+      "original": "By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges,",
+      "replacement": "Coupling the electricity sector with transport, industry, and heating yields a more integrated energy system,",
+      "reason": "Sentence-initial \"By [gerund]\" is banned structural phrasing and \"holistic\" is on the prefer-other-words list."
+    },
+    {
+      "original": "Union\u2019s \u201cElectricity Interconnection\u201d",
+      "replacement": "Union's \"Electricity Interconnection\"",
+      "reason": "Curly apostrophes and curly quotes are NEVER-tier characters and were replaced with straight equivalents."
+    },
+    {
+      "original": "Links** \u2013 Multi",
+      "replacement": "Links** - Multi",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Coordinated Market Coupling** \u2013 Harmonized",
+      "replacement": "**Coordinated Market Coupling** - Harmonized",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Operations** \u2013 A continent",
+      "replacement": "Operations** - A continent",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "\"Robust\" is on the prefer-other-words list."
+    },
+    {
+      "original": "ecosystem* that seamlessly integrates electricity",
+      "replacement": "system* that integrates electricity",
+      "reason": "Metaphorical \"ecosystem\" and the intensifier \"seamlessly\" are discouraged words."
+    },
+    {
+      "original": "**Massive DER Penetration** \u2013 Millions",
+      "replacement": "**Massive DER Penetration** - Millions",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Operations** \u2013 Predictive dispatch",
+      "replacement": "Operations** - Predictive dispatch",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "**Resilient Architecture** \u2013 Multi",
+      "replacement": "**Resilient Architecture** - Multi",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "Decarbonization** \u2013 Carbon pricing",
+      "replacement": "Decarbonization** - Carbon pricing",
+      "reason": "En dashes are NEVER-tier characters and must be replaced with a hyphen."
+    },
+    {
+      "original": "for days\u2014planners rewrite",
+      "replacement": "for days; planners rewrite",
+      "reason": "Em dashes are NEVER-tier characters and were replaced with a semicolon."
+    },
+    {
+      "original": "the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise to underpin",
+      "replacement": "the benefits of reliable power, reduced emissions, and a more democratic energy mix promise to underpin",
+      "reason": "Em dashes are NEVER-tier characters and metaphorical \"landscape\" is a discouraged noun."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands",
+      "replacement": "Managing reliability, resilience, and market complexities demands",
+      "reason": "Metaphorical \"navigate\" is on the prefer-other-words list."
+    },
+    {
+      "original": "demands innovative technologies\u2014smart grids",
+      "replacement": "demands new technologies, smart grids",
+      "reason": "Em dashes are NEVER-tier characters and \"innovative\" is on the prefer-other-words list."
+    },
+    {
+      "original": "inverters\u2014and robust regulatory frameworks",
+      "replacement": "inverters, and sound regulatory frameworks",
+      "reason": "Em dashes are NEVER-tier characters and \"robust\" is on the prefer-other-words list."
+    },
+    {
+      "original": "grid\u2019s reliability",
+      "replacement": "grid's reliability",
+      "reason": "Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes."
+    },
+    {
+      "original": "century\u2019s power system",
+      "replacement": "century's power system",
+      "reason": "Curly apostrophes are NEVER-tier characters and were replaced with straight apostrophes."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 63,
+    "output": 27371,
+    "cache_read": 21504,
+    "cache_write": 0,
+    "reasoning": 23596
+  },
+  "cost_usd": 0.023926191,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

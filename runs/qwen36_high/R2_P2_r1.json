@@ -1,0 +1,45 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:50:28.327920+00:00",
+  "duration_s": 61.167702313978225,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"replacement\": \"The architecture of a power system is a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\",\n      \"reason\": \"The negative clause 'is therefore not merely a physical infrastructure' is redundant windup; deleting it leaves the positive claim intact.\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"replacement\": \"The Texas failure was caused by frozen gas wells and unheated thermal auxiliaries.\",\n      \"reason\": \"The negative clause 'was not a nameplate shortfall of wind' is windup; deleting it and stating the positive cause directly removes the redundant negation.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "reason": "The negative clause 'is therefore not merely a physical infrastructure' is redundant windup; deleting it leaves the positive claim intact."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "The Texas failure was caused by frozen gas wells and unheated thermal auxiliaries.",
+      "reason": "The negative clause 'was not a nameplate shortfall of wind' is windup; deleting it and stating the positive cause directly removes the redundant negation."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 5935,
+    "output": 7736,
+    "cache_read": 12288,
+    "cache_write": 0,
+    "reasoning": 7494
+  },
+  "cost_usd": 0.00601915,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

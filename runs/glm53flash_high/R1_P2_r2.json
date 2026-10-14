@@ -1,0 +1,210 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:32:02.605503+00:00",
+  "duration_s": 11.745297863002634,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Power Systems: An Integral Backbone of Modern Civilization\", \"replacement\": \"Power Systems: A Backbone of Modern Civilization\", \"reason\": \"Removes the banned intensifier 'Integral' from the heading.\"}, {\"original\": \"humanity\u2019s\", \"replacement\": \"humanity's\", \"reason\": \"Replaces the curly apostrophe with a straight ASCII apostrophe.\"}, {\"original\": \"the contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is\", \"replacement\": \"the contemporary electric power system, commonly referred to simply as a *power system*, is\", \"reason\": \"Replaces em dashes with commas per the NEVER ban on em dashes.\"}, {\"original\": \"remains unchanged, the architecture of modern power systems has evolved dramatically\", \"replacement\": \"remains unchanged, the architecture of modern power systems has evolved by orders of magnitude\", \"reason\": \"Replaces the banned intensifier 'dramatically'.\"}, {\"original\": \"the retune significantly shortens frequency restoration\", \"replacement\": \"the retune shortens frequency restoration to a third of the previous time\", \"reason\": \"Replaces the banned intensifier 'significantly' with a concrete statement.\"}, {\"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\", \"replacement\": null, \"reason\": \"Flags the phrase for the author; 'full stop' is a banned-style emphasis construction.\"}, {\"original\": \"Forecasting becomes essential\", \"replacement\": null, \"reason\": \"Flags the absolute 'essential' claim for the author.\"}, {\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring sturdy transmission networks\", \"reason\": \"Replaces the banned adjective 'robust' with a natural alternative.\"}, {\"original\": \"Forecast still misses cloud-driven ramps\u2026\", \"replacement\": \"Forecast still misses cloud-driven ramps...\", \"reason\": \"Replaces the ellipsis glyph with three ASCII periods.\"}, {\"original\": \"Robust control keeps voltage inside limits\", \"replacement\": \"Sturdy control keeps voltage inside limits\", \"reason\": \"Replaces the banned adjective 'robust' with a natural alternative.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent\", \"replacement\": \"The 345 kV reconductor reduces line losses from 8 percent to 3 percent\", \"reason\": \"Removes the banned intensifier 'significantly'; the figures already carry the magnitude.\"}, {\"original\": \"resistive losses (I\u00b2R) fall dramatically as current decreases\", \"replacement\": \"resistive losses (I^2 R) fall sharply as current decreases\", \"reason\": \"Replaces the banned intensifier 'dramatically' and the superscripted I\u00b2R with an ASCII form.\"}, {\"original\": \"provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines\", \"replacement\": \"provides operators with dynamic voltage and power-flow regulation, adding capacity without building new lines\", \"reason\": \"Replaces the banned verb 'enhancing', the curly hyphen between power and flow, and the em dash.\"}, {\"original\": \"Distribution networks are the \u201clast mile\u201d\", \"replacement\": \"Distribution networks are the \\\"last mile\\\"\", \"reason\": \"Replaces curly quotes with straight ASCII quotes.\"}, {\"original\": \"\u201cRadial\u201d designs are common\", \"replacement\": \"\\\"Radial\\\" designs are common\", \"reason\": \"Replaces curly quotes with straight ASCII quotes.\"}, {\"original\": \"The grid\u2019s\", \"replacement\": \"The grid's\", \"reason\": \"Replaces the curly apostrophe with a straight ASCII apostrophe.\"}, {\"original\": \"can precipitate catastrophic failures\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"accounts for the lost megawatts\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"cut gas supply\u2014thermal units\", \"replacement\": \"cut gas supply; thermal units\", \"reason\": \"Replaces the em dash with a semicolon.\"}, {\"original\": \"minimizing losses while ensuring adequate reliability\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"Solutions involve a portfolio\", \"replacement\": \"Solutions involve a mix\", \"reason\": \"Flags the inflated 'portfolio' phrasing for the author.\"}, {\"original\": \"planned on purpose, rather than by accident\", \"replacement\": null, \"reason\": \"Flags the filler phrase for the author.\"}, {\"original\": \"granting operators unprecedented visibility\", \"replacement\": null, \"reason\": \"Flags the inflated claim for the author.\"}, {\"original\": \"Seamless transition between grid\u2011connected and standalone operation\", \"replacement\": \"Smooth transition between grid-connected and standalone operation\", \"reason\": \"Replaces the banned adjective 'Seamless' and the curly hyphen between grid and connected.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": null, \"reason\": \"Flags the phrase for the author; 'end of story' is a banned-style emphasis construction.\"}, {\"original\": \"a more holistic energy system emerges, smoothing demand peaks\", \"replacement\": \"a more integrated energy system emerges, smoothing demand peaks\", \"reason\": \"Replaces the banned adjective 'holistic' with a natural alternative.\"}, {\"original\": \"advanced controls, and market integration co\u2011exist\", \"replacement\": \"advanced controls, and market integration co-exist\", \"reason\": \"Replaces the curly hyphen between co and exist with an ASCII hyphen.\"}, {\"original\": \"decentralized, cyber\u2011physical *ecosystem*\", \"replacement\": \"decentralized, cyber-physical *network of networks*\", \"reason\": \"Replaces the banned metaphorical noun 'ecosystem' and the curly hyphen between cyber and physical.\"}, {\"original\": \"The challenges are formidable\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"a more democratic energy landscape\u2014promise\", \"replacement\": \"a more democratic energy system; those benefits promise\", \"reason\": \"Replaces the banned metaphorical noun 'landscape' and the em dash.\"}, {\"original\": \"underpin sustainable economic growth\", \"replacement\": \"support sustainable economic growth\", \"reason\": \"Flags the inflated 'underpin' phrasing for the author.\"}, {\"original\": \"Power systems lie at the heart of modern civilization\", \"replacement\": null, \"reason\": \"Flags the inflated 'at the heart of' phrasing for the author.\"}, {\"original\": \"the imperative to decarbonize\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"can sustain the grid\u2019s reliability while embracing clean energy\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}, {\"original\": \"providing the platform upon which future societies will build\", \"replacement\": null, \"reason\": \"Flags the inflated phrasing for the author.\"}]}",
+  "edits": [
+    {
+      "original": "Power Systems: An Integral Backbone of Modern Civilization",
+      "replacement": "Power Systems: A Backbone of Modern Civilization",
+      "reason": "Removes the banned intensifier 'Integral' from the heading."
+    },
+    {
+      "original": "humanity\u2019s",
+      "replacement": "humanity's",
+      "reason": "Replaces the curly apostrophe with a straight ASCII apostrophe."
+    },
+    {
+      "original": "the contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "the contemporary electric power system, commonly referred to simply as a *power system*, is",
+      "reason": "Replaces em dashes with commas per the NEVER ban on em dashes."
+    },
+    {
+      "original": "remains unchanged, the architecture of modern power systems has evolved dramatically",
+      "replacement": "remains unchanged, the architecture of modern power systems has evolved by orders of magnitude",
+      "reason": "Replaces the banned intensifier 'dramatically'."
+    },
+    {
+      "original": "the retune significantly shortens frequency restoration",
+      "replacement": "the retune shortens frequency restoration to a third of the previous time",
+      "reason": "Replaces the banned intensifier 'significantly' with a concrete statement."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": null,
+      "reason": "Flags the phrase for the author; 'full stop' is a banned-style emphasis construction."
+    },
+    {
+      "original": "Forecasting becomes essential",
+      "replacement": null,
+      "reason": "Flags the absolute 'essential' claim for the author."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring sturdy transmission networks",
+      "reason": "Replaces the banned adjective 'robust' with a natural alternative."
+    },
+    {
+      "original": "Forecast still misses cloud-driven ramps\u2026",
+      "replacement": "Forecast still misses cloud-driven ramps...",
+      "reason": "Replaces the ellipsis glyph with three ASCII periods."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits",
+      "replacement": "Sturdy control keeps voltage inside limits",
+      "reason": "Replaces the banned adjective 'robust' with a natural alternative."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "The 345 kV reconductor reduces line losses from 8 percent to 3 percent",
+      "reason": "Removes the banned intensifier 'significantly'; the figures already carry the magnitude."
+    },
+    {
+      "original": "resistive losses (I\u00b2R) fall dramatically as current decreases",
+      "replacement": "resistive losses (I^2 R) fall sharply as current decreases",
+      "reason": "Replaces the banned intensifier 'dramatically' and the superscripted I\u00b2R with an ASCII form."
+    },
+    {
+      "original": "provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity without building new lines",
+      "replacement": "provides operators with dynamic voltage and power-flow regulation, adding capacity without building new lines",
+      "reason": "Replaces the banned verb 'enhancing', the curly hyphen between power and flow, and the em dash."
+    },
+    {
+      "original": "Distribution networks are the \u201clast mile\u201d",
+      "replacement": "Distribution networks are the \"last mile\"",
+      "reason": "Replaces curly quotes with straight ASCII quotes."
+    },
+    {
+      "original": "\u201cRadial\u201d designs are common",
+      "replacement": "\"Radial\" designs are common",
+      "reason": "Replaces curly quotes with straight ASCII quotes."
+    },
+    {
+      "original": "The grid\u2019s",
+      "replacement": "The grid's",
+      "reason": "Replaces the curly apostrophe with a straight ASCII apostrophe."
+    },
+    {
+      "original": "can precipitate catastrophic failures",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "accounts for the lost megawatts",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "cut gas supply\u2014thermal units",
+      "replacement": "cut gas supply; thermal units",
+      "reason": "Replaces the em dash with a semicolon."
+    },
+    {
+      "original": "minimizing losses while ensuring adequate reliability",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "Solutions involve a portfolio",
+      "replacement": "Solutions involve a mix",
+      "reason": "Flags the inflated 'portfolio' phrasing for the author."
+    },
+    {
+      "original": "planned on purpose, rather than by accident",
+      "replacement": null,
+      "reason": "Flags the filler phrase for the author."
+    },
+    {
+      "original": "granting operators unprecedented visibility",
+      "replacement": null,
+      "reason": "Flags the inflated claim for the author."
+    },
+    {
+      "original": "Seamless transition between grid\u2011connected and standalone operation",
+      "replacement": "Smooth transition between grid-connected and standalone operation",
+      "reason": "Replaces the banned adjective 'Seamless' and the curly hyphen between grid and connected."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": null,
+      "reason": "Flags the phrase for the author; 'end of story' is a banned-style emphasis construction."
+    },
+    {
+      "original": "a more holistic energy system emerges, smoothing demand peaks",
+      "replacement": "a more integrated energy system emerges, smoothing demand peaks",
+      "reason": "Replaces the banned adjective 'holistic' with a natural alternative."
+    },
+    {
+      "original": "advanced controls, and market integration co\u2011exist",
+      "replacement": "advanced controls, and market integration co-exist",
+      "reason": "Replaces the curly hyphen between co and exist with an ASCII hyphen."
+    },
+    {
+      "original": "decentralized, cyber\u2011physical *ecosystem*",
+      "replacement": "decentralized, cyber-physical *network of networks*",
+      "reason": "Replaces the banned metaphorical noun 'ecosystem' and the curly hyphen between cyber and physical."
+    },
+    {
+      "original": "The challenges are formidable",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "a more democratic energy landscape\u2014promise",
+      "replacement": "a more democratic energy system; those benefits promise",
+      "reason": "Replaces the banned metaphorical noun 'landscape' and the em dash."
+    },
+    {
+      "original": "underpin sustainable economic growth",
+      "replacement": "support sustainable economic growth",
+      "reason": "Flags the inflated 'underpin' phrasing for the author."
+    },
+    {
+      "original": "Power systems lie at the heart of modern civilization",
+      "replacement": null,
+      "reason": "Flags the inflated 'at the heart of' phrasing for the author."
+    },
+    {
+      "original": "the imperative to decarbonize",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "can sustain the grid\u2019s reliability while embracing clean energy",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    },
+    {
+      "original": "providing the platform upon which future societies will build",
+      "replacement": null,
+      "reason": "Flags the inflated phrasing for the author."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20758,
+    "output": 1810,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 295
+  },
+  "cost_usd": 0.00202011,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,90 @@
+{
+  "run_id": "R1_P2_r3",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:24:26.266475+00:00",
+  "duration_s": 42.45848284801468,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"foster innovation\", \"replacement\": \"drive progress\", \"reason\": \"Banned word 'foster'\"},\n    {\"original\": \"robust control\", \"replacement\": \"tight control\", \"reason\": \"Banned adjective 'robust'\"},\n    {\"original\": \"robust transmission networks\", \"replacement\": \"strong transmission networks\", \"reason\": \"Banned adjective 'robust'\"},\n    {\"original\": \"robust control schemes\", \"replacement\": \"tight control schemes\", \"reason\": \"Banned adjective 'robust'\"},\n    {\"original\": \"robust regulatory frameworks\", \"replacement\": \"strong regulatory frameworks\", \"reason\": \"Banned adjective 'robust'\"},\n    {\"original\": \"profound transformation\", \"replacement\": \"major transformation\", \"reason\": \"Banned intensifier 'profound'\"},\n    {\"original\": \"democratic energy landscape\", \"replacement\": \"inclusive energy landscape\", \"reason\": \"Banned weasel word 'democratic'\"},\n    {\"original\": \"sophisticated digital services\", \"replacement\": \"advanced digital services\", \"reason\": \"Banned adjective 'sophisticated'\"},\n    {\"original\": \"sophisticated information-communication technologies\", \"replacement\": \"advanced information and communication technologies\", \"reason\": \"Banned adjective 'sophisticated'\"},\n    {\"original\": \"sophisticated data scientists\", \"replacement\": \"skilled data scientists\", \"reason\": \"Banned adjective 'sophisticated'\"},\n    {\"original\": \"sophisticated AI-driven operations\", \"replacement\": \"advanced AI-driven operations\", \"reason\": \"Banned adjective 'sophisticated'\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "foster innovation",
+      "replacement": "drive progress",
+      "reason": "Banned word 'foster'"
+    },
+    {
+      "original": "robust control",
+      "replacement": "tight control",
+      "reason": "Banned adjective 'robust'"
+    },
+    {
+      "original": "robust transmission networks",
+      "replacement": "strong transmission networks",
+      "reason": "Banned adjective 'robust'"
+    },
+    {
+      "original": "robust control schemes",
+      "replacement": "tight control schemes",
+      "reason": "Banned adjective 'robust'"
+    },
+    {
+      "original": "robust regulatory frameworks",
+      "replacement": "strong regulatory frameworks",
+      "reason": "Banned adjective 'robust'"
+    },
+    {
+      "original": "profound transformation",
+      "replacement": "major transformation",
+      "reason": "Banned intensifier 'profound'"
+    },
+    {
+      "original": "democratic energy landscape",
+      "replacement": "inclusive energy landscape",
+      "reason": "Banned weasel word 'democratic'"
+    },
+    {
+      "original": "sophisticated digital services",
+      "replacement": "advanced digital services",
+      "reason": "Banned adjective 'sophisticated'"
+    },
+    {
+      "original": "sophisticated information-communication technologies",
+      "replacement": "advanced information and communication technologies",
+      "reason": "Banned adjective 'sophisticated'"
+    },
+    {
+      "original": "sophisticated data scientists",
+      "replacement": "skilled data scientists",
+      "reason": "Banned adjective 'sophisticated'"
+    },
+    {
+      "original": "sophisticated AI-driven operations",
+      "replacement": "advanced AI-driven operations",
+      "reason": "Banned adjective 'sophisticated'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21981,
+    "output": 1003,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 629
+  },
+  "cost_usd": 0.00389895,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

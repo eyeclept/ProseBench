@@ -1,0 +1,80 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:22:51.525120+00:00",
+  "duration_s": 50.57268120298977,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"has evolved dramatically\", \"replacement\": \"has changed substantially\", \"reason\": \"Avoid banned intensifier 'dramatically'\"},\n    {\"original\": \"significantly shortens\", \"replacement\": \"substantially reduces\", \"reason\": \"Avoid banned intensifier 'significantly'\"},\n    {\"original\": \"Robust control keeps voltage inside limits\", \"replacement\": \"Strong control keeps voltage inside limits\", \"reason\": \"Avoid banned adjective 'robust'\"},\n    {\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring resilient transmission networks\", \"reason\": \"Avoid banned adjective 'robust'\"},\n    {\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall sharply as current decreases\", \"reason\": \"Avoid banned intensifier 'dramatically'\"},\n    {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent\", \"replacement\": \"The 345 kV reconductor cuts line losses from 8 percent to 3 percent\", \"reason\": \"Avoid banned intensifier 'significantly' and use more direct language\"},\n    {\"original\": \"paving the way for wide\u2011area protection\", \"replacement\": \"enabling wide\u2011area protection\", \"reason\": \"Avoid banned phrase 'paving the way for'\"},\n    {\"original\": \"a more holistic energy system emerges\", \"replacement\": \"a more integrated energy system emerges\", \"reason\": \"Avoid banned adjective 'holistic'\"},\n    {\"original\": \"and robust regulatory frameworks\", \"replacement\": \"and strong regulatory frameworks\", \"reason\": \"Avoid banned adjective 'robust'\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "has evolved dramatically",
+      "replacement": "has changed substantially",
+      "reason": "Avoid banned intensifier 'dramatically'"
+    },
+    {
+      "original": "significantly shortens",
+      "replacement": "substantially reduces",
+      "reason": "Avoid banned intensifier 'significantly'"
+    },
+    {
+      "original": "Robust control keeps voltage inside limits",
+      "replacement": "Strong control keeps voltage inside limits",
+      "reason": "Avoid banned adjective 'robust'"
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring resilient transmission networks",
+      "reason": "Avoid banned adjective 'robust'"
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall sharply as current decreases",
+      "reason": "Avoid banned intensifier 'dramatically'"
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "The 345 kV reconductor cuts line losses from 8 percent to 3 percent",
+      "reason": "Avoid banned intensifier 'significantly' and use more direct language"
+    },
+    {
+      "original": "paving the way for wide\u2011area protection",
+      "replacement": "enabling wide\u2011area protection",
+      "reason": "Avoid banned phrase 'paving the way for'"
+    },
+    {
+      "original": "a more holistic energy system emerges",
+      "replacement": "a more integrated energy system emerges",
+      "reason": "Avoid banned adjective 'holistic'"
+    },
+    {
+      "original": "and robust regulatory frameworks",
+      "replacement": "and strong regulatory frameworks",
+      "reason": "Avoid banned adjective 'robust'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4093,
+    "output": 7502,
+    "cache_read": 17888,
+    "cache_write": 0,
+    "reasoning": 7120
+  },
+  "cost_usd": 0.00538347,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,56 @@
+{
+  "run_id": "R3_P2_r2",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "97df56063d7db6ecd7171cf0abb7565523fd79786f873eb90bbbd22c1160a225",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:22:08.191415+00:00",
+  "duration_s": 41.196294084000016,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve. Spinning reserve is supplied by units already synchronized to the grid and able to respond within seconds.\", \"reason\": \"Spinning versus non-spinning reserve is a domain distinction, not an ordinary-knowledge antonym, so it is restated as a positive fact in its own sentence.\"}, {\"original\": \"Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\", \"replacement\": \"Renewable units are often sited where resources are abundant. Because those sites are frequently far from demand centers, robust transmission networks are required.\", \"reason\": \"The geographic mismatch between resource-rich sites and load centers is a genuine distinction smuggled into a trailing 'not X' clause, so it is given its own sentence stated as fact.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"In the Texas failure, frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"reason\": \"Root-cause attribution is a checkable distinction, and the sentence now states what caused the shortfall rather than what it was not.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"On purpose versus by accident is an ordinary-knowledge antonym pair, so the redundant trailer is cut.\"}]}",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve. Spinning reserve is supplied by units already synchronized to the grid and able to respond within seconds.",
+      "reason": "Spinning versus non-spinning reserve is a domain distinction, not an ordinary-knowledge antonym, so it is restated as a positive fact in its own sentence."
+    },
+    {
+      "original": "Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "Renewable units are often sited where resources are abundant. Because those sites are frequently far from demand centers, robust transmission networks are required.",
+      "reason": "The geographic mismatch between resource-rich sites and load centers is a genuine distinction smuggled into a trailing 'not X' clause, so it is given its own sentence stated as fact."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "In the Texas failure, frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "Root-cause attribution is a checkable distinction, and the sentence now states what caused the shortfall rather than what it was not."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "On purpose versus by accident is an ordinary-knowledge antonym pair, so the redundant trailer is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4391,
+    "output": 4781,
+    "cache_read": 16256,
+    "cache_write": 0,
+    "reasoning": 4441
+  },
+  "cost_usd": 0.006134579,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

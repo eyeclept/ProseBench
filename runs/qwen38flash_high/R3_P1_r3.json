@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r3",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "be7242a4ea21d9044ef6e43950de701d89e8f6f7f8bdaf6288c5e1becb678454",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:34:56.781039+00:00",
+  "duration_s": 77.61105087801116,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open.\",\n      \"replacement\": \"Access checks default to fail-closed.\",\n      \"reason\": \"\\\"Open\\\" is the ordinary-knowledge antonym of \\\"closed,\\\" so the trailer adds nothing to \\\"fail-closed\\\" and is cut.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"Those privilege limits are imposed on purpose.\",\n      \"reason\": \"\\\"By accident\\\" is the ordinary-knowledge antonym of \\\"on purpose,\\\" so the trailer is redundant and is cut.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "\"Open\" is the ordinary-knowledge antonym of \"closed,\" so the trailer adds nothing to \"fail-closed\" and is cut."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\"By accident\" is the ordinary-knowledge antonym of \"on purpose,\" so the trailer is redundant and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 176,
+    "output": 4164,
+    "cache_read": 19456,
+    "cache_write": 0,
+    "reasoning": 4002
+  },
+  "cost_usd": 0.002294776,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

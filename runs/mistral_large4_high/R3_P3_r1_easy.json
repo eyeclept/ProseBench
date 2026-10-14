@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:41:54.807787+00:00",
+  "duration_s": 108.24958175700158,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"\u201cBy accident\u201d is the ordinary-knowledge antonym of \u201con purpose,\u201d so the trailing \u201crather than by accident\u201d adds nothing and is cut (Rule 3).\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation.\", \"reason\": \"The trailing \u201cnot nuclear transformation\u201d is a bolted-on negative antonym trailer; the clause already states the positive fact and the prior sentence supplies the chloroplast rationale, so the trailer is removed (Rule 3).\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Unsure whether \u201cheirlooms\u201d is an ordinary-knowledge contrast to \u201clandraces\u201d or a genuine (and possibly inaccurate, since the categories overlap) distinction that deserves its own accurately stated sentence, so flagging rather than cutting or rewriting (Rule 3 escalation).\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\u201cBy accident\u201d is the ordinary-knowledge antonym of \u201con purpose,\u201d so the trailing \u201crather than by accident\u201d adds nothing and is cut (Rule 3)."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The trailing \u201cnot nuclear transformation\u201d is a bolted-on negative antonym trailer; the clause already states the positive fact and the prior sentence supplies the chloroplast rationale, so the trailer is removed (Rule 3)."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Unsure whether \u201cheirlooms\u201d is an ordinary-knowledge contrast to \u201clandraces\u201d or a genuine (and possibly inaccurate, since the categories overlap) distinction that deserves its own accurately stated sentence, so flagging rather than cutting or rewriting (Rule 3 escalation)."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20410,
+    "output": 7455,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 7203
+  },
+  "cost_usd": 0.02945975,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

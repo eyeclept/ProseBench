@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:47:01.526423+00:00",
+  "duration_s": 89.71720830799313,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"is therefore not merely a physical infrastructure, but also a complex\", \"replacement\": \"is therefore a complex\", \"reason\": \"The \u201cnot merely \u2026 but also\u201d half is windup; the positive clause already states that the architecture is a socio-technical system.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve.\", \"reason\": \"The \u201crather than non-spinning reserve\u201d contrast is redundant negation; the positive clause states the same procurement claim.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"reason\": \"The negative clause is a windup and the following clause alone identifies the cause of the lost megawatts.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"\u201cRather than by accident\u201d restates the negation of the already-stated deliberate planning without adding information.\"}]}",
+  "edits": [
+    {
+      "original": "is therefore not merely a physical infrastructure, but also a complex",
+      "replacement": "is therefore a complex",
+      "reason": "The \u201cnot merely \u2026 but also\u201d half is windup; the positive clause already states that the architecture is a socio-technical system."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The \u201crather than non-spinning reserve\u201d contrast is redundant negation; the positive clause states the same procurement claim."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative clause is a windup and the following clause alone identifies the cause of the lost megawatts."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "\u201cRather than by accident\u201d restates the negation of the already-stated deliberate planning without adding information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20355,
+    "output": 6231,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 5963
+  },
+  "cost_usd": 0.02686419,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

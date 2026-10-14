@@ -1,0 +1,55 @@
+{
+  "run_id": "R3_P3_r2",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:08:45.525966+00:00",
+  "duration_s": 20.977865963999648,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n      \"reason\": \"The phrase 'rather than by accident' is a redundant antonym trailer\u2014'on purpose' and 'by accident' are everyday opposites, so the trailer adds nothing and should be cut.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": null,\n      \"reason\": \"The distinction between 'Pacific yew' and 'Papaver somniferum' is a domain-specific botanical fact, not an ordinary antonym; this trailer should be flagged for the author to decide whether to rewrite it as its own affirmative sentence stating what the compound actually is.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": null,\n      \"reason\": \"The distinction between 'chloroplast' and 'nuclear' is a domain-specific technical term, not an ordinary antonym; this trailer should be flagged for the author to rewrite as an affirmative sentence stating what the construct was designed to do.\"\n    },\n    {\n      \"original\": \"Conservation collections still accession landraces, rather than heirlooms.\",\n      \"replacement\": null,\n      \"reason\": \"The distinction between 'landraces' and 'heirlooms' is a domain-specific botanical distinction, not an ordinary antonym; this trailer should be flagged for the author to rewrite as an affirmative sentence stating what these collections do.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "The phrase 'rather than by accident' is a redundant antonym trailer\u2014'on purpose' and 'by accident' are everyday opposites, so the trailer adds nothing and should be cut."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": null,
+      "reason": "The distinction between 'Pacific yew' and 'Papaver somniferum' is a domain-specific botanical fact, not an ordinary antonym; this trailer should be flagged for the author to decide whether to rewrite it as its own affirmative sentence stating what the compound actually is."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": null,
+      "reason": "The distinction between 'chloroplast' and 'nuclear' is a domain-specific technical term, not an ordinary antonym; this trailer should be flagged for the author to rewrite as an affirmative sentence stating what the construct was designed to do."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "The distinction between 'landraces' and 'heirlooms' is a domain-specific botanical distinction, not an ordinary antonym; this trailer should be flagged for the author to rewrite as an affirmative sentence stating what these collections do."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18108,
+    "output": 1617,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 1230
+  },
+  "cost_usd": 0.0020373,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

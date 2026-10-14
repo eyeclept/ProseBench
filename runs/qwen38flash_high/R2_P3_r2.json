@@ -1,0 +1,85 @@
+{
+  "run_id": "R2_P3_r2",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:23:57.458098+00:00",
+  "duration_s": 224.840767029993,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.\", \"replacement\": \"a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity.\", \"reason\": \"The negative clause 'not merely academic' is windup, since the positive claim that the understanding is essential stands alone with nothing checkable lost.\"}, {\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"Field crews still collect vouchers.\", \"reason\": \"The negative tag 'make no mistake' is emphatic filler; deleting it leaves the positive claim intact with nothing lost.\"}, {\"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\", \"replacement\": \"The seedlings bolted in week 3\u2014the market rejected the entire lot.\", \"reason\": \"The negative clause 'they never formed heads' merely restates what bolting already conveys, so the remaining positive halves state the same claim.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces.\", \"reason\": \"The negative tail 'rather than heirlooms' adds no new checkable fact beyond the positive claim that collections accession landraces.\"}, {\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"The negation 'rather than by accident' is a pure restatement of 'on purpose,' so the positive half alone carries the claim.\"}, {\"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Morphine is produced in Papaver somniferum latex.\", \"reason\": \"The negative half about the Pacific yew is windup; the positive half already states the morphine's source with nothing checkable lost.\"}, {\"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).\", \"reason\": \"The trailing analogy restates the spatial/temporal distinction a second time through the C4/CAM synonyms without adding any new fact.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation.\", \"reason\": \"The negation 'not nuclear transformation' adds nothing checkable beyond the positive statement that the construct targets chloroplast transformation.\"}, {\"original\": \"Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\", \"replacement\": \"Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\", \"reason\": \"The negative phrase 'far from being a static catalog of flora' merely restates what 'dynamic' already asserts, so it is removable windup.\"}, {\"original\": \"a deep, nuanced understanding of plant biology is not optional; it is imperative.\", \"replacement\": \"a deep, nuanced understanding of plant biology is imperative.\", \"reason\": \"The negative clause 'is not optional' is filler because the positive word 'imperative' alone states the same claim.\"}]}",
+  "edits": [
+    {
+      "original": "a comprehensive understanding of plant biology is not merely academic\u2014it is essential for the survival and well\u2011being of humanity.",
+      "replacement": "a comprehensive understanding of plant biology is essential for the survival and well\u2011being of humanity.",
+      "reason": "The negative clause 'not merely academic' is windup, since the positive claim that the understanding is essential stands alone with nothing checkable lost."
+    },
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "The negative tag 'make no mistake' is emphatic filler; deleting it leaves the positive claim intact with nothing lost."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3\u2014the market rejected the entire lot.",
+      "reason": "The negative clause 'they never formed heads' merely restates what bolting already conveys, so the remaining positive halves state the same claim."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces.",
+      "reason": "The negative tail 'rather than heirlooms' adds no new checkable fact beyond the positive claim that collections accession landraces."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "The negation 'rather than by accident' is a pure restatement of 'on purpose,' so the positive half alone carries the claim."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative half about the Pacific yew is windup; the positive half already states the morphine's source with nothing checkable lost."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).",
+      "reason": "The trailing analogy restates the spatial/temporal distinction a second time through the C4/CAM synonyms without adding any new fact."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negation 'not nuclear transformation' adds nothing checkable beyond the positive statement that the construct targets chloroplast transformation."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "replacement": "Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "reason": "The negative phrase 'far from being a static catalog of flora' merely restates what 'dynamic' already asserts, so it is removable windup."
+    },
+    {
+      "original": "a deep, nuanced understanding of plant biology is not optional; it is imperative.",
+      "replacement": "a deep, nuanced understanding of plant biology is imperative.",
+      "reason": "The negative clause 'is not optional' is filler because the positive word 'imperative' alone states the same claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 74,
+    "output": 14437,
+    "cache_read": 20736,
+    "cache_write": 0,
+    "reasoning": 13635
+  },
+  "cost_usd": 0.007128266,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

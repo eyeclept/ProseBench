@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r2_easy",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "505b3f7b549b233192a5083c1fb49de6c8316b4f72367cd7b9e26c8b2de0ce37",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:42:51.547427+00:00",
+  "duration_s": 11.430240490997676,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"\\\"By accident\\\" is the everyday opposite of \\\"on purpose\\\", so the trailing clause adds nothing and is cut.\"}, {\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": null, \"reason\": \"Unsure: \\\"closed\\\" and \\\"open\\\" are everyday opposites, but \\\"fail-closed\\\" versus \\\"fail-open\\\" is a security term a general reader may not know, so this could be a real distinction that needs its own sentence rather than a cut.\"}]}",
+  "edits": [
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\"By accident\" is the everyday opposite of \"on purpose\", so the trailing clause adds nothing and is cut."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": null,
+      "reason": "Unsure: \"closed\" and \"open\" are everyday opposites, but \"fail-closed\" versus \"fail-open\" is a security term a general reader may not know, so this could be a real distinction that needs its own sentence rather than a cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 910,
+    "cache_read": 29996,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0242152,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

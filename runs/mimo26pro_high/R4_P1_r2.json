@@ -1,0 +1,505 @@
+{
+  "run_id": "R4_P1_r2",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:45:15.400674+00:00",
+  "duration_s": 389.25437400801457,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"\u2248 1,620\", \"replacement\": \"~1,620\", \"reason\": \"The approximation glyph is not a US-keyboard character, and '~' is its ASCII equivalent.\"},\n{\"original\": \"twenty\u2011first\", \"replacement\": \"twenty-first\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"cloud\u2011based\", \"replacement\": \"cloud-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Internet\u2011of\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\", \"replacement\": \"benefits (speed, efficiency, and the democratization of knowledge), but it also creates\", \"reason\": \"The paired em dashes set off a fragment containing commas, so parentheses replace them without creating a splice.\"},\n{\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remain pervasive\", \"reason\": \"The paired em dashes set off a fragment containing commas, so parentheses replace them without creating a splice.\"},\n{\"original\": \"supply\u2011chain attacks\", \"replacement\": \"supply-chain attacks\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"APT\u2011related\", \"replacement\": \"APT-related\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"year\u2011over\u2011year\", \"replacement\": \"year-over-year\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Nation\u2011state\", \"replacement\": \"Nation-state\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"zero\u2011day\", \"replacement\": \"zero-day\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"dark\u2011web\", \"replacement\": \"dark-web\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u201cattack surfaces\u201d\", \"replacement\": \"\\\"attack surfaces\\\"\", \"reason\": \"Curly quotation marks become straight quotation marks.\"},\n{\"original\": \"deep\u2011fake technology\", \"replacement\": \"deep-fake technology\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"AI\u2011driven social engineering\", \"replacement\": \"AI-driven social engineering\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"defense\u2011in\u2011depth\", \"replacement\": \"defense-in-depth\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"next\u2011generation\", \"replacement\": \"next-generation\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"application\u2011aware\", \"replacement\": \"application-aware\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"micro\u2011segmentation isolates\", \"replacement\": \"micro-segmentation isolates\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"movement\u2014a key tactic used by APT groups\", \"replacement\": \"movement, a key tactic used by APT groups\", \"reason\": \"The em dash introduces a trailing fragment rather than a clause, so a comma takes its place.\"},\n{\"original\": \"machine\u2011learning\", \"replacement\": \"machine-learning\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"credential\u2011dumping\", \"replacement\": \"credential-dumping\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"AES\u2011256\", \"replacement\": \"AES-256\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Identity\u2011and\u2011access\", \"replacement\": \"Identity-and-access\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"zero\u2011trust\", \"replacement\": \"zero-trust\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u201ctrusted internal network\u201d\", \"replacement\": \"\\\"trusted internal network\\\"\", \"reason\": \"Curly quotation marks become straight quotation marks.\"},\n{\"original\": \"patch management\u2014automated wherever possible\u2014closes known vulnerabilities\", \"replacement\": \"patch management, automated wherever possible, closes known vulnerabilities\", \"reason\": \"The paired em dashes set off a fragment, so paired commas replace them without creating a splice.\"},\n{\"original\": \"truncated process tree\u2026\", \"replacement\": \"truncated process tree...\", \"reason\": \"An ellipsis glyph becomes three separate periods.\"},\n{\"original\": \"mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"mean time to contain; the finance team uses that figure in the quarterly risk report.\", \"reason\": \"The em dash joins two independent clauses, which require a semicolon or period rather than a comma.\"},\n{\"original\": \"Board\u2011level\", \"replacement\": \"Board-level\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"third\u2011party\", \"replacement\": \"third-party\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"red\u2011team\", \"replacement\": \"red-team\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"threats\u2014whether malicious, negligent, or coerced\u2014account for\", \"replacement\": \"threats (whether malicious, negligent, or coerced) account for\", \"reason\": \"The paired em dashes set off a fragment containing commas, so parentheses replace them.\"},\n{\"original\": \"click\u2011through\", \"replacement\": \"click-through\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u201cavailability heuristic,\u201d\", \"replacement\": \"\\\"availability heuristic,\\\"\", \"reason\": \"Curly quotation marks become straight quotation marks.\"},\n{\"original\": \"security\u2011first\", \"replacement\": \"security-first\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"real\u2011time phishing\", \"replacement\": \"real-time phishing\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"reinforcement, recognizing employees who flag suspicious activity, outperforms\", \"reason\": \"The paired em dashes set off a fragment, so paired commas replace them without creating a splice.\"},\n{\"original\": \"role\u2011based\", \"replacement\": \"role-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Data\u2011protection\", \"replacement\": \"Data-protection\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose\", \"replacement\": \"regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose\", \"reason\": \"The paired em dashes set off an appositive list containing commas, so parentheses avoid ambiguity and no splice is created.\"},\n{\"original\": \"threat\u2011detection\", \"replacement\": \"threat-detection\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u201cbug bounty\u201d\", \"replacement\": \"\\\"bug bounty\\\"\", \"reason\": \"Curly quotation marks become straight quotation marks.\"},\n{\"original\": \"data\u2011retention\", \"replacement\": \"data-retention\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential\", \"replacement\": \"A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential\", \"reason\": \"The paired em dashes set off an appositive list containing commas, so parentheses replace them.\"},\n{\"original\": \"cross\u2011border\", \"replacement\": \"cross-border\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"post\u2011incident analysis\", \"replacement\": \"post-incident analysis\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"up\u2011to\u2011date\", \"replacement\": \"up-to-date\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"replacement\": \"predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"reason\": \"The em dash introduces a trailing fragment rather than a clause, so a comma takes its place.\"},\n{\"original\": \"backed\u2011up\", \"replacement\": \"backed-up\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Post\u2011incident lessons\", \"replacement\": \"Post-incident lessons\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"cyber\u2011insurance\", \"replacement\": \"cyber-insurance\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"double\u2011edged\", \"replacement\": \"double-edged\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"AI\u2011driven analytics\", \"replacement\": \"AI-driven analytics\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"rule\u2011based\", \"replacement\": \"rule-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"threat\u2011intel\", \"replacement\": \"threat-intel\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"deep\u2011fake phishing\", \"replacement\": \"deep-fake phishing\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"credential\u2011stuffing\", \"replacement\": \"credential-stuffing\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"longer\u2011term\", \"replacement\": \"longer-term\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"large\u2011scale\", \"replacement\": \"large-scale\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"public\u2011key\", \"replacement\": \"public-key\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"post\u2011quantum cryptography\", \"replacement\": \"post-quantum cryptography\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"lattice\u2011based\", \"replacement\": \"lattice-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"hash\u2011based\", \"replacement\": \"hash-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"code\u2011based\", \"replacement\": \"code-based\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"use\u2011cases\", \"replacement\": \"use-cases\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"software\u2011supply\u2011chain\", \"replacement\": \"software-supply-chain\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"United Nations\u2019\", \"replacement\": \"United Nations'\", \"reason\": \"A curly apostrophe becomes a straight apostrophe.\"},\n{\"original\": \"norm\u2011setting\", \"replacement\": \"norm-setting\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"European Union\u2019s\", \"replacement\": \"European Union's\", \"reason\": \"A curly apostrophe becomes a straight apostrophe.\"},\n{\"original\": \"Asia\u2011Pacific Economic\", \"replacement\": \"Asia-Pacific Economic\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"incident\u2011sharing\", \"replacement\": \"incident-sharing\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Public\u2011private\", \"replacement\": \"Public-private\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"cyber\u2011attacks\", \"replacement\": \"cyber-attacks\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"hyper\u2011connectivity\", \"replacement\": \"hyper-connectivity\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.\", \"reason\": \"The em dash joined independent clauses and the sentence also carried a comma splice, so a period and a semicolon set the clause boundaries correctly.\"},\n{\"original\": \"real\u2011time, AI\u2011assisted\", \"replacement\": \"real-time, AI-assisted\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Zero\u2011Trust Architecture\", \"replacement\": \"Zero-Trust Architecture\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u2013 Treat every access request as untrusted\", \"replacement\": \"- Treat every access request as untrusted\", \"reason\": \"An en dash used as a separator becomes a plain hyphen.\"},\n{\"original\": \"least\u2011privilege\", \"replacement\": \"least-privilege\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"and micro\u2011segmentation.\", \"replacement\": \"and micro-segmentation.\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Secure\u2011by\u2011Design\", \"replacement\": \"Secure-by-Design\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u2013 Embed security testing\", \"replacement\": \"- Embed security testing\", \"reason\": \"An en dash used as a separator becomes a plain hyphen.\"},\n{\"original\": \"software\u2011bill\", \"replacement\": \"software-bill\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"AI\u2011Enhanced\", \"replacement\": \"AI-Enhanced\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u2013 Leverage federated learning\", \"replacement\": \"- Leverage federated learning\", \"reason\": \"An en dash used as a separator becomes a plain hyphen.\"},\n{\"original\": \"privacy\u2011preserving\", \"replacement\": \"privacy-preserving\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"Post\u2011Quantum\", \"replacement\": \"Post-Quantum\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u2013 Begin migrating critical systems\", \"replacement\": \"- Begin migrating critical systems\", \"reason\": \"An en dash used as a separator becomes a plain hyphen.\"},\n{\"original\": \"high\u2011value\", \"replacement\": \"high-value\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"long\u2011term\", \"replacement\": \"long-term\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"},\n{\"original\": \"\u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize\", \"replacement\": \"- Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize\", \"reason\": \"The en dash becomes a plain hyphen and the paired em dashes around a fragment become parentheses.\"},\n{\"original\": \"threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response\", \"reason\": \"The paired em dashes set off an appositive list containing commas, so parentheses replace them.\"},\n{\"original\": \"quantum\u2011resistant\", \"replacement\": \"quantum-resistant\", \"reason\": \"A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs.\"}\n]}",
+  "edits": [
+    {
+      "original": "\u2248 1,620",
+      "replacement": "~1,620",
+      "reason": "The approximation glyph is not a US-keyboard character, and '~' is its ASCII equivalent."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge), but it also creates",
+      "reason": "The paired em dashes set off a fragment containing commas, so parentheses replace them without creating a splice."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remain pervasive",
+      "reason": "The paired em dashes set off a fragment containing commas, so parentheses replace them without creating a splice."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "APT\u2011related",
+      "replacement": "APT-related",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "year\u2011over\u2011year",
+      "replacement": "year-over-year",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Nation\u2011state",
+      "replacement": "Nation-state",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "zero\u2011day",
+      "replacement": "zero-day",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "dark\u2011web",
+      "replacement": "dark-web",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Curly quotation marks become straight quotation marks."
+    },
+    {
+      "original": "deep\u2011fake technology",
+      "replacement": "deep-fake technology",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "AI\u2011driven social engineering",
+      "replacement": "AI-driven social engineering",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "micro\u2011segmentation isolates",
+      "replacement": "micro-segmentation isolates",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "movement\u2014a key tactic used by APT groups",
+      "replacement": "movement, a key tactic used by APT groups",
+      "reason": "The em dash introduces a trailing fragment rather than a clause, so a comma takes its place."
+    },
+    {
+      "original": "machine\u2011learning",
+      "replacement": "machine-learning",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "credential\u2011dumping",
+      "replacement": "credential-dumping",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "AES\u2011256",
+      "replacement": "AES-256",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Identity\u2011and\u2011access",
+      "replacement": "Identity-and-access",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "zero\u2011trust",
+      "replacement": "zero-trust",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Curly quotation marks become straight quotation marks."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes known vulnerabilities",
+      "replacement": "patch management, automated wherever possible, closes known vulnerabilities",
+      "reason": "The paired em dashes set off a fragment, so paired commas replace them without creating a splice."
+    },
+    {
+      "original": "truncated process tree\u2026",
+      "replacement": "truncated process tree...",
+      "reason": "An ellipsis glyph becomes three separate periods."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "The em dash joins two independent clauses, which require a semicolon or period rather than a comma."
+    },
+    {
+      "original": "Board\u2011level",
+      "replacement": "Board-level",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "third\u2011party",
+      "replacement": "third-party",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "red\u2011team",
+      "replacement": "red-team",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "threats\u2014whether malicious, negligent, or coerced\u2014account for",
+      "replacement": "threats (whether malicious, negligent, or coerced) account for",
+      "reason": "The paired em dashes set off a fragment containing commas, so parentheses replace them."
+    },
+    {
+      "original": "click\u2011through",
+      "replacement": "click-through",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Curly quotation marks become straight quotation marks."
+    },
+    {
+      "original": "security\u2011first",
+      "replacement": "security-first",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "real\u2011time phishing",
+      "replacement": "real-time phishing",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "reinforcement, recognizing employees who flag suspicious activity, outperforms",
+      "reason": "The paired em dashes set off a fragment, so paired commas replace them without creating a splice."
+    },
+    {
+      "original": "role\u2011based",
+      "replacement": "role-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Data\u2011protection",
+      "replacement": "Data-protection",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose",
+      "reason": "The paired em dashes set off an appositive list containing commas, so parentheses avoid ambiguity and no splice is created."
+    },
+    {
+      "original": "threat\u2011detection",
+      "replacement": "threat-detection",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Curly quotation marks become straight quotation marks."
+    },
+    {
+      "original": "data\u2011retention",
+      "replacement": "data-retention",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential",
+      "replacement": "A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential",
+      "reason": "The paired em dashes set off an appositive list containing commas, so parentheses replace them."
+    },
+    {
+      "original": "cross\u2011border",
+      "replacement": "cross-border",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "up\u2011to\u2011date",
+      "replacement": "up-to-date",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "reason": "The em dash introduces a trailing fragment rather than a clause, so a comma takes its place."
+    },
+    {
+      "original": "backed\u2011up",
+      "replacement": "backed-up",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Post\u2011incident lessons",
+      "replacement": "Post-incident lessons",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "cyber\u2011insurance",
+      "replacement": "cyber-insurance",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "double\u2011edged",
+      "replacement": "double-edged",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "rule\u2011based",
+      "replacement": "rule-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "threat\u2011intel",
+      "replacement": "threat-intel",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "deep\u2011fake phishing",
+      "replacement": "deep-fake phishing",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "credential\u2011stuffing",
+      "replacement": "credential-stuffing",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "longer\u2011term",
+      "replacement": "longer-term",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "large\u2011scale",
+      "replacement": "large-scale",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "public\u2011key",
+      "replacement": "public-key",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "post\u2011quantum cryptography",
+      "replacement": "post-quantum cryptography",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "lattice\u2011based",
+      "replacement": "lattice-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "hash\u2011based",
+      "replacement": "hash-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "code\u2011based",
+      "replacement": "code-based",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "United Nations\u2019",
+      "replacement": "United Nations'",
+      "reason": "A curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "norm\u2011setting",
+      "replacement": "norm-setting",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "European Union\u2019s",
+      "replacement": "European Union's",
+      "reason": "A curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "Asia\u2011Pacific Economic",
+      "replacement": "Asia-Pacific Economic",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Public\u2011private",
+      "replacement": "Public-private",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash joined independent clauses and the sentence also carried a comma splice, so a period and a semicolon set the clause boundaries correctly."
+    },
+    {
+      "original": "real\u2011time, AI\u2011assisted",
+      "replacement": "real-time, AI-assisted",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Zero\u2011Trust Architecture",
+      "replacement": "Zero-Trust Architecture",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u2013 Treat every access request as untrusted",
+      "replacement": "- Treat every access request as untrusted",
+      "reason": "An en dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "least\u2011privilege",
+      "replacement": "least-privilege",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "and micro\u2011segmentation.",
+      "replacement": "and micro-segmentation.",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Secure\u2011by\u2011Design",
+      "replacement": "Secure-by-Design",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u2013 Embed security testing",
+      "replacement": "- Embed security testing",
+      "reason": "An en dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "software\u2011bill",
+      "replacement": "software-bill",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "AI\u2011Enhanced",
+      "replacement": "AI-Enhanced",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u2013 Leverage federated learning",
+      "replacement": "- Leverage federated learning",
+      "reason": "An en dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "privacy\u2011preserving",
+      "replacement": "privacy-preserving",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "Post\u2011Quantum",
+      "replacement": "Post-Quantum",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u2013 Begin migrating critical systems",
+      "replacement": "- Begin migrating critical systems",
+      "reason": "An en dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "high\u2011value",
+      "replacement": "high-value",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "long\u2011term",
+      "replacement": "long-term",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    },
+    {
+      "original": "\u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "- Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize",
+      "reason": "The en dash becomes a plain hyphen and the paired em dashes around a fragment become parentheses."
+    },
+    {
+      "original": "threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response",
+      "reason": "The paired em dashes set off an appositive list containing commas, so parentheses replace them."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "A non-breaking hyphen is a typographic character sitting exactly where the ASCII hyphen belongs."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19460,
+    "output": 56765,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 52687
+  },
+  "cost_usd": 0.05785065,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

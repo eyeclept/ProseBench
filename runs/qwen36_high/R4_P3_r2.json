@@ -1,0 +1,175 @@
+{
+  "run_id": "R4_P3_r2",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:41:37.535116+00:00",
+  "duration_s": 248.25026073498884,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"not merely academic\u2014it is essential\", \"replacement\": \"not merely academic; it is essential\", \"reason\": \"Em dash joins two independent clauses and is replaced with a semicolon.\"}, {\"original\": \"undetermined\u2026 until\", \"replacement\": \"undetermined; until\", \"reason\": \"Em dash introduces a trailing clause and is replaced with a semicolon.\"}, {\"original\": \"undetermined\u2026\", \"replacement\": \"undetermined.\", \"reason\": \"Em dash at sentence end is replaced with a period.\"}, {\"original\": \"c. 371\u2013287\", \"replacement\": \"c. 371-287\", \"reason\": \"En dash used as a range separator in a date range is replaced with a standard hyphen.\"}, {\"original\": \"modern taxonomy, while Charles Darwin's\", \"replacement\": \"modern taxonomy. Charles Darwin's\", \"reason\": \"Em dash joins two independent clauses and is replaced with a period.\"}, {\"original\": \"mechanistic one. Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives. The sequencing\", \"replacement\": \"mechanistic one. Herbarium staff still mark sterile Carex sheets as undetermined. The sequencing\", \"reason\": \"Em dash (actually a full stop) introduces a trailing fragment and is replaced with a period.\"}, {\"original\": \"plasmodesmata\u2014microscopic channels\", \"replacement\": \"plasmodesmata; microscopic channels\", \"reason\": \"Em dash introducing a trailing explanatory phrase is replaced with a semicolon.\"}, {\"original\": \"stomata\u2014pores that regulate\", \"replacement\": \"stomata; pores that regulate\", \"reason\": \"Em dash introducing an explanatory phrase is replaced with a semicolon.\"}, {\"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\", \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\", \"reason\": \"Em dash (redundant 'full stop') is removed by dropping the emphatic phrase.\"}, {\"original\": \"carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night. This split maps onto the C4-versus-CAM distinction: spatial packing is the C4 case, temporal packing is the CAM one.\", \"reason\": \"Em dash joins two independent clauses; replaced with a period and restructuring to avoid a run-on.\"}, {\"original\": \"revealing, for instance, that the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic, leading to the recognition of the clade eudicots. These phylogenetic insights\", \"replacement\": \"revealing, for instance, that the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are paraphyletic, leading to the recognition of the clade eudicots. These phylogenetic insights\", \"reason\": \"Em dash joins two independent clauses; replaced with a period.\"}, {\"original\": \"chloroplast transformation, not nuclear transformation.\", \"replacement\": \"chloroplast transformation. Nuclear transformation\", \"reason\": \"Em dash joins two independent clauses and is replaced with a period.\"}, {\"original\": \"water-resistant and temperature-sensitive factors\", \"replacement\": \"water-resistant and temperature-sensitive factors\", \"reason\": \"Non-breaking hyphens in compound adjectives are replaced with standard ASCII hyphens.\"}, {\"original\": \"temperature-sensitive\", \"replacement\": \"temperature-sensitive\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"carbon-concentrating mechanisms\", \"replacement\": \"carbon-concentrating mechanisms\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"non-vascular\", \"replacement\": \"non-vascular\", \"reason\": \"Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen.\"}, {\"original\": \"carbon-concentrating\", \"replacement\": \"carbon-concentrating\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"benefit-sharing\", \"replacement\": \"benefit-sharing\", \"reason\": \"Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen.\"}, {\"original\": \"non-vascular\", \"replacement\": \"non-vascular\", \"reason\": \"Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen.\"}, {\"original\": \"benefit-sharing\", \"replacement\": \"benefit-sharing\", \"reason\": \"Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen.\"}, {\"original\": \"carbon-sequestering\", \"replacement\": \"carbon-sequestering\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"water-resistant and temperature-sensitive\", \"replacement\": \"water-resistant and temperature-sensitive\", \"reason\": \"Non-breaking hyphens in compound adjectives are replaced with standard ASCII hyphens.\"}, {\"original\": \"carbon-concentrating\", \"replacement\": \"carbon-concentrating\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"water-resistant and temperature\", \"replacement\": \"water-resistant and temperature\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"non-vascular plants\", \"replacement\": \"non-vascular plants\", \"reason\": \"Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen.\"}, {\"original\": \"carbon-sequestering alternatives\", \"replacement\": \"carbon-sequestering alternatives\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"water-resistant and\", \"replacement\": \"water-resistant and\", \"reason\": \"Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen.\"}, {\"original\": \"benefit-sharing\", \"replacement\": \"benefit-sharing\", \"reason\": \"Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen.\"}]}\n```",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Em dash joins two independent clauses and is replaced with a semicolon."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined; until",
+      "reason": "Em dash introduces a trailing clause and is replaced with a semicolon."
+    },
+    {
+      "original": "undetermined\u2026",
+      "replacement": "undetermined.",
+      "reason": "Em dash at sentence end is replaced with a period."
+    },
+    {
+      "original": "c. 371\u2013287",
+      "replacement": "c. 371-287",
+      "reason": "En dash used as a range separator in a date range is replaced with a standard hyphen."
+    },
+    {
+      "original": "modern taxonomy, while Charles Darwin's",
+      "replacement": "modern taxonomy. Charles Darwin's",
+      "reason": "Em dash joins two independent clauses and is replaced with a period."
+    },
+    {
+      "original": "mechanistic one. Herbarium staff still mark sterile Carex sheets as undetermined\u2026 until a fruiting collection arrives. The sequencing",
+      "replacement": "mechanistic one. Herbarium staff still mark sterile Carex sheets as undetermined. The sequencing",
+      "reason": "Em dash (actually a full stop) introduces a trailing fragment and is replaced with a period."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata; microscopic channels",
+      "reason": "Em dash introducing a trailing explanatory phrase is replaced with a semicolon."
+    },
+    {
+      "original": "stomata\u2014pores that regulate",
+      "replacement": "stomata; pores that regulate",
+      "reason": "Em dash introducing an explanatory phrase is replaced with a semicolon."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "Em dash (redundant 'full stop') is removed by dropping the emphatic phrase."
+    },
+    {
+      "original": "carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night. This split maps onto the C4-versus-CAM distinction: spatial packing is the C4 case, temporal packing is the CAM one.",
+      "reason": "Em dash joins two independent clauses; replaced with a period and restructuring to avoid a run-on."
+    },
+    {
+      "original": "revealing, for instance, that the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic, leading to the recognition of the clade eudicots. These phylogenetic insights",
+      "replacement": "revealing, for instance, that the traditional \"monocot\" group is monophyletic while \"dicots\" are paraphyletic, leading to the recognition of the clade eudicots. These phylogenetic insights",
+      "reason": "Em dash joins two independent clauses; replaced with a period."
+    },
+    {
+      "original": "chloroplast transformation, not nuclear transformation.",
+      "replacement": "chloroplast transformation. Nuclear transformation",
+      "reason": "Em dash joins two independent clauses and is replaced with a period."
+    },
+    {
+      "original": "water-resistant and temperature-sensitive factors",
+      "replacement": "water-resistant and temperature-sensitive factors",
+      "reason": "Non-breaking hyphens in compound adjectives are replaced with standard ASCII hyphens."
+    },
+    {
+      "original": "temperature-sensitive",
+      "replacement": "temperature-sensitive",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "carbon-concentrating mechanisms",
+      "replacement": "carbon-concentrating mechanisms",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "non-vascular",
+      "replacement": "non-vascular",
+      "reason": "Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "carbon-concentrating",
+      "replacement": "carbon-concentrating",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "benefit-sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "non-vascular",
+      "replacement": "non-vascular",
+      "reason": "Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "benefit-sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "carbon-sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "water-resistant and temperature-sensitive",
+      "replacement": "water-resistant and temperature-sensitive",
+      "reason": "Non-breaking hyphens in compound adjectives are replaced with standard ASCII hyphens."
+    },
+    {
+      "original": "carbon-concentrating",
+      "replacement": "carbon-concentrating",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "water-resistant and temperature",
+      "replacement": "water-resistant and temperature",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "non-vascular plants",
+      "replacement": "non-vascular plants",
+      "reason": "Non-breaking hyphen in a prefix is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "carbon-sequestering alternatives",
+      "replacement": "carbon-sequestering alternatives",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "water-resistant and",
+      "replacement": "water-resistant and",
+      "reason": "Non-breaking hyphen in a compound adjective is replaced with a standard ASCII hyphen."
+    },
+    {
+      "original": "benefit-sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Non-breaking hyphen in a compound noun is replaced with a standard ASCII hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20927,
+    "output": 6073,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 5133
+  },
+  "cost_usd": 0.00921205,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

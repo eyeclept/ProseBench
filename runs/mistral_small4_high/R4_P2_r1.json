@@ -1,0 +1,110 @@
+{
+  "run_id": "R4_P2_r1",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 4,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "dadd6a00a261be1b0fe1f55061cc96c151401a6bc3a021a0e164951984ae1cc9",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:24:44.262708+00:00",
+  "duration_s": 67.31797661300516,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\", \"replacement\": \"The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network\", \"reason\": \"Replace em dashes with commas for parenthetical phrase\"},\n    {\"original\": \"power system\u2014commonly referred to simply as a *power system*\u2014\", \"replacement\": \"power system, commonly referred to simply as a *power system*,\", \"reason\": \"Replace em dashes with commas\"},\n    {\"original\": \"end\u2011users\", \"replacement\": \"end-users\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"13.8\\u202FkV, 115\\u202FkV, 345\\u202FkV, 765\\u202FkV\", \"replacement\": \"13.8 kV, 115 kV, 345 kV, 765 kV\", \"reason\": \"Replace non-breaking spaces with regular spaces\"},\n    {\"original\": \"socio\u2011technical\", \"replacement\": \"socio-technical\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"120/240\\u202FV\", \"replacement\": \"120/240 V\", \"reason\": \"Replace non-breaking space with regular space\"},\n    {\"original\": \"4\\u202FkV\u201335\\u202FkV\", \"replacement\": \"4 kV-35 kV\", \"reason\": \"Replace non-breaking space with regular space and en dash with hyphen\"},\n    {\"original\": \"13.8\\u202FkV to 1,200\\u202FkV\", \"replacement\": \"13.8 kV to 1,200 kV\", \"reason\": \"Replace non-breaking space with regular space\"},\n    {\"original\": \"\u201calways\u2011on,\u201d\", \"replacement\": \"\\\"always-on\\\",\", \"reason\": \"Replace curly quotes with straight quotes and non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"Power\u2011to\u2011X\", \"replacement\": \"Power-to-X\", \"reason\": \"Replace non-breaking hyphens with regular hyphens\"},\n    {\"original\": \"\u201c**Electricity Interconnection**\u201d\", \"replacement\": \"\\\"Electricity Interconnection\\\"\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"\u201c**15\\u202F% cross\u2011border interconnection capacity**\u201d\", \"replacement\": \"\\\"15 % cross-border interconnection capacity\\\"\", \"reason\": \"Replace curly quotes, non-breaking space, and non-breaking hyphen\"},\n    {\"original\": \"\u2019100\", \"replacement\": \"'100\", \"reason\": \"Replace curly single quote with straight single quote\"},\n    {\"original\": \"ramps\u2026\", \"replacement\": \"ramps...\", \"reason\": \"Replace ellipsis glyph with three periods\"},\n    {\"original\": \"infrastructure\u2014each serving a specific purpose in minimizing losses while ensuring adequate reliability.\", \"replacement\": \"infrastructure. Each component serves a specific purpose in minimizing losses while ensuring adequate reliability.\", \"reason\": \"Replace em dash with period and clarify phrase\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network",
+      "replacement": "The contemporary electric power system, commonly referred to simply as a *power system*, is an elaborate network",
+      "reason": "Replace em dashes with commas for parenthetical phrase"
+    },
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014",
+      "replacement": "power system, commonly referred to simply as a *power system*,",
+      "reason": "Replace em dashes with commas"
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "13.8\u202fkV, 115\u202fkV, 345\u202fkV, 765\u202fkV",
+      "replacement": "13.8 kV, 115 kV, 345 kV, 765 kV",
+      "reason": "Replace non-breaking spaces with regular spaces"
+    },
+    {
+      "original": "socio\u2011technical",
+      "replacement": "socio-technical",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "120/240\u202fV",
+      "replacement": "120/240 V",
+      "reason": "Replace non-breaking space with regular space"
+    },
+    {
+      "original": "4\u202fkV\u201335\u202fkV",
+      "replacement": "4 kV-35 kV",
+      "reason": "Replace non-breaking space with regular space and en dash with hyphen"
+    },
+    {
+      "original": "13.8\u202fkV to 1,200\u202fkV",
+      "replacement": "13.8 kV to 1,200 kV",
+      "reason": "Replace non-breaking space with regular space"
+    },
+    {
+      "original": "\u201calways\u2011on,\u201d",
+      "replacement": "\"always-on\",",
+      "reason": "Replace curly quotes with straight quotes and non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "Power\u2011to\u2011X",
+      "replacement": "Power-to-X",
+      "reason": "Replace non-breaking hyphens with regular hyphens"
+    },
+    {
+      "original": "\u201c**Electricity Interconnection**\u201d",
+      "replacement": "\"Electricity Interconnection\"",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "\u201c**15\u202f% cross\u2011border interconnection capacity**\u201d",
+      "replacement": "\"15 % cross-border interconnection capacity\"",
+      "reason": "Replace curly quotes, non-breaking space, and non-breaking hyphen"
+    },
+    {
+      "original": "\u2019100",
+      "replacement": "'100",
+      "reason": "Replace curly single quote with straight single quote"
+    },
+    {
+      "original": "ramps\u2026",
+      "replacement": "ramps...",
+      "reason": "Replace ellipsis glyph with three periods"
+    },
+    {
+      "original": "infrastructure\u2014each serving a specific purpose in minimizing losses while ensuring adequate reliability.",
+      "replacement": "infrastructure. Each component serves a specific purpose in minimizing losses while ensuring adequate reliability.",
+      "reason": "Replace em dash with period and clarify phrase"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4094,
+    "output": 8370,
+    "cache_read": 16976,
+    "cache_write": 0,
+    "reasoning": 7618
+  },
+  "cost_usd": 0.00589074,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

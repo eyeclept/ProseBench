@@ -1,0 +1,50 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:49:31.447998+00:00",
+  "duration_s": 36.02933774300618,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open. \",\n      \"replacement\": \"\",\n      \"reason\": \"The first sentence is a padded negation that restates the following sentence without adding new information.\"\n    },\n    {\n      \"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\",\n      \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change.\",\n      \"reason\": \"The second sentence restates the first without adding new information.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"This is a padded negation that does not add new information beyond the following sentence.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open. ",
+      "replacement": "",
+      "reason": "The first sentence is a padded negation that restates the following sentence without adding new information."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change.",
+      "reason": "The second sentence restates the first without adding new information."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "",
+      "reason": "This is a padded negation that does not add new information beyond the following sentence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19893,
+    "output": 739,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 534
+  },
+  "cost_usd": 0.00342735,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

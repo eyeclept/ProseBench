@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:30:34.004512+00:00",
+  "duration_s": 12.648645834007766,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system\",\"replacement\":\"is therefore a complex socio\u2011technical system\",\"reason\":\"The negated 'not merely a physical infrastructure' half is windup; the positive claim stands alone.\"},{\"original\":\"Operators procured spinning reserve, rather than non-spinning reserve.\",\"replacement\":\"Operators procured spinning reserve.\",\"reason\":\"The 'rather than non-spinning reserve' restatement adds nothing the positive half doesn't already say.\"},{\"original\":\"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\"replacement\":\"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\"reason\":\"The negated first clause is a windup; the positive clause states the claim on its own.\"},{\"original\":\"Those upgrades are planned on purpose, rather than by accident.\",\"replacement\":\"Those upgrades are planned.\",\"reason\":\"'Rather than by accident' restates 'on purpose' through negation and adds no information.\"}]}",
+  "edits": [
+    {
+      "original": "is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system",
+      "replacement": "is therefore a complex socio\u2011technical system",
+      "reason": "The negated 'not merely a physical infrastructure' half is windup; the positive claim stands alone."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The 'rather than non-spinning reserve' restatement adds nothing the positive half doesn't already say."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negated first clause is a windup; the positive clause states the claim on its own."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned.",
+      "reason": "'Rather than by accident' restates 'on purpose' through negation and adds no information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1124,
+    "cache_read": 23455,
+    "cache_write": 8268,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0466655,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

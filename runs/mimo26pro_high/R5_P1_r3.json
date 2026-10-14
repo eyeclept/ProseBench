@@ -1,0 +1,50 @@
+{
+  "run_id": "R5_P1_r3",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:13:01.697393+00:00",
+  "duration_s": 47.23113344999729,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"dramatically broader\",\"replacement\":\"broader\",\"reason\":\"Degree adverb 'dramatically' asserts magnitude with no figure behind it, so it is deleted rather than kept as padding.\"},{\"original\":\"significantly reduces\",\"replacement\":\"reduces\",\"reason\":\"The intensity claim 'significantly' adds no evidence when the preceding sentence already gives the 18-hours-to-3-hours figures, so only the intensifier is removed.\"},{\"original\":\"for those checks, end of story.\",\"replacement\":\"for those checks.\",\"reason\":\"The claim already carries the exclusivity marker 'only', so the finality interjection 'end of story' merely repeats the emphasis without adding evidence.\"}]}",
+  "edits": [
+    {
+      "original": "dramatically broader",
+      "replacement": "broader",
+      "reason": "Degree adverb 'dramatically' asserts magnitude with no figure behind it, so it is deleted rather than kept as padding."
+    },
+    {
+      "original": "significantly reduces",
+      "replacement": "reduces",
+      "reason": "The intensity claim 'significantly' adds no evidence when the preceding sentence already gives the 18-hours-to-3-hours figures, so only the intensifier is removed."
+    },
+    {
+      "original": "for those checks, end of story.",
+      "replacement": "for those checks.",
+      "reason": "The claim already carries the exclusivity marker 'only', so the finality interjection 'end of story' merely repeats the emphasis without adding evidence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 59,
+    "output": 4531,
+    "cache_read": 19200,
+    "cache_write": 0,
+    "reasoning": 4384
+  },
+  "cost_usd": 0.004044435,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,50 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:39:08.533764+00:00",
+  "duration_s": 20.151841350016184,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex\", \"replacement\": \"The architecture of a power system is therefore also a complex\", \"reason\": \"The 'not merely a physical infrastructure' clause is windup, since the positive 'also a complex socio-technical system' states the same claim.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen\", \"replacement\": \"Frozen\", \"reason\": \"The 'not a nameplate shortfall of wind' clause adds nothing beyond the positive statement that frozen gas wells and thermal auxiliaries caused the lost megawatts.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"The 'rather than by accident' contrast restates the positive claim with no new fact.\"}]}",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex",
+      "replacement": "The architecture of a power system is therefore also a complex",
+      "reason": "The 'not merely a physical infrastructure' clause is windup, since the positive 'also a complex socio-technical system' states the same claim."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen",
+      "replacement": "Frozen",
+      "reason": "The 'not a nameplate shortfall of wind' clause adds nothing beyond the positive statement that frozen gas wells and thermal auxiliaries caused the lost megawatts."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "The 'rather than by accident' contrast restates the positive claim with no new fact."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 4436,
+    "cache_read": 31722,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0025356199999999997,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

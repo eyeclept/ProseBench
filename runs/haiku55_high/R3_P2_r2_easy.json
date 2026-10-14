@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P2_r2_easy",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "c6f2900692c92a1e3cd08759baf3505a86e21a9b43e4d9471a6431f4e8408fd3",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:42:45.031641+00:00",
+  "duration_s": 18.302076710009715,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\", \"replacement\": \"Renewable units are often sited where resources are abundant. Demand peaks elsewhere, which requires robust transmission networks.\", \"reason\": \"The trailing \\\"not where demand peaks\\\" is a genuine, non-ordinary distinction, so it is moved into its own sentence stated as fact.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve. Spinning reserve is capacity already synchronized to the grid and able to respond immediately.\", \"reason\": \"The trailing \\\"rather than non-spinning reserve\\\" is a domain-specific distinction, so it is restated as its own sentence describing what spinning reserve is.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"\\\"By accident\\\" is the ordinary-knowledge antonym of \\\"on purpose,\\\" so the trailer adds nothing and is cut.\"}]}",
+  "edits": [
+    {
+      "original": "Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "Renewable units are often sited where resources are abundant. Demand peaks elsewhere, which requires robust transmission networks.",
+      "reason": "The trailing \"not where demand peaks\" is a genuine, non-ordinary distinction, so it is moved into its own sentence stated as fact."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve. Spinning reserve is capacity already synchronized to the grid and able to respond immediately.",
+      "reason": "The trailing \"rather than non-spinning reserve\" is a domain-specific distinction, so it is restated as its own sentence describing what spinning reserve is."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "\"By accident\" is the ordinary-knowledge antonym of \"on purpose,\" so the trailer adds nothing and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 3178,
+    "cache_read": 31832,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00190772,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P2_r3",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:52:15.586739+00:00",
+  "duration_s": 98.85340500599705,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system\",\n      \"replacement\": \"The architecture of a power system is therefore a complex socio\u2011technical system\",\n      \"reason\": \"The negative half 'not merely a physical infrastructure, but also' is filler; deleting it leaves the same core claim.\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"reason\": \"The negative clause 'The Texas failure was not a nameplate shortfall of wind;' is a windup; deleting it leaves the same factual claim.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned.\",\n      \"reason\": \"The negative contrast 'on purpose, rather than by accident' is redundant phrasing; deleting it leaves the same core claim.\"\n    },\n    {\n      \"original\": \"The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.\",\n      \"replacement\": \"The initiative has already demonstrated that high VRE penetration can be sustained when robust transmission, advanced controls, and market integration co\u2011exist.\",\n      \"reason\": \"The negative qualifier 'without sacrificing reliability' is a windup; deleting it leaves the same factual claim.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system",
+      "replacement": "The architecture of a power system is therefore a complex socio\u2011technical system",
+      "reason": "The negative half 'not merely a physical infrastructure, but also' is filler; deleting it leaves the same core claim."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative clause 'The Texas failure was not a nameplate shortfall of wind;' is a windup; deleting it leaves the same factual claim."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned.",
+      "reason": "The negative contrast 'on purpose, rather than by accident' is redundant phrasing; deleting it leaves the same core claim."
+    },
+    {
+      "original": "The initiative has already demonstrated that high VRE penetration can be sustained without sacrificing reliability when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "replacement": "The initiative has already demonstrated that high VRE penetration can be sustained when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "reason": "The negative qualifier 'without sacrificing reliability' is a windup; deleting it leaves the same factual claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18223,
+    "output": 8557,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 8185
+  },
+  "cost_usd": 0.00690105,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

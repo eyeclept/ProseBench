@@ -1,0 +1,95 @@
+{
+  "run_id": "R1_P1_r1",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:41:09.753812+00:00",
+  "duration_s": 81.67127865599468,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"that are dramatically broader\", \"replacement\": \"that are far broader\", \"reason\": \"Replace banned intensifier 'dramatically' with 'far'\"},\n    {\"original\": \"leveraging machine\u2011learning models\", \"replacement\": \"using machine-learning models\", \"reason\": \"Replace banned verb 'leveraging' with 'using'\"},\n    {\"original\": \"robust encryption\", \"replacement\": \"strong encryption\", \"reason\": \"Replace banned adjective 'robust' with 'strong'\"},\n    {\"original\": \"which streamlines containment\", \"replacement\": \"which improves containment\", \"reason\": \"Replace banned verb 'streamlines' with 'improves'\"},\n    {\"original\": \"The playbook change significantly reduces mean time to contain\", \"replacement\": \"The playbook change cuts mean time to contain\", \"reason\": \"Replace banned phrase 'significantly reduces' with 'cuts'\"},\n    {\"original\": \"fostering a collaborative security ecosystem\", \"replacement\": \"creating a collaborative security ecosystem\", \"reason\": \"Replace banned verb 'fostering' with 'creating'\"},\n    {\"original\": \"will be pivotal\", \"replacement\": \"will be key\", \"reason\": \"Replace banned adjective 'pivotal' with 'key'\"},\n    {\"original\": \"bolster collective defense\", \"replacement\": \"strengthen collective defense\", \"reason\": \"Replace banned verb 'bolster' with 'strengthen'\"},\n    {\"original\": \"Leverage federated learning\", \"replacement\": \"Use federated learning\", \"reason\": \"Replace banned verb 'Leverage' with 'Use'\"},\n    {\"original\": \"robust governance\", \"replacement\": \"strong governance\", \"reason\": \"Replace banned adjective 'robust' with 'strong'\"},\n    {\"original\": \"demands a holistic response\", \"replacement\": \"demands a comprehensive response\", \"reason\": \"Replace banned adjective 'holistic' with 'comprehensive'\"},\n    {\"original\": \"Ultimately, the resilience\", \"replacement\": \"In the end, the resilience\", \"reason\": \"Replace banned transition 'Ultimately' with 'In the end'\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "that are dramatically broader",
+      "replacement": "that are far broader",
+      "reason": "Replace banned intensifier 'dramatically' with 'far'"
+    },
+    {
+      "original": "leveraging machine\u2011learning models",
+      "replacement": "using machine-learning models",
+      "reason": "Replace banned verb 'leveraging' with 'using'"
+    },
+    {
+      "original": "robust encryption",
+      "replacement": "strong encryption",
+      "reason": "Replace banned adjective 'robust' with 'strong'"
+    },
+    {
+      "original": "which streamlines containment",
+      "replacement": "which improves containment",
+      "reason": "Replace banned verb 'streamlines' with 'improves'"
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain",
+      "replacement": "The playbook change cuts mean time to contain",
+      "reason": "Replace banned phrase 'significantly reduces' with 'cuts'"
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "creating a collaborative security ecosystem",
+      "reason": "Replace banned verb 'fostering' with 'creating'"
+    },
+    {
+      "original": "will be pivotal",
+      "replacement": "will be key",
+      "reason": "Replace banned adjective 'pivotal' with 'key'"
+    },
+    {
+      "original": "bolster collective defense",
+      "replacement": "strengthen collective defense",
+      "reason": "Replace banned verb 'bolster' with 'strengthen'"
+    },
+    {
+      "original": "Leverage federated learning",
+      "replacement": "Use federated learning",
+      "reason": "Replace banned verb 'Leverage' with 'Use'"
+    },
+    {
+      "original": "robust governance",
+      "replacement": "strong governance",
+      "reason": "Replace banned adjective 'robust' with 'strong'"
+    },
+    {
+      "original": "demands a holistic response",
+      "replacement": "demands a comprehensive response",
+      "reason": "Replace banned adjective 'holistic' with 'comprehensive'"
+    },
+    {
+      "original": "Ultimately, the resilience",
+      "replacement": "In the end, the resilience",
+      "reason": "Replace banned transition 'Ultimately' with 'In the end'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20818,
+    "output": 5593,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 5114
+  },
+  "cost_usd": 0.0064785,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

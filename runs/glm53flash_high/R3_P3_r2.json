@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r2",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:00:39.861088+00:00",
+  "duration_s": 10.295124961994588,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"\\\"Rather than by accident\\\" is an ordinary-knowledge antonym of \\\"on purpose\\\" tacked on as a trailer, so it is cut.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. In chloroplast transformation, the transgene integrates into the plastid genome and is inherited maternally; nuclear transformation would instead place it in the nuclear genome.\", \"reason\": \"The contrast between chloroplast and nuclear transformation is a genuine technical distinction smuggled into a bolted-on \\\"not X\\\" clause, so it earns its own explanatory sentence.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces. A landrace is a locally adapted, farmer-maintained traditional variety, while an heirloom is a named older cultivar kept and passed along by growers.\", \"reason\": \"Landrace versus heirloom is a real domain distinction that a trailing \\\"rather than\\\" clause cannot carry, so it is restated as its own definitional sentence.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\"Rather than by accident\" is an ordinary-knowledge antonym of \"on purpose\" tacked on as a trailer, so it is cut."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. In chloroplast transformation, the transgene integrates into the plastid genome and is inherited maternally; nuclear transformation would instead place it in the nuclear genome.",
+      "reason": "The contrast between chloroplast and nuclear transformation is a genuine technical distinction smuggled into a bolted-on \"not X\" clause, so it earns its own explanatory sentence."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces. A landrace is a locally adapted, farmer-maintained traditional variety, while an heirloom is a named older cultivar kept and passed along by growers.",
+      "reason": "Landrace versus heirloom is a real domain distinction that a trailing \"rather than\" clause cannot carry, so it is restated as its own definitional sentence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 8422,
+    "output": 1291,
+    "cache_read": 11520,
+    "cache_write": 0,
+    "reasoning": 1015
+  },
+  "cost_usd": 0.0022544,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

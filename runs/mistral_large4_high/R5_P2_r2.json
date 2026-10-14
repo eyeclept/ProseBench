@@ -1,0 +1,66 @@
+{
+  "run_id": "R5_P2_r2",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:27:20.006929+00:00",
+  "duration_s": 58.215040602000045,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"has evolved dramatically to accommodate larger scales\", \"replacement\": null, \"reason\": \"\u201cDramatically\u201d is an evidence-free intensifier, but the passage provides no number to substitute, so flag it for the author.\"}, {\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune shortens frequency restoration by 8 minutes\", \"reason\": \"The preceding figures supply the missing number: 12 minutes minus 4 minutes is 8 minutes.\"}, {\"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\", \"replacement\": \"Inertia still matters for the first few cycles after a trip.\", \"reason\": \"\u201cFull stop\u201d is finality padding that adds no evidence.\"}, {\"original\": \"fall dramatically as current decreases\", \"replacement\": null, \"reason\": \"\u201cDramatically\u201d is an evidence-free intensifier, but no specific current-reduction number is given, so flag it for the author.\"}, {\"original\": \"significantly reduces line losses from 8 percent to 3 percent\", \"replacement\": \"reduces line losses by 5 percentage points, from 8 percent to 3 percent\", \"reason\": \"The figures show the reduction was 5 percentage points, so the intensifier should be replaced by that number.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"Islanded operation is the only backup path for those hospitals.\", \"reason\": \"\u201cEnd of story\u201d repeats the exclusivity already carried by \u201conly\u201d without adding evidence.\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate larger scales",
+      "replacement": null,
+      "reason": "\u201cDramatically\u201d is an evidence-free intensifier, but the passage provides no number to substitute, so flag it for the author."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration by 8 minutes",
+      "reason": "The preceding figures supply the missing number: 12 minutes minus 4 minutes is 8 minutes."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "\u201cFull stop\u201d is finality padding that adds no evidence."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": null,
+      "reason": "\u201cDramatically\u201d is an evidence-free intensifier, but no specific current-reduction number is given, so flag it for the author."
+    },
+    {
+      "original": "significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "reduces line losses by 5 percentage points, from 8 percent to 3 percent",
+      "reason": "The figures show the reduction was 5 percentage points, so the intensifier should be replaced by that number."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "\u201cEnd of story\u201d repeats the exclusivity already carried by \u201conly\u201d without adding evidence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 671,
+    "output": 2865,
+    "cache_read": 19436,
+    "cache_write": 0,
+    "reasoning": 2507
+  },
+  "cost_usd": 0.00780465,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

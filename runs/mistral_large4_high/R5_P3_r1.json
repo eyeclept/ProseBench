@@ -1,0 +1,61 @@
+{
+  "run_id": "R5_P3_r1",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:33:35.563549+00:00",
+  "duration_s": 139.838672932,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"Field crews still collect vouchers.\", \"reason\": \"The finality interjection 'make no mistake' is emphatic padding that adds no evidence, so it is deleted.\"}, {\"original\": \"so the change significantly streamlines cell-wall composition analysis.\", \"replacement\": \"so the change cuts cell-wall composition analysis time from 40 minutes to 6 minutes.\", \"reason\": \"The intensifier 'significantly' is a placeholder for evidence and is replaced with the numbers it stood in for (40 minutes down to 6 minutes).\"}, {\"original\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.\", \"replacement\": \"Rubisco is the only carboxylase in the Calvin-Benson cycle.\", \"reason\": \"The finality interjection 'full stop' repeats the exclusivity already carried by 'only' and adds no evidence, so it is deleted.\"}, {\"original\": \"dramatically increased food production\", \"replacement\": null, \"reason\": \"The intensifier 'dramatically' stands in for a figure, but the passage provides no number for the Green Revolution's production increase, so the author must supply the evidence.\"}, {\"original\": \"so supplemental irrigation dramatically reduces yield loss in dry years.\", \"replacement\": \"so supplemental irrigation reduces yield loss from 41 percent to 8 percent in dry years.\", \"reason\": \"The intensifier 'dramatically' is a placeholder for evidence and is replaced with the numbers it stood in for (41 percent down to 8 percent).\"}]}",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "The finality interjection 'make no mistake' is emphatic padding that adds no evidence, so it is deleted."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis.",
+      "replacement": "so the change cuts cell-wall composition analysis time from 40 minutes to 6 minutes.",
+      "reason": "The intensifier 'significantly' is a placeholder for evidence and is replaced with the numbers it stood in for (40 minutes down to 6 minutes)."
+    },
+    {
+      "original": "Rubisco is the only carboxylase in the Calvin-Benson cycle, full stop.",
+      "replacement": "Rubisco is the only carboxylase in the Calvin-Benson cycle.",
+      "reason": "The finality interjection 'full stop' repeats the exclusivity already carried by 'only' and adds no evidence, so it is deleted."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": null,
+      "reason": "The intensifier 'dramatically' stands in for a figure, but the passage provides no number for the Green Revolution's production increase, so the author must supply the evidence."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces yield loss in dry years.",
+      "replacement": "so supplemental irrigation reduces yield loss from 41 percent to 8 percent in dry years.",
+      "reason": "The intensifier 'dramatically' is a placeholder for evidence and is replaced with the numbers it stood in for (41 percent down to 8 percent)."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4269,
+    "output": 11662,
+    "cache_read": 15852,
+    "cache_write": 0,
+    "reasoning": 11309
+  },
+  "cost_usd": 0.02838614,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

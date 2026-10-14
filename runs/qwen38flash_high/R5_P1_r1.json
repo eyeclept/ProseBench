@@ -1,0 +1,55 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:56:14.795305+00:00",
+  "duration_s": 55.334406642999966,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"attack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": \"attack surfaces\u201d that are broader than in the past\", \"reason\": \"\u201cdramatically\u201d is an unsupported intensifier with no evidence behind it; the concrete list of vectors (smart thermostats to industrial control systems) already carries the point.\"}, {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"The playbook change reduces mean time to contain from 18 hours to 3 hours.\", \"reason\": \"\u201cSignificantly\u201d stands in for the measurement, which is stated in the preceding sentence (18 hours to 3 hours).\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": \"Fail-closed is the only acceptable default for those checks.\", \"reason\": \"\u201cOnly\u201d already carries the exclusivity; the finality interjection repeats the emphasis without adding evidence.\"}, {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\", \"reason\": \"The standing-practice claim is already absolute, so the finality interjection adds no evidence.\"}]}",
+  "edits": [
+    {
+      "original": "attack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "attack surfaces\u201d that are broader than in the past",
+      "reason": "\u201cdramatically\u201d is an unsupported intensifier with no evidence behind it; the concrete list of vectors (smart thermostats to industrial control systems) already carries the point."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change reduces mean time to contain from 18 hours to 3 hours.",
+      "reason": "\u201cSignificantly\u201d stands in for the measurement, which is stated in the preceding sentence (18 hours to 3 hours)."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "\u201cOnly\u201d already carries the exclusivity; the finality interjection repeats the emphasis without adding evidence."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "The standing-practice claim is already absolute, so the finality interjection adds no evidence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 3027,
+    "output": 3140,
+    "cache_read": 16384,
+    "cache_write": 0,
+    "reasoning": 2876
+  },
+  "cost_usd": 0.002191994,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

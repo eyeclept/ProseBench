@@ -1,0 +1,70 @@
+{
+  "run_id": "R2_P3_r3",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:31:35.781087+00:00",
+  "duration_s": 13.29818077298114,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"is not merely academic\u2014it is essential for the survival and well\u2011being of humanity\",\"replacement\":\"is essential for the survival and well\u2011being of humanity\",\"reason\":\"The negated 'not merely academic' half is windup; the positive claim stands alone.\"},{\"original\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\"replacement\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime (C4), where mesophyll and bundle-sheath cells share the work, and a temporal regime (CAM), where stomata open at night.\",\"reason\":\"The distinction is restated through the C4/CAM analogy with no new fact, so the two are merged.\"},{\"original\":\"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\"replacement\":\"Morphine is produced in Papaver somniferum latex.\",\"reason\":\"The negative clause is filler; the positive clause carries the whole claim.\"},{\"original\":\"The construct was designed for chloroplast transformation, not nuclear transformation.\",\"replacement\":\"The construct was designed for chloroplast transformation.\",\"reason\":\"The negated alternative restates the positive claim and adds nothing.\"},{\"original\":\"Breeders select dwarfing alleles on purpose, rather than by accident.\",\"replacement\":\"Breeders select dwarfing alleles on purpose.\",\"reason\":\"'Rather than by accident' just restates 'on purpose'.\"},{\"original\":\"Botany, far from being a static catalog of flora, is a dynamic, integrative science\",\"replacement\":\"Botany is a dynamic, integrative science\",\"reason\":\"The 'far from being a static catalog' windup adds nothing the positive half doesn't state.\"},{\"original\":\"is not optional; it is imperative\",\"replacement\":\"is imperative\",\"reason\":\"The negated half is filler; the positive half alone makes the claim.\"}]}",
+  "edits": [
+    {
+      "original": "is not merely academic\u2014it is essential for the survival and well\u2011being of humanity",
+      "replacement": "is essential for the survival and well\u2011being of humanity",
+      "reason": "The negated 'not merely academic' half is windup; the positive claim stands alone."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime (C4), where mesophyll and bundle-sheath cells share the work, and a temporal regime (CAM), where stomata open at night.",
+      "reason": "The distinction is restated through the C4/CAM analogy with no new fact, so the two are merged."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative clause is filler; the positive clause carries the whole claim."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negated alternative restates the positive claim and adds nothing."
+    },
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'Rather than by accident' just restates 'on purpose'."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science",
+      "replacement": "Botany is a dynamic, integrative science",
+      "reason": "The 'far from being a static catalog' windup adds nothing the positive half doesn't state."
+    },
+    {
+      "original": "is not optional; it is imperative",
+      "replacement": "is imperative",
+      "reason": "The negated half is filler; the positive half alone makes the claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1735,
+    "cache_read": 31738,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.020531800000000003,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

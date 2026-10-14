@@ -1,0 +1,45 @@
+{
+  "run_id": "R2_P2_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:55:23.577998+00:00",
+  "duration_s": 51.199676325020846,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n    \"original\": \"The Texas failure was not a nameplate shortfall of wind; \",\n    \"replacement\": \"\",\n    \"reason\": \"Negative clause is filler; positive clause contains all factual information\"\n    },\n    {\n    \"original\": \", rather than by accident\",\n    \"replacement\": \"\",\n    \"reason\": \"Negative clause is filler; positive clause contains the key information\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; ",
+      "replacement": "",
+      "reason": "Negative clause is filler; positive clause contains all factual information"
+    },
+    {
+      "original": ", rather than by accident",
+      "replacement": "",
+      "reason": "Negative clause is filler; positive clause contains the key information"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21056,
+    "output": 1361,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 1261
+  },
+  "cost_usd": 0.003975,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

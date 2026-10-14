@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:00:08.054817+00:00",
+  "duration_s": 56.84121190899168,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n      \"reason\": \"Trailing clause uses ordinary-knowledge antonym pair 'on purpose/by accident' that adds no meaningful distinction.\"\n    },\n    {\n      \"original\": \"Conservation collections still accession landraces, rather than heirlooms.\",\n      \"replacement\": null,\n      \"reason\": \"Uncertain whether 'landraces/heirlooms' constitutes an ordinary-knowledge antonym pair or a genuine technical distinction requiring separate treatment.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": \"The construct was designed for chloroplast transformation. It does not target nuclear transformation.\",\n      \"reason\": \"Trailing clause introduces a genuine technical distinction that requires its own sentence stated as what the thing does, not what it isn't.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "Trailing clause uses ordinary-knowledge antonym pair 'on purpose/by accident' that adds no meaningful distinction."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Uncertain whether 'landraces/heirlooms' constitutes an ordinary-knowledge antonym pair or a genuine technical distinction requiring separate treatment."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. It does not target nuclear transformation.",
+      "reason": "Trailing clause introduces a genuine technical distinction that requires its own sentence stated as what the thing does, not what it isn't."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20923,
+    "output": 704,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 478
+  },
+  "cost_usd": 0.00356085,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

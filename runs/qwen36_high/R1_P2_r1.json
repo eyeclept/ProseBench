@@ -1,0 +1,132 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:22:26.468581+00:00",
+  "duration_s": 371.5268581210112,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"an integral backbone\",\n      \"replacement\": \"a critical backbone\",\n      \"reason\": \"\\\"integral\\\" is a banned word under the \\\"Prefer other words\\\" adjectives tier.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014\",\n      \"replacement\": \"The contemporary electric power system (commonly called a *power system*)\",\n      \"reason\": \"Em dashes (\u2014) are banned under the \\\"NEVER\\\" tier; replacing with parentheses and removing \\\"simply\\\" to keep the clause concise.\"\n    },\n    {\n      \"original\": \"evolved dramatically\",\n      \"replacement\": \"evolved\",\n      \"reason\": \"\\\"dramatically\\\" is a banned intensifier under the \\\"Prefer other words\\\" tier.\"\n    },\n    {\n      \"original\": \"powerful forces\",\n      \"replacement\": \"drivers\",\n      \"reason\": \"\\\"Powerful forces\\\" is an inflated-symbolism phrase flagged as an AI-writing tell under \\\"Prefer other words.\\\"\"\n    },\n    {\n      \"original\": \"are interconnected\",\n      \"replacement\": \"connect\",\n      \"reason\": \"\\\"Interconnected\\\" is a banned adjectival intensifier under the \\\"Prefer other words\\\" tier; simplifying to a direct verb.\"\n    },\n    {\n      \"original\": \"socio\u2011technical\",\n      \"replacement\": \"socio-technical\",\n      \"reason\": \"The hyphen appears to be a non-ASCII character; replacing with a standard hyphen to comply with the NEVER rule on characters outside a standard US keyboard.\"\n    },\n    {\n      \"original\": \"are rising rapidly\",\n      \"replacement\": \"have grown rapidly\",\n      \"reason\": \"\\\"Rising rapidly\\\" is an inflated, vague phrase flagged under \\\"Prefer other words\\\" as an AI-writing tell.\"\n    },\n    {\n      \"original\": \"are often sited where\",\n      \"replacement\": \"are sited where\",\n      \"reason\": \"\\\"Often\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"can operate\",\n      \"replacement\": \"operate\",\n      \"reason\": \"\\\"Can\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier when describing a real capability.\"\n    },\n    {\n      \"original\": \"are gaining favor\",\n      \"replacement\": \"are used\",\n      \"reason\": \"\\\"Gaining favor\\\" is a hedging construction under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"provides operators with dynamic voltage and power\u2011flow regulation, enhancing\",\n      \"replacement\": \"lets operators regulate voltage and power flow dynamically, adding\"\n    },\n    {\n      \"original\": \"enables remote monitoring, demand response, and outage detection.\",\n      \"replacement\": \"let operators monitor demand and detect outages remotely.\"\n    },\n    {\n      \"original\": \"allows for adaptive settings, self\u2011testing, and integration\",\n      \"replacement\": \"supports adaptive settings, self\u2011testing, and integration\"\n    },\n    {\n      \"original\": \"paving the way for\",\n      \"replacement\": \"enabling\"\n    },\n    {\n      \"original\": \"an array of protective and control devices\",\n      \"replacement\": \"protective and control devices\"\n    },\n    {\n      \"original\": \"a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies (ICT).\"\n    },\n    {\n      \"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\",\n      \"replacement\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\"\n    },\n    {\n      \"original\": \"Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\"\n    },\n    {\n      \"original\": \"a profound transformation\",\n      \"replacement\": \"a significant transformation\"\n    },\n    {\n      \"original\": \"seamlessly integrates\",\n      \"replacement\": \"integrates\"\n    },\n    {\n      \"original\": \"a more holistic energy system\",\n      \"replacement\": \"an integrated energy system\"\n    },\n    {\n      \"original\": \"a powerful force for change\",\n      \"replacement\": \"a powerful force for change\"\n    }\n  ]\n}\n```\n\nWait, I see I made an error \u2014 some of my edits have the same text for original and replacement. Let me re-examine and fix the JSON properly.\n\nLooking at my analysis more carefully, let me correct the entries:\n\n```json\n{\n  \"edits\": [\n    {\n      \"original\": \"an integral backbone\",\n      \"replacement\": \"a critical backbone\",\n      \"reason\": \"\\\"integral\\\" is a banned word under the \\\"Prefer other words\\\" adjectives tier.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014\",\n      \"replacement\": \"The contemporary electric power system (commonly called a *power system*)\",\n      \"reason\": \"Em dashes (\u2014) are banned under the \\\"NEVER\\\" tier; replacing with parentheses.\"\n    },\n    {\n      \"original\": \"evolved dramatically\",\n      \"replacement\": \"evolved\",\n      \"reason\": \"\\\"dramatically\\\" is a banned intensifier under the \\\"Prefer other words\\\" tier.\"\n    },\n    {\n      \"original\": \"socio\u2011technical\",\n      \"replacement\": \"socio-technical\",\n      \"reason\": \"Non-breaking hyphen replaced with standard hyphen; em/en dashes and non-ASCII hyphens are banned under the \\\"NEVER\\\" tier.\"\n    },\n    {\n      \"original\": \"are rising rapidly\",\n      \"replacement\": \"have grown rapidly\",\n      \"reason\": \"\\\"Rising rapidly\\\" is an inflated phrase flagged under \\\"Prefer other words\\\" as an AI-writing tell.\"\n    },\n    {\n      \"original\": \"are often sited where\",\n      \"replacement\": \"are sited where\",\n      \"reason\": \"\\\"Often\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"can operate in grid\u2011connected mode\",\n      \"replacement\": \"operate in grid-connected mode\",\n      \"reason\": \"\\\"Can\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"are gaining favor for\",\n      \"replacement\": \"are used for\",\n      \"reason\": \"\\\"Gaining favor\\\" is a hedging construction under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"enables remote monitoring, demand response, and outage detection.\",\n      \"replacement\": \"let operators monitor demand and detect outages remotely.\",\n      \"reason\": \"Restructured to avoid wordy nominalized phrasing; \\\"enable/enable\\\" is a banned verb under \\\"Prefer other words.\\\"\"\n    },\n    {\n      \"original\": \"allows for adaptive settings, self\u2011testing, and integration with communication protocols\",\n      \"replacement\": \"supports adaptive settings, self\u2011testing, and integration with communication protocols\",\n      \"reason\": \"\\\"Allows for\\\" is a hedging construction; simplified to \\\"supports.\\\"\"\n    },\n    {\n      \"original\": \"paving the way for\",\n      \"replacement\": \"enabling\",\n      \"reason\": \"\\\"Pave the way for\\\" is listed under \\\"Prefer other words\\\" as an AI-writing tell.\"\n    },\n    {\n      \"original\": \"evolved dramatically\",\n      \"replacement\": \"evolved\",\n      \"reason\": \"\\\"Dramatically\\\" is a banned intensifier under the \\\"Prefer other words\\\" tier.\"\n    }\n  ]\n}\n```\n\nI notice I have duplicate entries and some issues. Let me produce a clean final answer. Looking back at my original analysis, I had these violations:\n\n1. \"an integral backbone\" \u2192 \"integral\" is banned\n2. Em dashes in: \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014\"\n3. \"evolved dramatically\" \u2192 \"dramatically\" is banned\n4. \"socio\u2011technical\" (non-breaking hyphen)\n5. \"are rising rapidly\" \u2192 inflated phrase\n6. \"are often sited\" \u2192 \"often\" is banned hedging\n7. \"can operate\" \u2192 \"can\" is banned hedging\n8. \"are gaining favor\" \u2192 hedging\n9. \"enables remote monitoring\" \u2192 \"enable\" is banned verb\n10. \"allows for adaptive settings\" \u2192 hedging/enable\n11. \"paving the way for\" \u2192 banned phrase\n12. \"facilitate competition\" \u2192 \"facilitate\" is banned\n\nAlso: \"a more holistic energy system\" \u2192 \"holistic\" is banned\n\nLet me produce the correct final JSON:\n\n```json\n{\"edits\":[{\"original\":\"an integral backbone\",\"replacement\":\"a critical backbone\",\"reason\":\"\\\"integral\\\" is a banned word under the \\\"Prefer other words\\\" adjectives tier.\"},{\"original\":\"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\",\"replacement\":\"The contemporary electric power system (commonly called a *power system*) is a network\",\"reason\":\"Em dashes (\u2014) are banned under the \\\"NEVER\\\" tier; replacing with parentheses and simplifying.\\\"},{\"original\":\"evolved dramatically\",\"replacement\":\"evolved\",\"reason\":\"\\\"dramatically\\\" is a banned intensifier under the \\\"Prefer other words\\\" tier.\"},{\"original\":\"socio\u2011technical system\",\"replacement\":\"socio-technical system\",\"reason\":\"Non-breaking hyphen in \\\"socio\u2011technical\\\" replaced with standard hyphen per the \\\"NEVER\\\" tier on non-ASCII characters.\"},{\"original\":\"Renewable energy technologies have been rising rapidly\",\"replacement\":\"Renewable energy technologies have grown rapidly\",\"reason\":\"\\\"Rising rapidly\\\" is an inflated phrase flagged under \\\"Prefer other words\\\" as an AI-writing tell.\"},{\"original\":\"Renewable units are often sited where\",\"replacement\":\"Renewable units are sited where\",\"reason\":\"\\\"Often\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"},{\"original\":\"DERs can operate in grid\u2011connected mode\",\"replacement\":\"DERs operate in grid-connected mode\",\"reason\":\"\\\"Can\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"},{\"original\":\"topologies are gaining favor for higher reliability\",\"replacement\":\"topologies are used for higher reliability\",\"reason\":\"\\\"Gaining favor\\\" is a hedging construction under the \\\"Only when necessary\\\" tier.\"},{\"original\":\"devices that enable remote monitoring, demand response, and outage detection\",\"replacement\":\"devices that let operators monitor demand and detect outages remotely\",\"reason\":\"\\\"Enable\\\" is a banned verb under the \\\"Prefer other words\\\" tier; restructured for directness.\"},{\"original\":\"devices that allow adaptive settings, self\u2011testing, and integration\",\"replacement\":\"devices that support adaptive settings, self\u2011testing, and integration\",\"reason\":\"\\\"Allow\\\" is a hedging construction under the \\\"Only when necessary\\\" tier; replaced with \\\"support.\\\"\"},{\"original\":\"paving the way for *wide\u2011area protection*\",\"replacement\":\"enabling *wide\u2011area protection*\",\"reason\":\"\\\"Pave the way for\\\" is listed under \\\"Prefer other words\\\" as an AI-writing tell.\"},{\"original\":\"a more holistic energy system\",\"replacement\":\"a more integrated energy system\",\"reason\":\"\\\"Holistic\\\" is a banned adjective under the \\\"Prefer other words\\\" tier.\"},{\"original\":\"a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies (ICT)\",\"replacement\":\"a complex system that incorporates market mechanisms, regulatory frameworks, and increasingly, information-communication technologies (ICT)\",\"reason\":\"Removed \\\"socio-technical\\\" redundancy; \\\"complex\\\" already implies sophistication here; \\\"socio-technical\\\" uses non-breaking hyphen already fixed above.\"}]}\n```\n\nHmm wait, the last edit is problematic because \"socio\u2011technical\" appears earlier and I'm fixing it in a different context. Let me re-examine.\n\nIn the passage, \"socio-technical\" appears in one place only:\n\"but also a complex socio\u2011technical system that incorporates market mechanisms\"\n\nI had identified this as using a non-breaking hyphen. But I should check whether I need to fix it separately or if it's covered by the em dash fix. Actually, looking at it again, \"socio-technical\" uses what appears to be a non-breaking hyphen (\u2011) not a regular hyphen (-). But this is a minor character issue, and the main banned words are the focus.\n\nAlso, I need to reconsider: the em dash fix removed \"simply\" from the parenthetical. Let me make sure the exact substring matches. The original is:\n\n\"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\"\n\nAnd I want to replace it with:\n\n\"The contemporary electric power system (commonly called a *power system*) is a network\"\n\nThat removes \"elaborate\" too. But \"elaborate\" is NOT in the banned list. Let me only remove the em dashes and fix what's necessary:\n\n\"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is\"\n\n\u2192 \"The contemporary electric power system (commonly called a *power system*) is\"\n\nI'll keep \"elaborate network\" since it's not banned.\n\nOK, let me finalize with clean, unique match strings and correct replacements:\n\nActually, I realize I should also check for the em dash in section 6.1: \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\" \u2014 no em dash there.\n\nAnd section 7.4: \"Islanded operation is the only backup path for those hospitals, end of story.\" \u2014 \"end of story\" has a comma before it, not an em dash.\n\nSection 2.1: \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\" \u2014 THIS HAS EM DASHES!\n\nLet me find all em dashes:\n1. \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014\"\n2. \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\"\n\nBoth need fixing.\n\nLet me produce the final clean answer now.\n```json\n{\n  \"edits\": [\n    {\n      \"original\": \"an integral backbone\",\n      \"replacement\": \"a critical backbone\",\n      \"reason\": \"\\\"integral\\\" is banned under the \\\"Prefer other words\\\" adjectives tier.\"\n    },\n    {\n      \"original\": \"The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014is an elaborate network\",\n      \"replacement\": \"The contemporary electric power system (commonly called a *power system*) is a network\",\n      \"reason\": \"Em dashes (\u2014) are banned under the \\\"NEVER\\\" tier; replaced with parentheses.\"\n    },\n    {\n      \"original\": \"evolved dramatically\",\n      \"replacement\": \"evolved\",\n      \"reason\": \"\\\"dramatically\\\" is a banned intensifier under the \\\"Prefer other words\\\" tier.\"\n    },\n    {\n      \"original\": \"socio\u2011technical system that\",\n      \"replacement\": \"socio-technical system that\",\n      \"reason\": \"Non-ASCII hyphen replaced with standard hyphen per the \\\"NEVER\\\" tier on characters outside a standard US keyboard.\"\n    },\n    {\n      \"original\": \"Renewable energy technologies have been rising rapidly\",\n      \"replacement\": \"Renewable energy technologies have grown rapidly\",\n      \"reason\": \"\\\"Rising rapidly\\\" is an inflated phrase flagged under \\\"Prefer other words\\\" as an AI-writing tell.\"\n    },\n    {\n      \"original\": \"Renewable units are often sited where\",\n      \"replacement\": \"Renewable units are sited where\",\n      \"reason\": \"\\\"Often\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"DERs can operate in grid\",\n      \"replacement\": \"DERs operate in grid\",\n      \"reason\": \"\\\"Can\\\" is a banned hedging marker under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"topologies are gaining favor for\",\n      \"replacement\": \"topologies are used for\",\n      \"reason\": \"\\\"Gaining favor\\\" is a hedging construction under the \\\"Only when necessary\\\" tier.\"\n    },\n    {\n      \"original\": \"devices that enable remote monitoring, demand response, and outage detection\",\n      \"replacement\": \"devices that let operators monitor demand and detect outages remotely\",\n      \"reason\": \"\\\"Enable\\\" is a banned verb under the \\\"Prefer other words\\\" tier; restructured for directness.\"\n    },\n    {\n      \"original\": \"devices that allow adaptive settings, self\",\n      \"replacement\": \"devices that support adaptive settings, self\",\n      \"reason\": \"\\\"Allow\\\" is a hedging construction under the \\\"Only when necessary\\\" tier; replaced with the direct verb \\\"support.\\\"\"\n    },\n    {\n      \"original\": \"paving the way for\",\n      \"replacement\": \"enabling\",\n      \"reason\": \"\\\"Pave the way for\\\" is listed under \\\"Prefer other words\\\" as an AI-writing tell.\"\n    },\n    {\n      \"original\": \"a more holistic energy system\",\n      \"replacement\": \"a more integrated energy system\",\n      \"reason\": \"\\\"Holistic\\\" is banned under the \\\"Prefer other words\\\" adjectives tier.\"\n    },\n    {\n      \"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides\",\n      \"replacement\": \"Its intrinsic inertia (massive rotating masses that store kinetic energy) provides\",\n      \"reason\": \"Em dashes (\u2014) are banned under the \\\"NEVER\\\" tier; replaced with parentheses.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "an integral backbone",
+      "replacement": "a critical backbone",
+      "reason": "\"integral\" is a banned word under the \"Prefer other words\" adjectives tier."
+    },
+    {
+      "original": "The contemporary electric power system\u2014commonly referred to simply as a *power system*\u2014",
+      "replacement": "The contemporary electric power system (commonly called a *power system*)",
+      "reason": "Em dashes (\u2014) are banned under the \"NEVER\" tier; replacing with parentheses and removing \"simply\" to keep the clause concise."
+    },
+    {
+      "original": "evolved dramatically",
+      "replacement": "evolved",
+      "reason": "\"dramatically\" is a banned intensifier under the \"Prefer other words\" tier."
+    },
+    {
+      "original": "powerful forces",
+      "replacement": "drivers",
+      "reason": "\"Powerful forces\" is an inflated-symbolism phrase flagged as an AI-writing tell under \"Prefer other words.\""
+    },
+    {
+      "original": "are interconnected",
+      "replacement": "connect",
+      "reason": "\"Interconnected\" is a banned adjectival intensifier under the \"Prefer other words\" tier; simplifying to a direct verb."
+    },
+    {
+      "original": "socio\u2011technical",
+      "replacement": "socio-technical",
+      "reason": "The hyphen appears to be a non-ASCII character; replacing with a standard hyphen to comply with the NEVER rule on characters outside a standard US keyboard."
+    },
+    {
+      "original": "are rising rapidly",
+      "replacement": "have grown rapidly",
+      "reason": "\"Rising rapidly\" is an inflated, vague phrase flagged under \"Prefer other words\" as an AI-writing tell."
+    },
+    {
+      "original": "are often sited where",
+      "replacement": "are sited where",
+      "reason": "\"Often\" is a banned hedging marker under the \"Only when necessary\" tier."
+    },
+    {
+      "original": "can operate",
+      "replacement": "operate",
+      "reason": "\"Can\" is a banned hedging marker under the \"Only when necessary\" tier when describing a real capability."
+    },
+    {
+      "original": "are gaining favor",
+      "replacement": "are used",
+      "reason": "\"Gaining favor\" is a hedging construction under the \"Only when necessary\" tier."
+    },
+    {
+      "original": "provides operators with dynamic voltage and power\u2011flow regulation, enhancing",
+      "replacement": "lets operators regulate voltage and power flow dynamically, adding"
+    },
+    {
+      "original": "enables remote monitoring, demand response, and outage detection.",
+      "replacement": "let operators monitor demand and detect outages remotely."
+    },
+    {
+      "original": "allows for adaptive settings, self\u2011testing, and integration",
+      "replacement": "supports adaptive settings, self\u2011testing, and integration"
+    },
+    {
+      "original": "paving the way for",
+      "replacement": "enabling"
+    },
+    {
+      "original": "an array of protective and control devices",
+      "replacement": "protective and control devices"
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts."
+    },
+    {
+      "original": "a profound transformation",
+      "replacement": "a significant transformation"
+    },
+    {
+      "original": "seamlessly integrates",
+      "replacement": "integrates"
+    },
+    {
+      "original": "a more holistic energy system",
+      "replacement": "an integrated energy system"
+    },
+    {
+      "original": "a powerful force for change",
+      "replacement": "a powerful force for change"
+    }
+  ],
+  "malformed_edits": [
+    {
+      "original": "a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies (ICT)."
+    },
+    {
+      "original": "Ice storms still take lines out of service for days\u2014planners rewrite protection settings the next week they also file new interconnection studies."
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 21914,
+    "output": 6357,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 2555
+  },
+  "cost_usd": 0.0096441,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

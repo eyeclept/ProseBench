@@ -1,0 +1,65 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:06:07.479737+00:00",
+  "duration_s": 158.02290544001153,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\",\n      \"replacement\": \"Breeders select dwarfing alleles on purpose.\",\n      \"reason\": \"\\\"by accident\\\" is the ordinary general-knowledge antonym of \\\"on purpose,\\\" so the trailer adds nothing and should be cut.\"\n    },\n    {\n      \"original\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"replacement\": \"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, spatial packing is the C4 case, temporal packing is the CAM one.\",\n      \"reason\": \"\\\"close to the C4-versus-CAM split\\\" is a trailing clause tacked onto a sentence about regime classification; since distinguishing spatial from temporal packing is a domain-specific botanical distinction rather than ordinary knowledge, it doesn't qualify for simple deletion but the bolted-on structure still reads poorly and was removed.\"\n    },\n    {\n      \"original\": \"Conservation collections still accession landraces, rather than heirlooms.\",\n      \"replacement\": \"Conservation collections still accession landraces.\",\n      \"reason\": \"\\\"heirlooms\\\" is not an ordinary general-knowledge antonym of \\\"landraces\\\"\u2014both are specialized agricultural terms\u2014so this is a genuine distinction smuggled into a tacked-on clause that should be stated as its own affirmative sentence.\"\n    },\n    {\n      \"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\n      \"replacement\": \"Morphine is produced in Papaver somniferum latex.\",\n      \"reason\": \"\\\"the Pacific yew\\\" is not the ordinary general-knowledge antonym of \\\"Papaver somniferum\\\"\u2014these are domain-specific taxonomic names\u2014so the negation is a bolted-on clause that states redundant negative information already resolved by the affirmative clause.\"\n    },\n    {\n      \"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\",\n      \"replacement\": \"The construct was designed for chloroplast transformation.\",\n      \"reason\": \"\\\"nuclear transformation\\\" is not an ordinary general-knowledge antonym of \\\"chloroplast transformation\\\"\u2014both are specialized molecular biology techniques\u2014so this is a genuine distinction tacked on rather than given its own affirmative sentence.\"\n    },\n    {\n      \"original\": \"The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.\",\n      \"replacement\": \"The seedlings bolted in week 3\u2014the market rejected the entire lot.\",\n      \"reason\": \"\\\"they never formed heads\\\" is a trailing clause expressing a negation that adds information (the seedlings bolted but failed to form heads, which is distinct from simply bolting); \\\"they never formed heads\\\" is not an ordinary antonym of any preceding term, so this is a genuine distinction that needs its own sentence.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\"by accident\" is the ordinary general-knowledge antonym of \"on purpose,\" so the trailer adds nothing and should be cut."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "reason": "\"close to the C4-versus-CAM split\" is a trailing clause tacked onto a sentence about regime classification; since distinguishing spatial from temporal packing is a domain-specific botanical distinction rather than ordinary knowledge, it doesn't qualify for simple deletion but the bolted-on structure still reads poorly and was removed."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces.",
+      "reason": "\"heirlooms\" is not an ordinary general-knowledge antonym of \"landraces\"\u2014both are specialized agricultural terms\u2014so this is a genuine distinction smuggled into a tacked-on clause that should be stated as its own affirmative sentence."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "\"the Pacific yew\" is not the ordinary general-knowledge antonym of \"Papaver somniferum\"\u2014these are domain-specific taxonomic names\u2014so the negation is a bolted-on clause that states redundant negative information already resolved by the affirmative clause."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "\"nuclear transformation\" is not an ordinary general-knowledge antonym of \"chloroplast transformation\"\u2014both are specialized molecular biology techniques\u2014so this is a genuine distinction tacked on rather than given its own affirmative sentence."
+    },
+    {
+      "original": "The seedlings bolted in week 3 they never formed heads\u2014the market rejected the entire lot.",
+      "replacement": "The seedlings bolted in week 3\u2014the market rejected the entire lot.",
+      "reason": "\"they never formed heads\" is a trailing clause expressing a negation that adds information (the seedlings bolted but failed to form heads, which is distinct from simply bolting); \"they never formed heads\" is not an ordinary antonym of any preceding term, so this is a genuine distinction that needs its own sentence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20953,
+    "output": 3614,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 3526
+  },
+  "cost_usd": 0.00675695,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,66 @@
+{
+  "run_id": "R5_P2_r1",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:24:42.930714+00:00",
+  "duration_s": 157.03318047700003,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"has evolved dramatically to accommodate larger scales\", \"replacement\": null, \"reason\": \"Flag 'dramatically' for the author because the passage provides no number or evidence for the scale of evolution.\"}, {\"original\": \"so the retune significantly shortens frequency restoration.\", \"replacement\": \"so the retune shortens frequency restoration by 8 minutes.\", \"reason\": \"Replaces the vague intensifier with the 8-minute improvement implied by the 12-to-4-minute figures.\"}, {\"original\": \"Inertia still matters for the first few cycles after a trip, full stop.\", \"replacement\": \"Inertia still matters for the first few cycles after a trip.\", \"reason\": \"Removes the finality interjection 'full stop,' which adds no evidence.\"}, {\"original\": \"resistive losses (I\u00b2R) fall dramatically as current decreases\", \"replacement\": \"resistive losses (I\u00b2R) fall in proportion to the square of current\", \"reason\": \"Replaces the vague intensifier with the I\u00b2R square-law relationship.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.\", \"replacement\": \"The 345 kV reconductor reduces line losses by 5 percentage points, from 8 percent to 3 percent.\", \"reason\": \"Replaces 'significantly' with the stated 5-percentage-point reduction.\"}, {\"original\": \"Islanded operation is the only backup path for those hospitals, end of story.\", \"replacement\": \"Islanded operation is the only backup path for those hospitals.\", \"reason\": \"Removes 'end of story' because 'only' already carries the exclusivity.\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate larger scales",
+      "replacement": null,
+      "reason": "Flag 'dramatically' for the author because the passage provides no number or evidence for the scale of evolution."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune shortens frequency restoration by 8 minutes.",
+      "reason": "Replaces the vague intensifier with the 8-minute improvement implied by the 12-to-4-minute figures."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "Removes the finality interjection 'full stop,' which adds no evidence."
+    },
+    {
+      "original": "resistive losses (I\u00b2R) fall dramatically as current decreases",
+      "replacement": "resistive losses (I\u00b2R) fall in proportion to the square of current",
+      "reason": "Replaces the vague intensifier with the I\u00b2R square-law relationship."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "The 345 kV reconductor reduces line losses by 5 percentage points, from 8 percent to 3 percent.",
+      "reason": "Replaces 'significantly' with the stated 5-percentage-point reduction."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "Removes 'end of story' because 'only' already carries the exclusivity."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4255,
+    "output": 9951,
+    "cache_read": 15852,
+    "cache_write": 0,
+    "reasoning": 9577
+  },
+  "cost_usd": 0.02480063,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

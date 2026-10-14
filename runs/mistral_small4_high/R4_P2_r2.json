@@ -1,0 +1,300 @@
+{
+  "run_id": "R4_P2_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 4,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "dadd6a00a261be1b0fe1f55061cc96c151401a6bc3a021a0e164951984ae1cc9",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:46:06.216430+00:00",
+  "duration_s": 28.179397132000076,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"power system\u2014commonly referred to simply as a *power system*\u2014\", \"replacement\": \"power system; commonly referred to simply as a *power system*;\", \"reason\": \"Replace em dashes with semicolons for independent clauses\"},\n    {\"original\": \"**Generation** \u2013 Conversion\", \"replacement\": \"**Generation**: Conversion\", \"reason\": \"Replace em dash with colon after heading\"},\n    {\"original\": \"**Transmission & Distribution (T&D)** \u2013 Transport\", \"replacement\": \"**Transmission & Distribution (T&D)**: Transport\", \"reason\": \"Replace em dash with colon after heading\"},\n    {\"original\": \"**Control & Protection** \u2013 Continuous\", \"replacement\": \"**Control & Protection**: Continuous\", \"reason\": \"Replace em dash with colon after heading\"},\n    {\"original\": \"end\u2011users\", \"replacement\": \"end-users\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"high\u2011voltage\", \"replacement\": \"high-voltage\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"lower\u2011voltage\", \"replacement\": \"lower-voltage\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"socio\u2011technical\", \"replacement\": \"socio-technical\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"information\u2011communication\", \"replacement\": \"information-communication\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Forecasts still miss cloud-driven ramps\u2026\", \"replacement\": \"Forecasts still miss cloud-driven ramps...\", \"reason\": \"Replace ellipsis glyph with three periods\"},\n    {\"original\": \"Inverter\u2011Based Interface\", \"replacement\": \"Inverter-Based Interface\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"grid\u2011forming inverters\", \"replacement\": \"grid-forming inverters\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"utility\u2011scale\", \"replacement\": \"utility-scale\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"grid\u2011connected\", \"replacement\": \"grid-connected\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"13.8\u202fkV\", \"replacement\": \"13.8 kV\", \"reason\": \"Replace thin space with regular space\"},\n    {\"original\": \"115\u202fkV\", \"replacement\": \"115 kV\", \"reason\": \"Replace thin space with regular space\"},\n    {\"original\": \"345\u202fkV\", \"replacement\": \"345 kV\", \"reason\": \"Replace thin space with regular space\"},\n    {\"original\": \"765\u202fkV\", \"replacement\": \"765 kV\", \"reason\": \"Replace thin space with regular space\"},\n    {\"original\": \"1,200\u202fkV\", \"replacement\": \"1,200 kV\", \"replacement\": \"Replace thin space with regular space\"},\n    {\"original\": \"steel\u2011reinforced\", \"replacement\": \"steel-reinforced\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"High\u2011Voltage Direct Current\", \"replacement\": \"High-Voltage Direct Current\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"line\u2011commutated\", \"replacement\": \"line-commutated\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Voltage\u2011Sourced\", \"replacement\": \"Voltage-Sourced\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"long\u2011distance\", \"replacement\": \"long-distance\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"thyristor\u2011controlled\", \"replacement\": \"thyristor-controlled\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"step\u2011down transformers\", \"replacement\": \"step-down transformers\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"\\\"mesh\\\" or \\\"looped\\\" topologies\", \"replacement\": \"\\\"mesh\\\" or \\\"looped\\\" topologies\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"wide\u2011area protection\", \"replacement\": \"wide-area protection\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"inter\u2011regional grids\", \"replacement\": \"inter-regional grids\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"always\u2011on\", \"replacement\": \"always-on\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"large\u2011scale blackouts\", \"replacement\": \"large-scale blackouts\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.\", \"replacement\": \"Frozen wellheads cut gas supply. Thermal units then tripped on auxiliary freeze.\", \"reason\": \"Replace em dash with period for independent clauses\"},\n    {\"original\": \"Supply\u2011Demand Balancing\", \"replacement\": \"Supply-Demand Balancing\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"compressed\u2011air energy storage\", \"replacement\": \"compressed-air energy storage\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"battery\u2011energy\u2011storage systems\", \"replacement\": \"battery-energy-storage systems\", \"reason\": \"Replace en dashes with hyphens\"},\n    {\"original\": \"grid\u2011forming\\\" capabilities\", \"replacement\": \"grid-forming capabilities\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Cost\u2011reflective tariffs\", \"replacement\": \"Cost-reflective tariffs\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Cyber\u2011Physical Security\", \"replacement\": \"Cyber-Physical Security\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"defense\u2011in\u2011depth\\\" architectures\", \"replacement\": \"defense-in-depth architectures\", \"reason\": \"Replace en dashes with hyphens\"},\n    {\"original\": \"Real\u2011time anomaly detection\", \"replacement\": \"Real-time anomaly detection\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Wide\u2011Area Monitoring Systems\", \"replacement\": \"Wide-Area Monitoring Systems\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Long\u2011duration storage\", \"replacement\": \"Long-duration storage\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Lithium\u2011Ion Batteries\", \"replacement\": \"Lithium-Ion Batteries\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Zinc\u2011Bromine\", \"replacement\": \"Zinc-Bromine\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"gravity\u2011based systems\", \"replacement\": \"gravity-based systems\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Power\u2011to\u2011X (P2X)\", \"replacement\": \"Power-to-X (P2X)\", \"reason\": \"Replace en dashes with hyphens\"},\n    {\"original\": \"European Union\u2019s \u201cElectricity Interconnection\u201d\", \"replacement\": \"European Union's \\\"Electricity Interconnection\\\"\", \"reason\": \"Replace curly/smart quotes with straight quotes\"},\n    {\"original\": \"Multi\u2011terminal VSC\u2011HVDC converters\", \"replacement\": \"Multi-terminal VSC-HVDC converters\", \"reason\": \"Replace en dashes with hyphens\"},\n    {\"original\": \"Real\u2011Time Grid Operations\", \"replacement\": \"Real-Time Grid Operations\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"continent\u2011wide WAMS platform\", \"replacement\": \"continent-wide WAMS platform\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Artificial\u2011Intelligence\u2011Driven Operations\", \"replacement\": \"Artificial-Intelligence-Driven Operations\", \"reason\": \"Replace en dashes with hyphens\"},\n    {\"original\": \"self\u2011healing networks\", \"replacement\": \"self-healing networks\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"days\u2014planners rewrite protection settings the next week they also file new interconnection studies.\", \"replacement\": \"days. Planners rewrite protection settings the next week; they also file new interconnection studies.\", \"reason\": \"Replace em dash with period and add semicolon for clarity\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014",
+      "replacement": "power system; commonly referred to simply as a *power system*;",
+      "reason": "Replace em dashes with semicolons for independent clauses"
+    },
+    {
+      "original": "**Generation** \u2013 Conversion",
+      "replacement": "**Generation**: Conversion",
+      "reason": "Replace em dash with colon after heading"
+    },
+    {
+      "original": "**Transmission & Distribution (T&D)** \u2013 Transport",
+      "replacement": "**Transmission & Distribution (T&D)**: Transport",
+      "reason": "Replace em dash with colon after heading"
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous",
+      "replacement": "**Control & Protection**: Continuous",
+      "reason": "Replace em dash with colon after heading"
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "high\u2011voltage",
+      "replacement": "high-voltage",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "lower\u2011voltage",
+      "replacement": "lower-voltage",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "socio\u2011technical",
+      "replacement": "socio-technical",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "information\u2011communication",
+      "replacement": "information-communication",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Forecasts still miss cloud-driven ramps\u2026",
+      "replacement": "Forecasts still miss cloud-driven ramps...",
+      "reason": "Replace ellipsis glyph with three periods"
+    },
+    {
+      "original": "Inverter\u2011Based Interface",
+      "replacement": "Inverter-Based Interface",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "grid\u2011forming inverters",
+      "replacement": "grid-forming inverters",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "utility\u2011scale",
+      "replacement": "utility-scale",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "grid\u2011connected",
+      "replacement": "grid-connected",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "13.8\u202fkV",
+      "replacement": "13.8 kV",
+      "reason": "Replace thin space with regular space"
+    },
+    {
+      "original": "115\u202fkV",
+      "replacement": "115 kV",
+      "reason": "Replace thin space with regular space"
+    },
+    {
+      "original": "345\u202fkV",
+      "replacement": "345 kV",
+      "reason": "Replace thin space with regular space"
+    },
+    {
+      "original": "765\u202fkV",
+      "replacement": "765 kV",
+      "reason": "Replace thin space with regular space"
+    },
+    {
+      "original": "1,200\u202fkV",
+      "replacement": "Replace thin space with regular space"
+    },
+    {
+      "original": "steel\u2011reinforced",
+      "replacement": "steel-reinforced",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "High\u2011Voltage Direct Current",
+      "replacement": "High-Voltage Direct Current",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "line\u2011commutated",
+      "replacement": "line-commutated",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Voltage\u2011Sourced",
+      "replacement": "Voltage-Sourced",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "long\u2011distance",
+      "replacement": "long-distance",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "thyristor\u2011controlled",
+      "replacement": "thyristor-controlled",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "step\u2011down transformers",
+      "replacement": "step-down transformers",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "\"mesh\" or \"looped\" topologies",
+      "replacement": "\"mesh\" or \"looped\" topologies",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "wide\u2011area protection",
+      "replacement": "wide-area protection",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "inter\u2011regional grids",
+      "replacement": "inter-regional grids",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "always\u2011on",
+      "replacement": "always-on",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "large\u2011scale blackouts",
+      "replacement": "large-scale blackouts",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Frozen wellheads cut gas supply\u2014thermal units then tripped on auxiliary freeze.",
+      "replacement": "Frozen wellheads cut gas supply. Thermal units then tripped on auxiliary freeze.",
+      "reason": "Replace em dash with period for independent clauses"
+    },
+    {
+      "original": "Supply\u2011Demand Balancing",
+      "replacement": "Supply-Demand Balancing",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "compressed\u2011air energy storage",
+      "replacement": "compressed-air energy storage",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "battery\u2011energy\u2011storage systems",
+      "replacement": "battery-energy-storage systems",
+      "reason": "Replace en dashes with hyphens"
+    },
+    {
+      "original": "grid\u2011forming\" capabilities",
+      "replacement": "grid-forming capabilities",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Cost\u2011reflective tariffs",
+      "replacement": "Cost-reflective tariffs",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Cyber\u2011Physical Security",
+      "replacement": "Cyber-Physical Security",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "defense\u2011in\u2011depth\" architectures",
+      "replacement": "defense-in-depth architectures",
+      "reason": "Replace en dashes with hyphens"
+    },
+    {
+      "original": "Real\u2011time anomaly detection",
+      "replacement": "Real-time anomaly detection",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Wide\u2011Area Monitoring Systems",
+      "replacement": "Wide-Area Monitoring Systems",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Long\u2011duration storage",
+      "replacement": "Long-duration storage",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Lithium\u2011Ion Batteries",
+      "replacement": "Lithium-Ion Batteries",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Zinc\u2011Bromine",
+      "replacement": "Zinc-Bromine",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "gravity\u2011based systems",
+      "replacement": "gravity-based systems",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Power\u2011to\u2011X (P2X)",
+      "replacement": "Power-to-X (P2X)",
+      "reason": "Replace en dashes with hyphens"
+    },
+    {
+      "original": "European Union\u2019s \u201cElectricity Interconnection\u201d",
+      "replacement": "European Union's \"Electricity Interconnection\"",
+      "reason": "Replace curly/smart quotes with straight quotes"
+    },
+    {
+      "original": "Multi\u2011terminal VSC\u2011HVDC converters",
+      "replacement": "Multi-terminal VSC-HVDC converters",
+      "reason": "Replace en dashes with hyphens"
+    },
+    {
+      "original": "Real\u2011Time Grid Operations",
+      "replacement": "Real-Time Grid Operations",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "continent\u2011wide WAMS platform",
+      "replacement": "continent-wide WAMS platform",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Artificial\u2011Intelligence\u2011Driven Operations",
+      "replacement": "Artificial-Intelligence-Driven Operations",
+      "reason": "Replace en dashes with hyphens"
+    },
+    {
+      "original": "self\u2011healing networks",
+      "replacement": "self-healing networks",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "days\u2014planners rewrite protection settings the next week they also file new interconnection studies.",
+      "replacement": "days. Planners rewrite protection settings the next week; they also file new interconnection studies.",
+      "reason": "Replace em dash with period and add semicolon for clarity"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4542,
+    "output": 6352,
+    "cache_read": 16528,
+    "cache_write": 0,
+    "reasoning": 4459
+  },
+  "cost_usd": 0.00474042,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

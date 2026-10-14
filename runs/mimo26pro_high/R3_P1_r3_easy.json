@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r3_easy",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "505b3f7b549b233192a5083c1fb49de6c8316b4f72367cd7b9e26c8b2de0ce37",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:45:49.538514+00:00",
+  "duration_s": 120.16346041500219,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"Access checks default to fail-closed, rather than open.\",\"replacement\":\"Access checks default to fail-closed.\",\"reason\":\"The fail-closed/fail-open distinction is technical rather than ordinary knowledge, so it needs its own sentence \u2014 which the very next sentence already provides \u2014 making the tacked-on trailer redundant.\"},{\"original\":\"Those privilege limits are imposed on purpose, rather than by accident.\",\"replacement\":\"Those privilege limits are imposed on purpose.\",\"reason\":\"\\\"On purpose\\\" versus \\\"by accident\\\" is an ordinary-knowledge antonym pair, so the trailer adds nothing and is cut.\"}]}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "The fail-closed/fail-open distinction is technical rather than ordinary knowledge, so it needs its own sentence \u2014 which the very next sentence already provides \u2014 making the tacked-on trailer redundant."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "\"On purpose\" versus \"by accident\" is an ordinary-knowledge antonym pair, so the trailer adds nothing and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 17,
+    "output": 1078,
+    "cache_read": 19408,
+    "cache_write": 0,
+    "reasoning": 950
+  },
+  "cost_usd": 0.0010150388,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

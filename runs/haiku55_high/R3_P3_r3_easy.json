@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r3_easy",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:45:14.698887+00:00",
+  "duration_s": 19.44093062498723,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \", rather than by accident\", \"replacement\": \"\", \"reason\": \"\\\"By accident\\\" is the ordinary-knowledge antonym of \\\"on purpose,\\\" so the trailing clause adds nothing and is cut.\"}, {\"original\": \", not nuclear transformation.\", \"replacement\": \". It is built to insert genes into the chloroplast genome.\", \"reason\": \"The chloroplast-versus-nuclear distinction is domain-specific, so it is restated as a positive fact in its own sentence rather than tacked on as a negation.\"}, {\"original\": \", rather than heirlooms.\", \"replacement\": \". Landraces are locally adapted, traditionally grown crop populations.\", \"reason\": \"The landrace-versus-heirloom distinction is domain-specific, so it is stated as what landraces are in its own sentence.\"}]}",
+  "edits": [
+    {
+      "original": ", rather than by accident",
+      "replacement": "",
+      "reason": "\"By accident\" is the ordinary-knowledge antonym of \"on purpose,\" so the trailing clause adds nothing and is cut."
+    },
+    {
+      "original": ", not nuclear transformation.",
+      "replacement": ". It is built to insert genes into the chloroplast genome.",
+      "reason": "The chloroplast-versus-nuclear distinction is domain-specific, so it is restated as a positive fact in its own sentence rather than tacked on as a negation."
+    },
+    {
+      "original": ", rather than heirlooms.",
+      "replacement": ". Landraces are locally adapted, traditionally grown crop populations.",
+      "reason": "The landrace-versus-heirloom distinction is domain-specific, so it is stated as what landraces are in its own sentence."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 3067,
+    "cache_read": 31847,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0018523699999999999,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

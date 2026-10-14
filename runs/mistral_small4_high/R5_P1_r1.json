@@ -1,0 +1,55 @@
+{
+  "run_id": "R5_P1_r1",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 5,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "cb1c378a814f940821593397b20831f66cc864f3f899949ad2402ab26b8af483",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:16:31.190355+00:00",
+  "duration_s": 33.831269724003505,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \"creating \\\"attack surfaces\\\" that are dramatically broader than in the past.\",\n      \"replacement\": \"creating attack surfaces that now include everything from consumer IoT devices to industrial control systems\",\n      \"reason\": \"Replaced intensifier 'dramatically' with specific evidence\"\n    },\n    {\n      \"original\": \"The playbook change significantly reduces mean time to contain.\",\n      \"replacement\": \"The playbook change reduces mean time to contain from 18 hours to 3 hours\",\n      \"reason\": \"Replaced intensifier 'significantly' with quantified evidence\"\n    },\n    {\n      \"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\",\n      \"replacement\": \"Fail-closed is the only acceptable default for those checks.\",\n      \"reason\": \"Removed redundant intensifier 'end of story'\"\n    },\n    {\n      \"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\",\n      \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\",\n      \"reason\": \"Removed redundant intensifier 'full stop'\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "creating \"attack surfaces\" that are dramatically broader than in the past.",
+      "replacement": "creating attack surfaces that now include everything from consumer IoT devices to industrial control systems",
+      "reason": "Replaced intensifier 'dramatically' with specific evidence"
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change reduces mean time to contain from 18 hours to 3 hours",
+      "reason": "Replaced intensifier 'significantly' with quantified evidence"
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": "Fail-closed is the only acceptable default for those checks.",
+      "reason": "Removed redundant intensifier 'end of story'"
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "Removed redundant intensifier 'full stop'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19645,
+    "output": 645,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 393
+  },
+  "cost_usd": 0.00333375,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

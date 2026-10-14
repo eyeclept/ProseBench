@@ -1,0 +1,215 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:19:26.468385+00:00",
+  "duration_s": 110.32393919897731,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"Word count: \u2248 1,620\", \"replacement\": \"Word count: ~1,620\", \"reason\": \"The \u2248 glyph is outside a standard US keyboard; replaced with the ASCII tilde.\"},\n    {\"original\": \"extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates\", \"replacement\": \"extraordinary benefits, including speed, efficiency, and the democratization of knowledge, but it also creates\", \"reason\": \"Em dashes are banned; replaced with commas via a light restructure.\"},\n    {\"original\": \"the contemporary threat landscape\", \"replacement\": \"the contemporary threat environment\", \"reason\": \"Landscape in metaphorical use is on the banned list; environment is the plain alternative.\"},\n    {\"original\": \"### The Expanding Threat Landscape\", \"replacement\": \"### The Expanding Threat Environment\", \"reason\": \"Metaphorical landscape in a heading; swapped for the literal alternative.\"},\n    {\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": \"creating attack surfaces that are far broader than in the past\", \"reason\": \"Removes curly scare quotes around a coined term and the banned intensifier dramatically.\"},\n    {\"original\": \"limiting lateral movement\u2014a key tactic used by APT groups\", \"replacement\": \"limiting lateral movement, a key tactic used by APT groups\", \"reason\": \"Banned em dash replaced with a comma.\"},\n    {\"original\": \"leveraging machine\u2011learning models to flag\", \"replacement\": \"using machine\u2011learning models to flag\", \"reason\": \"Leverage is on the prefer-other-words verb list.\"},\n    {\"original\": \"For data at rest and in transit, robust encryption\", \"replacement\": \"For data at rest and in transit, strong encryption\", \"reason\": \"Robust is on the prefer-other-words adjective list.\"},\n    {\"original\": \"the outdated \u201ctrusted internal network\u201d paradigm\", \"replacement\": \"the outdated 'trusted internal network' paradigm\", \"reason\": \"Curly quotes replaced with straight ASCII quotes.\"},\n    {\"original\": \"mean time to contain\u2014the finance team uses\", \"replacement\": \"mean time to contain; the finance team uses\", \"reason\": \"Banned em dash replaced with a semicolon.\"},\n    {\"original\": \"which streamlines containment\", \"replacement\": \"which speeds containment\", \"reason\": \"Streamline is on the banned verb list.\"},\n    {\"original\": \"The playbook change significantly reduces mean time to contain.\", \"replacement\": \"The playbook change cut mean time to contain by 83 percent.\", \"reason\": \"Significantly is a banned intensifier; replaced with the concrete figure already established in the passage.\"},\n    {\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account for\", \"replacement\": \"Insider threats, whether malicious, negligent, or coerced, account for\", \"reason\": \"Paired em dashes replaced with commas.\"},\n    {\"original\": \"can foster complacency\", \"replacement\": \"can breed complacency\", \"reason\": \"Foster is on the banned verb list.\"},\n    {\"original\": \"such as the \u201cavailability heuristic,\u201d lead\", \"replacement\": \"such as the 'availability heuristic,' lead\", \"reason\": \"Curly quotes replaced with straight ASCII quotes.\"},\n    {\"original\": \"Moreover, strict role\u2011based access controls reduce\", \"replacement\": \"Strict role\u2011based access controls also reduce\", \"reason\": \"Moreover is on the banned transitions list; restructured with also.\"},\n    {\"original\": \"Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies\", \"replacement\": \"The rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns also amplifies\", \"reason\": \"Moreover is on the banned transitions list; restructured with also.\"},\n    {\"original\": \"The \u201cbug bounty\u201d model\", \"replacement\": \"The 'bug bounty' model\", \"reason\": \"Curly quotes replaced with straight ASCII quotes.\"},\n    {\"original\": \"fostering a collaborative security ecosystem\", \"replacement\": \"building a collaborative security community\", \"reason\": \"Both fostering and the metaphorical ecosystem are on the banned lists.\"},\n    {\"original\": \"a fragmented regulatory landscape that could hinder\", \"replacement\": \"a fragmented regulatory environment that could hinder\", \"reason\": \"Metaphorical landscape replaced with the plain alternative.\"},\n    {\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential\", \"replacement\": \"A balanced approach that combines transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms remains essential\", \"reason\": \"Paired em dashes removed by restructuring the sentence.\"},\n    {\"original\": \"United Nations\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Curly apostrophe replaced with a straight ASCII apostrophe.\"},\n    {\"original\": \"facilitate norm\u2011setting\", \"replacement\": \"support norm\u2011setting\", \"reason\": \"Facilitate is on the banned verb list.\"},\n    {\"original\": \"further bolster collective defense\", \"replacement\": \"further strengthen collective defense\", \"reason\": \"Bolster is on the banned verb list.\"},\n    {\"original\": \"new radios\u2014the SOC ingested\", \"replacement\": \"new radios; the SOC ingested\", \"reason\": \"Banned em dash replaced with a semicolon.\"},\n    {\"original\": \"Architecture** \u2013 Treat\", \"replacement\": \"Architecture** - Treat\", \"reason\": \"En dash replaced with an ASCII hyphen.\"},\n    {\"original\": \"Development** \u2013 Embed\", \"replacement\": \"Development** - Embed\", \"reason\": \"En dash replaced with an ASCII hyphen.\"},\n    {\"original\": \"Intelligence** \u2013 Leverage federated\", \"replacement\": \"Intelligence** - Use federated\", \"reason\": \"En dash replaced with an ASCII hyphen and the banned verb leverage replaced.\"},\n    {\"original\": \"Preparedness** \u2013 Begin\", \"replacement\": \"Preparedness** - Begin\", \"reason\": \"En dash replaced with an ASCII hyphen.\"},\n    {\"original\": \"Engineering** \u2013 Focus\", \"replacement\": \"Engineering** - Focus\", \"reason\": \"En dash replaced with an ASCII hyphen.\"},\n    {\"original\": \"will be pivotal for maintaining\", \"replacement\": \"will be central to maintaining\", \"reason\": \"Pivotal is on the prefer-other-words adjective list.\"},\n    {\"original\": \"rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize\", \"replacement\": \"rapid recovery capabilities, such as immutable backups, diversified cloud regions, and automated failover, to minimize\", \"reason\": \"Paired em dashes replaced with commas.\"},\n    {\"original\": \"with robust governance\", \"replacement\": \"with sound governance\", \"reason\": \"Robust is on the prefer-other-words adjective list.\"},\n    {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"The rapidly evolving threat environment, characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demands an integrated response\", \"reason\": \"Fixes the metaphorical landscape, paired em dashes, and the banned holistic in one span.\"},\n    {\"original\": \"Ultimately, the resilience\", \"replacement\": \"In the end, the resilience\", \"reason\": \"Ultimately is on the prefer-other-words intensifier list.\"},\n    {\"original\": \"process tree\u2026\", \"replacement\": \"process tree...\", \"reason\": \"Ellipsis glyph replaced with three ASCII periods.\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Word count: \u2248 1,620",
+      "replacement": "Word count: ~1,620",
+      "reason": "The \u2248 glyph is outside a standard US keyboard; replaced with the ASCII tilde."
+    },
+    {
+      "original": "extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates",
+      "replacement": "extraordinary benefits, including speed, efficiency, and the democratization of knowledge, but it also creates",
+      "reason": "Em dashes are banned; replaced with commas via a light restructure."
+    },
+    {
+      "original": "the contemporary threat landscape",
+      "replacement": "the contemporary threat environment",
+      "reason": "Landscape in metaphorical use is on the banned list; environment is the plain alternative."
+    },
+    {
+      "original": "### The Expanding Threat Landscape",
+      "replacement": "### The Expanding Threat Environment",
+      "reason": "Metaphorical landscape in a heading; swapped for the literal alternative."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "creating attack surfaces that are far broader than in the past",
+      "reason": "Removes curly scare quotes around a coined term and the banned intensifier dramatically."
+    },
+    {
+      "original": "limiting lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "limiting lateral movement, a key tactic used by APT groups",
+      "reason": "Banned em dash replaced with a comma."
+    },
+    {
+      "original": "leveraging machine\u2011learning models to flag",
+      "replacement": "using machine\u2011learning models to flag",
+      "reason": "Leverage is on the prefer-other-words verb list."
+    },
+    {
+      "original": "For data at rest and in transit, robust encryption",
+      "replacement": "For data at rest and in transit, strong encryption",
+      "reason": "Robust is on the prefer-other-words adjective list."
+    },
+    {
+      "original": "the outdated \u201ctrusted internal network\u201d paradigm",
+      "replacement": "the outdated 'trusted internal network' paradigm",
+      "reason": "Curly quotes replaced with straight ASCII quotes."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses",
+      "replacement": "mean time to contain; the finance team uses",
+      "reason": "Banned em dash replaced with a semicolon."
+    },
+    {
+      "original": "which streamlines containment",
+      "replacement": "which speeds containment",
+      "reason": "Streamline is on the banned verb list."
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change cut mean time to contain by 83 percent.",
+      "reason": "Significantly is a banned intensifier; replaced with the concrete figure already established in the passage."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account for",
+      "replacement": "Insider threats, whether malicious, negligent, or coerced, account for",
+      "reason": "Paired em dashes replaced with commas."
+    },
+    {
+      "original": "can foster complacency",
+      "replacement": "can breed complacency",
+      "reason": "Foster is on the banned verb list."
+    },
+    {
+      "original": "such as the \u201cavailability heuristic,\u201d lead",
+      "replacement": "such as the 'availability heuristic,' lead",
+      "reason": "Curly quotes replaced with straight ASCII quotes."
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce",
+      "replacement": "Strict role\u2011based access controls also reduce",
+      "reason": "Moreover is on the banned transitions list; restructured with also."
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns amplifies",
+      "replacement": "The rise of deep\u2011fake technology and AI\u2011driven social engineering campaigns also amplifies",
+      "reason": "Moreover is on the banned transitions list; restructured with also."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model",
+      "replacement": "The 'bug bounty' model",
+      "reason": "Curly quotes replaced with straight ASCII quotes."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "building a collaborative security community",
+      "reason": "Both fostering and the metaphorical ecosystem are on the banned lists."
+    },
+    {
+      "original": "a fragmented regulatory landscape that could hinder",
+      "replacement": "a fragmented regulatory environment that could hinder",
+      "reason": "Metaphorical landscape replaced with the plain alternative."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential",
+      "replacement": "A balanced approach that combines transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms remains essential",
+      "reason": "Paired em dashes removed by restructuring the sentence."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Curly apostrophe replaced with a straight ASCII apostrophe."
+    },
+    {
+      "original": "facilitate norm\u2011setting",
+      "replacement": "support norm\u2011setting",
+      "reason": "Facilitate is on the banned verb list."
+    },
+    {
+      "original": "further bolster collective defense",
+      "replacement": "further strengthen collective defense",
+      "reason": "Bolster is on the banned verb list."
+    },
+    {
+      "original": "new radios\u2014the SOC ingested",
+      "replacement": "new radios; the SOC ingested",
+      "reason": "Banned em dash replaced with a semicolon."
+    },
+    {
+      "original": "Architecture** \u2013 Treat",
+      "replacement": "Architecture** - Treat",
+      "reason": "En dash replaced with an ASCII hyphen."
+    },
+    {
+      "original": "Development** \u2013 Embed",
+      "replacement": "Development** - Embed",
+      "reason": "En dash replaced with an ASCII hyphen."
+    },
+    {
+      "original": "Intelligence** \u2013 Leverage federated",
+      "replacement": "Intelligence** - Use federated",
+      "reason": "En dash replaced with an ASCII hyphen and the banned verb leverage replaced."
+    },
+    {
+      "original": "Preparedness** \u2013 Begin",
+      "replacement": "Preparedness** - Begin",
+      "reason": "En dash replaced with an ASCII hyphen."
+    },
+    {
+      "original": "Engineering** \u2013 Focus",
+      "replacement": "Engineering** - Focus",
+      "reason": "En dash replaced with an ASCII hyphen."
+    },
+    {
+      "original": "will be pivotal for maintaining",
+      "replacement": "will be central to maintaining",
+      "reason": "Pivotal is on the prefer-other-words adjective list."
+    },
+    {
+      "original": "rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "rapid recovery capabilities, such as immutable backups, diversified cloud regions, and automated failover, to minimize",
+      "reason": "Paired em dashes replaced with commas."
+    },
+    {
+      "original": "with robust governance",
+      "replacement": "with sound governance",
+      "reason": "Robust is on the prefer-other-words adjective list."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "The rapidly evolving threat environment, characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks, demands an integrated response",
+      "reason": "Fixes the metaphorical landscape, paired em dashes, and the banned holistic in one span."
+    },
+    {
+      "original": "Ultimately, the resilience",
+      "replacement": "In the end, the resilience",
+      "reason": "Ultimately is on the prefer-other-words intensifier list."
+    },
+    {
+      "original": "process tree\u2026",
+      "replacement": "process tree...",
+      "reason": "Ellipsis glyph replaced with three ASCII periods."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19676,
+    "output": 11152,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 9536
+  },
+  "cost_usd": 0.0085274,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

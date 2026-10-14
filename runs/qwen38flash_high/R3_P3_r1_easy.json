@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:52:52.448532+00:00",
+  "duration_s": 29.846780258987565,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"'By accident' is the ordinary-knowledge antonym of 'on purpose' \u2014 the trailer adds nothing, so cut it (matches the WRONG/RIGHT pair in the rule verbatim).\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": null, \"reason\": \"Escalation per rule: the trailer contrasts 'landraces' with 'heirlooms,' terms of art whose relationship I cannot confidently place on either side of the ordinary-knowledge test \u2014 I'm unsure whether 'heirloom' counts as the ordinary antonym of 'landrace' for a general reader or a genuine domain distinction that would need its own sentence. Flagging rather than cutting or rewriting.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation; it was not intended for insertion into the nuclear genome.\", \"reason\": \"Trailing 'not X' clause carrying a genuine, checkable distinction (chloroplast vs. nuclear integration \u2014 different engineering routes with different inheritance and containment properties, not common-knowledge antonyms), so it is re-stated as its own fact rather than cut. If you consider 'nuclear transformation' ordinary knowledge, this instead reduces to a simple cut.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'By accident' is the ordinary-knowledge antonym of 'on purpose' \u2014 the trailer adds nothing, so cut it (matches the WRONG/RIGHT pair in the rule verbatim)."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": null,
+      "reason": "Escalation per rule: the trailer contrasts 'landraces' with 'heirlooms,' terms of art whose relationship I cannot confidently place on either side of the ordinary-knowledge test \u2014 I'm unsure whether 'heirloom' counts as the ordinary antonym of 'landrace' for a general reader or a genuine domain distinction that would need its own sentence. Flagging rather than cutting or rewriting."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation; it was not intended for insertion into the nuclear genome.",
+      "reason": "Trailing 'not X' clause carrying a genuine, checkable distinction (chloroplast vs. nuclear integration \u2014 different engineering routes with different inheritance and containment properties, not common-knowledge antonyms), so it is re-stated as its own fact rather than cut. If you consider 'nuclear transformation' ordinary knowledge, this instead reduces to a simple cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4205,
+    "output": 1069,
+    "cache_read": 16640,
+    "cache_write": 0,
+    "reasoning": 756
+  },
+  "cost_usd": 0.00139942,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

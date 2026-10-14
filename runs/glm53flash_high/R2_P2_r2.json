@@ -1,0 +1,60 @@
+{
+  "run_id": "R2_P2_r2",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:52:10.552107+00:00",
+  "duration_s": 11.516310093022184,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\", \"replacement\": \"The architecture of a power system is therefore a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).\", \"reason\": \"Deleting the 'not merely a physical infrastructure' clause loses nothing; the positive half states the full claim on its own.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve.\", \"reason\": \"The 'rather than' clause is a padded negation; 'Operators procured spinning reserve' carries the same information.\"}, {\"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\", \"replacement\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes.\", \"reason\": \"The trailing clause merely restates the 12-to-4-minute fact, adding no new information.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"In the Texas failure, frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"reason\": \"The negative half is a windup; the positive clause alone states the actual cause of the lost megawatts.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"'Rather than by accident' is a filler negation; the positive half alone makes the claim.\"}]}\n```",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "replacement": "The architecture of a power system is therefore a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies (ICT).",
+      "reason": "Deleting the 'not merely a physical infrastructure' clause loses nothing; the positive half states the full claim on its own."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The 'rather than' clause is a padded negation; 'Operators procured spinning reserve' carries the same information."
+    },
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes.",
+      "reason": "The trailing clause merely restates the 12-to-4-minute fact, adding no new information."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "In the Texas failure, frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative half is a windup; the positive clause alone states the actual cause of the lost megawatts."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'Rather than by accident' is a filler negation; the positive half alone makes the claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19924,
+    "output": 1888,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 1487
+  },
+  "cost_usd": 0.0039326,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

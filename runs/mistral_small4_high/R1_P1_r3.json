@@ -1,0 +1,95 @@
+{
+  "run_id": "R1_P1_r3",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:22:13.073927+00:00",
+  "duration_s": 38.42127619602252,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n    \"original\": \"Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions\",\n    \"replacement\": \"Cybersecurity Today: Challenges, Strategies, and Future Directions\",\n    \"reason\": \"Replace banned phrase 'in the Digital Age' with 'Today'\"\n    },\n    {\n    \"original\": \"Moreover, the rise of deep\u2011fake technology\",\n    \"replacement\": \"Additionally, the rise of deep\u2011fake technology\",\n    \"reason\": \"Replace banned transition 'Moreover' with 'Additionally'\"\n    },\n    {\n    \"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.\",\n    \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, cutting containment time.\",\n    \"reason\": \"Replace banned word 'streamlines' with 'cutting'\"\n    },\n    {\n    \"original\": \"The playbook change significantly reduces mean time to contain.\",\n    \"replacement\": \"The playbook change cuts mean time to contain from 18 hours to 3 hours.\",\n    \"reason\": \"Replace banned phrase 'significantly reduces' with specific metric\"\n    },\n    {\n    \"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past.\",\n    \"replacement\": \"creating \u201cattack surfaces\u201d that are far broader than in the past.\",\n    \"reason\": \"Replace banned intensifier 'dramatically' with 'far'\"\n    },\n    {\n    \"original\": \"Moreover, strict role\u2011based access controls reduce the damage potential\",\n    \"replacement\": \"Additionally, strict role\u2011based access controls reduce the damage potential\",\n    \"reason\": \"Replace banned transition 'Moreover' with 'Additionally'\"\n    },\n    {\n    \"original\": \"Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.\",\n    \"replacement\": \"Integrating these emerging tools wisely is essential for maintaining a technological edge against increasingly sophisticated adversaries.\",\n    \"reason\": \"Replace banned word 'pivotal' with 'essential'\"\n    },\n    {\n    \"original\": \"Moreover, geopolitical tensions sometimes impede data sharing\",\n    \"replacement\": \"Additionally, geopolitical tensions sometimes impede data sharing\",\n    \"reason\": \"Replace banned transition 'Moreover' with 'Additionally'\"\n    },\n    {\n    \"original\": \"By intertwining technological innovation with robust governance, continuous education, and global cooperation,\",\n    \"replacement\": \"By combining technological innovation with strong governance, continuous education, and global cooperation,\",\n    \"reason\": \"Replace banned word 'robust' with 'strong' and 'intertwining' with 'combining'\"\n    },\n    {\n    \"original\": \"Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities prior to deployment.\",\n    \"replacement\": \"Embed security testing\u2014static and dynamic analysis and a detailed software-bill of materials\u2014early in the software development lifecycle, reducing vulnerabilities before deployment.\",\n    \"reason\": \"Replace banned phrase 'prior to' with 'before' and 'comprehensive' with 'detailed'\"\n    },\n    {\n    \"original\": \"Focus on rapid recovery capabilities\u2014in terms of immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\",\n    \"replacement\": \"Focus on rapid recovery capabilities\u2014such as immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\",\n    \"reason\": \"Replace banned phrase 'in terms of' with 'such as'\"\n    },\n    {\n    \"original\": \"demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\",\n    \"replacement\": \"demands a complete response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.\",\n    \"reason\": \"Replace banned word 'holistic' with 'complete'\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "Cybersecurity in the Digital Age: Challenges, Strategies, and Future Directions",
+      "replacement": "Cybersecurity Today: Challenges, Strategies, and Future Directions",
+      "reason": "Replace banned phrase 'in the Digital Age' with 'Today'"
+    },
+    {
+      "original": "Moreover, the rise of deep\u2011fake technology",
+      "replacement": "Additionally, the rise of deep\u2011fake technology",
+      "reason": "Replace banned transition 'Moreover' with 'Additionally'"
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, cutting containment time.",
+      "reason": "Replace banned word 'streamlines' with 'cutting'"
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain.",
+      "replacement": "The playbook change cuts mean time to contain from 18 hours to 3 hours.",
+      "reason": "Replace banned phrase 'significantly reduces' with specific metric"
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past.",
+      "replacement": "creating \u201cattack surfaces\u201d that are far broader than in the past.",
+      "reason": "Replace banned intensifier 'dramatically' with 'far'"
+    },
+    {
+      "original": "Moreover, strict role\u2011based access controls reduce the damage potential",
+      "replacement": "Additionally, strict role\u2011based access controls reduce the damage potential",
+      "reason": "Replace banned transition 'Moreover' with 'Additionally'"
+    },
+    {
+      "original": "Integrating these emerging tools wisely will be pivotal for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "replacement": "Integrating these emerging tools wisely is essential for maintaining a technological edge against increasingly sophisticated adversaries.",
+      "reason": "Replace banned word 'pivotal' with 'essential'"
+    },
+    {
+      "original": "Moreover, geopolitical tensions sometimes impede data sharing",
+      "replacement": "Additionally, geopolitical tensions sometimes impede data sharing",
+      "reason": "Replace banned transition 'Moreover' with 'Additionally'"
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation,",
+      "replacement": "By combining technological innovation with strong governance, continuous education, and global cooperation,",
+      "reason": "Replace banned word 'robust' with 'strong' and 'intertwining' with 'combining'"
+    },
+    {
+      "original": "Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities prior to deployment.",
+      "replacement": "Embed security testing\u2014static and dynamic analysis and a detailed software-bill of materials\u2014early in the software development lifecycle, reducing vulnerabilities before deployment.",
+      "reason": "Replace banned phrase 'prior to' with 'before' and 'comprehensive' with 'detailed'"
+    },
+    {
+      "original": "Focus on rapid recovery capabilities\u2014in terms of immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "replacement": "Focus on rapid recovery capabilities\u2014such as immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "reason": "Replace banned phrase 'in terms of' with 'such as'"
+    },
+    {
+      "original": "demands a holistic response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "replacement": "demands a complete response that blends technical controls, strong governance, a vigilant workforce, and collaborative international frameworks.",
+      "reason": "Replace banned word 'holistic' with 'complete'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18,
+    "output": 7451,
+    "cache_read": 20800,
+    "cache_write": 0,
+    "reasoning": 6598
+  },
+  "cost_usd": 0.0047853,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,320 @@
+{
+  "run_id": "R4_P3_r3",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:41:35.372402+00:00",
+  "duration_s": 38.93611815600889,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[\n{\"original\":\"not merely academic\u2014it is essential\",\"replacement\":\"not merely academic; it is essential\",\"reason\":\"Em dash joins two independent clauses, so a semicolon replaces it.\"},\n{\"original\":\"well\u2011being\",\"replacement\":\"well-being\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"discipline\u2019s contemporary\",\"replacement\":\"discipline's contemporary\",\"reason\":\"Curly apostrophe replaced with a straight one.\"},\n{\"original\":\"(c. 371\u2013287 BC)\",\"replacement\":\"(c. 371-287 BC)\",\"reason\":\"En dash in a range becomes a hyphen.\"},\n{\"original\":\"\u201cfather of botany\u201d\",\"replacement\":\"\\\"father of botany\\\"\",\"reason\":\"Curly quotes replaced with straight quotes.\"},\n{\"original\":\"term \u201ccell.\u201d\",\"replacement\":\"term \\\"cell.\\\"\",\"reason\":\"Curly quotes replaced with straight quotes.\"},\n{\"original\":\"high\u2011throughput\",\"replacement\":\"high-throughput\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"undetermined\u2026 until\",\"replacement\":\"undetermined... until\",\"reason\":\"Ellipsis glyph replaced with three periods.\"},\n{\"original\":\"plasmodesmata\u2014microscopic channels\",\"replacement\":\"plasmodesmata, microscopic channels\",\"reason\":\"Em dash introducing an appositive becomes a comma.\"},\n{\"original\":\"stomata\u2014pores that\",\"replacement\":\"stomata, pores that\",\"reason\":\"Em dash introducing an appositive becomes a comma.\"},\n{\"original\":\"niches\u2014from desert\",\"replacement\":\"niches, from desert\",\"reason\":\"Em dash introducing a trailing phrase becomes a comma.\"},\n{\"original\":\"**light\u2011dependent reactions**\",\"replacement\":\"**light-dependent reactions**\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"and the **Calvin\u2011Benson cycle**\",\"replacement\":\"and the **Calvin-Benson cycle**\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb\",\"replacement\":\"pigment molecules, chiefly chlorophyll a, chlorophyll b, and carotenoids, absorb\",\"reason\":\"Paired em dashes around a parenthetical become commas.\"},\n{\"original\":\"by\u2011product\",\"replacement\":\"by-product\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"in the Calvin\u2011Benson cycle within\",\"replacement\":\"in the Calvin-Benson cycle within\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"ribulose\u20111,5\u2011bisphosphate\",\"replacement\":\"ribulose-1,5-bisphosphate\",\"reason\":\"Non-breaking hyphens replaced with plain ASCII hyphens.\"},\n{\"original\":\"3\u2011phosphoglycerate\",\"replacement\":\"3-phosphoglycerate\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"glyceraldehyde\u20113\u2011phosphate\",\"replacement\":\"glyceraldehyde-3-phosphate\",\"reason\":\"Non-breaking hyphens replaced with plain ASCII hyphens.\"},\n{\"original\":\"**Algae** \u2013 Primarily\",\"replacement\":\"**Algae** - Primarily\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Bryophytes** \u2013 Non\u2011vascular\",\"replacement\":\"**Bryophytes** - Non-vascular\",\"reason\":\"En dash and non-breaking hyphen replaced with ASCII hyphens.\"},\n{\"original\":\"**Pteridophytes** \u2013 Seedless\",\"replacement\":\"**Pteridophytes** - Seedless\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Gymnosperms** \u2013 \u201cNaked seed\u201d plants\",\"replacement\":\"**Gymnosperms** - \\\"Naked seed\\\" plants\",\"reason\":\"En dash and curly quotes replaced with ASCII equivalents.\"},\n{\"original\":\"**Angiosperms** \u2013 Flowering\",\"replacement\":\"**Angiosperms** - Flowering\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are\",\"replacement\":\"traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are\",\"reason\":\"Curly quotes replaced with straight quotes.\"},\n{\"original\":\"never formed heads\u2014the market\",\"replacement\":\"never formed heads; the market\",\"reason\":\"Em dash joins two independent clauses, so a semicolon replaces it.\"},\n{\"original\":\"Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account\",\"replacement\":\"Staple crops (wheat, rice, maize, sorghum, and millet) account\",\"reason\":\"Paired em dashes around a list restructured with parentheses.\"},\n{\"original\":\"high\u2011yielding, disease\u2011resistant\",\"replacement\":\"high-yielding, disease-resistant\",\"reason\":\"Non-breaking hyphens replaced with plain ASCII hyphens.\"},\n{\"original\":\"marker\u2011assisted\",\"replacement\":\"marker-assisted\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"metabolites\u2014alkaloids, terpenoids, phenolics\u2014for\",\"replacement\":\"metabolites (alkaloids, terpenoids, phenolics) for\",\"reason\":\"Paired em dashes around a list restructured with parentheses.\"},\n{\"original\":\"carbon\u2011sequestering\",\"replacement\":\"carbon-sequestering\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"pathways\u2014areas where\",\"replacement\":\"pathways, areas where\",\"reason\":\"Em dash introducing a trailing fragment becomes a comma.\"},\n{\"original\":\"Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate\",\"replacement\":\"Mycorrhizal associations, symbiotic relationships between plant roots and fungi, facilitate\",\"reason\":\"Paired em dashes around a parenthetical become commas.\"},\n{\"original\":\"non\u2011material\",\"replacement\":\"non-material\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"next\u2011generation\",\"replacement\":\"next-generation\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"high\u2011dimensional\",\"replacement\":\"high-dimensional\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"high\u2011level\",\"replacement\":\"high-level\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"organelle\u2019s\",\"replacement\":\"organelle's\",\"reason\":\"Curly apostrophe replaced with a straight one.\"},\n{\"original\":\"Climate\u2011Resilient Agriculture\",\"replacement\":\"Climate-Resilient Agriculture\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is\",\"replacement\":\"**stress memory**, the ability of plants to \\\"remember\\\" prior exposure to drought or heat and respond more robustly upon re-encounter, is\",\"reason\":\"Paired em dashes become commas; curly quotes and non-breaking hyphen replaced with ASCII.\"},\n{\"original\":\"Plant\u2013Microbe Interactions\",\"replacement\":\"Plant-Microbe Interactions\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"nitrogen\u2011fixing\",\"replacement\":\"nitrogen-fixing\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers\",\"replacement\":\"microbes, through signaling molecules like strigolactones and flavonoids, offers\",\"reason\":\"Paired em dashes around a parenthetical become commas.\"},\n{\"original\":\"**Biodiversity Loss** \u2013 Habitat\",\"replacement\":\"**Biodiversity Loss** - Habitat\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Intellectual Property and Biopiracy** \u2013 The\",\"replacement\":\"**Intellectual Property and Biopiracy** - The\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"benefit\u2011sharing\",\"replacement\":\"benefit-sharing\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"**Gene Editing Governance** \u2013 CRISPR\u2011based\",\"replacement\":\"**Gene Editing Governance** - CRISPR-based\",\"reason\":\"En dash and non-breaking hyphen replaced with ASCII hyphens.\"},\n{\"original\":\"**Climate Change Feedbacks** \u2013 As\",\"replacement\":\"**Climate Change Feedbacks** - As\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"socio\u2011economic\",\"replacement\":\"socio-economic\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"**Carbon Sequestration** \u2013 Through\",\"replacement\":\"**Carbon Sequestration** - Through\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Soil Formation and Stabilization** \u2013 Root\",\"replacement\":\"**Soil Formation and Stabilization** - Root\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Hydrological Regulation** \u2013 Vegetation\",\"replacement\":\"**Hydrological Regulation** - Vegetation\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Habitat Provision** \u2013 Plants\",\"replacement\":\"**Habitat Provision** - Plants\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"**Cultural and Aesthetic Values** \u2013 Gardens\",\"replacement\":\"**Cultural and Aesthetic Values** - Gardens\",\"reason\":\"En dash replaced with a hyphen.\"},\n{\"original\":\"closed\u2011loop\",\"replacement\":\"closed-loop\",\"reason\":\"Non-breaking hyphen replaced with a plain ASCII hyphen.\"},\n{\"original\":\"**\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will\",\"replacement\":\"**\\\"climate-smart\\\" plants**, species engineered or selected to thrive under future climatic regimes while delivering ecosystem services, will\",\"reason\":\"Paired em dashes become commas; curly quotes and non-breaking hyphen replaced with ASCII.\"},\n{\"original\":\"humanity\u2019s actions\",\"replacement\":\"humanity's actions\",\"reason\":\"Curly apostrophe replaced with a straight one.\"}\n]}",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Em dash joins two independent clauses, so a semicolon replaces it."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "discipline\u2019s contemporary",
+      "replacement": "discipline's contemporary",
+      "reason": "Curly apostrophe replaced with a straight one."
+    },
+    {
+      "original": "(c. 371\u2013287 BC)",
+      "replacement": "(c. 371-287 BC)",
+      "reason": "En dash in a range becomes a hyphen."
+    },
+    {
+      "original": "\u201cfather of botany\u201d",
+      "replacement": "\"father of botany\"",
+      "reason": "Curly quotes replaced with straight quotes."
+    },
+    {
+      "original": "term \u201ccell.\u201d",
+      "replacement": "term \"cell.\"",
+      "reason": "Curly quotes replaced with straight quotes."
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined... until",
+      "reason": "Ellipsis glyph replaced with three periods."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic channels",
+      "replacement": "plasmodesmata, microscopic channels",
+      "reason": "Em dash introducing an appositive becomes a comma."
+    },
+    {
+      "original": "stomata\u2014pores that",
+      "replacement": "stomata, pores that",
+      "reason": "Em dash introducing an appositive becomes a comma."
+    },
+    {
+      "original": "niches\u2014from desert",
+      "replacement": "niches, from desert",
+      "reason": "Em dash introducing a trailing phrase becomes a comma."
+    },
+    {
+      "original": "**light\u2011dependent reactions**",
+      "replacement": "**light-dependent reactions**",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "and the **Calvin\u2011Benson cycle**",
+      "replacement": "and the **Calvin-Benson cycle**",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb",
+      "replacement": "pigment molecules, chiefly chlorophyll a, chlorophyll b, and carotenoids, absorb",
+      "reason": "Paired em dashes around a parenthetical become commas."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "in the Calvin\u2011Benson cycle within",
+      "replacement": "in the Calvin-Benson cycle within",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "Non-breaking hyphens replaced with plain ASCII hyphens."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Non-breaking hyphens replaced with plain ASCII hyphens."
+    },
+    {
+      "original": "**Algae** \u2013 Primarily",
+      "replacement": "**Algae** - Primarily",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Bryophytes** \u2013 Non\u2011vascular",
+      "replacement": "**Bryophytes** - Non-vascular",
+      "reason": "En dash and non-breaking hyphen replaced with ASCII hyphens."
+    },
+    {
+      "original": "**Pteridophytes** \u2013 Seedless",
+      "replacement": "**Pteridophytes** - Seedless",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Gymnosperms** \u2013 \u201cNaked seed\u201d plants",
+      "replacement": "**Gymnosperms** - \"Naked seed\" plants",
+      "reason": "En dash and curly quotes replaced with ASCII equivalents."
+    },
+    {
+      "original": "**Angiosperms** \u2013 Flowering",
+      "replacement": "**Angiosperms** - Flowering",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are",
+      "replacement": "traditional \"monocot\" group is monophyletic while \"dicots\" are",
+      "reason": "Curly quotes replaced with straight quotes."
+    },
+    {
+      "original": "never formed heads\u2014the market",
+      "replacement": "never formed heads; the market",
+      "reason": "Em dash joins two independent clauses, so a semicolon replaces it."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account",
+      "replacement": "Staple crops (wheat, rice, maize, sorghum, and millet) account",
+      "reason": "Paired em dashes around a list restructured with parentheses."
+    },
+    {
+      "original": "high\u2011yielding, disease\u2011resistant",
+      "replacement": "high-yielding, disease-resistant",
+      "reason": "Non-breaking hyphens replaced with plain ASCII hyphens."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "metabolites\u2014alkaloids, terpenoids, phenolics\u2014for",
+      "replacement": "metabolites (alkaloids, terpenoids, phenolics) for",
+      "reason": "Paired em dashes around a list restructured with parentheses."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "pathways\u2014areas where",
+      "replacement": "pathways, areas where",
+      "reason": "Em dash introducing a trailing fragment becomes a comma."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate",
+      "replacement": "Mycorrhizal associations, symbiotic relationships between plant roots and fungi, facilitate",
+      "reason": "Paired em dashes around a parenthetical become commas."
+    },
+    {
+      "original": "non\u2011material",
+      "replacement": "non-material",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "high\u2011dimensional",
+      "replacement": "high-dimensional",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "high\u2011level",
+      "replacement": "high-level",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "organelle\u2019s",
+      "replacement": "organelle's",
+      "reason": "Curly apostrophe replaced with a straight one."
+    },
+    {
+      "original": "Climate\u2011Resilient Agriculture",
+      "replacement": "Climate-Resilient Agriculture",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is",
+      "replacement": "**stress memory**, the ability of plants to \"remember\" prior exposure to drought or heat and respond more robustly upon re-encounter, is",
+      "reason": "Paired em dashes become commas; curly quotes and non-breaking hyphen replaced with ASCII."
+    },
+    {
+      "original": "Plant\u2013Microbe Interactions",
+      "replacement": "Plant-Microbe Interactions",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "nitrogen\u2011fixing",
+      "replacement": "nitrogen-fixing",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "microbes\u2014through signaling molecules like strigolactones and flavonoids\u2014offers",
+      "replacement": "microbes, through signaling molecules like strigolactones and flavonoids, offers",
+      "reason": "Paired em dashes around a parenthetical become commas."
+    },
+    {
+      "original": "**Biodiversity Loss** \u2013 Habitat",
+      "replacement": "**Biodiversity Loss** - Habitat",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Intellectual Property and Biopiracy** \u2013 The",
+      "replacement": "**Intellectual Property and Biopiracy** - The",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "benefit\u2011sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "**Gene Editing Governance** \u2013 CRISPR\u2011based",
+      "replacement": "**Gene Editing Governance** - CRISPR-based",
+      "reason": "En dash and non-breaking hyphen replaced with ASCII hyphens."
+    },
+    {
+      "original": "**Climate Change Feedbacks** \u2013 As",
+      "replacement": "**Climate Change Feedbacks** - As",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "socio\u2011economic",
+      "replacement": "socio-economic",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "**Carbon Sequestration** \u2013 Through",
+      "replacement": "**Carbon Sequestration** - Through",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Soil Formation and Stabilization** \u2013 Root",
+      "replacement": "**Soil Formation and Stabilization** - Root",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Hydrological Regulation** \u2013 Vegetation",
+      "replacement": "**Hydrological Regulation** - Vegetation",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Habitat Provision** \u2013 Plants",
+      "replacement": "**Habitat Provision** - Plants",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "**Cultural and Aesthetic Values** \u2013 Gardens",
+      "replacement": "**Cultural and Aesthetic Values** - Gardens",
+      "reason": "En dash replaced with a hyphen."
+    },
+    {
+      "original": "closed\u2011loop",
+      "replacement": "closed-loop",
+      "reason": "Non-breaking hyphen replaced with a plain ASCII hyphen."
+    },
+    {
+      "original": "**\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will",
+      "replacement": "**\"climate-smart\" plants**, species engineered or selected to thrive under future climatic regimes while delivering ecosystem services, will",
+      "reason": "Paired em dashes become commas; curly quotes and non-breaking hyphen replaced with ASCII."
+    },
+    {
+      "original": "humanity\u2019s actions",
+      "replacement": "humanity's actions",
+      "reason": "Curly apostrophe replaced with a straight one."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 6833,
+    "cache_read": 31796,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0715176,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

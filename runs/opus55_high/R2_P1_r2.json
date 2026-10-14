@@ -1,0 +1,65 @@
+{
+  "run_id": "R2_P1_r2",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:40:29.049679+00:00",
+  "duration_s": 17.860321187996306,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"Technical tools cannot succeed in isolation; they require clear policies\", \"replacement\": \"Technical tools require clear policies\", \"reason\": \"The 'cannot succeed in isolation' half is windup, and the positive half alone makes the same claim.\"}, {\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"'Rather than open' adds nothing because fail-closed already means not open.\"}, {\"original\": \" The playbook change significantly reduces mean time to contain.\", \"replacement\": \"\", \"reason\": \"This sentence repeats the previous one's 18-to-3-hour finding and adds no new fact.\"}, {\"original\": \"Addressing this requires more than periodic training; it demands a security\u2011first culture\", \"replacement\": \"Addressing this demands a security\u2011first culture\", \"reason\": \"The 'more than periodic training' clause is a negative windup, and the positive clause carries the claim.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"'Rather than by accident' is padded negation that adds nothing to 'on purpose.'\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"Deleting the 'not merely an IT concern' half loses nothing, since the positive half states the full claim.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Technical tools cannot succeed in isolation; they require clear policies",
+      "replacement": "Technical tools require clear policies",
+      "reason": "The 'cannot succeed in isolation' half is windup, and the positive half alone makes the same claim."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "'Rather than open' adds nothing because fail-closed already means not open."
+    },
+    {
+      "original": " The playbook change significantly reduces mean time to contain.",
+      "replacement": "",
+      "reason": "This sentence repeats the previous one's 18-to-3-hour finding and adds no new fact."
+    },
+    {
+      "original": "Addressing this requires more than periodic training; it demands a security\u2011first culture",
+      "replacement": "Addressing this demands a security\u2011first culture",
+      "reason": "The 'more than periodic training' clause is a negative windup, and the positive clause carries the claim."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "'Rather than by accident' is padded negation that adds nothing to 'on purpose.'"
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "Deleting the 'not merely an IT concern' half loses nothing, since the positive half states the full claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1761,
+    "cache_read": 29886,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.041213200000000005,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

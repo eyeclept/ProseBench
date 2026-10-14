@@ -1,0 +1,61 @@
+{
+  "run_id": "R5_P3_r2",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:28:34.540039+00:00",
+  "duration_s": 65.35612292099995,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"collect vouchers, make no mistake.\", \"replacement\": \"collect vouchers.\", \"reason\": \"The finality interjection 'make no mistake' is padding that adds no evidence to the claim.\"}, {\"original\": \"change significantly streamlines\", \"replacement\": \"change streamlines\", \"reason\": \"'Significantly' is an intensifier standing in for the already-stated timing change (40 minutes to 6 minutes).\"}, {\"original\": \"cycle, full stop.\", \"replacement\": \"cycle.\", \"reason\": \"The claim already carries the exclusivity marker 'only,' so the finality interjection 'full stop' only repeats it.\"}, {\"original\": \"dramatically increased food production\", \"replacement\": \"increased food production\", \"reason\": \"'Dramatically' is an intensifier placeholder that adds no evidence to the claim.\"}, {\"original\": \"dramatically reduces yield loss\", \"replacement\": \"reduces yield loss\", \"reason\": \"'Dramatically' is an intensifier standing in for the already-stated figures (41 percent to 8 percent).\"}]}",
+  "edits": [
+    {
+      "original": "collect vouchers, make no mistake.",
+      "replacement": "collect vouchers.",
+      "reason": "The finality interjection 'make no mistake' is padding that adds no evidence to the claim."
+    },
+    {
+      "original": "change significantly streamlines",
+      "replacement": "change streamlines",
+      "reason": "'Significantly' is an intensifier standing in for the already-stated timing change (40 minutes to 6 minutes)."
+    },
+    {
+      "original": "cycle, full stop.",
+      "replacement": "cycle.",
+      "reason": "The claim already carries the exclusivity marker 'only,' so the finality interjection 'full stop' only repeats it."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "increased food production",
+      "reason": "'Dramatically' is an intensifier placeholder that adds no evidence to the claim."
+    },
+    {
+      "original": "dramatically reduces yield loss",
+      "replacement": "reduces yield loss",
+      "reason": "'Dramatically' is an intensifier standing in for the already-stated figures (41 percent to 8 percent)."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4045,
+    "output": 7080,
+    "cache_read": 16384,
+    "cache_write": 0,
+    "reasoning": 6845
+  },
+  "cost_usd": 0.007984711,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

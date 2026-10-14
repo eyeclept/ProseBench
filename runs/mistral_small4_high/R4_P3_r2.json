@@ -1,0 +1,260 @@
+{
+  "run_id": "R4_P3_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:42:25.337702+00:00",
+  "duration_s": 76.88974840103765,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"\u2014\", \"replacement\": \",\", \"reason\": \"Replace em dash with comma for appositive phrase\"},\n    {\"original\": \"\u2014\", \"replacement\": \";\", \"reason\": \"Replace em dash between independent clauses with semicolon\"},\n    {\"original\": \"\u2014\", \"replacement\": \".\", \"reason\": \"Replace em dash between independent clauses with period\"},\n    {\"original\": \"\u2014\", \"replacement\": \",\", \"reason\": \"Replace em dash before fragment with comma\"},\n    {\"original\": \"\u2014\", \"replacement\": \",\", \"reason\": \"Replace em dash before participial phrase with comma\"},\n    {\"original\": \"\u2014\", \"replacement\": null, \"reason\": \"Remove decorative horizontal rule separator\"},\n    {\"original\": \"well\u2011being\", \"replacement\": \"well-being\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"discipline\u2019s\", \"replacement\": \"discipline's\", \"reason\": \"Replace curly apostrophe with straight apostrophe\"},\n    {\"original\": \"\u201cfather of botany\u201d\", \"replacement\": \"\\\"father of botany\\\"\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"\u201ccell\u201d\", \"replacement\": \"\\\"cell\\\"\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"Darwin\u2019s\", \"replacement\": \"Darwin's\", \"reason\": \"Replace curly apostrophe with straight apostrophe\"},\n    {\"original\": \"undetermined\u2026\", \"replacement\": \"undetermined...\", \"reason\": \"Replace ellipsis glyph with three periods\"},\n    {\"original\": \"high\u2011throughput\", \"replacement\": \"high-throughput\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"light\u2011dependent\", \"replacement\": \"light-dependent\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"Calvin\u2011Benson\", \"replacement\": \"Calvin-Benson\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"by\u2011product\", \"replacement\": \"by-product\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"ribulose\u20111,5\u2011bisphosphate\", \"replacement\": \"ribulose-1,5-bisphosphate\", \"reason\": \"Replace non-breaking hyphens with regular hyphens\"},\n    {\"original\": \"glyceraldehyde\u20113\u2011phosphate\", \"replacement\": \"glyceraldehyde-3-phosphate\", \"reason\": \"Replace non-breaking hyphens with regular hyphens\"},\n    {\"original\": \"adaptations\u2014C\u2084\", \"replacement\": \"adaptations, C4\", \"reason\": \"Replace em dash with comma before appositive phrase\"},\n    {\"original\": \"Algae \u2014\", \"replacement\": \"Algae -\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Bryophytes \u2014\", \"replacement\": \"Bryophytes -\", \"reason\": \"Replace non-breaking hyphen and en dash with hyphen\"},\n    {\"original\": \"Pteridophytes \u2014\", \"replacement\": \"Pteridophytes -\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"Gymnosperms \u2014 \u201cNaked\", \"replacement\": \"Gymnosperms - \\\"Naked\", \"reason\": \"Replace en dash with hyphen and curly quote with straight quote\"},\n    {\"original\": \"Angiosperms \u2014\", \"replacement\": \"Angiosperms -\", \"reason\": \"Replace en dash with hyphen\"},\n    {\"original\": \"\u201cmonocot\u201d\", \"replacement\": \"\\\"monocot\\\"\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"\u201cdicots\u201d\", \"replacement\": \"\\\"dicots\\\"\", \"reason\": \"Replace curly quotes with straight quotes\"},\n    {\"original\": \"week 3 they never formed heads\u2014\", \"replacement\": \"week 3. They never formed heads,\", \"reason\": \"Replace em dash between independent clauses with period and restructure\"},\n    {\"original\": \"Staple crops\u2014wheat\", \"replacement\": \"Staple crops, wheat\", \"reason\": \"Replace em dash with comma before list\"},\n    {\"original\": \"high\u2011yielding, disease\u2011resistant\", \"replacement\": \"high-yielding, disease-resistant\", \"reason\": \"Replace non-breaking hyphens with regular hyphens\"},\n    {\"original\": \"marker\u2011assisted\", \"replacement\": \"marker-assisted\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"gene editing\", \"replacement\": \"gene editing\", \"reason\": \"No change needed (hyphen is correct)\"},\n    {\"original\": \"carbon\u2011sequestering\", \"replacement\": \"carbon-sequestering\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"closed\u2011loop\", \"replacement\": \"closed-loop\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"high\u2011level\", \"replacement\": \"high-level\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"organelle\u2019s\", \"replacement\": \"organelle's\", \"reason\": \"Replace curly apostrophe with straight apostrophe\"},\n    {\"original\": \"stress memory\\\"\u2014the\", \"replacement\": \"stress memory, the\", \"reason\": \"Replace em dash with comma before appositive phrase\"},\n    {\"original\": \"re\u2011encounter\\\"\u2014is\", \"replacement\": \"re-encounter, is\", \"reason\": \"Replace non-breaking hyphen with regular hyphen and em dash with comma\"},\n    {\"original\": \"nitrogen\u2011fixing\", \"replacement\": \"nitrogen-fixing\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"molecular dialogues\u2014through\", \"replacement\": \"molecular dialogues, through\", \"reason\": \"Replace em dash with comma before prepositional phrase\"},\n    {\"original\": \"benefit\u2011sharing\", \"replacement\": \"benefit-sharing\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"CRISPR\u2011based\", \"replacement\": \"CRISPR-based\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"socio\u2011economic\", \"replacement\": \"socio-economic\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"Precision agriculture\\\"\u2014leveraging\", \"replacement\": \"Precision agriculture, leveraging\", \"reason\": \"Replace em dash with comma before participial phrase\"},\n    {\"original\": \"real\u2011time\", \"replacement\": \"real-time\", \"reason\": \"Replace non-breaking hyphen with regular hyphen\"},\n    {\"original\": \"\\\"climate\u2011smart\\\" plants\\\"\u2014species\", \"replacement\": \"\\\"climate-smart\\\" plants, species\", \"reason\": \"Replace non-breaking hyphen with regular hyphen and em dash with comma before relative clause\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "\u2014",
+      "replacement": ",",
+      "reason": "Replace em dash with comma for appositive phrase"
+    },
+    {
+      "original": "\u2014",
+      "replacement": ";",
+      "reason": "Replace em dash between independent clauses with semicolon"
+    },
+    {
+      "original": "\u2014",
+      "replacement": ".",
+      "reason": "Replace em dash between independent clauses with period"
+    },
+    {
+      "original": "\u2014",
+      "replacement": ",",
+      "reason": "Replace em dash before fragment with comma"
+    },
+    {
+      "original": "\u2014",
+      "replacement": ",",
+      "reason": "Replace em dash before participial phrase with comma"
+    },
+    {
+      "original": "\u2014",
+      "replacement": null,
+      "reason": "Remove decorative horizontal rule separator"
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "discipline\u2019s",
+      "replacement": "discipline's",
+      "reason": "Replace curly apostrophe with straight apostrophe"
+    },
+    {
+      "original": "\u201cfather of botany\u201d",
+      "replacement": "\"father of botany\"",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "\u201ccell\u201d",
+      "replacement": "\"cell\"",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "Darwin\u2019s",
+      "replacement": "Darwin's",
+      "reason": "Replace curly apostrophe with straight apostrophe"
+    },
+    {
+      "original": "undetermined\u2026",
+      "replacement": "undetermined...",
+      "reason": "Replace ellipsis glyph with three periods"
+    },
+    {
+      "original": "high\u2011throughput",
+      "replacement": "high-throughput",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "Replace non-breaking hyphens with regular hyphens"
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "Replace non-breaking hyphens with regular hyphens"
+    },
+    {
+      "original": "adaptations\u2014C\u2084",
+      "replacement": "adaptations, C4",
+      "reason": "Replace em dash with comma before appositive phrase"
+    },
+    {
+      "original": "Algae \u2014",
+      "replacement": "Algae -",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Bryophytes \u2014",
+      "replacement": "Bryophytes -",
+      "reason": "Replace non-breaking hyphen and en dash with hyphen"
+    },
+    {
+      "original": "Pteridophytes \u2014",
+      "replacement": "Pteridophytes -",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "Gymnosperms \u2014 \u201cNaked",
+      "replacement": "Gymnosperms - \"Naked",
+      "reason": "Replace en dash with hyphen and curly quote with straight quote"
+    },
+    {
+      "original": "Angiosperms \u2014",
+      "replacement": "Angiosperms -",
+      "reason": "Replace en dash with hyphen"
+    },
+    {
+      "original": "\u201cmonocot\u201d",
+      "replacement": "\"monocot\"",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "\u201cdicots\u201d",
+      "replacement": "\"dicots\"",
+      "reason": "Replace curly quotes with straight quotes"
+    },
+    {
+      "original": "week 3 they never formed heads\u2014",
+      "replacement": "week 3. They never formed heads,",
+      "reason": "Replace em dash between independent clauses with period and restructure"
+    },
+    {
+      "original": "Staple crops\u2014wheat",
+      "replacement": "Staple crops, wheat",
+      "reason": "Replace em dash with comma before list"
+    },
+    {
+      "original": "high\u2011yielding, disease\u2011resistant",
+      "replacement": "high-yielding, disease-resistant",
+      "reason": "Replace non-breaking hyphens with regular hyphens"
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "gene editing",
+      "replacement": "gene editing",
+      "reason": "No change needed (hyphen is correct)"
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "closed\u2011loop",
+      "replacement": "closed-loop",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "high\u2011level",
+      "replacement": "high-level",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "organelle\u2019s",
+      "replacement": "organelle's",
+      "reason": "Replace curly apostrophe with straight apostrophe"
+    },
+    {
+      "original": "stress memory\"\u2014the",
+      "replacement": "stress memory, the",
+      "reason": "Replace em dash with comma before appositive phrase"
+    },
+    {
+      "original": "re\u2011encounter\"\u2014is",
+      "replacement": "re-encounter, is",
+      "reason": "Replace non-breaking hyphen with regular hyphen and em dash with comma"
+    },
+    {
+      "original": "nitrogen\u2011fixing",
+      "replacement": "nitrogen-fixing",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "molecular dialogues\u2014through",
+      "replacement": "molecular dialogues, through",
+      "reason": "Replace em dash with comma before prepositional phrase"
+    },
+    {
+      "original": "benefit\u2011sharing",
+      "replacement": "benefit-sharing",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "CRISPR\u2011based",
+      "replacement": "CRISPR-based",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "socio\u2011economic",
+      "replacement": "socio-economic",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "Precision agriculture\"\u2014leveraging",
+      "replacement": "Precision agriculture, leveraging",
+      "reason": "Replace em dash with comma before participial phrase"
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replace non-breaking hyphen with regular hyphen"
+    },
+    {
+      "original": "\"climate\u2011smart\" plants\"\u2014species",
+      "replacement": "\"climate-smart\" plants, species",
+      "reason": "Replace non-breaking hyphen with regular hyphen and em dash with comma before relative clause"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20959,
+    "output": 8469,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 6920
+  },
+  "cost_usd": 0.00822525,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

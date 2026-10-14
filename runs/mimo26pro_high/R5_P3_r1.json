@@ -1,0 +1,66 @@
+{
+  "run_id": "R5_P3_r1",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:27:59.968588+00:00",
+  "duration_s": 34.54963357500003,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"Field crews still collect vouchers, make no mistake.\",\"replacement\":\"Field crews still collect vouchers.\",\"reason\":\"The finality interjection \\\"make no mistake\\\" adds emphasis without evidence and is removed as rule-flagged padding.\"},{\"original\":\"so the change significantly streamlines\",\"replacement\":\"so the change streamlines\",\"reason\":\"\\\"significantly\\\" is an intensifier placeholder; the sentence already supplies the evidence (40 minutes before, 6 minutes after).\"},{\"original\":\"cycle, full stop.\",\"replacement\":\"cycle.\",\"reason\":\"The interjection \\\"full stop\\\" repeats the emphasis already carried by the exclusivity marker \\\"only\\\" in the same claim.\"},{\"original\":\"so supplemental irrigation dramatically reduces\",\"replacement\":\"so supplemental irrigation reduces\",\"reason\":\"\\\"dramatically\\\" is an intensifier placeholder; the sentence already supplies the evidence (41 percent to 8 percent).\"},{\"original\":\"dramatically increased food production\",\"replacement\":\"increased food production\",\"reason\":\"\\\"dramatically\\\" is an intensifier standing in for a magnitude that is never quantified, so the bare verb carries the claim.\"},{\"original\":\"profoundly influences plant health\",\"replacement\":\"influences plant health\",\"reason\":\"\\\"profoundly\\\" is an intensifier placeholder for a measured effect size, so it is removed.\"}]}",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "The finality interjection \"make no mistake\" adds emphasis without evidence and is removed as rule-flagged padding."
+    },
+    {
+      "original": "so the change significantly streamlines",
+      "replacement": "so the change streamlines",
+      "reason": "\"significantly\" is an intensifier placeholder; the sentence already supplies the evidence (40 minutes before, 6 minutes after)."
+    },
+    {
+      "original": "cycle, full stop.",
+      "replacement": "cycle.",
+      "reason": "The interjection \"full stop\" repeats the emphasis already carried by the exclusivity marker \"only\" in the same claim."
+    },
+    {
+      "original": "so supplemental irrigation dramatically reduces",
+      "replacement": "so supplemental irrigation reduces",
+      "reason": "\"dramatically\" is an intensifier placeholder; the sentence already supplies the evidence (41 percent to 8 percent)."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "increased food production",
+      "reason": "\"dramatically\" is an intensifier standing in for a magnitude that is never quantified, so the bare verb carries the claim."
+    },
+    {
+      "original": "profoundly influences plant health",
+      "replacement": "influences plant health",
+      "reason": "\"profoundly\" is an intensifier placeholder for a measured effect size, so it is removed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 6038,
+    "output": 3288,
+    "cache_read": 14336,
+    "cache_write": 0,
+    "reasoning": 3017
+  },
+  "cost_usd": 0.0055386996,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

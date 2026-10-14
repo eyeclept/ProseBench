@@ -1,0 +1,65 @@
+{
+  "run_id": "R5_P2_r1",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:58:11.741884+00:00",
+  "duration_s": 14.92359977599699,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"has evolved dramatically to accommodate\", \"replacement\": null, \"reason\": \"\\\"Dramatically\\\" is an intensifier, and the passage gives no figure to put in its place, so the author needs to supply one.\"}, {\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune cuts frequency restoration time by 8 minutes\", \"reason\": \"Replaces the intensifier \\\"significantly\\\" with the 8-minute reduction given in the same sentence.\"}, {\"original\": \"after a trip, full stop.\", \"replacement\": null, \"reason\": \"\\\"Full stop\\\" adds emphasis without evidence, but this claim has no exclusivity marker, so the author should decide whether to cut it.\"}, {\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall with the square of current\", \"reason\": \"Replaces the intensifier \\\"dramatically\\\" with the I\u00b2R relationship it stood in for.\"}, {\"original\": \"The 345 kV reconductor significantly reduces line losses\", \"replacement\": \"The 345 kV reconductor reduces line losses\", \"reason\": \"Removes the intensifier \\\"significantly\\\" because the 8-to-3 percent figures already make the point.\"}, {\"original\": \"the only backup path for those hospitals, end of story.\", \"replacement\": \"the only backup path for those hospitals.\", \"reason\": \"\\\"Only\\\" already makes the claim exclusive, so \\\"end of story\\\" repeats the emphasis.\"}]}\n```",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": null,
+      "reason": "\"Dramatically\" is an intensifier, and the passage gives no figure to put in its place, so the author needs to supply one."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune cuts frequency restoration time by 8 minutes",
+      "reason": "Replaces the intensifier \"significantly\" with the 8-minute reduction given in the same sentence."
+    },
+    {
+      "original": "after a trip, full stop.",
+      "replacement": null,
+      "reason": "\"Full stop\" adds emphasis without evidence, but this claim has no exclusivity marker, so the author should decide whether to cut it."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall with the square of current",
+      "reason": "Replaces the intensifier \"dramatically\" with the I\u00b2R relationship it stood in for."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "Removes the intensifier \"significantly\" because the 8-to-3 percent figures already make the point."
+    },
+    {
+      "original": "the only backup path for those hospitals, end of story.",
+      "replacement": "the only backup path for those hospitals.",
+      "reason": "\"Only\" already makes the claim exclusive, so \"end of story\" repeats the emphasis."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1210,
+    "cache_read": 23455,
+    "cache_write": 7925,
+    "reasoning": 0
+  },
+  "cost_usd": 0.092307,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

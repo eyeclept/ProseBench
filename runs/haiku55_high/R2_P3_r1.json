@@ -1,0 +1,65 @@
+{
+  "run_id": "R2_P3_r1",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:39:28.700325+00:00",
+  "duration_s": 27.709568472986575,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"is not merely academic\u2014it is essential\", \"replacement\": \"is essential\", \"reason\": \"The 'not merely academic' clause is windup; the positive claim that the understanding is essential stands alone.\"}, {\"original\": \"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\", \"replacement\": \"Morphine is produced in Papaver somniferum latex.\", \"reason\": \"The negative clause about the yew restates what the positive clause already establishes about where morphine is produced.\"}, {\"original\": \"on purpose, rather than by accident.\", \"replacement\": \"on purpose.\", \"reason\": \"'Rather than by accident' only restates 'on purpose' and adds no new fact.\"}, {\"original\": \"a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\", \"replacement\": \"a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).\", \"reason\": \"The C4-versus-CAM analogy restates the same two regimes a second time without adding a new fact, so the labels are folded into the original distinction.\"}, {\"original\": \"Botany, far from being a static catalog of flora, is a dynamic\", \"replacement\": \"Botany is a dynamic\", \"reason\": \"The 'far from being a static catalog' clause is a negated windup; the positive description of botany carries the claim alone.\"}, {\"original\": \"is not optional; it is imperative\", \"replacement\": \"is imperative\", \"reason\": \"The 'not optional' half is a negated windup that adds nothing beyond the positive claim that the understanding is imperative.\"}]}",
+  "edits": [
+    {
+      "original": "is not merely academic\u2014it is essential",
+      "replacement": "is essential",
+      "reason": "The 'not merely academic' clause is windup; the positive claim that the understanding is essential stands alone."
+    },
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative clause about the yew restates what the positive clause already establishes about where morphine is produced."
+    },
+    {
+      "original": "on purpose, rather than by accident.",
+      "replacement": "on purpose.",
+      "reason": "'Rather than by accident' only restates 'on purpose' and adds no new fact."
+    },
+    {
+      "original": "a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).",
+      "reason": "The C4-versus-CAM analogy restates the same two regimes a second time without adding a new fact, so the labels are folded into the original distinction."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic",
+      "replacement": "Botany is a dynamic",
+      "reason": "The 'far from being a static catalog' clause is a negated windup; the positive description of botany carries the claim alone."
+    },
+    {
+      "original": "is not optional; it is imperative",
+      "replacement": "is imperative",
+      "reason": "The 'not optional' half is a negated windup that adds nothing beyond the positive claim that the understanding is imperative."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 4772,
+    "cache_read": 23455,
+    "cache_write": 8282,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00427735,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P1_r3",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:49:10.970420+00:00",
+  "duration_s": 77.34164852599497,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"Deleting 'rather than open' loses nothing\u2014the positive half alone states the complete claim.\"}, {\"original\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.\", \"replacement\": \"Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.\", \"reason\": \"The second sentence is a restatement adding no new fact\u2014the playbook change's effect on mean time to contain was already fully stated.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"Deleting 'rather than by accident' loses nothing\u2014the positive half alone states the complete claim.\"}, {\"original\": \"Positive reinforcement for reporters is now a standing practice, full stop.\", \"replacement\": \"Positive reinforcement for reporters is now a standing practice.\", \"reason\": \"Deleting 'full stop' loses nothing\u2014the positive half alone states the complete claim.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "Deleting 'rather than open' loses nothing\u2014the positive half alone states the complete claim."
+    },
+    {
+      "original": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment. The playbook change significantly reduces mean time to contain.",
+      "replacement": "Mean time to contain fell from 18 hours to 3 hours after the playbook change, which streamlines containment.",
+      "reason": "The second sentence is a restatement adding no new fact\u2014the playbook change's effect on mean time to contain was already fully stated."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "Deleting 'rather than by accident' loses nothing\u2014the positive half alone states the complete claim."
+    },
+    {
+      "original": "Positive reinforcement for reporters is now a standing practice, full stop.",
+      "replacement": "Positive reinforcement for reporters is now a standing practice.",
+      "reason": "Deleting 'full stop' loses nothing\u2014the positive half alone states the complete claim."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19768,
+    "output": 1549,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 1538
+  },
+  "cost_usd": 0.0045142,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

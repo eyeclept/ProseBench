@@ -1,0 +1,61 @@
+{
+  "run_id": "R5_P3_r2",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 5,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "e2c4f422c31e1a62257281931ddce740c99b07ee03b8fa68ba7e86503065e8bf",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:35:55.430593+00:00",
+  "duration_s": 67.61661634300003,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Field crews still collect vouchers, make no mistake.\", \"replacement\": \"Field crews still collect vouchers.\", \"reason\": \"\\\"Make no mistake\\\" is a finality interjection that adds emphasis without evidence, so it is removed.\"}, {\"original\": \"so the change significantly streamlines cell-wall composition analysis\", \"replacement\": \"so the change streamlines cell-wall composition analysis\", \"reason\": \"\\\"Significantly\\\" is an intensifier placeholder, and the sentence already supplies the evidence (40 minutes down to 6 minutes), so the word is deleted.\"}, {\"original\": \"dramatically increased food production\", \"replacement\": \"increased food production\", \"reason\": \"\\\"Dramatically\\\" is an intensifier placeholder for evidence; the claim already carries its evidence (\\\"averting famines in many regions\\\"), so the padding word is removed.\"}, {\"original\": \"supplemental irrigation dramatically reduces yield loss in dry years\", \"replacement\": \"supplemental irrigation reduces yield loss in dry years\", \"reason\": \"\\\"Dramatically\\\" is an intensifier placeholder, and the numbers it stood in for (41 percent to 8 percent) are already stated in the preceding clause, so the word is deleted.\"}, {\"original\": \"cycle, full stop.\", \"replacement\": \"cycle.\", \"reason\": \"\\\"Full stop\\\" is a finality interjection tacked onto a claim that already carries the exclusivity marker \\\"only,\\\" so it is removed per the rule.\"}]}",
+  "edits": [
+    {
+      "original": "Field crews still collect vouchers, make no mistake.",
+      "replacement": "Field crews still collect vouchers.",
+      "reason": "\"Make no mistake\" is a finality interjection that adds emphasis without evidence, so it is removed."
+    },
+    {
+      "original": "so the change significantly streamlines cell-wall composition analysis",
+      "replacement": "so the change streamlines cell-wall composition analysis",
+      "reason": "\"Significantly\" is an intensifier placeholder, and the sentence already supplies the evidence (40 minutes down to 6 minutes), so the word is deleted."
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "increased food production",
+      "reason": "\"Dramatically\" is an intensifier placeholder for evidence; the claim already carries its evidence (\"averting famines in many regions\"), so the padding word is removed."
+    },
+    {
+      "original": "supplemental irrigation dramatically reduces yield loss in dry years",
+      "replacement": "supplemental irrigation reduces yield loss in dry years",
+      "reason": "\"Dramatically\" is an intensifier placeholder, and the numbers it stood in for (41 percent to 8 percent) are already stated in the preceding clause, so the word is deleted."
+    },
+    {
+      "original": "cycle, full stop.",
+      "replacement": "cycle.",
+      "reason": "\"Full stop\" is a finality interjection tacked onto a claim that already carries the exclusivity marker \"only,\" so it is removed per the rule."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 685,
+    "output": 5975,
+    "cache_read": 19436,
+    "cache_write": 0,
+    "reasoning": 5654
+  },
+  "cost_usd": 0.01431407,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

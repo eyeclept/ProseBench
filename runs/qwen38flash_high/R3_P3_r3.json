@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r3",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f7bc68afa2d22c4d5228860a8e51744dfff0369562cf44f13d14a4f534057723",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:55:35.521195+00:00",
+  "duration_s": 93.10273241100367,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"\\\"by accident\\\" is the ordinary-knowledge antonym of \\\"on purpose,\\\" so the trailer adds nothing and is cut.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces. A landrace is a locally adapted, farmer-maintained population. \\\"Heirloom\\\" is a horticultural label for named garden varieties kept by growers and seed savers.\", \"reason\": \"Landrace versus heirloom is a genuine domain distinction rather than an ordinary antonym, so it earns its own positive sentences instead of a bolted-on \\\"rather than\\\" clause.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. It targets the chloroplast genome, whose prokaryotic-like gene expression system and maternal inheritance are exactly what the design leverages.\", \"reason\": \"Chloroplast versus nuclear transformation is a real, non-obvious distinction, so it is restated as what the construct does rather than tacked on as a trailing negation.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "\"by accident\" is the ordinary-knowledge antonym of \"on purpose,\" so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces. A landrace is a locally adapted, farmer-maintained population. \"Heirloom\" is a horticultural label for named garden varieties kept by growers and seed savers.",
+      "reason": "Landrace versus heirloom is a genuine domain distinction rather than an ordinary antonym, so it earns its own positive sentences instead of a bolted-on \"rather than\" clause."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. It targets the chloroplast genome, whose prokaryotic-like gene expression system and maternal inheritance are exactly what the design leverages.",
+      "reason": "Chloroplast versus nuclear transformation is a real, non-obvious distinction, so it is restated as what the construct does rather than tacked on as a trailing negation."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 46,
+    "output": 4767,
+    "cache_read": 20736,
+    "cache_write": 0,
+    "reasoning": 4490
+  },
+  "cost_usd": 0.002579166,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

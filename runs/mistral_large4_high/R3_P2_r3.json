@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P2_r3",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "97df56063d7db6ecd7171cf0abb7565523fd79786f873eb90bbbd22c1160a225",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:36:12.154684+00:00",
+  "duration_s": 66.72277998598292,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve\u2014generation already online and synchronized with the grid, available to respond to frequency deviations.\", \"reason\": \"\u201cNon-spinning reserve\u201d is a domain-specific contrast, so the bolted-on \u201crather than\u201d clause is restated as a positive definition.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"\u201cBy accident\u201d is the ordinary-knowledge antonym of \u201con purpose,\u201d so the redundant trailer is cut.\"}]}",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve\u2014generation already online and synchronized with the grid, available to respond to frequency deviations.",
+      "reason": "\u201cNon-spinning reserve\u201d is a domain-specific contrast, so the bolted-on \u201crather than\u201d clause is restated as a positive definition."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "\u201cBy accident\u201d is the ordinary-knowledge antonym of \u201con purpose,\u201d so the redundant trailer is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20332,
+    "output": 3969,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 3822
+  },
+  "cost_usd": 0.02212097,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

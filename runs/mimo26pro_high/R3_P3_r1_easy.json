@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:27:08.223418+00:00",
+  "duration_s": 149.25863956898684,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"On purpose/by accident is an ordinary-knowledge antonym, so the trailer adds nothing and is cut.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. It inserts its genes into the chloroplast genome.\", \"reason\": \"The chloroplast-versus-nuclear distinction is genuine domain knowledge, so it is stated as what the construct does in its own sentence rather than tacked on as what it isn't.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces. Landraces are traditional farm-saved populations shaped by local conditions.\", \"reason\": \"The landrace-versus-heirloom distinction is not ordinary general knowledge, so it is stated as what landraces are in its own sentence rather than smuggled into a trailer.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "On purpose/by accident is an ordinary-knowledge antonym, so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. It inserts its genes into the chloroplast genome.",
+      "reason": "The chloroplast-versus-nuclear distinction is genuine domain knowledge, so it is stated as what the construct does in its own sentence rather than tacked on as what it isn't."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces. Landraces are traditional farm-saved populations shaped by local conditions.",
+      "reason": "The landrace-versus-heirloom distinction is not ordinary general knowledge, so it is stated as what landraces are in its own sentence rather than smuggled into a trailer."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4035,
+    "output": 3201,
+    "cache_read": 16560,
+    "cache_write": 0,
+    "reasoning": 2964
+  },
+  "cost_usd": 0.004579536,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

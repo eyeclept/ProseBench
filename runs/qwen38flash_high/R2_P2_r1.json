@@ -1,0 +1,60 @@
+{
+  "run_id": "R2_P2_r1",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 2,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "33d259ecbe30a0261e72873396b761fc2244729cf209d31d8c6acf78d3e20502",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:13:58.629870+00:00",
+  "duration_s": 154.95215091801947,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system\", \"replacement\": \"The architecture of a power system is therefore a complex socio\u2011technical system\", \"reason\": \"Deleting the 'not merely a physical infrastructure' windup leaves the positive half stating the same claim, so the negative clause is filler.\"}, {\"original\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.\", \"replacement\": \"Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes.\", \"reason\": \"The trailing clause just restates the 12-to-4-minute drop in synonym form ('significantly shortens frequency restoration'), adding no new fact.\"}, {\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve.\", \"reason\": \"The 'rather than non-spinning' negative tag restates what the positive choice of spinning reserve already says, so nothing checkable is lost when it is deleted.\"}, {\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"reason\": \"The negative 'not a nameplate shortfall of wind' half is a windup; the positive half alone states the causal claim with nothing lost.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"'Rather than by accident' merely negates what 'on purpose' already excludes, so the negative tag is filler.\"}]}",
+  "edits": [
+    {
+      "original": "The architecture of a power system is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system",
+      "replacement": "The architecture of a power system is therefore a complex socio\u2011technical system",
+      "reason": "Deleting the 'not merely a physical infrastructure' windup leaves the positive half stating the same claim, so the negative clause is filler."
+    },
+    {
+      "original": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes, so the retune significantly shortens frequency restoration.",
+      "replacement": "Frequency restoration after a 500 MW trip fell from 12 minutes to 4 minutes.",
+      "reason": "The trailing clause just restates the 12-to-4-minute drop in synonym form ('significantly shortens frequency restoration'), adding no new fact."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve.",
+      "reason": "The 'rather than non-spinning' negative tag restates what the positive choice of spinning reserve already says, so nothing checkable is lost when it is deleted."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "Frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "reason": "The negative 'not a nameplate shortfall of wind' half is a windup; the positive half alone states the causal claim with nothing lost."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'Rather than by accident' merely negates what 'on purpose' already excludes, so the negative tag is filler."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4257,
+    "output": 9704,
+    "cache_read": 16640,
+    "cache_write": 0,
+    "reasoning": 9312
+  },
+  "cost_usd": 0.00546567,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

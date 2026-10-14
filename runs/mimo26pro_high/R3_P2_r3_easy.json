@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P2_r3_easy",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "c6f2900692c92a1e3cd08759baf3505a86e21a9b43e4d9471a6431f4e8408fd3",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:14:57.344964+00:00",
+  "duration_s": 499.54438808298437,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"Those upgrades are planned on purpose, rather than by accident.\",\"replacement\":\"Those upgrades are planned.\",\"reason\":\"\\\"On purpose\\\" and \\\"by accident\\\" are an ordinary-knowledge antonym pair, so the trailer adds nothing and is simply cut.\"},{\"original\":\"Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\",\"replacement\":\"Renewable units are often sited where resources are abundant. These sites tend to lie away from peaks in demand, so robust transmission networks are required.\",\"reason\":\"Siting by resource abundance versus by demand location is a genuine, checkable distinction rather than an ordinary-knowledge antonym, so it earns its own sentence stated as a positive fact instead of a tacked-on \\\"not X\\\" clause.\"},{\"original\":\"Operators procured spinning reserve, rather than non-spinning reserve.\",\"replacement\":null,\"reason\":\"Uncertain which side of the test this falls on: at the word level \\\"spinning\\\"/\\\"non-spinning\\\" is an antonym pair anyone would recognize, but \\\"spinning reserve\\\" and \\\"non-spinning reserve\\\" are domain terms with a real procurement distinction (synchronized, immediately available capacity versus capacity requiring startup), so I cannot tell without your input whether to cut the trailer as vacuous or split it into its own factual sentence, and the rule says to flag rather than decide alone.\"}]}",
+  "edits": [
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned.",
+      "reason": "\"On purpose\" and \"by accident\" are an ordinary-knowledge antonym pair, so the trailer adds nothing and is simply cut."
+    },
+    {
+      "original": "Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "Renewable units are often sited where resources are abundant. These sites tend to lie away from peaks in demand, so robust transmission networks are required.",
+      "reason": "Siting by resource abundance versus by demand location is a genuine, checkable distinction rather than an ordinary-knowledge antonym, so it earns its own sentence stated as a positive fact instead of a tacked-on \"not X\" clause."
+    },
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": null,
+      "reason": "Uncertain which side of the test this falls on: at the word level \"spinning\"/\"non-spinning\" is an antonym pair anyone would recognize, but \"spinning reserve\" and \"non-spinning reserve\" are domain terms with a real procurement distinction (synchronized, immediately available capacity versus capacity requiring startup), so I cannot tell without your input whether to cut the trailer as vacuous or split it into its own factual sentence, and the rule says to flag rather than decide alone."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19,
+    "output": 5956,
+    "cache_read": 20576,
+    "cache_write": 0,
+    "reasoning": 5663
+  },
+  "cost_usd": 0.0052639636,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

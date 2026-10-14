@@ -1,0 +1,505 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:26:42.974263+00:00",
+  "duration_s": 193.80533756897785,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophe is not a standard US keyboard character.\"},\n{\"original\": \"system\u2014commonly referred to simply as a *power system*\u2014is\", \"replacement\": \"system, commonly referred to simply as a *power system*, is\", \"reason\": \"Em dashes are banned.\"},\n{\"original\": \"While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate\", \"replacement\": \"While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved to accommodate\", \"reason\": \"Em dashes are banned and 'dramatically' is a discouraged intensifier.\"},\n{\"original\": \"deliver it safely to end\u2011users\", \"replacement\": \"deliver it safely to end-users\", \"reason\": \"Non-breaking hyphen is not a standard US keyboard character.\"},\n{\"original\": \"**Generation** \u2013 Conversion\", \"replacement\": \"**Generation** - Conversion\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"(T&D)** \u2013 Transport of electric power from the generation site to the load center using high\u2011voltage lines (transmission) and lower\u2011voltage feeders\", \"replacement\": \"(T&D)** - Transport of electric power from the generation site to the load center using high-voltage lines (transmission) and lower-voltage feeders\", \"reason\": \"En dash and non-breaking hyphens replaced with ASCII hyphens.\"},\n{\"original\": \"**Control & Protection** \u2013 Continuous\", \"replacement\": \"**Control & Protection** - Continuous\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies\", \"replacement\": \"is therefore both a physical infrastructure and a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies\", \"reason\": \"Restructures the banned 'not just X, but also Y' pattern and replaces non-breaking hyphens.\"},\n{\"original\": \"so the retune significantly shortens frequency restoration.\", \"replacement\": \"so the retune cuts frequency restoration time by two-thirds.\", \"reason\": \"'Significantly' is a discouraged intensifier, so the sentence now states the measured effect.\"},\n{\"original\": \"Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability\", \"replacement\": \"Its intrinsic inertia, massive rotating masses that store kinetic energy, provides short-term stability\", \"reason\": \"Em dashes and non-breaking hyphen replaced.\"},\n{\"original\": \"cloud-driven ramps\u2026\", \"replacement\": \"cloud-driven ramps...\", \"reason\": \"Ellipsis glyph replaced with three periods.\"},\n{\"original\": \"**Intermittency** \u2013 Power\", \"replacement\": \"**Intermittency** - Power\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Geographic Dispersion** \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\", \"replacement\": \"**Geographic Dispersion** - Renewable units are often sited where resources are abundant, not where demand peaks, requiring strong transmission networks.\", \"reason\": \"En dash replaced and the discouraged word 'robust' swapped out.\"},\n{\"original\": \"**Inverter\u2011Based Interface** \u2013 Many renewable devices connect to the grid via power electronic inverters, which lack the natural inertia of rotating machines. Consequently, new control strategies (synthetic inertia, grid\u2011forming inverters)\", \"replacement\": \"**Inverter-Based Interface** - Many renewable devices connect to the grid via power electronic inverters, which lack the natural inertia of rotating machines. Consequently, new control strategies (synthetic inertia, grid-forming inverters)\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"2.3 Distributed Energy Resources (DERs)\", \"replacement\": \"2.3 Distributed Energy Resources\", \"reason\": \"Parenthetical clarifications in headings are banned; the acronym now goes in the body.\"},\n{\"original\": \"Beyond utility\u2011scale renewables, the advent of small\u2011scale generation (rooftop PV, micro\u2011turbines, fuel cells)\", \"replacement\": \"Beyond utility-scale renewables, the advent of small-scale generation (rooftop PV, micro-turbines, fuel cells)\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"Distributed Energy Resources. DERs can operate in grid\u2011connected mode\", \"replacement\": \"Distributed Energy Resources (DERs). DERs can operate in grid-connected mode\", \"reason\": \"Moves the acronym out of the heading and replaces a non-breaking hyphen.\"},\n{\"original\": \"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.\", \"replacement\": \"High voltages, typically ranging from 115 kV to 1,200 kV, are employed because resistive losses (I^2R) fall with the square of the current.\", \"reason\": \"Em dashes and the superscript are replaced, and the intensifier 'dramatically' gives way to the actual relationship.\"},\n{\"original\": \"**Transmission Lines** \u2013 Overhead conductors (steel\u2011reinforced aluminum, ACSR) or underground/high\u2011temperature\", \"replacement\": \"**Transmission Lines** - Overhead conductors (steel-reinforced aluminum, ACSR) or underground/high-temperature\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"**Substations** \u2013 Nodes\", \"replacement\": \"**Substations** - Nodes\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Converters** \u2013 For High\u2011Voltage Direct Current (HVDC) links, line\u2011commutated converters (LCC) or Voltage\u2011Sourced Converters (VSC) enable long\u2011distance, low\u2011loss\", \"replacement\": \"**Converters** - For High-Voltage Direct Current (HVDC) links, line-commutated converters (LCC) or Voltage-Sourced Converters (VSC) enable long-distance, low-loss\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"The 345 kV reconductor significantly reduces line losses\", \"replacement\": \"The 345 kV reconductor reduces line losses\", \"reason\": \"'Significantly' is a discouraged intensifier, and the figures already show the size of the drop.\"},\n{\"original\": \"Modern transmission planning leverages\", \"replacement\": \"Modern transmission planning uses\", \"reason\": \"'Leverage' is a discouraged verb.\"},\n{\"original\": \"(FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity\", \"replacement\": \"(FACTS) devices, such as static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC), provides operators with dynamic voltage and power-flow regulation, raising capacity\", \"reason\": \"Em dashes and non-breaking hyphens are replaced, and the discouraged verb 'enhance' is swapped out.\"},\n{\"original\": \"the \u201clast mile\u201d of the power system\", \"replacement\": \"the last mile of the power system\", \"reason\": \"Scare quotes (also curly) removed.\"},\n{\"original\": \"**Primary Substations** \u2013 Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via step\u2011down transformers.\", \"replacement\": \"**Primary Substations** - Reduce transmission-level voltages (e.g., 138 kV) to medium voltages (4 kV-35 kV) via step-down transformers.\", \"reason\": \"En dashes and non-breaking hyphens replaced.\"},\n{\"original\": \"**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs\", \"replacement\": \"**Radial or Mesh Feeders** - Radial designs\", \"reason\": \"En dash replaced and curly scare quotes removed.\"},\n{\"original\": \"**Secondary Distribution Transformers** \u2013 Further step down voltage for end\u2011use customers.\", \"replacement\": \"**Secondary Distribution Transformers** - Further step down voltage for end-use customers.\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Smart Devices** \u2013 Automated\", \"replacement\": \"**Smart Devices** - Automated\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Primary (Local) Control** \u2013 Governor\", \"replacement\": \"**Primary (Local) Control** - Governor\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Secondary (AGC) Control** \u2013 Automatic Generation Control adjusts generator set\u2011points to restore frequency and tie\u2011line\", \"replacement\": \"**Secondary (AGC) Control** - Automatic Generation Control adjusts generator set-points to restore frequency and tie-line\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"**Tertiary (Economic Dispatch)** \u2013 Centralized\", \"replacement\": \"**Tertiary (Economic Dispatch)** - Centralized\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"grid\u2019s immune system\", \"replacement\": \"grid's immune system\", \"reason\": \"Curly apostrophe replaced.\"},\n{\"original\": \"**Overcurrent Protection** \u2013 Detects\", \"replacement\": \"**Overcurrent Protection** - Detects\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Distance Protection** \u2013 Measures\", \"replacement\": \"**Distance Protection** - Measures\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Differential Protection** \u2013 Compares\", \"replacement\": \"**Differential Protection** - Compares\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"*digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC 61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.\", \"replacement\": \"*digital relaying*, using microprocessor-based Intelligent Electronic Devices (IEDs), allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, enabling *wide-area protection* that can coordinate responses across regional or inter-regional grids.\", \"reason\": \"Em dashes and non-breaking hyphens are replaced, and the academic tell 'pave the way for' is swapped out.\"},\n{\"original\": \"expected to be \u201calways\u2011on,\u201d extreme weather events, cyber\u2011attacks\", \"replacement\": \"expected to be always-on, extreme weather events, cyber-attacks\", \"reason\": \"Curly scare quotes removed and non-breaking hyphens replaced.\"},\n{\"original\": \"large\u2011scale blackouts\", \"replacement\": \"large-scale blackouts\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.\", \"replacement\": \"In the Texas failure, frozen gas wells and unheated thermal auxiliaries, rather than a nameplate shortfall of wind, accounted for the lost megawatts.\", \"reason\": \"Restructures the discouraged 'not X, it's Y' construction.\"},\n{\"original\": \"cut gas supply\u2014thermal units\", \"replacement\": \"cut gas supply; thermal units\", \"reason\": \"Em dash replaced with semicolon.\"},\n{\"original\": \"**Hardening Infrastructure** \u2013 Substation\", \"replacement\": \"**Hardening Infrastructure** - Substation\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Grid Flexibility** \u2013 Fast\u2011acting storage, demand\u2011response programs, and synthetic inertia from inverter\u2011based resources.\", \"replacement\": \"**Grid Flexibility** - Fast-acting storage, demand-response programs, and synthetic inertia from inverter-based resources.\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"**Decentralized Backup** \u2013 Microgrids\", \"replacement\": \"**Decentralized Backup** - Microgrids\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"6.2 Integration of Variable Renewable Energy (VRE)\", \"replacement\": \"6.2 Integration of Variable Renewable Energy\", \"reason\": \"Parenthetical clarifications in headings are banned; the acronym now goes in the body.\"},\n{\"original\": \"High penetrations of wind and solar pose two intertwined issues:\", \"replacement\": \"High penetrations of variable renewable energy (VRE), such as wind and solar, pose two intertwined issues:\", \"reason\": \"Defines the acronym that was removed from the heading.\"},\n{\"original\": \"**Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity\", \"replacement\": \"**Supply-Demand Balancing** - The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity\", \"reason\": \"Non-breaking hyphen and en dash are replaced, and curly scare quotes are removed.\"},\n{\"original\": \"**Grid Stability** \u2013 Reduced\", \"replacement\": \"**Grid Stability** - Reduced\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"compressed\u2011air energy storage, battery\u2011energy\u2011storage systems (BESS), and advanced inverter functionalities that provide *grid\u2011forming* capabilities\", \"replacement\": \"compressed-air energy storage, battery-energy-storage systems (BESS), and advanced inverter functionalities that provide *grid-forming* capabilities\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"while fostering competition\", \"replacement\": \"while encouraging competition\", \"reason\": \"'Foster' is a discouraged verb.\"},\n{\"original\": \"**Cost\u2011reflective tariffs**\", \"replacement\": \"**Cost-reflective tariffs**\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"become network\u2011connected\", \"replacement\": \"become network-connected\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"6.4 Cyber\u2011Physical Security\", \"replacement\": \"6.4 Cyber-Physical Security\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"Cyber\u2011physical attacks, such as\", \"replacement\": \"Cyber-physical attacks, such as\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"*defense\u2011in\u2011depth* architectures\", \"replacement\": \"*defense-in-depth* architectures\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"**Real\u2011time anomaly detection** using machine\u2011learning algorithms\", \"replacement\": \"**Real-time anomaly detection** using machine-learning algorithms\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network\", \"replacement\": \"two-way communication, and advanced analytics to create a responsive, self-optimizing network\", \"reason\": \"Non-breaking hyphens replaced.\"},\n{\"original\": \"**Advanced Metering Infrastructure (AMI)** \u2013 Provides\", \"replacement\": \"**Advanced Metering Infrastructure (AMI)** - Provides\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Distribution Management Systems (DMS)** \u2013 Automate\", \"replacement\": \"**Distribution Management Systems (DMS)** - Automate\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120\", \"replacement\": \"**Wide-Area Monitoring Systems (WAMS)** - Phasor Measurement Units (PMUs) deliver synchrophasor data at 30-120\", \"reason\": \"Non-breaking hyphen and en dashes replaced.\"},\n{\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\", \"replacement\": \"Digital twins, high-fidelity virtual replicas of physical grid assets, allow\", \"reason\": \"Em dashes and non-breaking hyphen replaced.\"},\n{\"original\": \"Long\u2011duration storage is emerging\", \"replacement\": \"Long-duration storage is emerging\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"**Lithium\u2011Ion Batteries** \u2013 Dominant for short\u2011 to medium\u2011duration\", \"replacement\": \"**Lithium-Ion Batteries** - Dominant for short- to medium-duration\", \"reason\": \"Non-breaking hyphens and en dash replaced.\"},\n{\"original\": \"(Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer scalable, long\u2011duration\", \"replacement\": \"(Vanadium Redox, Zinc-Bromine) - Offer scalable, long-duration\", \"reason\": \"Non-breaking hyphens and en dash replaced.\"},\n{\"original\": \"**Thermal and Mechanical Storage** \u2013 Cryogenic air energy storage (CAES), pumped hydro, and emerging gravity\u2011based systems.\", \"replacement\": \"**Thermal and Mechanical Storage** - Cryogenic air energy storage (CAES), pumped hydro, and emerging gravity-based systems.\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Full Renewable Transition** \u2013\", \"replacement\": \"**Full Renewable Transition** -\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"(CCUS)** \u2013 Retrofitting existing fossil\u2011fuel plants\", \"replacement\": \"(CCUS)** - Retrofitting existing fossil-fuel plants\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Hydrogen Integration** \u2013 Using\", \"replacement\": \"**Hydrogen Integration** - Using\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"7.4 Grid\u2011Forming Inverters\", \"replacement\": \"7.4 Grid-Forming Inverters\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"*grid\u2011following* mode\", \"replacement\": \"*grid-following* mode\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"New *grid\u2011forming* inverters\", \"replacement\": \"New *grid-forming* inverters\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"**Provides Synthetic Inertia** \u2013 Emulates\", \"replacement\": \"**Provides Synthetic Inertia** - Emulates\", \"reason\": \"En dash replaced with hyphen.\"},\n{\"original\": \"**Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities\", \"replacement\": \"**Enables Islanded Microgrids** - Smooth transition between grid-connected and standalone operation, important for critical facilities\", \"reason\": \"En dash and non-breaking hyphen are replaced, and the discouraged words 'seamless' and 'crucial' are swapped out.\"},\n{\"original\": \"7.5 Power\u2011to\u2011X (P2X) and Sector Coupling\", \"replacement\": \"7.5 Power-to-X and Sector Coupling\", \"reason\": \"Parenthetical in heading removed and non-breaking hyphens replaced.\"},\n{\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).\", \"replacement\": \"\\\"Power-to-X\\\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).\", \"reason\": \"Curly quotes and non-breaking hyphens replaced.\"},\n{\"original\": \"By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges, smoothing\", \"replacement\": \"Coupling the electricity sector with transport, industry, and heating creates a more integrated energy system, smoothing\", \"reason\": \"Restructures the discouraged 'By [gerund]' opener and replaces 'holistic'.\"},\n{\"original\": \"Renewable\u2011Heavy Grid in Practice\", \"replacement\": \"Renewable-Heavy Grid in Practice\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"**European Union\u2019s \u201cElectricity Interconnection\u201d**\", \"replacement\": \"**European Union's \\\"Electricity Interconnection\\\"**\", \"reason\": \"Curly apostrophe and quotes replaced.\"},\n{\"original\": \"cross\u2011border interconnection\", \"replacement\": \"cross-border interconnection\", \"reason\": \"Non-breaking hyphen replaced.\"},\n{\"original\": \"**HVDC Links** \u2013 Multi\u2011terminal VSC\u2011HVDC\", \"replacement\": \"**HVDC Links** - Multi-terminal VSC-HVDC\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"**Coordinated Market Coupling** \u2013 Harmonized market rules allow cross\u2011border trading\", \"replacement\": \"**Coordinated Market Coupling** - Harmonized market rules allow cross-border trading\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Real\u2011Time Grid Operations** \u2013 A continent\u2011wide\", \"replacement\": \"**Real-Time Grid Operations** - A continent-wide\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"when robust transmission, advanced controls, and market integration co\u2011exist.\", \"replacement\": \"when strong transmission, advanced controls, and market integration co-exist.\", \"reason\": \"Replaces the discouraged word 'robust' and a non-breaking hyphen.\"},\n{\"original\": \"*centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates\", \"replacement\": \"*centrally-controlled, unidirectional* network into a *decentralized, cyber-physical system* that integrates\", \"reason\": \"Non-breaking hyphens are replaced, metaphorical 'ecosystem' is removed, and 'seamlessly' is cut.\"},\n{\"original\": \"**Massive DER Penetration** \u2013 Millions of rooftop PV installations, community microgrids, and electric\u2011vehicle\", \"replacement\": \"**Massive DER Penetration** - Millions of rooftop PV installations, community microgrids, and electric-vehicle\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive dispatch, autonomous fault detection, and self\u2011healing networks powered by machine\u2011learning models\", \"replacement\": \"**Artificial-Intelligence-Driven Operations** - Predictive dispatch, autonomous fault detection, and self-healing networks powered by machine-learning models\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"**Resilient Architecture** \u2013 Multi\u2011layered\", \"replacement\": \"**Resilient Architecture** - Multi-layered\", \"reason\": \"En dash and non-breaking hyphen replaced.\"},\n{\"original\": \"**Policy\u2011Driven Decarbonization** \u2013 Carbon pricing, renewable portfolio standards, and incentives for low\u2011carbon technologies steering investment toward a net\u2011zero\", \"replacement\": \"**Policy-Driven Decarbonization** - Carbon pricing, renewable portfolio standards, and incentives for low-carbon technologies steering investment toward a net-zero\", \"reason\": \"En dash and non-breaking hyphens replaced.\"},\n{\"original\": \"out of service for days\u2014planners\", \"replacement\": \"out of service for days; planners\", \"reason\": \"Em dash replaced with semicolon.\"},\n{\"original\": \"yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\", \"replacement\": \"yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise\", \"reason\": \"Em dashes are replaced and the metaphorical 'landscape' is removed.\"},\n{\"original\": \"Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.\", \"replacement\": \"Managing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.\", \"reason\": \"Replaces metaphorical 'navigate', 'innovative', 'robust', the em dashes, and a non-breaking hyphen.\"},\n{\"original\": \"forward\u2011looking policy can sustain the grid\u2019s reliability\", \"replacement\": \"forward-looking policy can sustain the grid's reliability\", \"reason\": \"Non-breaking hyphen and curly apostrophe replaced.\"},\n{\"original\": \"The next century\u2019s power system\", \"replacement\": \"The next century's power system\", \"reason\": \"Curly apostrophe replaced.\"},\n{\"original\": \"climate\u2011friendly technologies\", \"replacement\": \"climate-friendly technologies\", \"reason\": \"Non-breaking hyphen replaced.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe is not a standard US keyboard character."
+    },
+    {
+      "original": "system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "system, commonly referred to simply as a *power system*, is",
+      "reason": "Em dashes are banned."
+    },
+    {
+      "original": "While the basic principle\u2014converting a primary energy source into usable electrical power\u2014remains unchanged, the architecture of modern power systems has evolved dramatically to accommodate",
+      "replacement": "While the basic principle, converting a primary energy source into usable electrical power, remains unchanged, the architecture of modern power systems has evolved to accommodate",
+      "reason": "Em dashes are banned and 'dramatically' is a discouraged intensifier."
+    },
+    {
+      "original": "deliver it safely to end\u2011users",
+      "replacement": "deliver it safely to end-users",
+      "reason": "Non-breaking hyphen is not a standard US keyboard character."
+    },
+    {
+      "original": "**Generation** \u2013 Conversion",
+      "replacement": "**Generation** - Conversion",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "(T&D)** \u2013 Transport of electric power from the generation site to the load center using high\u2011voltage lines (transmission) and lower\u2011voltage feeders",
+      "replacement": "(T&D)** - Transport of electric power from the generation site to the load center using high-voltage lines (transmission) and lower-voltage feeders",
+      "reason": "En dash and non-breaking hyphens replaced with ASCII hyphens."
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous",
+      "replacement": "**Control & Protection** - Continuous",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "is therefore not merely a physical infrastructure, but also a complex socio\u2011technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information\u2011communication technologies",
+      "replacement": "is therefore both a physical infrastructure and a complex socio-technical system that incorporates market mechanisms, regulatory frameworks, and increasingly, sophisticated information-communication technologies",
+      "reason": "Restructures the banned 'not just X, but also Y' pattern and replaces non-breaking hyphens."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune cuts frequency restoration time by two-thirds.",
+      "reason": "'Significantly' is a discouraged intensifier, so the sentence now states the measured effect."
+    },
+    {
+      "original": "Its intrinsic inertia\u2014massive rotating masses that store kinetic energy\u2014provides short\u2011term stability",
+      "replacement": "Its intrinsic inertia, massive rotating masses that store kinetic energy, provides short-term stability",
+      "reason": "Em dashes and non-breaking hyphen replaced."
+    },
+    {
+      "original": "cloud-driven ramps\u2026",
+      "replacement": "cloud-driven ramps...",
+      "reason": "Ellipsis glyph replaced with three periods."
+    },
+    {
+      "original": "**Intermittency** \u2013 Power",
+      "replacement": "**Intermittency** - Power",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Geographic Dispersion** \u2013 Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "**Geographic Dispersion** - Renewable units are often sited where resources are abundant, not where demand peaks, requiring strong transmission networks.",
+      "reason": "En dash replaced and the discouraged word 'robust' swapped out."
+    },
+    {
+      "original": "**Inverter\u2011Based Interface** \u2013 Many renewable devices connect to the grid via power electronic inverters, which lack the natural inertia of rotating machines. Consequently, new control strategies (synthetic inertia, grid\u2011forming inverters)",
+      "replacement": "**Inverter-Based Interface** - Many renewable devices connect to the grid via power electronic inverters, which lack the natural inertia of rotating machines. Consequently, new control strategies (synthetic inertia, grid-forming inverters)",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "2.3 Distributed Energy Resources (DERs)",
+      "replacement": "2.3 Distributed Energy Resources",
+      "reason": "Parenthetical clarifications in headings are banned; the acronym now goes in the body."
+    },
+    {
+      "original": "Beyond utility\u2011scale renewables, the advent of small\u2011scale generation (rooftop PV, micro\u2011turbines, fuel cells)",
+      "replacement": "Beyond utility-scale renewables, the advent of small-scale generation (rooftop PV, micro-turbines, fuel cells)",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "Distributed Energy Resources. DERs can operate in grid\u2011connected mode",
+      "replacement": "Distributed Energy Resources (DERs). DERs can operate in grid-connected mode",
+      "reason": "Moves the acronym out of the heading and replaces a non-breaking hyphen."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed because resistive losses (I\u00b2R) fall dramatically as current decreases.",
+      "replacement": "High voltages, typically ranging from 115 kV to 1,200 kV, are employed because resistive losses (I^2R) fall with the square of the current.",
+      "reason": "Em dashes and the superscript are replaced, and the intensifier 'dramatically' gives way to the actual relationship."
+    },
+    {
+      "original": "**Transmission Lines** \u2013 Overhead conductors (steel\u2011reinforced aluminum, ACSR) or underground/high\u2011temperature",
+      "replacement": "**Transmission Lines** - Overhead conductors (steel-reinforced aluminum, ACSR) or underground/high-temperature",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Substations** \u2013 Nodes",
+      "replacement": "**Substations** - Nodes",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Converters** \u2013 For High\u2011Voltage Direct Current (HVDC) links, line\u2011commutated converters (LCC) or Voltage\u2011Sourced Converters (VSC) enable long\u2011distance, low\u2011loss",
+      "replacement": "**Converters** - For High-Voltage Direct Current (HVDC) links, line-commutated converters (LCC) or Voltage-Sourced Converters (VSC) enable long-distance, low-loss",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces line losses",
+      "replacement": "The 345 kV reconductor reduces line losses",
+      "reason": "'Significantly' is a discouraged intensifier, and the figures already show the size of the drop."
+    },
+    {
+      "original": "Modern transmission planning leverages",
+      "replacement": "Modern transmission planning uses",
+      "reason": "'Leverage' is a discouraged verb."
+    },
+    {
+      "original": "(FACTS) devices\u2014static VAR compensators (SVC), thyristor\u2011controlled series capacitors (TCSC), and unified power flow controllers (UPFC)\u2014provides operators with dynamic voltage and power\u2011flow regulation, enhancing capacity",
+      "replacement": "(FACTS) devices, such as static VAR compensators (SVC), thyristor-controlled series capacitors (TCSC), and unified power flow controllers (UPFC), provides operators with dynamic voltage and power-flow regulation, raising capacity",
+      "reason": "Em dashes and non-breaking hyphens are replaced, and the discouraged verb 'enhance' is swapped out."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the last mile of the power system",
+      "reason": "Scare quotes (also curly) removed."
+    },
+    {
+      "original": "**Primary Substations** \u2013 Reduce transmission\u2011level voltages (e.g., 138 kV) to medium voltages (4 kV\u201335 kV) via step\u2011down transformers.",
+      "replacement": "**Primary Substations** - Reduce transmission-level voltages (e.g., 138 kV) to medium voltages (4 kV-35 kV) via step-down transformers.",
+      "reason": "En dashes and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs",
+      "replacement": "**Radial or Mesh Feeders** - Radial designs",
+      "reason": "En dash replaced and curly scare quotes removed."
+    },
+    {
+      "original": "**Secondary Distribution Transformers** \u2013 Further step down voltage for end\u2011use customers.",
+      "replacement": "**Secondary Distribution Transformers** - Further step down voltage for end-use customers.",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Smart Devices** \u2013 Automated",
+      "replacement": "**Smart Devices** - Automated",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Primary (Local) Control** \u2013 Governor",
+      "replacement": "**Primary (Local) Control** - Governor",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Secondary (AGC) Control** \u2013 Automatic Generation Control adjusts generator set\u2011points to restore frequency and tie\u2011line",
+      "replacement": "**Secondary (AGC) Control** - Automatic Generation Control adjusts generator set-points to restore frequency and tie-line",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Tertiary (Economic Dispatch)** \u2013 Centralized",
+      "replacement": "**Tertiary (Economic Dispatch)** - Centralized",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "grid\u2019s immune system",
+      "replacement": "grid's immune system",
+      "reason": "Curly apostrophe replaced."
+    },
+    {
+      "original": "**Overcurrent Protection** \u2013 Detects",
+      "replacement": "**Overcurrent Protection** - Detects",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Distance Protection** \u2013 Measures",
+      "replacement": "**Distance Protection** - Measures",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Differential Protection** \u2013 Compares",
+      "replacement": "**Differential Protection** - Compares",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "*digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows for adaptive settings, self\u2011testing, and integration with communication protocols such as IEC 61850, paving the way for *wide\u2011area protection* that can coordinate responses across regional or inter\u2011regional grids.",
+      "replacement": "*digital relaying*, using microprocessor-based Intelligent Electronic Devices (IEDs), allows for adaptive settings, self-testing, and integration with communication protocols such as IEC 61850, enabling *wide-area protection* that can coordinate responses across regional or inter-regional grids.",
+      "reason": "Em dashes and non-breaking hyphens are replaced, and the academic tell 'pave the way for' is swapped out."
+    },
+    {
+      "original": "expected to be \u201calways\u2011on,\u201d extreme weather events, cyber\u2011attacks",
+      "replacement": "expected to be always-on, extreme weather events, cyber-attacks",
+      "reason": "Curly scare quotes removed and non-breaking hyphens replaced."
+    },
+    {
+      "original": "large\u2011scale blackouts",
+      "replacement": "large-scale blackouts",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "The Texas failure was not a nameplate shortfall of wind; frozen gas wells and unheated thermal auxiliaries accounted for the lost megawatts.",
+      "replacement": "In the Texas failure, frozen gas wells and unheated thermal auxiliaries, rather than a nameplate shortfall of wind, accounted for the lost megawatts.",
+      "reason": "Restructures the discouraged 'not X, it's Y' construction."
+    },
+    {
+      "original": "cut gas supply\u2014thermal units",
+      "replacement": "cut gas supply; thermal units",
+      "reason": "Em dash replaced with semicolon."
+    },
+    {
+      "original": "**Hardening Infrastructure** \u2013 Substation",
+      "replacement": "**Hardening Infrastructure** - Substation",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Grid Flexibility** \u2013 Fast\u2011acting storage, demand\u2011response programs, and synthetic inertia from inverter\u2011based resources.",
+      "replacement": "**Grid Flexibility** - Fast-acting storage, demand-response programs, and synthetic inertia from inverter-based resources.",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Decentralized Backup** \u2013 Microgrids",
+      "replacement": "**Decentralized Backup** - Microgrids",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "6.2 Integration of Variable Renewable Energy (VRE)",
+      "replacement": "6.2 Integration of Variable Renewable Energy",
+      "reason": "Parenthetical clarifications in headings are banned; the acronym now goes in the body."
+    },
+    {
+      "original": "High penetrations of wind and solar pose two intertwined issues:",
+      "replacement": "High penetrations of variable renewable energy (VRE), such as wind and solar, pose two intertwined issues:",
+      "reason": "Defines the acronym that was removed from the heading."
+    },
+    {
+      "original": "**Supply\u2011Demand Balancing** \u2013 The net load curve becomes flatter during sunny windy days, diminishing the \u201cramping\u201d capacity",
+      "replacement": "**Supply-Demand Balancing** - The net load curve becomes flatter during sunny windy days, diminishing the ramping capacity",
+      "reason": "Non-breaking hyphen and en dash are replaced, and curly scare quotes are removed."
+    },
+    {
+      "original": "**Grid Stability** \u2013 Reduced",
+      "replacement": "**Grid Stability** - Reduced",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "compressed\u2011air energy storage, battery\u2011energy\u2011storage systems (BESS), and advanced inverter functionalities that provide *grid\u2011forming* capabilities",
+      "replacement": "compressed-air energy storage, battery-energy-storage systems (BESS), and advanced inverter functionalities that provide *grid-forming* capabilities",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "while fostering competition",
+      "replacement": "while encouraging competition",
+      "reason": "'Foster' is a discouraged verb."
+    },
+    {
+      "original": "**Cost\u2011reflective tariffs**",
+      "replacement": "**Cost-reflective tariffs**",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "become network\u2011connected",
+      "replacement": "become network-connected",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "6.4 Cyber\u2011Physical Security",
+      "replacement": "6.4 Cyber-Physical Security",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "Cyber\u2011physical attacks, such as",
+      "replacement": "Cyber-physical attacks, such as",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "*defense\u2011in\u2011depth* architectures",
+      "replacement": "*defense-in-depth* architectures",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Real\u2011time anomaly detection** using machine\u2011learning algorithms",
+      "replacement": "**Real-time anomaly detection** using machine-learning algorithms",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "two\u2011way communication, and advanced analytics to create a responsive, self\u2011optimizing network",
+      "replacement": "two-way communication, and advanced analytics to create a responsive, self-optimizing network",
+      "reason": "Non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Advanced Metering Infrastructure (AMI)** \u2013 Provides",
+      "replacement": "**Advanced Metering Infrastructure (AMI)** - Provides",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Distribution Management Systems (DMS)** \u2013 Automate",
+      "replacement": "**Distribution Management Systems (DMS)** - Automate",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor Measurement Units (PMUs) deliver synchrophasor data at 30\u2013120",
+      "replacement": "**Wide-Area Monitoring Systems (WAMS)** - Phasor Measurement Units (PMUs) deliver synchrophasor data at 30-120",
+      "reason": "Non-breaking hyphen and en dashes replaced."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins, high-fidelity virtual replicas of physical grid assets, allow",
+      "reason": "Em dashes and non-breaking hyphen replaced."
+    },
+    {
+      "original": "Long\u2011duration storage is emerging",
+      "replacement": "Long-duration storage is emerging",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Lithium\u2011Ion Batteries** \u2013 Dominant for short\u2011 to medium\u2011duration",
+      "replacement": "**Lithium-Ion Batteries** - Dominant for short- to medium-duration",
+      "reason": "Non-breaking hyphens and en dash replaced."
+    },
+    {
+      "original": "(Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer scalable, long\u2011duration",
+      "replacement": "(Vanadium Redox, Zinc-Bromine) - Offer scalable, long-duration",
+      "reason": "Non-breaking hyphens and en dash replaced."
+    },
+    {
+      "original": "**Thermal and Mechanical Storage** \u2013 Cryogenic air energy storage (CAES), pumped hydro, and emerging gravity\u2011based systems.",
+      "replacement": "**Thermal and Mechanical Storage** - Cryogenic air energy storage (CAES), pumped hydro, and emerging gravity-based systems.",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Full Renewable Transition** \u2013",
+      "replacement": "**Full Renewable Transition** -",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "(CCUS)** \u2013 Retrofitting existing fossil\u2011fuel plants",
+      "replacement": "(CCUS)** - Retrofitting existing fossil-fuel plants",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Hydrogen Integration** \u2013 Using",
+      "replacement": "**Hydrogen Integration** - Using",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "7.4 Grid\u2011Forming Inverters",
+      "replacement": "7.4 Grid-Forming Inverters",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "*grid\u2011following* mode",
+      "replacement": "*grid-following* mode",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "New *grid\u2011forming* inverters",
+      "replacement": "New *grid-forming* inverters",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Provides Synthetic Inertia** \u2013 Emulates",
+      "replacement": "**Provides Synthetic Inertia** - Emulates",
+      "reason": "En dash replaced with hyphen."
+    },
+    {
+      "original": "**Enables Islanded Microgrids** \u2013 Seamless transition between grid\u2011connected and standalone operation, crucial for critical facilities",
+      "replacement": "**Enables Islanded Microgrids** - Smooth transition between grid-connected and standalone operation, important for critical facilities",
+      "reason": "En dash and non-breaking hyphen are replaced, and the discouraged words 'seamless' and 'crucial' are swapped out."
+    },
+    {
+      "original": "7.5 Power\u2011to\u2011X (P2X) and Sector Coupling",
+      "replacement": "7.5 Power-to-X and Sector Coupling",
+      "reason": "Parenthetical in heading removed and non-breaking hyphens replaced."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies convert surplus electricity into other energy carriers: hydrogen (power\u2011to\u2011hydrogen), synthetic fuels (power\u2011to\u2011synthetic methane), or heat (power\u2011to\u2011heat).",
+      "replacement": "\"Power-to-X\" technologies convert surplus electricity into other energy carriers: hydrogen (power-to-hydrogen), synthetic fuels (power-to-synthetic methane), or heat (power-to-heat).",
+      "reason": "Curly quotes and non-breaking hyphens replaced."
+    },
+    {
+      "original": "By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges, smoothing",
+      "replacement": "Coupling the electricity sector with transport, industry, and heating creates a more integrated energy system, smoothing",
+      "reason": "Restructures the discouraged 'By [gerund]' opener and replaces 'holistic'."
+    },
+    {
+      "original": "Renewable\u2011Heavy Grid in Practice",
+      "replacement": "Renewable-Heavy Grid in Practice",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "**European Union\u2019s \u201cElectricity Interconnection\u201d**",
+      "replacement": "**European Union's \"Electricity Interconnection\"**",
+      "reason": "Curly apostrophe and quotes replaced."
+    },
+    {
+      "original": "cross\u2011border interconnection",
+      "replacement": "cross-border interconnection",
+      "reason": "Non-breaking hyphen replaced."
+    },
+    {
+      "original": "**HVDC Links** \u2013 Multi\u2011terminal VSC\u2011HVDC",
+      "replacement": "**HVDC Links** - Multi-terminal VSC-HVDC",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Coordinated Market Coupling** \u2013 Harmonized market rules allow cross\u2011border trading",
+      "replacement": "**Coordinated Market Coupling** - Harmonized market rules allow cross-border trading",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Real\u2011Time Grid Operations** \u2013 A continent\u2011wide",
+      "replacement": "**Real-Time Grid Operations** - A continent-wide",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "when robust transmission, advanced controls, and market integration co\u2011exist.",
+      "replacement": "when strong transmission, advanced controls, and market integration co-exist.",
+      "reason": "Replaces the discouraged word 'robust' and a non-breaking hyphen."
+    },
+    {
+      "original": "*centrally\u2011controlled, unidirectional* network into a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates",
+      "replacement": "*centrally-controlled, unidirectional* network into a *decentralized, cyber-physical system* that integrates",
+      "reason": "Non-breaking hyphens are replaced, metaphorical 'ecosystem' is removed, and 'seamlessly' is cut."
+    },
+    {
+      "original": "**Massive DER Penetration** \u2013 Millions of rooftop PV installations, community microgrids, and electric\u2011vehicle",
+      "replacement": "**Massive DER Penetration** - Millions of rooftop PV installations, community microgrids, and electric-vehicle",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive dispatch, autonomous fault detection, and self\u2011healing networks powered by machine\u2011learning models",
+      "replacement": "**Artificial-Intelligence-Driven Operations** - Predictive dispatch, autonomous fault detection, and self-healing networks powered by machine-learning models",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "**Resilient Architecture** \u2013 Multi\u2011layered",
+      "replacement": "**Resilient Architecture** - Multi-layered",
+      "reason": "En dash and non-breaking hyphen replaced."
+    },
+    {
+      "original": "**Policy\u2011Driven Decarbonization** \u2013 Carbon pricing, renewable portfolio standards, and incentives for low\u2011carbon technologies steering investment toward a net\u2011zero",
+      "replacement": "**Policy-Driven Decarbonization** - Carbon pricing, renewable portfolio standards, and incentives for low-carbon technologies steering investment toward a net-zero",
+      "reason": "En dash and non-breaking hyphens replaced."
+    },
+    {
+      "original": "out of service for days\u2014planners",
+      "replacement": "out of service for days; planners",
+      "reason": "Em dash replaced with semicolon."
+    },
+    {
+      "original": "yet the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "yet the benefits (reliable power, reduced emissions, and a more democratic energy system) promise",
+      "reason": "Em dashes are replaced and the metaphorical 'landscape' is removed."
+    },
+    {
+      "original": "Navigating reliability, resilience, and market complexities demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks.",
+      "replacement": "Managing reliability, resilience, and market complexities demands new technologies (smart grids, energy storage, grid-forming inverters) and sound regulatory frameworks.",
+      "reason": "Replaces metaphorical 'navigate', 'innovative', 'robust', the em dashes, and a non-breaking hyphen."
+    },
+    {
+      "original": "forward\u2011looking policy can sustain the grid\u2019s reliability",
+      "replacement": "forward-looking policy can sustain the grid's reliability",
+      "reason": "Non-breaking hyphen and curly apostrophe replaced."
+    },
+    {
+      "original": "The next century\u2019s power system",
+      "replacement": "The next century's power system",
+      "reason": "Curly apostrophe replaced."
+    },
+    {
+      "original": "climate\u2011friendly technologies",
+      "replacement": "climate-friendly technologies",
+      "reason": "Non-breaking hyphen replaced."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 25991,
+    "cache_read": 33153,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.5264666000000001,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

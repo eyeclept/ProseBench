@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P3_r2",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 2,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f371f6278ffd86b0fe3a53a68ce743adacaa32baae3822e93bb113e582d4ff6c",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:55:31.678028+00:00",
+  "duration_s": 51.6044248350081,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.\",\"replacement\":\"Morphine is produced in Papaver somniferum latex.\",\"reason\":\"The negative half is a rhetorical windup; deleting it leaves the positive claim intact.\"},{\"original\":\"The construct was designed for chloroplast transformation, not nuclear transformation.\",\"replacement\":\"The construct was designed for chloroplast transformation.\",\"reason\":\"The negative clause is filler; the positive statement alone states the complete claim.\"},{\"original\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.\",\"replacement\":\"Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).\",\"reason\":\"The second clause restates the distinction as an analogy without adding new facts, so it is trimmed to parentheses.\"},{\"original\":\"Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\",\"replacement\":\"Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.\",\"reason\":\"The negative clause is rhetorical padding; deleting it leaves the positive claim intact without losing any information.\"}]}",
+  "edits": [
+    {
+      "original": "Morphine is not synthesized by the Pacific yew; it is produced in Papaver somniferum latex.",
+      "replacement": "Morphine is produced in Papaver somniferum latex.",
+      "reason": "The negative half is a rhetorical windup; deleting it leaves the positive claim intact."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation.",
+      "reason": "The negative clause is filler; the positive statement alone states the complete claim."
+    },
+    {
+      "original": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work, and a temporal regime, where stomata open at night, close to the C4-versus-CAM split, spatial packing is the C4 case, temporal packing is the CAM one.",
+      "replacement": "Researchers divide carbon-concentrating mechanisms into a spatial regime, where mesophyll and bundle-sheath cells share the work (C4), and a temporal regime, where stomata open at night (CAM).",
+      "reason": "The second clause restates the distinction as an analogy without adding new facts, so it is trimmed to parentheses."
+    },
+    {
+      "original": "Botany, far from being a static catalog of flora, is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "replacement": "Botany is a dynamic, integrative science that underpins food security, health, climate mitigation, and cultural identity.",
+      "reason": "The negative clause is rhetorical padding; deleting it leaves the positive claim intact without losing any information."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18136,
+    "output": 5084,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 4749
+  },
+  "cost_usd": 0.0044656,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

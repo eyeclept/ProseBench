@@ -1,0 +1,186 @@
+{
+  "run_id": "R1_P3_r2",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:22:08.189729+00:00",
+  "duration_s": 582.102051395,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n  {\"original\": \"c.  371\u2013287\", \"replacement\": \"c.  371-287\", \"reason\": \"Replace en-dash (\u2013) with standard ASCII hyphen per NEVER rule on non-ASCII characters.\"},\n  {\"original\": \"~1,610\", \"replacement\": \"~1,610\", \"reason\": \"Replace en-dash (\u2013) in the number with standard ASCII hyphen per NEVER rule on non-ASCII characters.\"},\n  {\"original\": \"well\u2011being\", \"replacement\": \"well-being\", \"reason\": \"Replace en-dash (\u2011) in compound word with standard ASCII hyphen per NEVER rule on non-ASCII characters.\"},\n  {\"original\": \"pivotal\", \"replacement\": \"crucial\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"a watershed moment, establishing\", \"replacement\": \"a major advance, establishing\", \"reason\": \"'Watershed moment' is a banned inflated-symbolism phrase (2025-2026 corpus-frequency AI tell).\"},\n  {\"original\": \"paving the way for high\u2011throughput\", \"replacement\": \"which enabled high\u2011throughput\", \"reason\": \"'Paving the way for' is a banned academic tell; restructure to a direct clause.\"},\n  {\"original\": \"comprehensive understanding\", \"replacement\": \"thorough understanding\", \"reason\": \"'Comprehensive' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"dramatically increased\", \"replacement\": \"greatly increased\", \"reason\": \"'Dramatically' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"comprehensive networks that predict\", \"replacement\": \"detailed networks that predict\", \"reason\": \"'Comprehensive' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"shed light on the plant life\", \"replacement\": \"illuminates the plant life\", \"reason\": \"'Shed light on' is a banned academic tell.\"},\n  {\"original\": \"dramatically reduces\", \"replacement\": \"substantially reduces\", \"reason\": \"'Dramatically' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"a pivotal role in restoration\", \"replacement\": \"a crucial role in restoration\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal for improving\", \"replacement\": \"crucial for improving\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal role in restoration\", \"replacement\": \"crucial role in restoration\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pave the way for high\", \"replacement\": \"which enabled high\", \"reason\": \"'Pave the way for' is a banned inflated-symbolism phrase and academic tell.\"},\n  {\"original\": \"dramatically increased food\", \"replacement\": \"greatly increased food\", \"reason\": \"'Dramatically' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal for improving\", \"replacement\": \"crucial for improving\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal role in restoration\", \"replacement\": \"crucial role in restoration\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"shed light on\", \"replacement\": \"illuminates\", \"reason\": \"'Shed light on' is a banned academic tell.\"},\n  {\"original\": \"pivotal\", \"replacement\": \"crucial\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"a comprehensive\", \"replacement\": \"a thorough\", \"reason\": \"'Comprehensive' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"dramatically\", \"replacement\": \"\", \"reason\": \"'Dramatically' is banned under Prefer other words (adjectives and intensifiers); removal yields a cleaner sentence.\"},\n  {\"original\": \"comprehensive networks\", \"replacement\": \"detailed networks\", \"reason\": \"'Comprehensive' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"shed light on\", \"replacement\": \"illuminates\", \"reason\": \"'Shed light on' is a banned academic tell.\"},\n  {\"original\": \"pivotal\", \"replacement\": \"crucial\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"paving the way for\", \"replacement\": \"which enabled\", \"reason\": \"'Paving the way for' is a banned inflated-symbolism phrase and academic tell.\"},\n  {\"original\": \"dramatically\", \"replacement\": \"\", \"reason\": \"'Dramatically' is banned under Prefer other words (adjectives and intensifiers); removal yields a cleaner sentence.\"},\n  {\"original\": \"comprehensive\", \"replacement\": \"thorough\", \"reason\": \"'Comprehensive' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal\", \"replacement\": \"crucial\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"},\n  {\"original\": \"pivotal\", \"replacement\": \"crucial\", \"reason\": \"'Pivotal' is banned under Prefer other words (adjectives and intensifiers).\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "c.  371\u2013287",
+      "replacement": "c.  371-287",
+      "reason": "Replace en-dash (\u2013) with standard ASCII hyphen per NEVER rule on non-ASCII characters."
+    },
+    {
+      "original": "~1,610",
+      "replacement": "~1,610",
+      "reason": "Replace en-dash (\u2013) in the number with standard ASCII hyphen per NEVER rule on non-ASCII characters."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Replace en-dash (\u2011) in compound word with standard ASCII hyphen per NEVER rule on non-ASCII characters."
+    },
+    {
+      "original": "pivotal",
+      "replacement": "crucial",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "a watershed moment, establishing",
+      "replacement": "a major advance, establishing",
+      "reason": "'Watershed moment' is a banned inflated-symbolism phrase (2025-2026 corpus-frequency AI tell)."
+    },
+    {
+      "original": "paving the way for high\u2011throughput",
+      "replacement": "which enabled high\u2011throughput",
+      "reason": "'Paving the way for' is a banned academic tell; restructure to a direct clause."
+    },
+    {
+      "original": "comprehensive understanding",
+      "replacement": "thorough understanding",
+      "reason": "'Comprehensive' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "dramatically increased",
+      "replacement": "greatly increased",
+      "reason": "'Dramatically' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "comprehensive networks that predict",
+      "replacement": "detailed networks that predict",
+      "reason": "'Comprehensive' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "shed light on the plant life",
+      "replacement": "illuminates the plant life",
+      "reason": "'Shed light on' is a banned academic tell."
+    },
+    {
+      "original": "dramatically reduces",
+      "replacement": "substantially reduces",
+      "reason": "'Dramatically' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "a pivotal role in restoration",
+      "replacement": "a crucial role in restoration",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal for improving",
+      "replacement": "crucial for improving",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal role in restoration",
+      "replacement": "crucial role in restoration",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pave the way for high",
+      "replacement": "which enabled high",
+      "reason": "'Pave the way for' is a banned inflated-symbolism phrase and academic tell."
+    },
+    {
+      "original": "dramatically increased food",
+      "replacement": "greatly increased food",
+      "reason": "'Dramatically' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal for improving",
+      "replacement": "crucial for improving",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal role in restoration",
+      "replacement": "crucial role in restoration",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "shed light on",
+      "replacement": "illuminates",
+      "reason": "'Shed light on' is a banned academic tell."
+    },
+    {
+      "original": "pivotal",
+      "replacement": "crucial",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "a comprehensive",
+      "replacement": "a thorough",
+      "reason": "'Comprehensive' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "dramatically",
+      "replacement": "",
+      "reason": "'Dramatically' is banned under Prefer other words (adjectives and intensifiers); removal yields a cleaner sentence."
+    },
+    {
+      "original": "comprehensive networks",
+      "replacement": "detailed networks",
+      "reason": "'Comprehensive' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "shed light on",
+      "replacement": "illuminates",
+      "reason": "'Shed light on' is a banned academic tell."
+    },
+    {
+      "original": "pivotal",
+      "replacement": "crucial",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "paving the way for",
+      "replacement": "which enabled",
+      "reason": "'Paving the way for' is a banned inflated-symbolism phrase and academic tell."
+    },
+    {
+      "original": "dramatically",
+      "replacement": "",
+      "reason": "'Dramatically' is banned under Prefer other words (adjectives and intensifiers); removal yields a cleaner sentence."
+    },
+    {
+      "original": "comprehensive",
+      "replacement": "thorough",
+      "reason": "'Comprehensive' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal",
+      "replacement": "crucial",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    },
+    {
+      "original": "pivotal",
+      "replacement": "crucial",
+      "reason": "'Pivotal' is banned under Prefer other words (adjectives and intensifiers)."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21688,
+    "output": 3860,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 2954
+  },
+  "cost_usd": 0.0058358,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

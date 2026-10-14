@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P2_r3_easy",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "c6f2900692c92a1e3cd08759baf3505a86e21a9b43e4d9471a6431f4e8408fd3",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:51:20.046851+00:00",
+  "duration_s": 15.713403052010108,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"sentence\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned on purpose.\",\n      \"reason\": \"'By accident' is the ordinary, general-knowledge antonym of 'on purpose' \u2014 this is exactly the WRONG example given in Rule 3 \u2014 so the trailer adds nothing and is cut.\"\n    },\n    {\n      \"sentence\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": null,\n      \"reason\": \"Uncertainty flagged rather than edited: 'non-spinning reserve' is not the ordinary antonym of 'spinning reserve' for a general reader \u2014 it is a genuine, checkable domain distinction (reserve already synchronized and loaded vs. reserve that can be brought online). Rule 3's escalation clause says if it's unclear which side of the ordinary-knowledge test the X falls on, do not edit the sentence. If you confirm the distinction is not ordinary knowledge, the trailer should be replaced with its own fact-stated sentence, e.g.: 'Operators procured spinning reserve. Unlike non-spinning reserve, which must be started up before it can respond, spinning reserve is already synchronized to the grid and can pick up load immediately.'\"\n    }\n  ]\n}",
+  "edits": [],
+  "malformed_edits": [
+    {
+      "sentence": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'By accident' is the ordinary, general-knowledge antonym of 'on purpose' \u2014 this is exactly the WRONG example given in Rule 3 \u2014 so the trailer adds nothing and is cut."
+    },
+    {
+      "sentence": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": null,
+      "reason": "Uncertainty flagged rather than edited: 'non-spinning reserve' is not the ordinary antonym of 'spinning reserve' for a general reader \u2014 it is a genuine, checkable domain distinction (reserve already synchronized and loaded vs. reserve that can be brought online). Rule 3's escalation clause says if it's unclear which side of the ordinary-knowledge test the X falls on, do not edit the sentence. If you confirm the distinction is not ordinary knowledge, the trailer should be replaced with its own fact-stated sentence, e.g.: 'Operators procured spinning reserve. Unlike non-spinning reserve, which must be started up before it can respond, spinning reserve is already synchronized to the grid and can pick up load immediately.'"
+    }
+  ],
+  "parse_error": null,
+  "usage": {
+    "input": 196,
+    "output": 832,
+    "cache_read": 20736,
+    "cache_write": 0,
+    "reasoning": 548
+  },
+  "cost_usd": 0.000752216,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,465 @@
+{
+  "run_id": "R4_P1_r2",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:01:20.088799+00:00",
+  "duration_s": 208.22978735298966,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"\\u2248\", \"replacement\": \"~\", \"reason\": \"Replaces a non-ASCII approximation sign with a standard keyboard character.\"}, {\"original\": \"twenty\\u2011first\", \"replacement\": \"twenty-first\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"cloud\\u2011based\", \"replacement\": \"cloud-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Internet\\u2011of\\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"Replaces non-ASCII nonbreaking hyphens with standard hyphens.\"}, {\"original\": \"benefits\\u2014speed, efficiency, and the democratization of knowledge\\u2014but\", \"replacement\": \"benefits, speed, efficiency, and the democratization of knowledge, but\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas without creating a comma splice.\"}, {\"original\": \"malware\\u2014viruses, worms, and trojans\\u2014remain\", \"replacement\": \"malware, viruses, worms, and trojans, remain\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas.\"}, {\"original\": \"supply\\u2011chain attacks\", \"replacement\": \"supply-chain attacks\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"APT\\u2011related\", \"replacement\": \"APT-related\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Nation\\u2011state\", \"replacement\": \"Nation-state\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"zero\\u2011day\", \"replacement\": \"zero-day\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"dark\\u2011web\", \"replacement\": \"dark-web\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"\\u201cattack surfaces\\u201d\", \"replacement\": \"\\u0022attack surfaces\\u0022\", \"reason\": \"Replaces curly quotation marks with straight ASCII quotation marks.\"}, {\"original\": \"deep\\u2011fake technology\", \"replacement\": \"deep-fake technology\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"AI\\u2011driven social engineering\", \"replacement\": \"AI-driven social engineering\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"AES\\u2011256\", \"replacement\": \"AES-256\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"defense\\u2011in\\u2011depth\", \"replacement\": \"defense-in-depth\", \"reason\": \"Replaces non-ASCII nonbreaking hyphens with standard hyphens.\"}, {\"original\": \"next\\u2011generation\", \"replacement\": \"next-generation\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"application\\u2011aware\", \"replacement\": \"application-aware\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"micro\\u2011segmentation isolates\", \"replacement\": \"micro-segmentation isolates\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"movement\\u2014a key\", \"replacement\": \"movement, a key\", \"reason\": \"Replaces an em dash before a trailing fragment with an ASCII comma.\"}, {\"original\": \"machine\\u2011learning\", \"replacement\": \"machine-learning\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"credential\\u2011dumping\", \"replacement\": \"credential-dumping\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Identity\\u2011and\\u2011access\", \"replacement\": \"Identity-and-access\", \"reason\": \"Replaces non-ASCII nonbreaking hyphens with standard hyphens.\"}, {\"original\": \"zero\\u2011trust\", \"replacement\": \"zero-trust\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"\\u201ctrusted internal network\\u201d\", \"replacement\": \"\\u0022trusted internal network\\u0022\", \"reason\": \"Replaces curly quotation marks with straight ASCII quotation marks.\"}, {\"original\": \"management\\u2014automated wherever possible\\u2014closes\", \"replacement\": \"management, automated wherever possible, closes\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas.\"}, {\"original\": \"process tree\\u2026\", \"replacement\": \"process tree...\", \"reason\": \"Replaces a single ellipsis glyph with three ASCII periods.\"}, {\"original\": \"third\\u2011party\", \"replacement\": \"third-party\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Board\\u2011level\", \"replacement\": \"Board-level\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"contain\\u2014the finance\", \"replacement\": \"contain; the finance\", \"reason\": \"Uses a semicolon to join two independent clauses instead of an em dash.\"}, {\"original\": \"threats\\u2014whether malicious, negligent, or coerced\\u2014account\", \"replacement\": \"threats, whether malicious, negligent, or coerced, account\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas.\"}, {\"original\": \"click\\u2011through\", \"replacement\": \"click-through\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"\\u201cavailability heuristic\\u201d\", \"replacement\": \"\\u0022availability heuristic\\u0022\", \"reason\": \"Replaces curly quotation marks with straight ASCII quotation marks.\"}, {\"original\": \"security\\u2011first\", \"replacement\": \"security-first\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"reinforcement\\u2014recognizing employees who flag suspicious activity\\u2014outperforms\", \"replacement\": \"reinforcement, recognizing employees who flag suspicious activity, outperforms\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas.\"}, {\"original\": \"role\\u2011based\", \"replacement\": \"role-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Data\\u2011protection regulations\\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\\u2011Pacific\\u2014impose\", \"replacement\": \"Data-protection regulations, GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific, impose\", \"reason\": \"Replaces non-ASCII hyphens and em dashes with standard ASCII punctuation.\"}, {\"original\": \"\\u201cbug bounty\\u201d\", \"replacement\": \"\\u0022bug bounty\\u0022\", \"reason\": \"Replaces curly quotation marks with straight ASCII quotation marks.\"}, {\"original\": \"approach\\u2014transparent legislation, multi\\u2011stakeholder dialogue, and adherence to international norms\\u2014remains\", \"replacement\": \"approach, transparent legislation, multi-stakeholder dialogue, and adherence to international norms, remains\", \"reason\": \"Replaces a non-ASCII hyphen and parenthetical em dashes with ASCII punctuation.\"}, {\"original\": \"cross\\u2011border\", \"replacement\": \"cross-border\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"post\\u2011incident analysis\", \"replacement\": \"post-incident analysis\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"up\\u2011to\\u2011date\", \"replacement\": \"up-to-date\", \"reason\": \"Replaces non-ASCII nonbreaking hyphens with standard hyphens.\"}, {\"original\": \"backed\\u2011up\", \"replacement\": \"backed-up\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Post\\u2011incident lessons\", \"replacement\": \"Post-incident lessons\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"cyber\\u2011insurance\", \"replacement\": \"cyber-insurance\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"playbooks\\u2014for example,\", \"replacement\": \"playbooks, for example,\", \"reason\": \"Replaces an em dash introducing an example with an ASCII comma.\"}, {\"original\": \"double\\u2011edged\", \"replacement\": \"double-edged\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"rule\\u2011based\", \"replacement\": \"rule-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"longer\\u2011term\", \"replacement\": \"longer-term\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"large\\u2011scale\", \"replacement\": \"large-scale\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"public\\u2011key\", \"replacement\": \"public-key\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"lattice\\u2011based\", \"replacement\": \"lattice-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"hash\\u2011based\", \"replacement\": \"hash-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"code\\u2011based\", \"replacement\": \"code-based\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"AI\\u2011driven analytics\", \"replacement\": \"AI-driven analytics\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"threat\\u2011intel\", \"replacement\": \"threat-intel\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"post\\u2011quantum cryptography\", \"replacement\": \"post-quantum cryptography\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"credential\\u2011stuffing\", \"replacement\": \"credential-stuffing\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"deep\\u2011fake phishing\", \"replacement\": \"deep-fake phishing\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"software\\u2011supply\\u2011chain\", \"replacement\": \"software-supply-chain\", \"reason\": \"Replaces non-ASCII nonbreaking hyphens with standard hyphens.\"}, {\"original\": \"use\\u2011cases\", \"replacement\": \"use-cases\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"United Nations\\u2019\", \"replacement\": \"United Nations'\", \"reason\": \"Replaces a curly apostrophe with a straight ASCII apostrophe.\"}, {\"original\": \"European Union\\u2019s\", \"replacement\": \"European Union's\", \"reason\": \"Replaces a curly apostrophe with a straight ASCII apostrophe.\"}, {\"original\": \"norm\\u2011setting\", \"replacement\": \"norm-setting\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Public\\u2011private\", \"replacement\": \"Public-private\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"Asia\\u2011Pacific Economic\", \"replacement\": \"Asia-Pacific Economic\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"incident\\u2011sharing\", \"replacement\": \"incident-sharing\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"cyber\\u2011attacks\", \"replacement\": \"cyber-attacks\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"hyper\\u2011connectivity\", \"replacement\": \"hyper-connectivity\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"radios\\u2014the SOC\", \"replacement\": \"radios; the SOC\", \"reason\": \"Uses a semicolon to join two independent clauses instead of an em dash.\"}, {\"original\": \"real\\u2011time\", \"replacement\": \"real-time\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"AI\\u2011assisted\", \"replacement\": \"AI-assisted\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"**Zero\\u2011Trust Architecture** \\u2013 Treat\", \"replacement\": \"**Zero-Trust Architecture** - Treat\", \"reason\": \"Replaces a non-ASCII hyphen and en dash with standard ASCII characters.\"}, {\"original\": \"least\\u2011privilege policies\", \"replacement\": \"least-privilege policies\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"and micro\\u2011segmentation\", \"replacement\": \"and micro-segmentation\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"**Secure\\u2011by\\u2011Design Development** \\u2013 Embed\", \"replacement\": \"**Secure-by-Design Development** - Embed\", \"reason\": \"Replaces non-ASCII hyphens and an en dash with standard ASCII characters.\"}, {\"original\": \"software\\u2011bill of materials\", \"replacement\": \"software-bill of materials\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"**AI\\u2011Enhanced Threat Intelligence** \\u2013 Leverage\", \"replacement\": \"**AI-Enhanced Threat Intelligence** - Leverage\", \"reason\": \"Replaces a non-ASCII hyphen and an en dash with standard ASCII characters.\"}, {\"original\": \"privacy\\u2011preserving\", \"replacement\": \"privacy-preserving\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"**Post\\u2011Quantum Preparedness** \\u2013 Begin\", \"replacement\": \"**Post-Quantum Preparedness** - Begin\", \"reason\": \"Replaces a non-ASCII hyphen and an en dash with standard ASCII characters.\"}, {\"original\": \"high\\u2011value\", \"replacement\": \"high-value\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"long\\u2011term\", \"replacement\": \"long-term\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}, {\"original\": \"**Resilience Engineering** \\u2013 Focus\", \"replacement\": \"**Resilience Engineering** - Focus\", \"reason\": \"Replaces an en dash separator with a standard ASCII hyphen.\"}, {\"original\": \"capabilities\\u2014immutable backups, diversified cloud regions, and automated failover\\u2014to minimize\", \"replacement\": \"capabilities, immutable backups, diversified cloud regions, and automated failover, to minimize\", \"reason\": \"Replaces parenthetical em dashes with ASCII commas.\"}, {\"original\": \"landscape\\u2014characterized by ransomware, APTs, supply\\u2011chain compromises, and AI\\u2011augmented attacks\\u2014demands\", \"replacement\": \"landscape, characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks, demands\", \"reason\": \"Replaces non-ASCII hyphens and parenthetical em dashes with ASCII punctuation.\"}, {\"original\": \"quantum\\u2011resistant\", \"replacement\": \"quantum-resistant\", \"reason\": \"Replaces a non-ASCII nonbreaking hyphen with a standard hyphen.\"}]}",
+  "edits": [
+    {
+      "original": "\u2248",
+      "replacement": "~",
+      "reason": "Replaces a non-ASCII approximation sign with a standard keyboard character."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "Replaces non-ASCII nonbreaking hyphens with standard hyphens."
+    },
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits, speed, efficiency, and the democratization of knowledge, but",
+      "reason": "Replaces parenthetical em dashes with ASCII commas without creating a comma splice."
+    },
+    {
+      "original": "malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "malware, viruses, worms, and trojans, remain",
+      "reason": "Replaces parenthetical em dashes with ASCII commas."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "APT\u2011related",
+      "replacement": "APT-related",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Nation\u2011state",
+      "replacement": "Nation-state",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "zero\u2011day",
+      "replacement": "zero-day",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "dark\u2011web",
+      "replacement": "dark-web",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Replaces curly quotation marks with straight ASCII quotation marks."
+    },
+    {
+      "original": "deep\u2011fake technology",
+      "replacement": "deep-fake technology",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "AI\u2011driven social engineering",
+      "replacement": "AI-driven social engineering",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "AES\u2011256",
+      "replacement": "AES-256",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "defense\u2011in\u2011depth",
+      "replacement": "defense-in-depth",
+      "reason": "Replaces non-ASCII nonbreaking hyphens with standard hyphens."
+    },
+    {
+      "original": "next\u2011generation",
+      "replacement": "next-generation",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "application\u2011aware",
+      "replacement": "application-aware",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "micro\u2011segmentation isolates",
+      "replacement": "micro-segmentation isolates",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "movement\u2014a key",
+      "replacement": "movement, a key",
+      "reason": "Replaces an em dash before a trailing fragment with an ASCII comma."
+    },
+    {
+      "original": "machine\u2011learning",
+      "replacement": "machine-learning",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "credential\u2011dumping",
+      "replacement": "credential-dumping",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Identity\u2011and\u2011access",
+      "replacement": "Identity-and-access",
+      "reason": "Replaces non-ASCII nonbreaking hyphens with standard hyphens."
+    },
+    {
+      "original": "zero\u2011trust",
+      "replacement": "zero-trust",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Replaces curly quotation marks with straight ASCII quotation marks."
+    },
+    {
+      "original": "management\u2014automated wherever possible\u2014closes",
+      "replacement": "management, automated wherever possible, closes",
+      "reason": "Replaces parenthetical em dashes with ASCII commas."
+    },
+    {
+      "original": "process tree\u2026",
+      "replacement": "process tree...",
+      "reason": "Replaces a single ellipsis glyph with three ASCII periods."
+    },
+    {
+      "original": "third\u2011party",
+      "replacement": "third-party",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Board\u2011level",
+      "replacement": "Board-level",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "contain\u2014the finance",
+      "replacement": "contain; the finance",
+      "reason": "Uses a semicolon to join two independent clauses instead of an em dash."
+    },
+    {
+      "original": "threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "threats, whether malicious, negligent, or coerced, account",
+      "reason": "Replaces parenthetical em dashes with ASCII commas."
+    },
+    {
+      "original": "click\u2011through",
+      "replacement": "click-through",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "\u201cavailability heuristic\u201d",
+      "replacement": "\"availability heuristic\"",
+      "reason": "Replaces curly quotation marks with straight ASCII quotation marks."
+    },
+    {
+      "original": "security\u2011first",
+      "replacement": "security-first",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "reinforcement, recognizing employees who flag suspicious activity, outperforms",
+      "reason": "Replaces parenthetical em dashes with ASCII commas."
+    },
+    {
+      "original": "role\u2011based",
+      "replacement": "role-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose",
+      "replacement": "Data-protection regulations, GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific, impose",
+      "reason": "Replaces non-ASCII hyphens and em dashes with standard ASCII punctuation."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Replaces curly quotation marks with straight ASCII quotation marks."
+    },
+    {
+      "original": "approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains",
+      "replacement": "approach, transparent legislation, multi-stakeholder dialogue, and adherence to international norms, remains",
+      "reason": "Replaces a non-ASCII hyphen and parenthetical em dashes with ASCII punctuation."
+    },
+    {
+      "original": "cross\u2011border",
+      "replacement": "cross-border",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "up\u2011to\u2011date",
+      "replacement": "up-to-date",
+      "reason": "Replaces non-ASCII nonbreaking hyphens with standard hyphens."
+    },
+    {
+      "original": "backed\u2011up",
+      "replacement": "backed-up",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Post\u2011incident lessons",
+      "replacement": "Post-incident lessons",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "cyber\u2011insurance",
+      "replacement": "cyber-insurance",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "playbooks\u2014for example,",
+      "replacement": "playbooks, for example,",
+      "reason": "Replaces an em dash introducing an example with an ASCII comma."
+    },
+    {
+      "original": "double\u2011edged",
+      "replacement": "double-edged",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "rule\u2011based",
+      "replacement": "rule-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "longer\u2011term",
+      "replacement": "longer-term",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "large\u2011scale",
+      "replacement": "large-scale",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "public\u2011key",
+      "replacement": "public-key",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "lattice\u2011based",
+      "replacement": "lattice-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "hash\u2011based",
+      "replacement": "hash-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "code\u2011based",
+      "replacement": "code-based",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "threat\u2011intel",
+      "replacement": "threat-intel",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "post\u2011quantum cryptography",
+      "replacement": "post-quantum cryptography",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "credential\u2011stuffing",
+      "replacement": "credential-stuffing",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "deep\u2011fake phishing",
+      "replacement": "deep-fake phishing",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "software\u2011supply\u2011chain",
+      "replacement": "software-supply-chain",
+      "reason": "Replaces non-ASCII nonbreaking hyphens with standard hyphens."
+    },
+    {
+      "original": "use\u2011cases",
+      "replacement": "use-cases",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "United Nations\u2019",
+      "replacement": "United Nations'",
+      "reason": "Replaces a curly apostrophe with a straight ASCII apostrophe."
+    },
+    {
+      "original": "European Union\u2019s",
+      "replacement": "European Union's",
+      "reason": "Replaces a curly apostrophe with a straight ASCII apostrophe."
+    },
+    {
+      "original": "norm\u2011setting",
+      "replacement": "norm-setting",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Public\u2011private",
+      "replacement": "Public-private",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "Asia\u2011Pacific Economic",
+      "replacement": "Asia-Pacific Economic",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "incident\u2011sharing",
+      "replacement": "incident-sharing",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "cyber\u2011attacks",
+      "replacement": "cyber-attacks",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "hyper\u2011connectivity",
+      "replacement": "hyper-connectivity",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "radios\u2014the SOC",
+      "replacement": "radios; the SOC",
+      "reason": "Uses a semicolon to join two independent clauses instead of an em dash."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "AI\u2011assisted",
+      "replacement": "AI-assisted",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "**Zero\u2011Trust Architecture** \u2013 Treat",
+      "replacement": "**Zero-Trust Architecture** - Treat",
+      "reason": "Replaces a non-ASCII hyphen and en dash with standard ASCII characters."
+    },
+    {
+      "original": "least\u2011privilege policies",
+      "replacement": "least-privilege policies",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "and micro\u2011segmentation",
+      "replacement": "and micro-segmentation",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "**Secure\u2011by\u2011Design Development** \u2013 Embed",
+      "replacement": "**Secure-by-Design Development** - Embed",
+      "reason": "Replaces non-ASCII hyphens and an en dash with standard ASCII characters."
+    },
+    {
+      "original": "software\u2011bill of materials",
+      "replacement": "software-bill of materials",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "**AI\u2011Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "**AI-Enhanced Threat Intelligence** - Leverage",
+      "reason": "Replaces a non-ASCII hyphen and an en dash with standard ASCII characters."
+    },
+    {
+      "original": "privacy\u2011preserving",
+      "replacement": "privacy-preserving",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "**Post\u2011Quantum Preparedness** \u2013 Begin",
+      "replacement": "**Post-Quantum Preparedness** - Begin",
+      "reason": "Replaces a non-ASCII hyphen and an en dash with standard ASCII characters."
+    },
+    {
+      "original": "high\u2011value",
+      "replacement": "high-value",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "long\u2011term",
+      "replacement": "long-term",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    },
+    {
+      "original": "**Resilience Engineering** \u2013 Focus",
+      "replacement": "**Resilience Engineering** - Focus",
+      "reason": "Replaces an en dash separator with a standard ASCII hyphen."
+    },
+    {
+      "original": "capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize",
+      "replacement": "capabilities, immutable backups, diversified cloud regions, and automated failover, to minimize",
+      "reason": "Replaces parenthetical em dashes with ASCII commas."
+    },
+    {
+      "original": "landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands",
+      "replacement": "landscape, characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks, demands",
+      "reason": "Replaces non-ASCII hyphens and parenthetical em dashes with ASCII punctuation."
+    },
+    {
+      "original": "quantum\u2011resistant",
+      "replacement": "quantum-resistant",
+      "reason": "Replaces a non-ASCII nonbreaking hyphen with a standard hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19235,
+    "output": 18132,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 14263
+  },
+  "cost_usd": 0.05097568,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

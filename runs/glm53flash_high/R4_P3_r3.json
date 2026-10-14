@@ -1,0 +1,345 @@
+{
+  "run_id": "R4_P3_r3",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:24:10.728378+00:00",
+  "duration_s": 213.14223893897724,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"not merely academic\u2014it is essential\", \"replacement\": \"not merely academic; it is essential\", \"reason\": \"Em dash joining two independent clauses replaced with a semicolon.\"},\n{\"original\": \"(c. 371\u2013287 BC)\", \"replacement\": \"(c. 371-287 BC)\", \"reason\": \"En dash in a year range replaced with a plain hyphen.\"},\n{\"original\": \"possess plasmodesmata\u2014microscopic channels\", \"replacement\": \"possess plasmodesmata, microscopic channels\", \"reason\": \"Em dash introducing an appositive replaced with a comma.\"},\n{\"original\": \"bears stomata\u2014pores that regulate\", \"replacement\": \"bears stomata, pores that regulate\", \"reason\": \"Em dash introducing an appositive replaced with a comma.\"},\n{\"original\": \"ecological niches\u2014from desert succulents\", \"replacement\": \"ecological niches, from desert succulents\", \"reason\": \"Em dash introducing a trailing example phrase replaced with a comma.\"},\n{\"original\": \"pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb\", \"replacement\": \"pigment molecules (chiefly chlorophyll a, chlorophyll b, and carotenoids) absorb\", \"reason\": \"Paired em dashes around an interpolation replaced with parentheses since inner commas rule out commas.\"},\n{\"original\": \"diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize\", \"replacement\": \"diverse adaptations (C4 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition) to optimize\", \"reason\": \"Paired em dashes replaced with parentheses and the non-keyboard subscript character replaced with its ASCII form.\"},\n{\"original\": \"they never formed heads\u2014the market rejected the entire lot\", \"replacement\": \"they never formed heads; the market rejected the entire lot\", \"reason\": \"Em dash joining two independent clauses replaced with a semicolon.\"},\n{\"original\": \"Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account\", \"replacement\": \"Staple crops (wheat, rice, maize, sorghum, and millet) account\", \"reason\": \"Paired em dashes around a list appositive replaced with parentheses since inner commas rule out commas.\"},\n{\"original\": \"metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads\", \"replacement\": \"metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads\", \"reason\": \"Paired em dashes around a list appositive replaced with parentheses since inner commas rule out commas.\"},\n{\"original\": \"Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate\", \"replacement\": \"Mycorrhizal associations (symbiotic relationships between plant roots and fungi) facilitate\", \"reason\": \"Paired em dashes around an appositive replaced with parentheses since inner commas rule out commas.\"},\n{\"original\": \"plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines\", \"replacement\": \"plant communities (via deforestation, invasive species, or climate change) undermines\", \"reason\": \"Paired em dashes around an intervening phrase replaced with parentheses since inner commas rule out commas.\"},\n{\"original\": \"**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is a burgeoning field\", \"replacement\": \"**stress memory** (the ability of plants to \\\"remember\\\" prior exposure to drought or heat and respond more robustly upon re-encounter) is a burgeoning field\", \"reason\": \"Paired em dashes replaced with parentheses, curly quotes replaced with straight quotes, and the non-keyboard hyphen replaced with a plain hyphen.\"},\n{\"original\": \"**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable\", \"replacement\": \"**Precision agriculture**, leveraging satellite imagery, drones, and IoT sensors, will enable\", \"reason\": \"Paired em dashes around a participial phrase replaced with commas.\"},\n{\"original\": \"**\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will become\", \"replacement\": \"**\\\"climate-smart\\\" plants** (species engineered or selected to thrive under future climatic regimes while delivering ecosystem services) will become\", \"reason\": \"Curly quotes replaced with straight quotes, the non-keyboard hyphen with a plain hyphen, and paired em dashes with parentheses.\"},\n{\"original\": \"Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers\", \"replacement\": \"Contemporary research, spanning genomics, synthetic biology, and ecosystem modeling, offers\", \"reason\": \"Paired em dashes around a participial phrase replaced with commas.\"},\n{\"original\": \"undetermined\u2026 until\", \"replacement\": \"undetermined... until\", \"reason\": \"Ellipsis glyph replaced with three separate period characters.\"},\n{\"original\": \"hailed as the \u201cfather of botany\u201d for\", \"replacement\": \"hailed as the \\\"father of botany\\\" for\", \"reason\": \"Curly double quotes replaced with straight double quotes.\"},\n{\"original\": \"coining the term \u201ccell.\u201d\", \"replacement\": \"coining the term \\\"cell.\\\"\", \"reason\": \"Curly double quotes replaced with straight double quotes.\"},\n{\"original\": \"the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are\", \"replacement\": \"the traditional \\\"monocot\\\" group is monophyletic while \\\"dicots\\\" are\", \"reason\": \"Curly double quotes replaced with straight double quotes.\"},\n{\"original\": \"Robert Hooke\u2019s 1665\", \"replacement\": \"Robert Hooke's 1665\", \"reason\": \"Curly apostrophe replaced with a straight apostrophe.\"},\n{\"original\": \"the discipline\u2019s contemporary relevance\", \"replacement\": \"the discipline's contemporary relevance\", \"reason\": \"Curly apostrophe replaced with a straight apostrophe.\"},\n{\"original\": \"the organelle\u2019s prokaryotic-like\", \"replacement\": \"the organelle's prokaryotic-like\", \"reason\": \"Curly apostrophe replaced with a straight apostrophe.\"},\n{\"original\": \"humanity\u2019s actions\", \"replacement\": \"humanity's actions\", \"reason\": \"Curly apostrophe replaced with a straight apostrophe.\"},\n{\"original\": \"reduces NADP\u207a to NADPH\", \"replacement\": \"reduces NADP+ to NADPH\", \"reason\": \"Non-keyboard superscript plus replaced with its ASCII equivalent.\"},\n{\"original\": \"releasing O\u2082 as a by\u2011product\", \"replacement\": \"releasing O2 as a by-product\", \"reason\": \"Non-keyboard subscript digit and non-breaking hyphen replaced with ASCII equivalents.\"},\n{\"original\": \"the **light\u2011dependent reactions** and the **Calvin\u2011Benson cycle**\", \"replacement\": \"the **light-dependent reactions** and the **Calvin-Benson cycle**\", \"reason\": \"Non-keyboard non-breaking hyphens replaced with plain hyphens.\"},\n{\"original\": \"utilized in the Calvin\u2011Benson cycle within the stroma\", \"replacement\": \"utilized in the Calvin-Benson cycle within the stroma\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"where CO\u2082 is fixed\", \"replacement\": \"where CO2 is fixed\", \"reason\": \"Non-keyboard subscript digit replaced with its ASCII equivalent.\"},\n{\"original\": \"ribulose\u20111,5\u2011bisphosphate\", \"replacement\": \"ribulose-1,5-bisphosphate\", \"reason\": \"Non-keyboard non-breaking hyphens replaced with plain hyphens.\"},\n{\"original\": \"into 3\u2011phosphoglycerate\", \"replacement\": \"into 3-phosphoglycerate\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"reduced to glyceraldehyde\u20113\u2011phosphate\", \"replacement\": \"reduced to glyceraldehyde-3-phosphate\", \"reason\": \"Non-keyboard non-breaking hyphens replaced with plain hyphens.\"},\n{\"original\": \"carbon\u2011concentrating mechanisms\", \"replacement\": \"carbon-concentrating mechanisms\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"well\u2011being of humanity\", \"replacement\": \"well-being of humanity\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"high\u2011throughput functional genomics\", \"replacement\": \"high-throughput functional genomics\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"**Bryophytes** \u2013 Non\u2011vascular plants\", \"replacement\": \"**Bryophytes** - Non-vascular plants\", \"reason\": \"En dash used as a list separator and the non-keyboard hyphen replaced with ASCII equivalents.\"},\n{\"original\": \"**Algae** \u2013 Primarily aquatic\", \"replacement\": \"**Algae** - Primarily aquatic\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Pteridophytes** \u2013 Seedless\", \"replacement\": \"**Pteridophytes** - Seedless\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Gymnosperms** \u2013 \u201cNaked seed\u201d plants\", \"replacement\": \"**Gymnosperms** - \\\"Naked seed\\\" plants\", \"reason\": \"En dash used as a list separator replaced with a hyphen and curly quotes with straight quotes.\"},\n{\"original\": \"**Angiosperms** \u2013 Flowering plants\", \"replacement\": \"**Angiosperms** - Flowering plants\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Carbon Sequestration** \u2013 Through photosynthesis, terrestrial vegetation absorbs roughly 120 Gt of CO\u2082 annually\", \"replacement\": \"**Carbon Sequestration** - Through photosynthesis, terrestrial vegetation absorbs roughly 120 Gt of CO2 annually\", \"reason\": \"En dash used as a list separator and the non-keyboard subscript digit replaced with ASCII equivalents.\"},\n{\"original\": \"**Soil Formation and Stabilization** \u2013 Root systems\", \"replacement\": \"**Soil Formation and Stabilization** - Root systems\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Hydrological Regulation** \u2013 Vegetation\", \"replacement\": \"**Hydrological Regulation** - Vegetation\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Habitat Provision** \u2013 Plants\", \"replacement\": \"**Habitat Provision** - Plants\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"**Cultural and Aesthetic Values** \u2013 Gardens\", \"replacement\": \"**Cultural and Aesthetic Values** - Gardens\", \"reason\": \"En dash used as a list separator replaced with a hyphen.\"},\n{\"original\": \"Plant\u2013Microbe Interactions\", \"replacement\": \"Plant-Microbe Interactions\", \"reason\": \"En dash in a compound replaced with a plain hyphen.\"},\n{\"original\": \"high\u2011yielding, disease\u2011resistant varieties\", \"replacement\": \"high-yielding, disease-resistant varieties\", \"reason\": \"Non-keyboard non-breaking hyphens replaced with plain hyphens.\"},\n{\"original\": \"marker\u2011assisted breeding\", \"replacement\": \"marker-assisted breeding\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"carbon\u2011sequestering alternatives\", \"replacement\": \"carbon-sequestering alternatives\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"closed\u2011loop recycling\", \"replacement\": \"closed-loop recycling\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"next\u2011generation sequencing\", \"replacement\": \"next-generation sequencing\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"whole\u2011genome analysis\", \"replacement\": \"whole-genome analysis\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"high\u2011dimensional datasets\", \"replacement\": \"high-dimensional datasets\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"high\u2011level expression\", \"replacement\": \"high-level expression\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"nitrogen\u2011fixing bacteria\", \"replacement\": \"nitrogen-fixing bacteria\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"benefit\u2011sharing agreements\", \"replacement\": \"benefit-sharing agreements\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"CRISPR\u2011based modifications\", \"replacement\": \"CRISPR-based modifications\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"socio\u2011economic realities\", \"replacement\": \"socio-economic realities\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"real\u2011time monitoring\", \"replacement\": \"real-time monitoring\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"land\u2011use planning\", \"replacement\": \"land-use planning\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"non\u2011material importance\", \"replacement\": \"non-material importance\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"},\n{\"original\": \"Climate\u2011Resilient Agriculture\", \"replacement\": \"Climate-Resilient Agriculture\", \"reason\": \"Non-keyboard non-breaking hyphen replaced with a plain hyphen.\"}\n]}",
+  "edits": [
+    {
+      "original": "not merely academic\u2014it is essential",
+      "replacement": "not merely academic; it is essential",
+      "reason": "Em dash joining two independent clauses replaced with a semicolon."
+    },
+    {
+      "original": "(c. 371\u2013287 BC)",
+      "replacement": "(c. 371-287 BC)",
+      "reason": "En dash in a year range replaced with a plain hyphen."
+    },
+    {
+      "original": "possess plasmodesmata\u2014microscopic channels",
+      "replacement": "possess plasmodesmata, microscopic channels",
+      "reason": "Em dash introducing an appositive replaced with a comma."
+    },
+    {
+      "original": "bears stomata\u2014pores that regulate",
+      "replacement": "bears stomata, pores that regulate",
+      "reason": "Em dash introducing an appositive replaced with a comma."
+    },
+    {
+      "original": "ecological niches\u2014from desert succulents",
+      "replacement": "ecological niches, from desert succulents",
+      "reason": "Em dash introducing a trailing example phrase replaced with a comma."
+    },
+    {
+      "original": "pigment molecules\u2014chiefly chlorophyll a, chlorophyll b, and carotenoids\u2014absorb",
+      "replacement": "pigment molecules (chiefly chlorophyll a, chlorophyll b, and carotenoids) absorb",
+      "reason": "Paired em dashes around an interpolation replaced with parentheses since inner commas rule out commas."
+    },
+    {
+      "original": "diverse adaptations\u2014C\u2084 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition\u2014to optimize",
+      "replacement": "diverse adaptations (C4 and CAM photosynthetic pathways, altered leaf anatomy, and pigment composition) to optimize",
+      "reason": "Paired em dashes replaced with parentheses and the non-keyboard subscript character replaced with its ASCII form."
+    },
+    {
+      "original": "they never formed heads\u2014the market rejected the entire lot",
+      "replacement": "they never formed heads; the market rejected the entire lot",
+      "reason": "Em dash joining two independent clauses replaced with a semicolon."
+    },
+    {
+      "original": "Staple crops\u2014wheat, rice, maize, sorghum, and millet\u2014account",
+      "replacement": "Staple crops (wheat, rice, maize, sorghum, and millet) account",
+      "reason": "Paired em dashes around a list appositive replaced with parentheses since inner commas rule out commas."
+    },
+    {
+      "original": "metabolites\u2014alkaloids, terpenoids, phenolics\u2014for therapeutic leads",
+      "replacement": "metabolites (alkaloids, terpenoids, phenolics) for therapeutic leads",
+      "reason": "Paired em dashes around a list appositive replaced with parentheses since inner commas rule out commas."
+    },
+    {
+      "original": "Mycorrhizal associations\u2014symbiotic relationships between plant roots and fungi\u2014facilitate",
+      "replacement": "Mycorrhizal associations (symbiotic relationships between plant roots and fungi) facilitate",
+      "reason": "Paired em dashes around an appositive replaced with parentheses since inner commas rule out commas."
+    },
+    {
+      "original": "plant communities\u2014via deforestation, invasive species, or climate change\u2014undermines",
+      "replacement": "plant communities (via deforestation, invasive species, or climate change) undermines",
+      "reason": "Paired em dashes around an intervening phrase replaced with parentheses since inner commas rule out commas."
+    },
+    {
+      "original": "**stress memory**\u2014the ability of plants to \u201cremember\u201d prior exposure to drought or heat and respond more robustly upon re\u2011encounter\u2014is a burgeoning field",
+      "replacement": "**stress memory** (the ability of plants to \"remember\" prior exposure to drought or heat and respond more robustly upon re-encounter) is a burgeoning field",
+      "reason": "Paired em dashes replaced with parentheses, curly quotes replaced with straight quotes, and the non-keyboard hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "**Precision agriculture**\u2014leveraging satellite imagery, drones, and IoT sensors\u2014will enable",
+      "replacement": "**Precision agriculture**, leveraging satellite imagery, drones, and IoT sensors, will enable",
+      "reason": "Paired em dashes around a participial phrase replaced with commas."
+    },
+    {
+      "original": "**\u201cclimate\u2011smart\u201d plants**\u2014species engineered or selected to thrive under future climatic regimes while delivering ecosystem services\u2014will become",
+      "replacement": "**\"climate-smart\" plants** (species engineered or selected to thrive under future climatic regimes while delivering ecosystem services) will become",
+      "reason": "Curly quotes replaced with straight quotes, the non-keyboard hyphen with a plain hyphen, and paired em dashes with parentheses."
+    },
+    {
+      "original": "Contemporary research\u2014spanning genomics, synthetic biology, and ecosystem modeling\u2014offers",
+      "replacement": "Contemporary research, spanning genomics, synthetic biology, and ecosystem modeling, offers",
+      "reason": "Paired em dashes around a participial phrase replaced with commas."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined... until",
+      "reason": "Ellipsis glyph replaced with three separate period characters."
+    },
+    {
+      "original": "hailed as the \u201cfather of botany\u201d for",
+      "replacement": "hailed as the \"father of botany\" for",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "coining the term \u201ccell.\u201d",
+      "replacement": "coining the term \"cell.\"",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "the traditional \u201cmonocot\u201d group is monophyletic while \u201cdicots\u201d are",
+      "replacement": "the traditional \"monocot\" group is monophyletic while \"dicots\" are",
+      "reason": "Curly double quotes replaced with straight double quotes."
+    },
+    {
+      "original": "Robert Hooke\u2019s 1665",
+      "replacement": "Robert Hooke's 1665",
+      "reason": "Curly apostrophe replaced with a straight apostrophe."
+    },
+    {
+      "original": "the discipline\u2019s contemporary relevance",
+      "replacement": "the discipline's contemporary relevance",
+      "reason": "Curly apostrophe replaced with a straight apostrophe."
+    },
+    {
+      "original": "the organelle\u2019s prokaryotic-like",
+      "replacement": "the organelle's prokaryotic-like",
+      "reason": "Curly apostrophe replaced with a straight apostrophe."
+    },
+    {
+      "original": "humanity\u2019s actions",
+      "replacement": "humanity's actions",
+      "reason": "Curly apostrophe replaced with a straight apostrophe."
+    },
+    {
+      "original": "reduces NADP\u207a to NADPH",
+      "replacement": "reduces NADP+ to NADPH",
+      "reason": "Non-keyboard superscript plus replaced with its ASCII equivalent."
+    },
+    {
+      "original": "releasing O\u2082 as a by\u2011product",
+      "replacement": "releasing O2 as a by-product",
+      "reason": "Non-keyboard subscript digit and non-breaking hyphen replaced with ASCII equivalents."
+    },
+    {
+      "original": "the **light\u2011dependent reactions** and the **Calvin\u2011Benson cycle**",
+      "replacement": "the **light-dependent reactions** and the **Calvin-Benson cycle**",
+      "reason": "Non-keyboard non-breaking hyphens replaced with plain hyphens."
+    },
+    {
+      "original": "utilized in the Calvin\u2011Benson cycle within the stroma",
+      "replacement": "utilized in the Calvin-Benson cycle within the stroma",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "where CO\u2082 is fixed",
+      "replacement": "where CO2 is fixed",
+      "reason": "Non-keyboard subscript digit replaced with its ASCII equivalent."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "Non-keyboard non-breaking hyphens replaced with plain hyphens."
+    },
+    {
+      "original": "into 3\u2011phosphoglycerate",
+      "replacement": "into 3-phosphoglycerate",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "reduced to glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "reduced to glyceraldehyde-3-phosphate",
+      "reason": "Non-keyboard non-breaking hyphens replaced with plain hyphens."
+    },
+    {
+      "original": "carbon\u2011concentrating mechanisms",
+      "replacement": "carbon-concentrating mechanisms",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "well\u2011being of humanity",
+      "replacement": "well-being of humanity",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "high\u2011throughput functional genomics",
+      "replacement": "high-throughput functional genomics",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "**Bryophytes** \u2013 Non\u2011vascular plants",
+      "replacement": "**Bryophytes** - Non-vascular plants",
+      "reason": "En dash used as a list separator and the non-keyboard hyphen replaced with ASCII equivalents."
+    },
+    {
+      "original": "**Algae** \u2013 Primarily aquatic",
+      "replacement": "**Algae** - Primarily aquatic",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Pteridophytes** \u2013 Seedless",
+      "replacement": "**Pteridophytes** - Seedless",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Gymnosperms** \u2013 \u201cNaked seed\u201d plants",
+      "replacement": "**Gymnosperms** - \"Naked seed\" plants",
+      "reason": "En dash used as a list separator replaced with a hyphen and curly quotes with straight quotes."
+    },
+    {
+      "original": "**Angiosperms** \u2013 Flowering plants",
+      "replacement": "**Angiosperms** - Flowering plants",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Carbon Sequestration** \u2013 Through photosynthesis, terrestrial vegetation absorbs roughly 120 Gt of CO\u2082 annually",
+      "replacement": "**Carbon Sequestration** - Through photosynthesis, terrestrial vegetation absorbs roughly 120 Gt of CO2 annually",
+      "reason": "En dash used as a list separator and the non-keyboard subscript digit replaced with ASCII equivalents."
+    },
+    {
+      "original": "**Soil Formation and Stabilization** \u2013 Root systems",
+      "replacement": "**Soil Formation and Stabilization** - Root systems",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Hydrological Regulation** \u2013 Vegetation",
+      "replacement": "**Hydrological Regulation** - Vegetation",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Habitat Provision** \u2013 Plants",
+      "replacement": "**Habitat Provision** - Plants",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "**Cultural and Aesthetic Values** \u2013 Gardens",
+      "replacement": "**Cultural and Aesthetic Values** - Gardens",
+      "reason": "En dash used as a list separator replaced with a hyphen."
+    },
+    {
+      "original": "Plant\u2013Microbe Interactions",
+      "replacement": "Plant-Microbe Interactions",
+      "reason": "En dash in a compound replaced with a plain hyphen."
+    },
+    {
+      "original": "high\u2011yielding, disease\u2011resistant varieties",
+      "replacement": "high-yielding, disease-resistant varieties",
+      "reason": "Non-keyboard non-breaking hyphens replaced with plain hyphens."
+    },
+    {
+      "original": "marker\u2011assisted breeding",
+      "replacement": "marker-assisted breeding",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "carbon\u2011sequestering alternatives",
+      "replacement": "carbon-sequestering alternatives",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "closed\u2011loop recycling",
+      "replacement": "closed-loop recycling",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "next\u2011generation sequencing",
+      "replacement": "next-generation sequencing",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "whole\u2011genome analysis",
+      "replacement": "whole-genome analysis",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "high\u2011dimensional datasets",
+      "replacement": "high-dimensional datasets",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "high\u2011level expression",
+      "replacement": "high-level expression",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "nitrogen\u2011fixing bacteria",
+      "replacement": "nitrogen-fixing bacteria",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "benefit\u2011sharing agreements",
+      "replacement": "benefit-sharing agreements",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "CRISPR\u2011based modifications",
+      "replacement": "CRISPR-based modifications",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "socio\u2011economic realities",
+      "replacement": "socio-economic realities",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "real\u2011time monitoring",
+      "replacement": "real-time monitoring",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "land\u2011use planning",
+      "replacement": "land-use planning",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "non\u2011material importance",
+      "replacement": "non-material importance",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    },
+    {
+      "original": "Climate\u2011Resilient Agriculture",
+      "replacement": "Climate-Resilient Agriculture",
+      "reason": "Non-keyboard non-breaking hyphen replaced with a plain hyphen."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20004,
+    "output": 20245,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 17246
+  },
+  "cost_usd": 0.00646153,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

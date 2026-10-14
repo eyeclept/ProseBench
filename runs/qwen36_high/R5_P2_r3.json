@@ -1,0 +1,65 @@
+{
+  "run_id": "R5_P2_r3",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:52:27.851157+00:00",
+  "duration_s": 35.43039250498987,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"evolved dramatically to accommodate\",\"replacement\":\"evolved to accommodate\",\"reason\":\"Removes the intensifier 'dramatically' without adding evidence.\"},{\"original\":\"so the retune significantly shortens frequency restoration.\",\"replacement\":\"so the retune shortens frequency restoration by 8 minutes.\",\"reason\":\"Replaces the intensifier 'significantly' with the specific number already present in the passage.\"},{\"original\":\"Inertia still matters for the first few cycles after a trip, full stop.\",\"replacement\":\"Inertia still matters for the first few cycles after a trip.\",\"reason\":\"Removes the finality interjection 'full stop' which repeats the claim's exclusivity.\"},{\"original\":\"fall dramatically as current decreases.\",\"replacement\":\"fall as current decreases.\",\"reason\":\"Removes the intensifier 'dramatically'.\"},{\"original\":\"significantly reduces line losses from 8 percent to 3 percent.\",\"replacement\":\"reduces line losses from 8 percent to 3 percent.\",\"reason\":\"Removes the intensifier 'significantly' because the evidence is already stated.\"},{\"original\":\"Islanded operation is the only backup path for those hospitals, end of story.\",\"replacement\":\"Islanded operation is the only backup path for those hospitals.\",\"reason\":\"Removes the finality interjection 'end of story' which repeats the claim's exclusivity.\"}]}",
+  "edits": [
+    {
+      "original": "evolved dramatically to accommodate",
+      "replacement": "evolved to accommodate",
+      "reason": "Removes the intensifier 'dramatically' without adding evidence."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration.",
+      "replacement": "so the retune shortens frequency restoration by 8 minutes.",
+      "reason": "Replaces the intensifier 'significantly' with the specific number already present in the passage."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": "Inertia still matters for the first few cycles after a trip.",
+      "reason": "Removes the finality interjection 'full stop' which repeats the claim's exclusivity."
+    },
+    {
+      "original": "fall dramatically as current decreases.",
+      "replacement": "fall as current decreases.",
+      "reason": "Removes the intensifier 'dramatically'."
+    },
+    {
+      "original": "significantly reduces line losses from 8 percent to 3 percent.",
+      "replacement": "reduces line losses from 8 percent to 3 percent.",
+      "reason": "Removes the intensifier 'significantly' because the evidence is already stated."
+    },
+    {
+      "original": "Islanded operation is the only backup path for those hospitals, end of story.",
+      "replacement": "Islanded operation is the only backup path for those hospitals.",
+      "reason": "Removes the finality interjection 'end of story' which repeats the claim's exclusivity."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 17974,
+    "output": 4141,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 3860
+  },
+  "cost_usd": 0.0037974,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

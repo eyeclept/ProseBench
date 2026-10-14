@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r1_easy",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:43:59.509929+00:00",
+  "duration_s": 20.2568744859891,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"on purpose, rather than by accident.\", \"replacement\": \"on purpose.\", \"reason\": \"The 'by accident' antonym of 'on purpose' is ordinary general knowledge, so the trailer adds nothing and is cut.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces. Landraces are locally adapted crop varieties that farmers have grown and selected over generations.\", \"reason\": \"The landrace/heirloom distinction is domain-specific, not general knowledge, so it is moved into its own sentence stated as what landraces are.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. It delivers its genes into the chloroplast genome.\", \"reason\": \"Nuclear versus chloroplast transformation is a genuine technical distinction, so it is restated as a sentence describing what the construct does.\"}]}",
+  "edits": [
+    {
+      "original": "on purpose, rather than by accident.",
+      "replacement": "on purpose.",
+      "reason": "The 'by accident' antonym of 'on purpose' is ordinary general knowledge, so the trailer adds nothing and is cut."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces. Landraces are locally adapted crop varieties that farmers have grown and selected over generations.",
+      "reason": "The landrace/heirloom distinction is domain-specific, not general knowledge, so it is moved into its own sentence stated as what landraces are."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. It delivers its genes into the chloroplast genome.",
+      "reason": "Nuclear versus chloroplast transformation is a genuine technical distinction, so it is restated as a sentence describing what the construct does."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 3372,
+    "cache_read": 23455,
+    "cache_write": 8392,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0035993500000000003,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P1_r1",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:43:26.084784+00:00",
+  "duration_s": 14.046164547005901,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Technical tools cannot succeed in isolation; they require clear policies\", \"replacement\": \"Technical tools require clear policies\", \"reason\": \"Saying the tools 'require' policies and culture already means they cannot succeed alone, so the negative clause adds nothing.\"}, {\"original\": \"Access checks default to fail-closed, rather than open.\", \"replacement\": \"Access checks default to fail-closed.\", \"reason\": \"Fail-closed already means the checks do not default to open, so 'rather than open' adds nothing.\"}, {\"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\", \"replacement\": \"Those privilege limits are imposed on purpose.\", \"reason\": \"'On purpose' already rules out 'by accident,' so the negative half adds nothing.\"}, {\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"The positive clause makes the same claim without the 'not merely an IT concern' windup, which the introduction already covered.\"}]}",
+  "edits": [
+    {
+      "original": "Technical tools cannot succeed in isolation; they require clear policies",
+      "replacement": "Technical tools require clear policies",
+      "reason": "Saying the tools 'require' policies and culture already means they cannot succeed alone, so the negative clause adds nothing."
+    },
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": "Access checks default to fail-closed.",
+      "reason": "Fail-closed already means the checks do not default to open, so 'rather than open' adds nothing."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "'On purpose' already rules out 'by accident,' so the negative half adds nothing."
+    },
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "The positive clause makes the same claim without the 'not merely an IT concern' windup, which the introduction already covered."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1291,
+    "cache_read": 23455,
+    "cache_write": 6431,
+    "reasoning": 0
+  },
+  "cost_usd": 0.081975,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

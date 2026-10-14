@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P2_r2",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "97df56063d7db6ecd7171cf0abb7565523fd79786f873eb90bbbd22c1160a225",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:43:52.861517+00:00",
+  "duration_s": 13.020306888996856,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [{\"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\", \"replacement\": \"Operators procured spinning reserve. This is generating capacity that is already synchronized to the grid and can raise its output within minutes.\", \"reason\": \"Spinning versus non-spinning reserve is a real technical distinction that needs domain knowledge, so it now gets its own sentence saying what spinning reserve is instead of being tacked on as a contrast.\"}, {\"original\": \"Those upgrades are planned on purpose, rather than by accident.\", \"replacement\": \"Those upgrades are planned on purpose.\", \"reason\": \"'By accident' is the everyday opposite of 'on purpose', so the trailing clause adds nothing and is cut.\"}]}\n```",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": "Operators procured spinning reserve. This is generating capacity that is already synchronized to the grid and can raise its output within minutes.",
+      "reason": "Spinning versus non-spinning reserve is a real technical distinction that needs domain knowledge, so it now gets its own sentence saying what spinning reserve is instead of being tacked on as a contrast."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'By accident' is the everyday opposite of 'on purpose', so the trailing clause adds nothing and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 994,
+    "cache_read": 31742,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0262444,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

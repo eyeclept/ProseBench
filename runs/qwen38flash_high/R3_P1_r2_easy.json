@@ -1,0 +1,45 @@
+{
+  "run_id": "R3_P1_r2_easy",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "505b3f7b549b233192a5083c1fb49de6c8316b4f72367cd7b9e26c8b2de0ce37",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:34:35.538765+00:00",
+  "duration_s": 21.22727946701343,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"Access checks default to fail-closed, rather than open.\",\n      \"replacement\": null,\n      \"reason\": \"Flagging for discussion: the trailer's contrast term is 'open' rather than the domain-standard antonym 'fail-open,' so I'm unsure whether the fail-closed/fail-open default distinction counts as ordinary general knowledge (cut the trailer) or a genuine, checkable distinction (give it its own sentence); I don't want to silently cut or rewrite it.\"\n    },\n    {\n      \"original\": \"Those privilege limits are imposed on purpose, rather than by accident.\",\n      \"replacement\": \"Those privilege limits are imposed on purpose.\",\n      \"reason\": \"'By accident' is the ordinary-knowledge antonym of 'on purpose' (the rule's own WRONG example), so the tacked-on 'rather than by accident' trailer adds nothing and is cut.\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "Access checks default to fail-closed, rather than open.",
+      "replacement": null,
+      "reason": "Flagging for discussion: the trailer's contrast term is 'open' rather than the domain-standard antonym 'fail-open,' so I'm unsure whether the fail-closed/fail-open default distinction counts as ordinary general knowledge (cut the trailer) or a genuine, checkable distinction (give it its own sentence); I don't want to silently cut or rewrite it."
+    },
+    {
+      "original": "Those privilege limits are imposed on purpose, rather than by accident.",
+      "replacement": "Those privilege limits are imposed on purpose.",
+      "reason": "'By accident' is the ordinary-knowledge antonym of 'on purpose' (the rule's own WRONG example), so the tacked-on 'rather than by accident' trailer adds nothing and is cut."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 1775,
+    "output": 989,
+    "cache_read": 17920,
+    "cache_write": 0,
+    "reasoning": 776
+  },
+  "cost_usd": 0.0010178,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

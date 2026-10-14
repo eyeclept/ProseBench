@@ -1,0 +1,411 @@
+{
+  "run_id": "R1_P2_r1",
+  "model_key": "glm53flash_high",
+  "endpoint_model": "openrouter/z-ai/glm-5.3-flash",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:22:08.189666+00:00",
+  "duration_s": 161.355196807,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [\n{\"original\": \"humanity\u2019s ability\", \"replacement\": \"humanity's ability\", \"reason\": \"Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent.\"},\n{\"original\": \"power system\u2014commonly referred to simply as a *power system*\u2014is\", \"replacement\": \"power system, commonly referred to simply as a *power system*, is\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with commas.\"},\n{\"original\": \"principle\u2014converting a primary energy source into usable electrical power\u2014remains\", \"replacement\": \"principle, converting a primary energy source into usable electrical power, remains\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with commas.\"},\n{\"original\": \"has evolved dramatically to accommodate\", \"replacement\": \"has evolved to accommodate\", \"reason\": \"'Dramatically' is on the prefer-other-words intensifier list and adds nothing here.\"},\n{\"original\": \"**Generation** \u2013 Conversion\", \"replacement\": \"**Generation** - Conversion\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Transmission & Distribution (T&D)** \u2013 Transport\", \"replacement\": \"**Transmission & Distribution (T&D)** - Transport\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Control & Protection** \u2013 Continuous\", \"replacement\": \"**Control & Protection** - Continuous\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"inertia\u2014massive rotating masses that store kinetic energy\u2014provides\", \"replacement\": \"inertia, massive rotating masses that store kinetic energy, provides\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with commas.\"},\n{\"original\": \"so the retune significantly shortens frequency restoration\", \"replacement\": \"so the retune shortens frequency restoration\", \"reason\": \"'Significantly' is a banned intensifier and redundant after the concrete before/after figures.\"},\n{\"original\": \"Robust control keeps voltage inside limits\", \"replacement\": \"Feedback control keeps voltage inside limits\", \"reason\": \"'Robust' is on the prefer-other-words list; a plainer precise term fits.\"},\n{\"original\": \"cloud-driven ramps\u2026\", \"replacement\": \"cloud-driven ramps...\", \"reason\": \"Ellipsis glyph is a banned non-keyboard character, replaced with three periods.\"},\n{\"original\": \"**Intermittency** \u2013 Power output\", \"replacement\": \"**Intermittency** - Power output\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Geographic Dispersion** \u2013 Renewable units\", \"replacement\": \"**Geographic Dispersion** - Renewable units\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"requiring robust transmission networks\", \"replacement\": \"requiring strong transmission networks\", \"reason\": \"'Robust' is on the prefer-other-words list; a plainer precise term fits.\"},\n{\"original\": \"**Inverter\u2011Based Interface** \u2013 Many\", \"replacement\": \"**Inverter\u2011Based Interface** - Many\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Transmission Lines** \u2013 Overhead\", \"replacement\": \"**Transmission Lines** - Overhead\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Substations** \u2013 Nodes\", \"replacement\": \"**Substations** - Nodes\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Converters** \u2013 For\", \"replacement\": \"**Converters** - For\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"reconductor significantly reduces line losses\", \"replacement\": \"reconductor reduces line losses\", \"reason\": \"'Significantly' is a banned intensifier and redundant after the concrete percentages.\"},\n{\"original\": \"High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed\", \"replacement\": \"High voltages, typically ranging from 115 kV to 1,200 kV, are employed\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with commas.\"},\n{\"original\": \"fall dramatically as current decreases\", \"replacement\": \"fall sharply as current decreases\", \"reason\": \"'Dramatically' is a banned intensifier; 'sharply' is the plainer precise term.\"},\n{\"original\": \"planning leverages *optimal power flow*\", \"replacement\": \"planning uses *optimal power flow*\", \"reason\": \"'Leverages' is a banned verb; 'uses' is the plain alternative.\"},\n{\"original\": \"enhancing capacity without building new lines\", \"replacement\": \"expanding capacity without building new lines\", \"reason\": \"'Enhancing' is a banned verb; 'expanding' is the concrete alternative.\"},\n{\"original\": \"**Primary Substations** \u2013 Reduce\", \"replacement\": \"**Primary Substations** - Reduce\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs\", \"replacement\": \"**Radial or Mesh Feeders** - Radial designs\", \"reason\": \"En dash and scare quotes on a normal word are both banned; fixed with a hyphen and unquoted term.\"},\n{\"original\": \"**Secondary Distribution Transformers** \u2013 Further\", \"replacement\": \"**Secondary Distribution Transformers** - Further\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Smart Devices** \u2013 Automated\", \"replacement\": \"**Smart Devices** - Automated\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"the \u201clast mile\u201d of the power system\", \"replacement\": \"the last mile of the power system\", \"reason\": \"Scare quotes on a normal term are banned; quotes removed.\"},\n{\"original\": \"**Primary (Local) Control** \u2013 Governor\", \"replacement\": \"**Primary (Local) Control** - Governor\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Secondary (AGC) Control** \u2013 Automatic\", \"replacement\": \"**Secondary (AGC) Control** - Automatic\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Tertiary (Economic Dispatch)** \u2013 Centralized\", \"replacement\": \"**Tertiary (Economic Dispatch)** - Centralized\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"the grid\u2019s immune system\", \"replacement\": \"the grid's immune system\", \"reason\": \"Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent.\"},\n{\"original\": \"**Overcurrent Protection** \u2013 Detects\", \"replacement\": \"**Overcurrent Protection** - Detects\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Distance Protection** \u2013 Measures\", \"replacement\": \"**Distance Protection** - Measures\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Differential Protection** \u2013 Compares\", \"replacement\": \"**Differential Protection** - Compares\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"*digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows\", \"replacement\": \"*digital relaying*, which uses microprocessor\u2011based Intelligent Electronic Devices (IEDs), allows\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with a relative clause.\"},\n{\"original\": \"IEC 61850, paving the way for *wide\u2011area protection*\", \"replacement\": \"IEC 61850, enabling *wide\u2011area protection*\", \"reason\": \"'Paving the way for' is a banned academic tell; replaced with the plain verb.\"},\n{\"original\": \"**Hardening Infrastructure** \u2013 Substation\", \"replacement\": \"**Hardening Infrastructure** - Substation\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Grid Flexibility** \u2013 Fast\u2011acting\", \"replacement\": \"**Grid Flexibility** - Fast\u2011acting\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Decentralized Backup** \u2013 Microgrids\", \"replacement\": \"**Decentralized Backup** - Microgrids\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"expected to be \u201calways\u2011on,\u201d\", \"replacement\": \"expected to be always\u2011on,\", \"reason\": \"Scare quotes on a normal word are banned; quotes removed.\"},\n{\"original\": \"gas supply\u2014thermal units then tripped\", \"replacement\": \"gas supply; thermal units then tripped\", \"reason\": \"Em dash is a banned non-keyboard character, replaced with a semicolon.\"},\n{\"original\": \"**Supply\u2011Demand Balancing** \u2013 The net\", \"replacement\": \"**Supply\u2011Demand Balancing** - The net\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Grid Stability** \u2013 Reduced\", \"replacement\": \"**Grid Stability** - Reduced\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"the \u201cramping\u201d capacity\", \"replacement\": \"the ramping capacity\", \"reason\": \"Scare quotes on a normal word are banned; quotes removed.\"},\n{\"original\": \"while fostering competition\", \"replacement\": \"while increasing competition\", \"reason\": \"'Fostering' is a banned verb; 'increasing' is the plain alternative.\"},\n{\"original\": \"(4 kV\u201335 kV)\", \"replacement\": \"(4 kV-35 kV)\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Advanced Metering Infrastructure (AMI)** \u2013 Provides\", \"replacement\": \"**Advanced Metering Infrastructure (AMI)** - Provides\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Distribution Management Systems (DMS)** \u2013 Automate\", \"replacement\": \"**Distribution Management Systems (DMS)** - Automate\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor\", \"replacement\": \"**Wide\u2011Area Monitoring Systems (WAMS)** - Phasor\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"30\u2013120 samples/second\", \"replacement\": \"30-120 samples/second\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow\", \"replacement\": \"Digital twins, high\u2011fidelity virtual replicas of physical grid assets, allow\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with commas.\"},\n{\"original\": \"**Lithium\u2011Ion Batteries** \u2013 Dominant\", \"replacement\": \"**Lithium\u2011Ion Batteries** - Dominant\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"(Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer\", \"replacement\": \"(Vanadium Redox, Zinc\u2011Bromine) - Offer\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Thermal and Mechanical Storage** \u2013 Cryogenic\", \"replacement\": \"**Thermal and Mechanical Storage** - Cryogenic\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Full Renewable Transition** \u2013 100\", \"replacement\": \"**Full Renewable Transition** - 100\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting\", \"replacement\": \"**Carbon Capture, Utilization, and Storage (CCUS)** - Retrofitting\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Hydrogen Integration** \u2013 Using\", \"replacement\": \"**Hydrogen Integration** - Using\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Provides Synthetic Inertia** \u2013 Emulates\", \"replacement\": \"**Provides Synthetic Inertia** - Emulates\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Enables Islanded Microgrids** \u2013 Seamless transition\", \"replacement\": \"**Enables Islanded Microgrids** - Smooth transition\", \"reason\": \"En dash replaced with a hyphen and banned 'seamless' replaced with 'smooth'.\"},\n{\"original\": \"standalone operation, crucial for critical facilities\", \"replacement\": \"standalone operation, essential for critical facilities\", \"reason\": \"'Crucial' is on the prefer-other-words list; 'essential' is the plain alternative.\"},\n{\"original\": \"\u201cPower\u2011to\u2011X\u201d technologies\", \"replacement\": \"\\\"Power\u2011to\u2011X\\\" technologies\", \"reason\": \"Curly quote glyphs are banned non-keyboard characters, replaced with straight quotes.\"},\n{\"original\": \"By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges\", \"replacement\": \"Coupling the electricity sector with transport, industry, and heating yields a more integrated energy system\", \"reason\": \"'By [gerund]' sentence opener is banned structural phrasing and 'holistic' is on the prefer-other-words list.\"},\n{\"original\": \"European Union\u2019s \u201cElectricity Interconnection\u201d\", \"replacement\": \"European Union's \\\"Electricity Interconnection\\\"\", \"reason\": \"Curly apostrophe and curly quote glyphs are banned non-keyboard characters, replaced with ASCII equivalents.\"},\n{\"original\": \"when robust transmission, advanced controls\", \"replacement\": \"when strong transmission, advanced controls\", \"reason\": \"'Robust' is on the prefer-other-words list; a plainer precise term fits.\"},\n{\"original\": \"a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity\", \"replacement\": \"a *decentralized, cyber\u2011physical network* that integrates electricity\", \"reason\": \"'Ecosystem' is banned in inflated-metaphor use and 'seamlessly' derives from banned 'seamless'.\"},\n{\"original\": \"**Massive DER Penetration** \u2013 Millions\", \"replacement\": \"**Massive DER Penetration** - Millions\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive\", \"replacement\": \"**Artificial\u2011Intelligence\u2011Driven Operations** - Predictive\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Resilient Architecture** \u2013 Multi\u2011layered\", \"replacement\": \"**Resilient Architecture** - Multi\u2011layered\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"**Policy\u2011Driven Decarbonization** \u2013 Carbon\", \"replacement\": \"**Policy\u2011Driven Decarbonization** - Carbon\", \"reason\": \"En dash is a banned non-keyboard character, replaced with a hyphen.\"},\n{\"original\": \"for days\u2014planners rewrite\", \"replacement\": \"for days; planners rewrite\", \"reason\": \"Em dash is a banned non-keyboard character, replaced with a semicolon.\"},\n{\"original\": \"the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise\", \"replacement\": \"the benefits (reliable power, reduced emissions, and a more democratic energy system) promise\", \"reason\": \"Em dashes are banned non-keyboard characters, restructured with parentheses, and metaphorical 'landscape' replaced with 'system'.\"},\n{\"original\": \"Navigating reliability\", \"replacement\": \"Managing reliability\", \"reason\": \"'Navigate' is banned in metaphorical use; 'managing' is the plain alternative.\"},\n{\"original\": \"demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks\", \"replacement\": \"demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and strong regulatory frameworks\", \"reason\": \"Em dashes are banned non-keyboard characters and 'innovative' and 'robust' are on the prefer-other-words list.\"},\n{\"original\": \"the grid\u2019s reliability\", \"replacement\": \"the grid's reliability\", \"reason\": \"Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent.\"}\n]}",
+  "edits": [
+    {
+      "original": "humanity\u2019s ability",
+      "replacement": "humanity's ability",
+      "reason": "Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent."
+    },
+    {
+      "original": "power system\u2014commonly referred to simply as a *power system*\u2014is",
+      "replacement": "power system, commonly referred to simply as a *power system*, is",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with commas."
+    },
+    {
+      "original": "principle\u2014converting a primary energy source into usable electrical power\u2014remains",
+      "replacement": "principle, converting a primary energy source into usable electrical power, remains",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with commas."
+    },
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "'Dramatically' is on the prefer-other-words intensifier list and adds nothing here."
+    },
+    {
+      "original": "**Generation** \u2013 Conversion",
+      "replacement": "**Generation** - Conversion",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Transmission & Distribution (T&D)** \u2013 Transport",
+      "replacement": "**Transmission & Distribution (T&D)** - Transport",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Control & Protection** \u2013 Continuous",
+      "replacement": "**Control & Protection** - Continuous",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "inertia\u2014massive rotating masses that store kinetic energy\u2014provides",
+      "replacement": "inertia, massive rotating masses that store kinetic energy, provides",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with commas."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "'Significantly' is a banned intensifier and redundant after the concrete before/after figures."
+    },
+    {
+      "original": "Robust control keeps voltage inside limits",
+      "replacement": "Feedback control keeps voltage inside limits",
+      "reason": "'Robust' is on the prefer-other-words list; a plainer precise term fits."
+    },
+    {
+      "original": "cloud-driven ramps\u2026",
+      "replacement": "cloud-driven ramps...",
+      "reason": "Ellipsis glyph is a banned non-keyboard character, replaced with three periods."
+    },
+    {
+      "original": "**Intermittency** \u2013 Power output",
+      "replacement": "**Intermittency** - Power output",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Geographic Dispersion** \u2013 Renewable units",
+      "replacement": "**Geographic Dispersion** - Renewable units",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "requiring robust transmission networks",
+      "replacement": "requiring strong transmission networks",
+      "reason": "'Robust' is on the prefer-other-words list; a plainer precise term fits."
+    },
+    {
+      "original": "**Inverter\u2011Based Interface** \u2013 Many",
+      "replacement": "**Inverter\u2011Based Interface** - Many",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Transmission Lines** \u2013 Overhead",
+      "replacement": "**Transmission Lines** - Overhead",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Substations** \u2013 Nodes",
+      "replacement": "**Substations** - Nodes",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Converters** \u2013 For",
+      "replacement": "**Converters** - For",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "reconductor significantly reduces line losses",
+      "replacement": "reconductor reduces line losses",
+      "reason": "'Significantly' is a banned intensifier and redundant after the concrete percentages."
+    },
+    {
+      "original": "High voltages\u2014typically ranging from 115 kV to 1,200 kV\u2014are employed",
+      "replacement": "High voltages, typically ranging from 115 kV to 1,200 kV, are employed",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with commas."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall sharply as current decreases",
+      "reason": "'Dramatically' is a banned intensifier; 'sharply' is the plainer precise term."
+    },
+    {
+      "original": "planning leverages *optimal power flow*",
+      "replacement": "planning uses *optimal power flow*",
+      "reason": "'Leverages' is a banned verb; 'uses' is the plain alternative."
+    },
+    {
+      "original": "enhancing capacity without building new lines",
+      "replacement": "expanding capacity without building new lines",
+      "reason": "'Enhancing' is a banned verb; 'expanding' is the concrete alternative."
+    },
+    {
+      "original": "**Primary Substations** \u2013 Reduce",
+      "replacement": "**Primary Substations** - Reduce",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Radial or Mesh Feeders** \u2013 \u201cRadial\u201d designs",
+      "replacement": "**Radial or Mesh Feeders** - Radial designs",
+      "reason": "En dash and scare quotes on a normal word are both banned; fixed with a hyphen and unquoted term."
+    },
+    {
+      "original": "**Secondary Distribution Transformers** \u2013 Further",
+      "replacement": "**Secondary Distribution Transformers** - Further",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Smart Devices** \u2013 Automated",
+      "replacement": "**Smart Devices** - Automated",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "the \u201clast mile\u201d of the power system",
+      "replacement": "the last mile of the power system",
+      "reason": "Scare quotes on a normal term are banned; quotes removed."
+    },
+    {
+      "original": "**Primary (Local) Control** \u2013 Governor",
+      "replacement": "**Primary (Local) Control** - Governor",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Secondary (AGC) Control** \u2013 Automatic",
+      "replacement": "**Secondary (AGC) Control** - Automatic",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Tertiary (Economic Dispatch)** \u2013 Centralized",
+      "replacement": "**Tertiary (Economic Dispatch)** - Centralized",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "the grid\u2019s immune system",
+      "replacement": "the grid's immune system",
+      "reason": "Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent."
+    },
+    {
+      "original": "**Overcurrent Protection** \u2013 Detects",
+      "replacement": "**Overcurrent Protection** - Detects",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Distance Protection** \u2013 Measures",
+      "replacement": "**Distance Protection** - Measures",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Differential Protection** \u2013 Compares",
+      "replacement": "**Differential Protection** - Compares",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "*digital relaying*\u2014using microprocessor\u2011based Intelligent Electronic Devices (IEDs)\u2014allows",
+      "replacement": "*digital relaying*, which uses microprocessor\u2011based Intelligent Electronic Devices (IEDs), allows",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with a relative clause."
+    },
+    {
+      "original": "IEC 61850, paving the way for *wide\u2011area protection*",
+      "replacement": "IEC 61850, enabling *wide\u2011area protection*",
+      "reason": "'Paving the way for' is a banned academic tell; replaced with the plain verb."
+    },
+    {
+      "original": "**Hardening Infrastructure** \u2013 Substation",
+      "replacement": "**Hardening Infrastructure** - Substation",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Grid Flexibility** \u2013 Fast\u2011acting",
+      "replacement": "**Grid Flexibility** - Fast\u2011acting",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Decentralized Backup** \u2013 Microgrids",
+      "replacement": "**Decentralized Backup** - Microgrids",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "expected to be \u201calways\u2011on,\u201d",
+      "replacement": "expected to be always\u2011on,",
+      "reason": "Scare quotes on a normal word are banned; quotes removed."
+    },
+    {
+      "original": "gas supply\u2014thermal units then tripped",
+      "replacement": "gas supply; thermal units then tripped",
+      "reason": "Em dash is a banned non-keyboard character, replaced with a semicolon."
+    },
+    {
+      "original": "**Supply\u2011Demand Balancing** \u2013 The net",
+      "replacement": "**Supply\u2011Demand Balancing** - The net",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Grid Stability** \u2013 Reduced",
+      "replacement": "**Grid Stability** - Reduced",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "the \u201cramping\u201d capacity",
+      "replacement": "the ramping capacity",
+      "reason": "Scare quotes on a normal word are banned; quotes removed."
+    },
+    {
+      "original": "while fostering competition",
+      "replacement": "while increasing competition",
+      "reason": "'Fostering' is a banned verb; 'increasing' is the plain alternative."
+    },
+    {
+      "original": "(4 kV\u201335 kV)",
+      "replacement": "(4 kV-35 kV)",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Advanced Metering Infrastructure (AMI)** \u2013 Provides",
+      "replacement": "**Advanced Metering Infrastructure (AMI)** - Provides",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Distribution Management Systems (DMS)** \u2013 Automate",
+      "replacement": "**Distribution Management Systems (DMS)** - Automate",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Wide\u2011Area Monitoring Systems (WAMS)** \u2013 Phasor",
+      "replacement": "**Wide\u2011Area Monitoring Systems (WAMS)** - Phasor",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "30\u2013120 samples/second",
+      "replacement": "30-120 samples/second",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "Digital twins\u2014high\u2011fidelity virtual replicas of physical grid assets\u2014allow",
+      "replacement": "Digital twins, high\u2011fidelity virtual replicas of physical grid assets, allow",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with commas."
+    },
+    {
+      "original": "**Lithium\u2011Ion Batteries** \u2013 Dominant",
+      "replacement": "**Lithium\u2011Ion Batteries** - Dominant",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "(Vanadium Redox, Zinc\u2011Bromine) \u2013 Offer",
+      "replacement": "(Vanadium Redox, Zinc\u2011Bromine) - Offer",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Thermal and Mechanical Storage** \u2013 Cryogenic",
+      "replacement": "**Thermal and Mechanical Storage** - Cryogenic",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Full Renewable Transition** \u2013 100",
+      "replacement": "**Full Renewable Transition** - 100",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Carbon Capture, Utilization, and Storage (CCUS)** \u2013 Retrofitting",
+      "replacement": "**Carbon Capture, Utilization, and Storage (CCUS)** - Retrofitting",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Hydrogen Integration** \u2013 Using",
+      "replacement": "**Hydrogen Integration** - Using",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Provides Synthetic Inertia** \u2013 Emulates",
+      "replacement": "**Provides Synthetic Inertia** - Emulates",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Enables Islanded Microgrids** \u2013 Seamless transition",
+      "replacement": "**Enables Islanded Microgrids** - Smooth transition",
+      "reason": "En dash replaced with a hyphen and banned 'seamless' replaced with 'smooth'."
+    },
+    {
+      "original": "standalone operation, crucial for critical facilities",
+      "replacement": "standalone operation, essential for critical facilities",
+      "reason": "'Crucial' is on the prefer-other-words list; 'essential' is the plain alternative."
+    },
+    {
+      "original": "\u201cPower\u2011to\u2011X\u201d technologies",
+      "replacement": "\"Power\u2011to\u2011X\" technologies",
+      "reason": "Curly quote glyphs are banned non-keyboard characters, replaced with straight quotes."
+    },
+    {
+      "original": "By coupling the electricity sector with transport, industry, and heating, a more holistic energy system emerges",
+      "replacement": "Coupling the electricity sector with transport, industry, and heating yields a more integrated energy system",
+      "reason": "'By [gerund]' sentence opener is banned structural phrasing and 'holistic' is on the prefer-other-words list."
+    },
+    {
+      "original": "European Union\u2019s \u201cElectricity Interconnection\u201d",
+      "replacement": "European Union's \"Electricity Interconnection\"",
+      "reason": "Curly apostrophe and curly quote glyphs are banned non-keyboard characters, replaced with ASCII equivalents."
+    },
+    {
+      "original": "when robust transmission, advanced controls",
+      "replacement": "when strong transmission, advanced controls",
+      "reason": "'Robust' is on the prefer-other-words list; a plainer precise term fits."
+    },
+    {
+      "original": "a *decentralized, cyber\u2011physical ecosystem* that seamlessly integrates electricity",
+      "replacement": "a *decentralized, cyber\u2011physical network* that integrates electricity",
+      "reason": "'Ecosystem' is banned in inflated-metaphor use and 'seamlessly' derives from banned 'seamless'."
+    },
+    {
+      "original": "**Massive DER Penetration** \u2013 Millions",
+      "replacement": "**Massive DER Penetration** - Millions",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Artificial\u2011Intelligence\u2011Driven Operations** \u2013 Predictive",
+      "replacement": "**Artificial\u2011Intelligence\u2011Driven Operations** - Predictive",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Resilient Architecture** \u2013 Multi\u2011layered",
+      "replacement": "**Resilient Architecture** - Multi\u2011layered",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "**Policy\u2011Driven Decarbonization** \u2013 Carbon",
+      "replacement": "**Policy\u2011Driven Decarbonization** - Carbon",
+      "reason": "En dash is a banned non-keyboard character, replaced with a hyphen."
+    },
+    {
+      "original": "for days\u2014planners rewrite",
+      "replacement": "for days; planners rewrite",
+      "reason": "Em dash is a banned non-keyboard character, replaced with a semicolon."
+    },
+    {
+      "original": "the benefits\u2014reliable power, reduced emissions, and a more democratic energy landscape\u2014promise",
+      "replacement": "the benefits (reliable power, reduced emissions, and a more democratic energy system) promise",
+      "reason": "Em dashes are banned non-keyboard characters, restructured with parentheses, and metaphorical 'landscape' replaced with 'system'."
+    },
+    {
+      "original": "Navigating reliability",
+      "replacement": "Managing reliability",
+      "reason": "'Navigate' is banned in metaphorical use; 'managing' is the plain alternative."
+    },
+    {
+      "original": "demands innovative technologies\u2014smart grids, energy storage, grid\u2011forming inverters\u2014and robust regulatory frameworks",
+      "replacement": "demands new technologies (smart grids, energy storage, grid\u2011forming inverters) and strong regulatory frameworks",
+      "reason": "Em dashes are banned non-keyboard characters and 'innovative' and 'robust' are on the prefer-other-words list."
+    },
+    {
+      "original": "the grid\u2019s reliability",
+      "replacement": "the grid's reliability",
+      "reason": "Curly apostrophe is a banned non-keyboard character, replaced with the ASCII equivalent."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20846,
+    "output": 25883,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 22240
+  },
+  "cost_usd": 0.00792997,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

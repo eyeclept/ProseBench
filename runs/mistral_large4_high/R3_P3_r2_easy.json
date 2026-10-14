@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P3_r2_easy",
+  "model_key": "mistral_large4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-large-4-0",
+  "rule": 3,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "18b700cc46f840336dd71616a39756d98b668edb2739144486f42924c3385ca8",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:53:44.244004+00:00",
+  "duration_s": 150.91713840697776,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Breeders select dwarfing alleles on purpose, rather than by accident.\", \"replacement\": \"Breeders select dwarfing alleles on purpose.\", \"reason\": \"'By accident' is the ordinary, general-knowledge antonym of 'on purpose,' so the trailing 'rather than' clause adds nothing and is cut.\"}, {\"original\": \"The construct was designed for chloroplast transformation, not nuclear transformation.\", \"replacement\": \"The construct was designed for chloroplast transformation. The transgene is integrated into the maternally inherited plastid genome.\", \"reason\": \"Chloroplast versus nuclear transformation is a genuine, checkable, domain-specific distinction rather than ordinary general knowledge, so it earns its own sentence stated as fact instead of a bolted-on 'not' clause.\"}, {\"original\": \"Conservation collections still accession landraces, rather than heirlooms.\", \"replacement\": \"Conservation collections still accession landraces. A landrace is a genetically diverse, locally adapted population maintained in cultivation; an heirloom is a named, open-pollinated cultivar passed down through generations.\", \"reason\": \"'Heirloom' is not the ordinary-knowledge antonym of 'landrace'\u2014the distinction requires domain background\u2014so the contrast is restated as its own factual sentence instead of a tacked-on 'rather than' trailer.\"}]}",
+  "edits": [
+    {
+      "original": "Breeders select dwarfing alleles on purpose, rather than by accident.",
+      "replacement": "Breeders select dwarfing alleles on purpose.",
+      "reason": "'By accident' is the ordinary, general-knowledge antonym of 'on purpose,' so the trailing 'rather than' clause adds nothing and is cut."
+    },
+    {
+      "original": "The construct was designed for chloroplast transformation, not nuclear transformation.",
+      "replacement": "The construct was designed for chloroplast transformation. The transgene is integrated into the maternally inherited plastid genome.",
+      "reason": "Chloroplast versus nuclear transformation is a genuine, checkable, domain-specific distinction rather than ordinary general knowledge, so it earns its own sentence stated as fact instead of a bolted-on 'not' clause."
+    },
+    {
+      "original": "Conservation collections still accession landraces, rather than heirlooms.",
+      "replacement": "Conservation collections still accession landraces. A landrace is a genetically diverse, locally adapted population maintained in cultivation; an heirloom is a named, open-pollinated cultivar passed down through generations.",
+      "reason": "'Heirloom' is not the ordinary-knowledge antonym of 'landrace'\u2014the distinction requires domain background\u2014so the contrast is restated as its own factual sentence instead of a tacked-on 'rather than' trailer."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20410,
+    "output": 12775,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 12481
+  },
+  "cost_usd": 0.04057855,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

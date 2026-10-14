@@ -1,0 +1,185 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:03:27.667484+00:00",
+  "duration_s": 160.96729737400892,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings extraordinary benefits, speed, efficiency, and the democratization of knowledge, but it also creates a fertile ground for malicious actors.\", \"reason\": \"The em dashes set off a trailing fragment rather than an independent clause, so commas carry the same pause in plain ASCII.\"},\n    {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive,\", \"replacement\": \"Traditional malware, viruses, worms, and trojans, remain pervasive,\", \"reason\": \"The dashes mark an appositive fragment, which is correctly rendered with commas.\"},\n    {\"original\": \"limiting lateral movement\u2014a key tactic used by APT groups\", \"replacement\": \"limiting lateral movement, a key tactic used by APT groups\", \"reason\": \"A trailing fragment after the em dash becomes a comma.\"},\n    {\"original\": \"regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities,\", \"replacement\": \"regular patch management, automated wherever possible, closes known vulnerabilities,\", \"reason\": \"The parenthetical phrase is not an independent clause, so commas replace the em dashes.\"},\n    {\"original\": \"The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.\", \"reason\": \"The em dash joins two independent clauses, so a semicolon avoids a comma splice.\"},\n    {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree...\", \"reason\": \"The single ellipsis glyph becomes three period characters.\"},\n    {\"original\": \"Insider threats\u2014whether\", \"replacement\": \"Insider threats, whether\", \"reason\": \"Opening em dash around a non-clause fragment becomes a comma.\"},\n    {\"original\": \"coerced\u2014account\", \"replacement\": \"coerced, account\", \"reason\": \"Closing em dash around a non-clause fragment becomes a comma.\"},\n    {\"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"positive reinforcement, recognizing employees who flag suspicious activity, outperforms\", \"reason\": \"The dashes set off a phrase, not an independent clause, so commas are the plain-ASCII equivalent.\"},\n    {\"original\": \"regulations\u2014GDPR\", \"replacement\": \"regulations, GDPR\", \"reason\": \"Opening em dash of an appositive list becomes a comma.\"},\n    {\"original\": \"Pacific\u2014impose\", \"replacement\": \"Pacific, impose\", \"reason\": \"Closing em dash of an appositive list becomes a comma.\"},\n    {\"original\": \"A balanced approach\u2014transparent\", \"replacement\": \"A balanced approach, transparent\", \"reason\": \"Opening em dash around a list fragment becomes a comma.\"},\n    {\"original\": \"norms\u2014remains\", \"replacement\": \"norms, remains\", \"reason\": \"Closing em dash around a list fragment becomes a comma.\"},\n    {\"original\": \"predefined playbooks\u2014for example\", \"replacement\": \"predefined playbooks, for example\", \"reason\": \"The em dash introduces a trailing fragment, so a comma suffices.\"},\n    {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan,\", \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan,\", \"reason\": \"Two independent clauses would run on with a comma either way, so the sentence is split at the em dash.\"},\n    {\"original\": \"recovery capabilities\u2014immutable\", \"replacement\": \"recovery capabilities, immutable\", \"reason\": \"Opening em dash of an appositive list becomes a comma.\"},\n    {\"original\": \"failover\u2014to minimize\", \"replacement\": \"failover, to minimize\", \"reason\": \"Closing em dash of an appositive list becomes a comma.\"},\n    {\"original\": \"threat landscape\u2014characterized\", \"replacement\": \"threat landscape, characterized\", \"reason\": \"Opening em dash around a modifying phrase becomes a comma.\"},\n    {\"original\": \"attacks\u2014demands\", \"replacement\": \"attacks, demands\", \"reason\": \"Closing em dash around a modifying phrase becomes a comma.\"},\n    {\"original\": \"\\u2013 Treat every access request\", \"replacement\": \"- Treat every access request\", \"reason\": \"En dash used as a separator becomes a plain hyphen.\"},\n    {\"original\": \"\\u2013 Embed security testing\", \"replacement\": \"- Embed security testing\", \"reason\": \"En dash used as a separator becomes a plain hyphen.\"},\n    {\"original\": \"\\u2013 Leverage federated learning\", \"replacement\": \"- Leverage federated learning\", \"reason\": \"En dash used as a separator becomes a plain hyphen.\"},\n    {\"original\": \"\\u2013 Begin migrating critical systems\", \"replacement\": \"- Begin migrating critical systems\", \"reason\": \"En dash used as a separator becomes a plain hyphen.\"},\n    {\"original\": \"\\u2013 Focus on rapid recovery capabilities\", \"replacement\": \"- Focus on rapid recovery capabilities\", \"reason\": \"En dash used as a separator becomes a plain hyphen.\"},\n    {\"original\": \"\\u201Cattack surfaces\\u201D\", \"replacement\": \"\\\"attack surfaces\\\"\", \"reason\": \"Curly quotation marks become straight double quotes.\"},\n    {\"original\": \"\\u201Ctrusted internal network\\u201D\", \"replacement\": \"\\\"trusted internal network\\\"\", \"reason\": \"Curly quotation marks become straight double quotes.\"},\n    {\"original\": \"\\u201Cavailability heuristic,\\u201D\", \"replacement\": \"\\\"availability heuristic,\\\"\", \"reason\": \"Curly quotation marks become straight double quotes.\"},\n    {\"original\": \"\\u201Cbug bounty\\u201D\", \"replacement\": \"\\\"bug bounty\\\"\", \"reason\": \"Curly quotation marks become straight double quotes.\"},\n    {\"original\": \"United Nations\\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Curly apostrophe becomes a straight apostrophe.\"},\n    {\"original\": \"European Union\\u2019s Cybersecurity Act\", \"replacement\": \"European Union's Cybersecurity Act\", \"reason\": \"Curly apostrophe becomes a straight apostrophe.\"}\n  ]\n}",
+  "edits": [
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings extraordinary benefits, speed, efficiency, and the democratization of knowledge, but it also creates a fertile ground for malicious actors.",
+      "reason": "The em dashes set off a trailing fragment rather than an independent clause, so commas carry the same pause in plain ASCII."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive,",
+      "replacement": "Traditional malware, viruses, worms, and trojans, remain pervasive,",
+      "reason": "The dashes mark an appositive fragment, which is correctly rendered with commas."
+    },
+    {
+      "original": "limiting lateral movement\u2014a key tactic used by APT groups",
+      "replacement": "limiting lateral movement, a key tactic used by APT groups",
+      "reason": "A trailing fragment after the em dash becomes a comma."
+    },
+    {
+      "original": "regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities,",
+      "replacement": "regular patch management, automated wherever possible, closes known vulnerabilities,",
+      "reason": "The parenthetical phrase is not an independent clause, so commas replace the em dashes."
+    },
+    {
+      "original": "The KPI dashboard now includes mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "The KPI dashboard now includes mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "The em dash joins two independent clauses, so a semicolon avoids a comma splice."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "The single ellipsis glyph becomes three period characters."
+    },
+    {
+      "original": "Insider threats\u2014whether",
+      "replacement": "Insider threats, whether",
+      "reason": "Opening em dash around a non-clause fragment becomes a comma."
+    },
+    {
+      "original": "coerced\u2014account",
+      "replacement": "coerced, account",
+      "reason": "Closing em dash around a non-clause fragment becomes a comma."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "positive reinforcement, recognizing employees who flag suspicious activity, outperforms",
+      "reason": "The dashes set off a phrase, not an independent clause, so commas are the plain-ASCII equivalent."
+    },
+    {
+      "original": "regulations\u2014GDPR",
+      "replacement": "regulations, GDPR",
+      "reason": "Opening em dash of an appositive list becomes a comma."
+    },
+    {
+      "original": "Pacific\u2014impose",
+      "replacement": "Pacific, impose",
+      "reason": "Closing em dash of an appositive list becomes a comma."
+    },
+    {
+      "original": "A balanced approach\u2014transparent",
+      "replacement": "A balanced approach, transparent",
+      "reason": "Opening em dash around a list fragment becomes a comma."
+    },
+    {
+      "original": "norms\u2014remains",
+      "replacement": "norms, remains",
+      "reason": "Closing em dash around a list fragment becomes a comma."
+    },
+    {
+      "original": "predefined playbooks\u2014for example",
+      "replacement": "predefined playbooks, for example",
+      "reason": "The em dash introduces a trailing fragment, so a comma suffices."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan,",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan,",
+      "reason": "Two independent clauses would run on with a comma either way, so the sentence is split at the em dash."
+    },
+    {
+      "original": "recovery capabilities\u2014immutable",
+      "replacement": "recovery capabilities, immutable",
+      "reason": "Opening em dash of an appositive list becomes a comma."
+    },
+    {
+      "original": "failover\u2014to minimize",
+      "replacement": "failover, to minimize",
+      "reason": "Closing em dash of an appositive list becomes a comma."
+    },
+    {
+      "original": "threat landscape\u2014characterized",
+      "replacement": "threat landscape, characterized",
+      "reason": "Opening em dash around a modifying phrase becomes a comma."
+    },
+    {
+      "original": "attacks\u2014demands",
+      "replacement": "attacks, demands",
+      "reason": "Closing em dash around a modifying phrase becomes a comma."
+    },
+    {
+      "original": "\u2013 Treat every access request",
+      "replacement": "- Treat every access request",
+      "reason": "En dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "\u2013 Embed security testing",
+      "replacement": "- Embed security testing",
+      "reason": "En dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "\u2013 Leverage federated learning",
+      "replacement": "- Leverage federated learning",
+      "reason": "En dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "\u2013 Begin migrating critical systems",
+      "replacement": "- Begin migrating critical systems",
+      "reason": "En dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "\u2013 Focus on rapid recovery capabilities",
+      "replacement": "- Focus on rapid recovery capabilities",
+      "reason": "En dash used as a separator becomes a plain hyphen."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "European Union\u2019s Cybersecurity Act",
+      "replacement": "European Union's Cybersecurity Act",
+      "reason": "Curly apostrophe becomes a straight apostrophe."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 213,
+    "output": 10234,
+    "cache_read": 19456,
+    "cache_write": 0,
+    "reasoning": 8798
+  },
+  "cost_usd": 0.005153226,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

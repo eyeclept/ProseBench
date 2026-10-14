@@ -1,0 +1,240 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:19:26.467960+00:00",
+  "duration_s": 58.01935579799465,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but\",\"replacement\":\"benefits (speed, efficiency, and the democratization of knowledge) but\",\"reason\":\"Em dashes are never allowed; parentheses replace the pair.\"},{\"original\":\"contemporary threat landscape\",\"replacement\":\"contemporary threats\",\"reason\":\"'Landscape' is used as an inflated metaphor.\"},{\"original\":\"The Expanding Threat Landscape\",\"replacement\":\"The Expanding Range of Threats\",\"reason\":\"'Landscape' is used as an inflated metaphor.\"},{\"original\":\"Traditional malware\u2014viruses, worms, and trojans\u2014remain\",\"replacement\":\"Traditional malware (viruses, worms, and trojans) remain\",\"reason\":\"Em dashes are never allowed.\"},{\"original\":\"creating \u201cattack surfaces\u201d that are dramatically broader\",\"replacement\":\"creating attack surfaces that are broader\",\"reason\":\"Removes scare quotes and curly quotes, and drops the intensifier 'dramatically'.\"},{\"original\":\"Moreover, the rise of deep\",\"replacement\":\"The rise of deep\",\"reason\":\"'Moreover' is a discouraged transition.\"},{\"original\":\"lateral movement\u2014a key tactic\",\"replacement\":\"lateral movement, a key tactic\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"leveraging machine\",\"replacement\":\"using machine\",\"reason\":\"'Leverage' is a discouraged verb.\"},{\"original\":\"robust encryption\",\"replacement\":\"strong encryption\",\"reason\":\"'Robust' is a discouraged adjective.\"},{\"original\":\"\u201ctrusted internal network\u201d paradigm\",\"replacement\":\"trusted internal network paradigm\",\"reason\":\"Scare quotes and curly quotes are not allowed.\"},{\"original\":\"patch management\u2014automated wherever possible\u2014closes\",\"replacement\":\"patch management, automated wherever possible, closes\",\"reason\":\"Em dashes are never allowed.\"},{\"original\":\"process tree\u2026\",\"replacement\":\"process tree...\",\"reason\":\"Ellipsis glyph is replaced with three periods.\"},{\"original\":\"contain\u2014the finance team\",\"replacement\":\"contain; the finance team\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"which streamlines containment\",\"replacement\":\"which speeds containment\",\"reason\":\"'Streamline' is a discouraged verb.\"},{\"original\":\"The playbook change significantly reduces\",\"replacement\":\"The playbook change reduces\",\"reason\":\"'Significantly' is a discouraged intensifier.\"},{\"original\":\"By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity\",\"replacement\":\"Organizations that embed security metrics into key performance indicators (KPIs) and align them with business objectives transform cybersecurity\",\"reason\":\"Restructures a sentence that opens with 'By [gerund]'.\"},{\"original\":\"\u201cavailability heuristic,\u201d\",\"replacement\":\"availability heuristic,\",\"reason\":\"Scare quotes and curly quotes are not allowed.\"},{\"original\":\"can foster complacency\",\"replacement\":\"can breed complacency\",\"reason\":\"'Foster' is a discouraged verb.\"},{\"original\":\"Moreover, strict\",\"replacement\":\"Strict\",\"reason\":\"'Moreover' is a discouraged transition.\"},{\"original\":\"The \u201cbug bounty\u201d model\",\"replacement\":\"The bug bounty model\",\"reason\":\"Scare quotes and curly quotes are not allowed.\"},{\"original\":\"fostering a collaborative security ecosystem\",\"replacement\":\"building a collaborative security community\",\"reason\":\"'Foster' and metaphorical 'ecosystem' are discouraged.\"},{\"original\":\"A balanced approach\u2014transparent legislation,\",\"replacement\":\"A balanced approach (transparent legislation,\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"international norms\u2014remains essential to prevent a fragmented regulatory landscape\",\"replacement\":\"international norms) remains essential to prevent fragmented regulation\",\"reason\":\"Em dash is never allowed, and 'landscape' is used as an inflated metaphor.\"},{\"original\":\"playbooks\u2014for example, isolating\",\"replacement\":\"playbooks, such as isolating\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"will be pivotal for\",\"replacement\":\"will be key to\",\"reason\":\"'Pivotal' is a discouraged adjective.\"},{\"original\":\"United Nations\u2019 Group\",\"replacement\":\"United Nations' Group\",\"reason\":\"Curly apostrophe is replaced with a straight one.\"},{\"original\":\"facilitate norm\",\"replacement\":\"support norm\",\"reason\":\"'Facilitate' is a discouraged verb.\"},{\"original\":\"further bolster collective defense\",\"replacement\":\"further strengthen collective defense\",\"reason\":\"'Bolster' is a discouraged verb.\"},{\"original\":\"radios\u2014the SOC\",\"replacement\":\"radios; the SOC\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"Architecture** \u2013 Treat\",\"replacement\":\"Architecture** - Treat\",\"reason\":\"En dash is replaced with a hyphen.\"},{\"original\":\"Development** \u2013 Embed\",\"replacement\":\"Development** - Embed\",\"reason\":\"En dash is replaced with a hyphen.\"},{\"original\":\"Enhanced Threat Intelligence** \u2013 Leverage\",\"replacement\":\"Assisted Threat Intelligence** - Use\",\"reason\":\"En dash is replaced with a hyphen, and 'enhance' and 'leverage' are discouraged.\"},{\"original\":\"Preparedness** \u2013 Begin\",\"replacement\":\"Preparedness** - Begin\",\"reason\":\"En dash is replaced with a hyphen.\"},{\"original\":\"Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups\",\"replacement\":\"Engineering** - Focus on rapid recovery capabilities (immutable backups\",\"reason\":\"En dash becomes a hyphen and the em dash becomes a parenthesis.\"},{\"original\":\"automated failover\u2014to minimize\",\"replacement\":\"automated failover) to minimize\",\"reason\":\"Em dash is never allowed.\"},{\"original\":\"By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.\",\"replacement\":\"The cybersecurity community can shift from a reactive posture to one that anticipates and neutralizes threats before they materialize by combining technological innovation with strong governance, continuous education, and global cooperation.\",\"reason\":\"Restructures a sentence that opens with 'By [gerund]' and replaces 'robust'.\"},{\"original\":\"threat landscape\u2014characterized by\",\"replacement\":\"threat environment, characterized by\",\"reason\":\"Em dash is never allowed, and 'landscape' is used as an inflated metaphor.\"},{\"original\":\"attacks\u2014demands a holistic response\",\"replacement\":\"attacks, demands a coordinated response\",\"reason\":\"Em dash is never allowed, and 'holistic' is discouraged.\"},{\"original\":\"provide new avenues for defense\",\"replacement\":\"provide new routes for defense\",\"reason\":\"'New avenue' is an inflated-symbolism phrase.\"},{\"original\":\"Ultimately, the resilience\",\"replacement\":\"The resilience\",\"reason\":\"'Ultimately' is a discouraged intensifier.\"},{\"original\":\"the very fabric of system design\",\"replacement\":\"the fabric of system design\",\"reason\":\"'Very' is a discouraged intensifier.\"}]}",
+  "edits": [
+    {
+      "original": "benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but",
+      "replacement": "benefits (speed, efficiency, and the democratization of knowledge) but",
+      "reason": "Em dashes are never allowed; parentheses replace the pair."
+    },
+    {
+      "original": "contemporary threat landscape",
+      "replacement": "contemporary threats",
+      "reason": "'Landscape' is used as an inflated metaphor."
+    },
+    {
+      "original": "The Expanding Threat Landscape",
+      "replacement": "The Expanding Range of Threats",
+      "reason": "'Landscape' is used as an inflated metaphor."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remain",
+      "reason": "Em dashes are never allowed."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader",
+      "replacement": "creating attack surfaces that are broader",
+      "reason": "Removes scare quotes and curly quotes, and drops the intensifier 'dramatically'."
+    },
+    {
+      "original": "Moreover, the rise of deep",
+      "replacement": "The rise of deep",
+      "reason": "'Moreover' is a discouraged transition."
+    },
+    {
+      "original": "lateral movement\u2014a key tactic",
+      "replacement": "lateral movement, a key tactic",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "leveraging machine",
+      "replacement": "using machine",
+      "reason": "'Leverage' is a discouraged verb."
+    },
+    {
+      "original": "robust encryption",
+      "replacement": "strong encryption",
+      "reason": "'Robust' is a discouraged adjective."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d paradigm",
+      "replacement": "trusted internal network paradigm",
+      "reason": "Scare quotes and curly quotes are not allowed."
+    },
+    {
+      "original": "patch management\u2014automated wherever possible\u2014closes",
+      "replacement": "patch management, automated wherever possible, closes",
+      "reason": "Em dashes are never allowed."
+    },
+    {
+      "original": "process tree\u2026",
+      "replacement": "process tree...",
+      "reason": "Ellipsis glyph is replaced with three periods."
+    },
+    {
+      "original": "contain\u2014the finance team",
+      "replacement": "contain; the finance team",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "which streamlines containment",
+      "replacement": "which speeds containment",
+      "reason": "'Streamline' is a discouraged verb."
+    },
+    {
+      "original": "The playbook change significantly reduces",
+      "replacement": "The playbook change reduces",
+      "reason": "'Significantly' is a discouraged intensifier."
+    },
+    {
+      "original": "By embedding security metrics into key performance indicators (KPIs) and aligning them with business objectives, organizations transform cybersecurity",
+      "replacement": "Organizations that embed security metrics into key performance indicators (KPIs) and align them with business objectives transform cybersecurity",
+      "reason": "Restructures a sentence that opens with 'By [gerund]'."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "availability heuristic,",
+      "reason": "Scare quotes and curly quotes are not allowed."
+    },
+    {
+      "original": "can foster complacency",
+      "replacement": "can breed complacency",
+      "reason": "'Foster' is a discouraged verb."
+    },
+    {
+      "original": "Moreover, strict",
+      "replacement": "Strict",
+      "reason": "'Moreover' is a discouraged transition."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model",
+      "replacement": "The bug bounty model",
+      "reason": "Scare quotes and curly quotes are not allowed."
+    },
+    {
+      "original": "fostering a collaborative security ecosystem",
+      "replacement": "building a collaborative security community",
+      "reason": "'Foster' and metaphorical 'ecosystem' are discouraged."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation,",
+      "replacement": "A balanced approach (transparent legislation,",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "international norms\u2014remains essential to prevent a fragmented regulatory landscape",
+      "replacement": "international norms) remains essential to prevent fragmented regulation",
+      "reason": "Em dash is never allowed, and 'landscape' is used as an inflated metaphor."
+    },
+    {
+      "original": "playbooks\u2014for example, isolating",
+      "replacement": "playbooks, such as isolating",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "will be pivotal for",
+      "replacement": "will be key to",
+      "reason": "'Pivotal' is a discouraged adjective."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Curly apostrophe is replaced with a straight one."
+    },
+    {
+      "original": "facilitate norm",
+      "replacement": "support norm",
+      "reason": "'Facilitate' is a discouraged verb."
+    },
+    {
+      "original": "further bolster collective defense",
+      "replacement": "further strengthen collective defense",
+      "reason": "'Bolster' is a discouraged verb."
+    },
+    {
+      "original": "radios\u2014the SOC",
+      "replacement": "radios; the SOC",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "Architecture** \u2013 Treat",
+      "replacement": "Architecture** - Treat",
+      "reason": "En dash is replaced with a hyphen."
+    },
+    {
+      "original": "Development** \u2013 Embed",
+      "replacement": "Development** - Embed",
+      "reason": "En dash is replaced with a hyphen."
+    },
+    {
+      "original": "Enhanced Threat Intelligence** \u2013 Leverage",
+      "replacement": "Assisted Threat Intelligence** - Use",
+      "reason": "En dash is replaced with a hyphen, and 'enhance' and 'leverage' are discouraged."
+    },
+    {
+      "original": "Preparedness** \u2013 Begin",
+      "replacement": "Preparedness** - Begin",
+      "reason": "En dash is replaced with a hyphen."
+    },
+    {
+      "original": "Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups",
+      "replacement": "Engineering** - Focus on rapid recovery capabilities (immutable backups",
+      "reason": "En dash becomes a hyphen and the em dash becomes a parenthesis."
+    },
+    {
+      "original": "automated failover\u2014to minimize",
+      "replacement": "automated failover) to minimize",
+      "reason": "Em dash is never allowed."
+    },
+    {
+      "original": "By intertwining technological innovation with robust governance, continuous education, and global cooperation, the cybersecurity community can transform from a reactive posture to one that anticipates and neutralizes threats before they materialize.",
+      "replacement": "The cybersecurity community can shift from a reactive posture to one that anticipates and neutralizes threats before they materialize by combining technological innovation with strong governance, continuous education, and global cooperation.",
+      "reason": "Restructures a sentence that opens with 'By [gerund]' and replaces 'robust'."
+    },
+    {
+      "original": "threat landscape\u2014characterized by",
+      "replacement": "threat environment, characterized by",
+      "reason": "Em dash is never allowed, and 'landscape' is used as an inflated metaphor."
+    },
+    {
+      "original": "attacks\u2014demands a holistic response",
+      "replacement": "attacks, demands a coordinated response",
+      "reason": "Em dash is never allowed, and 'holistic' is discouraged."
+    },
+    {
+      "original": "provide new avenues for defense",
+      "replacement": "provide new routes for defense",
+      "reason": "'New avenue' is an inflated-symbolism phrase."
+    },
+    {
+      "original": "Ultimately, the resilience",
+      "replacement": "The resilience",
+      "reason": "'Ultimately' is a discouraged intensifier."
+    },
+    {
+      "original": "the very fabric of system design",
+      "replacement": "the fabric of system design",
+      "reason": "'Very' is a discouraged intensifier."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 9135,
+    "cache_read": 31320,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.09448999999999999,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

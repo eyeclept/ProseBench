@@ -1,0 +1,330 @@
+{
+  "run_id": "R4_P3_r1",
+  "model_key": "qwen36_high",
+  "endpoint_model": "openrouter/qwen/qwen3.6-35b-a3b",
+  "rule": 4,
+  "passage": "P3",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3e9d36c7f5751f5e60bf9553ab217d40320352a1814b7416acb1d1fdb14d32dc",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:38:39.577336+00:00",
+  "duration_s": 177.92950249099522,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\"original\": \"academic\u2014it is\", \"replacement\": \"academic; it is\", \"reason\": \"Em dash replaced with a semicolon to correctly join two independent clauses.\"},\n    {\"original\": \"well\u2011being\", \"replacement\": \"well-being\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"371\u2013287\", \"replacement\": \"371-287\", \"reason\": \"En dash used as a range separator replaced with a standard hyphen.\"},\n    {\"original\": \"\u201cfather of botany\u201d\", \"replacement\": \"\\\"father of botany\\\"\", \"reason\": \"Curly/smart quotes replaced with straight ASCII quotation marks.\"},\n    {\"original\": \"term \u201ccell.\u201d\", \"replacement\": \"term \\\"cell.\\\"\", \"reason\": \"Curly/smart quotes replaced with straight ASCII quotation marks.\"},\n    {\"original\": \"undetermined\u2026 until\", \"replacement\": \"undetermined. until\", \"reason\": \"Ellipsis glyph replaced with three standard period characters.\"},\n    {\"original\": \"plasmodesmata\u2014microscopic\", \"replacement\": \"plasmodesmata; microscopic\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"stomata\u2014pores\", \"replacement\": \"stomata; pores\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"niches\u2014from desert\", \"replacement\": \"niches; from desert\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"light\u2011dependent\", \"replacement\": \"light-dependent\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Calvin\u2011Benson\", \"replacement\": \"Calvin-Benson\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"molecules\u2014chiefly\", \"replacement\": \"molecules; chiefly\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"by\u2011product\", \"replacement\": \"by-product\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"ribulose\u20111,5\u2011bisphosphate\", \"replacement\": \"ribulose-1,5-bisphosphate\", \"reason\": \"En dashes replaced with standard US keyboard hyphens.\"},\n    {\"original\": \"3\u2011phosphoglycerate\", \"replacement\": \"3-phosphoglycerate\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"glyceraldehyde\u20113\u2011phosphate\", \"replacement\": \"glyceraldehyde-3-phosphate\", \"reason\": \"En dashes replaced with standard US keyboard hyphens.\"},\n    {\"original\": \"adaptations\u2014C\u2084\", \"replacement\": \"adaptations; C\u2084\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"Algae \u2013 Primarily\", \"replacement\": \"Algae - Primarily\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Bryophytes \u2013 Non\u2011vascular\", \"replacement\": \"Bryophytes - Non-vascular\", \"reason\": \"En dashes replaced with standard US keyboard hyphens.\"},\n    {\"original\": \"Pteridophytes \u2013 Seedless\", \"replacement\": \"Pteridophytes - Seedless\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Gymnosperms \u2013 \u201cNaked seed\u201d\", \"replacement\": \"Gymnosperms - \\\"Naked seed\\\"\", \"reason\": \"En dash replaced with a hyphen and curly quotes replaced with straight ASCII quotes.\"},\n    {\"original\": \"Angiosperms \u2013 Flowering\", \"replacement\": \"Angiosperms - Flowering\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"traditional \u201cmonocot\u201d\", \"replacement\": \"traditional \\\"monocot\\\"\", \"reason\": \"Curly/smart quotes replaced with straight ASCII quotation marks.\"},\n    {\"original\": \"\u201cdicots\u201d\", \"replacement\": \"\\\"dicots\\\"\", \"reason\": \"Curly/smart quotes replaced with straight ASCII quotation marks.\"},\n    {\"original\": \"heads\u2014the market\", \"replacement\": \"heads; the market\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"crops\u2014wheat, rice, maize, sorghum, and millet\u2014account\", \"replacement\": \"crops; wheat, rice, maize, sorghum, and millet; account\", \"reason\": \"Em dashes replaced with semicolons to correctly join independent clauses.\"},\n    {\"original\": \"high\u2011yielding\", \"replacement\": \"high-yielding\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"marker\u2011assisted\", \"replacement\": \"marker-assisted\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"metabolites\u2014alkaloids, terpenoids, phenolics\u2014for\", \"replacement\": \"metabolites; alkaloids, terpenoids, phenolics; for\", \"reason\": \"Em dashes replaced with semicolons to correctly join independent clauses.\"},\n    {\"original\": \"carbon\u2011sequestering\", \"replacement\": \"carbon-sequestering\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"closed\u2011loop\", \"replacement\": \"closed-loop\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Sequestration \u2013 Through\", \"replacement\": \"Sequestration - Through\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Stabilization \u2013 Root\", \"replacement\": \"Stabilization - Root\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Regulation \u2013 Vegetation\", \"replacement\": \"Regulation - Vegetation\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Provision \u2013 Plants\", \"replacement\": \"Provision - Plants\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Values \u2013 Gardens\", \"replacement\": \"Values - Gardens\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"associations\u2014symbiotic\", \"replacement\": \"associations; symbiotic\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"and fungi\u2014facilitate\", \"replacement\": \"and fungi; facilitate\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"communities\u2014via\", \"replacement\": \"communities; via\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"Climate\u2011Resilient\", \"replacement\": \"Climate-Resilient\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"memory\u2014the ability\", \"replacement\": \"memory; the ability\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"\u201cremember\u201d\", \"replacement\": \"\\\"remember\\\"\", \"reason\": \"Curly/smart quotes replaced with straight ASCII quotation marks.\"},\n    {\"original\": \"re\u2011encounter\u2014is\", \"replacement\": \"re-encounter; is\", \"reason\": \"En dash replaced with a hyphen and em dash replaced with a semicolon to correctly join clauses.\"},\n    {\"original\": \"Plant\u2013Microbe\", \"replacement\": \"Plant-Microbe\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"dialogues\u2014through\", \"replacement\": \"dialogues; through\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"flavonoids\u2014offers\", \"replacement\": \"flavonoids; offers\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"Loss \u2013 Habitat\", \"replacement\": \"Loss - Habitat\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Biopiracy \u2013 The\", \"replacement\": \"Biopiracy - The\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Sharing \u2013 Equitable\", \"replacement\": \"Sharing - Equitable\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Governance \u2013 CRISPR\", \"replacement\": \"Governance - CRISPR\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"CRISPR\u2011based\", \"replacement\": \"CRISPR-based\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Feedbacks \u2013 As\", \"replacement\": \"Feedbacks - As\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"socio\u2011economic\", \"replacement\": \"socio-economic\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"Precision agriculture\u2014leveraging\", \"replacement\": \"Precision agriculture; leveraging\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"real\u2011time\", \"replacement\": \"real-time\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"\u201cclimate\u2011smart\u201d plants\u2014species\", \"replacement\": \"\\\"climate-smart\\\" plants; species\", \"reason\": \"Curly quotes replaced with straight quotes, en dash replaced with a hyphen, and em dash replaced with a semicolon to correctly join clauses.\"},\n    {\"original\": \"land\u2011use\", \"replacement\": \"land-use\", \"reason\": \"En dash replaced with a standard US keyboard hyphen.\"},\n    {\"original\": \"research\u2014spanning\", \"replacement\": \"research; spanning\", \"reason\": \"Em dash replaced with a semicolon to correctly join independent clauses.\"},\n    {\"original\": \"humanity\u2019s actions\", \"replacement\": \"humanity's actions\", \"reason\": \"Curly/smart apostrophe replaced with a straight ASCII apostrophe.\"}\n  ]\n}",
+  "edits": [
+    {
+      "original": "academic\u2014it is",
+      "replacement": "academic; it is",
+      "reason": "Em dash replaced with a semicolon to correctly join two independent clauses."
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "371\u2013287",
+      "replacement": "371-287",
+      "reason": "En dash used as a range separator replaced with a standard hyphen."
+    },
+    {
+      "original": "\u201cfather of botany\u201d",
+      "replacement": "\"father of botany\"",
+      "reason": "Curly/smart quotes replaced with straight ASCII quotation marks."
+    },
+    {
+      "original": "term \u201ccell.\u201d",
+      "replacement": "term \"cell.\"",
+      "reason": "Curly/smart quotes replaced with straight ASCII quotation marks."
+    },
+    {
+      "original": "undetermined\u2026 until",
+      "replacement": "undetermined. until",
+      "reason": "Ellipsis glyph replaced with three standard period characters."
+    },
+    {
+      "original": "plasmodesmata\u2014microscopic",
+      "replacement": "plasmodesmata; microscopic",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "stomata\u2014pores",
+      "replacement": "stomata; pores",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "niches\u2014from desert",
+      "replacement": "niches; from desert",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "light\u2011dependent",
+      "replacement": "light-dependent",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Calvin\u2011Benson",
+      "replacement": "Calvin-Benson",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "molecules\u2014chiefly",
+      "replacement": "molecules; chiefly",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "by\u2011product",
+      "replacement": "by-product",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "ribulose\u20111,5\u2011bisphosphate",
+      "replacement": "ribulose-1,5-bisphosphate",
+      "reason": "En dashes replaced with standard US keyboard hyphens."
+    },
+    {
+      "original": "3\u2011phosphoglycerate",
+      "replacement": "3-phosphoglycerate",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "glyceraldehyde\u20113\u2011phosphate",
+      "replacement": "glyceraldehyde-3-phosphate",
+      "reason": "En dashes replaced with standard US keyboard hyphens."
+    },
+    {
+      "original": "adaptations\u2014C\u2084",
+      "replacement": "adaptations; C\u2084",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "Algae \u2013 Primarily",
+      "replacement": "Algae - Primarily",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Bryophytes \u2013 Non\u2011vascular",
+      "replacement": "Bryophytes - Non-vascular",
+      "reason": "En dashes replaced with standard US keyboard hyphens."
+    },
+    {
+      "original": "Pteridophytes \u2013 Seedless",
+      "replacement": "Pteridophytes - Seedless",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Gymnosperms \u2013 \u201cNaked seed\u201d",
+      "replacement": "Gymnosperms - \"Naked seed\"",
+      "reason": "En dash replaced with a hyphen and curly quotes replaced with straight ASCII quotes."
+    },
+    {
+      "original": "Angiosperms \u2013 Flowering",
+      "replacement": "Angiosperms - Flowering",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "traditional \u201cmonocot\u201d",
+      "replacement": "traditional \"monocot\"",
+      "reason": "Curly/smart quotes replaced with straight ASCII quotation marks."
+    },
+    {
+      "original": "\u201cdicots\u201d",
+      "replacement": "\"dicots\"",
+      "reason": "Curly/smart quotes replaced with straight ASCII quotation marks."
+    },
+    {
+      "original": "heads\u2014the market",
+      "replacement": "heads; the market",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "crops\u2014wheat, rice, maize, sorghum, and millet\u2014account",
+      "replacement": "crops; wheat, rice, maize, sorghum, and millet; account",
+      "reason": "Em dashes replaced with semicolons to correctly join independent clauses."
+    },
+    {
+      "original": "high\u2011yielding",
+      "replacement": "high-yielding",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "marker\u2011assisted",
+      "replacement": "marker-assisted",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "metabolites\u2014alkaloids, terpenoids, phenolics\u2014for",
+      "replacement": "metabolites; alkaloids, terpenoids, phenolics; for",
+      "reason": "Em dashes replaced with semicolons to correctly join independent clauses."
+    },
+    {
+      "original": "carbon\u2011sequestering",
+      "replacement": "carbon-sequestering",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "closed\u2011loop",
+      "replacement": "closed-loop",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Sequestration \u2013 Through",
+      "replacement": "Sequestration - Through",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Stabilization \u2013 Root",
+      "replacement": "Stabilization - Root",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Regulation \u2013 Vegetation",
+      "replacement": "Regulation - Vegetation",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Provision \u2013 Plants",
+      "replacement": "Provision - Plants",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Values \u2013 Gardens",
+      "replacement": "Values - Gardens",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "associations\u2014symbiotic",
+      "replacement": "associations; symbiotic",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "and fungi\u2014facilitate",
+      "replacement": "and fungi; facilitate",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "communities\u2014via",
+      "replacement": "communities; via",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "Climate\u2011Resilient",
+      "replacement": "Climate-Resilient",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "memory\u2014the ability",
+      "replacement": "memory; the ability",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "\u201cremember\u201d",
+      "replacement": "\"remember\"",
+      "reason": "Curly/smart quotes replaced with straight ASCII quotation marks."
+    },
+    {
+      "original": "re\u2011encounter\u2014is",
+      "replacement": "re-encounter; is",
+      "reason": "En dash replaced with a hyphen and em dash replaced with a semicolon to correctly join clauses."
+    },
+    {
+      "original": "Plant\u2013Microbe",
+      "replacement": "Plant-Microbe",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "dialogues\u2014through",
+      "replacement": "dialogues; through",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "flavonoids\u2014offers",
+      "replacement": "flavonoids; offers",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "Loss \u2013 Habitat",
+      "replacement": "Loss - Habitat",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Biopiracy \u2013 The",
+      "replacement": "Biopiracy - The",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Sharing \u2013 Equitable",
+      "replacement": "Sharing - Equitable",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Governance \u2013 CRISPR",
+      "replacement": "Governance - CRISPR",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "CRISPR\u2011based",
+      "replacement": "CRISPR-based",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Feedbacks \u2013 As",
+      "replacement": "Feedbacks - As",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "socio\u2011economic",
+      "replacement": "socio-economic",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "Precision agriculture\u2014leveraging",
+      "replacement": "Precision agriculture; leveraging",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "real\u2011time",
+      "replacement": "real-time",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "\u201cclimate\u2011smart\u201d plants\u2014species",
+      "replacement": "\"climate-smart\" plants; species",
+      "reason": "Curly quotes replaced with straight quotes, en dash replaced with a hyphen, and em dash replaced with a semicolon to correctly join clauses."
+    },
+    {
+      "original": "land\u2011use",
+      "replacement": "land-use",
+      "reason": "En dash replaced with a standard US keyboard hyphen."
+    },
+    {
+      "original": "research\u2014spanning",
+      "replacement": "research; spanning",
+      "reason": "Em dash replaced with a semicolon to correctly join independent clauses."
+    },
+    {
+      "original": "humanity\u2019s actions",
+      "replacement": "humanity's actions",
+      "reason": "Curly/smart apostrophe replaced with a straight ASCII apostrophe."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 18145,
+    "output": 18818,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 16462
+  },
+  "cost_usd": 0.01407985,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

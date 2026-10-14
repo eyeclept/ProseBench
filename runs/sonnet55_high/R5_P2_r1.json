@@ -1,0 +1,70 @@
+{
+  "run_id": "R5_P2_r1",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:42:35.250809+00:00",
+  "duration_s": 14.245514285983518,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"has evolved dramatically to accommodate\",\"replacement\":\"has evolved to accommodate\",\"reason\":\"Removes the intensifier \\\"dramatically\\\"; the passage gives no figure to replace it.\"},{\"original\":\"so the retune significantly shortens frequency restoration\",\"replacement\":\"so the retune shortens frequency restoration\",\"reason\":\"The 12-to-4-minute figures already carry the evidence, so the intensifier \\\"significantly\\\" is redundant.\"},{\"original\":\"Inertia still matters for the first few cycles after a trip, full stop.\",\"replacement\":null,\"reason\":\"\\\"Full stop\\\" is a finality interjection, but the claim has no exclusivity marker, so the author should decide whether to cut it.\"},{\"original\":\"Renewable energy technologies have been rising rapidly.\",\"replacement\":null,\"reason\":\"\\\"Rapidly\\\" stands in for a growth figure the author should supply.\"},{\"original\":\"fall dramatically as current decreases\",\"replacement\":\"fall with the square of the current\",\"reason\":\"Replaces the intensifier \\\"dramatically\\\" with the actual relationship (I\u00b2R losses scale with the square of current).\"},{\"original\":\"significantly reduces line losses from 8 percent to 3 percent\",\"replacement\":\"reduces line losses from 8 percent to 3 percent\",\"reason\":\"The numbers already supply the evidence, so \\\"significantly\\\" is redundant.\"},{\"original\":\"is the only backup path for those hospitals, end of story.\",\"replacement\":\"is the only backup path for those hospitals.\",\"reason\":\"\\\"Only\\\" already marks exclusivity, so \\\"end of story\\\" is a redundant finality interjection.\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "Removes the intensifier \"dramatically\"; the passage gives no figure to replace it."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration",
+      "reason": "The 12-to-4-minute figures already carry the evidence, so the intensifier \"significantly\" is redundant."
+    },
+    {
+      "original": "Inertia still matters for the first few cycles after a trip, full stop.",
+      "replacement": null,
+      "reason": "\"Full stop\" is a finality interjection, but the claim has no exclusivity marker, so the author should decide whether to cut it."
+    },
+    {
+      "original": "Renewable energy technologies have been rising rapidly.",
+      "replacement": null,
+      "reason": "\"Rapidly\" stands in for a growth figure the author should supply."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall with the square of the current",
+      "reason": "Replaces the intensifier \"dramatically\" with the actual relationship (I\u00b2R losses scale with the square of current)."
+    },
+    {
+      "original": "significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "reduces line losses from 8 percent to 3 percent",
+      "reason": "The numbers already supply the evidence, so \"significantly\" is redundant."
+    },
+    {
+      "original": "is the only backup path for those hospitals, end of story.",
+      "replacement": "is the only backup path for those hospitals.",
+      "reason": "\"Only\" already marks exclusivity, so \"end of story\" is a redundant finality interjection."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1464,
+    "cache_read": 23455,
+    "cache_write": 7927,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0487015,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

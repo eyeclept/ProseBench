@@ -1,0 +1,55 @@
+{
+  "run_id": "R2_P1_r2",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 2,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3b24e238f8e04de64384f69851225795a1a36cb49fcc5e561420b95a47728d1a",
+  "rule_text_sha256": "7a7abb0522d8b9965f51d4a773a0fedd13399b8a5e53def51528b10e8be37d49",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:37:40.735230+00:00",
+  "duration_s": 20.01606695400551,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"Cybersecurity today is not merely an IT concern; it is a multidimensional discipline\", \"replacement\": \"Cybersecurity today is a multidimensional discipline\", \"reason\": \"The negated half, \\\"not merely an IT concern,\\\" is windup, and the positive claim stands alone without it.\"}, {\"original\": \", rather than by accident\", \"replacement\": \"\", \"reason\": \"The contrast with \\\"by accident\\\" restates \\\"imposed on purpose\\\" in negative form and adds no checkable fact.\"}, {\"original\": \" The playbook change significantly reduces mean time to contain.\", \"replacement\": \"\", \"reason\": \"This sentence restates the preceding claim that the playbook change lowered mean time to contain and adds no new fact.\"}, {\"original\": \"Fail-closed is the only acceptable default for those checks, end of story.\", \"replacement\": null, \"reason\": \"This sentence restates the preceding fail-closed default with added emphasis, so it is flagged for the author to decide whether the \\\"only acceptable\\\" claim is intended.\"}]}",
+  "edits": [
+    {
+      "original": "Cybersecurity today is not merely an IT concern; it is a multidimensional discipline",
+      "replacement": "Cybersecurity today is a multidimensional discipline",
+      "reason": "The negated half, \"not merely an IT concern,\" is windup, and the positive claim stands alone without it."
+    },
+    {
+      "original": ", rather than by accident",
+      "replacement": "",
+      "reason": "The contrast with \"by accident\" restates \"imposed on purpose\" in negative form and adds no checkable fact."
+    },
+    {
+      "original": " The playbook change significantly reduces mean time to contain.",
+      "replacement": "",
+      "reason": "This sentence restates the preceding claim that the playbook change lowered mean time to contain and adds no new fact."
+    },
+    {
+      "original": "Fail-closed is the only acceptable default for those checks, end of story.",
+      "replacement": null,
+      "reason": "This sentence restates the preceding fail-closed default with added emphasis, so it is flagged for the author to decide whether the \"only acceptable\" claim is intended."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 3862,
+    "cache_read": 29887,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00223027,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

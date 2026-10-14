@@ -1,0 +1,60 @@
+{
+  "run_id": "R5_P2_r1",
+  "model_key": "haiku55_high",
+  "endpoint_model": "anthropic/claude-haiku-5-5",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:58:14.766507+00:00",
+  "duration_s": 15.599730043002637,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"has evolved dramatically to accommodate\", \"replacement\": null, \"reason\": \"The intensifier \\\"dramatically\\\" stands in for an unstated evidence figure, so the author needs to supply a number, which I flag rather than invent.\"}, {\"original\": \"fall dramatically as current decreases\", \"replacement\": null, \"reason\": \"The intensifier \\\"dramatically\\\" stands in for an unstated quantity, so the author needs to supply the figure, which I flag rather than invent.\"}, {\"original\": \"the retune significantly shortens\", \"replacement\": \"the retune shortens\", \"reason\": \"The \\\"12 minutes to 4 minutes\\\" figures already in the sentence are the evidence, so the intensifier \\\"significantly\\\" is removed.\"}, {\"original\": \"The 345 kV reconductor significantly reduces\", \"replacement\": \"The 345 kV reconductor reduces\", \"reason\": \"The \\\"8 percent to 3 percent\\\" figures already in the sentence are the evidence, so the intensifier \\\"significantly\\\" is removed.\"}, {\"original\": \", end of story\", \"replacement\": \"\", \"reason\": \"The exclusivity marker \\\"only\\\" already carries the emphasis, so the finality interjection \\\"end of story\\\" is redundant padding and is removed.\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": null,
+      "reason": "The intensifier \"dramatically\" stands in for an unstated evidence figure, so the author needs to supply a number, which I flag rather than invent."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": null,
+      "reason": "The intensifier \"dramatically\" stands in for an unstated quantity, so the author needs to supply the figure, which I flag rather than invent."
+    },
+    {
+      "original": "the retune significantly shortens",
+      "replacement": "the retune shortens",
+      "reason": "The \"12 minutes to 4 minutes\" figures already in the sentence are the evidence, so the intensifier \"significantly\" is removed."
+    },
+    {
+      "original": "The 345 kV reconductor significantly reduces",
+      "replacement": "The 345 kV reconductor reduces",
+      "reason": "The \"8 percent to 3 percent\" figures already in the sentence are the evidence, so the intensifier \"significantly\" is removed."
+    },
+    {
+      "original": ", end of story",
+      "replacement": "",
+      "reason": "The exclusivity marker \"only\" already carries the emphasis, so the finality interjection \"end of story\" is redundant padding and is removed."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 2523,
+    "cache_read": 23455,
+    "cache_write": 7926,
+    "reasoning": 0
+  },
+  "cost_usd": 0.00308165,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

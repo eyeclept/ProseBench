@@ -1,0 +1,60 @@
+{
+  "run_id": "R5_P2_r2",
+  "model_key": "sonnet55_high",
+  "endpoint_model": "anthropic/claude-sonnet-5-5",
+  "rule": 5,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "545d55a934840d18b983f9cec31b4fb6f8991595841c8d5d7898a8d3c1d51259",
+  "rule_text_sha256": "8fc1fd2cb8ddbfca7ac58ebb3a4791003433457b70de00fc7f7c12f637efe213",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:42:49.510900+00:00",
+  "duration_s": 14.697329149988946,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\":[{\"original\":\"has evolved dramatically to accommodate\",\"replacement\":\"has evolved to accommodate\",\"reason\":\"The intensifier \\\"dramatically\\\" has no figure behind it, so it is deleted.\"},{\"original\":\"so the retune significantly shortens frequency restoration\",\"replacement\":\"so the retune shortens frequency restoration by 8 minutes\",\"reason\":\"The preceding sentence gives 12 minutes down to 4, so \\\"significantly\\\" is replaced with that 8-minute difference.\"},{\"original\":\"fall dramatically as current decreases\",\"replacement\":\"fall with the square of the current\",\"reason\":\"\\\"Dramatically\\\" is replaced with the actual relationship, since I\u00b2R losses scale with the square of the current.\"},{\"original\":\"reconductor significantly reduces line losses\",\"replacement\":\"reconductor reduces line losses\",\"reason\":\"The sentence already gives the numbers (8 percent to 3 percent), so \\\"significantly\\\" is padding.\"},{\"original\":\"the only backup path for those hospitals, end of story.\",\"replacement\":\"the only backup path for those hospitals.\",\"reason\":\"\\\"Only\\\" already carries the exclusivity, so \\\"end of story\\\" is a redundant finality interjection.\"}]}",
+  "edits": [
+    {
+      "original": "has evolved dramatically to accommodate",
+      "replacement": "has evolved to accommodate",
+      "reason": "The intensifier \"dramatically\" has no figure behind it, so it is deleted."
+    },
+    {
+      "original": "so the retune significantly shortens frequency restoration",
+      "replacement": "so the retune shortens frequency restoration by 8 minutes",
+      "reason": "The preceding sentence gives 12 minutes down to 4, so \"significantly\" is replaced with that 8-minute difference."
+    },
+    {
+      "original": "fall dramatically as current decreases",
+      "replacement": "fall with the square of the current",
+      "reason": "\"Dramatically\" is replaced with the actual relationship, since I\u00b2R losses scale with the square of the current."
+    },
+    {
+      "original": "reconductor significantly reduces line losses",
+      "replacement": "reconductor reduces line losses",
+      "reason": "The sentence already gives the numbers (8 percent to 3 percent), so \"significantly\" is padding."
+    },
+    {
+      "original": "the only backup path for those hospitals, end of story.",
+      "replacement": "the only backup path for those hospitals.",
+      "reason": "\"Only\" already carries the exclusivity, so \"end of story\" is a redundant finality interjection."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 1338,
+    "cache_read": 31382,
+    "cache_write": 0,
+    "reasoning": 0
+  },
+  "cost_usd": 0.0165262,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

@@ -1,0 +1,100 @@
+{
+  "run_id": "R1_P3_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P3",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "3954e511c35ea287c71c9d149895195dc9973718c1f539280f31c2650729643c",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "4307b2494ea61d518127e580843a1eeb4320d5125731aa22f259bb71a86fc610",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:35:14.100058+00:00",
+  "duration_s": 93.8373104930215,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"In an era marked by rapid environmental change\", \"replacement\": \"Amid rapid environmental change\", \"reason\": \"Removes banned phrase 'in an era marked by'\"},\n    {\"original\": \"a comprehensive understanding\", \"replacement\": \"a deep understanding\", \"reason\": \"Replaces banned adjective 'comprehensive'\"},\n    {\"original\": \"opened a new realm of observation\", \"replacement\": \"unlocked unprecedented detail\", \"reason\": \"Removes metaphorical use of 'realm'\"},\n    {\"original\": \"marked a watershed moment\", \"replacement\": \"marked a major milestone\", \"reason\": \"Removes banned phrase 'watershed moment'\"},\n    {\"original\": \"paving the way for\", \"replacement\": \"enabling\", \"reason\": \"Removes banned phrase 'paving the way for'\"},\n    {\"original\": \"A robust regression\", \"replacement\": \"A rigorous regression\", \"reason\": \"Replaces banned 'robust'\"},\n    {\"original\": \"significantly streamlines\", \"replacement\": \"speeds up\", \"reason\": \"Removes banned 'significantly' and 'streamlines'\"},\n    {\"original\": \"dramatically increased food production\", \"replacement\": \"greatly increased food production\", \"reason\": \"Removes banned 'dramatically'\"},\n    {\"original\": \"dramatically reduces yield loss\", \"replacement\": \"greatly reduces yield loss\", \"reason\": \"Removes banned 'dramatically'\"},\n    {\"original\": \"plays a pivotal role\", \"replacement\": \"plays a key role\", \"reason\": \"Replaces banned 'pivotal'\"},\n    {\"original\": \"leveraging the organelle's\", \"replacement\": \"using the organelle's\", \"reason\": \"Replaces banned 'leveraging'\"},\n    {\"original\": \"leveraging satellite imagery\", \"replacement\": \"using satellite imagery\", \"reason\": \"Replaces banned 'leveraging'\"},\n    {\"original\": \"Moreover, the concept of\", \"replacement\": \"Additionally, the concept of\", \"reason\": \"Removes banned transition word 'Moreover'\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "In an era marked by rapid environmental change",
+      "replacement": "Amid rapid environmental change",
+      "reason": "Removes banned phrase 'in an era marked by'"
+    },
+    {
+      "original": "a comprehensive understanding",
+      "replacement": "a deep understanding",
+      "reason": "Replaces banned adjective 'comprehensive'"
+    },
+    {
+      "original": "opened a new realm of observation",
+      "replacement": "unlocked unprecedented detail",
+      "reason": "Removes metaphorical use of 'realm'"
+    },
+    {
+      "original": "marked a watershed moment",
+      "replacement": "marked a major milestone",
+      "reason": "Removes banned phrase 'watershed moment'"
+    },
+    {
+      "original": "paving the way for",
+      "replacement": "enabling",
+      "reason": "Removes banned phrase 'paving the way for'"
+    },
+    {
+      "original": "A robust regression",
+      "replacement": "A rigorous regression",
+      "reason": "Replaces banned 'robust'"
+    },
+    {
+      "original": "significantly streamlines",
+      "replacement": "speeds up",
+      "reason": "Removes banned 'significantly' and 'streamlines'"
+    },
+    {
+      "original": "dramatically increased food production",
+      "replacement": "greatly increased food production",
+      "reason": "Removes banned 'dramatically'"
+    },
+    {
+      "original": "dramatically reduces yield loss",
+      "replacement": "greatly reduces yield loss",
+      "reason": "Removes banned 'dramatically'"
+    },
+    {
+      "original": "plays a pivotal role",
+      "replacement": "plays a key role",
+      "reason": "Replaces banned 'pivotal'"
+    },
+    {
+      "original": "leveraging the organelle's",
+      "replacement": "using the organelle's",
+      "reason": "Replaces banned 'leveraging'"
+    },
+    {
+      "original": "leveraging satellite imagery",
+      "replacement": "using satellite imagery",
+      "reason": "Replaces banned 'leveraging'"
+    },
+    {
+      "original": "Moreover, the concept of",
+      "replacement": "Additionally, the concept of",
+      "reason": "Removes banned transition word 'Moreover'"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 21870,
+    "output": 9672,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 9202
+  },
+  "cost_usd": 0.0090837,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

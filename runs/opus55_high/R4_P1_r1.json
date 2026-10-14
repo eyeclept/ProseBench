@@ -1,0 +1,190 @@
+{
+  "run_id": "R4_P1_r1",
+  "model_key": "opus55_high",
+  "endpoint_model": "anthropic/claude-opus-5-5",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 1,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T20:44:02.453692+00:00",
+  "duration_s": 47.17868671298493,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\"edits\": [\n{\"original\": \"benefits\u2014speed\", \"replacement\": \"benefits, such as speed\", \"reason\": \"Replaces the em dash before an inserted list with a comma and a lead-in phrase.\"},\n{\"original\": \"knowledge\u2014but\", \"replacement\": \"knowledge, but\", \"reason\": \"Replaces the closing em dash with a comma before the coordinating conjunction.\"},\n{\"original\": \"malware\u2014viruses\", \"replacement\": \"malware (viruses\", \"reason\": \"Replaces the opening em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"trojans\u2014remain\", \"replacement\": \"trojans) remain\", \"reason\": \"Replaces the closing em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"\u201cattack surfaces\u201d\", \"replacement\": \"\\\"attack surfaces\\\"\", \"reason\": \"Changes curly double quotes to straight double quotes.\"},\n{\"original\": \"lateral movement\u2014a key tactic\", \"replacement\": \"lateral movement, a key tactic\", \"reason\": \"Replaces the em dash before a trailing fragment with a comma.\"},\n{\"original\": \"\u201ctrusted internal network\u201d\", \"replacement\": \"\\\"trusted internal network\\\"\", \"reason\": \"Changes curly double quotes to straight double quotes.\"},\n{\"original\": \"management\u2014automated wherever possible\u2014closes\", \"replacement\": \"management, automated wherever possible, closes\", \"reason\": \"Replaces the em dashes around a non-clause aside with commas.\"},\n{\"original\": \"truncated process tree\u2026\", \"replacement\": \"truncated process tree...\", \"reason\": \"Changes the ellipsis glyph to three periods.\"},\n{\"original\": \"mean time to contain\u2014the finance team\", \"replacement\": \"mean time to contain; the finance team\", \"reason\": \"The em dash joins two independent clauses, so it becomes a semicolon.\"},\n{\"original\": \"threats\u2014whether malicious, negligent, or coerced\u2014account\", \"replacement\": \"threats, whether malicious, negligent, or coerced, account\", \"reason\": \"Replaces the em dashes around a non-clause aside with commas.\"},\n{\"original\": \"\u201cavailability heuristic,\u201d\", \"replacement\": \"\\\"availability heuristic,\\\"\", \"reason\": \"Changes curly double quotes to straight double quotes.\"},\n{\"original\": \"reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms\", \"replacement\": \"reinforcement (recognizing employees who flag suspicious activity) outperforms\", \"reason\": \"Replaces the em dashes around an aside with parentheses.\"},\n{\"original\": \"regulations\u2014GDPR\", \"replacement\": \"regulations (GDPR\", \"reason\": \"Replaces the opening em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"Pacific\u2014impose\", \"replacement\": \"Pacific) impose\", \"reason\": \"Replaces the closing em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"\u201cbug bounty\u201d\", \"replacement\": \"\\\"bug bounty\\\"\", \"reason\": \"Changes curly double quotes to straight double quotes.\"},\n{\"original\": \"approach\u2014transparent\", \"replacement\": \"approach (transparent\", \"reason\": \"Replaces the opening em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"norms\u2014remains\", \"replacement\": \"norms) remains\", \"reason\": \"Replaces the closing em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"replacement\": \"playbooks (for example, isolating a compromised endpoint within seconds of detecting ransomware encryption).\", \"reason\": \"Replaces the em dash before a trailing example with parentheses.\"},\n{\"original\": \"United Nations\u2019 Group\", \"replacement\": \"United Nations' Group\", \"reason\": \"Changes a curly apostrophe to a straight apostrophe.\"},\n{\"original\": \"European Union\u2019s Cybersecurity Act\", \"replacement\": \"European Union's Cybersecurity Act\", \"reason\": \"Changes a curly apostrophe to a straight apostrophe.\"},\n{\"original\": \"new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered\", \"replacement\": \"new radios. The SOC ingested the extra syslog without a retention plan. The legal team then discovered\", \"reason\": \"This would be a run-on with any single fix, so it is split into separate sentences instead of keeping the em dash and comma splice.\"},\n{\"original\": \"Architecture** \u2013 Treat\", \"replacement\": \"Architecture**: Treat\", \"reason\": \"Replaces the en dash used as a separator with a colon.\"},\n{\"original\": \"Development** \u2013 Embed\", \"replacement\": \"Development**: Embed\", \"reason\": \"Replaces the en dash used as a separator with a colon.\"},\n{\"original\": \"Intelligence** \u2013 Leverage\", \"replacement\": \"Intelligence**: Leverage\", \"reason\": \"Replaces the en dash used as a separator with a colon.\"},\n{\"original\": \"Preparedness** \u2013 Begin\", \"replacement\": \"Preparedness**: Begin\", \"reason\": \"Replaces the en dash used as a separator with a colon.\"},\n{\"original\": \"Engineering** \u2013 Focus\", \"replacement\": \"Engineering**: Focus\", \"reason\": \"Replaces the en dash used as a separator with a colon.\"},\n{\"original\": \"capabilities\u2014immutable\", \"replacement\": \"capabilities (immutable\", \"reason\": \"Replaces the opening em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"failover\u2014to minimize\", \"replacement\": \"failover) to minimize\", \"reason\": \"Replaces the closing em dash around the inserted list with a parenthesis.\"},\n{\"original\": \"landscape\u2014characterized\", \"replacement\": \"landscape, characterized\", \"reason\": \"Replaces the opening em dash around a non-clause modifier with a comma.\"},\n{\"original\": \"attacks\u2014demands\", \"replacement\": \"attacks, demands\", \"reason\": \"Replaces the closing em dash around a non-clause modifier with a comma.\"}\n]}\n```",
+  "edits": [
+    {
+      "original": "benefits\u2014speed",
+      "replacement": "benefits, such as speed",
+      "reason": "Replaces the em dash before an inserted list with a comma and a lead-in phrase."
+    },
+    {
+      "original": "knowledge\u2014but",
+      "replacement": "knowledge, but",
+      "reason": "Replaces the closing em dash with a comma before the coordinating conjunction."
+    },
+    {
+      "original": "malware\u2014viruses",
+      "replacement": "malware (viruses",
+      "reason": "Replaces the opening em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "trojans\u2014remain",
+      "replacement": "trojans) remain",
+      "reason": "Replaces the closing em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "\u201cattack surfaces\u201d",
+      "replacement": "\"attack surfaces\"",
+      "reason": "Changes curly double quotes to straight double quotes."
+    },
+    {
+      "original": "lateral movement\u2014a key tactic",
+      "replacement": "lateral movement, a key tactic",
+      "reason": "Replaces the em dash before a trailing fragment with a comma."
+    },
+    {
+      "original": "\u201ctrusted internal network\u201d",
+      "replacement": "\"trusted internal network\"",
+      "reason": "Changes curly double quotes to straight double quotes."
+    },
+    {
+      "original": "management\u2014automated wherever possible\u2014closes",
+      "replacement": "management, automated wherever possible, closes",
+      "reason": "Replaces the em dashes around a non-clause aside with commas."
+    },
+    {
+      "original": "truncated process tree\u2026",
+      "replacement": "truncated process tree...",
+      "reason": "Changes the ellipsis glyph to three periods."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team",
+      "replacement": "mean time to contain; the finance team",
+      "reason": "The em dash joins two independent clauses, so it becomes a semicolon."
+    },
+    {
+      "original": "threats\u2014whether malicious, negligent, or coerced\u2014account",
+      "replacement": "threats, whether malicious, negligent, or coerced, account",
+      "reason": "Replaces the em dashes around a non-clause aside with commas."
+    },
+    {
+      "original": "\u201cavailability heuristic,\u201d",
+      "replacement": "\"availability heuristic,\"",
+      "reason": "Changes curly double quotes to straight double quotes."
+    },
+    {
+      "original": "reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms",
+      "replacement": "reinforcement (recognizing employees who flag suspicious activity) outperforms",
+      "reason": "Replaces the em dashes around an aside with parentheses."
+    },
+    {
+      "original": "regulations\u2014GDPR",
+      "replacement": "regulations (GDPR",
+      "reason": "Replaces the opening em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "Pacific\u2014impose",
+      "replacement": "Pacific) impose",
+      "reason": "Replaces the closing em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "\u201cbug bounty\u201d",
+      "replacement": "\"bug bounty\"",
+      "reason": "Changes curly double quotes to straight double quotes."
+    },
+    {
+      "original": "approach\u2014transparent",
+      "replacement": "approach (transparent",
+      "reason": "Replaces the opening em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "norms\u2014remains",
+      "replacement": "norms) remains",
+      "reason": "Replaces the closing em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "playbooks (for example, isolating a compromised endpoint within seconds of detecting ransomware encryption).",
+      "reason": "Replaces the em dash before a trailing example with parentheses."
+    },
+    {
+      "original": "United Nations\u2019 Group",
+      "replacement": "United Nations' Group",
+      "reason": "Changes a curly apostrophe to a straight apostrophe."
+    },
+    {
+      "original": "European Union\u2019s Cybersecurity Act",
+      "replacement": "European Union's Cybersecurity Act",
+      "reason": "Changes a curly apostrophe to a straight apostrophe."
+    },
+    {
+      "original": "new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered",
+      "replacement": "new radios. The SOC ingested the extra syslog without a retention plan. The legal team then discovered",
+      "reason": "This would be a run-on with any single fix, so it is split into separate sentences instead of keeping the em dash and comma splice."
+    },
+    {
+      "original": "Architecture** \u2013 Treat",
+      "replacement": "Architecture**: Treat",
+      "reason": "Replaces the en dash used as a separator with a colon."
+    },
+    {
+      "original": "Development** \u2013 Embed",
+      "replacement": "Development**: Embed",
+      "reason": "Replaces the en dash used as a separator with a colon."
+    },
+    {
+      "original": "Intelligence** \u2013 Leverage",
+      "replacement": "Intelligence**: Leverage",
+      "reason": "Replaces the en dash used as a separator with a colon."
+    },
+    {
+      "original": "Preparedness** \u2013 Begin",
+      "replacement": "Preparedness**: Begin",
+      "reason": "Replaces the en dash used as a separator with a colon."
+    },
+    {
+      "original": "Engineering** \u2013 Focus",
+      "replacement": "Engineering**: Focus",
+      "reason": "Replaces the en dash used as a separator with a colon."
+    },
+    {
+      "original": "capabilities\u2014immutable",
+      "replacement": "capabilities (immutable",
+      "reason": "Replaces the opening em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "failover\u2014to minimize",
+      "replacement": "failover) to minimize",
+      "reason": "Replaces the closing em dash around the inserted list with a parenthesis."
+    },
+    {
+      "original": "landscape\u2014characterized",
+      "replacement": "landscape, characterized",
+      "reason": "Replaces the opening em dash around a non-clause modifier with a comma."
+    },
+    {
+      "original": "attacks\u2014demands",
+      "replacement": "attacks, demands",
+      "reason": "Replaces the closing em dash around a non-clause modifier with a comma."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 4,
+    "output": 5508,
+    "cache_read": 23455,
+    "cache_write": 6489,
+    "reasoning": 0
+  },
+  "cost_usd": 0.166779,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

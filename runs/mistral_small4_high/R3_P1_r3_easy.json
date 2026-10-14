@@ -1,0 +1,46 @@
+{
+  "run_id": "R3_P1_r3_easy",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 3,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "505b3f7b549b233192a5083c1fb49de6c8316b4f72367cd7b9e26c8b2de0ce37",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-14T00:30:06.682903+00:00",
+  "duration_s": 58.827275460999886,
+  "max_time_s": 1200,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\n      \"original\": \", rather than open.\",\n      \"replacement\": \"\",\n      \"reason\": \"Ordinary-knowledge antonym trailer cut per Rule 3.\"\n    },\n    {\n      \"original\": \", rather than by accident.\",\n      \"replacement\": \"\",\n      \"reason\": \"Ordinary-knowledge antonym trailer cut per Rule 3.\"\n    }\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": ", rather than open.",
+      "replacement": "",
+      "reason": "Ordinary-knowledge antonym trailer cut per Rule 3."
+    },
+    {
+      "original": ", rather than by accident.",
+      "replacement": "",
+      "reason": "Ordinary-knowledge antonym trailer cut per Rule 3."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 19934,
+    "output": 333,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 239
+  },
+  "cost_usd": 0.0031899,
+  "tool_calls": [],
+  "rate_limit_retries": 2
+}

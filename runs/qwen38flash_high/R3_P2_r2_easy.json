@@ -1,0 +1,50 @@
+{
+  "run_id": "R3_P2_r2_easy",
+  "model_key": "qwen38flash_high",
+  "endpoint_model": "openrouter/qwen/qwen3.8-flash",
+  "rule": 3,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "easy",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "c6f2900692c92a1e3cd08759baf3505a86e21a9b43e4d9471a6431f4e8408fd3",
+  "rule_text_sha256": "0ae9bd84841c2e7af25460da11c0e6956ab9c1005962db5889f0481c4ad626d9",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T22:45:28.466005+00:00",
+  "duration_s": 138.6814551879943,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\n  \"edits\": [\n    {\n      \"original\": \"Operators procured spinning reserve, rather than non-spinning reserve.\",\n      \"replacement\": null,\n      \"reason\": \"Uncertain how to classify. 'Spinning/non-spinning reserve' is power-systems jargon, so a general reader without domain background would not know the pair \u2014 which points to the genuine-distinction side of the ordinary-knowledge test (the contrast should earn its own sentence). But 'non-spinning' is also a morphologically transparent 'non-X' negation, which could be argued to make it ordinary. Because I am not sure which side of the test X falls on, and because a rewrite stated 'as what the thing is' would require adding definitional facts about reserve categories not present in the source (Rule 12, Accuracy and fabrication), I am flagging this for the user to decide rather than silently cutting or rewriting it.\"\n    },\n    {\n      \"original\": \"Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.\",\n      \"replacement\": \"Renewable units are often sited where resources are abundant. Demand peaks in other places, so robust transmission networks are required.\",\n      \"reason\": \"The 'not where demand peaks' trailer is not an ordinary-knowledge antonym pair like true/false or alive/dead \u2014 supply siting versus demand siting is a real, checkable distinction that is the substantive point of the bullet. Per the rule, a genuine distinction earns its own sentence, stated as what the thing is. The rewrite expresses the same entailed facts (abundant-resource sites and demand peaks are in different places, hence robust transmission) without fabricating anything and without the bolted-on negation.\"\n    },\n    {\n      \"original\": \"Those upgrades are planned on purpose, rather than by accident.\",\n      \"replacement\": \"Those upgrades are planned on purpose.\",\n      \"reason\": \"'On purpose / by accident' is an ordinary, general-knowledge antonym pair that virtually anyone already understands, so the trailing 'rather than by accident' clause adds nothing and should be cut (the rule uses this exact pair as its WRONG/cut-it example).\"\n    }\n  ]\n}",
+  "edits": [
+    {
+      "original": "Operators procured spinning reserve, rather than non-spinning reserve.",
+      "replacement": null,
+      "reason": "Uncertain how to classify. 'Spinning/non-spinning reserve' is power-systems jargon, so a general reader without domain background would not know the pair \u2014 which points to the genuine-distinction side of the ordinary-knowledge test (the contrast should earn its own sentence). But 'non-spinning' is also a morphologically transparent 'non-X' negation, which could be argued to make it ordinary. Because I am not sure which side of the test X falls on, and because a rewrite stated 'as what the thing is' would require adding definitional facts about reserve categories not present in the source (Rule 12, Accuracy and fabrication), I am flagging this for the user to decide rather than silently cutting or rewriting it."
+    },
+    {
+      "original": "Renewable units are often sited where resources are abundant, not where demand peaks, requiring robust transmission networks.",
+      "replacement": "Renewable units are often sited where resources are abundant. Demand peaks in other places, so robust transmission networks are required.",
+      "reason": "The 'not where demand peaks' trailer is not an ordinary-knowledge antonym pair like true/false or alive/dead \u2014 supply siting versus demand siting is a real, checkable distinction that is the substantive point of the bullet. Per the rule, a genuine distinction earns its own sentence, stated as what the thing is. The rewrite expresses the same entailed facts (abundant-resource sites and demand peaks are in different places, hence robust transmission) without fabricating anything and without the bolted-on negation."
+    },
+    {
+      "original": "Those upgrades are planned on purpose, rather than by accident.",
+      "replacement": "Those upgrades are planned on purpose.",
+      "reason": "'On purpose / by accident' is an ordinary, general-knowledge antonym pair that virtually anyone already understands, so the trailing 'rather than by accident' clause adds nothing and should be cut (the rule uses this exact pair as its WRONG/cut-it example)."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 196,
+    "output": 7681,
+    "cache_read": 20736,
+    "cache_write": 0,
+    "reasoning": 7199
+  },
+  "cost_usd": 0.003971246,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

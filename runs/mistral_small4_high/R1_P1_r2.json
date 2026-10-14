@@ -1,0 +1,85 @@
+{
+  "run_id": "R1_P1_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P1",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2ace8a02911add216935a04de85e859bb40a812a6cf97bf7016105d163c724b7",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:19:26.468065+00:00",
+  "duration_s": 46.581121641007485,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"which streamlines containment\", \"replacement\": \"which speeds containment\", \"reason\": \"Replaced banned verb 'streamlines' with more precise alternative\"},\n    {\"original\": \"The playbook change significantly reduces mean time to contain\", \"replacement\": \"The playbook change cuts mean time to contain from 18 hours to 3 hours\", \"reason\": \"Replaced banned intensifier 'significantly' and vague verb 'reduces' with concrete measurement\"},\n    {\"original\": \"a strategic asset that safeguards reputation and competitive advantage\", \"replacement\": \"a core function that protects operations and market position\", \"reason\": \"Replaced banned phrases 'strategic asset' and 'safeguards' with precise alternatives\"},\n    {\"original\": \"security-first culture\", \"replacement\": \"security-focused culture\", \"reason\": \"Replaced banned intensifier '-first' with more precise term\"},\n    {\"original\": \"mitigate financial fallout\", \"replacement\": \"reduce financial impact\", \"reason\": \"Replaced informal 'fallout' with precise alternative\"},\n    {\"original\": \"pivotal for maintaining a technological edge\", \"replacement\": \"critical for maintaining cybersecurity leadership\", \"reason\": \"Replaced banned 'pivotal' and 'technological edge' with precise alternatives\"},\n    {\"original\": \"robust governance\", \"replacement\": \"strong governance\", \"reason\": \"Replaced banned intensifier 'robust'\"},\n    {\"original\": \"managed prudently\", \"replacement\": \"managed carefully\", \"reason\": \"Replaced banned intensifier 'prudently'\"},\n    {\"original\": \"embed security into the very fabric of system design\", \"replacement\": \"integrate security into system design\", \"reason\": \"Replaced banned phrase 'into the very fabric'\"},\n    {\"original\": \"safeguard not only data and devices but the trust\", \"replacement\": \"protect data, devices, and trust\", \"reason\": \"Replaced banned verb 'safeguard' and informal phrase\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "which streamlines containment",
+      "replacement": "which speeds containment",
+      "reason": "Replaced banned verb 'streamlines' with more precise alternative"
+    },
+    {
+      "original": "The playbook change significantly reduces mean time to contain",
+      "replacement": "The playbook change cuts mean time to contain from 18 hours to 3 hours",
+      "reason": "Replaced banned intensifier 'significantly' and vague verb 'reduces' with concrete measurement"
+    },
+    {
+      "original": "a strategic asset that safeguards reputation and competitive advantage",
+      "replacement": "a core function that protects operations and market position",
+      "reason": "Replaced banned phrases 'strategic asset' and 'safeguards' with precise alternatives"
+    },
+    {
+      "original": "security-first culture",
+      "replacement": "security-focused culture",
+      "reason": "Replaced banned intensifier '-first' with more precise term"
+    },
+    {
+      "original": "mitigate financial fallout",
+      "replacement": "reduce financial impact",
+      "reason": "Replaced informal 'fallout' with precise alternative"
+    },
+    {
+      "original": "pivotal for maintaining a technological edge",
+      "replacement": "critical for maintaining cybersecurity leadership",
+      "reason": "Replaced banned 'pivotal' and 'technological edge' with precise alternatives"
+    },
+    {
+      "original": "robust governance",
+      "replacement": "strong governance",
+      "reason": "Replaced banned intensifier 'robust'"
+    },
+    {
+      "original": "managed prudently",
+      "replacement": "managed carefully",
+      "reason": "Replaced banned intensifier 'prudently'"
+    },
+    {
+      "original": "embed security into the very fabric of system design",
+      "replacement": "integrate security into system design",
+      "reason": "Replaced banned phrase 'into the very fabric'"
+    },
+    {
+      "original": "safeguard not only data and devices but the trust",
+      "replacement": "protect data, devices, and trust",
+      "reason": "Replaced banned verb 'safeguard' and informal phrase"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 20818,
+    "output": 1752,
+    "cache_read": 0,
+    "cache_write": 0,
+    "reasoning": 1306
+  },
+  "cost_usd": 0.0041739,
+  "tool_calls": [],
+  "rate_limit_retries": 1
+}

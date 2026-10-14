@@ -1,0 +1,345 @@
+{
+  "run_id": "R1_P2_r2",
+  "model_key": "mistral_small4_high",
+  "endpoint_model": "openrouter/mistralai/mistral-small-2603",
+  "rule": 1,
+  "passage": "P2",
+  "repeat": 2,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "2a82aa819128e31aad16573e434900dc524f2e6a1fd07715305fd53d2122feb0",
+  "rule_text_sha256": "60e95bff74d9e81f87e9115b59bdc0782f38243b023a0ab6a78e17a9b2ff82df",
+  "passage_sha256": "8f30e4b0446c85a4491bd931c4c1782aa56a0cdbdf1f7db1b5e374b890a16e1f",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T21:23:42.117588+00:00",
+  "duration_s": 44.12042920300155,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "```json\n{\n  \"edits\": [\n    {\"original\": \"foster innovation\", \"replacement\": \"enable innovation\", \"reason\": \"Banned word 'foster' in verb list\"},\n    {\"original\": \"robust control\", \"replacement\": \"strong control\", \"reason\": \"Banned adjective 'robust'\"},\n    {\"original\": \"comprehensive socio\u2011technical\", \"replacement\": \"detailed socio-technical\", \"reason\": \"Banned adjective 'comprehensive' and en dash\"},\n    {\"original\": \"pivotal role\", \"replacement\": \"key role\", \"reason\": \"Banned adjective 'pivotal'\"},\n    {\"original\": \"crucial for frequency control\", \"replacement\": \"essential for frequency control\", \"reason\": \"Banned adjective 'crucial'\"},\n    {\"original\": \"vital for\", \"replacement\": \"essential for\", \"reason\": \"Banned adjective 'vital'\"},\n    {\"original\": \"transformative impact\", \"replacement\": \"major impact\", \"reason\": \"Banned adjective 'transformative'\"},\n    {\"original\": \"cutting-edge technologies\", \"replacement\": \"advanced technologies\", \"reason\": \"Banned hyphenated phrase 'cutting-edge'\"},\n    {\"original\": \"groundbreaking work\", \"replacement\": \"pioneering work\", \"reason\": \"Banned adjective 'groundbreaking'\"},\n    {\"original\": \"innovative control strategies\", \"replacement\": \"new control strategies\", \"reason\": \"Banned adjective 'innovative'\"},\n    {\"original\": \"seamless transition\", \"replacement\": \"smooth transition\", \"reason\": \"Banned adjective 'seamless'\"},\n    {\"original\": \"intricate control schemes\", \"replacement\": \"complex control schemes\", \"reason\": \"Banned adjective 'intricate'\"},\n    {\"original\": \"nuanced approach\", \"replacement\": \"careful approach\", \"reason\": \"Banned adjective 'nuanced'\"},\n    {\"original\": \"multifaceted challenge\", \"replacement\": \"complex challenge\", \"reason\": \"Banned adjective 'multifaceted'\"},\n    {\"original\": \"holistic energy system\", \"replacement\": \"integrated energy system\", \"reason\": \"Banned adjective 'holistic'\"},\n    {\"original\": \"extremely important\", \"replacement\": \"very important\", \"reason\": \"Banned intensifier 'extremely'\"},\n    {\"original\": \"dramatically reduces\", \"replacement\": \"greatly reduces\", \"reason\": \"Banned intensifier 'dramatically'\"},\n    {\"original\": \"exceptionally reliable\", \"replacement\": \"highly reliable\", \"reason\": \"Banned intensifier 'exceptionally'\"},\n    {\"original\": \"significantly reduces line losses from 8 percent to 3 percent\", \"replacement\": \"cuts line losses from 8 percent to 3 percent\", \"reason\": \"Banned intensifier 'significantly'\"},\n    {\"original\": \"incredibly complex\", \"replacement\": \"very complex\", \"reason\": \"Banned intensifier 'incredibly'\"},\n    {\"original\": \"remarkably stable\", \"replacement\": \"very stable\", \"reason\": \"Banned intensifier 'remarkably'\"},\n    {\"original\": \"truly remarkable\", \"replacement\": \"very remarkable\", \"reason\": \"Banned intensifier 'truly'\"},\n    {\"original\": \"absolutely essential\", \"replacement\": \"absolutely necessary\", \"reason\": \"Banned intensifier 'absolutely'\"},\n    {\"original\": \"literally impossible\", \"replacement\": \"virtually impossible\", \"reason\": \"Banned intensifier 'literally'\"},\n    {\"original\": \"quite different\", \"replacement\": \"very different\", \"reason\": \"Banned intensifier 'quite'\"},\n    {\"original\": \"really important\", \"replacement\": \"very important\", \"reason\": \"Banned intensifier 'really'\"},\n    {\"original\": \"very important\", \"replacement\": \"critical\", \"reason\": \"Banned intensifier 'very'\"},\n    {\"original\": \"surely the case\", \"replacement\": \"certainly the case\", \"reason\": \"Banned intensifier 'surely'\"},\n    {\"original\": \"certainly true\", \"replacement\": \"clearly true\", \"reason\": \"Banned intensifier 'certainly'\"},\n    {\"original\": \"clearly evident\", \"replacement\": \"clearly visible\", \"reason\": \"Banned intensifier 'clearly'\"},\n    {\"original\": \"definitely the best\", \"replacement\": \"the best\", \"reason\": \"Banned intensifier 'definitely'\"},\n    {\"original\": \"essentially the same\", \"replacement\": \"the same\", \"reason\": \"Banned intensifier 'essentially'\"},\n    {\"original\": \"fundamentally different\", \"replacement\": \"very different\", \"reason\": \"Banned intensifier 'fundamentally'\"},\n    {\"original\": \"interestingly, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'interestingly'\"},\n    {\"original\": \"naturally, this\", \"replacement\": \"This\", \"reason\": \"Banned adverb 'naturally'\"},\n    {\"original\": \"obviously, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'obviously'\"},\n    {\"original\": \"undoubtedly, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'undoubtedly'\"},\n    {\"original\": \"ultimately, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'ultimately'\"},\n    {\"original\": \"basically, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'basically'\"},\n    {\"original\": \"actually, the\", \"replacement\": \"The\", \"reason\": \"Banned adverb 'actually'\"},\n    {\"original\": \"Furthermore,\", \"replacement\": \"In addition,\", \"reason\": \"Banned transitional phrase 'Furthermore'\"},\n    {\"original\": \"Moreover,\", \"replacement\": \"Additionally,\", \"reason\": \"Banned transitional phrase 'Moreover'\"},\n    {\"original\": \"Notwithstanding these\", \"replacement\": \"Despite these\", \"reason\": \"Banned transitional phrase 'Notwithstanding'\"},\n    {\"original\": \"That being said,\", \"replacement\": \"However,\", \"reason\": \"Banned transitional phrase 'That being said'\"},\n    {\"original\": \"at its core\", \"replacement\": \"essentially\", \"reason\": \"Banned transitional phrase 'at its core'\"},\n    {\"original\": \"to put it simply\", \"replacement\": \"simply\", \"reason\": \"Banned transitional phrase 'to put it simply'\"},\n    {\"original\": \"it's worth mentioning that\", \"replacement\": \"notably\", \"reason\": \"Banned transitional phrase 'it's worth mentioning that'\"},\n    {\"original\": \"in the realm of\", \"replacement\": \"in\", \"reason\": \"Banned transitional phrase 'in the realm of'\"},\n    {\"original\": \"in the landscape of\", \"replacement\": \"in\", \"reason\": \"Banned transitional phrase 'in the landscape of'\"},\n    {\"original\": \"in conclusion\", \"replacement\": \"\", \"reason\": \"Banned concluding phrase 'in conclusion'\"},\n    {\"original\": \"to sum up\", \"replacement\": \"\", \"reason\": \"Banned concluding phrase 'to sum up'\"},\n    {\"original\": \"in the final analysis\", \"replacement\": \"\", \"reason\": \"Banned concluding phrase 'in the final analysis'\"},\n    {\"original\": \"all things considered\", \"replacement\": \"\", \"reason\": \"Banned concluding phrase 'all things considered'\"},\n    {\"original\": \"at the end of the day\", \"replacement\": \"\", \"reason\": \"Banned concluding phrase 'at the end of the day'\"},\n    {\"original\": \"by leveraging these technologies, you can achieve\", \"replacement\": \"these technologies enable\", \"reason\": \"Banned phrase structure 'by [doing X], you can [achieve Y]'\"},\n    {\"original\": \"look no further\", \"replacement\": \"\", \"reason\": \"Banned phrase 'look no further'\"},\n    {\"original\": \"our team of experts\", \"replacement\": \"we\", \"reason\": \"Banned phrase 'our team of experts'\"},\n    {\"original\": \"socio\u2011technical\", \"replacement\": \"socio-technical\", \"reason\": \"Non-ASCII en dash character\"},\n    {\"original\": \"end\u2011users\", \"replacement\": \"end-users\", \"reason\": \"Non-ASCII en dash character\"},\n    {\"original\": \"state\u2011of\u2011the\u2011art\", \"replacement\": \"state-of-the-art\", \"reason\": \"Non-ASCII en dash characters\"},\n    {\"original\": \"well\u2011being\", \"replacement\": \"well-being\", \"reason\": \"Non-ASCII en dash character\"},\n    {\"original\": \"end\u2011of\u2011day\", \"replacement\": \"end-of-day\", \"reason\": \"Non-ASCII en dash characters\"}\n  ]\n}\n```",
+  "edits": [
+    {
+      "original": "foster innovation",
+      "replacement": "enable innovation",
+      "reason": "Banned word 'foster' in verb list"
+    },
+    {
+      "original": "robust control",
+      "replacement": "strong control",
+      "reason": "Banned adjective 'robust'"
+    },
+    {
+      "original": "comprehensive socio\u2011technical",
+      "replacement": "detailed socio-technical",
+      "reason": "Banned adjective 'comprehensive' and en dash"
+    },
+    {
+      "original": "pivotal role",
+      "replacement": "key role",
+      "reason": "Banned adjective 'pivotal'"
+    },
+    {
+      "original": "crucial for frequency control",
+      "replacement": "essential for frequency control",
+      "reason": "Banned adjective 'crucial'"
+    },
+    {
+      "original": "vital for",
+      "replacement": "essential for",
+      "reason": "Banned adjective 'vital'"
+    },
+    {
+      "original": "transformative impact",
+      "replacement": "major impact",
+      "reason": "Banned adjective 'transformative'"
+    },
+    {
+      "original": "cutting-edge technologies",
+      "replacement": "advanced technologies",
+      "reason": "Banned hyphenated phrase 'cutting-edge'"
+    },
+    {
+      "original": "groundbreaking work",
+      "replacement": "pioneering work",
+      "reason": "Banned adjective 'groundbreaking'"
+    },
+    {
+      "original": "innovative control strategies",
+      "replacement": "new control strategies",
+      "reason": "Banned adjective 'innovative'"
+    },
+    {
+      "original": "seamless transition",
+      "replacement": "smooth transition",
+      "reason": "Banned adjective 'seamless'"
+    },
+    {
+      "original": "intricate control schemes",
+      "replacement": "complex control schemes",
+      "reason": "Banned adjective 'intricate'"
+    },
+    {
+      "original": "nuanced approach",
+      "replacement": "careful approach",
+      "reason": "Banned adjective 'nuanced'"
+    },
+    {
+      "original": "multifaceted challenge",
+      "replacement": "complex challenge",
+      "reason": "Banned adjective 'multifaceted'"
+    },
+    {
+      "original": "holistic energy system",
+      "replacement": "integrated energy system",
+      "reason": "Banned adjective 'holistic'"
+    },
+    {
+      "original": "extremely important",
+      "replacement": "very important",
+      "reason": "Banned intensifier 'extremely'"
+    },
+    {
+      "original": "dramatically reduces",
+      "replacement": "greatly reduces",
+      "reason": "Banned intensifier 'dramatically'"
+    },
+    {
+      "original": "exceptionally reliable",
+      "replacement": "highly reliable",
+      "reason": "Banned intensifier 'exceptionally'"
+    },
+    {
+      "original": "significantly reduces line losses from 8 percent to 3 percent",
+      "replacement": "cuts line losses from 8 percent to 3 percent",
+      "reason": "Banned intensifier 'significantly'"
+    },
+    {
+      "original": "incredibly complex",
+      "replacement": "very complex",
+      "reason": "Banned intensifier 'incredibly'"
+    },
+    {
+      "original": "remarkably stable",
+      "replacement": "very stable",
+      "reason": "Banned intensifier 'remarkably'"
+    },
+    {
+      "original": "truly remarkable",
+      "replacement": "very remarkable",
+      "reason": "Banned intensifier 'truly'"
+    },
+    {
+      "original": "absolutely essential",
+      "replacement": "absolutely necessary",
+      "reason": "Banned intensifier 'absolutely'"
+    },
+    {
+      "original": "literally impossible",
+      "replacement": "virtually impossible",
+      "reason": "Banned intensifier 'literally'"
+    },
+    {
+      "original": "quite different",
+      "replacement": "very different",
+      "reason": "Banned intensifier 'quite'"
+    },
+    {
+      "original": "really important",
+      "replacement": "very important",
+      "reason": "Banned intensifier 'really'"
+    },
+    {
+      "original": "very important",
+      "replacement": "critical",
+      "reason": "Banned intensifier 'very'"
+    },
+    {
+      "original": "surely the case",
+      "replacement": "certainly the case",
+      "reason": "Banned intensifier 'surely'"
+    },
+    {
+      "original": "certainly true",
+      "replacement": "clearly true",
+      "reason": "Banned intensifier 'certainly'"
+    },
+    {
+      "original": "clearly evident",
+      "replacement": "clearly visible",
+      "reason": "Banned intensifier 'clearly'"
+    },
+    {
+      "original": "definitely the best",
+      "replacement": "the best",
+      "reason": "Banned intensifier 'definitely'"
+    },
+    {
+      "original": "essentially the same",
+      "replacement": "the same",
+      "reason": "Banned intensifier 'essentially'"
+    },
+    {
+      "original": "fundamentally different",
+      "replacement": "very different",
+      "reason": "Banned intensifier 'fundamentally'"
+    },
+    {
+      "original": "interestingly, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'interestingly'"
+    },
+    {
+      "original": "naturally, this",
+      "replacement": "This",
+      "reason": "Banned adverb 'naturally'"
+    },
+    {
+      "original": "obviously, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'obviously'"
+    },
+    {
+      "original": "undoubtedly, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'undoubtedly'"
+    },
+    {
+      "original": "ultimately, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'ultimately'"
+    },
+    {
+      "original": "basically, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'basically'"
+    },
+    {
+      "original": "actually, the",
+      "replacement": "The",
+      "reason": "Banned adverb 'actually'"
+    },
+    {
+      "original": "Furthermore,",
+      "replacement": "In addition,",
+      "reason": "Banned transitional phrase 'Furthermore'"
+    },
+    {
+      "original": "Moreover,",
+      "replacement": "Additionally,",
+      "reason": "Banned transitional phrase 'Moreover'"
+    },
+    {
+      "original": "Notwithstanding these",
+      "replacement": "Despite these",
+      "reason": "Banned transitional phrase 'Notwithstanding'"
+    },
+    {
+      "original": "That being said,",
+      "replacement": "However,",
+      "reason": "Banned transitional phrase 'That being said'"
+    },
+    {
+      "original": "at its core",
+      "replacement": "essentially",
+      "reason": "Banned transitional phrase 'at its core'"
+    },
+    {
+      "original": "to put it simply",
+      "replacement": "simply",
+      "reason": "Banned transitional phrase 'to put it simply'"
+    },
+    {
+      "original": "it's worth mentioning that",
+      "replacement": "notably",
+      "reason": "Banned transitional phrase 'it's worth mentioning that'"
+    },
+    {
+      "original": "in the realm of",
+      "replacement": "in",
+      "reason": "Banned transitional phrase 'in the realm of'"
+    },
+    {
+      "original": "in the landscape of",
+      "replacement": "in",
+      "reason": "Banned transitional phrase 'in the landscape of'"
+    },
+    {
+      "original": "in conclusion",
+      "replacement": "",
+      "reason": "Banned concluding phrase 'in conclusion'"
+    },
+    {
+      "original": "to sum up",
+      "replacement": "",
+      "reason": "Banned concluding phrase 'to sum up'"
+    },
+    {
+      "original": "in the final analysis",
+      "replacement": "",
+      "reason": "Banned concluding phrase 'in the final analysis'"
+    },
+    {
+      "original": "all things considered",
+      "replacement": "",
+      "reason": "Banned concluding phrase 'all things considered'"
+    },
+    {
+      "original": "at the end of the day",
+      "replacement": "",
+      "reason": "Banned concluding phrase 'at the end of the day'"
+    },
+    {
+      "original": "by leveraging these technologies, you can achieve",
+      "replacement": "these technologies enable",
+      "reason": "Banned phrase structure 'by [doing X], you can [achieve Y]'"
+    },
+    {
+      "original": "look no further",
+      "replacement": "",
+      "reason": "Banned phrase 'look no further'"
+    },
+    {
+      "original": "our team of experts",
+      "replacement": "we",
+      "reason": "Banned phrase 'our team of experts'"
+    },
+    {
+      "original": "socio\u2011technical",
+      "replacement": "socio-technical",
+      "reason": "Non-ASCII en dash character"
+    },
+    {
+      "original": "end\u2011users",
+      "replacement": "end-users",
+      "reason": "Non-ASCII en dash character"
+    },
+    {
+      "original": "state\u2011of\u2011the\u2011art",
+      "replacement": "state-of-the-art",
+      "reason": "Non-ASCII en dash characters"
+    },
+    {
+      "original": "well\u2011being",
+      "replacement": "well-being",
+      "reason": "Non-ASCII en dash character"
+    },
+    {
+      "original": "end\u2011of\u2011day",
+      "replacement": "end-of-day",
+      "reason": "Non-ASCII en dash characters"
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 29,
+    "output": 4796,
+    "cache_read": 21952,
+    "cache_write": 0,
+    "reasoning": 2814
+  },
+  "cost_usd": 0.00321123,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}

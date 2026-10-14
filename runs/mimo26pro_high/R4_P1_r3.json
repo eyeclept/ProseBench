@@ -1,0 +1,430 @@
+{
+  "run_id": "R4_P1_r3",
+  "model_key": "mimo26pro_high",
+  "endpoint_model": "openrouter/xiaomi/mimo-v2.6-pro",
+  "rule": 4,
+  "passage": "P1",
+  "repeat": 3,
+  "framing": "verbatim",
+  "thinking": "high",
+  "system_prompt_sha256": "b619fa545e4c28530b71a54ff8317d6a6bbf4dd5da46ce357a3fc2ce517eae2f",
+  "prompt_sha256": "f709d110eb95566c6741820af6a481462d02e785292da1f7102747a6efa7b33c",
+  "rule_text_sha256": "38ab6fd220fc0941cab21bf4beb1782920df7de5874dead0be92fbe216efea31",
+  "passage_sha256": "2c53a0db0ff2a616c6308d0629335fa1c7de0fb694e7d0367edaf1402cc647cd",
+  "omp_version": "18.10.3",
+  "image_digest": "sha256:698838284d3ee31a9fb875f9b23cb0beb6047b31b31abcf25790e36e7305a1f7",
+  "started_at": "2026-10-13T23:51:44.715160+00:00",
+  "duration_s": 205.6380906259874,
+  "exit_code": 0,
+  "error": null,
+  "output_text": "{\"edits\": [{\"original\": \"\u2248\", \"replacement\": \"~\", \"reason\": \"The approximation glyph is not US-keyboard typable, so it becomes the ASCII tilde.\"}, {\"original\": \"twenty\u2011first\", \"replacement\": \"twenty-first\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"cloud\u2011based\", \"replacement\": \"cloud-based\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Internet\u2011of\u2011Things\", \"replacement\": \"Internet-of-Things\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.\", \"replacement\": \"This reliance brings extraordinary benefits (speed, efficiency, and the democratization of knowledge), but it also creates a fertile ground for malicious actors.\", \"reason\": \"The em dashes set off a medial elaboration, so parentheses and a comma before the coordinating conjunction replace them.\"}, {\"original\": \"Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive\", \"replacement\": \"Traditional malware (viruses, worms, and trojans) remain pervasive\", \"reason\": \"The em dashes set off a list with interior commas, so parentheses replace them.\"}, {\"original\": \"supply\u2011chain attacks\", \"replacement\": \"supply-chain attacks\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"APT\u2011related incidents\", \"replacement\": \"APT-related incidents\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"28 % of all confirmed breaches\", \"replacement\": \"28% of all confirmed breaches\", \"reason\": \"The non-keyboard narrow space before the percent sign is removed for ASCII-only text.\"}, {\"original\": \"17 % year\u2011over\u2011year (Verizon, 2024)\", \"replacement\": \"17% year-over-year (Verizon, 2024)\", \"reason\": \"The non-keyboard narrow space and hyphens become plain ASCII characters.\"}, {\"original\": \"Nation\u2011state actors\", \"replacement\": \"Nation-state actors\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"zero\u2011day vulnerabilities\", \"replacement\": \"zero-day vulnerabilities\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"dark\u2011web marketplaces\", \"replacement\": \"dark-web marketplaces\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"creating \u201cattack surfaces\u201d that are dramatically broader than in the past\", \"replacement\": \"creating \\\"attack surfaces\\\" that are dramatically broader than in the past\", \"reason\": \"Curly quotation marks become straight double quotes.\"}, {\"original\": \"deep\u2011fake technology and AI\u2011driven social engineering campaigns\", \"replacement\": \"deep-fake technology and AI-driven social engineering campaigns\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"defense\u2011in\u2011depth strategy\", \"replacement\": \"defense-in-depth strategy\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"next\u2011generation firewalls\", \"replacement\": \"next-generation firewalls\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"micro\u2011segmentation isolates workloads\", \"replacement\": \"micro-segmentation isolates workloads\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).\", \"replacement\": \"limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023).\", \"reason\": \"The em dash introduces a trailing fragment, which takes a comma.\"}, {\"original\": \"machine\u2011learning models\", \"replacement\": \"machine-learning models\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"AES\u2011256\", \"replacement\": \"AES-256\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"credential\u2011dumping utilities\", \"replacement\": \"credential-dumping utilities\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Identity\u2011and\u2011access management (IAM)\", \"replacement\": \"Identity-and-access management (IAM)\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"zero\u2011trust architectures\", \"replacement\": \"zero-trust architectures\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"moving away from the outdated \u201ctrusted internal network\u201d paradigm\", \"replacement\": \"moving away from the outdated \\\"trusted internal network\\\" paradigm\", \"reason\": \"Curly quotation marks become straight double quotes.\"}, {\"original\": \"regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities\", \"replacement\": \"regular patch management, automated wherever possible, closes known vulnerabilities\", \"reason\": \"The em dashes set off a medial fragment with no interior commas, so commas replace them.\"}, {\"original\": \"mean time to contain\u2014the finance team uses that figure in the quarterly risk report.\", \"replacement\": \"mean time to contain; the finance team uses that figure in the quarterly risk report.\", \"reason\": \"The em dash joins two independent clauses, so a semicolon replaces it.\"}, {\"original\": \"Board\u2011level oversight\", \"replacement\": \"Board-level oversight\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"third\u2011party audits\", \"replacement\": \"third-party audits\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34 % of data breaches\", \"replacement\": \"Insider threats (whether malicious, negligent, or coerced) account for an estimated 34% of data breaches\", \"reason\": \"The em dashes enclose a parenthetical with interior commas and the narrow space before the percent sign is removed.\"}, {\"original\": \"click\u2011through rates above 20 %\", \"replacement\": \"click-through rates above 20%\", \"reason\": \"The non-US-keyboard hyphen and narrow space become plain ASCII text.\"}, {\"original\": \"such as the \u201cavailability heuristic,\u201d lead employees\", \"replacement\": \"such as the \\\"availability heuristic,\\\" lead employees\", \"reason\": \"Curly quotation marks become straight double quotes.\"}, {\"original\": \"security\u2011first culture\", \"replacement\": \"security-first culture\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"real\u2011time phishing simulations\", \"replacement\": \"real-time phishing simulations\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures\", \"replacement\": \"positive reinforcement, recognizing employees who flag suspicious activity, outperforms punitive measures\", \"reason\": \"The em dashes set off a medial fragment with no interior commas, so commas replace them.\"}, {\"original\": \"role\u2011based access controls\", \"replacement\": \"role-based access controls\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4 % of global revenue.\", \"replacement\": \"Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4% of global revenue.\", \"reason\": \"The em dashes enclose a parenthetical with interior commas and the non-US-keyboard hyphens and narrow space become ASCII.\"}, {\"original\": \"threat\u2011detection AI\", \"replacement\": \"threat-detection AI\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"The \u201cbug bounty\u201d model\", \"replacement\": \"The \\\"bug bounty\\\" model\", \"reason\": \"Curly quotation marks become straight double quotes.\"}, {\"original\": \"data\u2011retention laws\", \"replacement\": \"data-retention laws\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential\", \"replacement\": \"A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential\", \"reason\": \"The em dashes enclose a parenthetical with interior commas, so parentheses replace them along with the non-US-keyboard hyphen.\"}, {\"original\": \"cross\u2011border threat intelligence sharing\", \"replacement\": \"cross-border threat intelligence sharing\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"post\u2011incident analysis\", \"replacement\": \"post-incident analysis\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"up\u2011to\u2011date IR plan\", \"replacement\": \"up-to-date IR plan\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"replacement\": \"executing predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.\", \"reason\": \"The em dash introduces a trailing example fragment, which takes a comma.\"}, {\"original\": \"backed\u2011up systems\", \"replacement\": \"backed-up systems\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Post\u2011incident lessons learned\", \"replacement\": \"Post-incident lessons learned\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"cyber\u2011insurance policies\", \"replacement\": \"cyber-insurance policies\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"double\u2011edged sword\", \"replacement\": \"double-edged sword\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"AI\u2011driven analytics\", \"replacement\": \"AI-driven analytics\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"rule\u2011based systems\", \"replacement\": \"rule-based systems\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"threat\u2011intel synthesis\", \"replacement\": \"threat-intel synthesis\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"deep\u2011fake phishing messages\", \"replacement\": \"deep-fake phishing messages\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"credential\u2011stuffing attacks\", \"replacement\": \"credential-stuffing attacks\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"longer\u2011term challenge\", \"replacement\": \"longer-term challenge\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"large\u2011scale quantum processors\", \"replacement\": \"large-scale quantum processors\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"public\u2011key algorithms\", \"replacement\": \"public-key algorithms\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"post\u2011quantum cryptography (PQC)\", \"replacement\": \"post-quantum cryptography (PQC)\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"lattice\u2011based, hash\u2011based, or code\u2011based alternatives\", \"replacement\": \"lattice-based, hash-based, or code-based alternatives\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"use\u2011cases for immutable audit trails\", \"replacement\": \"use-cases for immutable audit trails\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"software\u2011supply\u2011chain provenance\", \"replacement\": \"software-supply-chain provenance\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"United Nations\u2019 Group of Governmental Experts\", \"replacement\": \"United Nations' Group of Governmental Experts\", \"reason\": \"The curly apostrophe becomes a straight apostrophe.\"}, {\"original\": \"norm\u2011setting, information exchange\", \"replacement\": \"norm-setting, information exchange\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"European Union\u2019s Cybersecurity Act\", \"replacement\": \"European Union's Cybersecurity Act\", \"reason\": \"The curly apostrophe becomes a straight apostrophe.\"}, {\"original\": \"Asia\u2011Pacific Economic Cooperation\", \"replacement\": \"Asia-Pacific Economic Cooperation\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"incident\u2011sharing mechanisms\", \"replacement\": \"incident-sharing mechanisms\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"Public\u2011private partnerships\", \"replacement\": \"Public-private partnerships\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"cyber\u2011attacks threaten global stability\", \"replacement\": \"cyber-attacks threaten global stability\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"hyper\u2011connectivity, autonomous systems\", \"replacement\": \"hyper-connectivity, autonomous systems\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.\", \"replacement\": \"The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.\", \"reason\": \"The em dash joins independent clauses that would run on as a comma splice, so the sentence is split and the interior clauses take a semicolon.\"}, {\"original\": \"real\u2011time, AI\u2011assisted security controls\", \"replacement\": \"real-time, AI-assisted security controls\", \"reason\": \"The non-US-keyboard hyphens become plain ASCII hyphens.\"}, {\"original\": \"1. **Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted, enforcing continuous verification, least\u2011privilege policies, and micro\u2011segmentation.\", \"replacement\": \"1. **Zero-Trust Architecture**: Treat every access request as untrusted, enforcing continuous verification, least-privilege policies, and micro-segmentation.\", \"reason\": \"The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens.\"}, {\"original\": \"2. **Secure\u2011by\u2011Design Development** \u2013 Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.\", \"replacement\": \"2. **Secure-by-Design Development**: Embed security testing (static and dynamic analysis, software-bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.\", \"reason\": \"The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens.\"}, {\"original\": \"3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.\", \"replacement\": \"3. **AI-Enhanced Threat Intelligence**: Leverage federated learning and privacy-preserving AI to share insights across enterprises without exposing proprietary data.\", \"reason\": \"The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens.\"}, {\"original\": \"4. **Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems to PQC algorithms, prioritizing those that handle high\u2011value or long\u2011term sensitive data.\", \"replacement\": \"4. **Post-Quantum Preparedness**: Begin migrating critical systems to PQC algorithms, prioritizing those that handle high-value or long-term sensitive data.\", \"reason\": \"The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens.\"}, {\"original\": \"5. **Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.\", \"replacement\": \"5. **Resilience Engineering**: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize operational disruption.\", \"reason\": \"The en dash becomes a colon separator and the em dashes around a parenthetical with interior commas become parentheses.\"}, {\"original\": \"The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response\", \"replacement\": \"The rapidly evolving threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response\", \"reason\": \"The em dashes enclose a parenthetical with interior commas, so parentheses replace them along with the non-US-keyboard hyphens.\"}, {\"original\": \"quantum\u2011resistant cryptography\", \"replacement\": \"quantum-resistant cryptography\", \"reason\": \"The non-US-keyboard hyphen becomes a plain ASCII hyphen.\"}, {\"original\": \"The EDR timeline ends at a truncated process tree\u2026\", \"replacement\": \"The EDR timeline ends at a truncated process tree...\", \"reason\": \"The single ellipsis glyph becomes three period characters.\"}]}",
+  "edits": [
+    {
+      "original": "\u2248",
+      "replacement": "~",
+      "reason": "The approximation glyph is not US-keyboard typable, so it becomes the ASCII tilde."
+    },
+    {
+      "original": "twenty\u2011first",
+      "replacement": "twenty-first",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "cloud\u2011based",
+      "replacement": "cloud-based",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Internet\u2011of\u2011Things",
+      "replacement": "Internet-of-Things",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "This reliance brings extraordinary benefits\u2014speed, efficiency, and the democratization of knowledge\u2014but it also creates a fertile ground for malicious actors.",
+      "replacement": "This reliance brings extraordinary benefits (speed, efficiency, and the democratization of knowledge), but it also creates a fertile ground for malicious actors.",
+      "reason": "The em dashes set off a medial elaboration, so parentheses and a comma before the coordinating conjunction replace them."
+    },
+    {
+      "original": "Traditional malware\u2014viruses, worms, and trojans\u2014remain pervasive",
+      "replacement": "Traditional malware (viruses, worms, and trojans) remain pervasive",
+      "reason": "The em dashes set off a list with interior commas, so parentheses replace them."
+    },
+    {
+      "original": "supply\u2011chain attacks",
+      "replacement": "supply-chain attacks",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "APT\u2011related incidents",
+      "replacement": "APT-related incidents",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "28 % of all confirmed breaches",
+      "replacement": "28% of all confirmed breaches",
+      "reason": "The non-keyboard narrow space before the percent sign is removed for ASCII-only text."
+    },
+    {
+      "original": "17 % year\u2011over\u2011year (Verizon, 2024)",
+      "replacement": "17% year-over-year (Verizon, 2024)",
+      "reason": "The non-keyboard narrow space and hyphens become plain ASCII characters."
+    },
+    {
+      "original": "Nation\u2011state actors",
+      "replacement": "Nation-state actors",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "zero\u2011day vulnerabilities",
+      "replacement": "zero-day vulnerabilities",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "dark\u2011web marketplaces",
+      "replacement": "dark-web marketplaces",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "creating \u201cattack surfaces\u201d that are dramatically broader than in the past",
+      "replacement": "creating \"attack surfaces\" that are dramatically broader than in the past",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "deep\u2011fake technology and AI\u2011driven social engineering campaigns",
+      "replacement": "deep-fake technology and AI-driven social engineering campaigns",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "defense\u2011in\u2011depth strategy",
+      "replacement": "defense-in-depth strategy",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "next\u2011generation firewalls",
+      "replacement": "next-generation firewalls",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "micro\u2011segmentation isolates workloads",
+      "replacement": "micro-segmentation isolates workloads",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "limiting lateral movement\u2014a key tactic used by APT groups (Miller & Zhou, 2023).",
+      "replacement": "limiting lateral movement, a key tactic used by APT groups (Miller & Zhou, 2023).",
+      "reason": "The em dash introduces a trailing fragment, which takes a comma."
+    },
+    {
+      "original": "machine\u2011learning models",
+      "replacement": "machine-learning models",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "AES\u2011256",
+      "replacement": "AES-256",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "credential\u2011dumping utilities",
+      "replacement": "credential-dumping utilities",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Identity\u2011and\u2011access management (IAM)",
+      "replacement": "Identity-and-access management (IAM)",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "zero\u2011trust architectures",
+      "replacement": "zero-trust architectures",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "moving away from the outdated \u201ctrusted internal network\u201d paradigm",
+      "replacement": "moving away from the outdated \"trusted internal network\" paradigm",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "regular patch management\u2014automated wherever possible\u2014closes known vulnerabilities",
+      "replacement": "regular patch management, automated wherever possible, closes known vulnerabilities",
+      "reason": "The em dashes set off a medial fragment with no interior commas, so commas replace them."
+    },
+    {
+      "original": "mean time to contain\u2014the finance team uses that figure in the quarterly risk report.",
+      "replacement": "mean time to contain; the finance team uses that figure in the quarterly risk report.",
+      "reason": "The em dash joins two independent clauses, so a semicolon replaces it."
+    },
+    {
+      "original": "Board\u2011level oversight",
+      "replacement": "Board-level oversight",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "third\u2011party audits",
+      "replacement": "third-party audits",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Insider threats\u2014whether malicious, negligent, or coerced\u2014account for an estimated 34 % of data breaches",
+      "replacement": "Insider threats (whether malicious, negligent, or coerced) account for an estimated 34% of data breaches",
+      "reason": "The em dashes enclose a parenthetical with interior commas and the narrow space before the percent sign is removed."
+    },
+    {
+      "original": "click\u2011through rates above 20 %",
+      "replacement": "click-through rates above 20%",
+      "reason": "The non-US-keyboard hyphen and narrow space become plain ASCII text."
+    },
+    {
+      "original": "such as the \u201cavailability heuristic,\u201d lead employees",
+      "replacement": "such as the \"availability heuristic,\" lead employees",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "security\u2011first culture",
+      "replacement": "security-first culture",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "real\u2011time phishing simulations",
+      "replacement": "real-time phishing simulations",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "positive reinforcement\u2014recognizing employees who flag suspicious activity\u2014outperforms punitive measures",
+      "replacement": "positive reinforcement, recognizing employees who flag suspicious activity, outperforms punitive measures",
+      "reason": "The em dashes set off a medial fragment with no interior commas, so commas replace them."
+    },
+    {
+      "original": "role\u2011based access controls",
+      "replacement": "role-based access controls",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Data\u2011protection regulations\u2014GDPR in Europe, CCPA in California, and emerging frameworks in Asia\u2011Pacific\u2014impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4 % of global revenue.",
+      "replacement": "Data-protection regulations (GDPR in Europe, CCPA in California, and emerging frameworks in Asia-Pacific) impose stringent requirements for consent, minimization, and breach notification, with fines that can exceed 4% of global revenue.",
+      "reason": "The em dashes enclose a parenthetical with interior commas and the non-US-keyboard hyphens and narrow space become ASCII."
+    },
+    {
+      "original": "threat\u2011detection AI",
+      "replacement": "threat-detection AI",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "The \u201cbug bounty\u201d model",
+      "replacement": "The \"bug bounty\" model",
+      "reason": "Curly quotation marks become straight double quotes."
+    },
+    {
+      "original": "data\u2011retention laws",
+      "replacement": "data-retention laws",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "A balanced approach\u2014transparent legislation, multi\u2011stakeholder dialogue, and adherence to international norms\u2014remains essential",
+      "replacement": "A balanced approach (transparent legislation, multi-stakeholder dialogue, and adherence to international norms) remains essential",
+      "reason": "The em dashes enclose a parenthetical with interior commas, so parentheses replace them along with the non-US-keyboard hyphen."
+    },
+    {
+      "original": "cross\u2011border threat intelligence sharing",
+      "replacement": "cross-border threat intelligence sharing",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "post\u2011incident analysis",
+      "replacement": "post-incident analysis",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "up\u2011to\u2011date IR plan",
+      "replacement": "up-to-date IR plan",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "executing predefined playbooks\u2014for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "replacement": "executing predefined playbooks, for example, isolating a compromised endpoint within seconds of detecting ransomware encryption.",
+      "reason": "The em dash introduces a trailing example fragment, which takes a comma."
+    },
+    {
+      "original": "backed\u2011up systems",
+      "replacement": "backed-up systems",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Post\u2011incident lessons learned",
+      "replacement": "Post-incident lessons learned",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "cyber\u2011insurance policies",
+      "replacement": "cyber-insurance policies",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "double\u2011edged sword",
+      "replacement": "double-edged sword",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "AI\u2011driven analytics",
+      "replacement": "AI-driven analytics",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "rule\u2011based systems",
+      "replacement": "rule-based systems",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "threat\u2011intel synthesis",
+      "replacement": "threat-intel synthesis",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "deep\u2011fake phishing messages",
+      "replacement": "deep-fake phishing messages",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "credential\u2011stuffing attacks",
+      "replacement": "credential-stuffing attacks",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "longer\u2011term challenge",
+      "replacement": "longer-term challenge",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "large\u2011scale quantum processors",
+      "replacement": "large-scale quantum processors",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "public\u2011key algorithms",
+      "replacement": "public-key algorithms",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "post\u2011quantum cryptography (PQC)",
+      "replacement": "post-quantum cryptography (PQC)",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "lattice\u2011based, hash\u2011based, or code\u2011based alternatives",
+      "replacement": "lattice-based, hash-based, or code-based alternatives",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "use\u2011cases for immutable audit trails",
+      "replacement": "use-cases for immutable audit trails",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "software\u2011supply\u2011chain provenance",
+      "replacement": "software-supply-chain provenance",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "United Nations\u2019 Group of Governmental Experts",
+      "replacement": "United Nations' Group of Governmental Experts",
+      "reason": "The curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "norm\u2011setting, information exchange",
+      "replacement": "norm-setting, information exchange",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "European Union\u2019s Cybersecurity Act",
+      "replacement": "European Union's Cybersecurity Act",
+      "reason": "The curly apostrophe becomes a straight apostrophe."
+    },
+    {
+      "original": "Asia\u2011Pacific Economic Cooperation",
+      "replacement": "Asia-Pacific Economic Cooperation",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "incident\u2011sharing mechanisms",
+      "replacement": "incident-sharing mechanisms",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "Public\u2011private partnerships",
+      "replacement": "Public-private partnerships",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "cyber\u2011attacks threaten global stability",
+      "replacement": "cyber-attacks threaten global stability",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "hyper\u2011connectivity, autonomous systems",
+      "replacement": "hyper-connectivity, autonomous systems",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "The 5G rollout added thousands of new radios\u2014the SOC ingested the extra syslog without a retention plan, the legal team then discovered the gap during a discovery request.",
+      "replacement": "The 5G rollout added thousands of new radios. The SOC ingested the extra syslog without a retention plan; the legal team then discovered the gap during a discovery request.",
+      "reason": "The em dash joins independent clauses that would run on as a comma splice, so the sentence is split and the interior clauses take a semicolon."
+    },
+    {
+      "original": "real\u2011time, AI\u2011assisted security controls",
+      "replacement": "real-time, AI-assisted security controls",
+      "reason": "The non-US-keyboard hyphens become plain ASCII hyphens."
+    },
+    {
+      "original": "1. **Zero\u2011Trust Architecture** \u2013 Treat every access request as untrusted, enforcing continuous verification, least\u2011privilege policies, and micro\u2011segmentation.",
+      "replacement": "1. **Zero-Trust Architecture**: Treat every access request as untrusted, enforcing continuous verification, least-privilege policies, and micro-segmentation.",
+      "reason": "The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens."
+    },
+    {
+      "original": "2. **Secure\u2011by\u2011Design Development** \u2013 Embed security testing (static and dynamic analysis, software\u2011bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.",
+      "replacement": "2. **Secure-by-Design Development**: Embed security testing (static and dynamic analysis, software-bill of materials) early in the software development lifecycle, reducing vulnerabilities before deployment.",
+      "reason": "The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens."
+    },
+    {
+      "original": "3. **AI\u2011Enhanced Threat Intelligence** \u2013 Leverage federated learning and privacy\u2011preserving AI to share insights across enterprises without exposing proprietary data.",
+      "replacement": "3. **AI-Enhanced Threat Intelligence**: Leverage federated learning and privacy-preserving AI to share insights across enterprises without exposing proprietary data.",
+      "reason": "The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens."
+    },
+    {
+      "original": "4. **Post\u2011Quantum Preparedness** \u2013 Begin migrating critical systems to PQC algorithms, prioritizing those that handle high\u2011value or long\u2011term sensitive data.",
+      "replacement": "4. **Post-Quantum Preparedness**: Begin migrating critical systems to PQC algorithms, prioritizing those that handle high-value or long-term sensitive data.",
+      "reason": "The en dash and non-US-keyboard hyphens become a colon separator and plain ASCII hyphens."
+    },
+    {
+      "original": "5. **Resilience Engineering** \u2013 Focus on rapid recovery capabilities\u2014immutable backups, diversified cloud regions, and automated failover\u2014to minimize operational disruption.",
+      "replacement": "5. **Resilience Engineering**: Focus on rapid recovery capabilities (immutable backups, diversified cloud regions, and automated failover) to minimize operational disruption.",
+      "reason": "The en dash becomes a colon separator and the em dashes around a parenthetical with interior commas become parentheses."
+    },
+    {
+      "original": "The rapidly evolving threat landscape\u2014characterized by ransomware, APTs, supply\u2011chain compromises, and AI\u2011augmented attacks\u2014demands a holistic response",
+      "replacement": "The rapidly evolving threat landscape (characterized by ransomware, APTs, supply-chain compromises, and AI-augmented attacks) demands a holistic response",
+      "reason": "The em dashes enclose a parenthetical with interior commas, so parentheses replace them along with the non-US-keyboard hyphens."
+    },
+    {
+      "original": "quantum\u2011resistant cryptography",
+      "replacement": "quantum-resistant cryptography",
+      "reason": "The non-US-keyboard hyphen becomes a plain ASCII hyphen."
+    },
+    {
+      "original": "The EDR timeline ends at a truncated process tree\u2026",
+      "replacement": "The EDR timeline ends at a truncated process tree...",
+      "reason": "The single ellipsis glyph becomes three period characters."
+    }
+  ],
+  "malformed_edits": [],
+  "parse_error": null,
+  "usage": {
+    "input": 59,
+    "output": 30454,
+    "cache_read": 19456,
+    "cache_write": 0,
+    "reasoning": 26451
+  },
+  "cost_usd": 0.0265906866,
+  "tool_calls": [],
+  "rate_limit_retries": 0
+}
