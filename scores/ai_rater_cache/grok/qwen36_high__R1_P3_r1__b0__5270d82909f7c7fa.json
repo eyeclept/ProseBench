@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the banned empty phrase; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the It's-not-X-it's-Y construction; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'paving the way for'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'pivotal' empty claim; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of intensifier 'dramatically'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'Moreover' opener; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'pivotal role' empty claim; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'comprehensive' empty claim; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes around remember; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'robustly'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'robust' in public engagement; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'vital'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'nuanced understanding' empty claim; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the not-optional/imperative construction; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' was left intact as required.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact for 'significantly streamlines'; the banned phrasing was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare-quoted climate-smart; the span is unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

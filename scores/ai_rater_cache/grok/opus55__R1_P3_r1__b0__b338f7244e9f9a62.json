@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "correct",
+    "reason": "Banned intensifier 'comprehensive' is removed; 'working knowledge of plant biology' keeps the necessary content without a synonym swap that preserves the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the not-X-it's-Y construction; the after text still has 'is essential, not merely academic, for the survival and well-being of humanity'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "correct",
+    "reason": "'paving the way for' is gone and rewritten as the plain 'made possible', dropping the banned academic tell without a synonym of the empty phrase.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'pivotal' is swapped for 'necessary', which keeps the same empty evaluative claim; the rubric treats that as an incorrect cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "'dramatically' is replaced with intensifier 'greatly', so the empty degree claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "correct",
+    "reason": "Banned connector 'Moreover' is deleted; the remaining lignocellulosic-biomass sentence is intact factual content.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'plays a pivotal role' is swapped for 'is central to', another evaluative stand-in for the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "correct",
+    "reason": "Banned 'comprehensive' is removed from the networks claim; the predictive-networks content is kept without another empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare-quoted 'remember'; the after text still scare-quotes remember (only the quote style changed).",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "'robustly' is swapped for 'strongly', the rubric's example of an incorrect synonym cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "correct",
+    "reason": "Banned 'robust' is gone; 'sustained public engagement' is not a synonym of the same empty intensifier claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "correct",
+    "reason": "Banned 'vital' is removed and the sentence is rewritten as plain 'education and outreach will matter'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "correct",
+    "reason": "Banned 'nuanced' is cut; remaining 'deep understanding of plant biology' keeps the necessary subject without that listed word.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "correct",
+    "reason": "The not-optional/it-is-imperative contrast is gone; the after text no longer uses the banned not-X-it's-Y structure.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' is left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required using the supplied 40-minute and 6-minute times; the edit invents 'more than 80 percent' instead.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare-quoted 'climate-smart'; quotes around the term remain (only straightened).",
+    "model": "grok-4.6-build"
+  }
+}

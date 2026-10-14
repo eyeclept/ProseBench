@@ -1,0 +1,74 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier span; the after text is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "correct",
+    "reason": "Cut 'dramatically' so the intensifier is gone and the rest of the claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'a vast pharmacopeia'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'a substantial portion of anthropogenic emissions'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'respond more robustly'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'profoundly influences plant health'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'the promise of botanical science is immense'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'threatening countless plant species'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep instance: 'make no mistake' has no exclusivity marker and must survive; the model deleted it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "correct",
+    "reason": "Cut the redundant finality interjection 'full stop' while keeping the exclusive claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "correct",
+    "reason": "Replaced 'dramatically reduces yield loss' with the supplied 41 percent / 8 percent figures used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-012": {
+    "instance_id": "P3-R5-012",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'offers unprecedented tools'; the span was left untouched.",
+    "model": "grok-4.6-build"
+  }
+}

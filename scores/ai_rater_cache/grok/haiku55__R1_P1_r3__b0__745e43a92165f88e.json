@@ -1,0 +1,164 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "correct",
+    "reason": "Keep instance: target phrase is unchanged and the content is preserved.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "correct",
+    "reason": "Keep instance: heading text is untouched and the protected term survives.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the banned intensifier/empty claim; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the banned transition and empty claim; the sentence is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned verb 'leveraging'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned adjective 'robust'; the phrase is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned verb 'foster' and its empty claim; the clause is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'Moreover' construction; the sentence is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'fostering' phrase; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of metaphorical 'ecosystem'; the phrase is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "incorrect",
+    "reason": "Expected cut of metaphorical 'regulatory landscape'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'pivotal'; the clause is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned verb 'facilitate'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned verb 'bolster'; the clause is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'Enhanced'; the heading text is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned verb 'Leverage'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned adjective 'robust'; the phrase is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'It's not X, it's Y' structural phrasing; the sentence is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "correct",
+    "reason": "Keep instance: protected technical phrase is preserved untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'holistic'; the phrase is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "incorrect",
+    "reason": "Expected cut of banned 'Ultimately' opener; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "incorrect",
+    "reason": "Expected cut of inflated-symbolism 'very fabric'; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact for 'streamlines containment'; the banned verb remains and the fact is not used as the replacement.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-026": {
+    "instance_id": "P1-R1-026",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes; curly quotes on 'attack surfaces' remain.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-027": {
+    "instance_id": "P1-R1-027",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes; curly quotes around 'availability heuristic' remain.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-028": {
+    "instance_id": "P1-R1-028",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes; curly quotes around 'bug bounty' remain.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-029": {
+    "instance_id": "P1-R1-029",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes; curly quotes around 'trusted internal network' remain.",
+    "model": "grok-4.6-build"
+  }
+}

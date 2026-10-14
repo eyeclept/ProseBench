@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'comprehensive' for synonym 'thorough' and kept the empty claim; a cut must drop the flagged wording and empty claim, not substitute another intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The banned 'not X, it's Y' construction remains; only the em dash was changed to a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "'paving the way for high-throughput functional genomics' is still present; the model only rewrote 'watershed moment'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'is pivotal' was swapped for evaluative 'matters', which keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "'dramatically' was replaced with synonym 'sharply'; the empty intensifier claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "correct",
+    "reason": "Banned opener 'Moreover' was removed and the necessary lignocellulosic-biomass fact was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'central', which is the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "'comprehensive' was swapped for 'detailed' rather than cutting the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "correct",
+    "reason": "Scare quotes around 'remember' were removed; the wording otherwise kept the needed fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "'robustly' was swapped for 'strongly', which the rubric treats as leaving the violation in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "'robust public engagement' became 'strong public engagement', the rubric's example of an incorrect synonym swap.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "'will be vital' was rewritten as 'will matter', keeping the empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Only 'nuanced' was dropped; the empty 'deep understanding of plant biology' claim from the target span remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "'is not optional; it is imperative' was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was changed to 'resistant regression' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Replaced the vague phrase with an invented 'more than 80 percent' instead of using the supplied 40-minute and 6-minute figures.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare quotes on 'climate-smart' were kept (only restyled to straight quotes) rather than cut.",
+    "model": "grok-4.6-build"
+  }
+}

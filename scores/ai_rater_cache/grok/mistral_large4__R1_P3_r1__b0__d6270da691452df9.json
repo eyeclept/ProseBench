@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'a comprehensive understanding of plant biology'; the after text still contains that phrase.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'not merely academic / it is essential' construction; it remains, with only the em dash changed to a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "'paving the way' was swapped for 'opening the door to', which keeps the same empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was replaced with 'central', a synonym swap that leaves the empty evaluative claim in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "'dramatically' was replaced with 'sharply', so the intensifier claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "'Moreover' was dropped, but the rest of the flagged span ('is a cornerstone of the emerging') was kept rather than cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'central', which does not remove the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "'comprehensive' was swapped for 'detailed', leaving the same empty intensifier claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around 'remember' were required to be cut; they were only converted to straight quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "'robustly' was replaced with 'strongly', a synonym swap that keeps the intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "'robust' was replaced with 'strong', which the rubric treats as leaving the violation in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "correct",
+    "reason": "'vital' (and the concluding 'Finally') were dropped and rewritten without an empty intensifier, while the education/outreach fact remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "'nuanced' was swapped for 'detailed'; the empty 'deep, [adjective] understanding' claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The 'not optional; it is imperative' construction was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was changed to 'strong regression' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "correct",
+    "reason": "'significantly streamlines' was removed and rewritten as a concrete time cut; the supplied 40-minute and 6-minute facts remain and are used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the scare-quoted 'climate-smart' plants phrasing; quotes were only straightened and the phrase was kept.",
+    "model": "grok-4.6-build"
+  }
+}

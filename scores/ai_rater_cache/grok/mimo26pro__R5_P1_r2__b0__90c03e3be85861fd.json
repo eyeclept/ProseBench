@@ -1,0 +1,62 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier phrase; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “extraordinary benefits”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "correct",
+    "reason": "The intensifier “dramatically” was removed; the comparison remains without the padding word.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the vague quantity “a large proportion of exploit success”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive log volumes”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “spurred unprecedented collaboration”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “the very fabric of system design”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “full stop” has no exclusivity marker and should survive; it was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Finality interjection “end of story” was cut while the exclusivity marker “only” was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Should have replaced “significantly reduces” with fact_text “fell from 18 hours to 3 hours”; only the intensifier was deleted.",
+    "model": "grok-4.6-build"
+  }
+}

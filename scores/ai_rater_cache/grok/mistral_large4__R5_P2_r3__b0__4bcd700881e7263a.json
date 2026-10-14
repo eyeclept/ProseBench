@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Target intensifier 'massive data centers' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "Cut 'dramatically' from 'has evolved dramatically' without losing needed content.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Target 'universally recognized' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "Target 'have been rising rapidly' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "Cut 'dramatically' from 'fall dramatically' as required.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Target 'unprecedented visibility' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Target 'Massive DER Penetration' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Target 'a profound transformation' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "Protected 'full stop' (no exclusivity marker) was deleted instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Cut the redundant finality interjection 'end of story' after 'only'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "correct",
+    "reason": "Replaced 'significantly' with the supplied 12-to-4-minute restoration numbers.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "Target 'massive rotating masses' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "Target 'seamlessly integrates electricity' was left unchanged; expected cut.",
+    "model": "grok-4.6-build"
+  }
+}

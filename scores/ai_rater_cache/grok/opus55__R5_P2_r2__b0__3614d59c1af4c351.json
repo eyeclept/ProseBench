@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “massive data centers”, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "incorrect",
+    "reason": "“has evolved dramatically” should have been cut; the intensifier is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "“universally recognized” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "“have been rising rapidly” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "“fall dramatically” was removed by rewrite; the I²R loss relationship remains and no needed fact was dropped.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "“unprecedented visibility” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "“Massive DER Penetration” should have been cut; the heading is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "“a profound transformation” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "correct",
+    "reason": "Keep instance: “after a trip, full stop” is preserved without exclusivity-marker padding to remove.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Finality interjection “end of story” was cut; “only backup path for those hospitals” remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "correct",
+    "reason": "“significantly shortens” was replaced with an accurate 8-minute shortening drawn from the supplied 12-to-4-minute fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "“massive rotating masses” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "“seamlessly integrates electricity” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

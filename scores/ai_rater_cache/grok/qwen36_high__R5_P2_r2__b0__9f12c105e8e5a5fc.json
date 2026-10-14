@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "expected cut of intensifier \"massive data centers\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "cut \"dramatically\" from \"has evolved dramatically\" with no necessary fact lost",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"universally recognized\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"have been rising rapidly\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "\"dramatically\" is gone; rewrite to \"fall quadratically\" still satisfies cut without dropping needed content",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"unprecedented visibility\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"Massive DER Penetration\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"a profound transformation\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "keep required for \"full stop\" with no exclusivity marker; the interjection was deleted",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "cut the finality interjection \"end of story\" while keeping the exclusive claim",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "incorrect",
+    "reason": "expected replace_with_fact using the 12-to-4-minute restoration numbers; only \"significantly\" was deleted",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"massive rotating masses\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "expected cut of \"seamlessly integrates electricity\"; span was left unchanged",
+    "model": "grok-4.6-build"
+  }
+}

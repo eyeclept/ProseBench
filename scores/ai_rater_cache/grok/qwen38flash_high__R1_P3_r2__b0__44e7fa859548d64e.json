@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the empty 'comprehensive understanding' claim; swapping comprehensive for thorough keeps the same evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The banned 'not merely academic, it is essential...' contrast is still there; only the em dash was changed to a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "no_fact cut required dropping the empty 'paving the way' claim; paraphrasing it as 'made high-throughput functional genomics possible' keeps that claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "pivotal was swapped for key, which is another evaluative word carrying the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "correct",
+    "reason": "The banned intensifier dramatically was removed and the fact that food production increased remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Only Moreover was swapped for Also; the rest of the targeted empty 'cornerstone of the emerging' claim was left in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "plays a pivotal role was rewritten as is central to, a synonym swap that keeps the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "correct",
+    "reason": "The banned intensifier comprehensive was cut; the factual claim about constructing networks that predict responses is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around remember were required to be cut; they remain, only converted from curly to straight quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "robustly was swapped for strongly, the same empty intensifier claim the rubric treats as incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "robust public engagement became strong public engagement, the exact synonym-swap pattern marked incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "vital was replaced with important, another evaluative word that leaves the empty claim intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "The targeted empty 'deep, nuanced understanding' claim was not cut; only nuanced was dropped and deep understanding remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The banned 'is not optional; it is imperative' contrast was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term robust regression is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 40-minute/6-minute timing; the vague phrase was instead paraphrased as speeds up.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare quotes on climate-smart were required to be cut; they remain as straight quotes around the same phrase.",
+    "model": "grok-4.6-build"
+  }
+}

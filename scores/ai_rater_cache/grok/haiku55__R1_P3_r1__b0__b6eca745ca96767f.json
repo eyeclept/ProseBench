@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'comprehensive' was swapped for 'full', which keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "Cut required; the 'not merely academic / it is essential' claim was kept, with 'essential' swapped for 'needed'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'paving the way for' is still present (only the hyphen was changed).",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'pivotal' was swapped for 'central', which keeps the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'dramatically' was swapped for the intensifier 'greatly', which keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Cut required; the span including 'Moreover' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'pivotal' was swapped for 'central', which keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'comprehensive' was swapped for 'full', which keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Cut required; the scare-quoted “remember” span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'respond more robustly upon re-encounter' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'robust' was swapped for 'strong', which the rubric treats as still a violation.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'education and outreach will be vital' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Cut required; 'nuanced' was swapped for 'careful', which keeps the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "Cut required; the 'not optional; it is imperative' construction remains, with 'imperative' swapped for 'necessary'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Keep required for the technical term 'robust regression'; 'robust' was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required using the 40-to-6-minute fact; the banned phrase was replaced with invented 'most of an hour' instead.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Cut required; '**“climate-smart” plants**' was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

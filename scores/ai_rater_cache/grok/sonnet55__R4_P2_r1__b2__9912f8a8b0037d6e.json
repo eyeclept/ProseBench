@@ -1,0 +1,230 @@
+{
+  "P2-R4-081": {
+    "instance_id": "P2-R4-081",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in fossil-fuel was replaced with a plain ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-082": {
+    "instance_id": "P2-R4-082",
+    "verdict": "correct",
+    "reason": "En dash after the bold heading was replaced with a hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-083": {
+    "instance_id": "P2-R4-083",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in Grid-Forming was replaced with an ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-084": {
+    "instance_id": "P2-R4-084",
+    "verdict": "incorrect",
+    "reason": "grid-following and grid-forming still use non-keyboard hyphens; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-085": {
+    "instance_id": "P2-R4-085",
+    "verdict": "correct",
+    "reason": "En dash after the heading was replaced with a hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-086": {
+    "instance_id": "P2-R4-086",
+    "verdict": "incorrect",
+    "reason": "List en dash was swapped, but grid-connected still contains a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-087": {
+    "instance_id": "P2-R4-087",
+    "verdict": "correct",
+    "reason": "Both non-keyboard hyphens in Power-to-X were replaced with ASCII hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-088": {
+    "instance_id": "P2-R4-088",
+    "verdict": "correct",
+    "reason": "Curly quotes around Power-to-X became straight ASCII quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-089": {
+    "instance_id": "P2-R4-089",
+    "verdict": "incorrect",
+    "reason": "Quotes and Power-to-X were fixed, but power-to-hydrogen, power-to-synthetic, and power-to-heat still use non-keyboard hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-090": {
+    "instance_id": "P2-R4-090",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in Renewable-Heavy was replaced with an ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-091": {
+    "instance_id": "P2-R4-091",
+    "verdict": "correct",
+    "reason": "Curly apostrophe and curly quotes were replaced with straight ASCII equivalents.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-092": {
+    "instance_id": "P2-R4-092",
+    "verdict": "incorrect",
+    "reason": "Narrow no-break space before % and the hyphen in cross-border were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-093": {
+    "instance_id": "P2-R4-093",
+    "verdict": "correct",
+    "reason": "En dash and unicode hyphens in Multi-terminal VSC-HVDC were all converted to ASCII hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-094": {
+    "instance_id": "P2-R4-094",
+    "verdict": "correct",
+    "reason": "En dash and the hyphen in cross-border were converted to ASCII hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-095": {
+    "instance_id": "P2-R4-095",
+    "verdict": "correct",
+    "reason": "Non-keyboard hyphens in Real-Time and continent-wide and the list en dash were all converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-096": {
+    "instance_id": "P2-R4-096",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in co-exist was replaced with an ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-097": {
+    "instance_id": "P2-R4-097",
+    "verdict": "correct",
+    "reason": "Unicode hyphens in centrally-controlled and cyber-physical were replaced with ASCII hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-098": {
+    "instance_id": "P2-R4-098",
+    "verdict": "correct",
+    "reason": "En dash after the heading was replaced with a hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-099": {
+    "instance_id": "P2-R4-099",
+    "verdict": "incorrect",
+    "reason": "Heading hyphens were fixed, but self-healing and machine-learning still use non-keyboard hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-100": {
+    "instance_id": "P2-R4-100",
+    "verdict": "correct",
+    "reason": "List en dash and the hyphen in Multi-layered were converted to ASCII hyphens.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-101": {
+    "instance_id": "P2-R4-101",
+    "verdict": "incorrect",
+    "reason": "Policy-Driven and net-zero were fixed, but low-carbon still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-102": {
+    "instance_id": "P2-R4-102",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in climate-friendly was replaced with an ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-103": {
+    "instance_id": "P2-R4-103",
+    "verdict": "correct",
+    "reason": "Curly apostrophe in grid's was replaced with a straight apostrophe.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-104": {
+    "instance_id": "P2-R4-104",
+    "verdict": "incorrect",
+    "reason": "Paired em dashes around the fragment were rewritten as parentheses instead of a comma or pair of commas.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-105": {
+    "instance_id": "P2-R4-105",
+    "verdict": "correct",
+    "reason": "Non-keyboard hyphen in grid-forming is now ASCII and the em dash is gone, leaving only keyboard characters.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-106": {
+    "instance_id": "P2-R4-106",
+    "verdict": "incorrect",
+    "reason": "grid's apostrophe was straightened, but forward-looking still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-107": {
+    "instance_id": "P2-R4-107",
+    "verdict": "correct",
+    "reason": "Curly apostrophe in grid's was replaced with a straight apostrophe.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-108": {
+    "instance_id": "P2-R4-108",
+    "verdict": "correct",
+    "reason": "Unicode hyphen in utility-scale was replaced with an ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-109": {
+    "instance_id": "P2-R4-109",
+    "verdict": "incorrect",
+    "reason": "Em dash after voltages was left unchanged instead of becoming a comma.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-110": {
+    "instance_id": "P2-R4-110",
+    "verdict": "incorrect",
+    "reason": "Em dash after 1,200 kV was left unchanged instead of becoming a comma.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-111": {
+    "instance_id": "P2-R4-111",
+    "verdict": "incorrect",
+    "reason": "Unicode hyphen in electric-vehicle was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-112": {
+    "instance_id": "P2-R4-112",
+    "verdict": "incorrect",
+    "reason": "Em dash after benefits was rewritten as a parenthesis, not a comma.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-113": {
+    "instance_id": "P2-R4-113",
+    "verdict": "incorrect",
+    "reason": "Closing em dash after landscape was rewritten as a parenthesis, not a comma.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-114": {
+    "instance_id": "P2-R4-114",
+    "verdict": "incorrect",
+    "reason": "Curly apostrophe in century's was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-115": {
+    "instance_id": "P2-R4-115",
+    "verdict": "correct",
+    "reason": "Protected diacritic in Québec was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-116": {
+    "instance_id": "P2-R4-116",
+    "verdict": "correct",
+    "reason": "Ellipsis glyph was replaced with three periods.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-117": {
+    "instance_id": "P2-R4-117",
+    "verdict": "correct",
+    "reason": "Em dash joining two independent clauses was replaced with a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-118": {
+    "instance_id": "P2-R4-118",
+    "verdict": "incorrect",
+    "reason": "Run-on carried by the em dash was joined with a semicolon and and rather than split into separate sentences.",
+    "model": "grok-4.6-build"
+  }
+}

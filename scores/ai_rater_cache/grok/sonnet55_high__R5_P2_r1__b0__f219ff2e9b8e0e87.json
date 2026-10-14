@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "Intensifier “dramatically” was removed; the rest of the claim is intact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “universally recognized”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “rapidly”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "“Fall dramatically” was rewritten so the intensifier is gone and no needed fact was dropped.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “unprecedented visibility”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “Massive”; the heading was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “profound”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "correct",
+    "reason": "Protected “full stop” without an exclusivity marker was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Finality tag “end of story” was cut; “only” remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 12-to-4-minute numbers; only “significantly” was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “seamlessly”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

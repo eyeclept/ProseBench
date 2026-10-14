@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'comprehensive' and its empty claim; swapping to synonym 'thorough' leaves the violation.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The 'not merely academic… it is essential…' construction was kept; only the em dash was changed to a semicolon.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'paving the way for' was removed and rewritten as 'enabling' while keeping the functional-genomics fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "correct",
+    "reason": "'Pivotal' and its empty intensifying claim were dropped; 'supports' keeps the crop-yield and bioenergy facts.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'dramatically increased food production' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'Moreover… cornerstone of the emerging' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'Pivotal' was swapped for synonym 'key', which keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "correct",
+    "reason": "'Comprehensive' was cut; the networks-that-predict fact remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Scare quotes on 'remember' were required to be cut and were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'respond more robustly upon re-encounter' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'robust public engagement' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'education and outreach will be vital' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "'A deep, nuanced understanding of plant biology' remains; only a curly apostrophe was changed.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The 'is not optional; it is imperative' antithesis was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was required to be kept; 'robust' was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 40/6-minute times; only 'significantly' was dropped and 'streamlines' remained.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare-quoted 'climate-smart' plants were required to be cut and were left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

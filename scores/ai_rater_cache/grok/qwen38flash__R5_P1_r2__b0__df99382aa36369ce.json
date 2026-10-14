@@ -1,0 +1,62 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier phrase, but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “extraordinary benefits,” but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "incorrect",
+    "reason": "The intensifier was removed, but it was replaced with invented specifics not in the passage or fact_text rather than a plain cut.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “a large proportion of exploit success,” but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive log volumes,” but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “spurred unprecedented collaboration,” but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “the very fabric of system design,” but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “full stop” has no exclusivity marker and should survive, but it was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Finality interjection after “only” was cut; the exclusive claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Should replace “significantly reduces…” with “fell from 18 hours to 3 hours”; the sentence was deleted instead.",
+    "model": "grok-4.6-build"
+  }
+}

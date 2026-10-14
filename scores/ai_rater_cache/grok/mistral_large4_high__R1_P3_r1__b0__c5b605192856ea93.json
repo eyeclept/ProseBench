@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Swapped banned 'comprehensive' for 'deep' while keeping the empty claim; a cut must drop the flagged word and its empty claim, not synonym-replace it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The 'it's not X, it's Y' construction remains ('is not merely academic; it is essential'); only the em dash was punctuated.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "Banned 'paving the way for' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "Replaced 'pivotal' with 'key', which keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "correct",
+    "reason": "Banned intensifier 'dramatically' is gone and the necessary fact that food production increased is kept via 'raised'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Banned opener 'Moreover' (and the rest of the target span) was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "Replaced 'pivotal' with 'key', leaving the empty claim in place.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Replaced 'comprehensive' with 'detailed' instead of cutting the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around 'remember' were not removed.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Banned 'robustly' was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Replaced 'robust' with 'strong', the exact synonym-swap the rubric marks incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Replaced 'vital' with 'essential', keeping the empty intensifier claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "Replaced 'nuanced' with 'precise' instead of cutting the banned adjective and empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The 'is not optional; it is imperative' construction was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was weakened to 'standard regression'.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "correct",
+    "reason": "Banned 'significantly streamlines' was replaced with the supplied 40-minute vs 6-minute fact used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around 'climate-smart' remain; only curly quotes were straightened.",
+    "model": "grok-4.6-build"
+  }
+}

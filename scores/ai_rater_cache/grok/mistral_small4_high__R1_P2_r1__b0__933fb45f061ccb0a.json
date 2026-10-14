@@ -1,0 +1,146 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'has evolved dramatically'; the model swapped it for 'has changed substantially', keeping the empty intensifying claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'requiring robust transmission networks'; the model only swapped 'robust' for 'resilient', leaving the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'leverages'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'dramatically'; the model swapped it for 'sharply', keeping the intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'enhancing capacity without building new lines'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'paving the way for *wide‑area protection*'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'while fostering competition'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'Seamless transition...'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'crucial for critical facilities...'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the 'By [gerund]...' opening; the sentence still starts with 'By coupling...'.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'a more holistic energy system emerges'; the model swapped 'holistic' for 'integrated', keeping the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'when robust transmission...'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'ecosystem'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'energy landscape'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of metaphorical 'Navigating...'; the opening was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'demands innovative technologies'; 'innovative' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of 'robust regulatory frameworks'; the model swapped 'robust' for 'strong', which the rubric treats as still a violation.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'Robust control' was rewritten as 'Strong control' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "correct",
+    "reason": "Banned 'significantly reduces' was removed and the supplied loss figures were used accurately ('cuts line losses from 8 percent to 3 percent').",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-020": {
+    "instance_id": "P2-R1-020",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of scare-quoted 'the “last mile”...'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-021": {
+    "instance_id": "P2-R1-021",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of scare-quoted 'the “ramping” capacity'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-022": {
+    "instance_id": "P2-R1-022",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of scare-quoted '“Power‑to‑X” technologies'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-023": {
+    "instance_id": "P2-R1-023",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of scare-quoted '“Radial” designs'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-024": {
+    "instance_id": "P2-R1-024",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of scare-quoted '“always‑on,”'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

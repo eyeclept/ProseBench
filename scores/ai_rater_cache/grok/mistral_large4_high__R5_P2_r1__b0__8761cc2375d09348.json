@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of intensifier \"massive\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"dramatically\"; the phrase is still present.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"universally\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"rapidly\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "\"dramatically\" is gone; the rewrite uses the I²R relation already in the sentence and loses no needed fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"unprecedented\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of intensifier \"Massive\"; the heading is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"profound\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "Keep instance: \"full stop\" has no exclusivity marker and was deleted instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "Finality tag \"end of story\" was cut; exclusivity marker \"only\" remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "correct",
+    "reason": "\"significantly\" was replaced with the 12-to-4-minute fact used as an 8-minute shortening.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"massive\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "Expected cut of \"seamlessly\"; the span is unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

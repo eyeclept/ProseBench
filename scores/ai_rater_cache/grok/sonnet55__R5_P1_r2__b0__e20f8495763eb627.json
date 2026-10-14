@@ -1,0 +1,62 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for the intensifier phrase, but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for “extraordinary benefits,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "correct",
+    "reason": "Intensifier “dramatically” was removed; the comparison remains without invented numbers.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for “a large proportion,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for “massive log volumes,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for “unprecedented collaboration,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Change/cut required for “the very fabric,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep required for the finality interjection without an exclusivity marker, but “full stop” was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Finality interjection “end of story” was cut; the exclusive claim with “only” remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "correct",
+    "reason": "“Significantly reduces” was replaced using the supplied 18-hour to 3-hour fact accurately.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "correct",
+    "reason": "Protected phrase “the contemporary threat landscape” is unchanged, matching keep.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "correct",
+    "reason": "Heading “The Expanding Threat Landscape” is untouched, matching keep.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the whole empty claim; only “dramatically” was swapped for “far,” which keeps the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the Moreover clause; only “Moreover” was swapped for “Additionally,” so the flagged span remains.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "incorrect",
+    "reason": "“leveraging …” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "“robust encryption” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "incorrect",
+    "reason": "“foster complacency” span was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the Moreover clause; only “Moreover” was swapped for “Additionally.”",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "“fostering a collaborative security ecosystem” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "Metaphorical “collaborative security ecosystem” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "incorrect",
+    "reason": "Metaphorical “fragmented regulatory landscape” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "incorrect",
+    "reason": "“pivotal” was swapped for “essential,” which the rubric treats as the same empty claim, not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "incorrect",
+    "reason": "“facilitate …” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "“further bolster collective defense” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "“AI‑Enhanced Threat Intelligence” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "incorrect",
+    "reason": "“Leverage federated learning…” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "“robust governance” became “strong governance,” a synonym swap the rubric marks incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "incorrect",
+    "reason": "The “not merely… it is…” construction was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "correct",
+    "reason": "Protected “The rapidly evolving threat landscape” survives in the edited sentence.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "incorrect",
+    "reason": "“holistic response” was swapped for “complete response,” keeping the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "incorrect",
+    "reason": "“Ultimately, the resilience…” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "incorrect",
+    "reason": "“the very fabric of system design” was left unchanged; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "“streamlines containment” was rewritten as “cutting containment time” instead of being replaced with the supplied fact numbers.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-026": {
+    "instance_id": "P1-R1-026",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around “attack surfaces” remain; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-027": {
+    "instance_id": "P1-R1-027",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around “availability heuristic” remain; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-028": {
+    "instance_id": "P1-R1-028",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around “bug bounty” remain; a cut was required.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-029": {
+    "instance_id": "P1-R1-029",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around “trusted internal network” remain; a cut was required.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "P2-R4-001": {
+    "instance_id": "P2-R4-001",
+    "verdict": "incorrect",
+    "reason": "Curly apostrophe in humanity’s was left unchanged; expected a straight apostrophe.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-002": {
+    "instance_id": "P2-R4-002",
+    "verdict": "incorrect",
+    "reason": "Parenthetical em dashes should become a comma pair, but the model split the sentence with a period instead.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-003": {
+    "instance_id": "P2-R4-003",
+    "verdict": "incorrect",
+    "reason": "Em dashes around the fragment were not replaced with commas; the rewrite uses a colon/period and breaks the sentence.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-004": {
+    "instance_id": "P2-R4-004",
+    "verdict": "correct",
+    "reason": "Non-keyboard hyphen in end‑users was replaced with a plain ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-005": {
+    "instance_id": "P2-R4-005",
+    "verdict": "incorrect",
+    "reason": "En dash after Generation was left unchanged; it should be a hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-006": {
+    "instance_id": "P2-R4-006",
+    "verdict": "incorrect",
+    "reason": "En dash after (T&D) was left unchanged; only an unrelated hyphen elsewhere was edited.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-007": {
+    "instance_id": "P2-R4-007",
+    "verdict": "incorrect",
+    "reason": "high‑voltage was converted but lower‑voltage still uses a non-keyboard hyphen, so not every character in the span was fixed.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-008": {
+    "instance_id": "P2-R4-008",
+    "verdict": "incorrect",
+    "reason": "En dash after Control & Protection was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-009": {
+    "instance_id": "P2-R4-009",
+    "verdict": "incorrect",
+    "reason": "Narrow/non-breaking spaces before kV were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-010": {
+    "instance_id": "P2-R4-010",
+    "verdict": "correct",
+    "reason": "socio‑technical was converted to socio-technical with a plain hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-011": {
+    "instance_id": "P2-R4-011",
+    "verdict": "correct",
+    "reason": "information‑communication was converted to information-communication with a plain hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-012": {
+    "instance_id": "P2-R4-012",
+    "verdict": "incorrect",
+    "reason": "Non-keyboard spaces before Hz were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-013": {
+    "instance_id": "P2-R4-013",
+    "verdict": "incorrect",
+    "reason": "Paired em dashes around the fragment were left in place instead of becoming commas.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-014": {
+    "instance_id": "P2-R4-014",
+    "verdict": "correct",
+    "reason": "short‑term was converted to short-term with a plain hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-015": {
+    "instance_id": "P2-R4-015",
+    "verdict": "incorrect",
+    "reason": "En dash after Intermittency was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-016": {
+    "instance_id": "P2-R4-016",
+    "verdict": "incorrect",
+    "reason": "En dash after Geographic Dispersion was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-017": {
+    "instance_id": "P2-R4-017",
+    "verdict": "incorrect",
+    "reason": "Inverter‑Based was hyphenated, but the en dash after Interface in the same span was not converted.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-018": {
+    "instance_id": "P2-R4-018",
+    "verdict": "correct",
+    "reason": "grid‑forming was converted to grid-forming with a plain hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-019": {
+    "instance_id": "P2-R4-019",
+    "verdict": "incorrect",
+    "reason": "small‑scale and micro‑turbines in the target span were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-020": {
+    "instance_id": "P2-R4-020",
+    "verdict": "incorrect",
+    "reason": "grid‑connected was left with a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-021": {
+    "instance_id": "P2-R4-021",
+    "verdict": "incorrect",
+    "reason": "Non-keyboard spaces in 115 kV and 1,200 kV were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-022": {
+    "instance_id": "P2-R4-022",
+    "verdict": "incorrect",
+    "reason": "Superscript ² in I²R was left unchanged instead of an ASCII equivalent.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-023": {
+    "instance_id": "P2-R4-023",
+    "verdict": "incorrect",
+    "reason": "En dash after Transmission Lines was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-024": {
+    "instance_id": "P2-R4-024",
+    "verdict": "incorrect",
+    "reason": "steel‑reinforced was fixed but high‑temperature still uses a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-025": {
+    "instance_id": "P2-R4-025",
+    "verdict": "incorrect",
+    "reason": "En dash after Substations was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-026": {
+    "instance_id": "P2-R4-026",
+    "verdict": "incorrect",
+    "reason": "Only High-Voltage was converted; line‑commutated, Voltage‑Sourced, long‑distance, and low‑loss remain non-ASCII.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-027": {
+    "instance_id": "P2-R4-027",
+    "verdict": "incorrect",
+    "reason": "Paired em dashes around the FACTS device list were left unchanged instead of commas.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-028": {
+    "instance_id": "P2-R4-028",
+    "verdict": "incorrect",
+    "reason": "thyristor‑controlled was left with a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-029": {
+    "instance_id": "P2-R4-029",
+    "verdict": "incorrect",
+    "reason": "power‑flow was left with a non-keyboard hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-030": {
+    "instance_id": "P2-R4-030",
+    "verdict": "incorrect",
+    "reason": "Curly quotes around last mile were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-031": {
+    "instance_id": "P2-R4-031",
+    "verdict": "incorrect",
+    "reason": "Non-keyboard space in 120/240 V was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-032": {
+    "instance_id": "P2-R4-032",
+    "verdict": "incorrect",
+    "reason": "transmission‑level (and the following en dash) were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-033": {
+    "instance_id": "P2-R4-033",
+    "verdict": "incorrect",
+    "reason": "Non-keyboard spaces, hyphens, and the range dash in the voltages/step‑down span were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-034": {
+    "instance_id": "P2-R4-034",
+    "verdict": "incorrect",
+    "reason": "En dash in 4 kV–35 kV was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-035": {
+    "instance_id": "P2-R4-035",
+    "verdict": "incorrect",
+    "reason": "En dash and curly quotes in the Radial or Mesh Feeders span were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-036": {
+    "instance_id": "P2-R4-036",
+    "verdict": "incorrect",
+    "reason": "Curly quotes around Radial were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-037": {
+    "instance_id": "P2-R4-037",
+    "verdict": "incorrect",
+    "reason": "end‑use and the list en dash were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-038": {
+    "instance_id": "P2-R4-038",
+    "verdict": "incorrect",
+    "reason": "En dash after Smart Devices was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-039": {
+    "instance_id": "P2-R4-039",
+    "verdict": "incorrect",
+    "reason": "En dash after Primary (Local) Control was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R4-040": {
+    "instance_id": "P2-R4-040",
+    "verdict": "incorrect",
+    "reason": "set‑points was converted but tie‑line and the list en dash in the same span were not.",
+    "model": "grok-4.6-build"
+  }
+}

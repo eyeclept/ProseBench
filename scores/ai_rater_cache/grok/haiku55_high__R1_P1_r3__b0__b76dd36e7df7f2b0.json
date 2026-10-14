@@ -1,0 +1,164 @@
+{
+  "P1-R1-001": {
+    "instance_id": "P1-R1-001",
+    "verdict": "correct",
+    "reason": "Protected technical phrase 'the contemporary threat landscape' is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-002": {
+    "instance_id": "P1-R1-002",
+    "verdict": "correct",
+    "reason": "Protected heading 'The Expanding Threat Landscape' is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-003": {
+    "instance_id": "P1-R1-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the empty broader-attack-surfaces claim; the span remains, with 'dramatically' only swapped for 'much'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-004": {
+    "instance_id": "P1-R1-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the Moreover/empty-potency span; Moreover was synonym-swapped to 'In addition' and the empty claim was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-005": {
+    "instance_id": "P1-R1-005",
+    "verdict": "correct",
+    "reason": "Banned verb 'leveraging' is gone, replaced by natural 'using' while the necessary ML-detection fact is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-006": {
+    "instance_id": "P1-R1-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'robust encryption'; the span is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-008": {
+    "instance_id": "P1-R1-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the foster-complacency claim; 'foster' was only swapped for 'encourage', leaving the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-009": {
+    "instance_id": "P1-R1-009",
+    "verdict": "correct",
+    "reason": "Banned opener 'Moreover' is gone; the necessary RBAC/least-privilege fact is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-010": {
+    "instance_id": "P1-R1-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the empty 'fostering a collaborative security ecosystem' flourish; it was rewritten into the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-011": {
+    "instance_id": "P1-R1-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'a collaborative security ecosystem'; 'ecosystem' was swapped for 'approach to security', keeping the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-012": {
+    "instance_id": "P1-R1-012",
+    "verdict": "correct",
+    "reason": "Metaphorical banned noun 'landscape' is gone; the necessary fragmentation/sharing fact remains as 'regulatory environment'.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-013": {
+    "instance_id": "P1-R1-013",
+    "verdict": "incorrect",
+    "reason": "Pivotal was swapped for 'important', which keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-014": {
+    "instance_id": "P1-R1-014",
+    "verdict": "correct",
+    "reason": "Banned verb 'facilitate' is gone, replaced by natural 'support' while the listed platform functions are kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-015": {
+    "instance_id": "P1-R1-015",
+    "verdict": "incorrect",
+    "reason": "Bolster was swapped for 'strengthen', which keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-016": {
+    "instance_id": "P1-R1-016",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'AI-Enhanced Threat Intelligence'; the heading remains, with only hyphen/dash ASCII fixes.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-017": {
+    "instance_id": "P1-R1-017",
+    "verdict": "correct",
+    "reason": "Banned verb 'Leverage' is replaced by 'Use' and the federated-learning fact is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-019": {
+    "instance_id": "P1-R1-019",
+    "verdict": "incorrect",
+    "reason": "Robust was swapped for 'strong', which the rubric treats as the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-020": {
+    "instance_id": "P1-R1-020",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the 'not merely X; it is Y' structural tell; the sentence is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-021": {
+    "instance_id": "P1-R1-021",
+    "verdict": "correct",
+    "reason": "Protected phrase 'The rapidly evolving threat landscape' survives the surrounding rewrite.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-022": {
+    "instance_id": "P1-R1-022",
+    "verdict": "incorrect",
+    "reason": "Holistic was swapped for 'broad', which keeps an empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-023": {
+    "instance_id": "P1-R1-023",
+    "verdict": "incorrect",
+    "reason": "Ultimately was swapped for 'In the end', leaving the same filler opener.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-024": {
+    "instance_id": "P1-R1-024",
+    "verdict": "incorrect",
+    "reason": "Expected cut of inflated 'the very fabric of system design'; the phrase is untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-025": {
+    "instance_id": "P1-R1-025",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact for 'streamlines containment'; the model synonym-swapped to 'shortens' instead of using the supplied MTTC fact (already present) and dropping the vague clause.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-026": {
+    "instance_id": "P1-R1-026",
+    "verdict": "incorrect",
+    "reason": "Expected cut of scare quotes on 'attack surfaces'; curly quotes were only straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-027": {
+    "instance_id": "P1-R1-027",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the quotes around 'availability heuristic'; quotes remain as straight quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-028": {
+    "instance_id": "P1-R1-028",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the quotes around 'bug bounty'; quotes remain as straight quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R1-029": {
+    "instance_id": "P1-R1-029",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the quotes around 'trusted internal network'; quotes remain as straight quotes.",
+    "model": "grok-4.6-build"
+  }
+}

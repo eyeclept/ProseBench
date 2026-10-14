@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive data centers”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "“dramatically” was removed and the rest of the clause was kept, matching cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “universally recognized”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “have been rising rapidly”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "“dramatically” was removed from “fall dramatically” with no needed fact lost.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “unprecedented visibility”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “Massive DER Penetration”; the heading was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “a profound transformation”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “full stop” without an exclusivity marker was deleted instead of preserved.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "incorrect",
+    "reason": "Target span was “only backup path for those hospitals, end of story”; expected cut of that violation, but “only backup path for those hospitals” was kept and only the interjection was removed.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "correct",
+    "reason": "“significantly” was replaced with the supplied 12-to-4-minute fact, used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “massive rotating masses”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "Expected cut of “seamlessly integrates electricity”; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

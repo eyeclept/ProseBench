@@ -1,0 +1,74 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “astonishing,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "correct",
+    "reason": "Intensifier “dramatically” was removed; the rest of the claim is intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "“Vast” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "“Substantial” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "“More robustly” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "correct",
+    "reason": "Intensifier “profoundly” was removed without losing the underlying claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "incorrect",
+    "reason": "“Immense” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "“Countless” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep instance: “make no mistake” was deleted instead of preserved.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "correct",
+    "reason": "Finality interjection “full stop” was cut; the exclusive claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "correct",
+    "reason": "“Dramatically” was replaced with the supplied 41% to 8% yield-loss figures, used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-012": {
+    "instance_id": "P3-R5-012",
+    "verdict": "incorrect",
+    "reason": "“Unprecedented” should have been cut; the span is unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

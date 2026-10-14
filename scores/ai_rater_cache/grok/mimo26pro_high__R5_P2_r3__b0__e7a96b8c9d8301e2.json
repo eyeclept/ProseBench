@@ -1,0 +1,80 @@
+{
+  "P2-R5-001": {
+    "instance_id": "P2-R5-001",
+    "verdict": "incorrect",
+    "reason": "expected cut of “massive data centers”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-002": {
+    "instance_id": "P2-R5-002",
+    "verdict": "correct",
+    "reason": "“dramatically” was removed so the intensifier violation is gone and the rest of the claim remains",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-003": {
+    "instance_id": "P2-R5-003",
+    "verdict": "incorrect",
+    "reason": "expected cut of “universally recognized”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-005": {
+    "instance_id": "P2-R5-005",
+    "verdict": "correct",
+    "reason": "“rapidly” was removed so the intensifier is gone without losing the rising-technologies claim",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-006": {
+    "instance_id": "P2-R5-006",
+    "verdict": "correct",
+    "reason": "“dramatically” was removed from “fall dramatically”; the I²R explanation is intact",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-009": {
+    "instance_id": "P2-R5-009",
+    "verdict": "incorrect",
+    "reason": "expected cut of “unprecedented visibility”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-010": {
+    "instance_id": "P2-R5-010",
+    "verdict": "incorrect",
+    "reason": "expected cut of “Massive DER Penetration”; the heading was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-011": {
+    "instance_id": "P2-R5-011",
+    "verdict": "incorrect",
+    "reason": "expected cut of “a profound transformation”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-012": {
+    "instance_id": "P2-R5-012",
+    "verdict": "incorrect",
+    "reason": "keep instance: “full stop” has no exclusivity marker and should survive, but it was deleted",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-013": {
+    "instance_id": "P2-R5-013",
+    "verdict": "correct",
+    "reason": "finality interjection “end of story” was cut while the exclusive “only backup path” claim was kept",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-014": {
+    "instance_id": "P2-R5-014",
+    "verdict": "incorrect",
+    "reason": "required replace_with_fact using the 12-to-4-minute restoration numbers; the model only deleted “significantly”",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-015": {
+    "instance_id": "P2-R5-015",
+    "verdict": "incorrect",
+    "reason": "expected cut of “massive rotating masses”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  },
+  "P2-R5-016": {
+    "instance_id": "P2-R5-016",
+    "verdict": "incorrect",
+    "reason": "expected cut of “seamlessly integrates electricity”; the span was left unchanged",
+    "model": "grok-4.6-build"
+  }
+}

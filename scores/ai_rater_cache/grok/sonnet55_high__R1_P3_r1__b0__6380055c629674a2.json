@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "correct",
+    "reason": "Banned intensifier 'comprehensive' is removed; 'understanding of plant biology' is kept, so the empty claim is gone and no necessary fact is lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "correct",
+    "reason": "The 'not merely academic—it is' contrast is deleted, so the banned 'it's not X, it's Y' construction is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "no_fact cut of 'paving the way for high‑throughput functional genomics' was rewritten as 'enabling high‑throughput functional genomics', a synonym that keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'key', which keeps the same empty evaluative claim; the rubric treats that synonym swap as incorrect.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "correct",
+    "reason": "Intensifier 'dramatically' is deleted and the factual 'increased food production' remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "correct",
+    "reason": "Banned transition 'Moreover' is removed; the remaining biomass/bioeconomy content is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'central', leaving the same empty 'plays a [important] role' claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "'comprehensive' was swapped for 'detailed', a synonym that keeps the empty intensifying claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "correct",
+    "reason": "Scare quotes around 'remember' are removed; the underlying wording is kept without the banned quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "'robustly' was swapped for 'strongly', the rubric's explicit example of an incorrect synonym swap.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "'robust' was swapped for 'sustained', which still intensifies 'public engagement' rather than cutting the empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "no_fact target 'education and outreach will be vital' was rewritten as 'will be needed', which keeps the empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "correct",
+    "reason": "Banned 'nuanced' is removed from the phrase; remaining 'deep understanding of plant biology' is not the flagged word.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "correct",
+    "reason": "The 'is not optional; it is' contrast is deleted, so the banned not-X-it's-Y construction is gone.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' is left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "replace_with_fact required using the supplied 40- and 6-minute figures; the edit invents '34 minutes' instead.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "correct",
+    "reason": "Scare quotes around climate-smart are removed; the term itself remains without the banned quotes.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "P2-R1-001": {
+    "instance_id": "P2-R1-001",
+    "verdict": "incorrect",
+    "reason": "Cut required removing 'dramatically' and its empty intensifier; swapping to 'a great deal' keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-002": {
+    "instance_id": "P2-R1-002",
+    "verdict": "incorrect",
+    "reason": "'robust' was swapped to 'strong', which the rubric treats as the same empty claim, not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-003": {
+    "instance_id": "P2-R1-003",
+    "verdict": "correct",
+    "reason": "Banned verb 'leverages' was rewritten to factual 'uses' while keeping the OPF planning content.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-004": {
+    "instance_id": "P2-R1-004",
+    "verdict": "correct",
+    "reason": "'dramatically' was deleted and the I²R loss fact remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-005": {
+    "instance_id": "P2-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'enhancing' was rewritten to concrete 'adding capacity' without dropping the no-new-lines fact.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-006": {
+    "instance_id": "P2-R1-006",
+    "verdict": "incorrect",
+    "reason": "'paving the way for' is still present; only nearby dashes were changed.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-007": {
+    "instance_id": "P2-R1-007",
+    "verdict": "correct",
+    "reason": "Banned 'fostering' was replaced with natural 'increasing' while keeping the competition contrast.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-008": {
+    "instance_id": "P2-R1-008",
+    "verdict": "incorrect",
+    "reason": "'Seamless' was swapped to 'Smooth', another empty intensifier rather than a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-009": {
+    "instance_id": "P2-R1-009",
+    "verdict": "incorrect",
+    "reason": "'crucial' was swapped to 'essential', which the rubric flags as leaving the violation.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-010": {
+    "instance_id": "P2-R1-010",
+    "verdict": "correct",
+    "reason": "The banned 'By [gerund]...' opener was restructured and the coupling content was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-011": {
+    "instance_id": "P2-R1-011",
+    "verdict": "correct",
+    "reason": "'holistic' and the empty 'emerges' claim were dropped; sector-coupling content was restated as integration.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-012": {
+    "instance_id": "P2-R1-012",
+    "verdict": "incorrect",
+    "reason": "'robust' was swapped to 'strong' instead of cutting the empty intensifier.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-013": {
+    "instance_id": "P2-R1-013",
+    "verdict": "correct",
+    "reason": "Metaphorical 'ecosystem' was cut to 'system' and the decentralized cyber-physical meaning remains.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-014": {
+    "instance_id": "P2-R1-014",
+    "verdict": "correct",
+    "reason": "Metaphorical 'landscape' was cut to 'system' without losing the listed benefits.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-015": {
+    "instance_id": "P2-R1-015",
+    "verdict": "correct",
+    "reason": "Metaphorical 'Navigating' was rewritten to 'Managing' while keeping reliability, resilience, and markets.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-016": {
+    "instance_id": "P2-R1-016",
+    "verdict": "correct",
+    "reason": "Empty 'innovative' was dropped; the named technologies remain.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-017": {
+    "instance_id": "P2-R1-017",
+    "verdict": "incorrect",
+    "reason": "'robust regulatory frameworks' became 'strong regulatory frameworks', a synonym swap not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-018": {
+    "instance_id": "P2-R1-018",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'Robust control' was changed to 'Well-tuned control' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-019": {
+    "instance_id": "P2-R1-019",
+    "verdict": "correct",
+    "reason": "'significantly' was removed and the supplied loss figures (8 percent to 3 percent) remain accurate.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-020": {
+    "instance_id": "P2-R1-020",
+    "verdict": "incorrect",
+    "reason": "Scare-quoted 'last mile' was not cut; only curly quotes were straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-021": {
+    "instance_id": "P2-R1-021",
+    "verdict": "incorrect",
+    "reason": "Scare-quoted 'ramping' remains; quotes were only converted to straight quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-022": {
+    "instance_id": "P2-R1-022",
+    "verdict": "incorrect",
+    "reason": "Target scare-quoted 'Power-to-X' was not cut, only quote style changed.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-023": {
+    "instance_id": "P2-R1-023",
+    "verdict": "incorrect",
+    "reason": "Scare quotes around 'Radial' were not cut, only straightened.",
+    "model": "grok-4.6-build"
+  },
+  "P2-R1-024": {
+    "instance_id": "P2-R1-024",
+    "verdict": "incorrect",
+    "reason": "Scare-quoted 'always-on' was not cut; only curly quotes became straight quotes.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the empty 'comprehensive understanding' claim; 'comprehensive' was only swapped for the synonym 'thorough', which keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The banned 'it's not X, it's Y' construction remains ('is not merely academic; it is essential...'); only the em dash was restyled.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "correct",
+    "reason": "Banned 'paving the way for' was rewritten to the plain verb 'enabling', dropping the inflated phrasing while keeping the functional-genomics fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'essential', which the rubric treats as the same empty evaluative claim, not a cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "'dramatically' was swapped for the intensifier 'greatly', so the empty intensifying claim remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "correct",
+    "reason": "Banned transition 'Moreover' was deleted; the remaining biomass/bioeconomy content is kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'key', leaving the same empty 'plays a [adj] role' claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "'comprehensive' was swapped for 'detailed', a synonym that keeps the empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "correct",
+    "reason": "Scare quotes around 'remember' were removed; the needed wording is kept without quotes.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "'robustly' was swapped for 'strongly', the same empty intensifier swap the rubric marks wrong.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "'robust public engagement' became 'strong public engagement', the exact synonym pattern the rubric forbids.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "'vital' was swapped for 'essential', keeping the empty evaluative claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "correct",
+    "reason": "Banned 'nuanced' was deleted from the phrase; the empty intensifier was not replaced with another listed word.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'is not optional; it is imperative'; the not-X-it's-Y structure is unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "correct",
+    "reason": "Protected technical term 'robust regression' was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the 40-minute/6-minute timing; the vague phrase was only softened to 'speeds up' instead of using those numbers.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare quotes on 'climate-smart' were kept (only converted to straight quotes), so the expected cut did not happen.",
+    "model": "grok-4.6-build"
+  }
+}

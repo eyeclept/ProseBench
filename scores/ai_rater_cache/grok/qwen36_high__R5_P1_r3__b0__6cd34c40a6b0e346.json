@@ -1,0 +1,62 @@
+{
+  "P1-R5-001": {
+    "instance_id": "P1-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; the intensifier span “an unprecedented surge in digital connectivity” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-002": {
+    "instance_id": "P1-R5-002",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; “extraordinary benefits” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-003": {
+    "instance_id": "P1-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut with no supplied number; “dramatically” was replaced by an invented “{number}x” placeholder instead of being removed.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-004": {
+    "instance_id": "P1-R5-004",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; “a large proportion of exploit success” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-005": {
+    "instance_id": "P1-R5-005",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; “massive log volumes” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-006": {
+    "instance_id": "P1-R5-006",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; “spurred unprecedented collaboration” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-008": {
+    "instance_id": "P1-R5-008",
+    "verdict": "incorrect",
+    "reason": "Change/cut required; “the very fabric of system design” was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-009": {
+    "instance_id": "P1-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep required (emphatic interjection without an exclusivity marker); “full stop” was deleted.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-010": {
+    "instance_id": "P1-R5-010",
+    "verdict": "correct",
+    "reason": "Correctly cut the redundant finality interjection “end of story” while keeping the exclusive claim.",
+    "model": "grok-4.6-build"
+  },
+  "P1-R5-011": {
+    "instance_id": "P1-R5-011",
+    "verdict": "incorrect",
+    "reason": "Did not use the supplied fact_text “fell from 18 hours to 3 hours”; substituted a different figure (“by 15 hours”).",
+    "model": "grok-4.6-build"
+  }
+}

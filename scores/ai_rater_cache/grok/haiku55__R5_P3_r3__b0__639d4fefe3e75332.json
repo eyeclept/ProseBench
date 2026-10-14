@@ -1,0 +1,74 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “astonishing,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "incorrect",
+    "reason": "“Dramatically” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "“Vast” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "“Substantial” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "“More robustly” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "incorrect",
+    "reason": "“Profoundly” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "incorrect",
+    "reason": "“Immense”/the padded promise clause should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "“Countless” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep was required (emphatic tag without an exclusivity marker); the model deleted “make no mistake.”",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "correct",
+    "reason": "“Full stop” was correctly cut after the exclusive “only,” leaving the claim intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "correct",
+    "reason": "“Dramatically” was replaced with the supplied 41%→8% figures, used accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-012": {
+    "instance_id": "P3-R5-012",
+    "verdict": "incorrect",
+    "reason": "“Unprecedented” should have been cut; the span was unchanged.",
+    "model": "grok-4.6-build"
+  }
+}

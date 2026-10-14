@@ -1,0 +1,104 @@
+{
+  "P3-R1-001": {
+    "instance_id": "P3-R1-001",
+    "verdict": "incorrect",
+    "reason": "Expected a cut of the empty phrase; 'comprehensive' was swapped for the synonym 'thorough', which keeps the same empty claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-002": {
+    "instance_id": "P3-R1-002",
+    "verdict": "incorrect",
+    "reason": "The 'not merely academic' contrast was dropped, but the empty claim 'essential for human survival and well-being' from the target was kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-005": {
+    "instance_id": "P3-R1-005",
+    "verdict": "incorrect",
+    "reason": "'paving the way for' was rewritten as 'advanced', a synonym-style swap that retains the empty claim instead of cutting it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-007": {
+    "instance_id": "P3-R1-007",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was removed, but the rewrite asserts that understanding 'improves' yields and 'develops' feedstocks, converting an empty evaluation into an invented result rather than cutting the claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-008": {
+    "instance_id": "P3-R1-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'dramatically increased food production' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-010": {
+    "instance_id": "P3-R1-010",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'Moreover, lignocellulosic biomass is a cornerstone of the emerging' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-014": {
+    "instance_id": "P3-R1-014",
+    "verdict": "incorrect",
+    "reason": "'pivotal' was swapped for 'key', which keeps the same empty evaluative claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-015": {
+    "instance_id": "P3-R1-015",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'construct comprehensive networks that predict plant responses' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-018": {
+    "instance_id": "P3-R1-018",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: scare quotes on 'remember' were left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-019": {
+    "instance_id": "P3-R1-019",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'respond more robustly upon re-encounter' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-020": {
+    "instance_id": "P3-R1-020",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'robust public engagement' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-024": {
+    "instance_id": "P3-R1-024",
+    "verdict": "incorrect",
+    "reason": "Change-type cut: 'education and outreach will be vital' was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-025": {
+    "instance_id": "P3-R1-025",
+    "verdict": "incorrect",
+    "reason": "'nuanced' was swapped for 'thorough' while 'a deep ... understanding of plant biology' was kept, so the empty phrase was not cut.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-026": {
+    "instance_id": "P3-R1-026",
+    "verdict": "incorrect",
+    "reason": "The 'is not optional' half was dropped, but the empty claim 'imperative' from the target remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-029": {
+    "instance_id": "P3-R1-029",
+    "verdict": "incorrect",
+    "reason": "Protected technical term 'robust regression' was changed to 'linear regression' instead of kept.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-030": {
+    "instance_id": "P3-R1-030",
+    "verdict": "incorrect",
+    "reason": "Vague 'significantly streamlines' was removed, but the replacement uses 'one-sixth' rather than the supplied 40-minute/6-minute fact wording.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R1-031": {
+    "instance_id": "P3-R1-031",
+    "verdict": "incorrect",
+    "reason": "Scare-quoted 'climate-smart' plants was supposed to be cut; quotes were only straightened and the phrase was kept.",
+    "model": "grok-4.6-build"
+  }
+}

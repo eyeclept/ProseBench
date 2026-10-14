@@ -1,0 +1,74 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “astonishing,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “dramatically,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “vast,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “substantial,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “more robustly,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “profoundly,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “immense,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “countless,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "correct",
+    "reason": "Protected keep span with “make no mistake” and no exclusivity marker was left intact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "incorrect",
+    "reason": "Target_text was the whole sentence including the exclusive claim; cutting only “full stop” deleted the interjection but did not remove the specified target span as a cut of that instance.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "correct",
+    "reason": "“Dramatically” was replaced using the supplied 41 percent and 8 percent figures accurately.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-012": {
+    "instance_id": "P3-R5-012",
+    "verdict": "incorrect",
+    "reason": "Change-type cut was required for “unprecedented,” but the span was left untouched.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "correct",
+    "reason": "The non-keyboard hyphen in benefit-sharing was replaced with a plain ASCII hyphen.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "ascii_equivalent was required for the non-keyboard hyphen in socio-economic, but the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "correct",
+    "reason": "The em dash after research was changed to a comma, matching punct_comma for the fragment.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "The closing em dash before offers was left in place instead of becoming a comma.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "The diacritic in café was kept, as required.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "correct",
+    "reason": "The ellipsis glyph was replaced with three periods.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "punct_split required splitting into separate sentences; a semicolon was used instead and the existing run-on before the dash remains.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R4-088": {
+    "instance_id": "P3-R4-088",
+    "verdict": "incorrect",
+    "reason": "The non-keyboard hyphen in land-use planning was not converted to ASCII.",
+    "model": "grok-4.6-build"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "P3-R5-001": {
+    "instance_id": "P3-R5-001",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier 'astonishing'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-002": {
+    "instance_id": "P3-R5-002",
+    "verdict": "correct",
+    "reason": "Removed 'dramatically' from the target phrase; the intensifier is gone and no necessary fact was lost.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-003": {
+    "instance_id": "P3-R5-003",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'vast'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-004": {
+    "instance_id": "P3-R5-004",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'substantial'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-005": {
+    "instance_id": "P3-R5-005",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'more robustly'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-006": {
+    "instance_id": "P3-R5-006",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'profoundly'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-007": {
+    "instance_id": "P3-R5-007",
+    "verdict": "incorrect",
+    "reason": "Expected cut of the intensifier claim 'the promise of botanical science is immense'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-008": {
+    "instance_id": "P3-R5-008",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'countless'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-009": {
+    "instance_id": "P3-R5-009",
+    "verdict": "incorrect",
+    "reason": "Keep instance: 'make no mistake' has no exclusivity marker and should survive; the model deleted it.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-010": {
+    "instance_id": "P3-R5-010",
+    "verdict": "correct",
+    "reason": "Cut the redundant finality interjection 'full stop' while keeping the exclusivity claim.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-011": {
+    "instance_id": "P3-R5-011",
+    "verdict": "incorrect",
+    "reason": "Expected replace_with_fact using the supplied yield-loss numbers; the model only deleted 'dramatically' instead of replacing the vague wording with that fact.",
+    "model": "grok-4.6-build"
+  },
+  "P3-R5-012": {
+    "instance_id": "P3-R5-012",
+    "verdict": "incorrect",
+    "reason": "Expected cut of 'unprecedented'; the span was left unchanged.",
+    "model": "grok-4.6-build"
+  }
+}
