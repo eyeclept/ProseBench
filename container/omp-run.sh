@@ -2,25 +2,26 @@
 set -euo pipefail
 
 usage() {
-  printf 'Usage: %s --model MODEL --thinking LEVEL --prompt-file PATH\n' "$0" >&2
+  printf 'Usage: %s --model MODEL --thinking LEVEL --prompt-file PATH --max-time SECONDS\n' "$0" >&2
   exit 2
 }
 
-model= thinking= prompt_file=
+model= thinking= prompt_file= max_time=
 while (($#)); do
   case "$1" in
-    --model|--thinking|--prompt-file)
+    --model|--thinking|--prompt-file|--max-time)
       (($# >= 2)) || usage
       case "$1" in
         --model) model=$2 ;;
         --thinking) thinking=$2 ;;
         --prompt-file) prompt_file=$2 ;;
+        --max-time) max_time=$2 ;;
       esac
       shift 2 ;;
     *) usage ;;
   esac
 done
-[[ -n "$model" && -n "$thinking" && -n "$prompt_file" ]] || usage
+[[ -n "$model" && -n "$thinking" && -n "$prompt_file" && "$max_time" =~ ^[1-9][0-9]*$ ]] || usage
 [[ -f "$prompt_file" ]] || { printf 'Prompt file not found: %s\n' "$prompt_file" >&2; exit 2; }
 repo=$(realpath "$(dirname "${BASH_SOURCE[0]}")/..")
 source "$repo/container/pin.env"
@@ -50,10 +51,11 @@ args=(run --rm --interactive --network host --workdir /workspace
 if [[ -n "${OPENROUTER_API_KEY:-}" ]]; then
   args+=(--env OPENROUTER_API_KEY)
 fi
-# --max-time bounds Firecrawl tool loops (pilot: 155 calls, 1390s on one Rule 3 run); normal runs finish under 130s.
+# --max-time bounds tool loops and long reasoning (pilot: 155 Firecrawl calls, 1390s on one Rule 3 run). The runner
+# sets it per run (default 1200 s; 2400 s for runs that hit 1200 s) and records it as max_time_s.
 podman "${args[@]}" "$PROSEBENCH_IMAGE_DIGEST" \
   --model "$model" --thinking "$thinking" \
   --system-prompt-template /workspace/bench/prompts/system.md \
   --no-tools --no-extensions --no-skills --no-rules --no-title \
-  --max-time 600 \
+  --max-time "$max_time" \
   --no-session --mode json -p < "$prompt"
