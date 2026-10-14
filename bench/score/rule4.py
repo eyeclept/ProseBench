@@ -40,9 +40,18 @@ def keyboard_violations(text: str, provenance: list[tuple[int, int]],
                            "name": unicodedata.name(char, "UNKNOWN")})
     return output
 
-def check_instance(row: dict, after: str, passage_before: str, passage_after: str,
+# Em-dash replacements are the only Rule 4 actions that can join two clauses with a bare comma.
+_EMDASH_ACTIONS = ("punct_comma", "punct_semicolon_or_period", "punct_split")
+
+
+def check_instance(row: dict, after: str, context_before: str, context_after: str,
                    split_context: str) -> list[str]:
-    """Return failure flags for an edited Rule 4 target."""
+    """Return failure flags for an edited Rule 4 target.
+
+    context_before/context_after are the instance's own sentence before and after editing. The comma-splice
+    comparison stays inside that sentence, so a splice introduced elsewhere in the passage cannot fail this
+    instance.
+    """
     target = row["target_text"]
     action = row["expected_action"]
     failures = []
@@ -63,6 +72,6 @@ def check_instance(row: dict, after: str, passage_before: str, passage_after: st
     }
     if action not in punctuation or not punctuation[action](after):
         failures.append("wrong_punctuation_class")
-    if comma_splice_count(passage_after) > comma_splice_count(passage_before):
+    if action in _EMDASH_ACTIONS and comma_splice_count(context_after) > comma_splice_count(context_before):
         failures.append("comma_splice_introduced")
     return failures

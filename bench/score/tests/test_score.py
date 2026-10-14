@@ -146,6 +146,11 @@ def test_rule4_subtypes_splice_and_overapplication(fixture_data, tmp_path):
     assert "comma_splice_introduced" in json.loads(next(item["flags"] for item in wrong if item["subtype"] == "emdash_clauses"))
     over, _ = score_one(run(4, [("caf\u00e9", "cafe")], repeat=2), key, passage, tmp_path)
     assert labels(over)["diacritic"] == "FP"
+    # A comma splice introduced at one em dash must not fail correct fixes elsewhere in the passage.
+    mixed, _ = score_one(run(4, [("\u2014", ","), ("\u201carchive\u201d", '"archive"'), ("\u2013", "-")], repeat=3),
+                         key, passage, tmp_path)
+    assert labels(mixed)["emdash_clauses"] == "FN"
+    assert (labels(mixed)["curly_quote"], labels(mixed)["endash_range"]) == ("TP", "TP")
 
 
 def test_rule1_fabrication_invalid_and_collateral(fixture_data, tmp_path, monkeypatch):

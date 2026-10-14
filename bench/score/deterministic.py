@@ -92,7 +92,13 @@ def assess(row: dict, state: str, original: str, revised: str, applied: object) 
         return "correct", flags
     if row["rule"] == 4:
         split_context = revised + applied.region(row["char_end"], row["char_end"] + 1)
-        flags += check_instance(row, revised, original, applied.text, split_context)
+        context = row.get("context_sentence") or ""
+        start = original.find(context) if context else -1
+        if start < 0 or not start <= row["char_start"] < row["char_end"] <= start + len(context):
+            logger.warning("Context sentence not found around %s; using the target span", row["instance_id"])
+            start, context = row["char_start"], original[row["char_start"]:row["char_end"]]
+        context_after = applied.region(start, start + len(context))
+        flags += check_instance(row, revised, context, context_after, split_context)
         return ("incorrect" if any(flag in flags for flag in
                 ("wrong_punctuation_class", "nonkeyboard_remains", "comma_splice_introduced")) else "correct"), flags
     if row["expected_action"] == "promote_to_sentence":
