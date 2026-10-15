@@ -7,6 +7,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from statsmodels.stats.contingency_tables import mcnemar
 from statsmodels.stats.multitest import multipletests
@@ -33,6 +34,9 @@ RUN_NUMERIC = ("cost_usd", "usage_output", "usage_reasoning", "invalid_edit_coun
                "collateral_count", "other_rule_instance", "uncatalogued_text")
 KEY = ["model_key", "run_id"]
 CELL = ["rule", "framing", "passage", "instance_id", "repeat"]
+RUN_CELL = ["rule", "passage", "repeat", "framing"]  # pairs a low-reasoning run with its high-reasoning twin
+BOOTSTRAP_DRAWS = 2000
+BOOTSTRAP_SEED = 645
 
 
 def wilson(successes: int, total: int) -> tuple[float, float]:
@@ -79,14 +83,19 @@ def load_scores(scores: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def metrics(instances: pd.DataFrame) -> pd.DataFrame:
-    """Count confusion labels, then calculate pooled precision, recall and F1."""
+    """Count confusion labels, then calculate pooled precision, recall and F1.
+
+    FP exists only on keep-polarity items. A rule with no keep items (Rule 3) cannot produce an FP, so its
+    precision is unmeasured (NaN), not a demonstrated 1.0.
+    """
     rows = []
     for (rule, model), group in instances.groupby(["rule", "model_key"], sort=True):
         counts = group["label"].value_counts()
         tp, fn, fp, tn = (int(counts.get(label, 0)) for label in ("TP", "FN", "FP", "TN"))
-        p = tp / (tp + fp) if tp + fp else float("nan")
+        measurable = bool((group.polarity == "keep").any())
+        p = tp / (tp + fp) if measurable and tp + fp else float("nan")
         r = tp / (tp + fn) if tp + fn else float("nan")
-        p_low, p_high = wilson(tp, tp + fp)
+        p_low, p_high = wilson(tp, tp + fp) if measurable else (float("nan"), float("nan"))
         r_low, r_high = wilson(tp, tp + fn)
         f1 = 2 * p * r / (p + r) if p + r > 0 else float("nan")
         rows.append(dict(rule=rule, model_key=model, TP=tp, FN=fn, FP=fp, TN=tn,
@@ -236,9 +245,58 @@ def _condition_stats(instances: pd.DataFrame, runs: pd.DataFrame) -> dict[str, f
                 cost_usd=cost, cost_per_tp=cost / tp if tp else float("nan"))
 
 
+def _cell_counts(instances: pd.DataFrame) -> pd.DataFrame:
+    """TP and FN per run cell; FN counts parse failures, so failed runs stay in the denominator."""
+    labels = instances.assign(tp=instances.label.eq("TP"), fn=instances.label.eq("FN"))
+    return labels.groupby(RUN_CELL, observed=True)[["tp", "fn"]].sum().astype(int)
+
+
+def _delta_intervals(min_inst: pd.DataFrame, high_inst: pd.DataFrame) -> dict[str, tuple[float, float]]:
+    """95% paired bootstrap intervals for the high-minus-min recall deltas.
+
+    Instances cluster within runs and the same essays repeat, so instance-level intervals are too narrow.
+    The resampling unit is a run cell, paired across the two conditions, drawn with replacement within each
+    rule so every draw keeps the rule mix. Returns intervals for the pooled delta, the equal-rule delta, and
+    each rule's delta.
+    """
+    paired = _cell_counts(min_inst).join(_cell_counts(high_inst), lsuffix="_min", rsuffix="_high", how="inner")
+    rng = np.random.default_rng(BOOTSTRAP_SEED)
+    sums = {}
+    for rule, group in paired.groupby(level="rule"):
+        values = group[["tp_min", "fn_min", "tp_high", "fn_high"]].to_numpy()
+        draws = rng.integers(0, len(values), size=(BOOTSTRAP_DRAWS, len(values)))
+        sums[rule] = values[draws].sum(axis=1)  # shape (draws, 4)
+
+    def recall(tp, fn):
+        with np.errstate(invalid="ignore", divide="ignore"):
+            return tp / (tp + fn)
+
+    def interval(deltas: np.ndarray) -> tuple[float, float]:
+        low, high = np.nanpercentile(deltas, [2.5, 97.5])
+        return float(low), float(high)
+
+    per_rule = {rule: recall(s[:, 2], s[:, 3]) - recall(s[:, 0], s[:, 1]) for rule, s in sums.items()}
+    total = sum(sums.values())
+    result = {"pooled": interval(recall(total[:, 2], total[:, 3]) - recall(total[:, 0], total[:, 1])),
+              "equal_rule": interval(np.mean(list(per_rule.values()), axis=0))}
+    result.update({rule: interval(deltas) for rule, deltas in per_rule.items()})
+    return result
+
+
+def _equal_rule_recall(instances: pd.DataFrame) -> float:
+    """Mean of per-rule recalls, so each rule counts once regardless of its instance count."""
+    tp = instances.label.eq("TP").groupby(instances.rule).sum()
+    fn = instances.label.eq("FN").groupby(instances.rule).sum()
+    recalls = (tp / (tp + fn)).dropna()
+    return float(recalls.mean()) if len(recalls) else float("nan")
+
+
 def reasoning_effect(instances: pd.DataFrame, runs: pd.DataFrame) -> pd.DataFrame:
     """Compare min vs high reasoning on quality, usage, and API cost."""
     columns = ["model_key", "rule", "recall_min", "recall_high", "recall_delta",
+               "recall_delta_ci_low", "recall_delta_ci_high",
+               "recall_eq_min", "recall_eq_high", "recall_eq_delta",
+               "recall_eq_delta_ci_low", "recall_eq_delta_ci_high", "rule4_positive_share",
                "keep_damage_fp_rate_min", "keep_damage_fp_rate_high",
                "failed_runs_min", "failed_runs_high",
                "median_usage_output_min", "median_usage_output_high",
@@ -250,15 +308,23 @@ def reasoning_effect(instances: pd.DataFrame, runs: pd.DataFrame) -> pd.DataFram
     rows = []
 
     def add(model: str, rule, min_inst: pd.DataFrame, high_inst: pd.DataFrame,
-            min_run: pd.DataFrame, high_run: pd.DataFrame) -> None:
+            min_run: pd.DataFrame, high_run: pd.DataFrame, intervals: dict) -> None:
         if min_inst.empty or high_inst.empty:
             return
         minimum = _condition_stats(min_inst, min_run)
         high = _condition_stats(high_inst, high_run)
         cost_ratio = high["cost_usd"] / minimum["cost_usd"] if minimum["cost_usd"] else float("nan")
+        eq_min, eq_high = _equal_rule_recall(min_inst), _equal_rule_recall(high_inst)
+        delta_ci = intervals["pooled" if rule == "all" else rule]
+        eq_ci = intervals["equal_rule" if rule == "all" else rule]
+        positives = min_inst[min_inst.polarity != "keep"]
         rows.append(dict(model_key=model, rule=rule,
                          recall_min=minimum["recall"], recall_high=high["recall"],
                          recall_delta=high["recall"] - minimum["recall"],
+                         recall_delta_ci_low=delta_ci[0], recall_delta_ci_high=delta_ci[1],
+                         recall_eq_min=eq_min, recall_eq_high=eq_high, recall_eq_delta=eq_high - eq_min,
+                         recall_eq_delta_ci_low=eq_ci[0], recall_eq_delta_ci_high=eq_ci[1],
+                         rule4_positive_share=float((positives.rule == 4).mean()) if len(positives) else float("nan"),
                          keep_damage_fp_rate_min=minimum["keep_damage_fp_rate"],
                          keep_damage_fp_rate_high=high["keep_damage_fp_rate"],
                          failed_runs_min=minimum["failed_runs"], failed_runs_high=high["failed_runs"],
@@ -270,24 +336,22 @@ def reasoning_effect(instances: pd.DataFrame, runs: pd.DataFrame) -> pd.DataFram
                          cost_ratio=cost_ratio,
                          cost_per_tp_min=minimum["cost_per_tp"], cost_per_tp_high=high["cost_per_tp"]))
 
+    slices = {}
     for model in pairs:
         high_key = f"{model}_high"
         min_inst = instances[instances.model_key.astype(str) == model]
         high_inst = instances[instances.model_key.astype(str) == high_key]
-        min_run = runs[runs.model_key.astype(str) == model]
-        high_run = runs[runs.model_key.astype(str) == high_key]
         shared = set(min_inst.rule) & set(high_inst.rule)
-        add(model, "all", min_inst[min_inst.rule.isin(shared)], high_inst[high_inst.rule.isin(shared)],
-            min_run[min_run.rule.isin(shared)], high_run[high_run.rule.isin(shared)])
-    for model in pairs:
-        high_key = f"{model}_high"
-        min_inst = instances[instances.model_key.astype(str) == model]
-        high_inst = instances[instances.model_key.astype(str) == high_key]
-        min_run = runs[runs.model_key.astype(str) == model]
-        high_run = runs[runs.model_key.astype(str) == high_key]
-        for rule in sorted(set(min_inst.rule) & set(high_inst.rule)):
+        min_inst, high_inst = min_inst[min_inst.rule.isin(shared)], high_inst[high_inst.rule.isin(shared)]
+        min_run = runs[(runs.model_key.astype(str) == model) & runs.rule.isin(shared)]
+        high_run = runs[(runs.model_key.astype(str) == high_key) & runs.rule.isin(shared)]
+        slices[model] = (shared, min_inst, high_inst, min_run, high_run, _delta_intervals(min_inst, high_inst))
+    for model, (shared, min_inst, high_inst, min_run, high_run, intervals) in slices.items():
+        add(model, "all", min_inst, high_inst, min_run, high_run, intervals)
+    for model, (shared, min_inst, high_inst, min_run, high_run, intervals) in slices.items():
+        for rule in sorted(shared):
             add(model, rule, min_inst[min_inst.rule == rule], high_inst[high_inst.rule == rule],
-                min_run[min_run.rule == rule], high_run[high_run.rule == rule])
+                min_run[min_run.rule == rule], high_run[high_run.rule == rule], intervals)
     return pd.DataFrame(rows, columns=columns)
 
 
@@ -377,7 +441,12 @@ def analyze(scores: Path, out: Path, min_lower: float = 0.80) -> dict[str, pd.Da
     for name, frame in tables.items():
         note = "Claude cost is list-price-equivalent under subscription." if name == "API cost" else ""
         if name == "Reasoning effect":
-            note = "All-rules is the headline row. Claude cost is list-price-equivalent under subscription."
+            note = ("All-rules is the headline row: pooled recall plus the equal-rule mean (recall_eq), since "
+                    "Rule 4 supplies most positive instances (rule4_positive_share). Delta intervals are 95% "
+                    f"paired bootstrap over run cells within each rule ({BOOTSTRAP_DRAWS} draws, seed "
+                    f"{BOOTSTRAP_SEED}). Claude cost is list-price-equivalent under subscription.")
+        if name == "Precision recall F1":
+            note = "Rule 3 has no keep items, so it cannot produce FP: its precision and F1 are unmeasured (blank)."
         if name == "Repeat stability":
             note = "Only complete three-repeat instance cells count. Rule 3 framings are separate cells."
         if name == "Collateral per run":
