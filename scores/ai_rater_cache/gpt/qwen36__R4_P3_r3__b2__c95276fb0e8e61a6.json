@@ -1,0 +1,50 @@
+{
+  "P3-R4-081": {
+    "instance_id": "P3-R4-081",
+    "verdict": "correct",
+    "reason": "The non-ASCII hyphen in 'benefit-sharing' was replaced with an ASCII hyphen.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-082": {
+    "instance_id": "P3-R4-082",
+    "verdict": "incorrect",
+    "reason": "The non-ASCII hyphen in 'socio‑economic' remains unchanged.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-083": {
+    "instance_id": "P3-R4-083",
+    "verdict": "incorrect",
+    "reason": "The opening em dash around the fragment remains unchanged instead of becoming a comma.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-084": {
+    "instance_id": "P3-R4-084",
+    "verdict": "incorrect",
+    "reason": "The closing em dash around the fragment remains unchanged instead of becoming a comma.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-085": {
+    "instance_id": "P3-R4-085",
+    "verdict": "correct",
+    "reason": "The protected spelling 'café' retains its diacritic.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-086": {
+    "instance_id": "P3-R4-086",
+    "verdict": "incorrect",
+    "reason": "The ellipsis glyph was replaced with a single period and a sentence break, not three periods.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-087": {
+    "instance_id": "P3-R4-087",
+    "verdict": "incorrect",
+    "reason": "The revision repairs the grammar but keeps the run-on's content in one sentence; the required action was to split it into separate sentences.",
+    "model": "gpt-6.1-sol"
+  },
+  "P3-R4-088": {
+    "instance_id": "P3-R4-088",
+    "verdict": "correct",
+    "reason": "The targeted 'land‑use planning' now uses an ASCII hyphen.",
+    "model": "gpt-6.1-sol"
+  }
+}

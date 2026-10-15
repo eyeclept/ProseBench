@@ -1,0 +1,17 @@
+axis,model_key,model,total_params_b,active_params_b,ngram_embedding_params_b,boxes,quantization,decode_tokens_s,throughput_estimated,duty_cycle,hardware_usd_per_million_output,api_usd_per_million_output,usage_input,usage_output,usage_reasoning,study_hardware_usd
+analytic,qwen36,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,8h/day,1.6166506582285243,0.95,889068,79970,0,0.1292835531385351
+analytic,qwen36,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,24h/day,0.5710063597603852,0.95,889068,79970,0,0.045663378590038
+analytic,qwen36_high,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,8h/day,1.6166506582285243,0.95,778366,314428,277935,0.5083202331654785
+analytic,qwen36_high,Qwen3.6 35B-A3B,35,3,,1,NVFP4,95,False,24h/day,0.5710063597603852,0.95,778366,314428,277935,0.17954038768673838
+analytic,qwen38flash,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,8h/day,3.1536306474683737,0.47,318956,158631,0,0.5002635832385556
+analytic,qwen38flash,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,24h/day,1.113872775713277,0.47,318956,158631,0,0.17669475228417283
+analytic,qwen38flash_high,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,8h/day,3.1536306474683737,0.47,181542,626724,538053,1.976456013903969
+analytic,qwen38flash_high,Qwen3.8 Flash (Flash-Next),125,6,51,1,NVFP4 plus offloaded n-gram table,48.7,False,24h/day,1.113872775713277,0.47,181542,626724,538053,0.6980908014861278
+analytic,mistral_small4,Mistral Small 4,119,6,,1,NVFP4,26.78,False,8h/day,5.734944456001112,0.6,820558,36666,0,0.2102774734237368
+analytic,mistral_small4,Mistral Small 4,119,6,,1,NVFP4,26.78,False,24h/day,2.0256013509050255,0.6,820558,36666,0,0.07427069913228367
+analytic,mistral_small4_high,Mistral Small 4,119,6,,1,NVFP4,26.78,False,8h/day,5.734944456001112,0.6,845698,125778,103247,0.7213298437869079
+analytic,mistral_small4_high,Mistral Small 4,119,6,,1,NVFP4,26.78,False,24h/day,2.0256013509050255,0.6,845698,125778,103247,0.25477608671413227
+analytic,glm53flash,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,8h/day,15.687621300481082,0.9,735242,211242,159800,3.3138844987562246
+analytic,glm53flash,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,24h/day,5.540919732097711,0.9,735242,211242,159800,1.1704749660477847
+analytic,glm53flash_high,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,8h/day,15.687621300481082,0.9,944104,462290,405513,7.2522304509994
+analytic,glm53flash_high,GLM-5.3-Flash,320,18,,2,NVFP4,19.58,False,24h/day,5.540919732097711,0.9,944104,462290,405513,2.561511782951451

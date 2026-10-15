@@ -5,7 +5,7 @@
 | 0.7 | 1 | None qualifies | NA | NA | NA |
 | 0.7 | 2 | None qualifies | NA | NA | NA |
 | 0.7 | 3 | None qualifies | NA | NA | NA |
-| 0.7 | 4 | haiku55_high | 0.0143657 | 0.994611 | 0.802557 |
+| 0.7 | 4 | haiku55_high | 0.0143657 | 0.994634 | 0.803236 |
 | 0.7 | 5 | None qualifies | NA | NA | NA |
 | 0.9 | 1 | None qualifies | NA | NA | NA |
 | 0.9 | 2 | None qualifies | NA | NA | NA |
@@ -15,5 +15,5 @@
 | 0.8 | 1 | None qualifies | NA | NA | NA |
 | 0.8 | 2 | None qualifies | NA | NA | NA |
 | 0.8 | 3 | None qualifies | NA | NA | NA |
-| 0.8 | 4 | haiku55_high | 0.0143657 | 0.994611 | 0.802557 |
+| 0.8 | 4 | haiku55_high | 0.0143657 | 0.994634 | 0.803236 |
 | 0.8 | 5 | None qualifies | NA | NA | NA |
