@@ -1,0 +1,32 @@
+jev: 50/1296 batches
+jev: 100/1296 batches
+jev: 150/1296 batches
+jev: 200/1296 batches
+jev: 250/1296 batches
+jev: 300/1296 batches
+jev: 350/1296 batches
+jev: 400/1296 batches
+jev: 450/1296 batches
+jev: 500/1296 batches
+jev: 550/1296 batches
+jev: 600/1296 batches
+jev: 650/1296 batches
+jev: 700/1296 batches
+jev: 750/1296 batches
+jev: 800/1296 batches
+jev: 850/1296 batches
+jev: 900/1296 batches
+2026-10-13 22:40:47,354 WARNING bench.llm_clients: Jev transport failure; retrying once in 30s: TimeoutError('The read operation timed out')
+jev: 950/1296 batches
+jev: 1000/1296 batches
+jev: 1050/1296 batches
+2026-10-13 22:42:22,244 WARNING bench.llm_clients: Jev HTTP failure 499: {"error":{"message":"HTTP 499: {\"detail\":{\"error_type\":\"internal_error\",\"message\":\"Unable to complete this request.\",\"request_id\":\"req_01a1384a178b7692bc5ffc73bdbec516\"}}","code":499}}
+2026-10-13 22:42:22,244 WARNING __main__: jev rater failed for qwen38flash__R4_P3_r2__b0: Jev HTTP 499: {"error":{"message":"HTTP 499: {\"detail\":{\"error_type\":\"internal_error\",\"message\":\"Unable to complete this request.\",\"request_id\":\"req_01a1384a178b7692bc5ffc73bdbec516\"}}","code":499}}
+jev: 1100/1296 batches
+jev: 1150/1296 batches
+jev: 1200/1296 batches
+jev: 1250/1296 batches
+2026-10-13 22:44:05,184 WARNING bench.llm_clients: Jev HTTP failure 499: {"error":{"message":"HTTP 499: {\"detail\":{\"error_type\":\"internal_error\",\"message\":\"Unable to complete this request.\",\"request_id\":\"req_01a1384ba981708787bda5c3107efb45\"}}","code":499}}
+2026-10-13 22:44:05,184 WARNING __main__: jev rater failed for sonnet55_high__R4_P1_r1__b0: Jev HTTP 499: {"error":{"message":"HTTP 499: {\"detail\":{\"error_type\":\"internal_error\",\"message\":\"Unable to complete this request.\",\"request_id\":\"req_01a1384ba981708787bda5c3107efb45\"}}","code":499}}
+jev: rated 1294/1296 batches; failures 2; wrote /home/eyeclept/Documents/School/DataMining-645/Project/scores/ai_ratings_jev.csv
+jev exit 1
