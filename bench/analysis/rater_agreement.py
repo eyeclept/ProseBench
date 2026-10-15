@@ -31,7 +31,10 @@ CONVERT = {"correct": {"keep": "TN", "change": "TP", "flag": "TP"},
            "incorrect": {"keep": "FP", "change": "FN", "flag": "FN"}}
 CONFIDENT = 0.4  # Jev counts as confident when |P(correct) - 0.5| >= this, i.e. P <= 0.1 or P >= 0.9.
 GATE = 0.7  # plan.md reliability gate: a rule is usable when scorer vs reference kappa >= GATE.
-RANGE_LABELERS = ("scorer", "grok", "gpt")  # labelers spanned by the recall range for a gate-failing rule
+RANGE_LABELERS = ("scorer", "grok", "gpt")  # labelers spanned by a rule's recall range
+# Owner decision (2026-10-15): Rule 1 passes the gate by only 0.004, so its labeler range is reported even when
+# it passes. Gate-failing rules always get a range.
+RANGE_RULES = ("1",)
 ORDER = ["qwen36", "qwen38flash", "mistral_small4", "glm53flash", "mimo26pro", "mistral_large4",
          "haiku55", "sonnet55", "opus55", "qwen36_high", "qwen38flash_high", "mistral_small4_high",
          "glm53flash_high", "mimo26pro_high", "mistral_large4_high", "haiku55_high", "sonnet55_high",
@@ -146,12 +149,15 @@ def main() -> None:
     joined = load(args.scores)
     agree = agreement_table(joined)
     gate_rows = agree[(agree.pair == "scorer vs reference") & (agree.rule != "all")]
-    failing = [(str(row.rule), row.kappa) for row in gate_rows.itertuples() if row.kappa < GATE]
+    ranged = [(str(row.rule), row.kappa) for row in gate_rows.itertuples()
+              if row.kappa < GATE or str(row.rule) in RANGE_RULES]
     sections = "".join(
-        f"\n\n## Rule {rule}: FAILS the reliability gate (scorer vs reference kappa {kappa:.3f} < {GATE})\n\n"
-        "Recall is reported as a range across labelers, not a single number.\n\n"
+        f"\n\n## Rule {rule}: {'FAILS' if kappa < GATE else 'passes'} the reliability gate "
+        f"(scorer vs reference kappa {kappa:.3f} {'<' if kappa < GATE else '>='} {GATE})\n\n"
+        + ("Recall is reported as a range across labelers, not a single number.\n\n" if kappa < GATE else
+           "The pass is marginal, so recall is also reported as a range across labelers.\n\n")
         + range_table(joined, rule).to_markdown(index=False)
-        for rule, kappa in failing)
+        for rule, kappa in ranged)
     text = (f"# Rater agreement\n\nRows rated by all three raters: {len(joined)}\n\n"
             "Reference = Grok and GPT verdict where they agree. On a split, Jev decides only when confident "
             "(P <= 0.1 or P >= 0.9); other splits are unresolved and excluded from scorer-vs-reference rows. "

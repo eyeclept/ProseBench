@@ -69,6 +69,31 @@ Reference = Grok and GPT verdict where they agree. On a split, Jev decides only 
 | confident (P<=0.1 or P>=0.9) | 15842 |   0.704 |                      0.989 |
 | uncertain                    |  6665 |   0.296 |                      0.83  |
 
+## Rule 1: passes the reliability gate (scorer vs reference kappa 0.704 >= 0.7)
+
+The pass is marginal, so recall is also reported as a range across labelers.
+
+| model               |   recall_scorer |   recall_grok |   recall_gpt |   recall_low |   recall_high |
+|:--------------------|----------------:|--------------:|-------------:|-------------:|--------------:|
+| qwen36              |           0.095 |         0.122 |        0.095 |        0.095 |         0.122 |
+| qwen38flash         |           0.27  |         0.418 |        0.323 |        0.27  |         0.418 |
+| mistral_small4      |           0.127 |         0.259 |        0.185 |        0.127 |         0.259 |
+| glm53flash          |           0.238 |         0.206 |        0.153 |        0.153 |         0.238 |
+| mimo26pro           |           0.228 |         0.19  |        0.138 |        0.138 |         0.228 |
+| mistral_large4      |           0.28  |         0.275 |        0.169 |        0.169 |         0.28  |
+| haiku55             |           0.116 |         0.106 |        0.085 |        0.085 |         0.116 |
+| sonnet55            |           0.307 |         0.333 |        0.243 |        0.243 |         0.333 |
+| opus55              |           0.455 |         0.497 |        0.376 |        0.376 |         0.497 |
+| qwen36_high         |           0.032 |         0.069 |        0.053 |        0.032 |         0.069 |
+| qwen38flash_high    |           0.175 |         0.206 |        0.138 |        0.138 |         0.206 |
+| mistral_small4_high |           0.106 |         0.063 |        0.058 |        0.058 |         0.106 |
+| glm53flash_high     |           0.265 |         0.296 |        0.164 |        0.164 |         0.296 |
+| mimo26pro_high      |           0.286 |         0.381 |        0.265 |        0.265 |         0.381 |
+| mistral_large4_high |           0.28  |         0.275 |        0.222 |        0.222 |         0.28  |
+| haiku55_high        |           0.333 |         0.386 |        0.175 |        0.175 |         0.386 |
+| sonnet55_high       |           0.55  |         0.582 |        0.386 |        0.386 |         0.582 |
+| opus55_high         |           0.455 |         0.571 |        0.381 |        0.381 |         0.571 |
+
 ## Recall by labeler
 
 | model               |   recall_scorer |   recall_grok |   recall_gpt |   recall_jev |   recall_reference |
